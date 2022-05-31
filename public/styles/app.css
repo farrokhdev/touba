@@ -1543,7 +1543,6 @@ a {
 
 .chart {
   width: 100%;
-  background-color: #FFFFFF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1604,6 +1603,52 @@ a {
   font-size: 10px;
   color: #D6D6D6 !important;
   margin: 5px 0;
+}
+
+.card-new-product {
+  width: 100%;
+  height: 112px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-new-product-image {
+  width: 100%;
+}
+
+.card-new-product-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-new-product-content-text {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #3C557A !important;
+}
+
+.card-new-product-content-chart {
+  width: 100%;
 }
 
 html,
@@ -3151,7 +3196,6 @@ a {
 
 .chart {
   width: 100%;
-  background-color: #FFFFFF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3212,5 +3256,51 @@ a {
   font-size: 10px;
   color: #D6D6D6 !important;
   margin: 5px 0;
+}
+
+.card-new-product {
+  width: 100%;
+  height: 112px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-new-product-image {
+  width: 100%;
+}
+
+.card-new-product-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-new-product-content-text {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #3C557A !important;
+}
+
+.card-new-product-content-chart {
+  width: 100%;
 }
 /*# sourceMappingURL=app.css.map */
