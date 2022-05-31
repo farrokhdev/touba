@@ -1,9 +1,9 @@
 import { memo, ReactElement} from "react";
-import { Chart } from "./chart";
+import Chart, { CHART } from "./chart";
 
 interface Props {
     image: string;
-    items: Chart[];
+    items: CHART[];
     title: string;
 }
 

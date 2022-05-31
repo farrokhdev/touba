@@ -1849,6 +1849,275 @@ a {
   margin: 0;
 }
 
+.card-offer-horizontal {
+  width: 100%;
+  height: 211px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.card-offer-horizontal-image {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-offer-horizontal-content {
+  width: 45%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card-offer-horizontal-content-title {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  color: #21C085 !important;
+  margin: 8px 0;
+}
+
+.card-offer-horizontal-content-description {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  color: #3C557A !important;
+  margin: 0 0 23px 0;
+}
+
+.card-offer-horizontal-content-item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-offer-horizontal-content-item-description {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #6B798C !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-offer-horizontal-content-item-description-rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0%;
+}
+
+.card-offer-horizontal-content-item-description-rate > img {
+  margin: 0 3px;
+}
+
+.card-offer-horizontal-content-item-button {
+  width: 100px;
+  height: 27px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(264.93deg, #FED402 26.79%, #FE9901 94.29%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.card-offer-horizontal-content-item-button-text {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  color: #000000 !important;
+}
+
+.card-offer-horizontal-content-country {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  color: #D6D6D6 !important;
+}
+
+.card-offer-horizontal-divider {
+  width: 1.03px;
+  height: 80%;
+  margin: auto 5px;
+  background-color: #D6D6D6;
+}
+
+.card-offer-horizontal-chart {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0 10px;
+}
+
+.card-offer-horizontal-chart-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.card-offer-horizontal-chart-content .chart {
+  height: 100%;
+}
+
+.card-offer-horizontal-chart-content .chart .chart-content-column-bottom {
+  height: 98.02px;
+  width: 9.68px;
+}
+
+.card-offer-horizontal-chart-content .chart .chart-content-column-top {
+  width: 14.52px;
+}
+
+.card-offer-horizontal-chart-content-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.card-offer-horizontal-chart-content-header-text {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #6B798C !important;
+  margin: 0;
+}
+
+.card-offer-horizontal-chart-content-header-icon {
+  cursor: pointer;
+}
+
+.card-offer-horizontal-chart-button {
+  position: relative;
+}
+
+.card-offer-horizontal-chart-button > button {
+  width: 51px;
+  height: 51px;
+  border: none;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.card-offer-horizontal-chart-button-discount {
+  position: absolute;
+  top: -80px;
+  left: -17px;
+}
+
+.card-offer-horizontal-chart-button-discount-background {
+  border-top-right-radius: 16px;
+}
+
+.card-offer-horizontal-chart-button-discount-percent {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFFFFF !important;
+  margin: 0;
+  position: absolute;
+  top: 14px;
+  left: 33px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
 html,
 body {
   padding: 0;
@@ -3698,5 +3967,274 @@ a {
   font-size: 14px;
   color: #6B798C !important;
   margin: 0;
+}
+
+.card-offer-horizontal {
+  width: 100%;
+  height: 211px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.card-offer-horizontal-image {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-offer-horizontal-content {
+  width: 45%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card-offer-horizontal-content-title {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  color: #21C085 !important;
+  margin: 8px 0;
+}
+
+.card-offer-horizontal-content-description {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  color: #3C557A !important;
+  margin: 0 0 23px 0;
+}
+
+.card-offer-horizontal-content-item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-offer-horizontal-content-item-description {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #6B798C !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-offer-horizontal-content-item-description-rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0%;
+}
+
+.card-offer-horizontal-content-item-description-rate > img {
+  margin: 0 3px;
+}
+
+.card-offer-horizontal-content-item-button {
+  width: 100px;
+  height: 27px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(264.93deg, #FED402 26.79%, #FE9901 94.29%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.card-offer-horizontal-content-item-button-text {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  color: #000000 !important;
+}
+
+.card-offer-horizontal-content-country {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  color: #D6D6D6 !important;
+}
+
+.card-offer-horizontal-divider {
+  width: 1.03px;
+  height: 80%;
+  margin: auto 5px;
+  background-color: #D6D6D6;
+}
+
+.card-offer-horizontal-chart {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0 10px;
+}
+
+.card-offer-horizontal-chart-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.card-offer-horizontal-chart-content .chart {
+  height: 100%;
+}
+
+.card-offer-horizontal-chart-content .chart .chart-content-column-bottom {
+  height: 98.02px;
+  width: 9.68px;
+}
+
+.card-offer-horizontal-chart-content .chart .chart-content-column-top {
+  width: 14.52px;
+}
+
+.card-offer-horizontal-chart-content-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.card-offer-horizontal-chart-content-header-text {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #6B798C !important;
+  margin: 0;
+}
+
+.card-offer-horizontal-chart-content-header-icon {
+  cursor: pointer;
+}
+
+.card-offer-horizontal-chart-button {
+  position: relative;
+}
+
+.card-offer-horizontal-chart-button > button {
+  width: 51px;
+  height: 51px;
+  border: none;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.card-offer-horizontal-chart-button-discount {
+  position: absolute;
+  top: -80px;
+  left: -17px;
+}
+
+.card-offer-horizontal-chart-button-discount-background {
+  border-top-right-radius: 16px;
+}
+
+.card-offer-horizontal-chart-button-discount-percent {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFFFFF !important;
+  margin: 0;
+  position: absolute;
+  top: 14px;
+  left: 33px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 /*# sourceMappingURL=app.css.map */

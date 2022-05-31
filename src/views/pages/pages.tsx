@@ -1,6 +1,6 @@
-import { IconTwoPerson, ImageBrandalibaba, ImageBrandArvan, ImageControll, ImageTest2, ImageTest3, ImageTest4 } from "../../assets";
+import { IconTwoPerson, ImageBrandalibaba, ImageBrandArvan, ImageControll, ImageTest, ImageTest2, ImageTest3, ImageTest4 } from "../../assets";
 import { ButtonIcon } from "../components/button_icon";
-import { Chart } from "../components/chart";
+import { CHART, Chart } from "../components/chart";
 import {
   Button,
   SelectComponent,
@@ -16,9 +16,10 @@ import {
   CardBestBrand,
   ButtonSelect,
   ButtonOutline,
+  CardOfferHorizental,
 } from "../components/components";
 
-const TEST: Chart[] = [
+const TEST: CHART[] = [
   { name: "JAN", size: 20 },
   { name: "FEB", size: 30 },
   { name: "MAR", size: 40 },
@@ -120,6 +121,18 @@ function Pages() {
         titleButton1={"Product"}
         titleButton2={"Excess Capacity"}
       />
+      <div style={{ width: "90%" }}>
+        <CardOfferHorizental
+          image={ImageTest}
+          status={"Finish Product"}
+          description={"Pomegranate Juice Pet Bottle, Best material and design, Ready to Order"}
+          rate={4.2}
+          country={"CHINA"}
+          chart={TEST}
+          amount={200}
+          discountPercent={60}
+        />
+      </div>
     </div>
   );
 };

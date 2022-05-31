@@ -5,13 +5,13 @@ import {
 
 } from "react";
 
-export type Chart = {
+export type CHART = {
     name: string;
     size: number;
 }
 
 interface Props {
-    item: Chart[];
+    item: CHART[];
 }
 
 export function Chart({ item }: Props): ReactElement {

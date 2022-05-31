@@ -1,0 +1,165 @@
+.card-offer-horizontal {
+    width: 100%;
+    height: 211px;
+    background-color: $white;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    &-image {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-content {
+        width: 45%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+
+        &-title {
+            @include FontStyle(10px, 700, $green);
+            margin: 8px 0;
+        }
+
+        &-description {
+            @include FontStyle(22px, 800, $sorme);
+            margin: 0 0 23px 0;
+        }
+
+        &-item {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &-description {
+                @include FontStyle(14px, 500, $lightSorme);
+                display: flex;
+                align-items: center;
+
+                &-text {}
+
+                &-rate {
+                    display: flex;
+                    align-items: center;
+                    margin: 0%;
+
+                    >img {
+                        margin: 0 3px;
+                    }
+                }
+            }
+
+            &-button {
+                width: 100px;
+                height: 27px;
+                border: none;
+                border-radius: 8px;
+                background: linear-gradient(264.93deg, #FED402 26.79%, #FE9901 94.29%);
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                cursor: pointer;
+
+                &-text {
+                    @include FontStyle(10px, 600, $black);
+                }
+            }
+        }
+
+        &-country {
+            @include FontStyle(10px, 700, $gray);
+        }
+    }
+
+    &-divider {
+        width: 1.03px;
+        height: 80%;
+        margin: auto 5px;
+        background-color: $gray;
+    }
+
+    &-chart {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0 10px;
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+
+            .chart {
+                height: 100%;
+
+                .chart-content-column-bottom {
+                    height: 98.02px;
+                    width: 9.68px;
+                }
+
+                .chart-content-column-top {
+                    width: 14.52px;
+                }
+            }
+
+            &-header {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 15px;
+
+                &-text {
+                    @include FontStyle(14px, 500, $lightSorme);
+                    margin: 0;
+                }
+
+                &-icon {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &-button {
+            position: relative;
+
+            >button {
+                width: 51px;
+                height: 51px;
+                border: none;
+                border-radius: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+
+            &-discount {
+                position: absolute;
+                top: -80px;
+                left: -17px;
+
+                &-background {
+                    border-top-right-radius: 16px;
+                }
+
+                &-percent {
+                    @include FontStyle(20px, 700, $white);
+                    margin: 0;
+                    position: absolute;
+                    top: 14px;
+                    left: 33px;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+}
