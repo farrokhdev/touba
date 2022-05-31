@@ -1866,6 +1866,20 @@ a {
   position: relative;
 }
 
+@media (max-width: 1160px) {
+  .card-offer-horizontal {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 370px;
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .card-offer-horizontal-image {
   width: 20%;
   display: -webkit-box;
@@ -1889,6 +1903,12 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 1160px) {
+  .card-offer-horizontal-content {
+    width: 95%;
+  }
 }
 
 .card-offer-horizontal-content-title {
@@ -2001,6 +2021,14 @@ a {
   background-color: #D6D6D6;
 }
 
+@media (max-width: 1160px) {
+  .card-offer-horizontal-divider {
+    width: 80%;
+    height: 1.03px;
+    margin: 5px auto;
+  }
+}
+
 .card-offer-horizontal-chart {
   width: 30%;
   display: -webkit-box;
@@ -2013,6 +2041,12 @@ a {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   margin: 0 10px;
+}
+
+@media (max-width: 1160px) {
+  .card-offer-horizontal-chart {
+    width: 95%;
+  }
 }
 
 .card-offer-horizontal-chart-content {
@@ -2096,6 +2130,13 @@ a {
   position: absolute;
   top: -80px;
   left: -17px;
+}
+
+@media (max-width: 1160px) {
+  .card-offer-horizontal-chart-button-discount {
+    top: -414px;
+    left: -17px;
+  }
 }
 
 .card-offer-horizontal-chart-button-discount-background {
@@ -3986,6 +4027,20 @@ a {
   position: relative;
 }
 
+@media (max-width: 1160px) {
+  .card-offer-horizontal {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 370px;
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .card-offer-horizontal-image {
   width: 20%;
   display: -webkit-box;
@@ -4009,6 +4064,12 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 1160px) {
+  .card-offer-horizontal-content {
+    width: 95%;
+  }
 }
 
 .card-offer-horizontal-content-title {
@@ -4121,6 +4182,14 @@ a {
   background-color: #D6D6D6;
 }
 
+@media (max-width: 1160px) {
+  .card-offer-horizontal-divider {
+    width: 80%;
+    height: 1.03px;
+    margin: 5px auto;
+  }
+}
+
 .card-offer-horizontal-chart {
   width: 30%;
   display: -webkit-box;
@@ -4133,6 +4202,12 @@ a {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   margin: 0 10px;
+}
+
+@media (max-width: 1160px) {
+  .card-offer-horizontal-chart {
+    width: 95%;
+  }
 }
 
 .card-offer-horizontal-chart-content {
@@ -4216,6 +4291,13 @@ a {
   position: absolute;
   top: -80px;
   left: -17px;
+}
+
+@media (max-width: 1160px) {
+  .card-offer-horizontal-chart-button-discount {
+    top: -414px;
+    left: -17px;
+  }
 }
 
 .card-offer-horizontal-chart-button-discount-background {

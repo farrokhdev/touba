@@ -8,6 +8,13 @@
     justify-content: space-between;
     position: relative;
 
+    @media (max-width: 1160px) {
+        flex-direction: column;
+        width: 370px;
+        height: 100%;
+        align-items: center;
+    }
+
     &-image {
         width: 20%;
         display: flex;
@@ -16,6 +23,10 @@
     }
 
     &-content {
+        @media (max-width: 1160px) {
+            width: 95%;
+        }
+
         width: 45%;
         height: 90%;
         display: flex;
@@ -82,9 +93,19 @@
         height: 80%;
         margin: auto 5px;
         background-color: $gray;
+
+        @media (max-width: 1160px) {
+            width: 80%;
+            height: 1.03px;
+            margin: 5px auto;
+        }
     }
 
     &-chart {
+        @media (max-width: 1160px) {
+            width: 95%;
+        }
+
         width: 30%;
         display: flex;
         align-items: center;
@@ -143,6 +164,11 @@
             }
 
             &-discount {
+                @media (max-width: 1160px) {
+                    top: -414px;
+                    left: -17px;
+                }
+
                 position: absolute;
                 top: -80px;
                 left: -17px;
