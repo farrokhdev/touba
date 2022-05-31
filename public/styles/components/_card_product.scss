@@ -24,6 +24,7 @@
             align-items: flex-end;
             &-text {
                 @include FontStyle(10px, 700, $green);
+                margin: 0;
             }
             &-icon {
                 cursor: pointer;
@@ -43,6 +44,20 @@
             }
             &-text {
                 @include FontStyle(12px, 500, $lightSorme)
+            }
+        }
+        &-chart {
+            width: 95%;
+            .chart {
+                height: 100%;
+                .chart-content-column-bottom {
+                    height: 55px;
+                    width: 6px;
+                }
+
+                .chart-content-column-top {
+                    width: 8px;
+                }
             }
         }
     }

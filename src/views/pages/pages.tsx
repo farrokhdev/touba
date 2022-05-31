@@ -44,7 +44,13 @@ function Pages() {
       </div>
       <Button title={"SEARCH"} />
       <SelectText value={"test"} />
-      <CardProduct />
+      <CardProduct
+        image={ImageTest}
+        status={"Finish Product"}
+        description={"Pomegranate Juice Pet Bottle..."}
+        amount={200}
+        chart={TEST}
+      />
       <CardCategory image={ImageTest2} title={"Home Appliance"} />
       <div style={{ width: "770px" }}>
         <CardImage image={ImageTest3} />
@@ -134,7 +140,7 @@ function Pages() {
           discountPercent={60}
         />
       </div>
-      <div style={{width: "50%"}}>
+      <div style={{ width: "50%" }}>
         <CardCalculate amount={1299.9} value={1} />
       </div>
     </div>

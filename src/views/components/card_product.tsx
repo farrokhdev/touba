@@ -1,24 +1,38 @@
 import { memo, ReactElement } from "react";
 import { IconHeart, ImageTest } from "../../assets";
-// import { default as IconHeart } from "./../public/assets/icons/icon-heart.svg";
-// import { default as ImageTest } from "./../public/assets/images/image-test.png";
+import { CHART } from "./chart";
+import { Chart } from "./components";
 
-export function CardProduct(): ReactElement {
+interface Props {
+    image: string;
+    status: string;
+    description: string;
+    amount: number;
+    chart: CHART[];
+}
+
+export function CardProduct({
+    image,
+    status,
+    description,
+    amount,
+    chart
+}:Props): ReactElement {
     return (
         <div className="card-product">
             <div className="card-product-image">
-                <img src={ImageTest}/>
+                <img src={image}/>
             </div>
             <div className="card-product-content">
                 <div className="card-product-content-header">
                     <h6 className="card-product-content-header-text">
-                        Finish Product
+                        {status}
                     </h6>
                     <img src={IconHeart} className="card-product-content-header-icon"/>
                 </div>
                 <div className="card-product-content-title">
                     <h2 className="card-product-content-title-text">
-                        Pomegranate Juice Pet Bottle...
+                        {description}
                     </h2>
                 </div>
                 <div className="card-product-content-description">
@@ -26,11 +40,11 @@ export function CardProduct(): ReactElement {
                         Overall Capacity:
                     </span>
                     <span className="card-product-content-description-text">
-                        200Tons/Monthly
+                        {amount}Tons/Monthly
                     </span>
                 </div>
                 <div className="card-product-content-chart">
-
+                    <Chart item={chart} />
                 </div>
             </div>
         </div>
