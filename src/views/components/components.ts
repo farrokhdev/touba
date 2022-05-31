@@ -13,3 +13,5 @@ export { default as Chart} from './chart';
 export { default as CardNewProduct} from './card_new_product';
 export { default as CardBestBrand} from './card_best_brand';
 export { default as ButtonIcon} from './button_icon';
+export { default as ButtonOutline} from './button_outline';
+export { default as ButtonSelect} from './button_select';
