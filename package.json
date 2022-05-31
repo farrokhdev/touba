@@ -8,6 +8,7 @@
     "@types/react-dom": "^18.0.5",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "swiper": "^8.2.1",
     "utilities_js": "git://github.com/SinaMN75/Utilities_js.git"
   },
   "devDependencies": {
