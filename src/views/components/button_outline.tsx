@@ -1,0 +1,32 @@
+import {
+    memo,
+    ReactElement,
+    useCallback,
+    MouseEvent,
+    ButtonHTMLAttributes
+} from "react";
+
+interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
+    title: string;
+}
+
+export function ButtonOutline({ onClick, title }: Props): ReactElement {
+
+    const handleOnClick = useCallback((event: MouseEvent<HTMLButtonElement>) => {
+        event.stopPropagation();
+        onClick?.(event);
+    }, [onClick]);
+
+    return (
+        <button
+            className="button-outline"
+            onClick={handleOnClick}
+        >
+            <h3 className="button-outline-text">
+                {title}
+            </h3>
+        </button>
+    )
+}
+
+export default memo(ButtonOutline);
