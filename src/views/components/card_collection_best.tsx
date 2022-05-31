@@ -1,4 +1,5 @@
 import { HTMLAttributes, memo, ReactElement } from "react";
+import { ImageBackgroundBest } from "../../assets";
 import { Button } from "./components";
 
 interface Props extends HTMLAttributes<HTMLElement> {
@@ -10,7 +11,7 @@ export function CardCollectionBest({ children }: Props): ReactElement {
     return (
         <div className="card-collection-best">
             <img
-                src={""}
+                src={ImageBackgroundBest}
                 className="card-collection-best-background"
             />
             <div className="card-collection-best-content">

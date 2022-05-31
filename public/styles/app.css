@@ -1541,6 +1541,71 @@ a {
   margin: 0 5px;
 }
 
+.chart {
+  width: 100%;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.chart-content {
+  margin: 8px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.chart-content-column {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.chart-content-column-bottom {
+  height: 41.2px;
+  width: 4.49px;
+  background-color: #D6D6D6;
+  border-radius: 2px;
+}
+
+.chart-content-column-top {
+  width: 8px;
+  background: -webkit-gradient(linear, right top, left top, from(#64B9DC), color-stop(96.35%, #AAE2F5));
+  background: linear-gradient(270deg, #64B9DC 0%, #AAE2F5 96.35%);
+  position: absolute;
+  bottom: 0px;
+  border-radius: 2px;
+}
+
+.chart-content-text {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  color: #D6D6D6 !important;
+  margin: 5px 0;
+}
+
 html,
 body {
   padding: 0;
@@ -3082,5 +3147,70 @@ a {
 
 .card-collection-best-content-body > div {
   margin: 0 5px;
+}
+
+.chart {
+  width: 100%;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.chart-content {
+  margin: 8px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.chart-content-column {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.chart-content-column-bottom {
+  height: 41.2px;
+  width: 4.49px;
+  background-color: #D6D6D6;
+  border-radius: 2px;
+}
+
+.chart-content-column-top {
+  width: 8px;
+  background: -webkit-gradient(linear, right top, left top, from(#64B9DC), color-stop(96.35%, #AAE2F5));
+  background: linear-gradient(270deg, #64B9DC 0%, #AAE2F5 96.35%);
+  position: absolute;
+  bottom: 0px;
+  border-radius: 2px;
+}
+
+.chart-content-text {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  color: #D6D6D6 !important;
+  margin: 5px 0;
 }
 /*# sourceMappingURL=app.css.map */

@@ -1,0 +1,36 @@
+.chart {
+    width: 100%;
+    background-color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-content {
+        margin: 8px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-column {
+            position: relative;
+            display: flex;
+            justify-content: center;
+
+            &-bottom {
+                height: 41.2px;
+                width: 4.49px;
+                background-color: $gray;
+                border-radius: 2px;
+            }
+            &-top {
+                width: 8px;
+                background: linear-gradient(270deg, #64B9DC 0%, #AAE2F5 96.35%);
+                position: absolute;
+                bottom: 0px;
+                border-radius: 2px;
+            }
+        }
+        &-text {
+            @include FontStyle(10px, 700, $gray);
+            margin: 5px 0;
+        }
+    }
+}

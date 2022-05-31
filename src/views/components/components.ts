@@ -9,3 +9,4 @@ export { default as CardProductWithPrice} from './card_product_with_price';
 export { default as SelectComponent} from './select_component';
 export { default as SelectText} from './select_text';
 export { default as InputTextLabel} from './input_text_label';
+export { default as Chart} from './chart';
