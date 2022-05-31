@@ -10,3 +10,4 @@ export { default as ImageTest } from './images/image-test.png';
 export { default as ImageTest4 } from './images/image-test-4.png';
 export { default as ImageBrandArvan } from './images/image-brand-arvan.png';
 export { default as ImageBrandalibaba} from './images/image-brand-ali.png';
+export { default as IconTwoPerson} from './icons/icon-two-person.svg';
