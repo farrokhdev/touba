@@ -10,12 +10,16 @@ import {
   CardCollectionProduct,
   CardBestSeller,
   CardCollectionBest,
+  CardFAQ,
+  CardLike,
+  ComponentBinaRazan
 } from "../components/components";
 
 function Pages() {
   return (
     <div>
-     
+      
+<ComponentBinaRazan/>
       <div style={{ width: "360px" }}>
         <SelectComponent type={"one"} />
       </div>
@@ -32,6 +36,7 @@ function Pages() {
         fromPrice={12}
         toPrice={24}
       />
+
       <div style={{ width: "770px" }}>
         <CardCollectionProduct title={"Low MOQ"} location={"#"}>
           <CardProductWithPrice
@@ -60,21 +65,21 @@ function Pages() {
           />
         </CardCollectionProduct>
       </div>
-      <CardBestSeller image={ImageControll} discountPercent={40}/>
+      <CardBestSeller image={ImageControll} discountPercent={40} />
       <CardCollectionBest>
-        <CardBestSeller image={ImageControll} discountPercent={40}/>
-        <CardBestSeller image={ImageControll} discountPercent={40}/>
-        <CardBestSeller image={ImageControll} discountPercent={40}/>
-        <CardBestSeller image={ImageControll} discountPercent={40}/>
-        <CardBestSeller image={ImageControll} discountPercent={40}/>
-        <CardBestSeller image={ImageControll} discountPercent={40}/>
-        <CardBestSeller image={ImageControll} discountPercent={40}/>
-        <CardBestSeller image={ImageControll} discountPercent={40}/>
-        <CardBestSeller image={ImageControll} discountPercent={40}/>
-        <CardBestSeller image={ImageControll} discountPercent={40}/>
+        <CardBestSeller image={ImageControll} discountPercent={40} />
+        <CardBestSeller image={ImageControll} discountPercent={40} />
+        <CardBestSeller image={ImageControll} discountPercent={40} />
+        <CardBestSeller image={ImageControll} discountPercent={40} />
+        <CardBestSeller image={ImageControll} discountPercent={40} />
+        <CardBestSeller image={ImageControll} discountPercent={40} />
+        <CardBestSeller image={ImageControll} discountPercent={40} />
+        <CardBestSeller image={ImageControll} discountPercent={40} />
+        <CardBestSeller image={ImageControll} discountPercent={40} />
+        <CardBestSeller image={ImageControll} discountPercent={40} />
       </CardCollectionBest>
     </div>
   );
-};
+}
 
 export default Pages;

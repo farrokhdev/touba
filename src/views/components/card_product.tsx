@@ -1,7 +1,6 @@
 import { memo, ReactElement } from "react";
 import { IconHeart, ImageTest } from "../../assets";
-// import { default as IconHeart } from "./../public/assets/icons/icon-heart.svg";
-// import { default as ImageTest } from "./../public/assets/images/image-test.png";
+
 
 export function CardProduct(): ReactElement {
     return (

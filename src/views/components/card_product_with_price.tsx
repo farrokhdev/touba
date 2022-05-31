@@ -1,5 +1,4 @@
 import { memo, ReactElement } from "react";
-// import { default as IconSharpSign } from './../public/assets/icons/icon-sharp-sign.svg';
 
 interface Props {
     image: any;
