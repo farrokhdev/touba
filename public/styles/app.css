@@ -2159,6 +2159,143 @@ a {
           transform: rotate(45deg);
 }
 
+.card-calculate {
+  width: 100%;
+  height: 114px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0E2649), to(#071A36));
+  background: linear-gradient(180deg, #0E2649 0%, #071A36 100%);
+  border-radius: 62px 16px 16px 62px;
+  padding: 0 20px;
+}
+
+@media (max-width: 1135px) {
+  .card-calculate {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 220px;
+    height: 100%;
+    border-radius: 5px;
+    padding: 20px;
+  }
+}
+
+.card-calculate-input {
+  width: 136px;
+  height: 64px;
+  border-radius: 104px;
+  background-color: #FFFFFF;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #3C557A !important;
+}
+
+.card-calculate-input:focus {
+  outline: none;
+}
+
+.card-calculate-input::-webkit-input-placeholder {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #3C557A !important;
+  text-align: center;
+}
+
+.card-calculate-input:-ms-input-placeholder {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #3C557A !important;
+  text-align: center;
+}
+
+.card-calculate-input::-ms-input-placeholder {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #3C557A !important;
+  text-align: center;
+}
+
+.card-calculate-input::placeholder {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #3C557A !important;
+  text-align: center;
+}
+
+.card-calculate-multiplication {
+  width: 10.5px;
+  height: 10.5px;
+  color: #FFFFFF;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.card-calculate-amount {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #FFFFFF !important;
+  margin: 0;
+}
+
+.card-calculate-equal {
+  width: 10.5px;
+  height: 10.5px;
+  color: #FFFFFF;
+}
+
+.card-calculate-value {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  color: #FFFFFF !important;
+}
+
 html,
 body {
   padding: 0;
@@ -4318,5 +4455,142 @@ a {
   left: 33px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+
+.card-calculate {
+  width: 100%;
+  height: 114px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0E2649), to(#071A36));
+  background: linear-gradient(180deg, #0E2649 0%, #071A36 100%);
+  border-radius: 62px 16px 16px 62px;
+  padding: 0 20px;
+}
+
+@media (max-width: 1135px) {
+  .card-calculate {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 220px;
+    height: 100%;
+    border-radius: 5px;
+    padding: 20px;
+  }
+}
+
+.card-calculate-input {
+  width: 136px;
+  height: 64px;
+  border-radius: 104px;
+  background-color: #FFFFFF;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #3C557A !important;
+}
+
+.card-calculate-input:focus {
+  outline: none;
+}
+
+.card-calculate-input::-webkit-input-placeholder {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #3C557A !important;
+  text-align: center;
+}
+
+.card-calculate-input:-ms-input-placeholder {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #3C557A !important;
+  text-align: center;
+}
+
+.card-calculate-input::-ms-input-placeholder {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #3C557A !important;
+  text-align: center;
+}
+
+.card-calculate-input::placeholder {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #3C557A !important;
+  text-align: center;
+}
+
+.card-calculate-multiplication {
+  width: 10.5px;
+  height: 10.5px;
+  color: #FFFFFF;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.card-calculate-amount {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #FFFFFF !important;
+  margin: 0;
+}
+
+.card-calculate-equal {
+  width: 10.5px;
+  height: 10.5px;
+  color: #FFFFFF;
+}
+
+.card-calculate-value {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  color: #FFFFFF !important;
 }
 /*# sourceMappingURL=app.css.map */

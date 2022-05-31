@@ -1,0 +1,66 @@
+.card-calculate {
+    width: 100%;
+    height: 114px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(180deg, #0E2649 0%, #071A36 100%);
+    border-radius: 62px 16px 16px 62px;
+    padding: 0 20px;
+
+    @media (max-width: 1135px) {
+        flex-direction: column;
+        width: 220px;
+        height: 100%;
+        border-radius: 5px;
+        padding: 20px;
+    }
+
+    &-input {
+        width: 136px;
+        height: 64px;
+        border-radius: 104px;
+        background-color: $white;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        color: $sorme !important;
+
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            @include FontStyle(12px, 500, $sorme);
+            text-align: center;
+        }
+    }
+
+    &-multiplication {
+        width: 10.5px;
+        height: 10.5px;
+        color: $white;
+        transform: rotate(45deg);
+    }
+
+    &-amount {
+        @include FontStyle(14px, 600, $white);
+        margin: 0;
+    }
+
+    &-equal {
+        width: 10.5px;
+        height: 10.5px;
+        color: $white;
+    }
+
+    &-value {
+        @include FontStyle(22px, 800, $white);
+    }
+}

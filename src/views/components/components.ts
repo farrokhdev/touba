@@ -16,3 +16,4 @@ export { default as ButtonIcon} from './button_icon';
 export { default as ButtonOutline} from './button_outline';
 export { default as ButtonSelect} from './button_select';
 export { default as CardOfferHorizental} from './cars_offer_horizontal';
+export { default as CardCalculate} from './card_calculate';

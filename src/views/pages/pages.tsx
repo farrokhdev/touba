@@ -17,6 +17,7 @@ import {
   ButtonSelect,
   ButtonOutline,
   CardOfferHorizental,
+  CardCalculate,
 } from "../components/components";
 
 const TEST: CHART[] = [
@@ -132,6 +133,9 @@ function Pages() {
           amount={200}
           discountPercent={60}
         />
+      </div>
+      <div style={{width: "50%"}}>
+        <CardCalculate amount={1299.9} value={1} />
       </div>
     </div>
   );
