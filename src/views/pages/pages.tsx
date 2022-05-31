@@ -1,4 +1,4 @@
-import { ImageControll, ImageTest2, ImageTest3 } from "../../assets";
+import { ImageControll, ImageTest2, ImageTest3, ImageTest4 } from "../../assets";
 import { Chart } from "../components/chart";
 import {
   Button,
@@ -95,6 +95,9 @@ function Pages() {
       </div>
       <div style={{ width: "349px" }}>
         <CardNewProduct image={ImageControll} items={TEST} title={"Name of Excess Capacity"} />
+      </div>
+      <div style={{ width: "349px", height: "281px" }}>
+        <CardImage image={ImageTest4} />
       </div>
     </div>
   );
