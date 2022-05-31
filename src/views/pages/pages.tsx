@@ -14,6 +14,8 @@ import {
   CardCollectionBest,
   CardNewProduct,
   CardBestBrand,
+  ButtonSelect,
+  ButtonOutline,
 } from "../components/components";
 
 const TEST: Chart[] = [
@@ -113,6 +115,11 @@ function Pages() {
         ]}
       />
       <ButtonIcon icon={IconTwoPerson} />
+      <ButtonOutline title="REGISTER" />
+      <ButtonSelect
+        titleButton1={"Product"}
+        titleButton2={"Excess Capacity"}
+      />
     </div>
   );
 };
