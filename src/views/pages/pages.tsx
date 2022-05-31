@@ -1,4 +1,5 @@
-import { ImageBrandalibaba, ImageBrandArvan, ImageControll, ImageTest2, ImageTest3, ImageTest4 } from "../../assets";
+import { IconTwoPerson, ImageBrandalibaba, ImageBrandArvan, ImageControll, ImageTest2, ImageTest3, ImageTest4 } from "../../assets";
+import { ButtonIcon } from "../components/button_icon";
 import { Chart } from "../components/chart";
 import {
   Button,
@@ -100,16 +101,18 @@ function Pages() {
       <div style={{ width: "349px", height: "281px" }}>
         <CardImage image={ImageTest4} />
       </div>
-      <CardBestBrand 
-      images={[
-        `${ImageBrandalibaba}`,
-        `${ImageBrandalibaba}`,
-        `${ImageBrandArvan}`,
-        `${ImageBrandalibaba}`,
-        `${ImageBrandalibaba}`,
-        `${ImageBrandalibaba}`,
-        `${ImageBrandArvan}`
-        ]} />
+      <CardBestBrand
+        images={[
+          `${ImageBrandalibaba}`,
+          `${ImageBrandalibaba}`,
+          `${ImageBrandArvan}`,
+          `${ImageBrandalibaba}`,
+          `${ImageBrandalibaba}`,
+          `${ImageBrandalibaba}`,
+          `${ImageBrandArvan}`
+        ]}
+      />
+      <ButtonIcon icon={IconTwoPerson} />
     </div>
   );
 };
