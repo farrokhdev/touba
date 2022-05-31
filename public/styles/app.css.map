@@ -1,0 +1,17 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "app.scss",
+        "base/base-dir.scss",
+        "components/components-dir.scss",
+        "layout/layout-dir.scss",
+        "pages/pages-dir.scss",
+        "base/base-dir.scss",
+        "components/components-dir.scss",
+        "layout/layout-dir.scss",
+        "pages/pages-dir.scss"
+    ],
+    "names": [],
+    "file": "app.css"
+}
