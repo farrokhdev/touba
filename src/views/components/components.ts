@@ -11,3 +11,4 @@ export { default as SelectText} from './select_text';
 export { default as InputTextLabel} from './input_text_label';
 export { default as Chart} from './chart';
 export { default as CardNewProduct} from './card_new_product';
+export { default as CardBestBrand} from './card_best_brand';

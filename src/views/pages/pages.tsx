@@ -1,4 +1,4 @@
-import { ImageControll, ImageTest2, ImageTest3, ImageTest4 } from "../../assets";
+import { ImageBrandalibaba, ImageBrandArvan, ImageControll, ImageTest2, ImageTest3, ImageTest4 } from "../../assets";
 import { Chart } from "../components/chart";
 import {
   Button,
@@ -12,6 +12,7 @@ import {
   CardBestSeller,
   CardCollectionBest,
   CardNewProduct,
+  CardBestBrand,
 } from "../components/components";
 
 const TEST: Chart[] = [
@@ -99,6 +100,16 @@ function Pages() {
       <div style={{ width: "349px", height: "281px" }}>
         <CardImage image={ImageTest4} />
       </div>
+      <CardBestBrand 
+      images={[
+        `${ImageBrandalibaba}`,
+        `${ImageBrandalibaba}`,
+        `${ImageBrandArvan}`,
+        `${ImageBrandalibaba}`,
+        `${ImageBrandalibaba}`,
+        `${ImageBrandalibaba}`,
+        `${ImageBrandArvan}`
+        ]} />
     </div>
   );
 };
