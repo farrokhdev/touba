@@ -1,0 +1,33 @@
+.product-single1-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 16px;
+  /* identical to box height, or 160% */
+
+  text-align: center;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+
+  /* Border */
+
+  color: #d6d6d6;
+}
+.product-single1-button {
+  background: linear-gradient(264.93deg, #fed402 26.79%, #fe9901 94.29%);
+  border-radius: 8px;
+  border-color: transparent;
+
+}
+.product-single1-card-region {
+  background: #f3f4f6;
+  border-radius: 63px;
+  padding: 4%;
+}
+.product-single1-red-circle{
+  width: 2rem;
+  height: 2rem;
+  background: #D80027;
+  border-radius: 50%;
+}

@@ -1,0 +1,49 @@
+.priceCart{
+    box-sizing: border-box;
+
+    /* White */
+    padding: 5%;
+    background: #FFFFFF;
+    /* Border */
+    
+    border: 1px solid #D6D6D6;
+    border-radius: 12px;
+}
+.smalText{
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    /* identical to box height, or 157% */
+  
+    letter-spacing: 0.1px;
+  
+    /* Sorme2 */
+  
+    color: #6b798c;
+
+}
+.bigText{
+
+
+/* Body/ Product Title */
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 800;
+font-size: 22px;
+line-height: 30px;
+/* or 136% */
+
+letter-spacing: 0.15px;
+
+/* Sorme */
+
+color: #3C557A;
+
+}
+.border-price{
+    border-right: 1px solid #D6D6D6;
+
+}

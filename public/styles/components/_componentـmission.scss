@@ -1,0 +1,21 @@
+.mission-card{
+    background: #FFFFFF;
+border-radius: 16px;
+padding: 6%;
+}
+.circle-mission-parrent{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: #21C085;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.circle-mission-child {
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background: #FFFFFF;
+}

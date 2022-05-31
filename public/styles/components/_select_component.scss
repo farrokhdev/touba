@@ -1,0 +1,25 @@
+.select-component {
+    width: 100%;
+    cursor: pointer;
+    &-button {
+        width: 100%;
+        height: 64px !important;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        border: 1px solid $gray;
+        border-radius: 8px;
+        background-color: transparent;
+        cursor: pointer;
+        @include FontStyle(16px, 400, $sorme);
+        &-icon {
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        &-text {
+            @include FontStyle(16px, 400, $sorme);
+            margin: 0 10px;
+            cursor: pointer;
+        }
+    }
+}

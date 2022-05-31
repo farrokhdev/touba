@@ -1,0 +1,148 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.headerText {
+  /* Body/subtitle */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  /* identical to box height, or 157% */
+
+  letter-spacing: 0.1px;
+
+  /* Red */
+
+  color: #fc4a56;
+}
+.rowDetail {
+  /* Body/ Product Title */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 30px;
+  margin-top: 4%;
+  /* or 136% */
+
+  letter-spacing: 0.15px;
+
+  /* Sorme */
+
+  color: #3c557a;
+}
+.headerLogo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 1% 3%;
+  gap: 10px;
+
+  background: linear-gradient(264.93deg, #fed402 26.79%, #fe9901 94.29%);
+  border-radius: 8px;
+}
+.castel {
+  /* Sorme */
+
+  background: #3c557a;
+  border-radius: 8px;
+}
+
+.textContent {
+  /* Body/subtitle */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 22px;
+  /* identical to box height, or 157% */
+
+  letter-spacing: 0.1px;
+
+  /* Sorme2 */
+  border-right: 1px solid #d6d6d6;
+
+  color: #6b798c;
+}
+.rowRation {
+  border-bottom: 1px solid #d6d6d6;
+}
+.text {
+  /* Body/subtitle */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  /* identical to box height, or 157% */
+
+  letter-spacing: 0.1px;
+
+  /* Sorme2 */
+
+  color: #6b798c;
+}
+.dropdown {
+  box-sizing: border-box;
+  
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+  /* White */
+
+  background: #ffffff;
+  /* Border */
+
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+}
+.center{
+  display: flex;
+  align-items: center;
+}
+.ball{
+
+box-sizing: border-box;
+
+width: 46px;
+height: 46px;
+
+background: #FFC700;
+/* Sorme2 */
+
+border: 3px solid #6B798C;
+border-radius: 50%;
+margin-left: 8%;
+}
+.fill4{
+  position: relative;
+  left: -2.5%;
+  
+}
+.more{
+
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 22px;
+/* identical to box height, or 157% */
+
+letter-spacing: 0.1px;
+
+/* Green Brand */
+
+color: #21C085;
+
+}

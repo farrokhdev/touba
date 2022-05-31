@@ -1,0 +1,68 @@
+.certificate-box {
+  box-sizing: border-box;
+
+  /* White */
+
+  background: #ffffff;
+  /* Border */
+
+  border: 1px solid #d6d6d6;
+  border-radius: 12px;
+}
+.fillCircle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  /* Green Brand */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #21c085;
+  
+}
+.text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  /* identical to box height, or 157% */
+
+  letter-spacing: 0.1px;
+
+  /* Sorme2 */
+  text-align: center;
+
+  color: #6b798c;
+  margin-left:8%;
+}
+.seemore{
+
+/* Body/subtitle */
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 22px;
+/* identical to box height, or 157% */
+
+letter-spacing: 0.1px;
+
+/* Green Brand */
+
+color: #21C085;
+}
+.card-specifications {
+  background: rgba(243, 244, 246,.5);
+  padding: 2%;
+  display: flex;
+  align-items: center;
+
+}
+.card-specifications-white{
+  background:   rgba(255, 255, 255,.5);
+  padding: 2%;
+  display: flex;
+  align-items: center;
+}

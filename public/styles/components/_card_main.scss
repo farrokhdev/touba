@@ -1,0 +1,26 @@
+.card-main {
+  padding-top: 2%;
+  background: #ffffff;
+  border-radius: 12px;
+}
+
+.tabs {
+  padding: 2%  0 4.5%;
+  border-bottom: 1px solid #d6d6d6;
+}
+.tabActive {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+
+  /* Green Brand */
+
+  color: #21c085;
+  border-bottom: 3px solid #21c085;
+}

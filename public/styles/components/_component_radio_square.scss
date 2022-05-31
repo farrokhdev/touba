@@ -1,0 +1,23 @@
+.square-radio {
+  width: 20px;
+  height: 20px;
+  border-radius: 20%;
+  border: 1px solid $gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.square-radio-active {
+  width: 10px;
+  height: 10px;
+  border-radius: 20%;
+  background-color: $green;
+}
+.check-box {
+  display: flex;
+  align-items: center;
+}
+.check-box > div {
+  margin: 1%;
+}

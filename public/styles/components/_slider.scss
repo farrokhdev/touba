@@ -1,0 +1,28 @@
+.image {
+  background-color: #e5e5e5;
+  border-radius: 12px;
+}
+.arrowCircle {
+  width: 30px;
+  height:30px;
+  border-radius: 50%;
+  border: 1.5px solid #6b798c;
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+}
+.imageSlider {
+  box-sizing: border-box;
+  
+
+width: 100%;
+  background: url('/img/Rectangle1417.png');
+  /* Green Brand */
+  border: 1px solid #21c085;
+  border-radius: 8px;
+}
+.arrowLeft{
+  height: 20px;
+  width: 20px;
+}

@@ -1,0 +1,17 @@
+.name-our-team {
+  position: absolute;
+  bottom: 10%;
+  left: 1%;
+  letter-spacing: -0.01em;
+  @include FontStyle(24px, 700, '#ffffff');
+
+  color: #ffffff;
+}
+.postion-our-team{
+font-style: normal;
+@include FontStyle(12px,400, '#ffffff');
+color: #FFFFFF;
+position: absolute;
+bottom: 6%;
+left: 1%;
+}

@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "@types/jest": "^27.5.1",
-    "@types/node": "^16.11.36",
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.5",
     "react": "^18.1.0",
@@ -12,8 +11,9 @@
     "utilities_js": "git://github.com/SinaMN75/Utilities_js.git"
   },
   "devDependencies": {
-    "typescript": "^4.7.2",
-    "react-scripts": "5.0.1"
+    "@types/node": "^17.0.36",
+    "react-scripts": "^5.0.1",
+    "typescript": "^4.7.2"
   },
   "scripts": {
     "start": "react-scripts start",

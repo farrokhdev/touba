@@ -1,0 +1,53 @@
+.card-border {
+  background: #ffffff;
+  border-radius: 12px;
+}
+.circle {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #f3f4f6;
+  padding: 10%;
+}
+.boldText {
+  /* Body/subtitle */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  /* identical to box height, or 157% */
+
+  letter-spacing: 0.1px;
+
+  /* Sorme */
+
+  color: #3c557a;
+}
+.border {
+  border-right: 1px solid #d6d6d6;
+}
+.footer {
+  background: rgba(33, 192, 133,0.1);
+  border-radius: 0px 0px 12px 12px;
+
+}
+.bold-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.15px;
+
+  /* Sorme */
+
+  color: #3c557a;
+  z-index: 1;
+}

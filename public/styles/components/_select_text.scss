@@ -1,0 +1,34 @@
+.select-text {
+    width: 360px;
+    height: 64px;
+    border: 1px solid $gray;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-input-text {
+        width: 50%;
+        height: 100%;
+        border: none;
+        background-color: transparent;
+        &::placeholder {
+          @include FontStyle(16px, 400, $sorme);  
+          text-align: center;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    &-divider {
+        width: 1px;
+        height: 90%;
+        background-color: $gray;
+        margin: auto 5px;
+    }
+    .select-component {
+        width: 50%;
+        >button {
+            border: none;
+        }
+    }
+}

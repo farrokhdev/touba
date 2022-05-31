@@ -1,0 +1,20 @@
+.search-input-card {
+  background: #ffffff;
+  mix-blend-mode: normal;
+  /* Border */
+
+  border: 1px solid #d6d6d6;
+  border-radius: 16px;
+}
+.search-input {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+.search-input::placeholder {
+  color: red;
+  /* Sorme */
+  @include FontStyle(16px, 400, $sorme);
+  color: #3c557a;
+}

@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "ACAA,AAAA,iBAAiB,CAAC;EACd,KAAK,EAAE,IAAI;CAOd;;AANI,AAAD,wBAAQ,CAAC;EACL,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,KAAK;EACtB,WAAW,EAAE,MAAM;CACtB",
     "sources": [
-        "components-dir.scss"
+        "components-dir.scss",
+        "_select_component.scss"
     ],
     "names": [],
     "file": "components-dir.css"

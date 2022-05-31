@@ -1,1 +1,9 @@
-export {} from '';
+export { default as IconArrow } from './icons/icon-arrow.svg';
+export { default as IconHeart } from './icons/icon-heart.svg';
+export { default as IconSearch } from './icons/icon-search.svg';
+export { default as IconSharpSign } from './icons/icon-sharp-sign.svg';
+export { default as ImageBackgroundBest } from './images/image-background-best.png';
+export { default as ImageControll } from './images/image-controll-test.png';
+export { default as ImageTest2 } from './images/image-test-2.png';
+export { default as ImageTest3 } from './images/image-test-3.png';
+export { default as ImageTest } from './images/image-test.png';

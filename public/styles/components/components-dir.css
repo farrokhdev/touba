@@ -1,1 +1,17 @@
-/* No CSS *//*# sourceMappingURL=components-dir.css.map */
+.select-component {
+  width: 100%;
+}
+
+.select-component-button {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=components-dir.css.map */

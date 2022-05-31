@@ -1,0 +1,15 @@
+.button-component {
+    width: 209px;
+    height: 63px;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $green;
+    cursor: pointer;
+    &-text {
+        @include FontStyle(18px, 600, $white);
+        cursor: pointer;
+    }
+}

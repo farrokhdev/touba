@@ -1,0 +1,49 @@
+.card-product {
+    width: 507px;
+    height: 211px;
+    background-color: $white;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    &-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto 0;
+        width: 40%;
+        height: 100%;
+    }
+    &-content {
+        width: 60%;
+        height: 90%;
+        &-header {
+            width: 95%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            &-text {
+                @include FontStyle(10px, 700, $green);
+            }
+            &-icon {
+                cursor: pointer;
+            }
+        }
+        &-title {
+            width: 95%;
+            &-text {
+                @include FontStyle(17px, 800, $sorme);
+                margin: 8px 0;
+            }
+        }
+        &-description {
+            width: 95%;
+            >span {
+                margin: 0 2px;
+            }
+            &-text {
+                @include FontStyle(12px, 500, $lightSorme)
+            }
+        }
+    }
+}
