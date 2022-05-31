@@ -11,3 +11,7 @@ export { default as ImageTest4 } from './images/image-test-4.png';
 export { default as ImageBrandArvan } from './images/image-brand-arvan.png';
 export { default as ImageBrandalibaba} from './images/image-brand-ali.png';
 export { default as IconTwoPerson} from './icons/icon-two-person.svg';
+export { default as IconStar} from './icons/icon-star.svg';
+export { default as IconGem} from './icons/icon-gem.svg';
+export { default as IconQuestionMark} from './icons/icon-question-mark.svg';
+export { default as ImageBrandDisacount} from './images/image-brand-disacount.png';
