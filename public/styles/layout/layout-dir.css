@@ -1,1 +1,35 @@
-/* No CSS *//*# sourceMappingURL=layout-dir.css.map */
+.top-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-nav-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 142.22px;
+  height: 43.95px;
+  cursor: pointer;
+}
+
+.top-nav-brand-image {
+  width: 100%;
+}
+
+.top-nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=layout-dir.css.map */
