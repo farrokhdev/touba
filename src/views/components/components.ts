@@ -49,3 +49,5 @@ export { default as CardCalculate } from './card_calculate';
 export { default as ComponentBinaRazan } from './component_bina_razan';
 export { default as ButtonDropdown } from './button_dropdown';
 export { default as SelectCategories } from './slelect_categories';
+export { default as TextIconHorizontal } from './text_icon_horizontal';
+export { default as Hr } from './hr';
