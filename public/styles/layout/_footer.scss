@@ -1,0 +1,49 @@
+.footer {
+    width: 100%;
+    min-height: 744px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: $green;
+    margin-top: 100px;
+    &-section-bottom {
+        width: 30%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        &-content {
+            width: 70%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            &-brand {
+                width: 40%;
+            }
+            &-description {
+                @include FontStyle(16px, 400, $white);
+            }
+            &-social {
+                width: 70%;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        &-image-boxes {
+            width: 100%;
+            >img {
+                width: 100%;
+            }
+        }
+    }
+    &-section-top {
+        width: 70%;
+        height: 743px;
+        background-color: $sorme;
+        position: relative;
+        top: -90px;
+        border-radius: 10px;
+    }
+}

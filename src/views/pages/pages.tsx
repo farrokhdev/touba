@@ -22,7 +22,7 @@ import {
   CardLike,
   ComponentBinaRazan
 } from "../components/components";
-import { BottomNav } from "../layout/layout";
+import { BottomNav, Footer } from "../layout/layout";
 import TopNav from "../layout/top_nav";
 
 const TEST: CHART[] = [
@@ -151,6 +151,7 @@ function Pages() {
       <div style={{ width: "50%" }}>
         <CardCalculate amount={1299.9} value={1} />
       </div>
+      <Footer/>
     </div>
   );
 }
