@@ -8,7 +8,7 @@ interface Props extends HTMLAttributes<HTMLElement> {
     active: boolean;
 }
 
-function TextIconHorizontal({ icon, title, showArrow, active, onClick }: Props): ReactElement {
+function TextIconVertical({ icon, title, showArrow, active, onClick }: Props): ReactElement {
 
     const handleOnClick = useCallback((event: MouseEvent<HTMLElement>) => {
         event.stopPropagation();
@@ -19,30 +19,30 @@ function TextIconHorizontal({ icon, title, showArrow, active, onClick }: Props):
         <div
             className={
                 active === true ?
-                    "text-icon-horizontal active"
+                    "text-icon-vertical active"
                     :
-                    "text-icon-horizontal"}
+                    "text-icon-vertical"}
             onClick={handleOnClick}
         >
-            <h6 className="text-icon-horizontal-title">
+            <h6 className="text-icon-vertical-title">
                 <img
                     src={icon}
-                    className="text-icon-horizontal-title-icon"
+                    className="text-icon-vertical-title-icon"
                 />
                 {title}
             </h6>
             {showArrow === true ? (
                 active === true ? (
-                    <div className="text-icon-horizontal-background">
+                    <div className="text-icon-vertical-background">
                         <img
                             src={IconArrowWhite}
-                            className="text-icon-horizontal-background-icon"
+                            className="text-icon-vertical-background-icon"
                         />
                     </div>
                 ) : (
                     <img
                         src={IconArrowGreen}
-                        className="text-icon-horizontal-icon"
+                        className="text-icon-vertical-icon"
                     />
                 )
             ) : (null)
@@ -50,4 +50,4 @@ function TextIconHorizontal({ icon, title, showArrow, active, onClick }: Props):
         </div >
     )
 }
-export default memo(TextIconHorizontal);
+export default memo(TextIconVertical);
