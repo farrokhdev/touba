@@ -5,7 +5,7 @@ interface Props extends InputHTMLAttributes<HTMLInputElement> {
     value: string;
 }
 
-export function SelectText({ value, onChange }: Props): ReactElement {
+function SelectText({ value, onChange }: Props): ReactElement {
 
     const handleOnChange = useCallback((event: ChangeEvent<HTMLInputElement>) => {
         onChange?.(event)

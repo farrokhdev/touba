@@ -18,6 +18,9 @@ import {
   ButtonOutline,
   CardOfferHorizental,
   CardCalculate,
+  CardFAQ,
+  CardLike,
+  ComponentBinaRazan
 } from "../components/components";
 
 const TEST: CHART[] = [
@@ -38,7 +41,7 @@ const TEST: CHART[] = [
 function Pages() {
   return (
     <div>
-
+      <ComponentBinaRazan />
       <div style={{ width: "360px" }}>
         <SelectComponent type={"one"} />
       </div>
@@ -61,6 +64,7 @@ function Pages() {
         fromPrice={12}
         toPrice={24}
       />
+
       <div style={{ width: "770px" }}>
         <CardCollectionProduct title={"Low MOQ"} location={"#"}>
           <CardProductWithPrice
@@ -145,6 +149,6 @@ function Pages() {
       </div>
     </div>
   );
-};
+}
 
 export default Pages;

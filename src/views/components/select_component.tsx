@@ -1,12 +1,11 @@
 import { memo, ReactElement } from "react";
-import { IconArrow } from "../../assets";
-// import { default as IconArrow } from "../public/assets/icons/icon-arrow.svg";
+import { default as IconArrow } from "../../assets/icons/icon-arrow.svg";
 
 interface Props {
     type: "one" | "two";
 }
 
-export function SelectComponent({ type }: Props): ReactElement {
+function SelectComponent({ type }: Props): ReactElement {
     return (
         <div className="select-component">
             <button className="select-component-button">
