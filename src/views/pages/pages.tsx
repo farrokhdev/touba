@@ -1,4 +1,14 @@
-import { IconTwoPerson, ImageBrandalibaba, ImageBrandArvan, ImageControll, ImageTest, ImageTest2, ImageTest3, ImageTest4 } from "../../assets";
+import { useState } from "react";
+import {
+  IconTwoPerson,
+  ImageBrandalibaba,
+  ImageBrandArvan,
+  ImageControll,
+  ImageTest,
+  ImageTest2,
+  ImageTest3,
+  ImageTest4,
+} from "../../assets";
 import { ButtonIcon } from "../components/button_icon";
 import { CHART, Chart } from "../components/chart";
 import {
@@ -20,8 +30,14 @@ import {
   CardCalculate,
   CardFAQ,
   CardLike,
-  ComponentBinaRazan
+  ComponentBinaRazan,
 } from "../components/components";
+import GruopChat from "../components/group_chat";
+import IncrementDecrementProduct from "../components/increment_decrement_product";
+import NeededCapacity from "../components/needed_capacity";
+import PriceSummary from "../components/price_summary";
+import SingleProductPrice from "../components/single_product_price";
+import Dashboard from "../layout/dashboard/dashobord";
 import { BottomNav } from "../layout/layout";
 import TopNav from "../layout/top_nav";
 
@@ -38,9 +54,60 @@ const TEST: CHART[] = [
   { name: "OCT", size: 20 },
   { name: "NOV", size: 20 },
   { name: "DEC", size: 20 },
-]
+];
 
 function Pages() {
+  const [quantity, setQuantity] = useState(100);
+  const list = [
+    { id: 1, quantity: 2, price: 100 },
+    { id: 2, quantity: 5, price: 125 },
+    { id: 3, quantity: 4, price: 300 },
+  ];
+  const group = {
+    id: 1,
+    groupName: "betterSoft",
+    numOfNotRead: 30,
+    members: [
+      { id: 1, img: "https://s6.uupload.ir/files/1_bjvh.png" },
+      { id: 2, img: "https://s6.uupload.ir/files/2_t7zt.png" },
+      { id: 3, img: "https://s6.uupload.ir/files/3_oxc2.png" },
+      { id: 4, img: "https://s6.uupload.ir/files/3_oxc2.png" },
+      { id: 5, img: "https://s6.uupload.ir/files/3_oxc2.png" },
+      { id: 6, img: "https://s6.uupload.ir/files/3_oxc2.png" },
+      { id: 7, img: "https://s6.uupload.ir/files/3_oxc2.png" },
+      { id: 8, img: "https://s6.uupload.ir/files/3_oxc2.png" },
+      { id: 9, img: "https://s6.uupload.ir/files/3_oxc2.png" },
+      { id: 10, img: "https://s6.uupload.ir/files/3_oxc2.png" },
+      { id: 11, img: "https://s6.uupload.ir/files/3_oxc2.png" },
+      { id: 12, img: "https://s6.uupload.ir/files/3_oxc2.png" },
+      { id: 13, img: "https://s6.uupload.ir/files/3_oxc2.png" },
+      { id: 14, img: "https://s6.uupload.ir/files/3_oxc2.png" },
+      { id: 15, img: "https://s6.uupload.ir/files/3_oxc2.png" },
+      { id: 16, img: "https://s6.uupload.ir/files/3_oxc2.png" },
+      { id: 17, img: "https://s6.uupload.ir/files/3_oxc2.png" },
+    ],
+    messages: [
+      { id: 1, text: "message", senderName: "bill gates", time: "2 min" },
+      { id: 2, text: "hello", senderName: "bill gates", time: "2 min" },
+      { id: 3, text: "message", senderName: "bill gates", time: "2 min" },
+      { id: 4, text: "message", senderName: "bill gates", time: "2 min" },
+      { id: 5, text: "message", senderName: "bill gates", time: "2 min" },
+      { id: 6, text: "message", senderName: "bill gates", time: "2 min" },
+      { id: 7, text: "message", senderName: "bill gates", time: "2 min" },
+      { id: 8, text: "message", senderName: "bill gates", time: "2 min" },
+      { id: 9, text: "message", senderName: "bill gates", time: "2 min" },
+      { id: 10, text: "message", senderName: "bill gates", time: "2 min" },
+      { id: 11, text: "message", senderName: "bill gates", time: "2 min" },
+      { id: 12, text: "message", senderName: "bill gates", time: "2 min" },
+      { id: 13, text: "message", senderName: "bill gates", time: "2 min" },
+      { id: 14, text: "message", senderName: "bill gates", time: "2 min" },
+      { id: 15, text: "message", senderName: "bill gates", time: "2 min" },
+      { id: 16, text: "message", senderName: "bill gates", time: "2 min" },
+      { id: 17, text: "last message", senderName: "bill gates", time: "5 min" },
+    ],
+    isRead: false,
+  };
+
   return (
     <div>
       <TopNav />
@@ -114,7 +181,11 @@ function Pages() {
         <Chart item={TEST} />
       </div>
       <div style={{ width: "349px" }}>
-        <CardNewProduct image={ImageControll} items={TEST} title={"Name of Excess Capacity"} />
+        <CardNewProduct
+          image={ImageControll}
+          items={TEST}
+          title={"Name of Excess Capacity"}
+        />
       </div>
       <div style={{ width: "349px", height: "281px" }}>
         <CardImage image={ImageTest4} />
@@ -127,20 +198,19 @@ function Pages() {
           `${ImageBrandalibaba}`,
           `${ImageBrandalibaba}`,
           `${ImageBrandalibaba}`,
-          `${ImageBrandArvan}`
+          `${ImageBrandArvan}`,
         ]}
       />
       <ButtonIcon icon={IconTwoPerson} />
       <ButtonOutline title="REGISTER" />
-      <ButtonSelect
-        titleButton1={"Product"}
-        titleButton2={"Excess Capacity"}
-      />
+      <ButtonSelect titleButton1={"Product"} titleButton2={"Excess Capacity"} />
       <div style={{ width: "90%" }}>
         <CardOfferHorizental
           image={ImageTest}
           status={"Finish Product"}
-          description={"Pomegranate Juice Pet Bottle, Best material and design, Ready to Order"}
+          description={
+            "Pomegranate Juice Pet Bottle, Best material and design, Ready to Order"
+          }
           rate={4.2}
           country={"CHINA"}
           chart={TEST}
@@ -150,6 +220,22 @@ function Pages() {
       </div>
       <div style={{ width: "50%" }}>
         <CardCalculate amount={1299.9} value={1} />
+      </div>
+      <div>
+        <IncrementDecrementProduct
+          quantity={quantity}
+          setQuantity={setQuantity}
+        />
+        <SingleProductPrice
+          price={9999}
+          days="25 Days"
+          pairs="100 - 999"
+          selected={false}
+        />
+        <PriceSummary list={list} />
+        <Dashboard />
+        <NeededCapacity />
+        <GruopChat group={group} />
       </div>
     </div>
   );

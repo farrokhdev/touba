@@ -1,0 +1,82 @@
+.needed-Capacity {
+    position: relative;
+    width: 241px;
+    height: 64px;
+    background: $white;
+    border: 1px solid #d6d6d6;
+    border-radius: 8px;
+
+    label {
+        position: absolute;
+        top: -5px;
+        left: 20px;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.4px;
+        color: $sorme;
+        background-color: $white;
+    }
+    .input-Container {
+        input {
+            height: 100%;
+            width: 108px;
+            outline: none;
+            border: none;
+            padding: 20px 20px;
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: 0.44px;
+            color: $sorme;
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+        }
+        input[type="number"] {
+            -moz-appearance: textfield;
+        }
+        span {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px;
+            text-align: right;
+            letter-spacing: 0.1px;
+            color: $lightSorme;
+            opacity: 0.7;
+        }
+    }
+    .max {
+        border-left: 1px solid rgba(60, 85, 122, 0.1);
+        height: 42px;
+        div {
+            width: 62px;
+            height: 32px;
+            left: 1760px;
+            top: 498px;
+            background: $white;
+            border: 1px solid $green;
+            border-radius: 86px;
+            margin: 0 16px;
+        }
+
+        span {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px;
+            text-align: right;
+            letter-spacing: 0.1px;
+            color: $green;
+        }
+    }
+}

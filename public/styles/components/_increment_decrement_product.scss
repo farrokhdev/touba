@@ -1,0 +1,33 @@
+.increment-Decrement-Product {
+    width: 209px;
+    height: 48px;
+    background-color: $white;
+    border: 1px solid $gray;
+    border-radius: 5px;
+    button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        width: 44px;
+        padding: 0;
+        cursor: pointer;
+    }
+    span {
+        width: 121px;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.15px;
+        color: $sorme;
+        border-left: 1px solid $gray;
+        border-right: 1px solid $gray;
+    }
+    .add-Circle,
+    .remove-Circle {
+        width: 18px;
+        height: 18px;
+    }
+}
