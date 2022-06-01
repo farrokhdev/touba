@@ -1,0 +1,49 @@
+.bottom-nav {
+    width: 100%;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $sorme;
+    padding: 0 10px;
+    position: relative;
+    &-search {
+        width: 20%;
+    }
+    .bottom-nav-links {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .button-component {
+            background-color: transparent;
+
+            .button-component-text {
+                @include FontStyle(14px, 600, $white);
+                margin: 0;
+            }
+        }
+    }
+    &-dropdown {
+        width: 95%;
+        position: absolute;
+        .section-rectangle {
+            width: 100%;
+            height: 610px;
+            background-color: $darkWhite;
+            z-index: 2;
+            position: absolute;
+            top: 52px;
+            right: 6px;
+            .section-triggle {
+                width: 23.5px;
+                height: 23.5px;
+                background-color: $darkWhite;
+                transform: rotate(45deg);
+                position: absolute;
+                top: -10px;
+                left: 27px;
+            }
+        }
+    }
+}

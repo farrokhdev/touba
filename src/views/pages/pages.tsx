@@ -22,6 +22,7 @@ import {
   CardLike,
   ComponentBinaRazan
 } from "../components/components";
+import { BottomNav } from "../layout/layout";
 import TopNav from "../layout/top_nav";
 
 const TEST: CHART[] = [
@@ -43,6 +44,7 @@ function Pages() {
   return (
     <div>
       <TopNav />
+      <BottomNav />
       <ComponentBinaRazan />
       <div style={{ width: "360px" }}>
         <SelectComponent type={"one"} />
