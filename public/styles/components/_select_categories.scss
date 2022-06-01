@@ -1,0 +1,29 @@
+.select-categories {
+    width: 100%;
+    height: 52px;
+    position: relative;
+    &-button {
+        width: 100%;
+        height: 52px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        border-radius: 8px;
+        background-color: hsla(0, 0%, 100%, 0.1);
+        box-shadow: 0px 18px 27px rgba(36, 36, 36, 0.1);
+
+        &-text {
+            display: flex;
+            @include FontStyle(18px, 600, $white);
+            margin: 0;
+            &-icon {
+                margin: 0 10px;
+            }
+        }
+        &-icon-down {
+            margin: 0 10px;
+        }
+    }
+    
+}
