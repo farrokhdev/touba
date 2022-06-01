@@ -35,3 +35,4 @@ export { default as ImageDropDown4} from './images/image-dropdown-4.png';
 export { default as ImageDropDown5} from './images/image-dropdown-5.png';
 export { default as ImageDropDown6} from './images/image-dropdown-6.png';
 export { default as ImageDropDown7} from './images/image-dropdown-7.png';
+export { default as IconArrowBlack} from './icons/icon-arrow-black.svg';
