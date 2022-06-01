@@ -1,0 +1,23 @@
+.button-dropdown {
+    .button {
+        width: auto;
+        height: 21px;
+        border: none;
+        background-color: transparent;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 10px;
+        &-text {
+            @include FontStyle(14px, 600, $white);
+            margin: 0 10px;
+            white-space: nowrap;
+        }
+        &-icon-arrow {
+
+        }
+    }
+    .dropdown-item {
+        @include FontStyle(14px, 700, $sorme);
+    }
+}
