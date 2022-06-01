@@ -1,1 +1,1 @@
-export {} from '';
+export { default as TopNav } from './top_nav';
