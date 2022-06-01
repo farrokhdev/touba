@@ -23,3 +23,5 @@ export { default as IconTwitter} from './icons/icon-twitter.svg';
 export { default as IconYoutube} from './icons/icon-youtube.svg';
 export { default as IconBag} from './icons/icon-bag.svg';
 export { default as IconBar} from './icons/icon-bar.svg';
+export { default as IconArrowWhite} from './icons/icon-arrow-white.svg';
+export { default as IconCategory} from './icons/icon-category.svg';
