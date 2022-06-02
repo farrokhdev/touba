@@ -7,6 +7,18 @@
     font-size: $fontSize;
     color: $Color !important;
 }
+@mixin Display ($display: flex, $justify: start, $align: flex-start, $direction: row, $wrap: nowrap) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+@mixin Border ($size: none, $color: transparent, $radius: 0px) {
+  border: $size solid $color;
+  border-radius: $radius;
+}
 
 html,
 body {
