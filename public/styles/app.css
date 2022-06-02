@@ -3286,4 +3286,309 @@ a {
   -webkit-filter: invert(61%) sepia(71%) saturate(490%) hue-rotate(120deg) brightness(100%) contrast(100%);
           filter: invert(61%) sepia(71%) saturate(490%) hue-rotate(120deg) brightness(100%) contrast(100%);
 }
+
+.profile-Nav {
+  width: 81%;
+  height: 88px;
+  background: #ffffff;
+  border-radius: 12px;
+}
+
+.profile-Nav .link-Container {
+  padding: 0 38px;
+  width: 50%;
+}
+
+.profile-Nav .input-Container {
+  width: 360px;
+  height: 48px;
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+}
+
+.profile-Nav .input-Container input {
+  outline: none;
+  border: none;
+}
+
+.profile-Nav .follow-Btn {
+  padding: 18px 24px;
+  width: 172px;
+  height: 49px;
+  background: #21c085;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+.profile-Nav .follow-Btn img {
+  -webkit-filter: invert(0.9) contrast(2);
+          filter: invert(0.9) contrast(2);
+}
+
+.nav-Link {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #3c557a !important;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav-Link-Active {
+  border-bottom: 2px solid #21c085;
+}
+
+.aboutus-Page .section1 {
+  width: 98%;
+  height: 100vh;
+}
+
+.aboutus-Page .section1 .img-Container {
+  background-color: #21c085;
+  width: 50%;
+  height: 720px;
+  position: relative;
+}
+
+.aboutus-Page .section1 .img-Container .banner {
+  position: relative;
+  width: 50%;
+  height: 517px;
+  right: 260px;
+  top: 126px;
+}
+
+.aboutus-Page .section1 .img-Container .banner img {
+  z-index: 2;
+  position: absolute;
+  width: 800px;
+  height: 420px;
+}
+
+.aboutus-Page .section1 .img-Container .dashed-Circle {
+  margin-top: 150px;
+  margin-right: 150px;
+  width: 344px;
+  height: 344px;
+}
+
+.aboutus-Page .section1 .desc {
+  position: relative;
+  height: 720px;
+  width: 50%;
+  background-color: #f3f4f6;
+  padding-left: 70px;
+}
+
+.aboutus-Page .section1 .desc span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  color: #3c557a !important;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  line-height: 105px;
+}
+
+.aboutus-Page .mission-Container {
+  width: 98%;
+  height: 442px;
+  background: #3c557a;
+  position: relative;
+}
+
+.aboutus-Page .mission-Container .mission {
+  margin-top: 170px;
+  position: absolute;
+}
+
+.aboutus-Page .mission-Container .title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  color: #ffffff !important;
+  width: 90%;
+  padding-left: 20px;
+}
+
+.aboutus-Page .mission-Container .mission-Childs {
+  width: 90%;
+  margin-top: 30px;
+  height: 450px;
+}
+
+.aboutus-Page .mission-Container .mission-Child {
+  margin: 0 20px;
+  padding: 36px;
+  width: 33%;
+  height: 470px;
+  background: #ffffff;
+  border-radius: 16px;
+}
+
+.aboutus-Page .mission-Container .mission-Child div {
+  height: 150px;
+  width: 50%;
+  border-bottom: 1px solid #d6d6d6;
+  padding: 10px 0;
+}
+
+.aboutus-Page .mission-Container .mission-Child div span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #3c557a !important;
+}
+
+.aboutus-Page .describtion {
+  margin-top: 300px;
+  width: 90%;
+}
+
+.aboutus-Page .describtion img {
+  width: 588px;
+  height: 656px;
+}
+
+.aboutus-Page .describtion span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  color: #3c557a !important;
+}
+
+.aboutus-Page .ourteam {
+  height: 719px;
+  position: relative;
+}
+
+.aboutus-Page .ourteam .background {
+  position: relative;
+  width: 90%;
+  height: 78%;
+  background-color: #21c085;
+}
+
+.aboutus-Page .ourteam .content {
+  width: 95%;
+  background-color: transparent;
+  position: absolute;
+  right: 0%;
+  top: 110px;
+}
+
+.aboutus-Page .ourteam .content .ourteam-Desk {
+  height: 400px;
+}
+
+.aboutus-Page .ourteam .content .ourteam-Desk span:first-child {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  color: #ffffff !important;
+  line-height: 105px;
+}
+
+.aboutus-Page .ourteam .content .ourteam-Desk span:nth-child(2) {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff !important;
+  line-height: 193%;
+}
+
+.aboutus-Page .ourteam .content .ourteam-Desk button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.aboutus-Page .ourteam .content .team-Member {
+  position: relative;
+  width: 250px;
+  height: 500px;
+}
+
+.aboutus-Page .ourteam .content .team-Member img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px;
+}
+
+.aboutus-Page .ourteam .content .team-Member div {
+  width: 250px;
+  height: 100px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#000000));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.aboutus-Page .ourteam .content .team-Member div span:first-child {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff !important;
+  margin: 0 0 0 20px;
+}
+
+.aboutus-Page .ourteam .content .team-Member div span:last-child {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff !important;
+  margin: 0 0 10px 20px;
+}
+
+.aboutus-Page .sponsors {
+  width: 90%;
+  margin-bottom: 30px;
+}
+
+.aboutus-Page .sponsors span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  color: #3c557a !important;
+  margin: 20px 0;
+}
+
+.aboutus-Page .sponsors div {
+  width: 100%;
+  height: 145px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
+  border-radius: 16px;
+}
+
+.aboutus-Page .sponsors button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.aboutus-Page p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #3c557a !important;
+  max-width: 596px;
+  line-height: 39px;
+}
 /*# sourceMappingURL=app.css.map */

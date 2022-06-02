@@ -1,7 +1,0 @@
-@mixin FontStyle($fontSize, $fontWeight, $Color) {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: $fontWeight;
-    font-size: $fontSize;
-    color: $Color !important;
-}

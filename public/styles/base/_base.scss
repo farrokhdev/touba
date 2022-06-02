@@ -1,3 +1,11 @@
+@mixin FontStyle($fontSize, $fontWeight, $Color) {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  color: $Color !important;
+}
+
 html,
 body {
   padding: 0;
@@ -27,6 +35,7 @@ a {
   padding-right: 0 !important;
   padding-left: 0 !important;
 }
+
 .text-header {
   /* Body/caption */
 
