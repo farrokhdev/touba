@@ -6037,7 +6037,7 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #21C085;
-  margin-top: 100px;
+  margin-top: 250px;
 }
 
 @media (max-width: 1100px) {
@@ -6919,20 +6919,22 @@ a {
 
 .home-header {
   width: 100%;
-  min-height: 643px;
-  height: auto;
+  height: 643px;
   background-color: #21C085;
   padding: 0 100px;
-  margin: 0px;
+  margin-bottom: 100px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   .home-header {
     padding: 0;
+    min-height: 643px;
+    height: auto;
   }
 }
 
 .home-header-description {
+  padding-top: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
