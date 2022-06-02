@@ -15,7 +15,7 @@
   flex-wrap: $wrap;
 }
 
-@mixin Border ($size: none, $color: transparent, $radius: 0px) {
+@mixin Border ($size: 0px, $color: transparent, $radius: 0px) {
   border: $size solid $color;
   border-radius: $radius;
 }
@@ -23,7 +23,7 @@
 html,
 body {
   padding: 0;
-  margin: 0 10px;
+  margin: 0;
   background-color: #e5e5e5 !important;
 }
 
