@@ -1,0 +1,41 @@
+.single-Product-Price {
+    width: 298px;
+    height: 83px;
+
+    .product-Price {
+        width: 50%;
+        height: 100%;
+        background-color: $bgWhite;
+        border-radius: 8px 15px 15px 8px;
+        border-right: 1px dashed $gray;
+        span {
+            @include FontStyle(22px, 800, $sorme);
+            text-align: center;
+        }
+    }
+    .Product-desc {
+        width: 50%;
+        height: 100%;
+        background-color: $bgWhite;
+        border-radius: 15px 8px 8px 15px;
+        span {
+            @include FontStyle(14px, 500, $sorme);
+            text-align: center;
+        }
+    }
+}
+.single-Product-Price-Select {
+    width: 298px;
+    height: 83px;
+    .product-Price {
+        border: 1px solid $green !important;
+        border-right: none !important;
+        span {
+            color: $green;
+        }
+    }
+    .Product-desc {
+        border: 1px solid $green !important;
+        border-left: none !important;
+    }
+}

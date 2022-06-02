@@ -22,7 +22,7 @@ import {
   CardCalculate,
   CardFAQ,
   CardLike,
-  ComponentBinaRazan
+  ComponentBinaRazan,
 } from "../components/components";
 import { BottomNav, Footer } from "../layout/layout";
 import TopNav from "../layout/top_nav";
@@ -40,7 +40,7 @@ const TEST: CHART[] = [
   { name: "OCT", size: 20 },
   { name: "NOV", size: 20 },
   { name: "DEC", size: 20 },
-]
+];
 
 function Pages() {
   const location = useLocation();
