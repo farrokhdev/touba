@@ -1,7 +1,7 @@
 html,
 body {
   padding: 0;
-  margin: 0 10px;
+  margin: 0;
   background-color: #e5e5e5 !important;
 }
 
@@ -102,7 +102,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #21c085;
+  background-color: #21C085;
   cursor: pointer;
 }
 
@@ -111,12 +111,12 @@ a {
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
-  color: #ffffff !important;
+  color: #FFFFFF !important;
   cursor: pointer;
 }
 
 .select-text {
-  width: 360px;
+  width: 100%;
   height: 64px;
   border: 1px solid #d6d6d6;
   border-radius: 8px;
@@ -195,7 +195,7 @@ a {
 
 .input-text-label {
   position: relative;
-  width: 453px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -211,9 +211,9 @@ a {
 .input-text-label-input {
   width: 100%;
   height: 64px;
-  border: 1px solid #21c085;
+  border: 1px solid #21C085;
   border-radius: 8px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 
 .input-text-label-input:focus {
@@ -260,7 +260,7 @@ a {
   position: absolute;
   top: -6px;
   left: 24px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   width: 141px;
   height: 22px;
   display: -webkit-box;
@@ -867,7 +867,7 @@ a {
 .card-product {
   width: 507px;
   height: 211px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   border-radius: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -916,7 +916,7 @@ a {
   font-style: normal;
   font-weight: 700;
   font-size: 10px;
-  color: #21c085 !important;
+  color: #21C085 !important;
   margin: 0;
 }
 
@@ -1094,7 +1094,7 @@ a {
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
-  background-color: #21c085;
+  background-color: #21C085;
 }
 
 .square-radio {
@@ -1118,7 +1118,7 @@ a {
   width: 10px;
   height: 10px;
   border-radius: 20%;
-  background-color: #21c085;
+  background-color: #21C085;
 }
 
 .check-box {
@@ -1199,7 +1199,7 @@ a {
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
-  background: #21c085;
+  background: #21C085;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1337,7 +1337,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   -webkit-box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
           box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
   border-radius: 16px;
@@ -1348,7 +1348,7 @@ a {
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
-  color: #21c085 !important;
+  color: #21C085 !important;
 }
 
 .card-collection-product-header {
@@ -1388,7 +1388,7 @@ a {
 .card-best-seller {
   width: 78px;
   height: 78px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1411,7 +1411,7 @@ a {
   width: 36px;
   height: 24px;
   border-radius: 52px;
-  background-color: #21c085;
+  background-color: #21C085;
   position: absolute;
   top: 55px;
   left: 45px;
@@ -1431,7 +1431,7 @@ a {
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
-  color: #ffffff !important;
+  color: #FFFFFF !important;
   margin: 0;
 }
 
@@ -1610,7 +1610,7 @@ a {
 .card-best-brand {
   width: 100%;
   height: 144px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   -webkit-box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
           box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
   border-radius: 16px;
@@ -1639,7 +1639,7 @@ a {
 .button-icon {
   width: 60px;
   height: 60px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   border: 5px solid #E5E5E5;
   border-radius: 8px;
 }
@@ -1667,14 +1667,14 @@ a {
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
-  color: #21c085 !important;
+  color: #21C085 !important;
   cursor: pointer;
 }
 
 .button-select {
   width: 294px;
   height: 60px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   border-radius: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1692,7 +1692,7 @@ a {
   height: 44px;
   border: none;
   border-radius: 47px;
-  background-color: #21c085;
+  background-color: #21C085;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1710,7 +1710,7 @@ a {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  color: #ffffff !important;
+  color: #FFFFFF !important;
   margin: 0;
 }
 
@@ -1746,7 +1746,7 @@ a {
   height: 44px;
   border: none;
   border-radius: 47px;
-  background-color: #21c085;
+  background-color: #21C085;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1764,7 +1764,7 @@ a {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  color: #ffffff !important;
+  color: #FFFFFF !important;
   margin: 0;
 }
 
@@ -1798,7 +1798,7 @@ a {
 .card-offer-horizontal {
   width: 100%;
   height: 211px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   border-radius: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1862,7 +1862,7 @@ a {
   font-style: normal;
   font-weight: 700;
   font-size: 10px;
-  color: #21c085 !important;
+  color: #21C085 !important;
   margin: 8px 0;
 }
 
@@ -2082,7 +2082,7 @@ a {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  color: #ffffff !important;
+  color: #FFFFFF !important;
   margin: 0;
   position: absolute;
   top: 14px;
@@ -2126,7 +2126,7 @@ a {
   width: 136px;
   height: 64px;
   border-radius: 104px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   border: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2188,7 +2188,7 @@ a {
 .card-calculate-multiplication {
   width: 10.5px;
   height: 10.5px;
-  color: #ffffff;
+  color: #FFFFFF;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
@@ -2198,14 +2198,14 @@ a {
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
-  color: #ffffff !important;
+  color: #FFFFFF !important;
   margin: 0;
 }
 
 .card-calculate-equal {
   width: 10.5px;
   height: 10.5px;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .card-calculate-value {
@@ -2213,7 +2213,7 @@ a {
   font-style: normal;
   font-weight: 800;
   font-size: 22px;
-  color: #ffffff !important;
+  color: #FFFFFF !important;
 }
 
 .card-collection-best {
@@ -2374,7 +2374,7 @@ a {
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
-  color: #ffffff !important;
+  color: #FFFFFF !important;
   margin: 0 10px;
   white-space: nowrap;
 }
@@ -2420,7 +2420,7 @@ a {
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
-  color: #ffffff !important;
+  color: #FFFFFF !important;
   margin: 0;
 }
 
@@ -2464,7 +2464,7 @@ a {
 .text-icon-horizontal-background {
   width: 20px;
   height: 20px;
-  background-color: #21c085;
+  background-color: #21C085;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2523,7 +2523,7 @@ a {
 .text-icon-vertical-background {
   width: 20px;
   height: 20px;
-  background-color: #21c085;
+  background-color: #21C085;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2660,23 +2660,23 @@ a {
 }
 
 .single-Product-Price-Select .product-Price {
-  border: 1px solid #21c085 !important;
+  border: 1px solid #21C085 !important;
   border-right: none !important;
 }
 
 .single-Product-Price-Select .product-Price span {
-  color: #21c085;
+  color: #21C085;
 }
 
 .single-Product-Price-Select .Product-desc {
-  border: 1px solid #21c085 !important;
+  border: 1px solid #21C085 !important;
   border-left: none !important;
 }
 
 .increment-Decrement-Product {
   width: 209px;
   height: 48px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   border: 1px solid #d6d6d6;
   border-radius: 5px;
 }
@@ -2718,7 +2718,7 @@ a {
 .price-Summary .product-Price {
   z-index: 1;
   top: 0%;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   border-radius: 12px 12px 20px 17px;
   width: 100%;
   height: 194px;
@@ -2772,7 +2772,7 @@ a {
 }
 
 .price-Summary .btn-Container {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   width: 100%;
   border-top: 1px dashed #d6d6d6;
   height: 141px;
@@ -2784,11 +2784,11 @@ a {
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
-  color: #ffffff !important;
+  color: #FFFFFF !important;
   margin-bottom: 24px;
   width: 326px;
   height: 63px;
-  background: #21c085;
+  background: #21C085;
   border-radius: 8px;
   border: none;
   outline: none;
@@ -2799,7 +2799,7 @@ a {
   position: relative;
   width: 241px;
   height: 64px;
-  background: #ffffff;
+  background: #FFFFFF;
   border: 1px solid #d6d6d6;
   border-radius: 8px;
 }
@@ -2813,7 +2813,7 @@ a {
   position: absolute;
   top: -5px;
   left: 20px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   text-align: center;
 }
 
@@ -2858,8 +2858,8 @@ a {
 .needed-Capacity .max div {
   width: 62px;
   height: 32px;
-  background: #ffffff;
-  border: 1px solid #21c085;
+  background: #FFFFFF;
+  border: 1px solid #21C085;
   border-radius: 86px;
   margin: 0 16px;
 }
@@ -2869,14 +2869,14 @@ a {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  color: #21c085 !important;
+  color: #21C085 !important;
   text-align: right;
 }
 
 .group-Chat {
   width: 510px;
   height: 110px;
-  background: #ffffff;
+  background: #FFFFFF;
   border: 1px solid #d6d6d6;
   border-radius: 8px;
   padding: 19px 16px;
@@ -2895,10 +2895,10 @@ a {
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  color: #ffffff !important;
+  color: #FFFFFF !important;
   width: 34px;
   height: 26px;
-  background-color: #21c085;
+  background-color: #21C085;
   border-radius: 40px;
 }
 
@@ -2938,7 +2938,7 @@ a {
 .group-Chat .avatar-Container img {
   width: 40px;
   height: 40px;
-  border: 3px solid #ffffff;
+  border: 3px solid #FFFFFF;
   border-radius: 50%;
   margin-left: -12px;
   z-index: 1;
@@ -2947,7 +2947,7 @@ a {
 .group-Chat .avatar-Container div {
   width: 40px;
   height: 40px;
-  border: 3px solid #ffffff;
+  border: 3px solid #FFFFFF;
   border-radius: 50%;
   margin-left: -12px;
   background: #aae2f5;
@@ -2983,6 +2983,121 @@ a {
   }
 }
 
+.card-search-product {
+  position: relative;
+}
+
+.card-search-product-header {
+  position: absolute;
+  top: -49px;
+  width: 100%;
+  max-width: 555px;
+  height: 58x;
+  border-radius: 24px 24px 0 0;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.card-search-product-header .active-border {
+  border-bottom: 3px solid #21C085;
+}
+
+.card-search-product-header-button {
+  background-color: transparent;
+  border: 0px solid transparent;
+  border-radius: 0px;
+}
+
+.card-search-product-header-button-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #3c557a !important;
+  margin: 10px 0;
+}
+
+.card-search-product-header .active {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #21C085 !important;
+  background-color: transparent;
+  margin: 10px 0;
+}
+
+.card-search-product-inputs {
+  width: 100%;
+  height: 208px;
+  border-radius: 0 24px 24px 24px;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.card-search-product-inputs-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #3c557a !important;
+  margin: 0px 20px 40px 20px;
+}
+
+.card-search-product-inputs-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+}
+
+.card-search-product-inputs-group .button-component {
+  width: 40%;
+  margin: 0 10px;
+}
+
+.card-search-product-inputs-group > div {
+  margin: 0 10px;
+}
+
 .top-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2991,7 +3106,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   min-height: 173px;
   height: auto;
   -ms-flex-pack: distribute;
@@ -3261,7 +3376,7 @@ a {
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
-  color: #ffffff !important;
+  color: #FFFFFF !important;
   margin: 0;
 }
 
@@ -3273,12 +3388,12 @@ a {
 .bottom-nav-dropdown .section-rectangle {
   width: 100%;
   height: 610px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   z-index: 2;
   position: absolute;
   top: 52px;
   right: 6px;
-  border: 1px solid #f3f3f3;
+  border: 1px solid #F3F3F3;
   -webkit-box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
@@ -3287,7 +3402,7 @@ a {
 .bottom-nav-dropdown .section-rectangle .section-triggle {
   width: 23.5px;
   height: 23.5px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   position: absolute;
@@ -3413,7 +3528,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #21c085;
+  background-color: #21C085;
   margin-top: 100px;
 }
 
@@ -3481,7 +3596,7 @@ a {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  color: #ffffff !important;
+  color: #FFFFFF !important;
 }
 
 .footer-section-bottom-content-social {
@@ -3574,7 +3689,7 @@ a {
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
-  color: #ffffff !important;
+  color: #FFFFFF !important;
   margin: 0;
 }
 
@@ -3583,7 +3698,7 @@ a {
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
-  color: #ffffff !important;
+  color: #FFFFFF !important;
   margin: 30px 0;
 }
 
@@ -3596,7 +3711,7 @@ a {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  color: #ffffff !important;
+  color: #FFFFFF !important;
   margin: 0;
 }
 
@@ -3647,7 +3762,7 @@ a {
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
-  color: #ffffff !important;
+  color: #FFFFFF !important;
   margin: 20px 0;
 }
 
@@ -3656,7 +3771,7 @@ a {
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
-  color: #ffffff !important;
+  color: #FFFFFF !important;
   margin: 0;
   z-index: 2;
   margin: 40px 0 10px 0;
@@ -3672,7 +3787,7 @@ a {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  color: #ffffff !important;
+  color: #FFFFFF !important;
   margin: 0;
 }
 
@@ -3740,7 +3855,7 @@ a {
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
-  color: #ffffff !important;
+  color: #FFFFFF !important;
   margin: 10px 0;
   cursor: pointer;
 }
@@ -3835,7 +3950,7 @@ a {
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  color: #ffffff !important;
+  color: #FFFFFF !important;
   text-align: center;
   background: -webkit-gradient(linear, left top, right top, from(rgba(230, 57, 70, 0.2)), color-stop(97.57%, rgba(230, 57, 70, 0)));
   background: linear-gradient(90deg, rgba(230, 57, 70, 0.2) 0%, rgba(230, 57, 70, 0) 97.57%);
@@ -3843,11 +3958,75 @@ a {
 }
 
 .dashboard .active-Navlink:hover {
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .dashboard .active-Navlink img {
   -webkit-filter: invert(61%) sepia(71%) saturate(490%) hue-rotate(120deg) brightness(100%) contrast(100%);
           filter: invert(61%) sepia(71%) saturate(490%) hue-rotate(120deg) brightness(100%) contrast(100%);
+}
+
+.home-header {
+  width: 100%;
+  min-height: 643px;
+  height: auto;
+  background-color: #21C085;
+  padding: 0 100px;
+}
+
+.home-header-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.home-header-description-items {
+  width: 45%;
+  margin-top: 40px;
+}
+
+.home-header-description-items-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 54px;
+  color: #FFFFFF !important;
+}
+
+.home-header-description-items-text1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  color: #FFFFFF !important;
+}
+
+.home-header-description-items-text2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF !important;
+}
+
+.home-header-description-image {
+  margin: 120px 0 0 50px;
+  width: 50%;
+}
+
+.home-header-description-image > img {
+  width: 100%;
 }
 /*# sourceMappingURL=app.css.map */

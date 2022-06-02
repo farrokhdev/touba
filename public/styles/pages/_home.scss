@@ -1,0 +1,35 @@
+.home {
+    &-header {
+        width: 100%;
+        min-height: 643px;
+        height: auto;
+        background-color: $green;
+        padding: 0 100px;
+        &-description {
+            @include Display();
+            &-items {
+                width: 45%;
+                margin-top: 40px;
+                &-title {
+                    @include FontStyle(54px, 800, $white);
+                }
+                &-text1 {
+                    @include FontStyle(22px, 800, $white);
+                }
+                &-text2 {
+                    @include FontStyle(16px, 400, $white);
+                }
+            }
+            &-image {
+                margin: 120px 0 0 50px;
+                width: 50%;
+                >img {
+                    width: 100%;
+                }
+            }
+        }
+        &-inputs {
+
+        }
+    }
+}
