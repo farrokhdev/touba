@@ -53,3 +53,4 @@ export { default as IconHome} from './icons/icon-home.svg';
 export { default as IconFolder} from './icons/icon-folder.svg';
 export { default as IconActivity} from './icons/icon-activity.svg';
 export { default as IconChart} from './icons/icon-chart.svg';
+export { default as ImagePersonBox} from './images/image-person-box.png';
