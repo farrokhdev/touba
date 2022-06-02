@@ -6,6 +6,21 @@
     font-weight: $fontWeight;
     font-size: $fontSize;
     color: $Color !important;
+    @media (max-width: 375px) {
+      font-size: $fontSize - 4;
+    }
+    @media (min-width: 376px) {
+      font-size: $fontSize - 3;
+    }
+    @media (min-width: 600px) {
+      font-size: $fontSize - 2;
+    }
+    @media (min-width: 900px) {
+      font-size: $fontSize - 1;
+    }
+    @media (min-width: 1000px) {
+      font-size: $fontSize ;
+    }
 }
 @mixin Display ($display: flex, $justify: start, $align: flex-start, $direction: row, $wrap: nowrap) {
   display: $display;
