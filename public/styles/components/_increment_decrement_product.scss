@@ -13,15 +13,9 @@
         cursor: pointer;
     }
     span {
-        width: 121px;
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 30px;
+        @include FontStyle(20px, 400, $sorme);
         text-align: center;
-        letter-spacing: 0.15px;
-        color: $sorme;
+        width: 121px;
         border-left: 1px solid $gray;
         border-right: 1px solid $gray;
     }

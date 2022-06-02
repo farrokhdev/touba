@@ -9,14 +9,8 @@
         border-radius: 8px 15px 15px 8px;
         border-right: 1px dashed $gray;
         span {
-            font-family: "Poppins";
-            font-style: normal;
-            font-weight: 800;
-            font-size: 22px;
-            line-height: 32px;
+            @include FontStyle(22px, 800, $sorme);
             text-align: center;
-            letter-spacing: 0.1px;
-            color: $sorme;
         }
     }
     .Product-desc {
@@ -25,14 +19,8 @@
         background-color: $bgWhite;
         border-radius: 15px 8px 8px 15px;
         span {
-            font-family: "Poppins";
-            font-style: normal;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 32px;
+            @include FontStyle(14px, 500, $sorme);
             text-align: center;
-            letter-spacing: 0.1px;
-            color: $sorme;
         }
     }
 }

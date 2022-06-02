@@ -7,59 +7,30 @@
     padding: 19px 16px;
     .group-Detail {
         .group-Title {
-            font-family: "Poppins";
-            font-style: normal;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 26px;
-            letter-spacing: 0.44px;
-            color: $sorme;
+            @include FontStyle(16px, 700, $sorme);
         }
         .numOfNotRead {
+            @include FontStyle(16px, 600, $white);
             width: 34px;
             height: 26px;
-            background: $green;
+            background-color: $green;
             border-radius: 40px;
-            font-family: "Poppins";
-            font-style: normal;
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 26px;
-            letter-spacing: 0.44px;
-            color: $white;
         }
         .message-Detail {
             span {
                 &:first-child {
-                    font-family: "Poppins";
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 16px;
-                    line-height: 26px;
-                    letter-spacing: 0.44px;
-                    color: $lightSorme;
+                    @include FontStyle(16px, 700, $lightSorme);
                 }
                 &:last-child {
-                    font-family: "Poppins";
-                    font-style: normal;
-                    font-weight: 500;
-                    font-size: 16px;
-                    line-height: 26px;
-                    letter-spacing: 0.44px;
-                    color: $lightSorme;
+                    @include FontStyle(16px, 500, $lightSorme);
                 }
             }
         }
     }
     .recive-Time {
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 11px;
-        line-height: 16px;
+        @include FontStyle(11px, 700, $lightSorme);
         text-align: right;
         text-transform: uppercase;
-        color: $lightSorme;
         opacity: 0.6;
         margin-right: 5px;
     }
@@ -83,14 +54,8 @@
             background: #aae2f5;
             z-index: 5;
             span {
-                font-family: "Poppins";
-                font-style: normal;
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 22px;
+                @include FontStyle(14px, 500, $sorme);
                 text-align: center;
-                letter-spacing: 0.1px;
-                color: $sorme;
             }
         }
     }

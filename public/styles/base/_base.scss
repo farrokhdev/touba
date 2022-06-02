@@ -1,17 +1,7 @@
-@mixin FontStyle($fontSize, $fontWeight, $Color) {
-    width: auto;
-    height: auto;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: $fontWeight;
-    font-size: $fontSize;
-    color: $Color !important;
-}
-
 html,
 body {
   padding: 0;
-  margin:0 10px;
+  margin: 0 10px;
   background-color: #e5e5e5 !important;
 }
 

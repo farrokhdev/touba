@@ -7,32 +7,23 @@
     border-radius: 8px;
 
     label {
+        @include FontStyle(12px, 500,  $sorme);
         position: absolute;
         top: -5px;
         left: 20px;
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 16px;
-        letter-spacing: 0.4px;
-        color: $sorme;
         background-color: $white;
+        text-align: center;
     }
     .input-Container {
         input {
+            @include FontStyle(16px, 400,  $sorme);
             height: 100%;
             width: 108px;
             outline: none;
             border: none;
             padding: 20px 20px;
-            font-family: "Poppins";
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 26px;
-            letter-spacing: 0.44px;
-            color: $sorme;
+            text-align: center;
+
             &::-webkit-outer-spin-button,
             &::-webkit-inner-spin-button {
                 -webkit-appearance: none;
@@ -43,14 +34,8 @@
             -moz-appearance: textfield;
         }
         span {
-            font-family: "Poppins";
-            font-style: normal;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 22px;
+            @include FontStyle(14px, 500,$lightSorme);
             text-align: right;
-            letter-spacing: 0.1px;
-            color: $lightSorme;
             opacity: 0.7;
         }
     }
@@ -60,8 +45,6 @@
         div {
             width: 62px;
             height: 32px;
-            left: 1760px;
-            top: 498px;
             background: $white;
             border: 1px solid $green;
             border-radius: 86px;
@@ -69,14 +52,8 @@
         }
 
         span {
-            font-family: "Poppins";
-            font-style: normal;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 22px;
+            @include FontStyle(14px, 500,  $green);
             text-align: right;
-            letter-spacing: 0.1px;
-            color: $green;
         }
     }
 }
