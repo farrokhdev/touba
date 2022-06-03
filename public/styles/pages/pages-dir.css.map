@@ -1,9 +1,9 @@
 {
     "version": 3,
-    "mappings": "ACCK,AAAD,YAAQ,CAAC;EACL,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,KAAK;EACjB,MAAM,EAAE,IAAI;CACf",
+    "mappings": "ACAA,AAAA,aAAa,CAAC;EACV,gBAAgB,EAAE,GAAG;CASxB",
     "sources": [
         "pages-dir.scss",
-        "_home.scss"
+        "_aboutus.scss"
     ],
     "names": [],
     "file": "pages-dir.css"

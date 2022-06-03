@@ -6917,6 +6917,90 @@ a {
           filter: invert(61%) sepia(71%) saturate(490%) hue-rotate(120deg) brightness(100%) contrast(100%);
 }
 
+.profile-Nav {
+  width: 81%;
+  height: 88px;
+  background: #FFFFFF;
+  border-radius: 12px;
+}
+
+.profile-Nav .link-Container {
+  padding: 0 38px;
+  width: 50%;
+}
+
+.profile-Nav .input-Container {
+  width: 360px;
+  height: 48px;
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+}
+
+.profile-Nav .input-Container input {
+  outline: none;
+  border: none;
+}
+
+.profile-Nav .follow-Btn {
+  padding: 18px 24px;
+  width: 172px;
+  height: 49px;
+  background: #21C085;
+  border-radius: 8px;
+  color: #FFFFFF;
+}
+
+.profile-Nav .follow-Btn img {
+  -webkit-filter: invert(0.9) contrast(2);
+          filter: invert(0.9) contrast(2);
+}
+
+.nav-Link {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #3c557a !important;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+@media (max-width: 375px) {
+  .nav-Link {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 376px) {
+  .nav-Link {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 600px) {
+  .nav-Link {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 900px) {
+  .nav-Link {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .nav-Link {
+    font-size: 14px;
+  }
+}
+
+.nav-Link-Active {
+  border-bottom: 2px solid #21C085;
+}
+
 .home-header {
   width: 100%;
   height: 643px;
@@ -7118,5 +7202,578 @@ a {
 
 .home-header-description-image > img {
   width: 100%;
+}
+
+.aboutus-Page .section1 {
+  width: 98%;
+  height: 100vh;
+}
+
+.aboutus-Page .section1 .img-Container {
+  background-color: #21C085;
+  width: 50%;
+  height: 720px;
+  position: relative;
+}
+
+.aboutus-Page .section1 .img-Container .banner {
+  position: relative;
+  width: 50%;
+  height: 517px;
+  right: 260px;
+  top: 126px;
+}
+
+.aboutus-Page .section1 .img-Container .banner img {
+  z-index: 2;
+  position: absolute;
+  width: 800px;
+  height: 420px;
+}
+
+.aboutus-Page .section1 .img-Container .dashed-Circle {
+  margin-top: 150px;
+  margin-right: 150px;
+  width: 344px;
+  height: 344px;
+}
+
+.aboutus-Page .section1 .desc {
+  position: relative;
+  height: 720px;
+  width: 50%;
+  background-color: #f3f4f6;
+  padding-left: 70px;
+}
+
+.aboutus-Page .section1 .desc span {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  color: #3c557a !important;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  line-height: 105px;
+}
+
+@media (max-width: 375px) {
+  .aboutus-Page .section1 .desc span {
+    font-size: 92px;
+  }
+}
+
+@media (min-width: 376px) {
+  .aboutus-Page .section1 .desc span {
+    font-size: 93px;
+  }
+}
+
+@media (min-width: 600px) {
+  .aboutus-Page .section1 .desc span {
+    font-size: 94px;
+  }
+}
+
+@media (min-width: 900px) {
+  .aboutus-Page .section1 .desc span {
+    font-size: 95px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .aboutus-Page .section1 .desc span {
+    font-size: 96px;
+  }
+}
+
+.aboutus-Page .mission-Container {
+  width: 98%;
+  height: 442px;
+  background: #3c557a;
+  position: relative;
+}
+
+.aboutus-Page .mission-Container .mission {
+  margin-top: 170px;
+  position: absolute;
+}
+
+.aboutus-Page .mission-Container .title {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  color: #FFFFFF !important;
+  width: 90%;
+  padding-left: 20px;
+}
+
+@media (max-width: 375px) {
+  .aboutus-Page .mission-Container .title {
+    font-size: 44px;
+  }
+}
+
+@media (min-width: 376px) {
+  .aboutus-Page .mission-Container .title {
+    font-size: 45px;
+  }
+}
+
+@media (min-width: 600px) {
+  .aboutus-Page .mission-Container .title {
+    font-size: 46px;
+  }
+}
+
+@media (min-width: 900px) {
+  .aboutus-Page .mission-Container .title {
+    font-size: 47px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .aboutus-Page .mission-Container .title {
+    font-size: 48px;
+  }
+}
+
+.aboutus-Page .mission-Container .mission-Childs {
+  width: 90%;
+  margin-top: 30px;
+  height: 450px;
+}
+
+.aboutus-Page .mission-Container .mission-Child {
+  margin: 0 20px;
+  padding: 36px;
+  width: 33%;
+  height: 470px;
+  background: #FFFFFF;
+  border-radius: 16px;
+}
+
+.aboutus-Page .mission-Container .mission-Child div {
+  height: 150px;
+  width: 50%;
+  border-bottom: 1px solid #d6d6d6;
+  padding: 10px 0;
+}
+
+.aboutus-Page .mission-Container .mission-Child div span {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #3c557a !important;
+}
+
+@media (max-width: 375px) {
+  .aboutus-Page .mission-Container .mission-Child div span {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 376px) {
+  .aboutus-Page .mission-Container .mission-Child div span {
+    font-size: 21px;
+  }
+}
+
+@media (min-width: 600px) {
+  .aboutus-Page .mission-Container .mission-Child div span {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 900px) {
+  .aboutus-Page .mission-Container .mission-Child div span {
+    font-size: 23px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .aboutus-Page .mission-Container .mission-Child div span {
+    font-size: 24px;
+  }
+}
+
+.aboutus-Page .describtion {
+  margin-top: 300px;
+  width: 90%;
+}
+
+.aboutus-Page .describtion img {
+  width: 588px;
+  height: 656px;
+}
+
+.aboutus-Page .describtion span {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  color: #3c557a !important;
+}
+
+@media (max-width: 375px) {
+  .aboutus-Page .describtion span {
+    font-size: 56px;
+  }
+}
+
+@media (min-width: 376px) {
+  .aboutus-Page .describtion span {
+    font-size: 57px;
+  }
+}
+
+@media (min-width: 600px) {
+  .aboutus-Page .describtion span {
+    font-size: 58px;
+  }
+}
+
+@media (min-width: 900px) {
+  .aboutus-Page .describtion span {
+    font-size: 59px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .aboutus-Page .describtion span {
+    font-size: 60px;
+  }
+}
+
+.aboutus-Page .ourteam {
+  height: 719px;
+  position: relative;
+}
+
+.aboutus-Page .ourteam .background {
+  position: relative;
+  width: 90%;
+  height: 78%;
+  background-color: #21C085;
+}
+
+.aboutus-Page .ourteam .content {
+  width: 95%;
+  background-color: transparent;
+  position: absolute;
+  right: 0%;
+  top: 110px;
+}
+
+.aboutus-Page .ourteam .content .ourteam-Desk {
+  height: 400px;
+}
+
+.aboutus-Page .ourteam .content .ourteam-Desk span:first-child {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  color: #FFFFFF !important;
+  line-height: 105px;
+}
+
+@media (max-width: 375px) {
+  .aboutus-Page .ourteam .content .ourteam-Desk span:first-child {
+    font-size: 92px;
+  }
+}
+
+@media (min-width: 376px) {
+  .aboutus-Page .ourteam .content .ourteam-Desk span:first-child {
+    font-size: 93px;
+  }
+}
+
+@media (min-width: 600px) {
+  .aboutus-Page .ourteam .content .ourteam-Desk span:first-child {
+    font-size: 94px;
+  }
+}
+
+@media (min-width: 900px) {
+  .aboutus-Page .ourteam .content .ourteam-Desk span:first-child {
+    font-size: 95px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .aboutus-Page .ourteam .content .ourteam-Desk span:first-child {
+    font-size: 96px;
+  }
+}
+
+.aboutus-Page .ourteam .content .ourteam-Desk span:nth-child(2) {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #FFFFFF !important;
+  line-height: 193%;
+}
+
+@media (max-width: 375px) {
+  .aboutus-Page .ourteam .content .ourteam-Desk span:nth-child(2) {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 376px) {
+  .aboutus-Page .ourteam .content .ourteam-Desk span:nth-child(2) {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 600px) {
+  .aboutus-Page .ourteam .content .ourteam-Desk span:nth-child(2) {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 900px) {
+  .aboutus-Page .ourteam .content .ourteam-Desk span:nth-child(2) {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .aboutus-Page .ourteam .content .ourteam-Desk span:nth-child(2) {
+    font-size: 20px;
+  }
+}
+
+.aboutus-Page .ourteam .content .ourteam-Desk button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.aboutus-Page .ourteam .content .team-Member {
+  position: relative;
+  width: 250px;
+  height: 500px;
+}
+
+.aboutus-Page .ourteam .content .team-Member img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px;
+}
+
+.aboutus-Page .ourteam .content .team-Member div {
+  width: 250px;
+  height: 100px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#000000));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.aboutus-Page .ourteam .content .team-Member div span:first-child {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #FFFFFF !important;
+  margin: 0 0 0 20px;
+}
+
+@media (max-width: 375px) {
+  .aboutus-Page .ourteam .content .team-Member div span:first-child {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 376px) {
+  .aboutus-Page .ourteam .content .team-Member div span:first-child {
+    font-size: 21px;
+  }
+}
+
+@media (min-width: 600px) {
+  .aboutus-Page .ourteam .content .team-Member div span:first-child {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 900px) {
+  .aboutus-Page .ourteam .content .team-Member div span:first-child {
+    font-size: 23px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .aboutus-Page .ourteam .content .team-Member div span:first-child {
+    font-size: 24px;
+  }
+}
+
+.aboutus-Page .ourteam .content .team-Member div span:last-child {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF !important;
+  margin: 0 0 10px 20px;
+}
+
+@media (max-width: 375px) {
+  .aboutus-Page .ourteam .content .team-Member div span:last-child {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 376px) {
+  .aboutus-Page .ourteam .content .team-Member div span:last-child {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 600px) {
+  .aboutus-Page .ourteam .content .team-Member div span:last-child {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 900px) {
+  .aboutus-Page .ourteam .content .team-Member div span:last-child {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .aboutus-Page .ourteam .content .team-Member div span:last-child {
+    font-size: 16px;
+  }
+}
+
+.aboutus-Page .sponsors {
+  width: 90%;
+  margin-bottom: 30px;
+}
+
+.aboutus-Page .sponsors span {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  color: #3c557a !important;
+  margin: 20px 0;
+}
+
+@media (max-width: 375px) {
+  .aboutus-Page .sponsors span {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 376px) {
+  .aboutus-Page .sponsors span {
+    font-size: 31px;
+  }
+}
+
+@media (min-width: 600px) {
+  .aboutus-Page .sponsors span {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 900px) {
+  .aboutus-Page .sponsors span {
+    font-size: 33px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .aboutus-Page .sponsors span {
+    font-size: 34px;
+  }
+}
+
+.aboutus-Page .sponsors div {
+  width: 100%;
+  height: 145px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
+  border-radius: 16px;
+}
+
+.aboutus-Page .sponsors button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.aboutus-Page p {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #3c557a !important;
+  max-width: 596px;
+  line-height: 39px;
+}
+
+@media (max-width: 375px) {
+  .aboutus-Page p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 376px) {
+  .aboutus-Page p {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 600px) {
+  .aboutus-Page p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 900px) {
+  .aboutus-Page p {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .aboutus-Page p {
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=app.css.map */
