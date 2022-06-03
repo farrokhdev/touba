@@ -1,4 +1,4 @@
-.text-icon-horizontal{
+.text-icon-vertical{
     width: 100%;
     height: 71px;
     display: flex;
@@ -6,7 +6,7 @@
     justify-content: space-between;
     cursor: pointer;
     &-title {
-        @include FontStyle(14px, 600, $sorme);
+        @include FontStyle(12px, 600, $sorme);
         white-space: nowrap;
         margin: 0px 10px;
         &-icon {
@@ -23,11 +23,12 @@
         margin: 0 10px;
         border-radius: 50px;
         &-icon {
-            transform: rotate(270deg);
+            transform: rotate();
         }
     }
     &-icon {
         margin: 0 10px;
+        transform: rotate(90deg);
     }
 }
 .active {
