@@ -45,6 +45,7 @@ function Pages() {
     <div>
       <TopNav />
       <BottomNav />
+      
       <ComponentBinaRazan />
       <div style={{ width: "360px" }}>
         <SelectComponent type={"one"} />

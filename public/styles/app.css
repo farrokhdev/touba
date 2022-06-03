@@ -2385,8 +2385,10 @@ a {
 .bina-razan {
   background-image: url("../../unsplash.png");
   background-color: #2c246c;
-  height: 40vh;
   display: -webkit-box;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 45vh;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
@@ -5346,17 +5348,6 @@ a {
   margin: 0 5px;
 }
 
-.bina-razan {
-  background-image: url("../../unsplash.png");
-  background-color: #2c246c;
-  height: 40vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
 
 .bina-box {
   background: #ffffff;
@@ -5839,7 +5830,7 @@ a {
   height: 23.5px;
   background-color: #FFFFFF;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+          transform: rotate(deg);
   position: absolute;
   top: -10px;
   left: 27px;
