@@ -1,0 +1,87 @@
+.group-Chat {
+    width: 510px;
+    height: 110px;
+    background: $white;
+    border: 1px solid $gray;
+    border-radius: 8px;
+    padding: 19px 16px;
+    .group-Detail {
+        .group-Title {
+            @include FontStyle(16px, 700, $sorme);
+        }
+        .numOfNotRead {
+            @include FontStyle(16px, 600, $white);
+            width: 34px;
+            height: 26px;
+            background-color: $green;
+            border-radius: 40px;
+        }
+        .message-Detail {
+            span {
+                &:first-child {
+                    @include FontStyle(16px, 700, $lightSorme);
+                }
+                &:last-child {
+                    @include FontStyle(16px, 500, $lightSorme);
+                }
+            }
+        }
+    }
+    .recive-Time {
+        @include FontStyle(11px, 700, $lightSorme);
+        text-align: right;
+        text-transform: uppercase;
+        opacity: 0.6;
+        margin-right: 5px;
+    }
+    .avatar-Container {
+        width: 145px;
+        height: 40px;
+        img {
+            width: 40px;
+            height: 40px;
+            border: 3px solid $white;
+            border-radius: 50%;
+            margin-left: -12px;
+            z-index: 1;
+        }
+        div {
+            width: 40px;
+            height: 40px;
+            border: 3px solid $white;
+            border-radius: 50%;
+            margin-left: -12px;
+            background: #aae2f5;
+            z-index: 5;
+            span {
+                @include FontStyle(14px, 500, $sorme);
+                text-align: center;
+            }
+        }
+    }
+    .readed {
+        opacity: 0.5 !important;
+    }
+    .readedImg {
+        opacity: 0.7;
+    }
+}
+@media (max-width: 991.98px) {
+    .group-Chat {
+        width: 374px;
+    }
+    .message-Detail {
+        span {
+            &:first-child {
+                display: none !important;
+            }
+        }
+    }
+    .avatar-Container {
+        img {
+            &:first-child {
+                display: none !important;
+            }
+        }
+    }
+}

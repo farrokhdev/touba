@@ -1,0 +1,39 @@
+.profile-Nav {
+    width: 81%;
+    height: 88px;
+    background: $white;
+    border-radius: 12px;
+    .link-Container {
+        padding: 0 38px;
+        width: 50%;
+    }
+    .input-Container {
+        width: 360px;
+        height: 48px;
+        border: 1px solid $gray;
+        border-radius: 8px;
+        input {
+            outline: none;
+            border: none;
+        }
+    }
+    .follow-Btn {
+        padding: 18px 24px;
+        width: 172px;
+        height: 49px;
+        background: $green;
+        border-radius: 8px;
+        color: $white;
+        img {
+            filter: invert(0.9) contrast(2);
+        }
+    }
+}
+.nav-Link {
+    @include FontStyle(14px, 600, $sorme);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.nav-Link-Active {
+    border-bottom: 2px solid $green;
+}

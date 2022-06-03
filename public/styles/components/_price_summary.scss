@@ -1,0 +1,58 @@
+.price-Summary {
+    width: 374px;
+    height: 335px;
+    border-radius: 12px;
+    position: relative;
+
+    .product-Price {
+        z-index: 1;
+        top: 0%;
+        background-color: $white;
+        border-radius: 12px 12px 20px 17px;
+        width: 100%;
+        height: 194px;
+        position: relative;
+        z-index: 1;
+        .total-Quantity {
+            width: 90%;
+            margin-top: 68px;
+            .quantity {
+                @include FontStyle(20px, 400, $lightSorme);
+                text-align: right;
+            }
+        }
+        .subtotal {
+            width: 90%;
+            margin-top: 38px;
+            .price {
+                @include FontStyle(28px, 900, $sorme);
+                text-align: right;
+            }
+        }
+        .title {
+            @include FontStyle(16px, 600, $lightSorme);
+        }
+        .items {
+            @include FontStyle(14px, 500, $lightSorme);
+            opacity: 0.7;
+        }
+    }
+    .btn-Container {
+        background-color: $white;
+        width: 100%;
+        border-top: 1px dashed $gray;
+        height: 141px;
+        border-radius: 17px 17px 12px 12px;
+        button {
+            @include FontStyle(18px, 600, $white);
+            margin-bottom: 24px;
+            width: 326px;
+            height: 63px;
+            background: $green;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            text-transform: uppercase;
+        }
+    }
+}
