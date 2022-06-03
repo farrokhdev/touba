@@ -25,16 +25,29 @@
                 margin-top: 40px;
 
                 &-title {
+                    @media (max-width: 1440px) {
+                        @include FontStyle(40px, 800, $white);
+                    }
                     @include FontStyle(54px, 800, $white);
                 }
 
                 &-text1 {
+                    @media (max-width: 1440px) {
+                        @include FontStyle(17px, 800, $white);
+                    }
                     @include FontStyle(22px, 800, $white);
+                    text-align: justify;
+                    text-justify: inter-word;
                 }
 
                 &-text2 {
+                    @media (max-width: 1440px) {
+                        @include FontStyle(14px, 800, $white);
+                    }
                     @include FontStyle(16px, 400, $white);
                     margin-bottom: 80px;
+                    text-align: justify;
+                    text-justify: inter-word;
                 }
             }
 
@@ -47,11 +60,57 @@
                 width: 50%;
 
                 >img {
-                    width: 100%;
+                    @media (max-width: 1440px) {
+                        width: 100%;
+                    }
+                    width: 50%;
                 }
             }
         }
 
         &-inputs {}
+    }
+    &-section-earn {
+        padding: 105px 0;
+        width: 85%;
+        margin: 0 auto;
+        @include Display();
+        @media (max-width: 1000px) {
+            @include Display(flex, center, center, column-reverse);
+            padding: 30px 0;
+        }
+        &-content {
+            @media (max-width: 1000px) {
+               width: 100%
+            }
+            width: 50%;
+            &-header {
+                @include FontStyle(34px, 700, $sorme);
+            }
+            &-title {
+                @include FontStyle(60px, 800, $green);
+            }
+            &-description {
+                width: 90%;
+                &-text {
+                    @include FontStyle(16px, 400, $sorme);
+                    text-align: justify;
+                    text-justify: inter-word;
+                }
+            }
+        }
+        &-image {
+            @media (max-width: 1000px) {
+                width: 100%
+            }
+            width: 50%;
+            >img {
+                @media (max-width: 1000px) {
+                    height: auto;
+                }
+                width: 100%;
+                height: 360.87px;
+            }
+        }
     }
 }
