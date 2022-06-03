@@ -70,3 +70,4 @@ export { default as IconSnapp} from './icons/icon-snapp.svg';
 export { default as IconIranTalent} from './icons/icon-irantalent.svg';
 export { default as ImageAboutusDesk} from './images/aboutus-desk.png';
 export { default as ImageAboutus} from './images/aboutusPic.png';
+export { default as ImageLaboratory} from './images/image-laboratory.png';
