@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     background-color: $green;
-    margin-top: 100px;
+    margin-top: 250px;
 
     @media (max-width: 1100px) {
         flex-direction: column-reverse;
@@ -91,7 +91,7 @@
 
             &-description {
                 @media (max-width: 1100px) {
-                    width: 100%;
+                    width: 70%;
                 }
 
                 width: 50%;
@@ -100,6 +100,9 @@
                 position: relative;
 
                 &-body {
+                    @media (max-width: 1100px) {
+                        width: 100%;
+                    }
                     width: 60%;
                     margin: 80px 20px 0 20px;
 
@@ -124,16 +127,33 @@
                 }
 
                 &-image {
-                    @media (max-width: 1100px) {
-                        width: 40%;
+                    @media (max-width: 375px) {
                         position: relative;
-                        left: 0;
+                        width: 100%;
+                        top: 32px;
+                        left: 45px;
                     }
 
-                    width: 100%;
-                    position: absolute;
-                    top: -80px;
-                    left: 150px;
+                    @media (min-width: 376px) {
+                        position: relative;
+                        width: 100%;
+                        top: 32px;
+                        left: 45px;
+                    }
+
+                    @media (min-width: 550px) {
+                        position: relative;
+                        width: 50%;
+                        top: -46px;
+                        left: 83px;
+                    }
+
+                    @media (min-width: 1100px) {
+                        width: 100%;
+                        position: absolute;
+                        top: -80px;
+                        left: 150px;
+                    }
 
                     >img {
                         width: 80%;
@@ -202,6 +222,7 @@
                     @media (max-width: 1100px) {
                         width: 95%;
                     }
+
                     display: flex;
                     justify-content: space-between;
 
@@ -231,6 +252,7 @@
                 flex-wrap: wrap;
                 justify-content: center;
             }
+
             margin-top: 20px;
             width: 100%;
             border-top: 1px solid $lightGray;
