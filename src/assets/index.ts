@@ -62,5 +62,6 @@ export { default as IconAlibaba} from './icons/icon-alibaba.svg';
 export { default as IconArvan} from './icons/icon-arvan.svg';
 export { default as IconSnapp} from './icons/icon-snapp.svg';
 export { default as IconIranTalent} from './icons/icon-irantalent.svg';
+export { default as IconWalletBlue} from './icons/icon-wallet-blue.svg';
 export { default as ImageAboutusDesk} from './images/aboutus-desk.png';
 export { default as ImageAboutus} from './images/aboutusPic.png';
