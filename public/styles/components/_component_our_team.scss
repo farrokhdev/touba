@@ -1,17 +1,30 @@
-.name-our-team {
-  position: absolute;
-  bottom: 10%;
-  left: 1%;
-  letter-spacing: -0.01em;
-  @include FontStyle(24px, 700, '#ffffff');
-
-  color: #ffffff;
-}
-.postion-our-team{
-font-style: normal;
-@include FontStyle(12px,400, '#ffffff');
-color: #FFFFFF;
-position: absolute;
-bottom: 6%;
-left: 1%;
+.team-Member {
+  position: relative;
+  width: 250px;
+  height: 500px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+  div {
+    border-radius: 16px;
+    width: 250px;
+    height: 100px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    span {
+      &:first-child {
+        @include FontStyle(24px, 700, $white);
+        margin: 0 0 0 20px;
+      }
+      &:last-child {
+        @include FontStyle(16px, 400, $white);
+        margin: 0 0 10px 20px;
+      }
+    }
+  }
 }
