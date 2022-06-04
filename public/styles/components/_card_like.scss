@@ -11,6 +11,7 @@
   border-radius: 50%;
   background: #f3f4f6;
   padding: 10%;
+  cursor: pointer;
 }
 .boldText {
   /* Body/subtitle */
@@ -31,7 +32,7 @@
 .border {
   border-right: 1px solid #d6d6d6;
 }
-.footer {
+.card-like-footer {
   background: rgba(33, 192, 133,0.1);
   border-radius: 0px 0px 12px 12px;
 

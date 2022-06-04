@@ -1,15 +1,16 @@
 import React, { memo } from "react";
-import greenHeart from "../../assets/images/greenHeart.png";
+import greenHeart from "../../assets/icons/icon-heart.svg";
 import shose from "../../assets/images/00.png";
 import settings from "../../assets/images/settings.png";
+import icon_unit from '../../assets/icons/icon-unit.svg'
 
 const CardLike = () => {
   return (
-    <div className='card-border'>
+    <div className="card-border">
       <div className="row p-2">
         <div className="col-2">
-          <div className='circle'>
-            <img src={greenHeart} />
+          <div className="circle">
+            <img className="card-like-image" src={greenHeart} />
           </div>
         </div>
         <div className="col-10 justify-content-center">
@@ -22,27 +23,32 @@ const CardLike = () => {
         <div className="bold-text">Product Name Here </div>
       </div>
       <div className="row mt-2 p-2">
-        <div className={`col-6 .border`}>
-          <div className="text-header">Unit:</div>
-          <div className='boldText'>Pair:</div>
+        <div className={`col-6 d-flex lign-items-center  border-right`}>
+          <div className="px-2">
+            <img src={icon_unit} />
+          </div>
+          <div>
+            <div className="text-header">Unit:</div>
+            <div className="boldText">Pair:</div>
+          </div>
         </div>
-        <div className="col-6 d-flex   align-items-center">
+        <div className="col-6 d-flex  align-items-center">
           <div className="px-2">
             <img src={settings} />
           </div>
           <div className="">
             <div className="text-header">Min. Order</div>
-            <div className='boldText'>12</div>
+            <div className="boldText">12</div>
           </div>
         </div>
       </div>
-      <div className={`row footer`}>
+      <div className={`row card-like-footer`}>
         <div className={`col-6 px-3 py-1  border`}>
           <div className={`bold-text row`}>$639</div>
           <div className="text-header row">Min Price</div>
         </div>
         <div className={`col-6 px-3 py-1  border`}>
-          <div className={`bold-text" row`}>$639</div>
+          <div className={`bold-text  row`}>$639</div>
           <div className="text-header row">Min Price</div>
         </div>
       </div>
