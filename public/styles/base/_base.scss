@@ -1,93 +1,85 @@
 @mixin FontStyle($fontSize, $fontWeight, $Color) {
-<<<<<<< HEAD
-  font-family: "Poppins";
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: $fontWeight;
   font-size: $fontSize;
   color: $Color !important;
-=======
-    width: auto;
-    height: auto;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: $fontWeight;
-    font-size: $fontSize;
-    color: $Color !important;
-    @media (max-width: 375px) {
-      font-size: $fontSize - 4;
-    }
-    @media (min-width: 376px) {
-      font-size: $fontSize - 3;
-    }
-    @media (min-width: 600px) {
-      font-size: $fontSize - 2;
-    }
-    @media (min-width: 900px) {
-      font-size: $fontSize - 1;
-    }
-    @media (min-width: 1000px) {
-      font-size: $fontSize ;
-    }
+  @media (max-width: 375px) {
+    font-size: $fontSize - 4;
+  }
+  @media (min-width: 376px) {
+    font-size: $fontSize - 3;
+  }
+  @media (min-width: 600px) {
+    font-size: $fontSize - 2;
+  }
+  @media (min-width: 900px) {
+    font-size: $fontSize - 1;
+  }
+  @media (min-width: 1000px) {
+    font-size: $fontSize ;
+  }
 }
 @mixin Display ($display: flex, $justify: start, $align: flex-start, $direction: row, $wrap: nowrap) {
-  display: $display;
-  justify-content: $justify;
-  align-items: $align;
-  flex-direction: $direction;
-  flex-wrap: $wrap;
+display: $display;
+justify-content: $justify;
+align-items: $align;
+flex-direction: $direction;
+flex-wrap: $wrap;
 }
 
 @mixin Border ($size: 0px, $color: transparent, $radius: 0px) {
-  border: $size solid $color;
-  border-radius: $radius;
->>>>>>> 980515991a41408b483bf66099ffb73fe9866f6e
+border: $size solid $color;
+border-radius: $radius;
 }
 
 html,
 body {
-  padding: 0;
-  margin: 0;
-  background-color: #e5e5e5 !important;
+padding: 0;
+margin: 0;
+background-color: #e5e5e5 !important;
 }
 
 a {
-  // color: inherit !important;
-  text-decoration: none !important;
+// color: inherit !important;
+text-decoration: none !important;
 }
 
 * {
-  box-sizing: border-box;
+box-sizing: border-box;
 }
 .row {
-  margin: 0 !important;
-  width: 100% !important;
-  padding: 0 !important;
+margin: 0 !important;
+width: 100% !important;
+padding: 0 !important;
 }
 .col {
-  width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
+width: 100% !important;
+margin: 0 !important;
+padding: 0 !important;
 }
 .row > * {
-  padding-right: 0 !important;
-  padding-left: 0 !important;
+padding-right: 0 !important;
+padding-left: 0 !important;
 }
 
 .text-header {
-  /* Body/caption */
+/* Body/caption */
 
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  /* identical to box height, or 133% */
+font-family: "Poppins";
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height, or 133% */
 
-  letter-spacing: 0.4px;
+letter-spacing: 0.4px;
 
-  /* Sorme2 */
+/* Sorme2 */
 
-  color: #6b798c;
+color: #6b798c;
 
-  /* Inside auto layout */
+/* Inside auto layout */
 }

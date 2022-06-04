@@ -20,12 +20,18 @@ import {
   ButtonOutline,
   CardOfferHorizental,
   CardCalculate,
-  CardFAQ,
-  CardLike,
   ComponentBinaRazan,
 } from "../components/components";
 import { BottomNav, Footer } from "../layout/layout";
+import GruopChat from "../components/group_chat";
+import IncrementDecrementProduct from "../components/increment_decrement_product";
+import NeededCapacity from "../components/needed_capacity";
+import PriceSummary from "../components/price_summary";
+import SingleProductPrice from "../components/single_product_price";
+import Dashboard from "../layout/dashboard/dashobord";
+import ProfileNav from "../layout/profile-nav/profile-nav";
 import TopNav from "../layout/top_nav";
+import AboutusPage from "./AboutusPage/AboutusPage";
 
 const TEST: CHART[] = [
   { name: "JAN", size: 20 },
@@ -52,6 +58,7 @@ function Pages() {
       { location.pathname === "/" ? (null) : (<ComponentBinaRazan />)}
       <Routes>
         <Route path="/" element={<Home/>}/>
+        <Route path="/about-us" element={<AboutusPage/>}/>
       </Routes>
       <Footer/>
     </div>
