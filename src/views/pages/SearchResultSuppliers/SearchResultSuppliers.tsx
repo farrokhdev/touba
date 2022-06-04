@@ -7,6 +7,7 @@ import Footer from "../../layout/footer";
 import TopNav from "../../layout/top_nav";
 import image_test from "../../../assets/images/image-test.png";
 import { CardLike, ComponentSuppliers } from "../../components/components";
+import Component_filter_sidebar from "../../components/component_filter_sidebar";
 interface IProps {}
 
 interface IState {
@@ -22,8 +23,10 @@ export class SearchResultProduct extends BaseComponent<IProps, IState> {
         <Component_search_bar />
         <div className=" container">
           <div className="row p-3">
-            <div className="col-2">s</div>
-            <div className="col-10">
+            <div className="col-3">
+              <Component_filter_sidebar />
+            </div>
+            <div className="col-9">
               <div className="p-2">
                 <ComponentSuppliers />
               </div>

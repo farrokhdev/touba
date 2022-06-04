@@ -1,0 +1,23 @@
+.filter-sidebar-card {
+  background: white;
+  border-radius: 16px;
+
+  & .text {
+    @include FontStyle(16px, 600, #3c557a);
+  }
+  & .search-box {
+    /* Border */
+
+    border: 1px solid #d6d6d6;
+    border-radius: 8px;
+    background: $white;
+  }
+  & .checkbox {
+    height: 8vh;
+  }
+  & .opacity {
+    background: rgb(255, 255, 255);
+    opacity: 0.7;
+    height: 10vh;
+  }
+}

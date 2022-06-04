@@ -55,3 +55,4 @@ export { default as Hr } from './hr';
 export { default as DropDown } from './dropdown';
 export { default as CardSearchProduct } from './card_search_product';
 export { default as ComponentSearchBar } from './component_search_bar';
+export { default as ComponentFilterSidebar } from './component_filter_sidebar';

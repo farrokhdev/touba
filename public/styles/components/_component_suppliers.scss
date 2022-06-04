@@ -4,13 +4,13 @@
     padding: 1%;
   }
   .logo-box {
-    width: 10rem;
-    height: 10rem;
     background: #fc4a56;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: auto;
+    min-height: 15vh;
   }
   .supplier-content {
-    margin-left: 1%;
+    margin-left: 2%;
   }

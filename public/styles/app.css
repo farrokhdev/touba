@@ -44,6 +44,59 @@ a {
   /* Inside auto layout */
 }
 
+.filter-sidebar-card {
+  background: white;
+  border-radius: 16px;
+}
+.filter-sidebar-card .text {
+  width: auto;
+  height: auto;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #3c557a !important;
+}
+@media (max-width: 375px) {
+  .filter-sidebar-card .text {
+    font-size: 12px;
+  }
+}
+@media (min-width: 376px) {
+  .filter-sidebar-card .text {
+    font-size: 13px;
+  }
+}
+@media (min-width: 600px) {
+  .filter-sidebar-card .text {
+    font-size: 14px;
+  }
+}
+@media (min-width: 900px) {
+  .filter-sidebar-card .text {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1000px) {
+  .filter-sidebar-card .text {
+    font-size: 16px;
+  }
+}
+.filter-sidebar-card .search-box {
+  /* Border */
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  background: #FFFFFF;
+}
+.filter-sidebar-card .checkbox {
+  height: 8vh;
+}
+.filter-sidebar-card .opacity {
+  background: rgb(255, 255, 255);
+  opacity: 0.7;
+  height: 10vh;
+}
+
 .select-component {
   width: 100%;
   cursor: pointer;
@@ -386,7 +439,7 @@ a {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 30px;
   /* identical to box height, or 150% */
   letter-spacing: 0.15px;
@@ -4609,16 +4662,16 @@ a {
 }
 
 .logo-box {
-  width: 10rem;
-  height: 10rem;
   background: #fc4a56;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: auto;
+  min-height: 15vh;
 }
 
 .supplier-content {
-  margin-left: 1%;
+  margin-left: 2%;
 }
 
 .top-nav {
