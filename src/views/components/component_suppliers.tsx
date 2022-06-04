@@ -8,10 +8,9 @@ import bizhan from "../../assets/images/bizhan.png";
 import chinchin from "../../assets/images/chinchin.png";
 import zarmakaron from "../../assets/images/zarmakaron.png";
 import pasta from "../../assets/images/pasta.png";
-import bag from '../../assets/icons/icon-bag.svg'
-
-
-
+import bag from "../../assets/icons/icon-bag.svg";
+import iconCategory from '../../assets/icons/icon-category.svg'
+import iconMain from '../../assets/icons/icon-main-market.svg'
 
 const ComponentSuppliers = () => {
   return (
@@ -36,12 +35,12 @@ const ComponentSuppliers = () => {
             </div>
             <div className="d-flex flex-wrap   mt-2">
               <div>
-                <img src={solid} />
+                <img src={iconCategory} />
               </div>
               <div className="supplier-content">
                 <div className="bigText ml-3">
-                  Region:
-                  <span className="smalText"> Iran ( Islamic Republic of)</span>
+                  Business Category:{" "}
+                  <span className="smalText"> Food and Beverage </span>
                 </div>{" "}
               </div>
               <div></div>{" "}
@@ -60,7 +59,7 @@ const ComponentSuppliers = () => {
               <div></div>{" "}
             </div>
             <div className="d-flex mt-2">
-              <img src={solid} />
+              <img src={iconMain} />
               <div className="supplier-content">
                 <div className="bigText ml-3">
                   Main Market:
@@ -96,7 +95,7 @@ const ComponentSuppliers = () => {
           <div className="col-2">
             <img src={ladan} />
           </div>
-           <div className="col-2">
+          <div className="col-2">
             <img src={pasta} />
           </div>
         </div>

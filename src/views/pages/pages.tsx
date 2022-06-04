@@ -36,6 +36,7 @@ import MembershipPage from "./MembershipPage/MembershipPage";
 import { useState } from "react";
 import SearchResultExcessCapacity from "./SearchResultExcessCapacity/SearchResultExcessCapacity";
 import { SearchResultProduct } from "./SearchResultProduct/SearchResultProduct";
+import SearchResultSuppliers from "./SearchResultSuppliers/SearchResultSuppliers";
 
 const TEST: CHART[] = [
   { name: "JAN", size: 20 },
@@ -104,7 +105,7 @@ function Pages() {
     ],
     isRead: false,
   };
-  return <SearchResultProduct/>;
+  return <SearchResultSuppliers/>;
   // return (
   //   <div>
   //     <TopNav />
