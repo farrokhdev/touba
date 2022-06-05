@@ -37,6 +37,9 @@ import { useState } from "react";
 import SearchResultExcessCapacity from "./SearchResultExcessCapacity/SearchResultExcessCapacity";
 import { SearchResultProduct } from "./SearchResultProduct/SearchResultProduct";
 import SearchResultSuppliers from "./SearchResultSuppliers/SearchResultSuppliers";
+import ToubaProduct from "./ToubaProduct/ToubaProduct";
+import ToubaSupplier from "./ToubaSupplier/ToubaSupplier";
+import ToubaProductSingle1 from "./ToubaProductSingle1/ToubaProductSingle1";
 
 const TEST: CHART[] = [
   { name: "JAN", size: 20 },
@@ -105,7 +108,7 @@ function Pages() {
     ],
     isRead: false,
   };
-  return <SearchResultSuppliers/>;
+  return <ToubaProductSingle1/>;
   // return (
   //   <div>
   //     <TopNav />

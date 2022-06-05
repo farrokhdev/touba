@@ -1,7 +1,10 @@
 import React, { memo } from "react";
 import shoes from "../../assets/images/Rectangle1417.png";
-import arrowLeft from "../../assets/images/arrowLeft.png";
+import arrowLeft from "../../assets/icons/icon-arrrow-left-circle.svg";
+import arrowRight from "../../assets/icons/icon-arrow-right-circle.svg";
+
 import bag from '../../assets/icons/icon-bag.svg'
+
 
 
 const Slider = () => {
@@ -18,28 +21,28 @@ const Slider = () => {
           <div className="row">
             <div className="col-3 p-1">
               <div className="imageSlider">
-                <img src={shoes} />
+                <img style={{width:'60px',height:'60px'}} src={shoes} />
               </div>
             </div>
             <div className="col-3 p-1">
               <div className="imageSlider">
-                <img src={shoes} />
+                <img style={{width:'60px',height:'60px'}} src={shoes} />
               </div>
             </div>
             <div className="col-3 p-1">
               <div className="imageSlider">
-                <img src={shoes} />
+                <img style={{width:'60px',height:'60px'}} src={shoes} />
               </div>
             </div>
             <div className="col-3 p-1">
               <div className="imageSlider">
-                <img src={shoes} />
+                <img style={{width:'60px',height:'60px'}} src={shoes} />
               </div>
             </div>
           </div>
         </div>
         <div className="arrowCircle col-1">
-          <img className="arrowLeft" src={arrowLeft} />
+          <img className="arrowLeft" src={arrowRight} />
         </div>
       </div>
     </div>

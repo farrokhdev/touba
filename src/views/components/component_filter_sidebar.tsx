@@ -3,11 +3,27 @@ import { ComponentRadioSquare, ComponentSearch } from "./components";
 import arrowUp from "../../assets/icons/icon-arrow-up.svg";
 import iconSearch from "../../assets/icons/icon-search.svg";
 import arrowDown from "../../assets/icons/icon-arrow-down.svg";
+import { ButtonComponent } from "./button";
+import location from "../../assets/icons/icon-location-button.svg";
 
-
-const ComponentFilterSidebar = () => {
+interface Props {
+  showButton: boolean;
+}
+const ComponentFilterSidebar = ({ showButton }: Props) => {
   return (
-    <div className="filter-sidebar-card ">
+    <div className="filter-sidebar-card w-100">
+      {showButton && (
+        <div className="d-flex align-items-cente p-3 border-bottom">
+          <div className="w-100">
+            <button className="button-component w-100 d-flex align-items-center">
+              <h3 className="button-component-text">
+                See Excess Capacity map
+                <img src={location} />
+              </h3>
+            </button>
+          </div>
+        </div>
+      )}
       <div className="border-bottom p-3">
         <div className="d-flex align-items-center justify-content-between">
           <div className="text text-start">Filter by Category </div>

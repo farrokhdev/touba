@@ -534,6 +534,10 @@ a {
   align-items: center;
 }
 
+.text-certificate {
+  margin-left: 4%;
+}
+
 .user-circle {
   width: 54px;
   height: 54px;
@@ -611,17 +615,18 @@ a {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 8px;
   line-height: 22px;
   /* identical to box height, or 157% */
   letter-spacing: 0.1px;
   /* Sorme2 */
-  border-right: 1px solid #d6d6d6;
   color: #6b798c;
 }
 
 .rowRation {
   border-bottom: 1px solid #d6d6d6;
+  display: flex;
+  align-items: center;
 }
 
 .text {
@@ -866,7 +871,7 @@ a {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  font-size: 34px;
+  font-size: 25px;
   line-height: 51px;
   /* identical to box height */
   letter-spacing: -0.02em;
