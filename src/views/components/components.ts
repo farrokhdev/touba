@@ -51,6 +51,6 @@ export { default as ButtonDropdown } from './button_dropdown';
 export { default as SelectCategories } from './slelect_categories';
 export { default as TextIconHorizontal } from './text_icon_horizontal';
 export { default as TextIconVertical } from './text_icon_vertical';
-export { default as Hr } from './hr';
+export { default as Divider } from './divider';
 export { default as DropDown } from './dropdown';
 export { default as CardSearchProduct } from './card_search_product';

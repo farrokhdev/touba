@@ -1,5 +1,5 @@
 import { memo, ReactElement, useState } from "react";
-import { Button, Hr, InputTextLabel, SelectComponent, SelectText } from "./components";
+import { Button, Divider, InputTextLabel, SelectComponent, SelectText } from "./components";
 
 const BUTTON = [
     { name: "EXCESS CAPACITY", id: 1 },
