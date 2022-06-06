@@ -1,5 +1,5 @@
 import { Route, Routes, useLocation } from "react-router-dom";
-import { Home } from ".";
+import { Home, Login } from ".";
 import { CHART, Chart } from "../components/chart";
 import {
   ComponentBinaRazan,
@@ -27,14 +27,24 @@ function Pages() {
 
   return (
     <div>
-      <TopNav />
-      <BottomNav />
-      { location.pathname === "/" ? (null) : (<ComponentBinaRazan />)}
+      {location.pathname.includes("/login") ? (null) : (
+        <>
+          <TopNav />
+          <BottomNav />
+          <ComponentBinaRazan />
+        </>
+      )}
+      {location.pathname === "/" || "/login" ? (null) : (<ComponentBinaRazan />)}
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/about-us" element={<AboutusPage/>}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/about-us" element={<AboutusPage />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
-      <Footer/>
+      {location.pathname.includes("/login") ? (null) : (
+        <>
+          <Footer />
+        </>
+      )}
     </div>
   );
 }

@@ -72,3 +72,4 @@ export { default as ImageAboutusDesk} from './images/aboutus-desk.png';
 export { default as ImageAboutus} from './images/aboutusPic.png';
 export { default as ImageLaboratory} from './images/image-laboratory.png';
 export { default as BackgroundLatest} from './images/background-latest.png';
+export { default as ImageBackgroundLogin} from './images/image-background-login.png';
