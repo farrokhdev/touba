@@ -7,8 +7,8 @@ interface Props {
 
 function SelectComponent({ type }: Props): ReactElement {
     return (
-        <div className="select-component">
-            <button className="select-component-button">
+        <div className="select-component w-100 ">
+            <button className="select-component-button w-100 bg-white">
                 {type === "one" ? (
                     <img
                         src={IconArrow}

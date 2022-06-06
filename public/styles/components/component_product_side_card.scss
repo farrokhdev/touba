@@ -1,0 +1,37 @@
+.product-side-card {
+  background: $white;
+  border-radius: 12px;
+  .image-box {
+    background: $white;
+    /* Bg white */
+    padding: 3%;
+    border: 1px solid #f3f4f6;
+    border-radius: 12px;
+  }
+  .logo-text {
+    @include FontStyle(14px, 500, #3c557a);
+  }
+  .text-desc {
+    @include FontStyle(10px, 700, #d6d6d6);
+  }
+  .footer-text {
+    @include FontStyle(16px, 400, #3c557a);
+  }
+  .button-message {
+    background: $white;
+    /* Green Brand */
+
+    border: 1px solid $green;
+    padding: 5%;
+    border-radius: 8px;
+    @include FontStyle(18px, 600, $green);
+  }
+  .button-cart {
+    border: white;
+    background-color: #21C085;
+    padding: 5%;
+    border-radius: 8px;
+    @include FontStyle(18px, 600, $white);
+
+  }
+}

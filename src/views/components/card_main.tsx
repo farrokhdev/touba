@@ -21,7 +21,6 @@ import Slider from "./slider";
           <div className="col-7 p-4">
             <Content />
           </div>
-          
         </div>
       </div>
     </div>

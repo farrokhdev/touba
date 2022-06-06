@@ -55,3 +55,8 @@ export { default as Divider } from './divider';
 export { default as DropDown } from './dropdown';
 export { default as CardSearchProduct } from './card_search_product';
 export { default as CardNewProduct } from './card_new_product';
+export { default as ComponentSearchBar } from './component_search_bar';
+export { default as ComponentFilterSidebar } from './component_filter_sidebar';
+export { default as ComponentFilterTopbar } from './component_filter_topbar';
+export { default as ComponentProductSideCard } from './component_product_side_card';
+

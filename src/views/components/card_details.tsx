@@ -6,28 +6,29 @@ import shose4 from "../../assets/images/Rectangle1424.png";
 import Specifications from "./specifications";
 import Packaging from "./packaging";
 import FAQ from "./faq";
-import  Customers  from "./customers";
+import Customers from "./customers";
 import CommentCard from "./card_comment";
 
 const CardDetails = () => {
   return (
-    <div className='detailCard' >
-      <div className='detailBorder'>
-        <div className='tabs row px-4 '>
-          <div className='tabActive col-2    text-center'>
+    <div className="detailCard">
+      <div className="detailBorder">
+        <div className="tabs row px-4 ">
+          <div className="tabActive col-2 text-center   ">
             <p>Description</p>
           </div>
-          <div className={` col-2  text-center`}>
+       
+          <div className={` col-2  text-center bold-text`}>
             <p>Specifications</p>
           </div>
-          <div className={` col-2  text-center`}>
-            <p>Specifications</p>
+          <div className={` col-3  text-center bold-text`}>
+            <p>Packaging & shipping</p>
           </div>
-          <div className={` col-2  text-center`}>
-            <p>Specifications</p>
+          <div className={` col-3  text-center bold-text`}>
+            <p>Customers Review</p>
           </div>
-          <div className={` col-2  text-center`}>
-            <p>Specifications</p>
+          <div className={` col-1  text-center bold-text`}>
+            <p>Faq</p>
           </div>
         </div>
         <div className="p-3">
@@ -56,10 +57,10 @@ const CardDetails = () => {
           </div>
           <div className="row mt-2">
             <div className="col-6 p-2">
-              <img src={shose1} />
+              <img style={{ width: "450px", height: "353px" }} src={shose1} />
             </div>
             <div className="col-6 p-2">
-              <img src={shose2} />
+              <img style={{ width: "450px", height: "353px" }}  src={shose2} />
             </div>
           </div>
           <div className="row mt-2">
@@ -73,10 +74,10 @@ const CardDetails = () => {
           </div>
           <div className="row mt-2">
             <div className="col-6 p-2">
-              <img src={shose3} />
+              <img style={{ width: "450px", height: "353px" }}  src={shose3} />
             </div>
             <div className="col-6 p-2">
-              <img src={shose4} />
+              <img style={{ width: "450px", height: "353px" }}  src={shose4} />
             </div>
           </div>
         </div>

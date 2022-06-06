@@ -9,7 +9,7 @@ const ComponentFilterRangeSlider = () => {
         <div className="row">
           <div className="row">
             <div className="col-4 border-right p-3">
-              <div className="bigText">Monthly Capacity Filter</div>
+              <div className="bold-text">Monthly Capacity Filter</div>
               <div className="mt-4">
                 <Range range allowCross={false} defaultValue={[0, 20]} />
               </div>
@@ -36,7 +36,7 @@ const ComponentFilterRangeSlider = () => {
               </div>
             </div>
             <div className="col-4 border-right p-3">
-              <div className="bigText">Monthly Capacity Filter</div>
+              <div className="bold-text">Monthly Capacity Filter</div>
               <div className="mt-4">
                 <Range range allowCross={false} defaultValue={[0, 20]} />
               </div>
@@ -62,8 +62,8 @@ const ComponentFilterRangeSlider = () => {
                 </div>
               </div>
             </div>
-            <div className="col-4 border-right p-3">
-              <div className="bigText">Monthly Capacity Filter</div>
+            <div className="col-4  p-3">
+              <div className="bold-text">Monthly Capacity Filter</div>
               <div className="mt-4">
                 <Range range allowCross={false} defaultValue={[0, 20]} />
               </div>
