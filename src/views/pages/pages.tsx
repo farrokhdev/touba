@@ -40,6 +40,7 @@ import { BottomNav } from "../layout/layout";
 import ProfileNav from "../layout/profile-nav/profile-nav";
 import TopNav from "../layout/top_nav";
 import AboutusPage from "./AboutusPage/AboutusPage";
+import HelpPage from "./HelpPage/HelpPage";
 import MembershipPage from "./MembershipPage/MembershipPage";
 
 const TEST: CHART[] = [
@@ -108,7 +109,7 @@ function Pages() {
     ],
     isRead: false,
   };
-  return <MembershipPage />;
+  return <HelpPage />;
   // return (
   //   <div>
   //     <TopNav />

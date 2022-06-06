@@ -85,7 +85,7 @@ export default class MembershipPage extends BaseComponent<IProps, IState> {
   render() {
     return (
       <div className="membership-Page w-100 d-flex flex-column align-items-center ">
-        <div className="w-100 background d-flex align-items-start justify-content-center">
+        <div className="w-100 green-Background d-flex align-items-start justify-content-center">
           <span className="mt-4">Membership Plans</span>
         </div>
         <div className="plans-Container d-flex flex-row align-items-end mx-auto">

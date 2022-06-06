@@ -1,13 +1,4 @@
 .membership-Page {
-    .background {
-        height: 445px;
-        background-color: $green;
-        position: relative;
-        z-index: 1;
-        span {
-            @include FontStyle(60px, 800, $white);
-        }
-    }
     .plans-Container {
         position: absolute;
         z-index: 20;
@@ -35,5 +26,14 @@
                 }
             }
         }
+    }
+}
+.green-Background {
+    height: 445px;
+    background-color: $green;
+    position: relative;
+    z-index: 1;
+    span {
+        @include FontStyle(60px, 800, $white);
     }
 }

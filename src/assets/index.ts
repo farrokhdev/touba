@@ -65,3 +65,4 @@ export { default as IconIranTalent} from './icons/icon-irantalent.svg';
 export { default as IconWalletBlue} from './icons/icon-wallet-blue.svg';
 export { default as ImageAboutusDesk} from './images/aboutus-desk.png';
 export { default as ImageAboutus} from './images/aboutusPic.png';
+export { default as IconHelpBanner} from './icons/Icon-helpbanner.svg';

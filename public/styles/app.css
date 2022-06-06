@@ -3040,6 +3040,67 @@ a {
   text-transform: uppercase;
 }
 
+.question-Answer {
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+
+.question-Answer .paragraph {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #3c557a !important;
+}
+
+.question-Answer .question {
+  padding: 10px 30px;
+}
+
+.question-Answer .question span:first-child {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 60px;
+  color: #21c085 !important;
+}
+
+.question-Answer .question button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 8px;
+}
+
+.question-Answer .question img {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.question-Answer .question .rotate-btn {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.question-Answer .answer {
+  padding: 20px 30px;
+  background-color: rgba(107, 121, 140, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 1s all ease-in-out;
+  transition: 1s all ease-in-out;
+  border-radius: 0 0 16px 16px;
+}
+
+.question-Answer .answer span:first-child {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 60px;
+  color: #3c557a !important;
+}
+
 .top-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3703,21 +3764,6 @@ a {
   line-height: 39px;
 }
 
-.membership-Page .background {
-  height: 445px;
-  background-color: #21c085;
-  position: relative;
-  z-index: 1;
-}
-
-.membership-Page .background span {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 60px;
-  color: #ffffff !important;
-}
-
 .membership-Page .plans-Container {
   position: absolute;
   z-index: 20;
@@ -3748,5 +3794,133 @@ a {
 
 .membership-Page .plans-Container .features span:last-child {
   border-radius: 0 0 0 16px;
+}
+
+.green-Background {
+  height: 445px;
+  background-color: #21c085;
+  position: relative;
+  z-index: 1;
+}
+
+.green-Background span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 60px;
+  color: #ffffff !important;
+}
+
+.help-Page .help-Content {
+  position: absolute;
+  z-index: 20;
+  margin-top: 150px;
+}
+
+.help-Page .help-Content video {
+  width: 60vw;
+  height: 400px;
+  border-radius: 16px;
+}
+
+.help-Page .help-Content .title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  color: #3c557a !important;
+}
+
+.help-Page .help-Content .desc {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #6b798c !important;
+}
+
+.help-Page .help-Content .faq-Container {
+  width: 90%;
+}
+
+.help-Page .help-Content .faq-Sidebar {
+  background-color: #ffffff;
+  width: 20%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 12px;
+}
+
+.help-Page .help-Content .faq-Sidebar button {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6b798c !important;
+  text-align: left;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 20px 10px;
+  border-bottom: 1px solid #d6d6d6;
+  width: 100%;
+}
+
+.help-Page .help-Content .faq-Sidebar .selected {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #3c557a !important;
+}
+
+.help-Page .help-Content .faq-content {
+  max-width: 75%;
+}
+
+.help-Page .help-Content .banner {
+  background-color: #21c085;
+  width: 90%;
+  border-radius: 16px;
+}
+
+.help-Page .help-Content .banner .content-Banner {
+  height: 380px;
+}
+
+.help-Page .help-Content .banner .content-Banner span:first-child {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 60px;
+  color: #ffffff !important;
+  line-height: 90px;
+  letter-spacing: -0.03em;
+}
+
+.help-Page .help-Content .banner .content-Banner span:nth-child(2) {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff !important;
+  max-width: 600px;
+}
+
+.help-Page .help-Content .banner .content-Banner button {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #21c085 !important;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 40px;
+  padding: 6px 12px;
 }
 /*# sourceMappingURL=app.css.map */
