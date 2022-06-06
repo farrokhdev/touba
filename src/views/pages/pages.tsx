@@ -1,36 +1,10 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import { Home } from ".";
-import { IconTwoPerson, ImageBrandalibaba, ImageBrandArvan, ImageControll, ImageTest, ImageTest2, ImageTest3, ImageTest4 } from "../../assets";
-import { ButtonIcon } from "../components/button_icon";
 import { CHART, Chart } from "../components/chart";
 import {
-  Button,
-  SelectComponent,
-  SelectText,
-  CardProduct,
-  CardCategory,
-  CardImage,
-  CardProductWithPrice,
-  CardCollectionProduct,
-  CardBestSeller,
-  CardCollectionBest,
-  CardNewProduct,
-  CardBestBrand,
-  ButtonSelect,
-  ButtonOutline,
-  CardOfferHorizental,
-  CardCalculate,
   ComponentBinaRazan,
 } from "../components/components";
-import { BottomNav, Footer } from "../layout/layout";
-import GruopChat from "../components/group_chat";
-import IncrementDecrementProduct from "../components/increment_decrement_product";
-import NeededCapacity from "../components/needed_capacity";
-import PriceSummary from "../components/price_summary";
-import SingleProductPrice from "../components/single_product_price";
-import Dashboard from "../layout/dashboard/dashobord";
-import ProfileNav from "../layout/profile-nav/profile-nav";
-import TopNav from "../layout/top_nav";
+import { BottomNav, Footer, TopNav } from "../layout/layout";
 import AboutusPage from "./AboutusPage/AboutusPage";
 
 const TEST: CHART[] = [

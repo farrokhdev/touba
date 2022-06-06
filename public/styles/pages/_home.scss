@@ -198,6 +198,9 @@
     }
 
     &-section-new {
+        @media (max-width: 600px) {
+            width: 100%;
+        }
         width: 85%;
         min-height: 611px;
         height: auto;
@@ -226,7 +229,7 @@
             margin: 30px auto;
             @include Display(flex, space-between, center, row, wrap);
 
-            .card-new-product {
+            .card-new-excess {
                 width: 349px;
             }
         }
@@ -245,16 +248,82 @@
             @media (max-width: 1200px) {
                 margin: 10px 0;
             }
+
             margin: 0 10px;
         }
     }
+
+    &-section-newest-product {
+        background-color: $darkWhite;
+        max-width: 84%;
+        width: auto;
+        margin: 0 auto;
+        @include Display(flex, start, center, column);
+        &-title {
+            @include FontStyle(34px, 700, $sorme);
+            margin: 30px 0;
+        }
+
+        &-content {
+            @include Display(flex, center, center, row, wrap);
+            border-radius: 16px;
+        }
+    }
+
     &-section-best-brand {
         width: 100%;
         padding: 0 100px;
         @include Display(flex, center, center, column);
+
         &-title {
             @include FontStyle(34px, 700, $sorme);
             padding: 40px 0;
+        }
+    }
+    &-section-description {
+        margin: 50px 0;
+        width: 100%;
+        padding: 0 100px;
+        position: relative;
+        &-title {
+            @include FontStyle(24px, 700, $sorme);
+            margin-bottom: 25px;
+        }
+        &-text {
+            @include FontStyle(16px, 400, $black);
+            text-align: justify;
+        }
+        &-button {
+            width: 100%;
+            position: relative;
+            top: 160px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            z-index: 2;
+            &-text {
+                @include FontStyle(18, 600, $green);
+            }
+        }
+        .blur {
+            opacity: 0.3;
+            &-text {
+                @include FontStyle(16px, 400, $black);
+                text-align: justify;
+            }
+            &-title {
+                @include FontStyle(24px, 700, $sorme);
+            }
+        }
+        .onblur {
+            &-text {
+                @include FontStyle(16px, 400, $black);
+                text-align: justify;
+            }
+            &-title {
+                @include FontStyle(24px, 700, $sorme);
+                margin-bottom: 25px;
+            }
         }
     }
 }

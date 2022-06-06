@@ -2,7 +2,7 @@ import { Component } from "react";
 import { Link } from "react-router-dom";
 import { BackgroundLatest, IconAlibaba, IconArvan, ImageControll, ImageLaboratory, ImagePersonBox, ImageTest, ImageTest2, ImageTest3, ImageTest4 } from "../../assets";
 import { CHART } from "../components/chart";
-import { Button, CardSearchProduct, CardProduct, CardCategory, CardImage, CardCollectionProduct, CardProductWithPrice, CardBestSeller, CardCollectionBest, Divider, CardNewProduct, CardBestBrand } from "../components/components";
+import { Button, CardSearchProduct, CardProduct, CardCategory, CardImage, CardCollectionProduct, CardProductWithPrice, CardBestSeller, CardCollectionBest, Divider, CardNewExcess, CardBestBrand, CardNewProduct } from "../components/components";
 import HomeController from "../controllers/home_controller";
 
 const TEST: CHART[] = [
@@ -254,62 +254,62 @@ class Home extends HomeController {
                     </div>
                     <Divider />
                     <div className="home-section-new-content">
-                        <CardNewProduct
+                        <CardNewExcess
                             image={ImageControll}
                             items={TEST}
                             title={"Name of Excess Capacity"}
                         />
-                        <CardNewProduct
+                        <CardNewExcess
                             image={ImageControll}
                             items={TEST}
                             title={"Name of Excess Capacity"}
                         />
-                        <CardNewProduct
+                        <CardNewExcess
                             image={ImageControll}
                             items={TEST}
                             title={"Name of Excess Capacity"}
                         />
-                        <CardNewProduct
+                        <CardNewExcess
                             image={ImageControll}
                             items={TEST}
                             title={"Name of Excess Capacity"}
                         />
-                        <CardNewProduct
+                        <CardNewExcess
                             image={ImageControll}
                             items={TEST}
                             title={"Name of Excess Capacity"}
                         />
-                        <CardNewProduct
+                        <CardNewExcess
                             image={ImageControll}
                             items={TEST}
                             title={"Name of Excess Capacity"}
                         />
-                        <CardNewProduct
+                        <CardNewExcess
                             image={ImageControll}
                             items={TEST}
                             title={"Name of Excess Capacity"}
                         />
-                        <CardNewProduct
+                        <CardNewExcess
                             image={ImageControll}
                             items={TEST}
                             title={"Name of Excess Capacity"}
                         />
-                        <CardNewProduct
+                        <CardNewExcess
                             image={ImageControll}
                             items={TEST}
                             title={"Name of Excess Capacity"}
                         />
-                        <CardNewProduct
+                        <CardNewExcess
                             image={ImageControll}
                             items={TEST}
                             title={"Name of Excess Capacity"}
                         />
-                        <CardNewProduct
+                        <CardNewExcess
                             image={ImageControll}
                             items={TEST}
                             title={"Name of Excess Capacity"}
                         />
-                        <CardNewProduct
+                        <CardNewExcess
                             image={ImageControll}
                             items={TEST}
                             title={"Name of Excess Capacity"}
@@ -322,28 +322,79 @@ class Home extends HomeController {
                     <CardImage image={ImageTest4} />
                     <CardImage image={ImageTest4} />
                 </div>
-                <div className="home-section-product-newest">
-
+                <div className="home-section-newest-product">
+                    <h4 className="home-section-newest-product-title">New Product</h4>
+                    <div className="home-section-newest-product-content">
+                        <CardNewProduct image={ImageControll} title={"Product Name"} />
+                        <CardNewProduct image={ImageControll} title={"Product Name"} />
+                        <CardNewProduct image={ImageControll} title={"Product Name"} />
+                        <CardNewProduct image={ImageControll} title={"Product Name"} />
+                        <CardNewProduct image={ImageControll} title={"Product Name"} />
+                        <CardNewProduct image={ImageControll} title={"Product Name"} />
+                        <CardNewProduct image={ImageControll} title={"Product Name"} />
+                        <CardNewProduct image={ImageControll} title={"Product Name"} />
+                        <CardNewProduct image={ImageControll} title={"Product Name"} />
+                        <CardNewProduct image={ImageControll} title={"Product Name"} />
+                        <CardNewProduct image={ImageControll} title={"Product Name"} />
+                    </div>
                 </div>
                 <div className="home-section-best-brand">
                     <h4 className="home-section-best-brand-title"> Best Brands</h4>
                     <CardBestBrand
                         images={[
-                            IconAlibaba, 
+                            IconAlibaba,
                             IconArvan,
-                            IconAlibaba, 
+                            IconAlibaba,
                             IconArvan,
-                            IconAlibaba, 
+                            IconAlibaba,
                             IconArvan,
-                            IconAlibaba, 
+                            IconAlibaba,
                             IconArvan,
-                            IconAlibaba, 
+                            IconAlibaba,
                             IconArvan,
                         ]}
                     />
                 </div>
                 <div className="home-section-description">
+                    <h4 className="home-section-description-title">
+                        What is excess capacity?
+                    </h4>
+                    <p className="home-section-description-text">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
 
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+                    </p>
+                    {this.state.more === false ? (
+                        <button className="home-section-description-button" onClick={this.handleBlurText}>
+                            <p className="home-section-description-button-text">
+                                READ MORE
+                            </p>
+                        </button>
+                    ) : (null)}
+                    {this.state.more === false ? (
+                        <div className="blur">
+                            <h4 className="blur-title">
+                                What is excess capacity?
+                            </h4>
+                            <p className="blur-text">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+                            </p>
+
+                        </div>
+                    ) : (
+                        <div className="onblur">
+                            <h4 className="onblur-title">
+                                What is excess capacity?
+                            </h4>
+                            <p className="onblur-text">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+                            </p>
+                        </div>
+                    )}
                 </div>
             </div>
         )
