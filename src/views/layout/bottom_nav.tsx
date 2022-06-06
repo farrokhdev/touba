@@ -16,7 +16,7 @@ import {
     Button,
     ButtonDropdown,
     DropDown,
-    Hr,
+    Divider,
     SelectCategories,
     TextIconHorizontal,
     TextIconVertical
@@ -94,7 +94,7 @@ export function BottomNav() {
                                                 active={active === name.id ? true : false}
                                                 onClick={() => handleActiveLink(name.id)}
                                             />
-                                            <Hr />
+                                            <Divider />
                                         </div>
                                     ))}
                                 </div>
@@ -173,7 +173,7 @@ export function BottomNav() {
                                             active={active === name.id ? true : false}
                                             onClick={() => handleActiveLink(name.id)}
                                         />
-                                        <Hr />
+                                        <Divider />
                                     </div>
                                 ))}
                             </div>
