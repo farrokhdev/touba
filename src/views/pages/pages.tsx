@@ -6,7 +6,6 @@ import {
 } from "../components/components";
 import { BottomNav, Footer, TopNav } from "../layout/layout";
 import AboutusPage from "./AboutusPage/AboutusPage";
-import MembershipPage from "./MembershipPage/MembershipPage";
 import { useState } from "react";
 import SearchResultExcessCapacity from "./SearchResultExcessCapacity/SearchResultExcessCapacity";
 import { SearchResultProduct } from "./SearchResultProduct/SearchResultProduct";
@@ -82,34 +81,6 @@ function Pages() {
     ],
     isRead: false,
   };
-  return <ToubaProductSingle1 />;
-  // return (
-  //   <div>
-  //     <TopNav />
-  //     <BottomNav />
-  //     <ComponentBinaRazan />
-  //     <div style={{ width: "360px" }}>
-  //       <SelectComponent type={"one"} />
-  //     </div>
-  //     <Button title={"SEARCH"} />
-  //     <SelectText value={"test"} />
-  //     <CardProduct
-  //       image={ImageTest}
-  //       status={"Finish Product"}
-  //       description={"Pomegranate Juice Pet Bottle..."}
-  //       amount={200}
-  //       chart={TEST}
-  //     />
-  //     <CardCategory image={ImageTest2} title={"Home Appliance"} />
-  //     <div style={{ width: "770px" }}>
-  //       <CardImage image={ImageTest3} />
-  //     </div>
-  //     <CardProductWithPrice
-  //       image={ImageControll}
-  //       title={"Product Name"}
-  //       fromPrice={12}
-  //       toPrice={24}
-  //     />
 
   return (
     <div>
@@ -117,14 +88,14 @@ function Pages() {
         <>
           <TopNav />
           <BottomNav />
-          <ComponentBinaRazan />
         </>
       )}
-      {location.pathname === "/" || "/login" ? (null) : (<ComponentBinaRazan />)}
+      {location.pathname === "/" || location.pathname === "/login" ? (null) : (<ComponentBinaRazan />)}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutusPage />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/detail-product" element={<ToubaProductSingle1 />} />
       </Routes>
       {location.pathname.includes("/login") ? (null) : (
         <>

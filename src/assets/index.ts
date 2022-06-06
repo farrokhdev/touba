@@ -73,3 +73,5 @@ export { default as ImageAboutus} from './images/aboutusPic.png';
 export { default as ImageLaboratory} from './images/image-laboratory.png';
 export { default as BackgroundLatest} from './images/background-latest.png';
 export { default as ImageBackgroundLogin} from './images/image-background-login.png';
+export { default as ArrowUp} from './images/arrowup.png';
+export { default as arrowDown} from './images/arrowdown.png';
