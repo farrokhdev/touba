@@ -3,23 +3,19 @@ import Chart, { CHART } from "./chart";
 
 interface Props {
     image: string;
-    items: CHART[];
     title: string;
 }
 
-export function CardNewProduct({image, items, title}: Props): ReactElement {
+export function CardNewProduct({image, title}: Props): ReactElement {
 
     return (
         <div className="card-new-product">
-            <img src={image} className="card-new-product-image"/>
-            <div className="card-new-product-content">
-                <h3 className="card-new-product-content-text">
-                    {title}
-                </h3>
-                <div className="card-new-product-content-chart">
-                    <Chart item={items} />
-                </div>
+            <div className="card-new-product-image">
+                <img src={image} />
             </div>
+            <h5 className="card-new-product-title">
+                {title}
+            </h5>
         </div>
     )
 }
