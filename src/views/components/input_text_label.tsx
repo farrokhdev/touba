@@ -24,6 +24,11 @@ export function InputTextLabel({ value, onChange }: Props): ReactElement {
                 onChange={handleOnChange}
                 className="input-text-label-input"
             />
+            {value === "" ? (null) : (
+                <div className="input-text-label-dropdown">
+
+                </div>
+            )}
         </div>
     )
 }

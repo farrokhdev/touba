@@ -14,6 +14,7 @@ interface Props {
 export function CardSearchProduct({ }: Props): ReactElement {
 
     const [active, setActive] = useState(1);
+    const [search, setSearch] = useState('');
 
     function handleActiveButton(id: number) {
         setActive(id)
@@ -51,7 +52,7 @@ export function CardSearchProduct({ }: Props): ReactElement {
                     Search for free product lines to make a product with your brand identity
                 </h6>
                 <div className="card-search-product-inputs-group">
-                    <InputTextLabel value={""} />
+                    <InputTextLabel value={search} onChange={(event => {setSearch(event.currentTarget.value)})}/>
                     <SelectText value={""} />
                     <SelectComponent type={"one"} />
                     <Button title="SEARCH" />
