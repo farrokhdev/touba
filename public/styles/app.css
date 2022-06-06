@@ -4679,6 +4679,55 @@ a {
   margin-left: 2%;
 }
 
+.component-filter-topbar .button-active {
+  background: #21C085;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  color: #FFFFFF;
+}
+.component-filter-topbar .button {
+  width: auto;
+  height: auto;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6b798c !important;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  background-color: #FFFFFF;
+}
+@media (max-width: 375px) {
+  .component-filter-topbar .button {
+    font-size: 12px;
+  }
+}
+@media (min-width: 376px) {
+  .component-filter-topbar .button {
+    font-size: 13px;
+  }
+}
+@media (min-width: 600px) {
+  .component-filter-topbar .button {
+    font-size: 14px;
+  }
+}
+@media (min-width: 900px) {
+  .component-filter-topbar .button {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1000px) {
+  .component-filter-topbar .button {
+    font-size: 16px;
+  }
+}
+.component-filter-topbar > div {
+  margin-left: 2%;
+}
+
 .top-nav {
   display: flex;
   width: 100%;

@@ -108,7 +108,7 @@ function Pages() {
     ],
     isRead: false,
   };
-  return <ToubaProductSingle1/>;
+  return <SearchResultSuppliers/>;
   // return (
   //   <div>
   //     <TopNav />

@@ -6,7 +6,7 @@ import BottomNav from "../../layout/bottom_nav";
 import Footer from "../../layout/footer";
 import TopNav from "../../layout/top_nav";
 import image_test from "../../../assets/images/image-test.png";
-import { CardLike, ComponentSuppliers } from "../../components/components";
+import { CardLike, ComponentFilterTopbar, ComponentSuppliers } from "../../components/components";
 import Component_filter_sidebar from "../../components/component_filter_sidebar";
 interface IProps {}
 
@@ -21,12 +21,15 @@ export class SearchResultProduct extends BaseComponent<IProps, IState> {
         <TopNav />
         <BottomNav />
         <Component_search_bar />
-        <div className=" container">
+        <div className=" px-4">
+        <div className="mt-3">
+           <ComponentFilterTopbar/>
+          </div>
           <div className="row p-3">
-            <div className="col-3 p-2">
+            <div className="col-2 p-2">
               <Component_filter_sidebar showButton={false} />
             </div>
-            <div className="col-9">
+            <div className="col-10">
               <div className=" p-2">
                 <ComponentSuppliers />
               </div>
