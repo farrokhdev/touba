@@ -1,6 +1,6 @@
 import { ReactElement, memo } from "react";
 
-export function Hr(): ReactElement {
+export function Divider(): ReactElement {
 
     return (
         <div className="hr">
@@ -8,4 +8,4 @@ export function Hr(): ReactElement {
         </div>
     )
 }
-export default memo(Hr);
+export default memo(Divider);
