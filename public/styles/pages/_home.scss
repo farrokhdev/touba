@@ -5,6 +5,7 @@
         background-color: $green;
         padding: 0 100px;
         margin-bottom: 100px;
+
         @media (max-width: 1000px) {
             padding: 0;
             min-height: 643px;
@@ -15,12 +16,15 @@
             @media (max-width: 1000px) {
                 @include Display(flex, center, center, column);
             }
+
             padding-top: 45px;
             @include Display();
+
             &-items {
                 @media (max-width: 1000px) {
                     width: 100%;
                 }
+
                 width: 45%;
                 margin-top: 40px;
 
@@ -28,6 +32,7 @@
                     @media (max-width: 1440px) {
                         @include FontStyle(40px, 800, $white);
                     }
+
                     @include FontStyle(54px, 800, $white);
                 }
 
@@ -35,6 +40,7 @@
                     @media (max-width: 1440px) {
                         @include FontStyle(17px, 800, $white);
                     }
+
                     @include FontStyle(22px, 800, $white);
                     text-align: justify;
                     text-justify: inter-word;
@@ -44,6 +50,7 @@
                     @media (max-width: 1440px) {
                         @include FontStyle(14px, 800, $white);
                     }
+
                     @include FontStyle(16px, 400, $white);
                     margin-bottom: 80px;
                     text-align: justify;
@@ -56,6 +63,7 @@
                     width: 100%;
                     margin: 50px 0 0 0px;
                 }
+
                 margin: 140px 0 0 50px;
                 width: 50%;
 
@@ -63,6 +71,7 @@
                     @media (max-width: 1440px) {
                         width: 100%;
                     }
+
                     width: 50%;
                 }
             }
@@ -70,28 +79,36 @@
 
         &-inputs {}
     }
+
     &-section-earn {
         padding: 105px 0;
         width: 85%;
         margin: 0 auto;
         @include Display();
+
         @media (max-width: 1000px) {
             @include Display(flex, center, center, column-reverse);
             padding: 30px 0;
         }
+
         &-content {
             @media (max-width: 1000px) {
-               width: 100%
+                width: 100%
             }
+
             width: 50%;
+
             &-header {
                 @include FontStyle(34px, 700, $sorme);
             }
+
             &-title {
                 @include FontStyle(60px, 800, $green);
             }
+
             &-description {
                 width: 90%;
+
                 &-text {
                     @include FontStyle(16px, 400, $sorme);
                     text-align: justify;
@@ -99,18 +116,145 @@
                 }
             }
         }
+
         &-image {
             @media (max-width: 1000px) {
                 width: 100%
             }
+
             width: 50%;
+
             >img {
                 @media (max-width: 1000px) {
                     height: auto;
                 }
+
                 width: 100%;
                 height: 360.87px;
             }
+        }
+    }
+
+    &-section-latest {
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 693px;
+        height: auto;
+        padding: 0 100px;
+
+        &-title {
+            @include FontStyle(34px, 700, $sorme);
+            padding: 50px 0;
+        }
+
+        &-group-cards {
+            @include Display(flex, space-between, center, row, wrap);
+        }
+    }
+
+    &-section-categories {
+        width: 100%;
+        min-height: 690px;
+        height: auto;
+        padding: 0 150px;
+        @include Display(flex, center, center, column);
+
+        &-title {
+            @include FontStyle(34px, 700, $sorme);
+            padding: 85px 0;
+        }
+
+        &-group-cards {
+            @include Display(flex, center, center, row, wrap);
+        }
+    }
+
+    &-section-special {
+        @include Display();
+        padding: 100px;
+
+        @media (max-width: 1250px) {
+            @include Display(flex, start, center, column);
+        }
+
+        >div {
+            @media (max-width: 1250px) {
+                margin: 20px 0;
+            }
+
+            margin: 0 20px;
+        }
+    }
+
+    &-section-special-two {
+        @include Display();
+        padding: 0 100px;
+    }
+
+    &-section-best-seller {
+        padding: 32px 100px;
+    }
+
+    &-section-new {
+        width: 85%;
+        min-height: 611px;
+        height: auto;
+        background-color: $white;
+        box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
+        border-radius: 16px;
+        margin: 0 auto;
+
+        &-header {
+            width: 90%;
+            height: 115px;
+            @include Display(flex, space-between, center);
+            margin: 0 auto;
+
+            &-text {
+                @include FontStyle(34px, 700, $sorme);
+            }
+
+            &-link {
+                @include FontStyle(14px, 600, $green);
+            }
+        }
+
+        &-content {
+            width: 90%;
+            margin: 30px auto;
+            @include Display(flex, space-between, center, row, wrap);
+
+            .card-new-product {
+                width: 349px;
+            }
+        }
+    }
+
+    &-section-images {
+        @media (max-width: 1200px) {
+            @include Display(flex, center, center, row, wrap);
+        }
+
+        width: 100%;
+        padding: 0 100px;
+        @include Display(flex, space-between);
+
+        >div {
+            @media (max-width: 1200px) {
+                margin: 10px 0;
+            }
+            margin: 0 10px;
+        }
+    }
+    &-section-best-brand {
+        width: 100%;
+        padding: 0 100px;
+        @include Display(flex, center, center, column);
+        &-title {
+            @include FontStyle(34px, 700, $sorme);
+            padding: 40px 0;
         }
     }
 }

@@ -1,8 +1,24 @@
 import { Component } from "react";
-import { ImageLaboratory, ImagePersonBox } from "../../assets";
-import { Button, CardSearchProduct } from "../components/components";
+import { Link } from "react-router-dom";
+import { BackgroundLatest, IconAlibaba, IconArvan, ImageControll, ImageLaboratory, ImagePersonBox, ImageTest, ImageTest2, ImageTest3, ImageTest4 } from "../../assets";
+import { CHART } from "../components/chart";
+import { Button, CardSearchProduct, CardProduct, CardCategory, CardImage, CardCollectionProduct, CardProductWithPrice, CardBestSeller, CardCollectionBest, Divider, CardNewProduct, CardBestBrand } from "../components/components";
 import HomeController from "../controllers/home_controller";
 
+const TEST: CHART[] = [
+    { name: "JAN", size: 20 },
+    { name: "FEB", size: 30 },
+    { name: "MAR", size: 40 },
+    { name: "APR", size: 50 },
+    { name: "MAY", size: 60 },
+    { name: "JUN", size: 70 },
+    { name: "JUL", size: 80 },
+    { name: "AUG", size: 90 },
+    { name: "SEP", size: 100 },
+    { name: "OCT", size: 20 },
+    { name: "NOV", size: 20 },
+    { name: "DEC", size: 20 },
+];
 
 class Home extends HomeController {
     render() {
@@ -58,6 +74,276 @@ class Home extends HomeController {
                     <div className="home-section-earn-image">
                         <img src={ImageLaboratory} className="image-laboratory" />
                     </div>
+                </div>
+                <div className="home-section-latest" style={{ backgroundImage: "url(" + BackgroundLatest + ")" }}>
+                    <h4 className="home-section-latest-title">
+                        Latest Excess Capacites
+                    </h4>
+                    <div className="home-section-latest-group-cards">
+                        <CardProduct
+                            image={ImageTest}
+                            status={"Finish Product"}
+                            description={"Pomegranate Juice Pet Bottle..."}
+                            amount={200}
+                            chart={TEST}
+                        />
+                        <CardProduct
+                            image={ImageTest}
+                            status={"Finish Product"}
+                            description={"Pomegranate Juice Pet Bottle..."}
+                            amount={200}
+                            chart={TEST}
+                        />
+                        <CardProduct
+                            image={ImageTest}
+                            status={"Finish Product"}
+                            description={"Pomegranate Juice Pet Bottle..."}
+                            amount={200}
+                            chart={TEST}
+                        />
+                        <CardProduct
+                            image={ImageTest}
+                            status={"Finish Product"}
+                            description={"Pomegranate Juice Pet Bottle..."}
+                            amount={200}
+                            chart={TEST}
+                        />
+                        <CardProduct
+                            image={ImageTest}
+                            status={"Finish Product"}
+                            description={"Pomegranate Juice Pet Bottle..."}
+                            amount={200}
+                            chart={TEST}
+                        />
+                        <CardProduct
+                            image={ImageTest}
+                            status={"Finish Product"}
+                            description={"Pomegranate Juice Pet Bottle..."}
+                            amount={200}
+                            chart={TEST}
+                        />
+                    </div>
+                </div>
+                <div className="home-section-categories">
+                    <h4 className="home-section-categories-title">
+                        Categories
+                    </h4>
+                    <div className="home-section-categories-group-cards">
+                        <CardCategory
+                            image={ImageTest2}
+                            title={"Sport Tools"}
+                        />
+                        <CardCategory
+                            image={ImageTest2}
+                            title={"Sport Tools"}
+                        />
+                        <CardCategory
+                            image={ImageTest2}
+                            title={"Sport Tools"}
+                        />
+                        <CardCategory
+                            image={ImageTest2}
+                            title={"Sport Tools"}
+                        />
+                        <CardCategory
+                            image={ImageTest2}
+                            title={"Sport Tools"}
+                        />
+                        <CardCategory
+                            image={ImageTest2}
+                            title={"Sport Tools"}
+                        />
+                        <CardCategory
+                            image={ImageTest2}
+                            title={"Sport Tools"}
+                        />
+                        <CardCategory
+                            image={ImageTest2}
+                            title={"Sport Tools"}
+                        />
+                        <CardCategory
+                            image={ImageTest2}
+                            title={"Sport Tools"}
+                        />
+                        <CardCategory
+                            image={ImageTest2}
+                            title={"Sport Tools"}
+                        />
+                    </div>
+                </div>
+                <div className="home-section-special">
+                    <CardImage image={ImageTest3} />
+                    <CardImage image={ImageTest3} />
+                </div>
+                <div className="home-section-special-two">
+                    <CardCollectionProduct title={"Analust’s Choice"} location={""} >
+                        <CardProductWithPrice
+                            image={ImageControll}
+                            title={"Product Name"}
+                            fromPrice={12}
+                            toPrice={24}
+                        />
+                        <CardProductWithPrice
+                            image={ImageControll}
+                            title={"Product Name"}
+                            fromPrice={12}
+                            toPrice={24}
+                        />
+                        <CardProductWithPrice
+                            image={ImageControll}
+                            title={"Product Name"}
+                            fromPrice={12}
+                            toPrice={24}
+                        />
+                        <CardProductWithPrice
+                            image={ImageControll}
+                            title={"Product Name"}
+                            fromPrice={12}
+                            toPrice={24}
+                        />
+                    </CardCollectionProduct>
+                    <CardCollectionProduct title={"Low MOQ"} location={""} >
+                        <CardProductWithPrice
+                            image={ImageControll}
+                            title={"Product Name"}
+                            fromPrice={12}
+                            toPrice={24}
+                        />
+                        <CardProductWithPrice
+                            image={ImageControll}
+                            title={"Product Name"}
+                            fromPrice={12}
+                            toPrice={24}
+                        />
+                        <CardProductWithPrice
+                            image={ImageControll}
+                            title={"Product Name"}
+                            fromPrice={12}
+                            toPrice={24}
+                        />
+                        <CardProductWithPrice
+                            image={ImageControll}
+                            title={"Product Name"}
+                            fromPrice={12}
+                            toPrice={24}
+                        />
+                    </CardCollectionProduct>
+                </div>
+                <div className="home-section-best-seller">
+                    <CardCollectionBest>
+                        <CardBestSeller image={ImageControll} discountPercent={45} />
+                        <CardBestSeller image={ImageControll} discountPercent={45} />
+                        <CardBestSeller image={ImageControll} discountPercent={45} />
+                        <CardBestSeller image={ImageControll} discountPercent={45} />
+                        <CardBestSeller image={ImageControll} discountPercent={45} />
+                        <CardBestSeller image={ImageControll} discountPercent={45} />
+                        <CardBestSeller image={ImageControll} discountPercent={45} />
+                        <CardBestSeller image={ImageControll} discountPercent={45} />
+                        <CardBestSeller image={ImageControll} discountPercent={45} />
+                        <CardBestSeller image={ImageControll} discountPercent={45} />
+                    </CardCollectionBest>
+                </div>
+                <div className="home-section-new">
+                    <div className="home-section-new-header">
+                        <h4 className="home-section-new-header-text">
+                            New Excess Capacities
+                        </h4>
+                        <Link to="/" className="home-section-new-header-link">
+                            SEE ALL
+                        </Link>
+                    </div>
+                    <Divider />
+                    <div className="home-section-new-content">
+                        <CardNewProduct
+                            image={ImageControll}
+                            items={TEST}
+                            title={"Name of Excess Capacity"}
+                        />
+                        <CardNewProduct
+                            image={ImageControll}
+                            items={TEST}
+                            title={"Name of Excess Capacity"}
+                        />
+                        <CardNewProduct
+                            image={ImageControll}
+                            items={TEST}
+                            title={"Name of Excess Capacity"}
+                        />
+                        <CardNewProduct
+                            image={ImageControll}
+                            items={TEST}
+                            title={"Name of Excess Capacity"}
+                        />
+                        <CardNewProduct
+                            image={ImageControll}
+                            items={TEST}
+                            title={"Name of Excess Capacity"}
+                        />
+                        <CardNewProduct
+                            image={ImageControll}
+                            items={TEST}
+                            title={"Name of Excess Capacity"}
+                        />
+                        <CardNewProduct
+                            image={ImageControll}
+                            items={TEST}
+                            title={"Name of Excess Capacity"}
+                        />
+                        <CardNewProduct
+                            image={ImageControll}
+                            items={TEST}
+                            title={"Name of Excess Capacity"}
+                        />
+                        <CardNewProduct
+                            image={ImageControll}
+                            items={TEST}
+                            title={"Name of Excess Capacity"}
+                        />
+                        <CardNewProduct
+                            image={ImageControll}
+                            items={TEST}
+                            title={"Name of Excess Capacity"}
+                        />
+                        <CardNewProduct
+                            image={ImageControll}
+                            items={TEST}
+                            title={"Name of Excess Capacity"}
+                        />
+                        <CardNewProduct
+                            image={ImageControll}
+                            items={TEST}
+                            title={"Name of Excess Capacity"}
+                        />
+                    </div>
+                </div>
+                <div className="home-section-images">
+                    <CardImage image={ImageTest4} />
+                    <CardImage image={ImageTest4} />
+                    <CardImage image={ImageTest4} />
+                    <CardImage image={ImageTest4} />
+                </div>
+                <div className="home-section-product-newest">
+
+                </div>
+                <div className="home-section-best-brand">
+                    <h4 className="home-section-best-brand-title"> Best Brands</h4>
+                    <CardBestBrand
+                        images={[
+                            IconAlibaba, 
+                            IconArvan,
+                            IconAlibaba, 
+                            IconArvan,
+                            IconAlibaba, 
+                            IconArvan,
+                            IconAlibaba, 
+                            IconArvan,
+                            IconAlibaba, 
+                            IconArvan,
+                        ]}
+                    />
+                </div>
+                <div className="home-section-description">
+
                 </div>
             </div>
         )
