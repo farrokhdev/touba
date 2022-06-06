@@ -615,7 +615,7 @@ a {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  font-size: 8px;
+  font-size: 14px;
   line-height: 22px;
   /* identical to box height, or 157% */
   letter-spacing: 0.1px;
@@ -669,12 +669,11 @@ a {
   /* Sorme2 */
   border: 3px solid #6B798C;
   border-radius: 50%;
-  margin-left: 8%;
 }
 
 .fill4 {
   position: relative;
-  left: -2.5%;
+  left: -1.8%;
 }
 
 .more {
@@ -843,8 +842,8 @@ a {
 }
 
 .arrowCircle {
-  width: 30px;
-  height: 30px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   border: 1.5px solid #6b798c;
   display: flex;
@@ -4726,6 +4725,197 @@ a {
 }
 .component-filter-topbar > div {
   margin-left: 2%;
+}
+
+.product-side-card {
+  background: #FFFFFF;
+  border-radius: 12px;
+}
+.product-side-card .image-box {
+  background: #FFFFFF;
+  /* Bg white */
+  padding: 3%;
+  border: 1px solid #f3f4f6;
+  border-radius: 12px;
+}
+.product-side-card .logo-text {
+  width: auto;
+  height: auto;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #3c557a !important;
+}
+@media (max-width: 375px) {
+  .product-side-card .logo-text {
+    font-size: 10px;
+  }
+}
+@media (min-width: 376px) {
+  .product-side-card .logo-text {
+    font-size: 11px;
+  }
+}
+@media (min-width: 600px) {
+  .product-side-card .logo-text {
+    font-size: 12px;
+  }
+}
+@media (min-width: 900px) {
+  .product-side-card .logo-text {
+    font-size: 13px;
+  }
+}
+@media (min-width: 1000px) {
+  .product-side-card .logo-text {
+    font-size: 14px;
+  }
+}
+.product-side-card .text-desc {
+  width: auto;
+  height: auto;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  color: #d6d6d6 !important;
+}
+@media (max-width: 375px) {
+  .product-side-card .text-desc {
+    font-size: 6px;
+  }
+}
+@media (min-width: 376px) {
+  .product-side-card .text-desc {
+    font-size: 7px;
+  }
+}
+@media (min-width: 600px) {
+  .product-side-card .text-desc {
+    font-size: 8px;
+  }
+}
+@media (min-width: 900px) {
+  .product-side-card .text-desc {
+    font-size: 9px;
+  }
+}
+@media (min-width: 1000px) {
+  .product-side-card .text-desc {
+    font-size: 10px;
+  }
+}
+.product-side-card .footer-text {
+  width: auto;
+  height: auto;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #3c557a !important;
+}
+@media (max-width: 375px) {
+  .product-side-card .footer-text {
+    font-size: 12px;
+  }
+}
+@media (min-width: 376px) {
+  .product-side-card .footer-text {
+    font-size: 13px;
+  }
+}
+@media (min-width: 600px) {
+  .product-side-card .footer-text {
+    font-size: 14px;
+  }
+}
+@media (min-width: 900px) {
+  .product-side-card .footer-text {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1000px) {
+  .product-side-card .footer-text {
+    font-size: 16px;
+  }
+}
+.product-side-card .button-message {
+  background: #FFFFFF;
+  /* Green Brand */
+  border: 1px solid #21C085;
+  padding: 5%;
+  border-radius: 8px;
+  width: auto;
+  height: auto;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #21C085 !important;
+}
+@media (max-width: 375px) {
+  .product-side-card .button-message {
+    font-size: 14px;
+  }
+}
+@media (min-width: 376px) {
+  .product-side-card .button-message {
+    font-size: 15px;
+  }
+}
+@media (min-width: 600px) {
+  .product-side-card .button-message {
+    font-size: 16px;
+  }
+}
+@media (min-width: 900px) {
+  .product-side-card .button-message {
+    font-size: 17px;
+  }
+}
+@media (min-width: 1000px) {
+  .product-side-card .button-message {
+    font-size: 18px;
+  }
+}
+.product-side-card .button-cart {
+  border: white;
+  background-color: #21C085;
+  padding: 5%;
+  border-radius: 8px;
+  width: auto;
+  height: auto;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #FFFFFF !important;
+}
+@media (max-width: 375px) {
+  .product-side-card .button-cart {
+    font-size: 14px;
+  }
+}
+@media (min-width: 376px) {
+  .product-side-card .button-cart {
+    font-size: 15px;
+  }
+}
+@media (min-width: 600px) {
+  .product-side-card .button-cart {
+    font-size: 16px;
+  }
+}
+@media (min-width: 900px) {
+  .product-side-card .button-cart {
+    font-size: 17px;
+  }
+}
+@media (min-width: 1000px) {
+  .product-side-card .button-cart {
+    font-size: 18px;
+  }
 }
 
 .top-nav {

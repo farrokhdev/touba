@@ -8,6 +8,7 @@ import ship from "../../assets/images/ship.png";
 import fill from "../../assets/images/Fill.png";
 import fill4 from "../../assets/images/Fill4.png";
 import Certificates from "./certificates";
+import iconShare from "../../assets/icons/icon-share.svg";
 
 const Content = () => {
   return (
@@ -30,17 +31,20 @@ const Content = () => {
             <img src={orangStar} />
             <img src={star} />
           </div>
-          <div className=" col-3"><div className="textContent">(4.2 | 12,514 Ratings)</div></div>
-          <div className={`textContent text-center col-4`}>
+          <div className=" col-3 border-right  ">
+            <div className="textContent">(4.2 | 12,514 Ratings)</div>
+          </div>
+          <div className={`textContent text-center col-4 border-right`}>
             <div>988 Customer Reviews</div>
           </div>
           <div className={`col-2 text-center `}>
+            <img src={iconShare} />
             <img src={stroke} />
           </div>
         </div>
         <div className="center row mt-2">
-          <div className="col-2 align-middle">
-            <div className="text">Feature 1: </div>
+          <div className="col-2">
+            <div className="smalText">Feature 1: </div>
           </div>
           <div className="col-3">
             <div className="">
@@ -66,8 +70,8 @@ const Content = () => {
           </div>
         </div>
         <div className="center row mt-2">
-          <div className="col-1">
-            <div className="text">Colors:</div>
+          <div className="col-2">
+            <div className="smalText">Colors:</div>
           </div>
           <div className="col-4">
             <div className="ball"></div>
@@ -78,23 +82,23 @@ const Content = () => {
         </div>
         <div className="row mt-2 d-flex align-items-center">
           <div className="col-2">
-            <div className="text">Shipping:</div>
+            <div className="smalText">Shipping:</div>
           </div>
           <div className="col-1 w-60">
             <img src={plain} />
           </div>
           <div className="col-3">
-            <div className="text">Support Express</div>
+            <div className="smalText">Support Express</div>
           </div>
           <div className="col-1">
             <img src={ship} />
           </div>
           <div className="col-3">
-            <div className="text">Sea freight</div>
+            <div className="smalText">Sea freight</div>
           </div>
         </div>
         <div className="row mt-3">
-          <div className="text d-flex align-items-center">
+          <div className="smalText d-flex align-items-center">
             Protection & Insurance:
             <span style={{ color: " #21C085", marginLeft: "5px" }}> Touba</span>
             <span className="d-flex align-items-center ">
@@ -109,9 +113,9 @@ const Content = () => {
         <div className="row mt-3">
           <Certificates />
         </div>
-        <div className="d-flex justify-content-between">
+        <div className="d-flex justify-content-between mt-2">
           <div className="more">More Detail</div>
-          <div className="text">SKU: 100105</div>
+          <div className="smalText">SKU: 100105</div>
         </div>
       </div>
     </div>

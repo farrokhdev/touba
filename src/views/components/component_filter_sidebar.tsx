@@ -11,7 +11,7 @@ interface Props {
 }
 const ComponentFilterSidebar = ({ showButton }: Props) => {
   return (
-    <div className="filter-sidebar-card w-100 ">
+    <div className="filter-sidebar-card w-100">
       {showButton && (
         <div className="d-flex align-items-cente p-3 border-bottom">
           <div className="w-100">
