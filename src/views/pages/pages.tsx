@@ -40,6 +40,8 @@ import SearchResultSuppliers from "./SearchResultSuppliers/SearchResultSuppliers
 import ToubaProduct from "./ToubaProduct/ToubaProduct";
 import ToubaSupplier from "./ToubaSupplier/ToubaSupplier";
 import ToubaProductSingle1 from "./ToubaProductSingle1/ToubaProductSingle1";
+import ToubaSpecialOffers from "./ToubaSpecialOffers/ToubaSpecialOffers";
+import ToubaSpecialOffers2 from "./ToubaSpecialOffers2/ToubaSpecialOffers2";
 
 const TEST: CHART[] = [
   { name: "JAN", size: 20 },
@@ -108,7 +110,7 @@ function Pages() {
     ],
     isRead: false,
   };
-  return <ToubaProductSingle1 />;
+  return <ToubaSpecialOffers2 />;
   // return (
   //   <div>
   //     <TopNav />
