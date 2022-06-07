@@ -28,18 +28,18 @@ export function CardSearchProduct({ }: Props): ReactElement {
                         key={button.id}
                         className={
                             active === button.id ?
-                            "card-search-product-header-button active-border"
-                            : 
-                            "card-search-product-header-button"
+                                "card-search-product-header-button active-border"
+                                :
+                                "card-search-product-header-button"
                         }
-                        onClick={() => {handleActiveButton(button.id)}}
+                        onClick={() => { handleActiveButton(button.id) }}
                     >
                         <p
                             className={
-                                active === button.id ? 
-                                "card-search-product-header-button-text active"
-                                :
-                                "card-search-product-header-button-text"
+                                active === button.id ?
+                                    "card-search-product-header-button-text active"
+                                    :
+                                    "card-search-product-header-button-text"
                             }
                         >
                             {button.name}
@@ -52,7 +52,14 @@ export function CardSearchProduct({ }: Props): ReactElement {
                     Search for free product lines to make a product with your brand identity
                 </h6>
                 <div className="card-search-product-inputs-group">
-                    <InputTextLabel value={search} onChange={(event => {setSearch(event.currentTarget.value)})}/>
+                    <InputTextLabel
+                        value={search}
+                        onChange={(event => { setSearch(event.currentTarget.value); })}
+                        title={"Product or Service"}
+                        placeholder={"What product you want to produce? Eg. PET Bottle"}
+                        type={"text"}
+                        showDropDown={true}
+                    />
                     <SelectText value={""} />
                     <SelectComponent type={"one"} />
                     <Button title="SEARCH" />
