@@ -75,3 +75,8 @@ export { default as BackgroundLatest} from './images/background-latest.png';
 export { default as ImageBackgroundLogin} from './images/image-background-login.png';
 export { default as ArrowUp} from './images/arrowup.png';
 export { default as arrowDown} from './images/arrowdown.png';
+export { default as IconTouba} from './icons/icon-touba.svg';
+export { default as IconError} from './icons/error.svg';
+export { default as IconEmail} from './icons/icon-email.svg';
+export { default as IconTwiterGray} from './icons/icon-twiter-gray.svg';
+export { default as IconLinkdinGray} from './icons/icon-linkdin-gray.svg';
