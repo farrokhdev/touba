@@ -7,7 +7,7 @@ interface Props {
 const ComponentMission = ({ title, desc }: Props) => {
   return (
     <div>
-      <div className="mission-card mx-2">
+      <div className="mission-card">
         <div className="circle-mission-parrent">
           <div className="circle-mission-child"></div>
         </div>

@@ -1,38 +1,11 @@
 import { Route, Routes, useLocation } from "react-router-dom";
-import { Home } from ".";
-import { IconTwoPerson, ImageBrandalibaba, ImageBrandArvan, ImageControll, ImageTest, ImageTest2, ImageTest3, ImageTest4 } from "../../assets";
-import { ButtonIcon } from "../components/button_icon";
+import { Home, Login } from ".";
 import { CHART, Chart } from "../components/chart";
 import {
-  Button,
-  SelectComponent,
-  SelectText,
-  CardProduct,
-  CardCategory,
-  CardImage,
-  CardProductWithPrice,
-  CardCollectionProduct,
-  CardBestSeller,
-  CardCollectionBest,
-  CardNewProduct,
-  CardBestBrand,
-  ButtonSelect,
-  ButtonOutline,
-  CardOfferHorizental,
-  CardCalculate,
   ComponentBinaRazan,
 } from "../components/components";
-import { BottomNav, Footer } from "../layout/layout";
-import GruopChat from "../components/group_chat";
-import IncrementDecrementProduct from "../components/increment_decrement_product";
-import NeededCapacity from "../components/needed_capacity";
-import PriceSummary from "../components/price_summary";
-import SingleProductPrice from "../components/single_product_price";
-import Dashboard from "../layout/dashboard/dashobord";
-import ProfileNav from "../layout/profile-nav/profile-nav";
-import TopNav from "../layout/top_nav";
+import { BottomNav, Footer, TopNav } from "../layout/layout";
 import AboutusPage from "./AboutusPage/AboutusPage";
-import MembershipPage from "./MembershipPage/MembershipPage";
 import { useState } from "react";
 import SearchResultExcessCapacity from "./SearchResultExcessCapacity/SearchResultExcessCapacity";
 import { SearchResultProduct } from "./SearchResultProduct/SearchResultProduct";
@@ -42,6 +15,7 @@ import ToubaSupplier from "./ToubaSupplier/ToubaSupplier";
 import ToubaProductSingle1 from "./ToubaProductSingle1/ToubaProductSingle1";
 import ToubaSpecialOffers from "./ToubaSpecialOffers/ToubaSpecialOffers";
 import ToubaSpecialOffers2 from "./ToubaSpecialOffers2/ToubaSpecialOffers2";
+import Register from "./register";
 
 const TEST: CHART[] = [
   { name: "JAN", size: 20 },
@@ -110,45 +84,35 @@ function Pages() {
     ],
     isRead: false,
   };
-  return <ToubaSupplier />;
-  // return (
-  //   <div>
-  //     <TopNav />
-  //     <BottomNav />
-  //     <ComponentBinaRazan />
-  //     <div style={{ width: "360px" }}>
-  //       <SelectComponent type={"one"} />
-  //     </div>
-  //     <Button title={"SEARCH"} />
-  //     <SelectText value={"test"} />
-  //     <CardProduct
-  //       image={ImageTest}
-  //       status={"Finish Product"}
-  //       description={"Pomegranate Juice Pet Bottle..."}
-  //       amount={200}
-  //       chart={TEST}
-  //     />
-  //     <CardCategory image={ImageTest2} title={"Home Appliance"} />
-  //     <div style={{ width: "770px" }}>
-  //       <CardImage image={ImageTest3} />
-  //     </div>
-  //     <CardProductWithPrice
-  //       image={ImageControll}
-  //       title={"Product Name"}
-  //       fromPrice={12}
-  //       toPrice={24}
-  //     />
 
   return (
     <div>
-      <TopNav />
-      <BottomNav />
-      { location.pathname === "/" ? (null) : (<ComponentBinaRazan />)}
+      {location.pathname.includes("/login") ||
+        location.pathname.includes("/register")
+        ? (null) : (
+          <>
+            <TopNav />
+            <BottomNav />
+          </>
+        )}
+      {location.pathname === "/" ||
+        location.pathname === "/login" ||
+        location.pathname === "/register"
+        ? (null) : (<ComponentBinaRazan />)}
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/about-us" element={<AboutusPage/>}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/about-us" element={<AboutusPage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/detail-product" element={<ToubaProductSingle1 />} />
       </Routes>
-      <Footer/>
+      {location.pathname.includes("/login") ||
+        location.pathname.includes("/register")
+        ? (null) : (
+          <>
+            <Footer />
+          </>
+        )}
     </div>
   );
 }

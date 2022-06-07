@@ -4,12 +4,11 @@ interface Props {
 }
 const ComponentOurTeam = ({ image }: Props) => {
   return (
-    <div className="team-Member">
-      <img src={image} alt="member" />
-      <div className="d-flex flex-column justify-content-end">
-        <span>Name Here</span>
-        <span>Position</span>
-      </div>
+    <div className="position-relative">
+      <img width={250} height={400} src={image} />
+      <div className="name-our-team">Name</div>
+            <div className="postion-our-team">position</div>
+
     </div>
   );
 };

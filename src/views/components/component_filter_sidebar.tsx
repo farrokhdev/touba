@@ -1,10 +1,9 @@
 import React, { memo } from "react";
 import { ComponentRadioSquare, ComponentSearch } from "./components";
-import arrowUp from "../../assets/icons/icon-arrow-up.svg";
 import iconSearch from "../../assets/icons/icon-search.svg";
-import arrowDown from "../../assets/icons/icon-arrow-down.svg";
 import { ButtonComponent } from "./button";
 import location from "../../assets/icons/icon-location-button.svg";
+import { arrowDown, ArrowUp } from "../../assets";
 
 interface Props {
   showButton: boolean;
@@ -28,7 +27,7 @@ const ComponentFilterSidebar = ({ showButton }: Props) => {
         <div className="d-flex align-items-center justify-content-between">
           <div className="text text-start">Filter by Category </div>
           <div>
-            <img src={arrowUp} />
+            <img src={ArrowUp} />
           </div>
         </div>
         <div className="row p-2 mt-2">
@@ -65,7 +64,7 @@ const ComponentFilterSidebar = ({ showButton }: Props) => {
         <div className="d-flex align-items-center justify-content-between">
           <div className="text text-start">Filter by Business Type </div>
           <div>
-            <img src={arrowUp} />
+            <img src={ArrowUp} />
           </div>
         </div>
         <div className="row p-2 mt-2">

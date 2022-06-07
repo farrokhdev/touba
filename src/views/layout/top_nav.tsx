@@ -5,14 +5,14 @@ import { ButtonIcon } from "../components/button_icon";
 export function TopNav() {
     return (
         <>
-            <div className="top-nav w-100">
+            <div className="top-nav">
                 <div className="top-nav-brand">
                     <img
                         src={ImageBrand}
                         className="top-nav-brand-image"
                     />
                 </div>
-                <div className="top-nav-links w-100">
+                <div className="top-nav-links">
                     <Link to="/" className="link">
                         <p className="text-link">HOME</p>
                     </Link>
@@ -29,7 +29,7 @@ export function TopNav() {
                         <p className="text-link">CONTACT US</p>
                     </Link>
                 </div>
-                <div className="top-nav-socials w-100">
+                <div className="top-nav-socials">
                     <Link to="/">
                         <img src={IconInstagram} className="social-link" />
                     </Link>

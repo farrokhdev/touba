@@ -5,12 +5,12 @@ import { IconGem } from "../../assets";
 import iconChin from "../../assets/icons/icon-chin.svg";
 import mail from "../../assets/images/mail.png";
 import clock from "../../assets/images/clock.png";
-import { Hr } from "./hr";
 import iconMessage from "../../assets/icons/icon-message.svg";
 import iconCard from "../../assets/icons/icon-card.svg";
 import shose from "../../assets/icons/icon-shose-card.svg";
 import settings from "../../assets/images/settings.png";
 import icon_unit from "../../assets/icons/icon-unit.svg";
+import { Divider } from "./divider";
 
 const ComponentDetailPRoductSideCard = () => {
   return (
@@ -121,13 +121,13 @@ const ComponentDetailPRoductSideCard = () => {
       <div className="d-flex justify-content-center align-items-center mt-4">
         <div className="row d-flex justify-content-center align-items-center">
           <div className="col-5 pl-2">
-            <Hr />
+            <Divider />
           </div>
           <div className="col-2 ">
             <div className="text-desc text-center">Contact</div>
           </div>
           <div className="col-5 pr-2">
-            <Hr />
+            <Divider />
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ const ComponentSearchBar = () => {
   return (
     <div className="d-flex align-items center row p-4 bg-white">
       <div className="col-xl-3 col-sm-12 p-2">
-        <InputTextLabel value={""} />
+        <InputTextLabel value={""} title={"Product or Service"} placeholder={""} type={""} showDropDown={false} />
       </div>
       <div className="col-xl-3 col-sm-12 p-2">
         <SelectText value={""} />

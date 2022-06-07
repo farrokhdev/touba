@@ -17,8 +17,7 @@ export class ToubaProductSingle1 extends BaseComponent<IProps, IState> {
   render() {
     return (
       <div>
-        <TopNav />
-        <BottomNav />
+
         <div className="px-5">
           <div className="smalText p-2">{this.test}</div>
           <div className="row">

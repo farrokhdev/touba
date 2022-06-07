@@ -8,47 +8,48 @@ import bizhan from "../../assets/images/bizhan.png";
 import chinchin from "../../assets/images/chinchin.png";
 import zarmakaron from "../../assets/images/zarmakaron.png";
 import pasta from "../../assets/images/pasta.png";
-import bag from "../../assets/icons/icon-bag.svg";
-import iconCategory from "../../assets/icons/icon-category.svg";
-import iconMain from "../../assets/icons/icon-main-market.svg";
+import bag from '../../assets/icons/icon-bag.svg'
+
+
+
 
 const ComponentSuppliers = () => {
   return (
     <div>
       <div className="supplier-box">
         <div className="row">
-          <div className="col-xl-2 col-sm-12">
+          <div className="col-2">
             <div className="logo-box">LOGO</div>
           </div>
-          <div className="col-xl-9 col-sm-12 px-3">
-            <div className="bold-text">Supplier Name here</div>
-            <div className="d-flex align-items-center">
-              <div className=" align-items-center">
+          <div className="col-9">
+            <div className="d-flex ">
+              <div className="p-1">
                 <img src={location} />
               </div>
               <div className="supplier-content">
-                <div className="bold-text">
+                <div className="bigText ml-3">
                   Region:
                   <span className="smalText"> Iran ( Islamic Republic of)</span>
                 </div>{" "}
               </div>
+              <div></div>{" "}
             </div>
-            <div className="d-flex  align-items-center   mt-2">
+            <div className="d-flex flex-wrap   mt-2">
               <div>
-                <img src={iconCategory} />
+                <img src={solid} />
               </div>
               <div className="supplier-content">
-                <div className="bold-text">
-                  Business Category:{" "}
-                  <span className="smalText"> Food and Beverage </span>
+                <div className="bigText ml-3">
+                  Region:
+                  <span className="smalText"> Iran ( Islamic Republic of)</span>
                 </div>{" "}
               </div>
               <div></div>{" "}
             </div>
-            <div className="d-flex mt-2  align-items-center">
+            <div className="d-flex mt-2">
               <img src={bag} />
               <div className="supplier-content">
-                <div className="bold-text ">
+                <div className="bigText ml-3">
                   Field Of Activity:
                   <span className="smalText">
                     {" "}
@@ -56,11 +57,12 @@ const ComponentSuppliers = () => {
                   </span>
                 </div>{" "}
               </div>
+              <div></div>{" "}
             </div>
-            <div className="d-flex  align-items-center mt-2">
-              <img src={iconMain} />
+            <div className="d-flex mt-2">
+              <img src={solid} />
               <div className="supplier-content">
-                <div className="bold-text ">
+                <div className="bigText ml-3">
                   Main Market:
                   <span className="smalText">
                     {" "}
@@ -72,29 +74,29 @@ const ComponentSuppliers = () => {
               <div></div>{" "}
             </div>
           </div>
-          <div className="col-1 text-end col-sm1-2">
+          <div className="col-1 text-end">
             <div className="">
               <img src={greenHeart} />
             </div>
           </div>
         </div>
         <div className="row mt-3">
-          <div className="col-xl-2 col-sm-12">
+          <div className="col-2">
             <img src={chinchin} />
           </div>
-          <div className="col-xl-2 col-sm-12">
+          <div className="col-2">
             <img src={zarmakaron} />
           </div>
-          <div className="col-xl-2 col-sm-12">
+          <div className="col-2">
             <img src={bizhan} />
           </div>
-          <div className="col-xl-2 col-sm-12">
+          <div className="col-2">
             <img src={zorat} />
           </div>
-          <div className="col-xl-2 col-sm-12">
+          <div className="col-2">
             <img src={ladan} />
           </div>
-          <div className="col-xl-2 col-sm-12">
+           <div className="col-2">
             <img src={pasta} />
           </div>
         </div>

@@ -1,4 +1,3 @@
-@import 'component_filter_sidebar';
 @import "./select_component";
 @import "./button_component";
 @import "./select_text";
@@ -31,7 +30,7 @@
 @import "./card_best_seller";
 @import "./card_collection_best";
 @import "./chart";
-@import "./card_new_product";
+@import "./card_new_excess";
 @import "./card_best_brand";
 @import "./button_icon";
 @import "./button_outline";
@@ -44,7 +43,7 @@
 @import "./select_categories";
 @import "./text_icon_horizontal";
 @import './text_icon_vertical';
-@import './hr';
+@import './divider';
 @import './dropdown_component';
 @import "./single_product_price";
 @import "./increment_decrement_product";
@@ -52,9 +51,8 @@
 @import "./needed_capacity";
 @import "./group_chat";
 @import "./card_search_product";
+@import "./card_new_product";
 @import 'componenet_bina_razan';
-@import "./plan_detail";
-@import "component_suppliers";
 @import "componnet_filter_topbar";
 @import "component_product_side_card";
 @import "component_capicity_filter"

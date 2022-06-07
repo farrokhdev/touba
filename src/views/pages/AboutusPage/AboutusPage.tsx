@@ -15,10 +15,6 @@ import {
   ImageAboutus,
   ImageAboutusDesk,
 } from "../../../assets";
-import {
-  ComponentMission,
-  ComponentOurTeam,
-} from "../../components/components";
 
 interface IProps {}
 
@@ -56,27 +52,42 @@ export default class AboutusPage extends BaseComponent<IProps, IState> {
           <div className="mission d-flex flex-column align-items-start justify-content-center">
             <span className="title mx-auto">Mission</span>
             <div className="mission-Childs d-flex flex-row align-items-start justify-content-center mx-auto">
-              <ComponentMission
-                title="Title Here"
-                desc=" Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+              <div className="mission-Child">
+                <div className="d-flex flex-column align-items-start justify-content-between">
+                  <img src={IconCostomer} alt="costomer" />
+                  <span>Title Here</span>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                   diam nonummy nibh euismod tincidunt ut laoreet dolore magna
                   aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                  nostrud exerci tation"
-              />
-              <ComponentMission
-                title="Title Here"
-                desc=" Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                nostrud exerci tation"
-              />
-              <ComponentMission
-                title="Title Here"
-                desc=" Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-              diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-              aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-              nostrud exerci tation"
-              />
+                  nostrud exerci tation
+                </p>
+              </div>
+              <div className="mission-Child">
+                <div className="d-flex flex-column align-items-start justify-content-between">
+                  <img src={IconIncome} alt="income" />
+                  <span>Title Here</span>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                  aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                  nostrud exerci tation
+                </p>
+              </div>
+              <div className="mission-Child">
+                <div className="d-flex flex-column align-items-start justify-content-between">
+                  <img src={IconProduct} alt="product" />
+                  <span>Title Here</span>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                  aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                  nostrud exerci tation
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -130,10 +141,34 @@ export default class AboutusPage extends BaseComponent<IProps, IState> {
                 </button>
               </div>
             </div>
-            <ComponentOurTeam image="https://s6.uupload.ir/files/1_2g5u.jpg" />
-            <ComponentOurTeam image="https://s6.uupload.ir/files/2_6ecs.jpg" />
-            <ComponentOurTeam image="https://s6.uupload.ir/files/3_px29.jpg" />
-            <ComponentOurTeam image="https://s6.uupload.ir/files/4_v1j5.jpg" />
+            <div className="team-Member">
+              <img src="https://s6.uupload.ir/files/1_2g5u.jpg" alt="member" />
+              <div className="d-flex flex-column justify-content-end">
+                <span>Name Here</span>
+                <span>Position</span>
+              </div>
+            </div>
+            <div className="team-Member">
+              <img src="https://s6.uupload.ir/files/2_6ecs.jpg" alt="member"/>
+              <div className="d-flex flex-column justify-content-end">
+                <span>Name Here</span>
+                <span>Position</span>
+              </div>
+            </div>
+            <div className="team-Member">
+              <img src="https://s6.uupload.ir/files/3_px29.jpg" alt="member"/>
+              <div className="d-flex flex-column justify-content-end">
+                <span>Name Here</span>
+                <span>Position</span>
+              </div>
+            </div>
+            <div className="team-Member">
+              <img src="https://s6.uupload.ir/files/4_v1j5.jpg" alt="member"/>
+              <div className="d-flex flex-column justify-content-end">
+                <span>Name Here</span>
+                <span>Position</span>
+              </div>
+            </div>
           </div>
         </div>
         <div className="sponsors d-flex flex-column align-items-center mx-auto">
