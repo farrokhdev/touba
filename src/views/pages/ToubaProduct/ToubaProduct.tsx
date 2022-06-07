@@ -8,6 +8,7 @@ import TopNav from "../../layout/top_nav";
 import image_test from "../../../assets/images/image-test.png";
 import {
   CardLike,
+  ComponentCapicityFilter,
   ComponentFilterRangeSlider,
   ComponentFilterSidebar,
   SelectComponent,
@@ -39,7 +40,7 @@ export class ToubaProduct extends BaseComponent<IProps, IState> {
       <div>
         <TopNav />
         <BottomNav />
-        <div className=" container">
+        <div className=" px-5">
           <div className="row p-3      ">
             <div className="col-3">
               <ComponentFilterSidebar showButton={true} />
@@ -53,6 +54,9 @@ export class ToubaProduct extends BaseComponent<IProps, IState> {
                 <div>
                   <SelectComponent type="one" />
                 </div>
+              </div>
+              <div className="p-2 d-flex align-items-center mt-3">
+                <ComponentCapicityFilter />
               </div>
               <div className="row">
                 <div className="col-4 p-2">

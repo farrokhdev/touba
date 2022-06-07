@@ -110,7 +110,7 @@ function Pages() {
     ],
     isRead: false,
   };
-  return <ToubaProductSingle1 />;
+  return <ToubaProduct />;
   // return (
   //   <div>
   //     <TopNav />

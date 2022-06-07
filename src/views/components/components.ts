@@ -60,4 +60,5 @@ export { default as ComponentFilterTopbar } from './component_filter_topbar';
 export { default as ComponentProductSideCard } from './component_product_side_card';
 export { default as ComponentDetailPRoductSideCard } from './component_product_detail_side_card';
 export { default as ContentRelated } from './content_related';
+export { default as ComponentCapicityFilter } from './component_capicity_filter';
 
