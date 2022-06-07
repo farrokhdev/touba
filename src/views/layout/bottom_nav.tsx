@@ -75,7 +75,7 @@ export function BottomNav() {
           <SelectCategories onOpen={handleshowDropDown} />
         </div>
         <div className="bottom-nav-links">
-          <Button ClickHandler={()=>console.log(5)} title={"EXCESS CAPACITY"} />
+          <Button title={"EXCESS CAPACITY"} />
           <Button title={"PRODUCT"} />
           <ButtonDropdown title={"SUPPLIERS"} links={TEST} />
           <ButtonDropdown title={"DEMANDERS"} links={[]} />
