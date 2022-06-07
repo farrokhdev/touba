@@ -16,6 +16,9 @@ import ToubaProductSingle1 from "./ToubaProductSingle1/ToubaProductSingle1";
 import ToubaSpecialOffers from "./ToubaSpecialOffers/ToubaSpecialOffers";
 import ToubaSpecialOffers2 from "./ToubaSpecialOffers2/ToubaSpecialOffers2";
 import Register from "./register";
+import HelpPage from "./HelpPage/HelpPage";
+import MembershipPage from "./MembershipPage/MembershipPage";
+import ToubaExcessCapacity from "./ToubaExcessCapacity/ToubaExcessCapacity";
 
 const TEST: CHART[] = [
   { name: "JAN", size: 20 },
@@ -99,13 +102,14 @@ function Pages() {
         location.pathname === "/login" ||
         location.pathname === "/register"
         ? (null) : (<ComponentBinaRazan />)}
-      <Routes>
+        <ToubaExcessCapacity/>
+      {/* <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutusPage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/detail-product" element={<ToubaProductSingle1 />} />
-      </Routes>
+      </Routes> */}
       {location.pathname.includes("/login") ||
         location.pathname.includes("/register")
         ? (null) : (

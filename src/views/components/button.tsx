@@ -6,21 +6,24 @@ import {
     ButtonHTMLAttributes
 } from "react";
 
+
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
     title: string;
-}
+    ClickHandler?: (event: React.MouseEvent<HTMLButtonElement>) => void}
 
-export function ButtonComponent({ onClick, title }: Props): ReactElement {
 
-    const handleOnClick = useCallback((event: MouseEvent<HTMLButtonElement>) => {
-        event.stopPropagation();
-        onClick?.(event);
-    }, [onClick]);
+export function ButtonComponent({ ClickHandler, title }:  Props): ReactElement {
+    
+
+    // const handleOnClick = useCallback((event: MouseEvent<HTMLButtonElement>) => {
+    //     event.stopPropagation();
+    //     onClick?.(event);
+    // }, [onClick]);
 
     return (
         <button
-            className="button-component "
-            onClick={handleOnClick}
+            className="button-component"
+           onClick={ClickHandler}
         >
             <h3 className="button-component-text">
                 {title}

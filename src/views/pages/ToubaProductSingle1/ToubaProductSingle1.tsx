@@ -5,6 +5,7 @@ import ContentProduct from "../../components/content_product";
 import BottomNav from "../../layout/bottom_nav";
 import Footer from "../../layout/footer";
 import TopNav from "../../layout/top_nav";
+import shose from '../../../assets/images/Rectangle1417.png'
 
 interface IProps {}
 
@@ -23,7 +24,7 @@ export class ToubaProductSingle1 extends BaseComponent<IProps, IState> {
           <div className="row">
             <div className="col-9 p-2">
               <div>
-                <CardMain />
+                <CardMain tabItemOne="Product" tabItemTwo="Related Excess Capacity" image={shose} show={true} />
               </div>
             </div>
             <div className="col-3 p-2">

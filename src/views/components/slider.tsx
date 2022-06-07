@@ -6,12 +6,14 @@ import arrowRight from "../../assets/icons/icon-arrow-right-circle.svg";
 import bag from '../../assets/icons/icon-bag.svg'
 
 
-
-const Slider = () => {
+interface Props{
+  image:any
+}
+const Slider = ({image}:Props) => {
   return (
     <div>
       <div className="row">
-        <img src={shoes} className="image" />
+        <img src={image} className="image" />
       </div>
       <div className="row mt-3  d-flex align-items-center ">
         <div className="arrowCircle col-1">
@@ -21,22 +23,22 @@ const Slider = () => {
           <div className="row">
             <div className="col-3 p-1">
               <div className="imageSlider">
-                <img style={{width:'60px',height:'60px'}} src={shoes} />
+                <img style={{width:'60px',height:'60px'}} src={image} />
               </div>
             </div>
             <div className="col-3 p-1">
               <div className="imageSlider">
-                <img style={{width:'60px',height:'60px'}} src={shoes} />
+                <img style={{width:'60px',height:'60px'}} src={image} />
               </div>
             </div>
             <div className="col-3 p-1">
               <div className="imageSlider">
-                <img style={{width:'60px',height:'60px'}} src={shoes} />
+                <img style={{width:'60px',height:'60px'}} src={image} />
               </div>
             </div>
             <div className="col-3 p-1">
               <div className="imageSlider">
-                <img style={{width:'60px',height:'60px'}} src={shoes} />
+                <img style={{width:'60px',height:'60px'}} src={image} />
               </div>
             </div>
           </div>
