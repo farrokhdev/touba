@@ -13,6 +13,7 @@ import SearchResultSuppliers from "./SearchResultSuppliers/SearchResultSuppliers
 import ToubaProduct from "./ToubaProduct/ToubaProduct";
 import ToubaSupplier from "./ToubaSupplier/ToubaSupplier";
 import ToubaProductSingle1 from "./ToubaProductSingle1/ToubaProductSingle1";
+import Register from "./register";
 
 const TEST: CHART[] = [
   { name: "JAN", size: 20 },
@@ -84,24 +85,32 @@ function Pages() {
 
   return (
     <div>
-      {location.pathname.includes("/login") ? (null) : (
-        <>
-          <TopNav />
-          <BottomNav />
-        </>
-      )}
-      {location.pathname === "/" || location.pathname === "/login" ? (null) : (<ComponentBinaRazan />)}
+      {location.pathname.includes("/login") ||
+        location.pathname.includes("/register")
+        ? (null) : (
+          <>
+            <TopNav />
+            <BottomNav />
+          </>
+        )}
+      {location.pathname === "/" ||
+        location.pathname === "/login" ||
+        location.pathname === "/register"
+        ? (null) : (<ComponentBinaRazan />)}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutusPage />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/detail-product" element={<ToubaProductSingle1 />} />
       </Routes>
-      {location.pathname.includes("/login") ? (null) : (
-        <>
-          <Footer />
-        </>
-      )}
+      {location.pathname.includes("/login") ||
+        location.pathname.includes("/register")
+        ? (null) : (
+          <>
+            <Footer />
+          </>
+        )}
     </div>
   );
 }

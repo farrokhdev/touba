@@ -239,8 +239,6 @@ class Home extends HomeController {
                         <CardBestSeller image={ImageControll} discountPercent={45} />
                         <CardBestSeller image={ImageControll} discountPercent={45} />
                         <CardBestSeller image={ImageControll} discountPercent={45} />
-                        <CardBestSeller image={ImageControll} discountPercent={45} />
-                        <CardBestSeller image={ImageControll} discountPercent={45} />
                     </CardCollectionBest>
                 </div>
                 <div className="home-section-new">

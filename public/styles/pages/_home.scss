@@ -208,7 +208,7 @@
         box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
         border-radius: 16px;
         margin: 0 auto;
-
+        @include Display(flex, center, center, column);
         &-header {
             width: 90%;
             height: 115px;
@@ -225,8 +225,8 @@
         }
 
         &-content {
-            width: 90%;
-            margin: 30px auto;
+            width: 95%;
+            margin: 30px 46px 30px 0;
             @include Display(flex, space-between, center, row, wrap);
 
             .card-new-excess {
@@ -241,7 +241,7 @@
         }
 
         width: 100%;
-        padding: 0 100px;
+        padding: 50px 100px;
         @include Display(flex, space-between);
 
         >div {
@@ -254,7 +254,7 @@
     }
 
     &-section-newest-product {
-        background-color: $darkWhite;
+        background-color: transparent;
         max-width: 84%;
         width: auto;
         margin: 0 auto;
