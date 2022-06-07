@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { BaseComponent } from "utilities_js";
 import { CardDetails, CardLike, CardMain, ComponentDetailPRoductSideCard, ComponentProductSideCard } from "../../components/components";
-import Content from "../../components/content";
+import ContentProduct from "../../components/content_product";
 import BottomNav from "../../layout/bottom_nav";
 import Footer from "../../layout/footer";
 import TopNav from "../../layout/top_nav";

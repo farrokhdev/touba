@@ -12,6 +12,7 @@ import {
 } from "../../components/components";
 import { ButtonComponent } from "../../components/button";
 import { ButtonOutline } from "../../components/button_outline";
+import { ButtonSelect } from "../../components/button_select";
 interface IProps {}
 
 interface IState {
@@ -19,6 +20,8 @@ interface IState {
 }
 
 export class ToubaSpecialOffers2 extends BaseComponent<IProps, IState> {
+  text = "You are here: Touba >> Products";
+
   TEST = [
     { name: "JAN", size: 20 },
     { name: "FEB", size: 30 },
@@ -38,8 +41,10 @@ export class ToubaSpecialOffers2 extends BaseComponent<IProps, IState> {
       <div>
         <TopNav />
         <BottomNav />
-        <div className=" px-4">
-          <div className="d-flex justify-content-center mt-3"></div>
+        <div className=" px-5">
+        <div className="smalText p-2">{this.text}</div>
+
+          <div className="d-flex justify-content-center mt-3"><ButtonSelect titleButton1="Products"  titleButton2="Excess Capacity"/></div>
           <div className="row p-3     ">
             <div className="col-2">
               <ComponentFilterSidebar showButton={true} />

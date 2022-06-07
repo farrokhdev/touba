@@ -10,7 +10,7 @@ import fill4 from "../../assets/images/Fill4.png";
 import Certificates from "./certificates";
 import iconShare from "../../assets/icons/icon-share.svg";
 
-const Content = () => {
+const ContentProduct = () => {
   return (
     <div className="">
       <div className="header">
@@ -122,4 +122,4 @@ const Content = () => {
   );
 };
 
-export default memo(Content);
+export default memo(ContentProduct);

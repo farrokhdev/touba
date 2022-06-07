@@ -454,9 +454,50 @@ a {
   border-radius: 12px;
 }
 
-.tabs {
+.product-tabs {
   padding: 2% 0 4.5%;
   border-bottom: 1px solid #d6d6d6;
+  width: auto;
+  height: auto;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #3c557a !important;
+}
+@media (max-width: 375px) {
+  .product-tabs {
+    font-size: 10px;
+  }
+}
+@media (min-width: 376px) {
+  .product-tabs {
+    font-size: 11px;
+  }
+}
+@media (min-width: 600px) {
+  .product-tabs {
+    font-size: 12px;
+  }
+}
+@media (min-width: 900px) {
+  .product-tabs {
+    font-size: 13px;
+  }
+}
+@media (min-width: 1000px) {
+  .product-tabs {
+    font-size: 14px;
+  }
+}
+
+.product-tabs > div {
+  cursor: pointer;
+}
+
+.border-related {
+  border: 1px solid #d6d6d6;
+  border-radius: 16px;
 }
 
 .tabActive {
