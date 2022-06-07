@@ -109,7 +109,7 @@ function Pages() {
     ],
     isRead: false,
   };
-  return <HelpPage />;
+  return <AboutusPage />;
   // return (
   //   <div>
   //     <TopNav />

@@ -6,7 +6,8 @@
         height: 800px;
         margin-top: 200px;
         .features {
-            width: 280px;
+            width: 15%;
+            min-width: max-content;
             span {
                 width: 100%;
                 height: 90px;
@@ -25,6 +26,9 @@
                     border-radius: 0 0 0 16px;
                 }
             }
+        }
+        .plans {
+            width: 85%;
         }
     }
 }

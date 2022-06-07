@@ -1150,7 +1150,7 @@ a {
 
 .team-Member div {
   border-radius: 16px;
-  width: 250px;
+  width: 100%;
   height: 100px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#000000));
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
@@ -2880,8 +2880,12 @@ a {
   }
 }
 
+.plan-Detail {
+  width: 20%;
+}
+
 .plan-Detail span {
-  width: 200px;
+  width: 100%;
   height: 90px;
   border: 1px solid #dfe3ea;
   background-color: #ffffff;
@@ -2890,8 +2894,11 @@ a {
 }
 
 .offer-Plan {
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
   top: 250px;
-  width: 200px;
+  width: 100%;
   height: 263.82px;
   -webkit-box-shadow: -31px 0px 52px rgba(0, 0, 0, 0.07);
           box-shadow: -31px 0px 52px rgba(0, 0, 0, 0.07);
@@ -2966,8 +2973,11 @@ a {
 }
 
 .plan-Price {
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
   top: 250px;
-  width: 200px;
+  width: 100%;
   height: 263.82px;
   background: #dfe3ea;
   -webkit-box-shadow: -31px 0px 52px rgba(0, 0, 0, 0.07);
@@ -3589,26 +3599,16 @@ a {
   position: relative;
 }
 
-.aboutus-Page .section1 .img-Container .banner {
-  position: relative;
-  width: 50%;
-  height: 517px;
-  right: 260px;
-  top: 126px;
-}
-
-.aboutus-Page .section1 .img-Container .banner img {
-  z-index: 2;
+.aboutus-Page .section1 .img-Container div {
   position: absolute;
-  width: 800px;
-  height: 420px;
+  width: 100%;
+  height: 80%;
+  right: 20%;
 }
 
-.aboutus-Page .section1 .img-Container .dashed-Circle {
-  margin-top: 150px;
-  margin-right: 150px;
-  width: 344px;
-  height: 344px;
+.aboutus-Page .section1 .img-Container img {
+  width: 100%;
+  height: 100%;
 }
 
 .aboutus-Page .section1 .desc {
@@ -3730,6 +3730,14 @@ a {
   margin-bottom: 30px;
 }
 
+.aboutus-Page .sponsors img {
+  max-width: 20%;
+}
+
+.aboutus-Page .sponsors img:last-child {
+  min-width: 100%;
+}
+
 .aboutus-Page .sponsors span {
   font-family: "Poppins";
   font-style: normal;
@@ -3773,7 +3781,10 @@ a {
 }
 
 .membership-Page .plans-Container .features {
-  width: 280px;
+  width: 15%;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
 }
 
 .membership-Page .plans-Container .features span {
@@ -3794,6 +3805,10 @@ a {
 
 .membership-Page .plans-Container .features span:last-child {
   border-radius: 0 0 0 16px;
+}
+
+.membership-Page .plans-Container .plans {
+  width: 85%;
 }
 
 .green-Background {

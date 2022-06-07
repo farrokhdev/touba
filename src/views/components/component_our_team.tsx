@@ -4,7 +4,7 @@ interface Props {
 }
 const ComponentOurTeam = ({ image }: Props) => {
   return (
-    <div className="team-Member">
+    <div className="team-Member mx-1">
       <img src={image} alt="member" />
       <div className="d-flex flex-column justify-content-end">
         <span>Name Here</span>

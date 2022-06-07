@@ -5,12 +5,9 @@ import {
   IconArrowRightBlack,
   IconArrowRightCircle,
   IconArvan,
-  IconCostomer,
   IconDashedCricle,
   IconDigikala,
-  IconIncome,
   IconIranTalent,
-  IconProduct,
   IconSnapp,
   ImageAboutus,
   ImageAboutusDesk,
@@ -41,15 +38,10 @@ export default class AboutusPage extends BaseComponent<IProps, IState> {
               and workshops.
             </p>
           </div>
-          <div className="img-Container d-flex flex-row">
-            <div className="banner">
+          <div className="img-Container d-flex flex-row align-items-center">
+            <div className="d-flex flex-row align-items-center">
               <img src={ImageAboutus} alt="aboutus" />
             </div>
-            <img
-              src={IconDashedCricle}
-              alt="circle"
-              className="dashed-Circle"
-            />
           </div>
         </div>
         <div className="mission-Container d-flex flex-column align-items-center justify-content-center">
