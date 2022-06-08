@@ -48,7 +48,9 @@ export function TopNav() {
                 </div>
                 <div className="top-nav-button-group">
                     <ButtonIcon icon={IconBag} />
-                    <ButtonIcon icon={IconTwoPerson} />
+                    <Link to="/login">
+                        <ButtonIcon icon={IconTwoPerson} />
+                    </Link>
                 </div>
             </div>
             <div className="top-nav-minimal">

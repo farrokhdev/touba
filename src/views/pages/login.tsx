@@ -18,7 +18,9 @@ class Login extends LoginControll {
                         <h3 className="login-modal-header-title">
                             Login
                         </h3>
-                        <ButtonOutline title={"REGISTER"} />
+                        <Link to="/register">
+                            <ButtonOutline title={"REGISTER"} />
+                        </Link>
                     </div>
                     <div className="login-modal-input-group">
                         <div className="login-modal-input-group-email">
