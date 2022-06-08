@@ -1209,19 +1209,51 @@ a {
   margin: 1%;
 }
 
-.name-our-team {
+.team-Member {
+  position: relative;
+  width: 250px;
+  height: 500px;
+}
+
+.team-Member img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px;
+}
+
+.team-Member div {
+  border-radius: 16px;
+  width: 100%;
+  height: 100px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#000000));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
   position: absolute;
-  bottom: 10%;
-  left: 1%;
-  letter-spacing: -0.01em;
+  bottom: 0;
+  left: 0;
+}
+
+.team-Member div span:first-child {
   width: auto;
   height: auto;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
-  color: "#ffffff" !important;
-  color: #ffffff;
+  color: #FFFFFF !important;
+  margin: 0 0 0 20px;
+}
+
+.team-Member div span:last-child {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF !important;
+  margin: 0 0 10px 20px;
 }
 
 .postion-our-team {
@@ -5575,26 +5607,16 @@ a {
   position: relative;
 }
 
-.aboutus-Page .section1 .img-Container .banner {
-  position: relative;
-  width: 50%;
-  height: 517px;
-  right: 260px;
-  top: 126px;
-}
-
-.aboutus-Page .section1 .img-Container .banner img {
-  z-index: 2;
+.aboutus-Page .section1 .img-Container div {
   position: absolute;
-  width: 800px;
-  height: 420px;
+  width: 100%;
+  height: 80%;
+  right: 20%;
 }
 
-.aboutus-Page .section1 .img-Container .dashed-Circle {
-  margin-top: 150px;
-  margin-right: 150px;
-  width: 344px;
-  height: 344px;
+.aboutus-Page .section1 .img-Container img {
+  width: 100%;
+  height: 100%;
 }
 
 .aboutus-Page .section1 .desc {
@@ -5796,6 +5818,14 @@ a {
 .aboutus-Page .sponsors {
   width: 90%;
   margin-bottom: 30px;
+}
+
+.aboutus-Page .sponsors img {
+  max-width: 20%;
+}
+
+.aboutus-Page .sponsors img:last-child {
+  min-width: 100%;
 }
 
 .aboutus-Page .sponsors span {
@@ -6394,7 +6424,10 @@ a {
 }
 
 .membership-Page .plans-Container .features {
-  width: 280px;
+  width: 15%;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
 }
 
 .membership-Page .plans-Container .features span {
@@ -6415,6 +6448,10 @@ a {
 
 .membership-Page .plans-Container .features span:last-child {
   border-radius: 0 0 0 16px;
+}
+
+.membership-Page .plans-Container .plans {
+  width: 85%;
 }
 
 .green-Background {

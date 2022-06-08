@@ -106,6 +106,7 @@ function Pages() {
         <Route path="/register" element={<Register />} />
         <Route path="/detail-product" element={<ToubaProductSingle1 />} />
         <Route path="/special-offer" element={<ToubaSpecialOffers/>} />
+        <Route path="/membership" element={<MembershipPage/>} />
       </Routes> 
       {location.pathname.includes("/login") ||
         location.pathname.includes("/register")

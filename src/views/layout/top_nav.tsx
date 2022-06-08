@@ -19,10 +19,10 @@ export function TopNav() {
                     <Link to="/" className="link">
                         <p className="text-link">HELP</p>
                     </Link>
-                    <Link to="/" className="link">
+                    <Link to="/membership" className="link">
                         <p className="text-link">Membership</p>
                     </Link>
-                    <Link to="/" className="link">
+                    <Link to="/about-us" className="link">
                         <p className="text-link">ABOUT US</p>
                     </Link>
                     <Link to="/" className="link">
