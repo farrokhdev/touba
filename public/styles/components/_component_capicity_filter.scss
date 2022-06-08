@@ -1,0 +1,15 @@
+.capicity-filter {
+  .item {
+    @include FontStyle(16px, 400, #6b798c);
+    
+    
+    background: $white;
+    border-radius: 8px;
+  }
+  .left{
+    margin-left: 2%;
+  }
+  .item >img{
+      margin-left: 8px;
+  }
+}

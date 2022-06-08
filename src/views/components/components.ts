@@ -14,7 +14,7 @@ export { default as CardPackage } from './card_package';
 export { default as CardPrice } from './card_price';
 export { default as CardQuality } from './card_quality';
 export { default as CommentCard } from './card_comment';
-export { default as Content } from './content';
+export { default as ContentProduct } from './content_product';
 export { default as Customers } from './customers';
 export { default as FAQ } from './faq';
 export { default as Packaging } from './packaging';
@@ -59,4 +59,7 @@ export { default as ComponentSearchBar } from './component_search_bar';
 export { default as ComponentFilterSidebar } from './component_filter_sidebar';
 export { default as ComponentFilterTopbar } from './component_filter_topbar';
 export { default as ComponentProductSideCard } from './component_product_side_card';
+export { default as ComponentDetailPRoductSideCard } from './component_product_detail_side_card';
+export { default as ContentRelated } from './content_related';
+export { default as ComponentCapicityFilter } from './component_capicity_filter';
 

@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import { BaseComponent } from "utilities_js";
-import { CardDetails, CardLike, CardMain, ComponentProductSideCard } from "../../components/components";
-import Content from "../../components/content";
+import { CardDetails, CardLike, CardMain, ComponentDetailPRoductSideCard, ComponentProductSideCard } from "../../components/components";
+import ContentProduct from "../../components/content_product";
 import BottomNav from "../../layout/bottom_nav";
 import Footer from "../../layout/footer";
 import TopNav from "../../layout/top_nav";
+import shose from '../../../assets/images/Rectangle1417.png'
 
 interface IProps {}
 
@@ -17,14 +18,13 @@ export class ToubaProductSingle1 extends BaseComponent<IProps, IState> {
   render() {
     return (
       <div>
-        <TopNav />
-        <BottomNav />
+
         <div className="px-5">
           <div className="smalText p-2">{this.test}</div>
           <div className="row">
             <div className="col-9 p-2">
               <div>
-                <CardMain />
+                <CardMain tabItemOne="Product" tabItemTwo="Related Excess Capacity" image={shose} show={true} />
               </div>
             </div>
             <div className="col-3 p-2">
@@ -56,6 +56,11 @@ export class ToubaProductSingle1 extends BaseComponent<IProps, IState> {
               <div className="col-9 p-2">
                 <CardDetails />
               </div>
+              <div className="col-3 p-2">
+              <div>
+                <ComponentDetailPRoductSideCard />
+              </div>
+            </div>
             </div>
           </div>
           <div>

@@ -10,7 +10,10 @@ import fill4 from "../../assets/images/Fill4.png";
 import Certificates from "./certificates";
 import iconShare from "../../assets/icons/icon-share.svg";
 
-const Content = () => {
+interface Props {
+  show: boolean;
+}
+const ContentProduct = ({ show }: Props) => {
   return (
     <div className="">
       <div className="header">
@@ -42,41 +45,46 @@ const Content = () => {
             <img src={stroke} />
           </div>
         </div>
-        <div className="center row mt-2">
-          <div className="col-2">
-            <div className="smalText">Feature 1: </div>
-          </div>
-          <div className="col-3">
-            <div className="">
-              <button
-                className="dropdown dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                128GB
-              </button>
-              <div
-                className="dropdown-menu"
-                aria-labelledby="dropdownMenuButton"
-              >
-                <a className="dropdown-item" href="#">
-                  128GB
-                </a>
+        {show && (
+          <>
+            {" "}
+            <div className="center row mt-2">
+              <div className="col-2">
+                <div className="smalText">Feature 1: </div>
+              </div>
+              <div className="col-3">
+                <div className="">
+                  <button
+                    className="dropdown dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    128GB
+                  </button>
+                  <div
+                    className="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a className="dropdown-item" href="#">
+                      128GB
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div className="center row mt-2">
-          <div className="col-2">
-            <div className="smalText">Colors:</div>
-          </div>
-          <div className="col-4">
-            <div className="ball"></div>
-          </div>
-        </div>
+            <div className="center row mt-2">
+              <div className="col-2">
+                <div className="smalText">Colors:</div>
+              </div>
+              <div className="col-4">
+                <div className="ball"></div>
+              </div>
+            </div>
+          </>
+        )}
         <div className="row mt-2">
           <PriceCart />
         </div>
@@ -122,4 +130,4 @@ const Content = () => {
   );
 };
 
-export default memo(Content);
+export default memo(ContentProduct);

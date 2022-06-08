@@ -36,7 +36,7 @@ const CardLike = () => {
           </div>
         </div>
       </div>
-      <div className={`row footer`}>
+      <div className={`row card-like-footer`}>
         <div className={`col-6 px-3 py-1  border`}>
           <div className={`bold-text row`}>$639</div>
           <div className="text-header row">Min Price</div>

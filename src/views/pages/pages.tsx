@@ -13,7 +13,11 @@ import SearchResultSuppliers from "./SearchResultSuppliers/SearchResultSuppliers
 import ToubaProduct from "./ToubaProduct/ToubaProduct";
 import ToubaSupplier from "./ToubaSupplier/ToubaSupplier";
 import ToubaProductSingle1 from "./ToubaProductSingle1/ToubaProductSingle1";
+import ToubaSpecialOffers from "./ToubaSpecialOffers/ToubaSpecialOffers";
 import Register from "./register";
+import HelpPage from "./HelpPage/HelpPage";
+import MembershipPage from "./MembershipPage/MembershipPage";
+import ToubaExcessCapacity from "./ToubaExcessCapacity/ToubaExcessCapacity";
 
 const TEST: CHART[] = [
   { name: "JAN", size: 20 },
@@ -93,17 +97,16 @@ function Pages() {
             <BottomNav />
           </>
         )}
-      {location.pathname === "/" ||
-        location.pathname === "/login" ||
-        location.pathname === "/register"
-        ? (null) : (<ComponentBinaRazan />)}
+      {location.pathname.includes("/profile") 
+        ?  (<ComponentBinaRazan />) : (null)}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutusPage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/detail-product" element={<ToubaProductSingle1 />} />
-      </Routes>
+        <Route path="/special-offer" element={<ToubaSpecialOffers/>} />
+      </Routes> 
       {location.pathname.includes("/login") ||
         location.pathname.includes("/register")
         ? (null) : (

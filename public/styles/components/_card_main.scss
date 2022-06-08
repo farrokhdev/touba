@@ -4,9 +4,17 @@
   border-radius: 12px;
 }
 
-.tabs {
-  padding: 2%  0 4.5%;
+.product-tabs {
+  padding: 2% 0 4.5%;
   border-bottom: 1px solid #d6d6d6;
+  @include FontStyle(14px, 600, #3c557a);
+}
+.product-tabs > div {
+  cursor: pointer;
+}
+.border-related {
+  border: 1px solid #d6d6d6;
+  border-radius: 16px;
 }
 .tabActive {
   font-family: "Poppins";
