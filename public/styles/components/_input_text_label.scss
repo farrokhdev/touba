@@ -23,11 +23,12 @@
         top: -6px;
         left: 24px;
         background-color: $white;
-        width: 141px;
+        width: auto;
         height: 22px;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding:  0 5px;
         &-text {
             @include FontStyle(12px, 500, $sorme);
         }

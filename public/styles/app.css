@@ -283,7 +283,7 @@ a {
   top: -6px;
   left: 24px;
   background-color: #FFFFFF;
-  width: 141px;
+  width: auto;
   height: 22px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -294,6 +294,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 5px;
 }
 
 .input-text-label-title-text {
