@@ -97,10 +97,8 @@ function Pages() {
             <BottomNav />
           </>
         )}
-      {location.pathname === "/" ||
-        location.pathname === "/login" ||
-        location.pathname === "/register"
-        ? (null) : (<ComponentBinaRazan />)}
+      {location.pathname.includes("/profile") 
+        ?  (<ComponentBinaRazan />) : (null)}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutusPage />} />
@@ -114,7 +112,9 @@ function Pages() {
         <Route path="/excess" element={<ToubaExcessCapacity />} />
 
 
-      </Routes>
+        <Route path="/special-offer" element={<ToubaSpecialOffers/>} />
+        <Route path="/membership" element={<MembershipPage/>} />
+      </Routes> 
       {location.pathname.includes("/login") ||
         location.pathname.includes("/register")
         ? (null) : (

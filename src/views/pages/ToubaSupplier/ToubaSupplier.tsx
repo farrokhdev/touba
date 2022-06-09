@@ -39,8 +39,6 @@ export class ToubaSupplier extends BaseComponent<IProps, IState> {
   render() {
     return (
       <div>
-        <TopNav />
-        <BottomNav />
         <div className=" px-5">
           <div className="row p-3      ">
             <div className="col-3">

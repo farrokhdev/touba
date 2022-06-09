@@ -18,7 +18,9 @@ class Register extends RegisterControll {
                         <h3 className="register-modal-header-title">
                             Register
                         </h3>
-                        <ButtonOutline title={"LOGIN"} />
+                        <Link to="/login">
+                            <ButtonOutline title={"LOGIN"} />
+                        </Link>
                     </div>
                     <div className="register-modal-input-group">
                         <div className="register-modal-input-group-name">

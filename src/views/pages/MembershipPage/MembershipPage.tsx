@@ -1,6 +1,5 @@
 import { BaseComponent } from "utilities_js";
-// import { IconWalletBlue } from "../../../assets";
-// import PlanDetail from "../../components/plan-detail";
+import PlanDetail from "../../components/plan_detail";
 
 interface IProps {}
 
@@ -116,12 +115,12 @@ export default class MembershipPage extends BaseComponent<IProps, IState> {
               Receive & respond to inquiries
             </span>
           </div>
-          <div className="d-flex flex-row Plans">
-            {/* <PlanDetail list={this.state.fakeList[0]} />
+          <div className="d-flex flex-row plans">
+            <PlanDetail list={this.state.fakeList[0]} />
             <PlanDetail list={this.state.fakeList[1]} />
             <PlanDetail list={this.state.fakeList[2]} />
             <PlanDetail list={this.state.fakeList[3]} />
-            <PlanDetail list={this.state.fakeList[4]} /> */}
+            <PlanDetail list={this.state.fakeList[4]} />
           </div>
         </div>
       </div>

@@ -45,6 +45,7 @@ export function BottomNav() {
   const [showDropDown, setShowDropDown] = useState(false);
   const [showMinimalDropDown, setShowMinimalDropDown] = useState(false);
   const [active, setActive] = useState(0);
+  const navigate = useNavigate();
 
   function handleshowDropDown(status: boolean) {
     setShowDropDown(status);
@@ -70,7 +71,13 @@ export function BottomNav() {
   const navigator = (page: string) => {
     navigate(page);
   };
-  const navigate = useNavigate();
+  function handleNavigationSpecial() {
+    navigate("/special-offer")
+  }
+  function handleNavigationProduct() {
+    navigate("/detail-product")
+  }
+
   return (
     <>
       <div className="bottom-nav">
@@ -87,10 +94,7 @@ export function BottomNav() {
           <ButtonDropdown title={"DEMANDERS"} links={[]} />
           <ButtonDropdown title={"BROKERS"} links={[]} />
           <ButtonDropdown title={"SIDE SERVICES"} links={[]} />
-          <Button
-            onClick={() => navigator("/special-offers")}
-            title={"SPECIAL OFFERS"}
-          />
+          <Button title={"SPECIAL OFFERS"} onClick={handleNavigationSpecial} />
           <Button title={"MAP"} />
         </div>
         {showDropDown === true ? (
