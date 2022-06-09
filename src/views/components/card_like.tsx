@@ -2,11 +2,13 @@ import React, { memo } from "react";
 import greenHeart from "../../assets/images/greenHeart.png";
 import shose from "../../assets/images/00.png";
 import settings from "../../assets/images/settings.png";
+import { useNavigate } from "react-router-dom";
 
 const CardLike = () => {
+  const navigate =useNavigate()
   return (
     <div className='card-border'>
-      <div className="row p-2">
+      <div className="row p-2" onClick={()=>navigate('/detail-product')}>
         <div className="col-2">
           <div className='circle'>
             <img src={greenHeart} />

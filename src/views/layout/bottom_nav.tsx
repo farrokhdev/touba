@@ -67,6 +67,9 @@ export function BottomNav() {
     },
     [showMinimalDropDown]
   );
+  const navigator = (page: string) => {
+    navigate(page);
+  };
   const navigate = useNavigate();
   return (
     <>
@@ -75,13 +78,19 @@ export function BottomNav() {
           <SelectCategories onOpen={handleshowDropDown} />
         </div>
         <div className="bottom-nav-links">
-          <Button title={"EXCESS CAPACITY"} />
-          <Button title={"PRODUCT"} />
+          <Button
+            onClick={() => navigator("/excess")}
+            title={"EXCESS CAPACITY"}
+          />
+          <Button onClick={() => navigator("/product")} title={"PRODUCT"} />
           <ButtonDropdown title={"SUPPLIERS"} links={TEST} />
           <ButtonDropdown title={"DEMANDERS"} links={[]} />
           <ButtonDropdown title={"BROKERS"} links={[]} />
           <ButtonDropdown title={"SIDE SERVICES"} links={[]} />
-          <Button title={"SPECIAL OFFERS"} />
+          <Button
+            onClick={() => navigator("/special-offers")}
+            title={"SPECIAL OFFERS"}
+          />
           <Button title={"MAP"} />
         </div>
         {showDropDown === true ? (

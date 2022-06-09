@@ -101,14 +101,20 @@ function Pages() {
         location.pathname === "/login" ||
         location.pathname === "/register"
         ? (null) : (<ComponentBinaRazan />)}
-        <ToubaSpecialOffers/>
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutusPage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/product" element={<ToubaProduct />} />
         <Route path="/detail-product" element={<ToubaProductSingle1 />} />
-      </Routes> */}
+        <Route path="/supplier" element={<ToubaSupplier />} />
+        <Route path="/special-offers" element={<ToubaSpecialOffers />} />
+
+        <Route path="/excess" element={<ToubaExcessCapacity />} />
+
+
+      </Routes>
       {location.pathname.includes("/login") ||
         location.pathname.includes("/register")
         ? (null) : (
