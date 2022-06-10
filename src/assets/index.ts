@@ -66,3 +66,4 @@ export { default as IconWalletBlue} from './icons/icon-wallet-blue.svg';
 export { default as ImageAboutusDesk} from './images/aboutus-desk.png';
 export { default as ImageAboutus} from './images/aboutusPic.png';
 export { default as IconHelpBanner} from './icons/Icon-helpbanner.svg';
+export { default as IconTickSquare} from './icons/icon-tick-square.svg';

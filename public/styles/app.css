@@ -2893,7 +2893,7 @@ a {
   text-align: center;
 }
 
-.offer-Plan {
+.plan-Detail .offer-Plan {
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
   min-width: max-content;
@@ -2905,21 +2905,21 @@ a {
   background-color: #fc4a56;
 }
 
-.offer-Plan span {
+.plan-Detail .offer-Plan span {
   background-color: transparent !important;
   border: none;
 }
 
-.offer-Plan .price {
-  width: 50px;
+.plan-Detail .offer-Plan .price {
+  width: 100%;
   height: 72px;
 }
 
-.offer-Plan .price span {
+.plan-Detail .offer-Plan .price span {
   border: none;
 }
 
-.offer-Plan .price span:first-child {
+.plan-Detail .offer-Plan .price span:first-child {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -2927,7 +2927,7 @@ a {
   color: #ffffff !important;
 }
 
-.offer-Plan .price span:last-child {
+.plan-Detail .offer-Plan .price span:last-child {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 800;
@@ -2935,14 +2935,14 @@ a {
   color: #ffffff !important;
 }
 
-.offer-Plan .buy-Pakage {
+.plan-Detail .offer-Plan .buy-Pakage {
   padding: 10px 0;
   width: 90%;
   height: 130px;
   border-top: 2px solid #d6d6d6;
 }
 
-.offer-Plan .buy-Pakage span {
+.plan-Detail .offer-Plan .buy-Pakage span {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
@@ -2950,7 +2950,7 @@ a {
   color: #ffffff !important;
 }
 
-.offer-Plan .buy-Pakage button {
+.plan-Detail .offer-Plan .buy-Pakage button {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -2964,7 +2964,7 @@ a {
   text-transform: uppercase;
 }
 
-.offer-Plan .buy-Pakage .plan-Time {
+.plan-Detail .offer-Plan .buy-Pakage .plan-Time {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -2972,7 +2972,7 @@ a {
   color: #3c557a !important;
 }
 
-.plan-Price {
+.plan-Detail .plan-Price {
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
   min-width: max-content;
@@ -2984,20 +2984,20 @@ a {
           box-shadow: -31px 0px 52px rgba(0, 0, 0, 0.07);
 }
 
-.plan-Price span {
+.plan-Detail .plan-Price span {
   background-color: transparent !important;
 }
 
-.plan-Price .price {
-  width: 50px;
+.plan-Detail .plan-Price .price {
+  width: 100%;
   height: 72px;
 }
 
-.plan-Price .price span {
+.plan-Detail .plan-Price .price span {
   border: none;
 }
 
-.plan-Price .price span:first-child {
+.plan-Detail .plan-Price .price span:first-child {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -3005,7 +3005,7 @@ a {
   color: #6b798c !important;
 }
 
-.plan-Price .price span:last-child {
+.plan-Detail .plan-Price .price span:last-child {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 800;
@@ -3013,7 +3013,7 @@ a {
   color: #3c557a !important;
 }
 
-.plan-Price .plan-Time {
+.plan-Detail .plan-Price .plan-Time {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -3021,14 +3021,14 @@ a {
   color: #3c557a !important;
 }
 
-.plan-Price .buy-Pakage {
+.plan-Detail .plan-Price .buy-Pakage {
   padding: 10px 0;
   width: 90%;
   height: 130px;
   border-top: 2px solid #d6d6d6;
 }
 
-.plan-Price .buy-Pakage span {
+.plan-Detail .plan-Price .buy-Pakage span {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
@@ -3036,7 +3036,7 @@ a {
   color: #3c557a !important;
 }
 
-.plan-Price .buy-Pakage button {
+.plan-Detail .plan-Price .buy-Pakage button {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -3772,6 +3772,10 @@ a {
   line-height: 39px;
 }
 
+.membership-Page {
+  margin-bottom: 800px;
+}
+
 .membership-Page .plans-Container {
   position: absolute;
   z-index: 20;
@@ -3824,6 +3828,10 @@ a {
   font-weight: 800;
   font-size: 60px;
   color: #ffffff !important;
+}
+
+.help-Page {
+  margin-bottom: 1500px;
 }
 
 .help-Page .help-Content {
