@@ -10,7 +10,7 @@ import {
 import ContentProduct from "../../components/content_product";
 import BottomNav from "../../layout/bottom_nav";
 import Footer from "../../layout/footer";
-import TopNav from "../../layout/top_nav";
+import TopNav from "../../layout/top_nav_home";
 import honur from "../../../assets/images/honur.svg";
 import image_test from "../../../assets/images/image-test.png";
 import { CardProduct } from "../../components/card_product";

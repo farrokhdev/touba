@@ -4,7 +4,7 @@ import { CardDetails, CardLike, CardMain, ComponentDetailPRoductSideCard, Compon
 import ContentProduct from "../../components/content_product";
 import BottomNav from "../../layout/bottom_nav";
 import Footer from "../../layout/footer";
-import TopNav from "../../layout/top_nav";
+import TopNav from "../../layout/top_nav_home";
 import shose from '../../../assets/images/Rectangle1417.png'
 
 interface IProps {}

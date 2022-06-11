@@ -4,7 +4,7 @@ import { CHART, Chart } from "../components/chart";
 import {
   ComponentBinaRazan,
 } from "../components/components";
-import { BottomNav, Footer, TopNav } from "../layout/layout";
+import { BottomNav, Footer, TopNav, TopNavHome } from "../layout/layout";
 import AboutusPage from "./AboutusPage/AboutusPage";
 import { useState } from "react";
 import SearchResultExcessCapacity from "./SearchResultExcessCapacity/SearchResultExcessCapacity";
@@ -93,12 +93,16 @@ function Pages() {
         location.pathname.includes("/register")
         ? (null) : (
           <>
-            <TopNav />
+            {location.pathname === "/" ? (
+              <TopNavHome />
+            ) : (
+              <TopNav />
+            )}
             <BottomNav />
           </>
         )}
-      {location.pathname.includes("/profile") 
-        ?  (<ComponentBinaRazan />) : (null)}
+      {location.pathname.includes("/profile")
+        ? (<ComponentBinaRazan />) : (null)}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutusPage />} />
@@ -112,9 +116,9 @@ function Pages() {
         <Route path="/excess" element={<ToubaExcessCapacity />} />
 
 
-        <Route path="/special-offer" element={<ToubaSpecialOffers/>} />
-        <Route path="/membership" element={<MembershipPage/>} />
-      </Routes> 
+        <Route path="/special-offer" element={<ToubaSpecialOffers />} />
+        <Route path="/membership" element={<MembershipPage />} />
+      </Routes>
       {location.pathname.includes("/login") ||
         location.pathname.includes("/register")
         ? (null) : (
