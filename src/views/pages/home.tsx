@@ -2,7 +2,7 @@ import { Component } from "react";
 import { Link } from "react-router-dom";
 import { BackgroundLatest, IconAlibaba, IconArvan, ImageControll, ImageLaboratory, ImagePersonBox, ImageTest, ImageTest2, ImageTest3, ImageTest4 } from "../../assets";
 import { CHART } from "../components/chart";
-import { Button, CardSearchProduct, CardProduct, CardCategory, CardImage, CardCollectionProduct, CardProductWithPrice, CardBestSeller, CardCollectionBest, Divider, CardNewExcess, CardBestBrand, CardNewProduct } from "../components/components";
+import { Button, CardSearchProduct, CardProduct, CardCategory, CardImage, CardCollectionProduct, CardProductWithPrice, CardBestSeller, CardCollectionBest, Divider, CardNewExcess, CardBestBrand, CardNewProduct, CardCalculate } from "../components/components";
 import HomeController from "../controllers/home_controller";
 
 const TEST: CHART[] = [
@@ -251,6 +251,9 @@ class Home extends HomeController {
                         </Link>
                     </div>
                     <Divider />
+                    <div style={{ width: "100%" }}>
+                        <CardCalculate amount={0} value={0}/>
+                    </div>
                     <div className="home-section-new-content">
                         <CardNewExcess
                             image={ImageControll}

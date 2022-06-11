@@ -12,5 +12,6 @@
     &-text {
         @include FontStyle(14px, 600, $green);
         cursor: pointer;
+        margin: 0;
     }
 }
