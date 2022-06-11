@@ -21,9 +21,13 @@ function Pages() {
   return (
     <div>
       {location.pathname.includes("/login") ||
-      location.pathname.includes("/register") ? null : (
+        location.pathname.includes("/register") ? null : (
         <>
-          <TopNav />
+          {location.pathname === "/" ? (
+            <TopNavHome />
+          ) : (
+            <TopNav />
+          )}
           <BottomNav />
         </>
       )}
@@ -39,13 +43,11 @@ function Pages() {
         <Route path="/special-offers" element={<ToubaSpecialOffers />} />
         <Route path="/help" element={<HelpPage />} />
         <Route path="/excess" element={<ToubaExcessCapacity />} />
-
-
         <Route path="/special-offer" element={<ToubaSpecialOffers />} />
         <Route path="/membership" element={<MembershipPage />} />
       </Routes>
       {location.pathname.includes("/login") ||
-      location.pathname.includes("/register") ? null : (
+        location.pathname.includes("/register") ? null : (
         <>
           <Footer />
         </>
