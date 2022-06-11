@@ -9,9 +9,10 @@ import iconMessage from "../../assets/icons/icon-message.svg";
 import iconCard from "../../assets/icons/icon-card.svg";
 import { Divider } from "./components";
 
-export type IProps = {};
-
-const ComponentProductSideCard: React.FC<IProps> = () => {
+interface Props  {
+  handleAddToCart?:any
+}
+const ComponentProductSideCard = ({handleAddToCart}:Props) => {
   return (
     <div className="p-3 product-side-card">
       <div className="d-flex justify-content-center align-items-center">
@@ -112,7 +113,7 @@ const ComponentProductSideCard: React.FC<IProps> = () => {
         </button>
       </div>
       <div className="d-flex  align-items-center mt-3">
-        <button className="button-cart w-100 d-flex justify-content-center align-items-center">
+        <button onClick={()=>handleAddToCart()} className="button-cart w-100 d-flex justify-content-center align-items-center">
           <img style={{ marginRight: "2%" }} src={iconCard} />
           Add to cart{" "}
         </button>
