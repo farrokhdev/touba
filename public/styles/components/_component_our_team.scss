@@ -28,3 +28,11 @@
     }
   }
 }
+.postion-our-team{
+font-style: normal;
+@include FontStyle(12px,400, '#ffffff');
+color: #FFFFFF;
+position: absolute;
+bottom: 6%;
+left: 1%;
+}

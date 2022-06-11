@@ -1,0 +1,61 @@
+.card-search-product {
+    position: relative;
+    &-header {
+        position: absolute;
+        top: -49px;
+        width: 100%;
+        max-width: 555px;
+        height: 58x;
+        border-radius:  24px 24px 0 0;
+        background-color: $white;
+        @include Display(flex , space-around, center);
+        .active-border {
+            border-bottom: 3px solid $green;
+        }
+        &-button {
+            background-color: transparent;
+            @include Border();
+            &-text {
+                @include FontStyle(18px, 600, $sorme);
+                margin: 10px 0;
+            }
+        }
+        .active {
+            @include FontStyle(18px, 600, $green);
+            background-color: transparent;
+            margin: 10px 0;
+        }
+    }
+    &-inputs {
+        width: 100%;
+        min-height: 208px;
+        height: auto;
+        @media (max-width: 755px) {
+            border-radius: 0 0 24px 24px;
+        }
+        border-radius: 0 24px 24px 24px;
+        background-color: $white;
+        @include Display(flex , center, start, column);
+        &-title {
+            @media (max-width: 1180px) {
+                margin: 20px;
+            }
+            @include FontStyle(16px, 400, $sorme);
+            margin: 0px 20px 40px 20px; 
+        }
+        &-group {
+            @media (max-width: 1180px) {
+                @include Display(flex , space-around, center, row, wrap);
+            }
+            @include Display(flex , space-around, center);
+            width: 100%;
+            .button-component {
+                width: 40%;
+                margin: 0 10px;
+            }
+            >div {
+                margin: 0 10px;
+            }
+        }
+    }
+}

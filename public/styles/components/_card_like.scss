@@ -1,6 +1,7 @@
 .card-border {
   background: #ffffff;
   border-radius: 12px;
+  cursor: pointer;
 }
 .circle {
   display: flex;
@@ -31,7 +32,7 @@
 .border {
   border-right: 1px solid #d6d6d6;
 }
-.footer {
+.card-like-footer {
   background: rgba(33, 192, 133,0.1);
   border-radius: 0px 0px 12px 12px;
 

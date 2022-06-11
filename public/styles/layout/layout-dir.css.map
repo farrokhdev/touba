@@ -1,9 +1,8 @@
 {
     "version": 3,
-    "mappings": "ACAA,AAAA,QAAQ,CAAC;EACL,OAAO,EAAE,IAAI;EACb,KAAK,EAAE,IAAI;EACX,WAAW,EAAE,MAAM;CAgBtB;;AAdI,AAAD,cAAO,CAAC;EACJ,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,KAAK,EAAE,QAAQ;EACf,MAAM,EAAE,OAAO;EACf,MAAM,EAAE,OAAO;CAIlB;;AAHI,AAAD,oBAAO,CAAC;EACJ,KAAK,EAAE,IAAI;CACd;;AAEJ,AAAD,cAAO,CAAC;EACJ,OAAO,EAAE,IAAI;CAChB",
+    "mappings": "",
     "sources": [
-        "layout-dir.scss",
-        "_top_nav.scss"
+        "layout-dir.scss"
     ],
     "names": [],
     "file": "layout-dir.css"

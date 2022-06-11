@@ -9,7 +9,7 @@ interface Props extends HTMLAttributes<HTMLElement> {
 }
 
 function TextIconHorizontal({ icon, title, showArrow, active, onClick }: Props): ReactElement {
-    
+
     const handleOnClick = useCallback((event: MouseEvent<HTMLElement>) => {
         event.stopPropagation();
         onClick?.(event);

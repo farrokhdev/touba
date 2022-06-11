@@ -20,10 +20,15 @@ export function ButtonComponent({ onClick, title }: Props): ReactElement {
   );
 
   return (
-    <button className="button-component" onClick={handleOnClick}>
-      <h3 className="button-component-text">{title}</h3>
+    <button
+      className="button-component "
+      onClick={handleOnClick}
+    >
+      <h3 className="button-component-text">
+        {title}
+      </h3>
     </button>
-  );
+  )
 }
 
 export default memo(ButtonComponent);

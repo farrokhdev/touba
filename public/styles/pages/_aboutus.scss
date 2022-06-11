@@ -50,6 +50,23 @@
             margin-top: 30px;
             height: 450px;
         }
+        .mission-Child {
+            margin: 0 20px;
+            padding: 36px;
+            width: 33%;
+            height: 470px;
+            background: $white;
+            border-radius: 16px;
+            div {
+                height: 150px;
+                width: 50%;
+                border-bottom: 1px solid $gray;
+                padding: 10px 0;
+                span {
+                    @include FontStyle(24px, 700, $sorme);
+                }
+            }
+        }
     }
     .describtion {
         margin-top: 300px;
@@ -93,6 +110,35 @@
                     border: none;
                     outline: none;
                     background-color: transparent;
+                }
+            }
+            .team-Member {
+                position: relative;
+                width: 250px;
+                height: 500px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 16px;
+                }
+                div {
+                    width: 250px;
+                    height: 100px;
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    span {
+                        &:first-child {
+                            @include FontStyle(24px, 700, $white);
+                            margin: 0 0 0 20px;
+                        }
+                        &:last-child {
+                            @include FontStyle(16px, 400, $white);
+                            margin: 0 0 10px 20px;
+                        }
+                    }
                 }
             }
         }

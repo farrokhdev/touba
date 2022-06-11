@@ -1,0 +1,19 @@
+.component-filter-topbar {
+  & .button-active {
+    background: $green;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    color: $white;
+  }
+  & .button {
+    @include FontStyle(16px, 400, #6b798c);
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background-color: $white;
+  }
+  & > div {
+    margin-left: 2%;
+  }
+}

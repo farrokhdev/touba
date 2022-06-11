@@ -9,11 +9,7 @@ interface Props extends HTMLAttributes<HTMLElement> {
 export function CardCollectionBest({ children }: Props): ReactElement {
 
     return (
-        <div className="card-collection-best">
-            <img
-                src={ImageBackgroundBest}
-                className="card-collection-best-background"
-            />
+        <div className="card-collection-best" style={{ backgroundImage: "url(" + ImageBackgroundBest + ")" }}>
             <div className="card-collection-best-content">
                 <h4 className="card-collection-best-content-title">
                     Best Sellers

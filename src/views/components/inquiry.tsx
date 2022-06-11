@@ -10,15 +10,15 @@ export type IProps = {};
 const Inquiry: React.FC<IProps> = () => {
   const [isSelect, setSelect] = useState(0);
   return (
-    <div className="d-flex flex-column align-items-center inquiry mx-auto">
+    <div className="d-flex flex-column align-items-start inquiry mx-auto">
       <div className="d-flex flex-row align-items-center my-3 product-Detail justify-content-between">
         <img src={ImageTest} alt="productImg" className="productImg" />
         <div className="d-flex flex-column align-items-center">
           <span className="product-Name">Product Name Here Product Name </span>
-          <Raiting rate={3.2} numOfRaiting="12,514" />
+          <Raiting rate={4.2} numOfRaiting="12,514" />
         </div>
       </div>
-      <div className="my-3 ">
+      <div className="my-3 px-2 ">
         <CardCalculate amount={100} value={1299} />
       </div>
       <div className="offer-Price px-2">
@@ -51,6 +51,9 @@ const Inquiry: React.FC<IProps> = () => {
           selected={isSelect === 4 ? true : false}
         />
       </div>
+      <button className={isSelect ? "button-component my-5 mx-2 " : "d-none"}>
+        <span className="button-component-text">COMPLETE ORDER</span>
+      </button>
     </div>
   );
 };

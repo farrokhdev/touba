@@ -2,11 +2,13 @@ import React, { memo } from "react";
 import greenHeart from "../../assets/images/greenHeart.png";
 import shose from "../../assets/images/00.png";
 import settings from "../../assets/images/settings.png";
+import { useNavigate } from "react-router-dom";
 
 const CardLike = () => {
+  const navigate =useNavigate()
   return (
     <div className='card-border'>
-      <div className="row p-2">
+      <div className="row p-2" onClick={()=>navigate('/detail-product')}>
         <div className="col-2">
           <div className='circle'>
             <img src={greenHeart} />
@@ -36,7 +38,7 @@ const CardLike = () => {
           </div>
         </div>
       </div>
-      <div className={`row footer`}>
+      <div className={`row card-like-footer`}>
         <div className={`col-6 px-3 py-1  border`}>
           <div className={`bold-text row`}>$639</div>
           <div className="text-header row">Min Price</div>

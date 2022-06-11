@@ -1,30 +1,45 @@
-import React, { memo } from "react";
-import Content  from "./content";
+import React, { memo, useState } from "react";
+import { ContentRelated } from "./components";
+import Content from "./content_product";
 import Slider from "./slider";
 
- const CardMain = () => {
+interface Props{
+  show:boolean
+  image:any
+  tabItemOne:string
+  tabItemTwo:string
+
+}
+const CardMain = ({show,image,tabItemOne,tabItemTwo}:Props) => {
+  const [tab, setTab] = useState(true);
   return (
     <div>
       <div className="card-main">
-        <div className='tabs row px-4'>
-          <div className='tabActive col-2   text-center'>
-            <p>Product</p>
+        <div className="product-tabs row px-4">
+          <div onClick={()=>setTab(true)} className={`${tab ? 'tabActive ' :''} col-2   text-center cursor-pointer`}>
+            <p>{tabItemOne}</p>
           </div>
-          <div className={` col-3  text-center`}>
-            <p>Related Excess Capacity</p>
+          <div onClick={()=>setTab(false)} className={`${!tab ? 'tabActive' :''} col-3   text-center cursor-pointer`}>
+            <p>{tabItemTwo}</p>
           </div>
         </div>
-        <div className="row p-4">
-          <div className="col-5">
-            <Slider />
+        {tab && (
+          <div className="row p-4">
+            <div className="col-5">
+              <Slider image={image} />
+            </div>
+            <div className="col-7 p-4">
+              <Content show={show} />
+            </div>
           </div>
-          <div className="col-7 p-4">
-            <Content />
+        )}
+        {!tab && (
+          <div className="p-4">
+            <ContentRelated />{" "}
           </div>
-          
-        </div>
+        )}
       </div>
     </div>
   );
 };
-export default memo(CardMain)
+export default memo(CardMain);
