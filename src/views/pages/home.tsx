@@ -251,9 +251,6 @@ class Home extends HomeController {
                         </Link>
                     </div>
                     <Divider />
-                    <div style={{ width: "100%" }}>
-                        <CardCalculate amount={0} value={0}/>
-                    </div>
                     <div className="home-section-new-content">
                         <CardNewExcess
                             image={ImageControll}
