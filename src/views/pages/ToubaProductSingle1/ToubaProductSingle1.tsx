@@ -1,30 +1,50 @@
 import React, { Component } from "react";
 import { BaseComponent } from "utilities_js";
-import { CardDetails, CardLike, CardMain, ComponentDetailPRoductSideCard, ComponentProductSideCard } from "../../components/components";
+import {
+  CardDetails,
+  CardLike,
+  CardMain,
+  ComponentDetailPRoductSideCard,
+  ComponentProductSideCard,
+} from "../../components/components";
 import ContentProduct from "../../components/content_product";
 import BottomNav from "../../layout/bottom_nav";
 import Footer from "../../layout/footer";
 import TopNav from "../../layout/top_nav_home";
-import shose from '../../../assets/images/Rectangle1417.png'
+import shose from "../../../assets/images/Rectangle1417.png";
+import Inquiry from "../../components/inquiry";
 
 interface IProps {}
 
 interface IState {
-  fakeList: any;
+  isShow: boolean;
 }
 
 export class ToubaProductSingle1 extends BaseComponent<IProps, IState> {
+  state: IState = {
+    isShow: true,
+  };
   test = "You are here: Touba >> Products";
-  render() {
-    return (
-      <div>
 
+  render() {
+    console.log(this.state.isShow);
+    const clickHandler = () => {
+      // this.setState({ isShow: true });
+      console.log("Salam");
+    };
+    return (
+      <div className="product-Single-Page">
         <div className="px-5">
           <div className="smalText p-2">{this.test}</div>
           <div className="row">
             <div className="col-9 p-2">
               <div>
-                <CardMain tabItemOne="Product" tabItemTwo="Related Excess Capacity" image={shose} show={true} />
+                <CardMain
+                  tabItemOne="Product"
+                  tabItemTwo="Related Excess Capacity"
+                  image={shose}
+                  show={true}
+                />
               </div>
             </div>
             <div className="col-3 p-2">
@@ -57,10 +77,10 @@ export class ToubaProductSingle1 extends BaseComponent<IProps, IState> {
                 <CardDetails />
               </div>
               <div className="col-3 p-2">
-              <div>
-                <ComponentDetailPRoductSideCard />
+                <div>
+                  <ComponentDetailPRoductSideCard />
+                </div>
               </div>
-            </div>
             </div>
           </div>
           <div>
@@ -99,6 +119,17 @@ export class ToubaProductSingle1 extends BaseComponent<IProps, IState> {
           </div>
         </div>
         <Footer />
+        {this.state.isShow ? (
+          <div className="product-Inquiry d-flex flex-row">
+            <div
+              className="blur-Background"
+              onClick={() => this.setState({ isShow: false })}
+            >
+              <span>sv</span>
+            </div>
+            <Inquiry />
+          </div>
+        ) : null}
       </div>
     );
   }

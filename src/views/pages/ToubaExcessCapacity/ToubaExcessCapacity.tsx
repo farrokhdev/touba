@@ -18,7 +18,7 @@ import { CardProduct } from "../../components/card_product";
 interface IProps {}
 
 interface IState {
-  fakeList: any;
+  isShow: boolean;
 }
 
 const TEST = [
@@ -38,6 +38,9 @@ const TEST = [
 
 export class ToubaExcessCapacity extends BaseComponent<IProps, IState> {
   test = "You are here: Touba >> Products";
+  state: IState = {
+    isShow: false,
+  };
   render() {
     return (
       <div>
@@ -56,7 +59,8 @@ export class ToubaExcessCapacity extends BaseComponent<IProps, IState> {
             </div>
             <div className="col-3 p-2">
               <div>
-                <ComponentProductSideCard />
+                <ComponentProductSideCard
+                />
               </div>
             </div>
           </div>
@@ -152,7 +156,7 @@ export class ToubaExcessCapacity extends BaseComponent<IProps, IState> {
             </div>
           </div>
           <div>
-            <div className="bigText mt-3">Supplier's  products</div>
+            <div className="bigText mt-3">Supplier's products</div>
             <div className="row mt-4">
               <div className="col-3 p-2">
                 <CardLike />

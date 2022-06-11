@@ -1,0 +1,14 @@
+.product-Inquiry {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    .blur-Background {
+        width: 85%;
+        background-color: #000000;
+        opacity: 0.6;
+    }
+}

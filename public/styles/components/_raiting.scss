@@ -1,0 +1,9 @@
+.raiting {
+    img {
+        width: 20px;
+        height: 20px;
+    }
+    span {
+        @include FontStyle(14px, 500, $lightSorme);
+    }
+}

@@ -1,0 +1,23 @@
+.inquiry {
+    // width: 700px;
+    height: 100%;
+    background-color: $white;
+    .product-Detail {
+        .productImg {
+            width: 110px;
+            height: 110px;
+        }
+        .product-Name {
+            @include FontStyle(22px, 800, $sorme);
+        }
+    }
+    .offer-Price {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+}
+

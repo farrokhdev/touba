@@ -9,7 +9,9 @@ import iconMessage from "../../assets/icons/icon-message.svg";
 import iconCard from "../../assets/icons/icon-card.svg";
 import { Divider } from "./components";
 
-const ComponentProductSideCard = () => {
+export type IProps = {};
+
+const ComponentProductSideCard: React.FC<IProps> = () => {
   return (
     <div className="p-3 product-side-card">
       <div className="d-flex justify-content-center align-items-center">

@@ -81,4 +81,6 @@ export { default as IconEmail} from './icons/icon-email.svg';
 export { default as IconTwiterGray} from './icons/icon-twiter-gray.svg';
 export { default as IconLinkdinGray} from './icons/icon-linkdin-gray.svg';
 export { default as IconHelpBanner} from './icons/Icon-helpbanner.svg';
+export { default as IconTickSquare} from './icons/icon-tick-square.svg';
+export { default as IconStartOutline} from './icons/icon-star-outline.svg';
 export { default as Iran} from './images/iran.png';
