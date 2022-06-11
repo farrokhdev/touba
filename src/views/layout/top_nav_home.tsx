@@ -6,51 +6,53 @@ export function TopNavHome() {
     return (
         <>
             <div className="top-nav-home">
-                <div className="top-nav-home-brand">
-                    <img
-                        src={ImageBrand}
-                        className="top-nav-home-brand-image"
-                    />
-                </div>
-                <div className="top-nav-home-links">
-                    <Link to="/" className="link">
-                        <p className="text-link">HOME</p>
-                    </Link>
-                    <Link to="/help" className="link">
-                        <p className="text-link">HELP</p>
-                    </Link>
-                    <Link to="/membership" className="link">
-                        <p className="text-link">Membership</p>
-                    </Link>
-                    <Link to="/about-us" className="link">
-                        <p className="text-link">ABOUT US</p>
-                    </Link>
-                    <Link to="/contact-us" className="link">
-                        <p className="text-link">CONTACT US</p>
-                    </Link>
-                </div>
-                <div className="top-nav-home-socials">
-                    <Link to="/">
-                        <img src={IconInstagram} className="social-link" />
-                    </Link>
-                    <Link to="/">
-                        <img src={IconYoutube} className="social-link" />
-                    </Link>
-                    <Link to="/">
-                        <img src={IconTwitter} className="social-link" />
-                    </Link>
-                    <Link to="/">
-                        <img src={IconLinkdin} className="social-link" />
-                    </Link>
-                    <Link to="/">
-                        <img src={IconFacebook} className="social-link" />
-                    </Link>
-                </div>
-                <div className="top-nav-home-button-group">
-                    <ButtonIcon icon={IconBag} />
-                    <Link to="/login">
-                        <ButtonIcon icon={IconTwoPerson} />
-                    </Link>
+                <div className="top-nav-home-items">
+                    <div className="top-nav-home-items-brand">
+                        <img
+                            src={ImageBrand}
+                            className="top-nav-home-items-brand-image"
+                        />
+                    </div>
+                    <div className="top-nav-home-items-links">
+                        <Link to="/" className="link">
+                            <p className="text-link">HOME</p>
+                        </Link>
+                        <Link to="/help" className="link">
+                            <p className="text-link">HELP</p>
+                        </Link>
+                        <Link to="/membership" className="link">
+                            <p className="text-link">Membership</p>
+                        </Link>
+                        <Link to="/about-us" className="link">
+                            <p className="text-link">ABOUT US</p>
+                        </Link>
+                        <Link to="/contact-us" className="link">
+                            <p className="text-link">CONTACT US</p>
+                        </Link>
+                    </div>
+                    <div className="top-nav-home-items-socials">
+                        <Link to="/">
+                            <img src={IconInstagram} className="social-link" />
+                        </Link>
+                        <Link to="/">
+                            <img src={IconYoutube} className="social-link" />
+                        </Link>
+                        <Link to="/">
+                            <img src={IconTwitter} className="social-link" />
+                        </Link>
+                        <Link to="/">
+                            <img src={IconLinkdin} className="social-link" />
+                        </Link>
+                        <Link to="/">
+                            <img src={IconFacebook} className="social-link" />
+                        </Link>
+                    </div>
+                    <div className="top-nav-home-items-button-group">
+                        <ButtonIcon icon={IconBag} />
+                        <Link to="/login">
+                            <ButtonIcon icon={IconTwoPerson} />
+                        </Link>
+                    </div>
                 </div>
             </div>
             <div className="top-nav-home-minimal">
