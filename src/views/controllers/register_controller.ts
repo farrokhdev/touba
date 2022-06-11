@@ -10,6 +10,7 @@ interface IState {
     firstName: string;
     lastName: string;
     phone: string;
+    code: string | number;
     confirmPassword: string;
 }
 
@@ -22,6 +23,7 @@ export class RegisterControll extends Component<IProps, IState> {
         lastName: "",
         phone: "",
         confirmPassword: "",
+        code: 0,
     };
 
     //list

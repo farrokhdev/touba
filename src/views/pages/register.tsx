@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { BackgroundLatest, IconAlibaba, IconArvan, IconEmail, IconError, IconLinkdin, IconLinkdinGray, IconTouba, IconTwiterGray, IconTwitter, ImageBackgroundLogin, ImageControll, ImageLaboratory, ImagePersonBox, ImageTest, ImageTest2, ImageTest3, ImageTest4 } from "../../assets";
 import { ButtonOutline } from "../components/button_outline";
 import { CHART } from "../components/chart";
-import { Button, CardSearchProduct, CardProduct, CardCategory, CardImage, CardCollectionProduct, CardProductWithPrice, CardBestSeller, CardCollectionBest, Divider, CardNewExcess, CardBestBrand, CardNewProduct, InputTextLabel, ComponentRadioSquare, SelectText } from "../components/components";
+import { Button, CardSearchProduct, CardProduct, CardCategory, CardImage, CardCollectionProduct, CardProductWithPrice, CardBestSeller, CardCollectionBest, Divider, CardNewExcess, CardBestBrand, CardNewProduct, InputTextLabel, ComponentRadioSquare, SelectText, InputTextPhoneNumber } from "../components/components";
 import HomeController from "../controllers/home_controller";
 import RegisterControll from "../controllers/register_controller";
 
@@ -52,13 +52,12 @@ class Register extends RegisterControll {
                             />
                         </div>
                         <div className="register-modal-input-group-phone">
-                            <InputTextLabel
-                                value={this.state.phone}
+                            <InputTextPhoneNumber
+                                valueCode={this.state.code}
+                                valuephone={this.state.phone}
                                 title={"Phone Number"}
-                                placeholder={""}
-                                type={"text"}
-                                showDropDown={false}
-                                onChange={(event) => { this.setState({ phone: event.currentTarget.value }) }}
+                                onChangeCode={(event) => this.setState({code: event?.currentTarget.value})}
+                                onChangePhone={(event) => this.setState({phone: event?.currentTarget.value})}
                             />
                         </div>
                         <div className="register-modal-input-group-password">

@@ -62,4 +62,5 @@ export { default as ComponentProductSideCard } from './component_product_side_ca
 export { default as ComponentDetailPRoductSideCard } from './component_product_detail_side_card';
 export { default as ContentRelated } from './content_related';
 export { default as ComponentCapicityFilter } from './component_capicity_filter';
+export { default as InputTextPhoneNumber } from './input_text_phonenumber';
 
