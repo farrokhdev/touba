@@ -1,10 +1,11 @@
 import React from "react";
 
 export type IProps = {
-  price: number;
+  price: string;
   pairs: string;
   days: string;
   selected: boolean;
+  clickHandler: () => void;
 };
 
 const SingleProductPrice: React.FC<IProps> = ({
@@ -12,12 +13,14 @@ const SingleProductPrice: React.FC<IProps> = ({
   pairs,
   days,
   selected,
+  clickHandler,
 }) => {
   return (
     <div
       className={`single-Product-Price d-flex flex-row align-items-center justify-content-between ${
         selected ? "single-Product-Price-Select " : ""
       }`}
+      onClick={clickHandler}
     >
       <div className="d-flex flex-row align-items-center justify-content-center product-Price">
         <span>${price}</span>

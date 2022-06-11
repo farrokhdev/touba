@@ -2514,8 +2514,9 @@ a {
 }
 
 .single-Product-Price {
-  width: 298px;
+  width: 100%;
   height: 83px;
+  cursor: pointer;
 }
 
 .single-Product-Price .product-Price {
@@ -2552,8 +2553,9 @@ a {
 }
 
 .single-Product-Price-Select {
-  width: 298px;
+  width: 100%;
   height: 83px;
+  cursor: pointer;
 }
 
 .single-Product-Price-Select .product-Price {
@@ -3109,6 +3111,50 @@ a {
   font-weight: 800;
   font-size: 60px;
   color: #3c557a !important;
+}
+
+.inquiry {
+  width: 700px;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.inquiry .product-Detail .productImg {
+  width: 110px;
+  height: 110px;
+}
+
+.inquiry .product-Detail .product-Name {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  color: #3c557a !important;
+}
+
+.inquiry .offer-Price {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.raiting img {
+  width: 20px;
+  height: 20px;
+}
+
+.raiting span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #6b798c !important;
 }
 
 .top-nav {

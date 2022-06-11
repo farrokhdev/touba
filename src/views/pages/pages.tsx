@@ -32,6 +32,7 @@ import {
 } from "../components/components";
 import GruopChat from "../components/group_chat";
 import IncrementDecrementProduct from "../components/increment_decrement_product";
+import Inquiry from "../components/inquiry";
 import NeededCapacity from "../components/needed_capacity";
 import PriceSummary from "../components/price_summary";
 import SingleProductPrice from "../components/single_product_price";
@@ -109,7 +110,7 @@ function Pages() {
     ],
     isRead: false,
   };
-  return <MembershipPage />;
+  return <Inquiry />;
   // return (
   //   <div>
   //     <TopNav />

@@ -1,7 +1,7 @@
 .single-Product-Price {
-    width: 298px;
+    width: 100%;
     height: 83px;
-
+    cursor: pointer;
     .product-Price {
         width: 50%;
         height: 100%;
@@ -25,8 +25,10 @@
     }
 }
 .single-Product-Price-Select {
-    width: 298px;
+    width: 100%;
     height: 83px;
+    cursor: pointer;
+
     .product-Price {
         border: 1px solid $green !important;
         border-right: none !important;
