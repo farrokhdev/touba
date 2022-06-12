@@ -111,7 +111,7 @@
   display: flex;
   align-items: center;
 }
-.ball{
+.ball-orange{
 
 box-sizing: border-box;
 
@@ -124,6 +124,20 @@ background: #FFC700;
 border: 3px solid #6B798C;
 border-radius: 50%;
 }
+.ball-green{
+
+  box-sizing: border-box;
+  
+  width: 46px;
+  height: 46px;
+  
+  background: #E0FF1F;
+  /* Sorme2 */
+  
+  border: 3px solid #6B798C;
+  border-radius: 50%;
+  margin-left: 4%;
+  }
 .fill4{
   position: relative;
   left: -1.8%;

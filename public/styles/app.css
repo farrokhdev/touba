@@ -655,7 +655,7 @@ a {
           align-items: center;
 }
 
-.ball {
+.ball-orange {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 46px;
@@ -664,6 +664,18 @@ a {
   /* Sorme2 */
   border: 3px solid #6B798C;
   border-radius: 50%;
+}
+
+.ball-green {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 46px;
+  height: 46px;
+  background: #E0FF1F;
+  /* Sorme2 */
+  border: 3px solid #6B798C;
+  border-radius: 50%;
+  margin-left: 4%;
 }
 
 .fill4 {
@@ -917,7 +929,7 @@ a {
 .product-single1-card-region {
   background: #f3f4f6;
   border-radius: 63px;
-  padding: 4%;
+  padding: 2%;
 }
 
 .product-single1-red-circle {
@@ -3609,6 +3621,7 @@ a {
   font-weight: 700;
   font-size: 10px;
   color: #d6d6d6 !important;
+  text-transform: uppercase;
 }
 
 .product-side-card .footer-text {
@@ -3618,6 +3631,16 @@ a {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  color: #3c557a !important;
+}
+
+.product-side-card .text-country {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
   color: #3c557a !important;
 }
 

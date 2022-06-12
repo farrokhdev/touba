@@ -22,9 +22,14 @@ interface IState {
 
 export class ToubaProductSingle1 extends BaseComponent<IProps, IState> {
   state: IState = {
-    isShow: true,
+    isShow: false,
   };
   test = "You are here: Touba >> Products";
+
+   showInquiry=()=>{
+    console.log('sal')
+    this.setState({isShow:!this.state.isShow})
+  }
 
   render() {
     console.log(this.state.isShow);
@@ -49,7 +54,7 @@ export class ToubaProductSingle1 extends BaseComponent<IProps, IState> {
             </div>
             <div className="col-3 p-2">
               <div>
-                <ComponentProductSideCard />
+                <ComponentProductSideCard handleAddToCart={()=>this.showInquiry()} />
               </div>
             </div>
           </div>
@@ -78,7 +83,7 @@ export class ToubaProductSingle1 extends BaseComponent<IProps, IState> {
               </div>
               <div className="col-3 p-2">
                 <div>
-                  <ComponentDetailPRoductSideCard />
+                  <ComponentDetailPRoductSideCard  />
                 </div>
               </div>
             </div>

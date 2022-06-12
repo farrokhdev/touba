@@ -6,7 +6,7 @@ import PriceCart from "./card_price";
 import plain from "../../assets/images/plain.png";
 import ship from "../../assets/images/ship.png";
 import fill from "../../assets/images/Fill.png";
-import fill4 from "../../assets/images/Fill4.png";
+import fill4 from "../../assets/icons/icon-fill.svg";
 import Certificates from "./certificates";
 import iconShare from "../../assets/icons/icon-share.svg";
 
@@ -40,9 +40,13 @@ const ContentProduct = ({ show }: Props) => {
           <div className={`textContent text-center col-4 border-right`}>
             <div>988 Customer Reviews</div>
           </div>
-          <div className={`col-2 text-center `}>
-            <img src={iconShare} />
-            <img src={stroke} />
+          <div className={`col-2 justify-content-between d-flex px-2`}>
+            <div>
+              <img src={iconShare} />
+            </div>
+            <div>
+              <img src={stroke} />
+            </div>
           </div>
         </div>
         {show && (
@@ -79,8 +83,9 @@ const ContentProduct = ({ show }: Props) => {
               <div className="col-2">
                 <div className="smalText">Colors:</div>
               </div>
-              <div className="col-4">
-                <div className="ball"></div>
+              <div className="col-4 d-flex">
+                <div className="ball-orange"></div>
+                <div className="ball-green"></div>
               </div>
             </div>
           </>
@@ -109,13 +114,7 @@ const ContentProduct = ({ show }: Props) => {
           <div className="smalText d-flex align-items-center">
             Protection & Insurance:
             <span style={{ color: " #21C085", marginLeft: "5px" }}> Touba</span>
-            <span className="d-flex align-items-center ">
-              <img src={fill} />
-            </span>
-            <span className="fill4">
-              {" "}
-              <img src={fill4} />
-            </span>
+            <img style={{ marginLeft: "5px" }} src={fill4} />
           </div>
         </div>
         <div className="row mt-3">
