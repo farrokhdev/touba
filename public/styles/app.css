@@ -3272,6 +3272,8 @@ a {
 
 .card-search-product {
   position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .card-search-product-header {
@@ -5534,15 +5536,17 @@ a {
   margin-bottom: 100px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1220px) {
   .home-header {
-    padding: 0;
-    min-height: 643px;
+    padding: 0 20px;
+    min-height: 500px;
     height: auto;
   }
 }
 
 .home-header-description {
+  max-width: 1920px;
+  margin: 0 auto;
   padding-top: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5592,97 +5596,166 @@ a {
   }
 }
 
-.home-header-description-items-title {
-  width: auto;
-  height: auto;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 54px;
-  color: #FFFFFF !important;
-}
-
-@media (max-width: 1440px) {
+@media (max-width: 1220px) {
   .home-header-description-items-title {
     width: auto;
     height: auto;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 800;
-    font-size: 40px;
+    font-size: 30px;
+    color: #FFFFFF !important;
+  }
+}
+
+@media (min-width: 1221px) {
+  .home-header-description-items-title {
+    width: auto;
+    height: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 41px;
+    color: #FFFFFF !important;
+  }
+}
+
+@media (min-width: 1550px) {
+  .home-header-description-items-title {
+    width: auto;
+    height: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 54px;
     color: #FFFFFF !important;
   }
 }
 
 .home-header-description-items-text1 {
-  width: auto;
-  height: auto;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 22px;
-  color: #FFFFFF !important;
   text-align: justify;
   text-justify: inter-word;
+  margin: 20px 0;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1220px) {
   .home-header-description-items-text1 {
     width: auto;
     height: auto;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 800;
-    font-size: 17px;
+    font-size: 12px;
+    color: #FFFFFF !important;
+  }
+}
+
+@media (min-width: 1221px) {
+  .home-header-description-items-text1 {
+    width: auto;
+    height: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 19px;
+    color: #FFFFFF !important;
+  }
+}
+
+@media (min-width: 1550px) {
+  .home-header-description-items-text1 {
+    width: auto;
+    height: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
     color: #FFFFFF !important;
   }
 }
 
 .home-header-description-items-text2 {
-  width: auto;
-  height: auto;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  color: #FFFFFF !important;
   margin-bottom: 80px;
   text-align: justify;
   text-justify: inter-word;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1220px) {
   .home-header-description-items-text2 {
     width: auto;
     height: auto;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 800;
+    font-size: 9px;
+    color: #FFFFFF !important;
+  }
+}
+
+@media (min-width: 1221px) {
+  .home-header-description-items-text2 {
+    width: auto;
+    height: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
     font-size: 14px;
     color: #FFFFFF !important;
   }
 }
 
-.home-header-description-image {
-  margin: 140px 0 0 50px;
-  width: 50%;
+@media (min-width: 1550px) {
+  .home-header-description-items-text2 {
+    width: auto;
+    height: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF !important;
+  }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 375px) {
   .home-header-description-image {
     width: 100%;
     margin: 50px 0 0 0px;
   }
 }
 
+@media (min-width: 1000px) {
+  .home-header-description-image {
+    margin: 89px 0px 0 50px;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1441px) {
+  .home-header-description-image {
+    margin: 80px 0px 0 50px;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1788px) {
+  .home-header-description-image {
+    margin: 60px 170px 0 50px;
+    width: 50%;
+  }
+}
+
 .home-header-description-image > img {
-  width: 50%;
+  width: 100%;
 }
 
 @media (max-width: 1440px) {
   .home-header-description-image > img {
     width: 100%;
   }
+}
+
+.home-header-inputs {
+  margin: 0 auto;
 }
 
 .home-section-earn {
