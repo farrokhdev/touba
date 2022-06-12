@@ -4326,6 +4326,12 @@ a {
   border-radius: 8px;
 }
 
+@media (max-width: 1394px) {
+  .dropdown-bottom-menu .section-rectangle {
+    top: 13px;
+  }
+}
+
 .dropdown-bottom-menu .section-rectangle .section-triggle {
   width: 23.5px;
   height: 23.5px;
@@ -4348,6 +4354,7 @@ a {
 
 .dropdown-bottom-menu .section-rectangle .content-items {
   width: 25%;
+  min-width: 225px;
   z-index: 2;
 }
 
