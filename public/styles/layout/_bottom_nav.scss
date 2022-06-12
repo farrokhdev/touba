@@ -4,62 +4,73 @@
     height: auto;
     background-color: $sorme;
     @include Display(flex, center, center);
+
     @media (max-width: 1035px) {
         display: none;
     }
 
     &-items {
         width: 85%;
+        max-width: 1920px;
         @include Display(flex, space-between, center);
         padding: 0 10px;
         position: relative;
-    
+
         @media (max-width: 1035px) {
             display: none;
         }
-    
+
         @media (min-width: 1036px) {
             flex-wrap: wrap;
             flex-direction: column-reverse;
         }
-    
-        @media (min-width: 1265px) {
+
+        @media (min-width: 1395px) {
             flex-wrap: nowrap;
             flex-direction: row;
         }
-    
+
         &-search {
             width: 20%;
-    
-            @media (max-width: 1265px) {
+
+            @media (max-width: 1395px) {
                 width: 100%;
             }
         }
-    
+
         &-links {
-            @media (max-width: 1265px) {
+            @media (max-width: 1395px) {
                 width: 100%;
             }
-            width: 75%;
+
+            width: 78%;
             display: flex;
             align-items: center;
             justify-content: space-between;
-    
+
             .button-component {
                 background-color: transparent;
                 width: 120px;
+
                 .button-component-text {
                     @include FontStyle(14px, 600, $white);
                     margin: 0;
-                    white-space: nowrap;
+
+                    @media (max-width: 1500px) {
+                        white-space: wrap;
+                    }
+
+                    @media (min-width: 1501px) {
+                        white-space: nowrap;
+                    }
                 }
             }
         }
-    
+
         &-dropdown {
             width: 95%;
             position: absolute;
-    
+
             .section-rectangle {
                 width: 100%;
                 height: 610px;
@@ -71,7 +82,7 @@
                 border: 1px solid $darkWhite;
                 box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.25);
                 border-radius: 8px;
-    
+
                 .section-triggle {
                     width: 23.5px;
                     height: 23.5px;
@@ -81,35 +92,35 @@
                     top: -10px;
                     left: 27px;
                 }
-    
+
                 .content {
                     z-index: 2;
                     width: 100%;
                     height: 100%;
                     display: flex;
-    
+
                     &-items {
                         width: 25%;
                         z-index: 2;
                     }
-    
+
                     &-divider {
                         width: 1px;
                         height: 100%;
                         background-color: $gray;
                     }
-    
+
                     &-submenus {
                         width: 75%;
                         display: flex;
-    
+
                         &-section {
                             width: 30%;
                             display: flex;
                             flex-direction: column;
                             align-items: center;
                             margin: 15px;
-    
+
                             &-header {
                                 width: 100%;
                                 height: 72px;
@@ -118,19 +129,19 @@
                                 justify-content: start;
                                 align-items: center;
                                 border-radius: 8px;
-    
+
                                 &-text {
                                     @include FontStyle(22px, 800, $sorme);
                                     margin: 0 30px;
                                 }
                             }
-    
+
                             &-body {
                                 width: 100%;
-    
+
                                 .text-icon-horizontal-title {
                                     margin: 0px;
-    
+
                                     &-icon {
                                         margin: 0 34px;
                                     }
@@ -148,10 +159,13 @@
     @media (max-width: 1035px) {
         display: block;
     }
+
     display: none;
+
     .offcanvas-body {
         display: flex;
         flex-direction: column;
+
         >a {
             @include FontStyle(14px, 600, $sorme);
             margin: 12px 17px;
