@@ -486,7 +486,7 @@ a {
   align-items: center;
 }
 
-.ball {
+.ball-orange {
   box-sizing: border-box;
   width: 46px;
   height: 46px;
@@ -494,6 +494,17 @@ a {
   /* Sorme2 */
   border: 3px solid #6B798C;
   border-radius: 50%;
+}
+
+.ball-green {
+  box-sizing: border-box;
+  width: 46px;
+  height: 46px;
+  background: #E0FF1F;
+  /* Sorme2 */
+  border: 3px solid #6B798C;
+  border-radius: 50%;
+  margin-left: 4%;
 }
 
 .fill4 {
