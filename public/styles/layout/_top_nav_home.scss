@@ -4,9 +4,13 @@
     height: auto;
     background-color: $white;
     @include Display(flex, center, center);
+    
+    @media (max-width: 750px) {
+        display: none;
+    }
 
     &-items {
-        width: 80%;
+        width: 85%;
         display: flex;
         align-items: center;
         justify-content: space-around;

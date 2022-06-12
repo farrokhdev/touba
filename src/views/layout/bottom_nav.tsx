@@ -59,9 +59,7 @@ export function BottomNav() {
   function handleActiveLink(id: number) {
     setActive(id);
   }
-  function test() {
-    console.log(5);
-  }
+
   const handleshowMinimalDropDown = useCallback(
     (event: MouseEvent<HTMLElement>) => {
       setShowMinimalDropDown(!showMinimalDropDown);
@@ -81,129 +79,131 @@ export function BottomNav() {
   return (
     <>
       <div className="bottom-nav">
-        <div className="bottom-nav-search">
-          <SelectCategories onOpen={handleshowDropDown} />
-        </div>
-        <div className="bottom-nav-links">
-          <Button
-            onClick={() => navigator("/excess")}
-            title={"EXCESS CAPACITY"}
-          />
-          <Button onClick={() => navigator("/product")} title={"PRODUCT"} />
-          <ButtonDropdown title={"SUPPLIERS"} links={TEST} />
-          <ButtonDropdown title={"DEMANDERS"} links={[]} />
-          <ButtonDropdown title={"BROKERS"} links={[]} />
-          <ButtonDropdown title={"SIDE SERVICES"} links={[]} />
-          <Button title={"SPECIAL OFFERS"} onClick={handleNavigationSpecial} />
-          <Button title={"MAP"} />
-        </div>
-        {showDropDown === true ? (
-          <div
-            className="bottom-nav-dropdown"
-            onMouseLeave={handleCloseDropDown}
-          >
-            <div className="section-rectangle">
-              <div className="section-triggle"></div>
-              <div className="content">
-                <div className="content-items">
-                  {ITEM_DROPDOWN.map((name) => (
-                    <div key={name.id}>
-                      <TextIconHorizontal
-                        icon={name.icon}
-                        title={name.title}
-                        showArrow={true}
-                        active={active === name.id ? true : false}
-                        onClick={() => handleActiveLink(name.id)}
-                      />
-                      <Divider />
-                    </div>
-                  ))}
-                </div>
-                <div className="content-divider"></div>
-                <div className="content-submenus">
-                  <div className="content-submenus-section">
-                    <div className="content-submenus-section-header">
-                      <h4 className="content-submenus-section-header-text">
-                        Title Here
-                      </h4>
-                    </div>
-                    <div className="content-submenus-section-body">
-                      <TextIconHorizontal
-                        icon={IconDot}
-                        title={"Sub-Menu-Here"}
-                        showArrow={false}
-                        active={false}
-                      />
-                      <TextIconHorizontal
-                        icon={IconDot}
-                        title={"Sub-Menu-Here"}
-                        showArrow={false}
-                        active={false}
-                      />
-                      <TextIconHorizontal
-                        icon={IconDot}
-                        title={"Sub-Menu-Here"}
-                        showArrow={false}
-                        active={false}
-                      />
-                      <TextIconHorizontal
-                        icon={IconDot}
-                        title={"Sub-Menu-Here"}
-                        showArrow={false}
-                        active={false}
-                      />
-                      <TextIconHorizontal
-                        icon={IconDot}
-                        title={"Sub-Menu-Here"}
-                        showArrow={false}
-                        active={false}
-                      />
-                      <TextIconHorizontal
-                        icon={IconDot}
-                        title={"Sub-Menu-Here"}
-                        showArrow={false}
-                        active={false}
-                      />
-                    </div>
+        <div className="bottom-nav-items">
+          <div className="bottom-nav-items-search">
+            <SelectCategories onOpen={handleshowDropDown} />
+          </div>
+          <div className="bottom-nav-items-links">
+            <Button
+              onClick={() => navigator("/excess")}
+              title={"EXCESS CAPACITY"}
+            />
+            <Button onClick={() => navigator("/product")} title={"PRODUCT"} />
+            <ButtonDropdown title={"SUPPLIERS"} links={TEST} />
+            <ButtonDropdown title={"DEMANDERS"} links={[]} />
+            <ButtonDropdown title={"BROKERS"} links={[]} />
+            <ButtonDropdown title={"SIDE SERVICES"} links={[]} />
+            <Button title={"SPECIAL OFFERS"} onClick={handleNavigationSpecial} />
+            <Button title={"MAP"} />
+          </div>
+          {showDropDown === true ? (
+            <div
+              className="bottom-nav-items-dropdown"
+              onMouseLeave={handleCloseDropDown}
+            >
+              <div className="section-rectangle">
+                <div className="section-triggle"></div>
+                <div className="content">
+                  <div className="content-items">
+                    {ITEM_DROPDOWN.map((name) => (
+                      <div key={name.id}>
+                        <TextIconHorizontal
+                          icon={name.icon}
+                          title={name.title}
+                          showArrow={true}
+                          active={active === name.id ? true : false}
+                          onClick={() => handleActiveLink(name.id)}
+                        />
+                        <Divider />
+                      </div>
+                    ))}
                   </div>
-                  <div className="content-submenus-section">
-                    <div className="content-submenus-section-header">
-                      <h4 className="content-submenus-section-header-text">
-                        Title Here
-                      </h4>
+                  <div className="content-divider"></div>
+                  <div className="content-submenus">
+                    <div className="content-submenus-section">
+                      <div className="content-submenus-section-header">
+                        <h4 className="content-submenus-section-header-text">
+                          Title Here
+                        </h4>
+                      </div>
+                      <div className="content-submenus-section-body">
+                        <TextIconHorizontal
+                          icon={IconDot}
+                          title={"Sub-Menu-Here"}
+                          showArrow={false}
+                          active={false}
+                        />
+                        <TextIconHorizontal
+                          icon={IconDot}
+                          title={"Sub-Menu-Here"}
+                          showArrow={false}
+                          active={false}
+                        />
+                        <TextIconHorizontal
+                          icon={IconDot}
+                          title={"Sub-Menu-Here"}
+                          showArrow={false}
+                          active={false}
+                        />
+                        <TextIconHorizontal
+                          icon={IconDot}
+                          title={"Sub-Menu-Here"}
+                          showArrow={false}
+                          active={false}
+                        />
+                        <TextIconHorizontal
+                          icon={IconDot}
+                          title={"Sub-Menu-Here"}
+                          showArrow={false}
+                          active={false}
+                        />
+                        <TextIconHorizontal
+                          icon={IconDot}
+                          title={"Sub-Menu-Here"}
+                          showArrow={false}
+                          active={false}
+                        />
+                      </div>
                     </div>
-                    <div className="content-submenus-section-body">
-                      <TextIconHorizontal
-                        icon={IconDot}
-                        title={"Sub-Menu-Here"}
-                        showArrow={false}
-                        active={false}
-                      />
-                      <TextIconHorizontal
-                        icon={IconDot}
-                        title={"Sub-Menu-Here"}
-                        showArrow={false}
-                        active={false}
-                      />
-                      <TextIconHorizontal
-                        icon={IconDot}
-                        title={"Sub-Menu-Here"}
-                        showArrow={false}
-                        active={false}
-                      />
-                      <TextIconHorizontal
-                        icon={IconDot}
-                        title={"Sub-Menu-Here"}
-                        showArrow={false}
-                        active={false}
-                      />
+                    <div className="content-submenus-section">
+                      <div className="content-submenus-section-header">
+                        <h4 className="content-submenus-section-header-text">
+                          Title Here
+                        </h4>
+                      </div>
+                      <div className="content-submenus-section-body">
+                        <TextIconHorizontal
+                          icon={IconDot}
+                          title={"Sub-Menu-Here"}
+                          showArrow={false}
+                          active={false}
+                        />
+                        <TextIconHorizontal
+                          icon={IconDot}
+                          title={"Sub-Menu-Here"}
+                          showArrow={false}
+                          active={false}
+                        />
+                        <TextIconHorizontal
+                          icon={IconDot}
+                          title={"Sub-Menu-Here"}
+                          showArrow={false}
+                          active={false}
+                        />
+                        <TextIconHorizontal
+                          icon={IconDot}
+                          title={"Sub-Menu-Here"}
+                          showArrow={false}
+                          active={false}
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        ) : null}
+          ) : null}
+        </div>
       </div>
       <div className="bottom-nav-minimal">
         <button
