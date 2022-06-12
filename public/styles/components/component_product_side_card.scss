@@ -17,9 +17,14 @@
   }
   .text-desc {
     @include FontStyle(10px, 700, #d6d6d6);
+    text-transform: uppercase;
   }
   .footer-text {
     @include FontStyle(16px, 400, #3c557a);
+  }
+  .text-country{
+    @include FontStyle(12px, 700, #3c557a);
+
   }
   .button-message {
     background: $white;

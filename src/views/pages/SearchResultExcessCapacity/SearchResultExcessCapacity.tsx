@@ -4,7 +4,7 @@ import { CardOfferHorizontal } from "../../components/cars_offer_horizontal";
 import Component_search_bar from "../../components/component_search_bar";
 import BottomNav from "../../layout/bottom_nav";
 import Footer from "../../layout/footer";
-import TopNav from "../../layout/top_nav";
+import TopNav from "../../layout/top_nav_home";
 import image_test from "../../../assets/images/image-test.png";
 import { ComponentFilterSidebar, ComponentFilterTopbar } from "../../components/components";
 import { ButtonComponent } from "../../components/button";

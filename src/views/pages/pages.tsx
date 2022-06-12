@@ -1,8 +1,10 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import { Home, Login } from ".";
-import { CHART } from "../components/chart";
-import { ComponentBinaRazan } from "../components/components";
-import { BottomNav, Footer, TopNav } from "../layout/layout";
+import { CHART, Chart } from "../components/chart";
+import {
+  ComponentBinaRazan,
+} from "../components/components";
+import { BottomNav, Footer, TopNav, TopNavHome } from "../layout/layout";
 import AboutusPage from "./AboutusPage/AboutusPage";
 import ToubaProduct from "./ToubaProduct/ToubaProduct";
 import ToubaSupplier from "./ToubaSupplier/ToubaSupplier";
@@ -19,9 +21,13 @@ function Pages() {
   return (
     <div>
       {location.pathname.includes("/login") ||
-      location.pathname.includes("/register") ? null : (
+        location.pathname.includes("/register") ? null : (
         <>
-          <TopNav />
+          {location.pathname === "/" ? (
+            <TopNavHome />
+          ) : (
+            <TopNav />
+          )}
           <BottomNav />
         </>
       )}
@@ -41,7 +47,7 @@ function Pages() {
         <Route path="/membership" element={<MembershipPage />} />
       </Routes>
       {location.pathname.includes("/login") ||
-      location.pathname.includes("/register") ? null : (
+        location.pathname.includes("/register") ? null : (
         <>
           <Footer />
         </>

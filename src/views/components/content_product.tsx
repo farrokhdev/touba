@@ -40,9 +40,13 @@ const ContentProduct = ({ show }: Props) => {
           <div className={`textContent text-center col-4 border-right`}>
             <div>988 Customer Reviews</div>
           </div>
-          <div className={`col-2 text-center `}>
-            <img src={iconShare} />
-            <img src={stroke} />
+          <div className={`col-2 justify-content-between d-flex px-2`}>
+            <div >
+              <img src={iconShare} />
+            </div>
+            <div >
+              <img src={stroke} />
+            </div>
           </div>
         </div>
         {show && (

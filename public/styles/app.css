@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background-color: #e5e5e5 !important;
+  background-color: #E5E5E5 !important;
 }
 
 a {
@@ -2692,6 +2692,7 @@ a {
   font-weight: 700;
   font-size: 10px;
   color: #d6d6d6 !important;
+  text-transform: uppercase;
 }
 .product-side-card .footer-text {
   width: auto;
@@ -2700,6 +2701,15 @@ a {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  color: #3c557a !important;
+}
+.product-side-card .text-country {
+  width: auto;
+  height: auto;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
   color: #3c557a !important;
 }
 .product-side-card .button-message {
@@ -3196,31 +3206,39 @@ a {
   top: 64px;
 }
 
-.top-nav {
-  display: flex;
+.top-nav-home {
   width: 100%;
-  align-items: center;
-  background-color: #FFFFFF;
-  min-height: 173px;
+  min-height: 114px;
   height: auto;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.top-nav-home-items {
+  width: 80%;
+  display: flex;
+  align-items: center;
   justify-content: space-around;
 }
-@media (max-width: 650px) {
-  .top-nav {
+@media (max-width: 750px) {
+  .top-nav-home-items {
     display: none;
   }
 }
-@media (min-width: 651px) {
-  .top-nav {
+@media (min-width: 751px) {
+  .top-nav-home-items {
     flex-wrap: wrap;
   }
 }
-@media (min-width: 901px) {
-  .top-nav {
+@media (min-width: 1251px) {
+  .top-nav-home-items {
     flex-wrap: nowrap;
   }
 }
-.top-nav-brand {
+.top-nav-home-items-brand {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3228,25 +3246,25 @@ a {
   height: 43.95px;
   cursor: pointer;
 }
-@media (max-width: 900px) {
-  .top-nav-brand {
-    width: 20%;
+@media (max-width: 1250px) {
+  .top-nav-home-items-brand {
+    width: 15%;
   }
 }
-.top-nav-brand-image {
+.top-nav-home-items-brand-image {
   width: 100%;
 }
-.top-nav-links {
+.top-nav-home-items-links {
   width: 40%;
   display: flex;
   justify-content: space-around;
 }
-@media (max-width: 900px) {
-  .top-nav-links {
+@media (max-width: 1250px) {
+  .top-nav-home-items-links {
     width: 60%;
   }
 }
-.top-nav-links .link .text-link {
+.top-nav-home-items-links .link .text-link {
   width: auto;
   height: auto;
   font-family: "Poppins";
@@ -3256,36 +3274,36 @@ a {
   color: #3c557a !important;
   margin: 0;
 }
-.top-nav-socials {
+.top-nav-home-items-socials {
   width: 20%;
   display: flex;
   justify-content: space-around;
 }
-@media (max-width: 900px) {
-  .top-nav-socials {
+@media (max-width: 1250px) {
+  .top-nav-home-items-socials {
     width: 50%;
   }
 }
-.top-nav-button-group {
-  width: 10%;
+.top-nav-home-items-button-group {
+  width: 12%;
   display: flex;
   justify-content: space-around;
 }
-@media (max-width: 900px) {
-  .top-nav-button-group {
+@media (max-width: 1250px) {
+  .top-nav-home-items-button-group {
     width: 30%;
   }
 }
 
-.top-nav-minimal {
+.top-nav-home-minimal {
   display: none;
 }
-@media (max-width: 650px) {
-  .top-nav-minimal {
+@media (max-width: 750px) {
+  .top-nav-home-minimal {
     display: block;
   }
 }
-.top-nav-minimal .top-nav-minimal-brand {
+.top-nav-home-minimal .top-nav-minimal-brand {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -3293,18 +3311,18 @@ a {
   height: 43.95px;
   cursor: pointer;
 }
-.top-nav-minimal .top-nav-minimal-brand-image {
+.top-nav-home-minimal .top-nav-minimal-brand-image {
   width: 40%;
 }
-.top-nav-minimal .top-nav-minimal-brand-button-group {
+.top-nav-home-minimal .top-nav-minimal-brand-button-group {
   width: 40%;
   display: flex;
   justify-content: space-around;
 }
-.top-nav-minimal .offcanvas {
+.top-nav-home-minimal .offcanvas {
   width: 370px;
 }
-.top-nav-minimal .top-nav-minimal-links {
+.top-nav-home-minimal .top-nav-minimal-links {
   width: 40%;
   height: 50%;
   display: flex;
@@ -3312,10 +3330,10 @@ a {
   justify-content: space-around;
   margin: 10px 0;
 }
-.top-nav-minimal .top-nav-minimal-links .link {
+.top-nav-home-minimal .top-nav-minimal-links .link {
   margin: 10px;
 }
-.top-nav-minimal .top-nav-minimal-links .link .text-link {
+.top-nav-home-minimal .top-nav-minimal-links .link .text-link {
   width: auto;
   height: auto;
   font-family: "Poppins";
@@ -3325,7 +3343,7 @@ a {
   color: #3c557a !important;
   margin: 0;
 }
-.top-nav-minimal .top-nav-minimal-socials {
+.top-nav-home-minimal .top-nav-minimal-socials {
   width: 90%;
   display: flex;
   justify-content: space-around;
@@ -3937,6 +3955,82 @@ a {
 
 .nav-Link-Active {
   border-bottom: 2px solid #21C085;
+}
+
+.top-nav {
+  width: 100%;
+  height: 173px;
+  background-color: #FFFFFF;
+}
+.top-nav-items {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.top-nav-items .active {
+  border-bottom: 2px solid #21C085;
+  background-color: transparent;
+}
+.top-nav-items-links {
+  width: 65%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.top-nav-items-links .link .text-link {
+  width: auto;
+  height: auto;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #3c557a !important;
+  margin: 20px 0;
+}
+.top-nav-items-socials {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.top-nav-content {
+  width: 90%;
+  margin: 24px auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.top-nav-content-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 43.95px;
+  cursor: pointer;
+}
+@media (max-width: 900px) {
+  .top-nav-content-brand {
+    width: 20%;
+  }
+}
+.top-nav-content-brand-image {
+  width: 100%;
+}
+.top-nav-content-search {
+  width: 70%;
+}
+.top-nav-content-button {
+  width: 2%;
 }
 
 .home-header {

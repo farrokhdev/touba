@@ -55,13 +55,13 @@ const ComponentProductSideCard = ({handleAddToCart}:Props) => {
                   </div>
                   <div className="col-3">
                     <div className="text-desc">Region:</div>
-                    <div className="bold-text">China</div>
+                    <div className="text-country">China</div>
                   </div>
                 </div>
               </div>
               <div className="col-6 tex-center px-2">
                 <div className="text-desc ">Membership:</div>
-                <div className="bold-text">4YR + 7M</div>
+                <div className="text-country mt-1">4YR + 7M</div>
               </div>
             </div>
           </div>
