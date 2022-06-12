@@ -33,6 +33,10 @@ interface PropsSubMenu {
     subMenu: Submenu[];
 }
 
+interface Props {
+    onClose(): void;
+}
+
 function SubMenu({ subMenu }: PropsSubMenu) {
     return (
         <div className="content-submenu">
@@ -58,17 +62,21 @@ function SubMenu({ subMenu }: PropsSubMenu) {
     )
 }
 
-export function DropDownBottomMenu(): ReactElement {
+export function DropDownBottomMenu({onClose}: Props): ReactElement {
     const [active, setActive] = useState(0);
 
     function handleActiveLink(id: number) {
         setActive(id);
     }
 
+    const handleCloseMenu = useCallback(() => {
+        onClose()
+    }, [onClose]);
+
     return (
         <div
             className="dropdown-bottom-menu"
-            onMouseLeave={() => { }}
+            onMouseLeave={handleCloseMenu}
         >
             <div className="section-rectangle">
                 <div className="section-triggle"></div>

@@ -96,7 +96,7 @@ export function BottomNav() {
             <Button title={"MAP"} />
           </div>
           {showDropDown === true ? (
-            <DropDownBottomMenu />
+            <DropDownBottomMenu onClose={handleCloseDropDown} />
           ) : null}
         </div>
       </div>

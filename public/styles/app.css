@@ -4679,7 +4679,7 @@ a {
       flex-wrap: nowrap;
 }
 
-@media (max-width: 1035px) {
+@media (max-width: 1000px) {
   .bottom-nav {
     display: none;
   }
@@ -4707,13 +4707,13 @@ a {
   position: relative;
 }
 
-@media (max-width: 1035px) {
+@media (max-width: 1000px) {
   .bottom-nav-items {
     display: none;
   }
 }
 
-@media (min-width: 1036px) {
+@media (min-width: 1001px) {
   .bottom-nav-items {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -4796,7 +4796,7 @@ a {
   display: none;
 }
 
-@media (max-width: 1035px) {
+@media (max-width: 1000px) {
   .bottom-nav-minimal {
     display: block;
   }
