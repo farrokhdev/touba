@@ -48,22 +48,66 @@ export function CardSearchProduct({ }: Props): ReactElement {
                 ))}
             </div>
             <div className="card-search-product-inputs">
-                <h6 className="card-search-product-inputs-title">
-                    Search for free product lines to make a product with your brand identity
-                </h6>
-                <div className="card-search-product-inputs-group">
-                    <InputTextLabel
-                        value={search}
-                        onChange={(event => { setSearch(event.currentTarget.value); })}
-                        title={"Product or Service"}
-                        placeholder={"What product you want to produce? Eg. PET Bottle"}
-                        type={"text"}
-                        showDropDown={true}
-                    />
-                    <SelectText value={""} />
-                    <SelectComponent type={"one"} />
-                    <Button title="SEARCH" />
-                </div>
+                {active === 1 ? (
+                    <>
+                        <h6 className="card-search-product-inputs-title">
+                            Search for free excess lines to make a product with your brand identity
+                        </h6>
+                        <div className="card-search-product-inputs-group">
+                            <InputTextLabel
+                                value={search}
+                                onChange={(event => { setSearch(event.currentTarget.value); })}
+                                title={"Product or Service"}
+                                placeholder={"What product you want to produce? Eg. PET Bottle"}
+                                type={"text"}
+                                showDropDown={true}
+                            />
+                            <SelectText value={""} />
+                            <SelectComponent type={"one"} />
+                            <Button title="SEARCH" />
+                        </div>
+                    </>
+                ) : (
+                    active === 2 ? (
+                        <>
+                            <h6 className="card-search-product-inputs-title">
+                                Search for free product lines to make a product with your brand identity
+                            </h6>
+                            <div className="card-search-product-inputs-group">
+                                <InputTextLabel
+                                    value={search}
+                                    onChange={(event => { setSearch(event.currentTarget.value); })}
+                                    title={"Product or Service"}
+                                    placeholder={"What product you want to produce? Eg. PET Bottle"}
+                                    type={"text"}
+                                    showDropDown={true}
+                                />
+                                <SelectText value={""} />
+                                <SelectComponent type={"one"} />
+                                <Button title="SEARCH" />
+                            </div>
+                        </>
+                    ) : (
+                        <>
+                            <h6 className="card-search-product-inputs-title">
+                                Search for free suppliers lines to make a product with your brand identity
+                            </h6>
+                            <div className="card-search-product-inputs-group">
+                                <InputTextLabel
+                                    value={search}
+                                    onChange={(event => { setSearch(event.currentTarget.value); })}
+                                    title={"Product or Service"}
+                                    placeholder={"What product you want to produce? Eg. PET Bottle"}
+                                    type={"text"}
+                                    showDropDown={true}
+                                />
+                                <SelectText value={""} />
+                                <SelectComponent type={"one"} />
+                                <Button title="SEARCH" />
+                            </div>
+                        </>
+                    )
+                )}
             </div>
         </div>
     )
