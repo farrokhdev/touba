@@ -230,6 +230,7 @@ a {
   border: 1px solid #21C085;
   border-radius: 8px;
   background-color: #FFFFFF;
+  padding: 0 15px;
 }
 
 .input-text-label-input:focus {
