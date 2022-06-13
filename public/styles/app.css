@@ -210,6 +210,30 @@ a {
   border-radius: 12px;
   cursor: pointer;
 }
+.card-border .discount-box {
+  position: relative;
+}
+.card-border .discount-percent {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 15%;
+  line-height: 30px;
+  /* identical to box height, or 150% */
+  text-align: center;
+  letter-spacing: 0.15px;
+  /* White */
+  color: #ffffff;
+  width: auto;
+  height: auto;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff !important;
+  transform: rotate(45deg);
+}
 
 .circle {
   display: flex;
@@ -219,7 +243,8 @@ a {
   width: 30px;
   border-radius: 50%;
   background: #f3f4f6;
-  padding: 10%;
+  padding: 2%;
+  margin: 2%;
 }
 
 .boldText {

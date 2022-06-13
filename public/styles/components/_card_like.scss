@@ -2,6 +2,27 @@
   background: #ffffff;
   border-radius: 12px;
   cursor: pointer;
+  .discount-box {
+    position: relative;
+  }
+  .discount-percent {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 15%;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+
+    text-align: center;
+    letter-spacing: 0.15px;
+
+    /* White */
+
+    color: #ffffff;
+@include FontStyle(20px,700,#ffffff);
+    transform: rotate(45deg);
+  }
 }
 .circle {
   display: flex;
@@ -11,8 +32,10 @@
   width: 30px;
   border-radius: 50%;
   background: #f3f4f6;
-  padding: 10%;
+  padding: 2%;
+  margin: 2%;
 }
+
 .boldText {
   /* Body/subtitle */
 
@@ -33,9 +56,8 @@
   border-right: 1px solid #d6d6d6;
 }
 .card-like-footer {
-  background: rgba(33, 192, 133,0.1);
+  background: rgba(33, 192, 133, 0.1);
   border-radius: 0px 0px 12px 12px;
-
 }
 .bold-text {
   font-family: "Poppins";

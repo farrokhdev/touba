@@ -117,7 +117,7 @@ export class ToubaSpecialOffers extends ToubaSpecialOferControllers {
               <div className="col-10">
                 <div className="row">
                   <div className="col-4 p-2">
-                    <CardLike />
+                    <CardLike discount={true} percent={'6'} />
                   </div>
                   <div className="col-4 p-2">
                     <CardLike />
@@ -141,7 +141,7 @@ export class ToubaSpecialOffers extends ToubaSpecialOferControllers {
                 </div>
                 <div className="row">
                   <div className="col-4 p-2">
-                    <CardLike />
+                    <CardLike  />
                   </div>
                   <div className="col-4 p-2">
                     <CardLike />
