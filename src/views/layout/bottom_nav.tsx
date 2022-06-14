@@ -77,7 +77,7 @@ export function BottomNav() {
 
   return (
     <>
-      <div className="bottom-nav">
+      <div className="bottom-nav px-5">
         <div className="bottom-nav-items">
           <div className="bottom-nav-items-search">
             <SelectCategories onOpen={handleshowDropDown} />

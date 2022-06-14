@@ -10,7 +10,7 @@
     }
 
     &-items {
-        width: 85%;
+        width: 100%;
         max-width: 1920px;
         @include Display(flex, space-between, center);
         padding: 0 10px;
