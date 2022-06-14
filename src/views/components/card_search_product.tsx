@@ -1,4 +1,4 @@
-import { ChangeEvent, memo, ReactElement, useState } from "react";
+import { ChangeEvent, memo, ReactElement, useEffect, useState } from "react";
 import { Button, Divider, InputTextLabel, SelectComponent, SelectText } from "./components";
 
 const BUTTON = [
@@ -20,10 +20,20 @@ const DROPDOWN = [
 ]
 
 interface Props {
-
+    onSelectText(value: string): void;
+    onValueText(value: string): void;
+    onSelect(value: string): void;
+    onSearch(value: string): void;
 }
 
-export function CardSearchProduct({ }: Props): ReactElement {
+export function CardSearchProduct(
+    {
+        onSelectText,
+        onSelect,
+        onValueText,
+        onSearch
+    }: Props
+): ReactElement {
 
     const [active, setActive] = useState(1);
     const [searchExcess, setSearchExcess] = useState('');
@@ -38,6 +48,18 @@ export function CardSearchProduct({ }: Props): ReactElement {
     const [selectSuppliers, setSelectSuppliers] = useState('');
     const [selectTextSuppliers, setSelectTextSuppliers] = useState('');
     const [valueSuppliers, setValueSuppliers] = useState('');
+
+    function handleGetSearchExcess(event: ChangeEvent<HTMLInputElement>) {
+        setSearchExcess(event.currentTarget.value);
+    };
+
+    function handleGetSearchProduct(event: ChangeEvent<HTMLInputElement>) {
+        setSearchProduct(event.currentTarget.value);
+    };
+
+    function handleGetSearchSuppliers(event: ChangeEvent<HTMLInputElement>) {
+        setSearchSuppliers(event.currentTarget.value);
+    };
 
     function handleActiveButton(id: number) {
         setActive(id)
@@ -79,6 +101,46 @@ export function CardSearchProduct({ }: Props): ReactElement {
         setValueSuppliers(event.currentTarget.value);
     };
 
+    useEffect(() => {
+        switch (active) {
+            case 1:
+                onSelectText(selectTextExcess);
+                onSelect(selectExcess);
+                onValueText(valueExcess);
+                onSearch(searchExcess);
+                break;
+            case 2:
+                onSelectText(selectTextProduct);
+                onSelect(selectProduct);
+                onValueText(valueProduct);
+                onSearch(searchProduct);
+                break;
+            case 3:
+                onSelectText(selectTextSuppliers);
+                onSelect(selectSuppliers);
+                onValueText(valueSuppliers);
+                onSearch(searchSuppliers);
+                break;
+            default:
+                break;
+        }
+    },
+        [
+            selectExcess,
+            selectProduct,
+            selectSuppliers,
+            valueExcess,
+            valueProduct,
+            valueSuppliers,
+            selectTextExcess,
+            selectTextProduct,
+            selectTextSuppliers,
+            searchExcess,
+            searchProduct,
+            searchSuppliers
+        ]
+    );
+
     return (
         <div className="card-search-product">
             <div className="card-search-product-header">
@@ -115,7 +177,7 @@ export function CardSearchProduct({ }: Props): ReactElement {
                         <div className="card-search-product-inputs-group">
                             <InputTextLabel
                                 value={searchExcess}
-                                onChange={(event => { setSearchExcess(event.currentTarget.value); })}
+                                onChange={handleGetSearchExcess}
                                 title={"Product or Service"}
                                 placeholder={"What product you want to produce? Eg. PET Bottle"}
                                 type={"text"}
@@ -145,7 +207,7 @@ export function CardSearchProduct({ }: Props): ReactElement {
                             <div className="card-search-product-inputs-group">
                                 <InputTextLabel
                                     value={searchProduct}
-                                    onChange={(event => { setSearchProduct(event.currentTarget.value); })}
+                                    onChange={handleGetSearchProduct}
                                     title={"Product or Service"}
                                     placeholder={"What product you want to produce? Eg. PET Bottle"}
                                     type={"text"}
@@ -174,7 +236,7 @@ export function CardSearchProduct({ }: Props): ReactElement {
                             <div className="card-search-product-inputs-group">
                                 <InputTextLabel
                                     value={searchSuppliers}
-                                    onChange={(event => { setSearchSuppliers(event.currentTarget.value); })}
+                                    onChange={handleGetSearchSuppliers}
                                     title={"Product or Service"}
                                     placeholder={"What product you want to produce? Eg. PET Bottle"}
                                     type={"text"}
