@@ -1,16 +1,21 @@
-import { ChangeEvent, InputHTMLAttributes, memo, ReactElement, useCallback } from "react";
+import { ChangeEvent, InputHTMLAttributes, memo, ReactElement, useCallback, useState } from "react";
 import { SelectComponent } from "./components";
 
 interface Props extends InputHTMLAttributes<HTMLInputElement> {
     value: string;
     placeholderSelect?: string;
+    onSelected(select: string): void;
 }
 
-function SelectText({ value, onChange, placeholderSelect }: Props): ReactElement {
+function SelectText({ value, onChange, placeholderSelect, onSelected }: Props): ReactElement {
 
     const handleOnChange = useCallback((event: ChangeEvent<HTMLInputElement>) => {
         onChange?.(event)
     }, [onChange]);
+
+    const handleGetSelected = useCallback((name: string) => {
+        onSelected(name);
+    }, [onSelected]);
 
     return (
         <div className="select-text">
@@ -23,7 +28,11 @@ function SelectText({ value, onChange, placeholderSelect }: Props): ReactElement
             />
             <div className="select-text-divider">
             </div>
-            <SelectComponent type={"two"} placeholder={placeholderSelect}/>
+            <SelectComponent
+                type={"two"}
+                placeholder={placeholderSelect}
+                onSelect={handleGetSelected}
+            />
         </div>
     )
 }
