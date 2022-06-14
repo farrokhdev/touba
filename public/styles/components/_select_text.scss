@@ -29,6 +29,7 @@
     .select-component {
         width: 50%;
         >button {
+            @include Display(flex, space-between, center);
             border: none;
         }
     }
