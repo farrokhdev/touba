@@ -1,4 +1,4 @@
-import { memo, ReactElement, useState } from "react";
+import { ChangeEvent, memo, ReactElement, useState } from "react";
 import { Button, Divider, InputTextLabel, SelectComponent, SelectText } from "./components";
 
 const BUTTON = [
@@ -26,11 +26,58 @@ interface Props {
 export function CardSearchProduct({ }: Props): ReactElement {
 
     const [active, setActive] = useState(1);
-    const [search, setSearch] = useState('');
+    const [searchExcess, setSearchExcess] = useState('');
+    const [searchProduct, setSearchProduct] = useState('');
+    const [searchSuppliers, setSearchSuppliers] = useState('');
+    const [selectExcess, setSelectExcess] = useState('');
+    const [selectTextExcess, setSelectTextExcess] = useState('');
+    const [valueExcess, setValueExcess] = useState('');
+    const [selectProduct, setSelectProduct] = useState('');
+    const [selectTextProduct, setSelectTextProduct] = useState('');
+    const [valueProduct, setValueProduct] = useState('');
+    const [selectSuppliers, setSelectSuppliers] = useState('');
+    const [selectTextSuppliers, setSelectTextSuppliers] = useState('');
+    const [valueSuppliers, setValueSuppliers] = useState('');
 
     function handleActiveButton(id: number) {
         setActive(id)
-    }
+    };
+
+    function handleGetSelectedExcess(name: string) {
+        setSelectExcess(name);
+    };
+
+    function handleGetSelectedTextExcess(name: string) {
+        setSelectTextExcess(name);
+    };
+
+    function handleGetValueSelectedExcess(event: ChangeEvent<HTMLInputElement>) {
+        setValueExcess(event.currentTarget.value);
+    };
+
+    function handleGetSelectedProduct(name: string) {
+        setSelectProduct(name);
+    };
+
+    function handleGetSelectedTextProduct(name: string) {
+        setSelectTextProduct(name);
+    };
+
+    function handleGetValueSelectedProduct(event: ChangeEvent<HTMLInputElement>) {
+        setValueProduct(event.currentTarget.value);
+    };
+
+    function handleGetSelectedSuppliers(name: string) {
+        setSelectSuppliers(name);
+    };
+
+    function handleGetSelectedTextSuppliers(name: string) {
+        setSelectTextSuppliers(name);
+    };
+
+    function handleGetValueSelectedSuppliers(event: ChangeEvent<HTMLInputElement>) {
+        setValueSuppliers(event.currentTarget.value);
+    };
 
     return (
         <div className="card-search-product">
@@ -67,21 +114,24 @@ export function CardSearchProduct({ }: Props): ReactElement {
                         </h6>
                         <div className="card-search-product-inputs-group">
                             <InputTextLabel
-                                value={search}
-                                onChange={(event => { setSearch(event.currentTarget.value); })}
+                                value={searchExcess}
+                                onChange={(event => { setSearchExcess(event.currentTarget.value); })}
                                 title={"Product or Service"}
                                 placeholder={"What product you want to produce? Eg. PET Bottle"}
                                 type={"text"}
                                 showDropDown={true}
                             />
                             <SelectText
-                                value={""}
+                                value={valueExcess}
                                 placeholderSelect={"Select Unit"}
+                                onSelected={handleGetSelectedTextExcess}
+                                onChange={handleGetValueSelectedExcess}
                             />
                             <SelectComponent
                                 type={"one"}
                                 items={DROPDOWN}
                                 placeholder={"Regional Channel"}
+                                onSelect={handleGetSelectedExcess}
                             />
                             <Button title="SEARCH" />
                         </div>
@@ -94,15 +144,25 @@ export function CardSearchProduct({ }: Props): ReactElement {
                             </h6>
                             <div className="card-search-product-inputs-group">
                                 <InputTextLabel
-                                    value={search}
-                                    onChange={(event => { setSearch(event.currentTarget.value); })}
+                                    value={searchProduct}
+                                    onChange={(event => { setSearchProduct(event.currentTarget.value); })}
                                     title={"Product or Service"}
                                     placeholder={"What product you want to produce? Eg. PET Bottle"}
                                     type={"text"}
                                     showDropDown={true}
                                 />
-                                <SelectText value={""} />
-                                <SelectComponent type={"one"} />
+                                <SelectText
+                                    value={valueProduct}
+                                    placeholderSelect={"Select Unit"}
+                                    onSelected={handleGetSelectedTextProduct}
+                                    onChange={handleGetValueSelectedProduct}
+                                />
+                                <SelectComponent
+                                    type={"one"}
+                                    items={DROPDOWN}
+                                    placeholder={"Regional Channel"}
+                                    onSelect={handleGetSelectedProduct}
+                                />
                                 <Button title="SEARCH" />
                             </div>
                         </>
@@ -113,15 +173,25 @@ export function CardSearchProduct({ }: Props): ReactElement {
                             </h6>
                             <div className="card-search-product-inputs-group">
                                 <InputTextLabel
-                                    value={search}
-                                    onChange={(event => { setSearch(event.currentTarget.value); })}
+                                    value={searchSuppliers}
+                                    onChange={(event => { setSearchSuppliers(event.currentTarget.value); })}
                                     title={"Product or Service"}
                                     placeholder={"What product you want to produce? Eg. PET Bottle"}
                                     type={"text"}
                                     showDropDown={true}
                                 />
-                                <SelectText value={""} />
-                                <SelectComponent type={"one"} />
+                                <SelectText
+                                    value={valueSuppliers}
+                                    placeholderSelect={"Select Unit"}
+                                    onSelected={handleGetSelectedTextSuppliers}
+                                    onChange={handleGetValueSelectedSuppliers}
+                                />
+                                <SelectComponent
+                                    type={"one"}
+                                    items={DROPDOWN}
+                                    placeholder={"Regional Channel"}
+                                    onSelect={handleGetSelectedSuppliers}
+                                />
                                 <Button title="SEARCH" />
                             </div>
                         </>
