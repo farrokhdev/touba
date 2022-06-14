@@ -39,7 +39,7 @@ export function ButtonDropdown({ title, links }: Props): ReactElement {
                 aria-labelledby="dropdownMenuButton1"
             >
                 {links.map((link, index) => (
-                    <li>
+                    <li key={index}>
                         <Link
                             className="dropdown-item"
                             to={link.location}
