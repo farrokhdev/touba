@@ -2,135 +2,66 @@
     width: 100%;
     min-height: 74px;
     height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: $sorme;
-    padding: 0 10px;
-    position: relative;
+    @include Display(flex, center, center);
 
-    @media (max-width: 1035px) {
+    @media (max-width: 1000px) {
         display: none;
     }
 
-    @media (min-width: 1036px) {
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
-    }
+    &-items {
+        width: 85%;
+        max-width: 1920px;
+        @include Display(flex, space-between, center);
+        padding: 0 10px;
+        position: relative;
 
-    @media (min-width: 1265px) {
-        flex-wrap: nowrap;
-        flex-direction: row;
-    }
-
-    &-search {
-        width: 20%;
-
-        @media (max-width: 1265px) {
-            width: 100%;
-        }
-    }
-
-    .bottom-nav-links {
-        @media (max-width: 1265px) {
-            width: 100%;
+        @media (max-width: 1000px) {
+            display: none;
         }
 
-        width: 80%;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-
-        .button-component {
-            background-color: transparent;
-
-            .button-component-text {
-                @include FontStyle(14px, 600, $white);
-                margin: 0;
-            }
+        @media (min-width: 1001px) {
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
         }
-    }
 
-    &-dropdown {
-        width: 95%;
-        position: absolute;
+        @media (min-width: 1395px) {
+            flex-wrap: nowrap;
+            flex-direction: row;
+        }
 
-        .section-rectangle {
-            width: 100%;
-            height: 610px;
-            background-color: $white;
-            z-index: 2;
-            position: absolute;
-            top: 52px;
-            right: 6px;
-            border: 1px solid $darkWhite;
-            box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.25);
-            border-radius: 8px;
+        &-search {
+            width: 20%;
 
-            .section-triggle {
-                width: 23.5px;
-                height: 23.5px;
-                background-color: $white;
-                transform: rotate(45deg);
-                position: absolute;
-                top: -10px;
-                left: 27px;
-            }
-
-            .content {
-                z-index: 2;
+            @media (max-width: 1395px) {
                 width: 100%;
-                height: 100%;
-                display: flex;
+            }
+        }
 
-                &-items {
-                    width: 25%;
-                    z-index: 2;
-                }
+        &-links {
+            @media (max-width: 1395px) {
+                width: 100%;
+            }
 
-                &-divider {
-                    width: 1px;
-                    height: 100%;
-                    background-color: $gray;
-                }
+            width: 78%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
 
-                &-submenus {
-                    width: 75%;
-                    display: flex;
+            .button-component {
+                background-color: transparent;
+                width: 120px;
 
-                    &-section {
-                        width: 30%;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        margin: 15px;
+                .button-component-text {
+                    @include FontStyle(14px, 600, $white);
+                    margin: 0;
 
-                        &-header {
-                            width: 100%;
-                            height: 72px;
-                            background-color: #F3F4F6;
-                            display: flex;
-                            justify-content: start;
-                            align-items: center;
-                            border-radius: 8px;
+                    @media (max-width: 1500px) {
+                        white-space: wrap;
+                    }
 
-                            &-text {
-                                @include FontStyle(22px, 800, $sorme);
-                                margin: 0 30px;
-                            }
-                        }
-
-                        &-body {
-                            width: 100%;
-
-                            .text-icon-horizontal-title {
-                                margin: 0px;
-
-                                &-icon {
-                                    margin: 0 34px;
-                                }
-                            }
-                        }
+                    @media (min-width: 1501px) {
+                        white-space: nowrap;
                     }
                 }
             }
@@ -139,13 +70,16 @@
 }
 
 .bottom-nav-minimal {
-    @media (max-width: 1035px) {
+    @media (max-width: 1000px) {
         display: block;
     }
+
     display: none;
+
     .offcanvas-body {
         display: flex;
         flex-direction: column;
+
         >a {
             @include FontStyle(14px, 600, $sorme);
             margin: 12px 17px;

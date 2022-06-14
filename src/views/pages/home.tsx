@@ -42,7 +42,12 @@ class Home extends HomeController {
                         </div>
                     </div>
                     <div className="home-header-inputs">
-                        <CardSearchProduct />
+                        <CardSearchProduct
+                            onSelectText={this.handleGetSelectText}
+                            onSelect={this.handleGetSelect}
+                            onValueText={this.handleGetValueText}
+                            onSearch={this.handleGetResultSearch}
+                        />
                     </div>
                 </div>
                 <div className="home-section-earn">
@@ -323,6 +328,7 @@ class Home extends HomeController {
                 <div className="home-section-newest-product">
                     <h4 className="home-section-newest-product-title">New Product</h4>
                     <div className="home-section-newest-product-content">
+                        <CardNewProduct image={ImageControll} title={"Product Name"} />
                         <CardNewProduct image={ImageControll} title={"Product Name"} />
                         <CardNewProduct image={ImageControll} title={"Product Name"} />
                         <CardNewProduct image={ImageControll} title={"Product Name"} />

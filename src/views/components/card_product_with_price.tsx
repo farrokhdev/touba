@@ -1,4 +1,5 @@
 import { memo, ReactElement } from "react";
+import { IconSharpSign } from "../../assets";
 
 interface Props {
     image: any;
@@ -26,8 +27,8 @@ export function CardProductWithPrice({ image, title, fromPrice, toPrice }: Props
                         src={''}
                         className="card-product-with-price-content-to-price-icon"
                     />
-                    <h6 className="card-product-with-price-content-to-price-text">
-                        Min Order: {toPrice}
+                    <h6 className="card-product-with-price-content-to-price-text m-0">
+                        <span className="m-0"><img src={IconSharpSign}/></span> Min Order: {toPrice}
                     </h6>
                 </div>
 

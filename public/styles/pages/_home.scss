@@ -6,13 +6,16 @@
         padding: 0 100px;
         margin-bottom: 100px;
 
-        @media (max-width: 1000px) {
-            padding: 0;
-            min-height: 643px;
+        @media (max-width: 1220px) {
+            padding: 0 20px;
+            min-height: 500px;
             height: auto;
         }
 
         &-description {
+            max-width: 1920px;
+            margin: 0 auto;
+
             @media (max-width: 1000px) {
                 @include Display(flex, center, center, column);
             }
@@ -29,29 +32,42 @@
                 margin-top: 40px;
 
                 &-title {
-                    @media (max-width: 1440px) {
-                        @include FontStyle(40px, 800, $white);
+                    @media (max-width: 1220px) {
+                        @include FontStyle(30px, 800, $white);
                     }
-
-                    @include FontStyle(54px, 800, $white);
+                    @media (min-width: 1221px) {
+                        @include FontStyle(41px, 800, $white);
+                    }
+                    @media (min-width: 1550px) {
+                        @include FontStyle(54px, 800, $white);
+                    }
                 }
 
                 &-text1 {
-                    @media (max-width: 1440px) {
-                        @include FontStyle(17px, 800, $white);
+                    @media (max-width: 1220px) {
+                        @include FontStyle(12px, 800, $white);
                     }
-
-                    @include FontStyle(22px, 800, $white);
+                    @media (min-width: 1221px) {
+                        @include FontStyle(19px, 800, $white);
+                    }
+                    @media (min-width: 1550px) {
+                        @include FontStyle(22px, 800, $white);
+                    }
                     text-align: justify;
                     text-justify: inter-word;
+                    margin: 20px 0;
                 }
 
                 &-text2 {
-                    @media (max-width: 1440px) {
-                        @include FontStyle(14px, 800, $white);
+                    @media (max-width: 1220px) {
+                        @include FontStyle(9px, 800, $white);
                     }
-
-                    @include FontStyle(16px, 400, $white);
+                    @media (min-width: 1221px) {
+                        @include FontStyle(14px, 400, $white);
+                    }
+                    @media (min-width: 1550px) {
+                        @include FontStyle(16px, 400, $white);
+                    }
                     margin-bottom: 80px;
                     text-align: justify;
                     text-justify: inter-word;
@@ -59,25 +75,40 @@
             }
 
             &-image {
-                @media (max-width: 1000px) {
+                @media (max-width: 375px) {
                     width: 100%;
                     margin: 50px 0 0 0px;
                 }
 
-                margin: 140px 0 0 50px;
-                width: 50%;
+                @media (min-width: 1000px) {
+                    margin: 89px 0px 0 50px;
+                    width: 50%;
+                }
+
+                @media (min-width: 1441px) {
+                    margin: 80px 0px 0 50px;
+                    width: 50%;
+                }
+
+                @media (min-width: 1788px) {
+                    margin: 60px 170px 0 50px;
+                    width: 50%;
+                }
+
 
                 >img {
                     @media (max-width: 1440px) {
                         width: 100%;
                     }
 
-                    width: 50%;
+                    width: 100%;
                 }
             }
         }
 
-        &-inputs {}
+        &-inputs {
+            margin: 0 auto;
+        }
     }
 
     &-section-earn {
@@ -172,8 +203,10 @@
     }
 
     &-section-special {
+        width: 100%;
         @include Display();
-        padding: 100px;
+        margin: 0 auto;
+        padding: 99px;
 
         @media (max-width: 1250px) {
             @include Display(flex, start, center, column);
@@ -184,31 +217,37 @@
                 margin: 20px 0;
             }
 
-            margin: 0 20px;
+            margin: 0 12px;
         }
     }
 
     &-section-special-two {
+        width: 100%;
+        margin: 0 auto;
         @include Display();
         padding: 0 100px;
     }
 
     &-section-best-seller {
-        padding: 32px 100px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 32px 108px;
     }
 
     &-section-new {
         @media (max-width: 600px) {
             width: 100%;
         }
-        width: 85%;
-        min-height: 611px;
+
+        width: 89%;
+        min-height: 540px;
         height: auto;
         background-color: $white;
         box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
         border-radius: 16px;
         margin: 0 auto;
-        @include Display(flex, center, center, column);
+        @include Display(flex, start, center, column);
+
         &-header {
             width: 90%;
             height: 115px;
@@ -225,11 +264,13 @@
         }
 
         &-content {
-            width: 95%;
-            margin: 30px 46px 30px 0;
-            @include Display(flex, space-between, center, row, wrap);
+            width: 100%;
+            margin: 30px auto;
+            height: 100%;
+            @include Display(flex, space-evenly, center, row, wrap);
 
             .card-new-excess {
+                padding: 0 auto;
                 width: 349px;
             }
         }
@@ -241,7 +282,7 @@
         }
 
         width: 100%;
-        padding: 50px 100px;
+        padding: 50px 96px;
         @include Display(flex, space-between);
 
         >div {
@@ -254,11 +295,11 @@
     }
 
     &-section-newest-product {
+        width: 95%;
         background-color: transparent;
-        max-width: 84%;
-        width: auto;
         margin: 0 auto;
         @include Display(flex, start, center, column);
+
         &-title {
             @include FontStyle(34px, 700, $sorme);
             margin: 30px 0;
@@ -267,6 +308,10 @@
         &-content {
             @include Display(flex, center, center, row, wrap);
             border-radius: 16px;
+            .card-new-product {
+                width: 285px;
+                height: 285px;
+            }
         }
     }
 
@@ -280,19 +325,23 @@
             padding: 40px 0;
         }
     }
+
     &-section-description {
         margin: 50px 0;
         width: 100%;
         padding: 0 100px;
         position: relative;
+
         &-title {
             @include FontStyle(24px, 700, $sorme);
             margin-bottom: 25px;
         }
+
         &-text {
             @include FontStyle(16px, 400, $black);
             text-align: justify;
         }
+
         &-button {
             width: 100%;
             position: relative;
@@ -301,25 +350,31 @@
             border: none;
             cursor: pointer;
             z-index: 2;
+
             &-text {
                 @include FontStyle(18, 600, $green);
             }
         }
+
         .blur {
             opacity: 0.3;
+
             &-text {
                 @include FontStyle(16px, 400, $black);
                 text-align: justify;
             }
+
             &-title {
                 @include FontStyle(24px, 700, $sorme);
             }
         }
+
         .onblur {
             &-text {
                 @include FontStyle(16px, 400, $black);
                 text-align: justify;
             }
+
             &-title {
                 @include FontStyle(24px, 700, $sorme);
                 margin-bottom: 25px;
