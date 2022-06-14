@@ -244,7 +244,7 @@ a {
   border-radius: 50%;
   background: #f3f4f6;
   padding: 2%;
-  margin: 3%;
+  margin: 2%;
 }
 
 .boldText {
@@ -272,7 +272,7 @@ a {
 .bold-text {
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 20px;
   line-height: 30px;
   /* identical to box height, or 150% */
@@ -2935,14 +2935,21 @@ a {
   border-radius: 12px;
   padding: 1%;
 }
+.supplier-box .circle-image {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #f3f4f6;
+}
 
 .logo-box {
   background: #fc4a56;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: auto;
-  min-height: 15vh;
+  height: 20vh;
 }
 
 .supplier-content {

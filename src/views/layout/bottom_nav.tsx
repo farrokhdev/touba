@@ -23,7 +23,7 @@ import {
 } from "../components/components";
 
 const TEST = [
-  { nameLink: "link1", location: "/" },
+  { nameLink: "link1", location: "/supplier" },
   { nameLink: "link2", location: "/" },
   { nameLink: "link3", location: "/" },
   { nameLink: "link4", location: "/" },
