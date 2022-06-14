@@ -6,7 +6,7 @@ const Packaging = () => {
     <div>
       <div className="p-4">
         <div className=" row">
-          <div className="specifications-tabActive col-4 text-center">
+          <div className="specifications-tabActive col-4 ">
             <p>Packaging & Shipping</p>
           </div>
         </div>

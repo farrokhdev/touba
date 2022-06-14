@@ -244,15 +244,15 @@ a {
   border-radius: 50%;
   background: #f3f4f6;
   padding: 2%;
-  margin: 2%;
+  margin: 3%;
 }
 
 .boldText {
   /* Body/subtitle */
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: 700;
+  font-size: 16px;
   line-height: 22px;
   /* identical to box height, or 157% */
   letter-spacing: 0.1px;
@@ -372,14 +372,12 @@ a {
 
 .card-specifications {
   background: rgba(243, 244, 246, 0.5);
-  padding: 2%;
   display: flex;
   align-items: center;
 }
 
 .card-specifications-white {
   background: rgba(255, 255, 255, 0.5);
-  padding: 2%;
   display: flex;
   align-items: center;
 }
@@ -393,8 +391,7 @@ a {
   height: 54px;
   border-radius: 50%;
   /* Sorme2 */
-  background: #6B798C;
-  opacity: 0.2;
+  background: rgba(107, 121, 140, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -406,7 +403,7 @@ a {
 
 .opacity-comments {
   width: 100%;
-  height: 5vh;
+  height: 8vh;
   background: rgb(243, 244, 246);
   opacity: 0.7;
 }
@@ -703,8 +700,8 @@ a {
 }
 
 .arrowCircle {
-  width: 42px;
-  height: 42px;
+  width: 2.5em;
+  height: 2.5em;
   border-radius: 50%;
   border: 1.5px solid #6b798c;
   display: flex;
@@ -722,8 +719,7 @@ a {
 }
 
 .arrowLeft {
-  height: 20px;
-  width: 20px;
+  cursor: pointer;
 }
 
 .specifications-tabActive {
@@ -2707,7 +2703,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3%;
+  padding: 2%;
   border: 1px solid #f3f4f6;
   border-radius: 12px;
 }
@@ -2783,7 +2779,7 @@ a {
   font-weight: 700;
   font-size: 16px;
   color: #3c557a !important;
-  margin-left: 2%;
+  margin-left: 5%;
 }
 .product-side-card .image-shose-box {
   background-color: #d6d6d6;

@@ -27,20 +27,20 @@ const ContentProduct = ({ show }: Props) => {
       </div>
       <div>
         <div className={`rowRation row mt-3 p-2 `}>
-          <div className="col-3">
+          <div className="col-2 d-flex align-itesm-center ">
             <img src={orangStar} />
             <img src={orangStar} />
             <img src={orangStar} />
             <img src={orangStar} />
             <img src={star} />
           </div>
-          <div className=" col-3 border-right  ">
+          <div className=" col-4 border-right text-center  ">
             <div className="textContent">(4.2 | 12,514 Ratings)</div>
           </div>
           <div className={`textContent text-center col-4 border-right`}>
             <div>988 Customer Reviews</div>
           </div>
-          <div className={`col-2 justify-content-between d-flex px-2`}>
+          <div className={`col-2 justify-content-between d-flex px-3`}>
             <div>
               <img src={iconShare} />
             </div>
@@ -93,30 +93,38 @@ const ContentProduct = ({ show }: Props) => {
         <div className="row mt-2">
           <PriceCart />
         </div>
-        <div className="row mt-2 d-flex align-items-center">
-          <div className="col-2">
-            <div className="smalText">Shipping:</div>
+        {show && (
+          <div className="row mt-2 d-flex align-items-center">
+            <div className="col-2">
+              <div className="smalText">Shipping:</div>
+            </div>
+            <div className="col-1 w-60">
+              <img src={plain} />
+            </div>
+            <div className="col-3">
+              <div className="smalText">Support Express</div>
+            </div>
+            <div className="col-1">
+              <img src={ship} />
+            </div>
+            <div className="col-3">
+              <div className="smalText">Sea freight</div>
+            </div>
           </div>
-          <div className="col-1 w-60">
-            <img src={plain} />
+        )}
+
+        {show && (
+          <div className="row mt-3">
+            <div className="smalText d-flex align-items-center">
+              Protection & Insurance:
+              <span style={{ color: " #21C085", marginLeft: "5px" }}>
+                {" "}
+                Touba
+              </span>
+              <img style={{ marginLeft: "5px" }} src={fill4} />
+            </div>
           </div>
-          <div className="col-3">
-            <div className="smalText">Support Express</div>
-          </div>
-          <div className="col-1">
-            <img src={ship} />
-          </div>
-          <div className="col-3">
-            <div className="smalText">Sea freight</div>
-          </div>
-        </div>
-        <div className="row mt-3">
-          <div className="smalText d-flex align-items-center">
-            Protection & Insurance:
-            <span style={{ color: " #21C085", marginLeft: "5px" }}> Touba</span>
-            <img style={{ marginLeft: "5px" }} src={fill4} />
-          </div>
-        </div>
+        )}
         <div className="row mt-3">
           <Certificates />
         </div>

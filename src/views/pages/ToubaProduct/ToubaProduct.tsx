@@ -21,6 +21,7 @@ interface IState {
 }
 
 export class ToubaProduct extends BaseComponent<IProps, IState> {
+  test = "You are here: Touba >> Products";
   TEST = [
     { name: "JAN", size: 20 },
     { name: "FEB", size: 30 },
@@ -39,6 +40,8 @@ export class ToubaProduct extends BaseComponent<IProps, IState> {
     return (
       <div>
         <div className=" px-5">
+          <div className="smalText p-4 px-5">{this.test}</div>
+
           <div className="row p-3      ">
             <div className="col-3">
               <ComponentFilterSidebar showButton={true} />
