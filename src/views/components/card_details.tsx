@@ -28,7 +28,7 @@ const CardDetails = () => {
             <p>Customers Review</p>
           </div>
           <div className={` col-1  text-center bold-text`}>
-            <p>Faq</p>
+            <p>FAQ</p>
           </div>
         </div>
         <div className="p-3">
