@@ -203,8 +203,10 @@
     }
 
     &-section-special {
+        width: 100%;
         @include Display();
-        padding: 100px;
+        margin: 0 auto;
+        padding: 99px;
 
         @media (max-width: 1250px) {
             @include Display(flex, start, center, column);
@@ -215,17 +217,21 @@
                 margin: 20px 0;
             }
 
-            margin: 0 20px;
+            margin: 0 12px;
         }
     }
 
     &-section-special-two {
+        width: 100%;
+        margin: 0 auto;
         @include Display();
         padding: 0 100px;
     }
 
     &-section-best-seller {
-        padding: 32px 100px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 32px 108px;
     }
 
     &-section-new {
@@ -233,14 +239,14 @@
             width: 100%;
         }
 
-        width: 85%;
-        min-height: 611px;
+        width: 89%;
+        min-height: 540px;
         height: auto;
         background-color: $white;
         box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
         border-radius: 16px;
         margin: 0 auto;
-        @include Display(flex, center, center, column);
+        @include Display(flex, start, center, column);
 
         &-header {
             width: 90%;
@@ -258,11 +264,13 @@
         }
 
         &-content {
-            width: 95%;
-            margin: 30px 46px 30px 0;
-            @include Display(flex, space-between, center, row, wrap);
+            width: 100%;
+            margin: 30px auto;
+            height: 100%;
+            @include Display(flex, space-evenly, center, row, wrap);
 
             .card-new-excess {
+                padding: 0 auto;
                 width: 349px;
             }
         }
@@ -274,7 +282,7 @@
         }
 
         width: 100%;
-        padding: 50px 100px;
+        padding: 50px 96px;
         @include Display(flex, space-between);
 
         >div {
@@ -287,9 +295,8 @@
     }
 
     &-section-newest-product {
+        width: 95%;
         background-color: transparent;
-        max-width: 84%;
-        width: auto;
         margin: 0 auto;
         @include Display(flex, start, center, column);
 
@@ -301,6 +308,10 @@
         &-content {
             @include Display(flex, center, center, row, wrap);
             border-radius: 16px;
+            .card-new-product {
+                width: 285px;
+                height: 285px;
+            }
         }
     }
 

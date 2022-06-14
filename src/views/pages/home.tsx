@@ -339,6 +339,7 @@ class Home extends HomeController {
                         <CardNewProduct image={ImageControll} title={"Product Name"} />
                         <CardNewProduct image={ImageControll} title={"Product Name"} />
                         <CardNewProduct image={ImageControll} title={"Product Name"} />
+                        <CardNewProduct image={ImageControll} title={"Product Name"} />
                     </div>
                 </div>
                 <div className="home-section-best-brand">
