@@ -17,9 +17,10 @@ interface Props {
     type: "one" | "two";
     placeholder?: string;
     items?: Items[];
+    onSelect(name: string): void;
 }
 
-function SelectComponent({ type, placeholder, items }: Props): ReactElement {
+function SelectComponent({ type, placeholder, items, onSelect }: Props): ReactElement {
 
     const [dropdown, setDropdown] = useState(false);
     const [selectItem, setSelectItem] = useState({ name: "", id: 0 });
@@ -32,9 +33,10 @@ function SelectComponent({ type, placeholder, items }: Props): ReactElement {
         setDropdown(false);
     };
 
-    const handleSelectItem = (id: number, name: string) => {
+    const handleSelectItem = useCallback((id: number, name: string) => {
         setSelectItem({ name, id });
-    };
+        onSelect(name)
+    }, [onSelect]);
 
     return (
         <div className="select-component w-100 "
@@ -66,11 +68,12 @@ function SelectComponent({ type, placeholder, items }: Props): ReactElement {
                     onMouseLeave={handleCloseDropDown}
                 >
                     {items?.map((link) => (
-                        <div className="select-component-dropdown-links">
+                        <div
+                            className="select-component-dropdown-links"
+                            onClick={() => handleSelectItem(link.id, link.name)}>
                             <span
                                 key={link.id}
                                 className="select-component-dropdown-links-link"
-                                onClick={() => handleSelectItem(link.id, link.name)}
                             >
                                 {link.name}
                             </span>
