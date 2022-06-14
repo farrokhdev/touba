@@ -5,6 +5,18 @@ const BUTTON = [
     { name: "EXCESS CAPACITY", id: 1 },
     { name: "PRODUCT", id: 2 },
     { name: "SUPPLIERS", id: 3 },
+];
+
+const DROPDOWN = [
+    { name: "link1", id: 1 },
+    { name: "link2", id: 2 },
+    { name: "link3", id: 3 },
+    { name: "link4", id: 4 },
+    { name: "link5", id: 5 },
+    { name: "link6", id: 6 },
+    { name: "link7", id: 7 },
+    { name: "link8", id: 8 },
+    { name: "link9", id: 9 },
 ]
 
 interface Props {
@@ -62,8 +74,15 @@ export function CardSearchProduct({ }: Props): ReactElement {
                                 type={"text"}
                                 showDropDown={true}
                             />
-                            <SelectText value={""} />
-                            <SelectComponent type={"one"} />
+                            <SelectText
+                                value={""}
+                                placeholderSelect={"Select Unit"}
+                            />
+                            <SelectComponent
+                                type={"one"}
+                                items={DROPDOWN}
+                                placeholder={"Regional Channel"}
+                            />
                             <Button title="SEARCH" />
                         </div>
                     </>

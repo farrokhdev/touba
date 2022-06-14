@@ -3,9 +3,10 @@ import { SelectComponent } from "./components";
 
 interface Props extends InputHTMLAttributes<HTMLInputElement> {
     value: string;
+    placeholderSelect?: string;
 }
 
-function SelectText({ value, onChange }: Props): ReactElement {
+function SelectText({ value, onChange, placeholderSelect }: Props): ReactElement {
 
     const handleOnChange = useCallback((event: ChangeEvent<HTMLInputElement>) => {
         onChange?.(event)
@@ -22,7 +23,7 @@ function SelectText({ value, onChange }: Props): ReactElement {
             />
             <div className="select-text-divider">
             </div>
-            <SelectComponent type={"two"} />
+            <SelectComponent type={"two"} placeholder={placeholderSelect}/>
         </div>
     )
 }

@@ -23,4 +23,25 @@
             cursor: pointer;
         }
     }
+    &-dropdown {
+        width: 100%;
+        height: auto;
+        background-color: $white;
+        border-radius: 8px;
+        @include Display(flex, start, flex-start, column);
+        &-links {
+            width: 95%;
+            height: 35px;
+            margin: 0px auto;
+            @include Display(flex, start, center);
+            &:hover {
+                background-color: $gray;     
+                border-radius: 8px;
+            }
+            &-link {
+                @include FontStyle(16px, 400, $sorme);
+                margin: 0 8px;
+            }
+        }
+    }
 }
