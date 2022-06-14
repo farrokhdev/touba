@@ -10,10 +10,14 @@ const ComponentSearchBar = () => {
         <InputTextLabel value={""} title={"Product or Service"} placeholder={""} type={""} showDropDown={false} />
       </div>
       <div className="col-xl-3 col-sm-12 p-2">
-        <SelectText value={""} />
+        <SelectText value={""} onSelected={function (name: string): void {
+          throw new Error("Function not implemented.");
+        } } />
       </div>
       <div className="col-xl-3 col-sm-12 p-2 justify-content-center">
-        <SelectComponent type='one'  />
+        <SelectComponent type='one' onSelect={function (name: string): void {
+          throw new Error("Function not implemented.");
+        } }  />
       </div>
       <div className="col-xl-3 col-sm-12 p-2">
         <ButtonComponent title="search"  />

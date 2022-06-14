@@ -50,7 +50,9 @@ export class ToubaProduct extends BaseComponent<IProps, IState> {
               <div className="p-2 d-flex align-items-center justify-content-between">
                 <div className="bigText">221 Products</div>
                 <div>
-                  <SelectComponent type="one" />
+                  <SelectComponent type="one" onSelect={function (name: string): void {
+                    throw new Error("Function not implemented.");
+                  } } />
                 </div>
               </div>
               <div className="p-2 d-flex align-items-center mt-3">
