@@ -1,6 +1,8 @@
 import React, { memo } from "react";
 import user from "../../assets/images/user.png";
 import orangeStar from "../../assets/images/orangeStar.png";
+import iconChin from "../../assets/icons/icon-chin.svg";
+
 
 const CommentCard = () => {
   return (
@@ -21,7 +23,7 @@ const CommentCard = () => {
             </div>
           </div>
           <div className="col-3 ">
-            <div className="row">
+            <div className="row d-flex align-items-center">
               <div className="col-6 border-right">
                 <img src={orangeStar} />
                 <img src={orangeStar} />
@@ -29,6 +31,9 @@ const CommentCard = () => {
                 <img src={orangeStar} />
 
                 <img src={orangeStar} />
+              </div>
+              <div className="col-6 px-4">
+                <img src={iconChin}/>
               </div>
             </div>
           </div>

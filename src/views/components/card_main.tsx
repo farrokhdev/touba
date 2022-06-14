@@ -15,7 +15,7 @@ const CardMain = ({show,image,tabItemOne,tabItemTwo}:Props) => {
   return (
     <div>
       <div className="card-main">
-        <div className="product-tabs row px-4">
+        <div className="product-tabs row px-5">
           <div onClick={()=>setTab(true)} className={`${tab ? 'tabActive ' :''} col-2   text-center cursor-pointer`}>
             <p>{tabItemOne}</p>
           </div>

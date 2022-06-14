@@ -2,14 +2,22 @@
     background: #ffffff;
     border-radius: 12px;
     padding: 1%;
+    .circle-image {
+      display: flex;
+      justify-content: center;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      background: #f3f4f6;
+  
+    }
   }
   .logo-box {
     background: #fc4a56;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: auto;
-    min-height: 15vh;
+    height: 20vh;
   }
   .supplier-content {
     margin-left: 2%;

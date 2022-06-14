@@ -3,8 +3,8 @@ import star from "../../assets/images/Star.png";
 import orangestar from "../../assets/images/orangeStar.png";
 
 import QualityStar from "./quality_star";
-import mail from "../../assets/images/mail.png";
-import clock from "../../assets/images/clock.png";
+import mail from "../../assets/icons/icon-mail.svg";
+import clock from "../../assets/icons/icon-clock.svg";
 
 const CardQuality = () => {
   return (
@@ -35,12 +35,12 @@ const CardQuality = () => {
             <div className="col-6 text-center">
               <img src={mail} />
               <div className="smalText">Response Time</div>
-              <div className="bigText">≤15h</div>
+              <div className="boldText">≤15h</div>
             </div>
             <div className="col-6 text-center">
               <img src={clock} />
               <div className="smalText">On-time delivery</div>
-              <div className="bigText">98.6%</div>
+              <div className="boldText">98.6%</div>
             </div>
           </div>
         </div>
