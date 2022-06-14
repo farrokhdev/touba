@@ -17,7 +17,7 @@ import { ButtonSelect } from "../../components/button_select";
 import ToubaSpecialOferControllers from "../../controllers/touba_special_offers";
 
 export class ToubaSpecialOffers extends ToubaSpecialOferControllers {
-  text = "You are here: Touba >> Products";
+  text = "You are here: Touba >> Specaial";
 
   TEST = [
     { name: "JAN", size: 20 },
