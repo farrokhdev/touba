@@ -6,10 +6,13 @@
     "@types/jest": "^27.5.1",
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.5",
+    "@types/react-slick": "^0.23.8",
     "rc-slider": "^10.0.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-router-dom": "^6.3.0",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
     "swiper": "^8.2.4",
     "utilities_js": "git://github.com/SinaMN75/Utilities_js.git"
   },

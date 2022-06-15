@@ -5,6 +5,7 @@ import { CHART } from "../components/chart";
 import { Button, CardSearchProduct, CardProduct, CardCategory, CardImage, CardCollectionProduct, CardProductWithPrice, CardBestSeller, CardCollectionBest, Divider, CardNewExcess, CardBestBrand, CardNewProduct, CardCalculate } from "../components/components";
 import HomeController from "../controllers/home_controller";
 
+
 const TEST: CHART[] = [
     { name: "JAN", size: 20 },
     { name: "FEB", size: 30 },
@@ -23,14 +24,11 @@ const TEST: CHART[] = [
 class Home extends HomeController {
     render() {
         const settings = {
-            className: "center",
-            centerMode: true,
+            dots: true,
             infinite: true,
-            centerPadding: "60px",
-            slidesToShow: 3,
             speed: 500,
-            rows: 2,
-            slidesPerRow: 2
+            slidesToShow: 1,
+            slidesToScroll: 1
         };
         return (
             <div className="home">
@@ -95,6 +93,29 @@ class Home extends HomeController {
                         Latest Excess Capacites
                     </h4>
                     <div className="home-section-latest-group-cards">
+                        <div>
+                            <h2> Single Item</h2>
+                            <Slider {...settings}>
+                                <div>
+                                    <h3>1</h3>
+                                </div>
+                                <div>
+                                    <h3>2</h3>
+                                </div>
+                                <div>
+                                    <h3>3</h3>
+                                </div>
+                                <div>
+                                    <h3>4</h3>
+                                </div>
+                                <div>
+                                    <h3>5</h3>
+                                </div>
+                                <div>
+                                    <h3>6</h3>
+                                </div>
+                            </Slider>
+                        </div>
                         <CardProduct
                             image={ImageTest}
                             status={"Finish Product"}

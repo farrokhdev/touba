@@ -4599,7 +4599,7 @@ a {
 }
 
 .top-nav-home-items {
-  width: 85%;
+  width: 100%;
   max-width: 1920px;
   display: -webkit-box;
   display: -ms-flexbox;
