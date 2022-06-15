@@ -17,7 +17,7 @@ import { ButtonSelect } from "../../components/button_select";
 import ToubaSpecialOferControllers from "../../controllers/touba_special_offers";
 
 export class ToubaSpecialOffers extends ToubaSpecialOferControllers {
-  text = "You are here: Touba >> Products";
+  text = "You are here: Touba >> Specaial";
 
   TEST = [
     { name: "JAN", size: 20 },
@@ -50,11 +50,11 @@ export class ToubaSpecialOffers extends ToubaSpecialOferControllers {
             />
           </div>
           <div className="row p-3     ">
-            <div className="col-2">
+            <div className="col-3">
               <ComponentFilterSidebar showButton={true} />
             </div>
             {!this.state.showContent && (
-              <div className="col-10">
+              <div className="col-9">
                 <div className="p-2">
                   <CardOfferHorizontal
                     image={image_test}
@@ -114,41 +114,41 @@ export class ToubaSpecialOffers extends ToubaSpecialOferControllers {
               </div>
             )}
             {this.state.showContent && (
-              <div className="col-10">
+              <div className="col-9">
                 <div className="row">
                   <div className="col-4 p-2">
-                    <CardLike />
+                    <CardLike discount={true} percent={'30'} />
                   </div>
                   <div className="col-4 p-2">
-                    <CardLike />
+                  <CardLike discount={true} percent={'30'} />
                   </div>
 
                   <div className="col-4 p-2">
-                    <CardLike />
+                  <CardLike discount={true} percent={'30'} />
                   </div>
                 </div>
                 <div className="row">
                   <div className="col-4 p-2">
-                    <CardLike />
+                  <CardLike discount={true} percent={'30'} />
                   </div>
                   <div className="col-4 p-2">
-                    <CardLike />
+                  <CardLike discount={true} percent={'30'} />
                   </div>
 
                   <div className="col-4 p-2">
-                    <CardLike />
+                  <CardLike discount={true} percent={'30'} />
                   </div>
                 </div>
                 <div className="row">
                   <div className="col-4 p-2">
-                    <CardLike />
+                    <CardLike discount={true} percent={'30'} />
                   </div>
                   <div className="col-4 p-2">
-                    <CardLike />
+                    <CardLike discount={true} percent={'30'} />
                   </div>
 
                   <div className="col-4 p-2">
-                    <CardLike />
+                    <CardLike discount={true} percent={'30'} />
                   </div>
                 </div>
               </div>

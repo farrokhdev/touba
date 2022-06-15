@@ -3,7 +3,8 @@ import { ComponentRadioSquare, ComponentSearch } from "./components";
 import iconSearch from "../../assets/icons/icon-search.svg";
 import { ButtonComponent } from "./button";
 import location from "../../assets/icons/icon-location-button.svg";
-import { arrowDown, ArrowUp } from "../../assets";
+import { arrowDown } from "../../assets";
+import ArrowUp from '../../assets/icons/icon-arrow-up.svg'
 
 interface Props {
   showButton: boolean;
@@ -17,8 +18,9 @@ const ComponentFilterSidebar = ({ showButton }: Props) => {
             <button className="button-component w-100 d-flex align-items-center">
               <h3 className="button-component-text">
                 See Excess Capacity map
-                <img src={location} />
+              
               </h3>
+              <img style={{marginLeft:"4%"}} src={location} />
             </button>
           </div>
         </div>

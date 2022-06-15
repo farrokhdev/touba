@@ -2,6 +2,8 @@ import React, { memo } from "react";
 import shoes from "../../assets/images/Rectangle1417.png";
 import arrowLeft from "../../assets/icons/icon-arrrow-left-circle.svg";
 import arrowRight from "../../assets/icons/icon-arrow-right-circle.svg";
+import iconCircleRight from '../../assets/icons/icon-circle-slider-right.svg'
+import iconCircleLeft from '../../assets/icons/icon-circle-slider-left.svg'
 
 import bag from '../../assets/icons/icon-bag.svg'
 
@@ -16,8 +18,8 @@ const Slider = ({image}:Props) => {
         <img src={image} className="image" />
       </div>
       <div className="row mt-3  d-flex align-items-center ">
-        <div className="arrowCircle col-1">
-          <img className="arrowLeft" src={arrowLeft} />
+        <div className=" col-1 text-center">
+          <img className="arrowLeft" src={iconCircleLeft} />
         </div>
         <div className="col-9 p-2">
           <div className="row">
@@ -43,8 +45,8 @@ const Slider = ({image}:Props) => {
             </div>
           </div>
         </div>
-        <div className="arrowCircle col-1">
-          <img className="arrowLeft" src={arrowRight} />
+        <div className=" col-1 text-center 	">
+          <img className="arrowLeft" src={iconCircleRight} />
         </div>
       </div>
     </div>

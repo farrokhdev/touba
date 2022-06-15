@@ -3,6 +3,7 @@ import { IconTickSquare } from "../../assets";
 
 export type IProps = {
   list: any;
+  
 };
 
 const PlanDetail: React.FC<IProps> = ({ list }) => {
@@ -24,7 +25,7 @@ const PlanDetail: React.FC<IProps> = ({ list }) => {
               {list.price}
             </span>
           </div>
-          <span className="plan-Time">Annually</span>
+          <span className="plan-Time text-white text-center">Annually</span>
         </div>
         <div className="buy-Pakage d-flex flex-column align-items-center">
           <span>{list.plan}</span>

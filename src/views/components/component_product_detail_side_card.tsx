@@ -1,10 +1,15 @@
 import React, { memo } from "react";
 import logo from "../../assets/icons/icon-logo-single1.svg";
+
+import smalllogo from "../../assets/icons/icon-small-logo.svg";
+
+
 import orangeStar from "../../assets/images/orangeStar.png";
 import { IconGem } from "../../assets";
 import iconChin from "../../assets/icons/icon-chin.svg";
-import mail from "../../assets/images/mail.png";
-import clock from "../../assets/images/clock.png";
+import mail from "../../assets/icons/icon-mail.svg";
+import clock from "../../assets/icons/icon-clock.svg";
+
 import iconMessage from "../../assets/icons/icon-message.svg";
 import iconCard from "../../assets/icons/icon-card.svg";
 import shose from "../../assets/icons/icon-shose-card.svg";
@@ -29,11 +34,11 @@ const ComponentDetailPRoductSideCard = () => {
       </div>
       <div className="unit-box mt-3">
         <div className="row mt-2 p-4 border-bottom">
-          <div className={`col-6 d-flex lign-items-center  `}>
+          <div className={`col-6 d-flex align-items-center  `}>
             <div className="px-2">
               <img src={icon_unit} />
             </div>
-            <div>
+            <div style={{marginLeft:"8%"}}>
               <div className="text-header">Unit:</div>
               <div className="boldText">Pair:</div>
             </div>
@@ -42,7 +47,7 @@ const ComponentDetailPRoductSideCard = () => {
             <div className="px-2">
               <img src={settings} />
             </div>
-            <div className="">
+            <div style={{marginLeft:"8%"}}>
               <div className="text-header">Min. Order</div>
               <div className="boldText">12</div>
             </div>
@@ -60,12 +65,12 @@ const ComponentDetailPRoductSideCard = () => {
         </div>
       </div>
       <div className="row mt-3 d-flex justify-content-center align-items-center">
-        <div className="col-3">
+        <div className="col-2">
           <div className="image-box">
-            <img src={logo} />
+            <img src={smalllogo} />
           </div>
         </div>
-        <div className="col-8 px-3 ">
+        <div className="col-8 px-3  align-items-center flex-column ">
           <div className="logo-text">Quanzhou Laren Trading Co., Ltd.</div>
 
           <p className="text-desc">Trading Company</p>

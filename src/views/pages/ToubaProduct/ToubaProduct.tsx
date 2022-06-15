@@ -21,6 +21,7 @@ interface IState {
 }
 
 export class ToubaProduct extends BaseComponent<IProps, IState> {
+  test = "You are here: Touba >> Products";
   TEST = [
     { name: "JAN", size: 20 },
     { name: "FEB", size: 30 },
@@ -38,7 +39,9 @@ export class ToubaProduct extends BaseComponent<IProps, IState> {
   render() {
     return (
       <div>
-        <div className=" px-5">
+        <div className="px-5">
+          <div className="smalText p-4 px-5">{this.test}</div>
+
           <div className="row p-3      ">
             <div className="col-3">
               <ComponentFilterSidebar showButton={true} />
@@ -50,7 +53,9 @@ export class ToubaProduct extends BaseComponent<IProps, IState> {
               <div className="p-2 d-flex align-items-center justify-content-between">
                 <div className="bigText">221 Products</div>
                 <div>
-                  <SelectComponent type="one" />
+                  <SelectComponent type="one" onSelect={function (name: string): void {
+                    throw new Error("Function not implemented.");
+                  } } />
                 </div>
               </div>
               <div className="p-2 d-flex align-items-center mt-3">

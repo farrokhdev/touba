@@ -3,8 +3,8 @@
   border-radius: 12px;
 }
 .arrowCircle {
-  width: 42px;
-  height:42px;
+  width: 2.5em;
+  height:2.5em;
   border-radius: 50%;
   border: 1.5px solid #6b798c;
   display: flex;
@@ -23,6 +23,5 @@ width: 100%;
   border-radius: 8px;
 }
 .arrowLeft{
-  height: 20px;
-  width: 20px;
+cursor: pointer;
 }

@@ -1,4 +1,5 @@
 import { BaseComponent } from "utilities_js";
+import { IconWalletBlue } from "../../../assets";
 import PlanDetail from "../../components/plan_detail";
 
 interface IProps {}
@@ -84,7 +85,7 @@ export default class MembershipPage extends BaseComponent<IProps, IState> {
   render() {
     return (
       <div className="membership-Page w-100 d-flex flex-column align-items-center ">
-        <div className="w-100 green-Background d-flex align-items-start justify-content-center ">
+        <div className="w-100 green-Background d-flex align-items-start justify-content-center">
           <span className="mt-4">Membership Plans</span>
         </div>
         <div className="plans-Container d-flex flex-row align-items-end mx-auto">
@@ -105,7 +106,7 @@ export default class MembershipPage extends BaseComponent<IProps, IState> {
               post product
             </span>
             <span className=" d-flex flex-row align-items-center justify-content-center">
-              {/* <img src={IconWalletBlue} width={32} height={32} /> */}
+              <img src={IconWalletBlue} width={32} height={32} />
               Receive & respond to inquiries
             </span>
             <span className=" d-flex flex-column align-items-center justify-content-center">

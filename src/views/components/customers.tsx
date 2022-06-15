@@ -7,7 +7,7 @@ import QualityCard from "./card_quality";
       {" "}
       <div className="p-4">
         <div className=" d-flex justify-content-between align-items-center">
-          <div className="specifications-tabActive col-4 text-center">
+          <div className="specifications-tabActive col-4">
             <p>Customers Review</p>
           </div>
           <div className="col-2 more">Write a review</div>
