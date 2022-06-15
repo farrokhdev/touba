@@ -10,6 +10,7 @@ import fill4 from "../../assets/icons/icon-fill.svg";
 import Certificates from "./certificates";
 import iconShare from "../../assets/icons/icon-share.svg";
 import { Chart } from "./chart";
+import iconKing from "../../assets/icons/icon-king.svg";
 
 interface Props {
   show: boolean;
@@ -31,9 +32,16 @@ const TEST = [
 const ContentProduct = ({ show }: Props) => {
   return (
     <div className="">
-      <div className="header">
-        <div className="headerText">Company Name / Shoes / Female</div>
-        <div className="headerLogo">Standard name </div>
+      <div className="row d-flex align-items-center">
+        <div className="col-6">
+          <div className="headerText">Company Name / Shoes / Female</div>
+        </div>
+        <div className="col-6 d-flex justify-content-end">
+          <div className="headerLogo ">
+            <div className="header-logo-text">Standard name</div>
+            <img src={iconKing} />
+          </div>
+        </div>
       </div>
       <div>
         <div className="rowDetail">
@@ -114,7 +122,7 @@ const ContentProduct = ({ show }: Props) => {
               </div>
             </div>
             <div className="excess-chart">
-              <div className="chart" >
+              <div className="chart">
                 {TEST.map((name, index) => (
                   <div className="chart-content" key={index}>
                     <div className="chart-content-column">
