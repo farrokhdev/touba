@@ -4826,13 +4826,11 @@ a {
 .aboutus-Page .mission-Container .mission-Childs {
   width: 90%;
   margin-top: 30px;
-  height: 450px;
 }
 .aboutus-Page .mission-Container .mission-Child {
   margin: 0 20px;
   padding: 36px;
   width: 33%;
-  height: 470px;
   background: #FFFFFF;
   border-radius: 16px;
 }

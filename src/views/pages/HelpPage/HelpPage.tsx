@@ -79,7 +79,7 @@ export default class MembershipPage extends BaseComponent<IProps, IState> {
                 <button
                   className={
                     this.state.selected === 1
-                      ? "selected d-flex flex-row justify-content-between align-items-center"
+                      ? "selected d-flex justify-content-between align-items-center"
                       : ""
                   }
                   onClick={() => this.setState({ selected: 1 })}

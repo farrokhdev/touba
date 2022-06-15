@@ -15,6 +15,7 @@ import {
   ImageAboutus,
   ImageAboutusDesk,
 } from "../../../assets";
+import aboutUs from '../../../assets/images/aboutAus.svg'
 
 interface IProps {}
 
@@ -39,7 +40,7 @@ export default class AboutusPage extends BaseComponent<IProps, IState> {
           </div>
           <div className="img-Container d-flex flex-row align-items-center">
             <div className="d-flex flex-row align-items-center">
-              <img src={ImageAboutus} alt="aboutus" />
+              <img src={aboutUs} alt="aboutus" />
             </div>
           </div>
         </div>
