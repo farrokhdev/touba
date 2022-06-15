@@ -1,8 +1,8 @@
 import React, { memo } from "react";
 import binaRazan from "../../assets/images/binarazan.png";
 import china from "../../assets/images/china.png";
-import mail from "../../assets/images/mail.png";
-import clock from "../../assets/images/clock.png";
+import mail from "../../assets/icons/icon-mail.svg";
+import clock from "../../assets/icons/icon-clock.svg";
 import star from "../../assets/images/Star.png";
 import orangestar from "../../assets/images/orangeStar.png";
 

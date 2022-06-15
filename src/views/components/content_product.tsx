@@ -109,11 +109,26 @@ const ContentProduct = ({ show }: Props) => {
           <div className="mt-3">
             <div className="d-flex">
               <div className="smalText">
-                Overall Capacity:  {" "}
-                <span className="boldText">    200Tons/Monthly</span>
+                Overall Capacity:{" "}
+                <span className="boldText"> 200Tons/Monthly</span>
               </div>
             </div>
-            <Chart item={TEST} />
+            <div className="excess-chart">
+              <div className="chart" >
+                {TEST.map((name, index) => (
+                  <div className="chart-content" key={index}>
+                    <div className="chart-content-column">
+                      <div className="chart-content-column-bottom"></div>
+                      <div
+                        className="chart-content-column-top"
+                        style={{ height: `${name.size}%` }}
+                      ></div>
+                    </div>
+                    <h4 className="chart-content-text">{name.name}</h4>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         )}
         <div className="row mt-2">
