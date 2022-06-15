@@ -1,4 +1,3 @@
-import React from 'react';
 import Pages from './views/pages/pages';
 import { BrowserRouter } from 'react-router-dom';
 
