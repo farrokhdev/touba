@@ -152,15 +152,15 @@ export default class MembershipPage extends BaseComponent<IProps, IState> {
           </div>
           <div className="banner d-flex flex-row align-items-center justify-content-around my-5">
             <div className="content-Banner d-flex flex-column justify-content-between">
-              <span className="ms-3">
+              <span>
                 Didn’t find
                 <br /> your answer?
               </span>
-              <span className="ms-3">
+              <span>
                 You can contact us and ask your question, we will anwer you as
                 soon as possible!
               </span>
-              <button className="ms-3">Contact Us</button>
+              <button>Contact Us</button>
             </div>
             <img src={IconHelpBanner} />
           </div>

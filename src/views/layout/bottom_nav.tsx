@@ -31,6 +31,14 @@ const TEST = [
   { nameLink: "link5", location: "/" },
 ];
 
+const sideService = [
+  { nameLink: "link1", location: "/side-service" },
+  { nameLink: "link2", location: "/" },
+  { nameLink: "link3", location: "/" },
+  { nameLink: "link4", location: "/" },
+  { nameLink: "link5", location: "/" },
+];
+
 const ITEM_DROPDOWN = [
   { icon: ImageStarInner, title: "ITEM NAME HERE", id: 1 },
   { icon: ImageDropDown1, title: "ITEM NAME HERE", id: 2 },
@@ -91,7 +99,7 @@ export function BottomNav() {
             <ButtonDropdown title={"SUPPLIERS"} links={TEST} />
             <ButtonDropdown title={"DEMANDERS"} links={[]} />
             <ButtonDropdown title={"BROKERS"} links={[]} />
-            <ButtonDropdown title={"SIDE SERVICES"} links={[]} />
+            <ButtonDropdown title={"SIDE SERVICES"} links={sideService} />
             <Button title={"SPECIAL OFFERS"} onClick={handleNavigationSpecial} />
             <Button title={"MAP"} />
           </div>
