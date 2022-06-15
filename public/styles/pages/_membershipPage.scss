@@ -1,11 +1,10 @@
 .membership-Page {
-    margin-bottom: 850px;
     .plans-Container {
         position: absolute;
         z-index: 20;
         width: 90%;
         height: 800px;
-        margin-top: 230px;
+        margin-top: 200px;
         .features {
             width: 15%;
             min-width: max-content;
@@ -13,7 +12,7 @@
                 width: 100%;
                 height: 90px;
                 border-bottom: 1px solid #dfe3ea;
-                padding: 0 10px;
+
                 background-color: $white;
                 color: $sorme;
                 text-align: center;

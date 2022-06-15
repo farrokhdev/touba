@@ -39,7 +39,7 @@ export class ToubaProduct extends BaseComponent<IProps, IState> {
   render() {
     return (
       <div>
-        <div className=" px-5">
+        <div className="px-5">
           <div className="smalText p-4 px-5">{this.test}</div>
 
           <div className="row p-3      ">

@@ -1,5 +1,5 @@
 import { ChangeEvent, InputHTMLAttributes, memo, ReactElement, useCallback } from "react";
-import { IconArrowWhite, IconCategory } from "../../assets";
+import { IconArrowWhite, IconCategory, IconCategoryGray } from "../../assets";
 
 interface Props {
     onOpen(status: boolean): void;
@@ -16,7 +16,7 @@ function SelectCategories({ onOpen }: Props): ReactElement {
             <button className="select-categories-button" onClick={handleOpenDropDown}>
                 <p className="select-categories-button-text">
                     <img
-                        src={IconCategory}
+                        src={IconCategoryGray}
                         className="select-categories-button-text-icon"
                     />
                     CATEGORIES

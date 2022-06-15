@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { IconBag, IconBar, IconFacebook, IconInstagram, IconLinkdin, IconTwitter, IconTwoPerson, IconYoutube, ImageBrand } from "../../assets";
+import { IconBag, IconBagGray, IconBar, IconFacebook, IconInstagram, IconLinkdin, IconTwitter, IconTwoPerson, IconYoutube, ImageBrand } from "../../assets";
 import { ButtonIcon } from "../components/button_icon";
 
 export function TopNavHome() {
@@ -48,7 +48,7 @@ export function TopNavHome() {
                         </Link>
                     </div>
                     <div className="top-nav-home-items-button-group">
-                        <ButtonIcon icon={IconBag} />
+                        <ButtonIcon icon={IconBagGray} />
                         <Link to="/login">
                             <ButtonIcon icon={IconTwoPerson} />
                         </Link>

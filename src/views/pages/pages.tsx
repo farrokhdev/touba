@@ -14,6 +14,7 @@ import Register from "./register";
 import HelpPage from "./HelpPage/HelpPage";
 import MembershipPage from "./MembershipPage/MembershipPage";
 import ToubaExcessCapacity from "./ToubaExcessCapacity/ToubaExcessCapacity";
+import SideServicePage from "./SideServicePage/SideServicePage";
 
 function Pages() {
   const location = useLocation();
@@ -45,11 +46,12 @@ function Pages() {
         <Route path="/excess" element={<ToubaExcessCapacity />} />
         <Route path="/special-offer" element={<ToubaSpecialOffers />} />
         <Route path="/membership" element={<MembershipPage />} />
+        <Route path="/side-service" element={<SideServicePage />} />
+
       </Routes>
       {location.pathname.includes("/login") ||
         location.pathname.includes("/register") ? null : (
         <>
-          <Footer />
         </>
       )}
     </div>

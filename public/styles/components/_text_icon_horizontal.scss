@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
-    &-title {
+    &-title { 
         @include FontStyle(14px, 600, $sorme);
         white-space: nowrap;
         margin: 0px 10px;
