@@ -5992,7 +5992,7 @@ a {
   background-size: cover;
   min-height: 693px;
   height: auto;
-  padding: 0 100px;
+  padding-bottom: 60px;
 }
 
 .home-section-latest-title {
@@ -6003,10 +6003,14 @@ a {
   font-weight: 700;
   font-size: 34px;
   color: #3c557a !important;
-  padding: 50px 0;
+  padding: 50px 147px 0 147px;
 }
 
 .home-section-latest-group-cards {
+  width: 93%;
+  height: 100%;
+  margin: auto auto;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6022,6 +6026,77 @@ a {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media (max-width: 1210px) {
+  .home-section-latest-group-cards {
+    width: 100%;
+    height: 70%;
+  }
+}
+
+.home-section-latest-group-cards .icon-prev {
+  position: absolute;
+  top: 51%;
+  z-index: 0;
+  left: 0;
+}
+
+@media (max-width: 1210px) {
+  .home-section-latest-group-cards .icon-prev {
+    top: 60%;
+  }
+}
+
+.home-section-latest-group-cards .icon-next {
+  position: absolute;
+  top: 51%;
+  z-index: 0;
+  right: 0;
+}
+
+@media (max-width: 1210px) {
+  .home-section-latest-group-cards .icon-next {
+    top: 60%;
+  }
+}
+
+.home-section-latest-group-cards .swiper-button-prev {
+  opacity: 0 !important;
+  top: 35% !important;
+  height: 50%;
+}
+
+.home-section-latest-group-cards .swiper-button-next {
+  opacity: 0 !important;
+  top: 35% !important;
+  height: 50%;
+}
+
+.home-section-latest-group-cards .swiper-slide {
+  width: 501.5px !important;
+  height: 212px !important;
+}
+
+.home-section-latest-group-cards .swiper-wrapper {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -webkit-box-pack: unset !important;
+      -ms-flex-pack: unset !important;
+          justify-content: unset !important;
+  -webkit-box-align: baseline !important;
+      -ms-flex-align: baseline !important;
+          align-items: baseline !important;
+  margin: 0 75px !important;
+}
+
+.home-section-latest-group-cards .card-product {
+  z-index: 0;
 }
 
 .home-section-categories {

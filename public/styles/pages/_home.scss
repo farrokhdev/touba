@@ -35,9 +35,11 @@
                     @media (max-width: 1220px) {
                         @include FontStyle(30px, 800, $white);
                     }
+
                     @media (min-width: 1221px) {
                         @include FontStyle(41px, 800, $white);
                     }
+
                     @media (min-width: 1550px) {
                         @include FontStyle(54px, 800, $white);
                     }
@@ -47,12 +49,15 @@
                     @media (max-width: 1220px) {
                         @include FontStyle(12px, 800, $white);
                     }
+
                     @media (min-width: 1221px) {
                         @include FontStyle(19px, 800, $white);
                     }
+
                     @media (min-width: 1550px) {
                         @include FontStyle(22px, 800, $white);
                     }
+
                     text-align: justify;
                     text-justify: inter-word;
                     margin: 20px 0;
@@ -62,12 +67,15 @@
                     @media (max-width: 1220px) {
                         @include FontStyle(9px, 800, $white);
                     }
+
                     @media (min-width: 1221px) {
                         @include FontStyle(14px, 400, $white);
                     }
+
                     @media (min-width: 1550px) {
                         @include FontStyle(16px, 400, $white);
                     }
+
                     margin-bottom: 80px;
                     text-align: justify;
                     text-justify: inter-word;
@@ -173,14 +181,65 @@
         background-size: cover;
         min-height: 693px;
         height: auto;
-        padding: 0 100px;
+        padding-bottom: 60px;
 
         &-title {
             @include FontStyle(34px, 700, $sorme);
-            padding: 50px 0;
+            padding: 50px 147px 0 147px;
         }
 
         &-group-cards {
+            @media (max-width: 1210px) {
+                width: 100%;
+                height: 70%;
+            }
+            width: 93%;
+            height: 100%;
+            margin: auto auto;
+            position: relative;
+            .icon-prev {
+                @media (max-width: 1210px) {
+                    top: 60%;
+                }
+                position: absolute;
+                top: 51%;
+                z-index: 0;
+                left: 0;
+            }
+            .icon-next {
+                @media (max-width: 1210px) {
+                    top: 60%;
+                }
+                position: absolute;
+                top: 51%;
+                z-index: 0;
+                right: 0;
+            }
+            .swiper-button-prev {
+                opacity: 0 !important;
+                top: 35% !important;
+                height: 50%;
+            }
+            .swiper-button-next {
+                opacity: 0 !important;
+                top: 35% !important;
+                height: 50%;
+            }
+            .swiper-slide {
+                width: 501.5px !important;
+                height: 212px !important;
+            }
+            .swiper-wrapper {
+                display: flex !important;
+                flex-direction: row !important;
+                justify-content: unset !important;
+                align-items: baseline !important;
+                margin: 0 75px !important;
+                // width: 100% !important;
+            }          
+            .card-product {
+                z-index: 0;
+            }  
             @include Display(flex, space-between, center, row, wrap);
         }
     }
@@ -308,6 +367,7 @@
         &-content {
             @include Display(flex, center, center, row, wrap);
             border-radius: 16px;
+
             .card-new-product {
                 width: 285px;
                 height: 285px;

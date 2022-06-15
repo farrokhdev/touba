@@ -1,6 +1,6 @@
 import { Component } from "react";
 import { Link } from "react-router-dom";
-import { BackgroundLatest, IconAlibaba, IconArvan, ImageControll, ImageLaboratory, ImagePersonBox, ImageTest, ImageTest2, ImageTest3, ImageTest4 } from "../../assets";
+import { BackgroundLatest, IconAlibaba, IconArvan, IconNext, IconPrev, ImageControll, ImageLaboratory, ImagePersonBox, ImageTest, ImageTest2, ImageTest3, ImageTest4 } from "../../assets";
 import { CHART } from "../components/chart";
 import { Button, CardSearchProduct, CardProduct, CardCategory, CardImage, CardCollectionProduct, CardProductWithPrice, CardBestSeller, CardCollectionBest, Divider, CardNewExcess, CardBestBrand, CardNewProduct, CardCalculate } from "../components/components";
 import HomeController from "../controllers/home_controller";
@@ -22,6 +22,16 @@ const TEST: CHART[] = [
 
 class Home extends HomeController {
     render() {
+        const settings = {
+            className: "center",
+            centerMode: true,
+            infinite: true,
+            centerPadding: "60px",
+            slidesToShow: 3,
+            speed: 500,
+            rows: 2,
+            slidesPerRow: 2
+        };
         return (
             <div className="home">
                 <div className="home-header">
@@ -127,6 +137,8 @@ class Home extends HomeController {
                             amount={200}
                             chart={TEST}
                         />
+                        <img src={IconPrev} className="icon-prev" />
+                        <img src={IconNext} className="icon-next" />
                     </div>
                 </div>
                 <div className="home-section-categories">
@@ -400,7 +412,7 @@ class Home extends HomeController {
                         </div>
                     )}
                 </div>
-            </div>
+            </div >
         )
     }
 }
