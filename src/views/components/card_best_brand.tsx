@@ -15,7 +15,6 @@ export function CardBestBrand({images}: Props): ReactElement {
             <Swiper
                 slidesPerView={1}
                 spaceBetween={10}
-                navigation={true}
                 autoplay={{
                     delay: 4500,
                     disableOnInteraction: false,

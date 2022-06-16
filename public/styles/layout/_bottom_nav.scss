@@ -13,7 +13,6 @@
         width: 100%;
         max-width: 1920px;
         @include Display(flex, space-between, center);
-        padding: 0 10px;
         position: relative;
 
         @media (max-width: 1000px) {

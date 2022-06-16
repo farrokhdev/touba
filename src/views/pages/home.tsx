@@ -1,9 +1,16 @@
 import { Component } from "react";
 import { Link } from "react-router-dom";
-import { BackgroundLatest, IconAlibaba, IconArvan, ImageControll, ImageLaboratory, ImagePersonBox, ImageTest, ImageTest2, ImageTest3, ImageTest4 } from "../../assets";
+import Slider from "react-slick";
+import { BackgroundLatest, IconAlibaba, IconArvan, IconNext, IconPrev, ImageControll, ImageLaboratory, ImagePersonBox, ImageTest, ImageTest2, ImageTest3, ImageTest4 } from "../../assets";
 import { CHART } from "../components/chart";
 import { Button, CardSearchProduct, CardProduct, CardCategory, CardImage, CardCollectionProduct, CardProductWithPrice, CardBestSeller, CardCollectionBest, Divider, CardNewExcess, CardBestBrand, CardNewProduct, CardCalculate } from "../components/components";
 import HomeController from "../controllers/home_controller";
+import { Pagination, Autoplay, Navigation, Grid } from 'swiper';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/grid";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 const TEST: CHART[] = [
     { name: "JAN", size: 20 },
@@ -22,9 +29,16 @@ const TEST: CHART[] = [
 
 class Home extends HomeController {
     render() {
+        const settings = {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        };
         return (
             <div className="home">
-                <div className="home-header">
+                <div className="home-header px-5">
                     <div className="home-header-description">
                         <div className="home-header-description-items">
                             <h2 className="home-header-description-items-title">
@@ -50,7 +64,7 @@ class Home extends HomeController {
                         />
                     </div>
                 </div>
-                <div className="home-section-earn">
+                <div className="home-section-earn px-5">
                     <div className="home-section-earn-content">
                         <h4 className="home-section-earn-content-header">
                             Let`s earn from
@@ -80,56 +94,249 @@ class Home extends HomeController {
                         <img src={ImageLaboratory} className="image-laboratory" />
                     </div>
                 </div>
-                <div className="home-section-latest" style={{ backgroundImage: "url(" + BackgroundLatest + ")" }}>
+                <div className="home-section-latest px-5" style={{ backgroundImage: "url(" + BackgroundLatest + ")" }}>
                     <h4 className="home-section-latest-title">
                         Latest Excess Capacites
                     </h4>
                     <div className="home-section-latest-group-cards">
-                        <CardProduct
-                            image={ImageTest}
-                            status={"Finish Product"}
-                            description={"Pomegranate Juice Pet Bottle..."}
-                            amount={200}
-                            chart={TEST}
-                        />
-                        <CardProduct
-                            image={ImageTest}
-                            status={"Finish Product"}
-                            description={"Pomegranate Juice Pet Bottle..."}
-                            amount={200}
-                            chart={TEST}
-                        />
-                        <CardProduct
-                            image={ImageTest}
-                            status={"Finish Product"}
-                            description={"Pomegranate Juice Pet Bottle..."}
-                            amount={200}
-                            chart={TEST}
-                        />
-                        <CardProduct
-                            image={ImageTest}
-                            status={"Finish Product"}
-                            description={"Pomegranate Juice Pet Bottle..."}
-                            amount={200}
-                            chart={TEST}
-                        />
-                        <CardProduct
-                            image={ImageTest}
-                            status={"Finish Product"}
-                            description={"Pomegranate Juice Pet Bottle..."}
-                            amount={200}
-                            chart={TEST}
-                        />
-                        <CardProduct
-                            image={ImageTest}
-                            status={"Finish Product"}
-                            description={"Pomegranate Juice Pet Bottle..."}
-                            amount={200}
-                            chart={TEST}
-                        />
+                        <Swiper
+                            slidesPerView={3}
+                            grid={{
+                                rows: 2,
+                            }}
+                            spaceBetween={30}
+                            navigation={true}
+                            modules={[Grid, Navigation]}
+                            breakpoints={{
+                                640: {
+                                    slidesPerView: 1,
+                                    spaceBetween: 80,
+                                },
+                                769: {
+                                    slidesPerView: 1,
+                                    spaceBetween: 80,
+                                },
+                                1024: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 50,
+                                },
+                                1441: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 50,
+                                },
+                                1700: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 10,
+                                }
+                            }}
+                            className="mySwiper"
+                        >
+                            <SwiperSlide className="item-swiper">
+                                <CardProduct
+                                    image={ImageTest}
+                                    status={"Finish Product"}
+                                    description={"Pomegranate Juice Pet Bottle..."}
+                                    amount={200}
+                                    chart={TEST}
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide className="item-swiper">
+                                <CardProduct
+                                    image={ImageTest}
+                                    status={"Finish Product"}
+                                    description={"Pomegranate Juice Pet Bottle..."}
+                                    amount={200}
+                                    chart={TEST}
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide className="item-swiper">
+                                <CardProduct
+                                    image={ImageTest}
+                                    status={"Finish Product"}
+                                    description={"Pomegranate Juice Pet Bottle..."}
+                                    amount={200}
+                                    chart={TEST}
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide className="item-swiper">
+                                <CardProduct
+                                    image={ImageTest}
+                                    status={"Finish Product"}
+                                    description={"Pomegranate Juice Pet Bottle..."}
+                                    amount={200}
+                                    chart={TEST}
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide className="item-swiper">
+                                <CardProduct
+                                    image={ImageTest}
+                                    status={"Finish Product"}
+                                    description={"Pomegranate Juice Pet Bottle..."}
+                                    amount={200}
+                                    chart={TEST}
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide className="item-swiper">
+                                <CardProduct
+                                    image={ImageTest}
+                                    status={"Finish Product"}
+                                    description={"Pomegranate Juice Pet Bottle..."}
+                                    amount={200}
+                                    chart={TEST}
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide className="item-swiper">
+                                <CardProduct
+                                    image={ImageTest}
+                                    status={"Finish Product"}
+                                    description={"Pomegranate Juice Pet Bottle..."}
+                                    amount={200}
+                                    chart={TEST}
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide className="item-swiper">
+                                <CardProduct
+                                    image={ImageTest}
+                                    status={"Finish Product"}
+                                    description={"Pomegranate Juice Pet Bottle..."}
+                                    amount={200}
+                                    chart={TEST}
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide className="item-swiper">
+                                <CardProduct
+                                    image={ImageTest}
+                                    status={"Finish Product"}
+                                    description={"Pomegranate Juice Pet Bottle..."}
+                                    amount={200}
+                                    chart={TEST}
+                                />
+                            </SwiperSlide>
+                        </Swiper>
+                        {/* <Swiper
+                            navigation={true}
+                            freeMode={true}
+                            breakpoints={{
+                                640: {
+                                    slidesPerView: 1,
+                                    spaceBetween: 80,
+                                },
+                                768: {
+                                    slidesPerView: 1,
+                                    spaceBetween: 80,
+                                },
+                                1024: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 50,
+                                },
+                                1440: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 30,
+                                }
+                            }}
+                            modules={[Navigation, Grid]}
+                            className="mySwiper"
+                        >
+                            <SwiperSlide className="item-swiper">
+                                <CardProduct
+                                    image={ImageTest}
+                                    status={"Finish Product"}
+                                    description={"Pomegranate Juice Pet Bottle..."}
+                                    amount={200}
+                                    chart={TEST}
+                                />
+                                <CardProduct
+                                    image={ImageTest}
+                                    status={"Finish Product"}
+                                    description={"Pomegranate Juice Pet Bottle..."}
+                                    amount={200}
+                                    chart={TEST}
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide className="item-swiper">
+                                <CardProduct
+                                    image={ImageTest}
+                                    status={"Finish Product"}
+                                    description={"Pomegranate Juice Pet Bottle..."}
+                                    amount={200}
+                                    chart={TEST}
+                                />
+                                <CardProduct
+                                    image={ImageTest}
+                                    status={"Finish Product"}
+                                    description={"Pomegranate Juice Pet Bottle..."}
+                                    amount={200}
+                                    chart={TEST}
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide className="item-swiper">
+                                <CardProduct
+                                    image={ImageTest}
+                                    status={"Finish Product"}
+                                    description={"Pomegranate Juice Pet Bottle..."}
+                                    amount={200}
+                                    chart={TEST}
+                                />
+                                <CardProduct
+                                    image={ImageTest}
+                                    status={"Finish Product"}
+                                    description={"Pomegranate Juice Pet Bottle..."}
+                                    amount={200}
+                                    chart={TEST}
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide className="item-swiper">
+                                <CardProduct
+                                    image={ImageTest}
+                                    status={"Finish Product"}
+                                    description={"Pomegranate Juice Pet Bottle..."}
+                                    amount={200}
+                                    chart={TEST}
+                                />
+                                <CardProduct
+                                    image={ImageTest}
+                                    status={"Finish Product"}
+                                    description={"Pomegranate Juice Pet Bottle..."}
+                                    amount={200}
+                                    chart={TEST}
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide className="item-swiper">
+                                <CardProduct
+                                    image={ImageTest}
+                                    status={"Finish Product"}
+                                    description={"Pomegranate Juice Pet Bottle..."}
+                                    amount={200}
+                                    chart={TEST}
+                                />
+                                <CardProduct
+                                    image={ImageTest}
+                                    status={"Finish Product"}
+                                    description={"Pomegranate Juice Pet Bottle..."}
+                                    amount={200}
+                                    chart={TEST}
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide className="item-swiper">
+                                <CardProduct
+                                    image={ImageTest}
+                                    status={"Finish Product"}
+                                    description={"Pomegranate Juice Pet Bottle..."}
+                                    amount={200}
+                                    chart={TEST}
+                                />
+                                <CardProduct
+                                    image={ImageTest}
+                                    status={"Finish Product"}
+                                    description={"Pomegranate Juice Pet Bottle..."}
+                                    amount={200}
+                                    chart={TEST}
+                                />
+                            </SwiperSlide>
+                        </Swiper> */}
                     </div>
                 </div>
-                <div className="home-section-categories">
+                <div className="home-section-categories px-5">
                     <h4 className="home-section-categories-title">
                         Categories
                     </h4>
@@ -176,11 +383,11 @@ class Home extends HomeController {
                         />
                     </div>
                 </div>
-                <div className="home-section-special">
+                <div className="home-section-special px-5">
                     <CardImage image={ImageTest3} />
                     <CardImage image={ImageTest3} />
                 </div>
-                <div className="home-section-special-two">
+                <div className="home-section-special-two px-5">
                     <CardCollectionProduct title={"Analust’s Choice"} location={""} >
                         <CardProductWithPrice
                             image={ImageControll}
@@ -234,7 +441,7 @@ class Home extends HomeController {
                         />
                     </CardCollectionProduct>
                 </div>
-                <div className="home-section-best-seller">
+                <div className="home-section-best-seller px-5">
                     <CardCollectionBest>
                         <CardBestSeller image={ImageControll} discountPercent={45} />
                         <CardBestSeller image={ImageControll} discountPercent={45} />
@@ -246,7 +453,7 @@ class Home extends HomeController {
                         <CardBestSeller image={ImageControll} discountPercent={45} />
                     </CardCollectionBest>
                 </div>
-                <div className="home-section-new">
+                <div className="home-section-new px-5">
                     <div className="home-section-new-header">
                         <h4 className="home-section-new-header-text">
                             New Excess Capacities
@@ -319,13 +526,13 @@ class Home extends HomeController {
                         />
                     </div>
                 </div>
-                <div className="home-section-images">
+                <div className="home-section-images px-5">
                     <CardImage image={ImageTest4} />
                     <CardImage image={ImageTest4} />
                     <CardImage image={ImageTest4} />
                     <CardImage image={ImageTest4} />
                 </div>
-                <div className="home-section-newest-product">
+                <div className="home-section-newest-product px-5">
                     <h4 className="home-section-newest-product-title">New Product</h4>
                     <div className="home-section-newest-product-content">
                         <CardNewProduct image={ImageControll} title={"Product Name"} />
@@ -342,7 +549,7 @@ class Home extends HomeController {
                         <CardNewProduct image={ImageControll} title={"Product Name"} />
                     </div>
                 </div>
-                <div className="home-section-best-brand">
+                <div className="home-section-best-brand px-5">
                     <h4 className="home-section-best-brand-title"> Best Brands</h4>
                     <CardBestBrand
                         images={[
@@ -359,7 +566,7 @@ class Home extends HomeController {
                         ]}
                     />
                 </div>
-                <div className="home-section-description">
+                <div className="home-section-description px-5">
                     <h4 className="home-section-description-title">
                         What is excess capacity?
                     </h4>
@@ -400,7 +607,7 @@ class Home extends HomeController {
                         </div>
                     )}
                 </div>
-            </div>
+            </div >
         )
     }
 }

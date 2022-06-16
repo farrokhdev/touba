@@ -74,14 +74,18 @@ export default class SideServicePage extends BaseComponent<IProps, IState> {
         );
       } else if (this.state.id === 3) {
         return (
-          <div className="d-flex flex-column align-items-start content-Item ">
-            <img src={ImageSideService} />
+          <div className="d-flex flex-column align-items-start single-Content-Item ">
+            <img src={ImageSideService} alt="sideService" />
             <span className="my-3 mx-3">Investment Consulting</span>
             <p className="mx-3">
               Provide investment advice to users for entering desired plans,
               such as: Conducting research and preparing a business plan Review
               investment opportunities and provide, recommendations, Enhancing
-              and improving the business, and much more
+              and improving the business, and much more Provide investment
+              advice to users for entering desired plans, such as: Conducting
+              research and preparing a business plan Review investment
+              opportunities and provide, recommendations, Enhancing and
+              improving the business, and much more
             </p>
           </div>
         );

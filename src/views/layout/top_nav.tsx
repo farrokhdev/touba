@@ -6,7 +6,7 @@ import { ComponentSearch, Divider } from "../components/components";
 export function TopNav() {
     const location = useLocation()
     return (
-        <div className="top-nav">
+        <div className="top-nav px-5">
             <div className="top-nav-items">
                 <div className="top-nav-items-links">
                     <Link to="/" className={location.pathname === "/" ? "link active" : "link"}>

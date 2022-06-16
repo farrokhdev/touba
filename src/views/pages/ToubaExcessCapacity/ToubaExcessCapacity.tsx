@@ -37,7 +37,7 @@ const TEST = [
 ];
 
 export class ToubaExcessCapacity extends BaseComponent<IProps, IState> {
-  test = "You are here: Touba >> Excess";
+  test = "You are here: Touba >> Excess Capacity";
   state: IState = {
     isShow: false,
   };

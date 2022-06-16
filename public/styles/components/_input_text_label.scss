@@ -15,8 +15,22 @@
             outline: none;
         }
         &::placeholder {
-            @include FontStyle(16px, 400, $sorme);
             opacity: 0.4;
+            @media (max-width: 370px) {
+                @include FontStyle(16px, 400, $sorme);
+            }
+            @media (min-width: 371px) {
+                @include FontStyle(16px, 400, $sorme);
+            }
+            @media (min-width: 1181px) {
+                @include FontStyle(10px, 400, $sorme);
+            }
+            @media (min-width: 1440px) {
+                @include FontStyle(13px, 400, $sorme);
+            }
+            @media (min-width: 1900px) {
+                @include FontStyle(16px, 400, $sorme);
+            }
         }
     }
     &-title {

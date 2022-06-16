@@ -52,6 +52,7 @@ function Pages() {
       {location.pathname.includes("/login") ||
         location.pathname.includes("/register") ? null : (
         <>
+        <Footer/>
         </>
       )}
     </div>
