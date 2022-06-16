@@ -7,13 +7,14 @@
     .sideService-Content {
         width: 100%;
         position: absolute;
-        top: 150px;
+        top: 460px;
         z-index: 10;
         .sideService-Desc {
             border-radius: 16px;
             padding: 35px;
             background-color: $white;
             width: 70%;
+            max-width: 1296px;
             span {
                 @include FontStyle(22px, 800, $sorme);
             }
@@ -21,7 +22,7 @@
         .services {
             width: 80%;
             .sidebar {
-                width: 25%; 
+                width: 25%;
                 background-color: transparent;
                 button {
                     span {
@@ -47,7 +48,7 @@
                 padding: 20px;
                 border-radius: 16px;
                 border: 1px solid #e3e3e3;
-                height: fit-content;
+                min-height: fit-content;
                 .items {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
@@ -65,6 +66,20 @@
                     img {
                         width: 100%;
                         height: 200px;
+                        border-radius: 8px 8px 0 0;
+                    }
+                }
+                .single-Content-Item {
+                    width: 100%;
+                    height: 650px;
+                    background-color: $white;
+                    border-radius: 8px;
+                    span {
+                        @include FontStyle(20px, 700, $sorme);
+                    }
+                    img {
+                        width: 100%;
+                        height: 425px;
                         border-radius: 8px 8px 0 0;
                     }
                 }

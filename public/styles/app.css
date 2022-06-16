@@ -8268,7 +8268,7 @@ a {
 .sideServise-Page .sideService-Content {
   width: 100%;
   position: absolute;
-  top: 150px;
+  top: 460px;
   z-index: 10;
 }
 
@@ -8277,6 +8277,7 @@ a {
   padding: 35px;
   background-color: #FFFFFF;
   width: 70%;
+  max-width: 1296px;
 }
 
 .sideServise-Page .sideService-Content .sideService-Desc span {
@@ -8330,9 +8331,9 @@ a {
   padding: 20px;
   border-radius: 16px;
   border: 1px solid #e3e3e3;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
 }
 
 .sideServise-Page .sideService-Content .services .content .items {
@@ -8364,6 +8365,29 @@ a {
 .sideServise-Page .sideService-Content .services .content .content-Item img {
   width: 100%;
   height: 200px;
+  border-radius: 8px 8px 0 0;
+}
+
+.sideServise-Page .sideService-Content .services .content .single-Content-Item {
+  width: 100%;
+  height: 650px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+}
+
+.sideServise-Page .sideService-Content .services .content .single-Content-Item span {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #3c557a !important;
+}
+
+.sideServise-Page .sideService-Content .services .content .single-Content-Item img {
+  width: 100%;
+  height: 425px;
   border-radius: 8px 8px 0 0;
 }
 /*# sourceMappingURL=app.css.map */
