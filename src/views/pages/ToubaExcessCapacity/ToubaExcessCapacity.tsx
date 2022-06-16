@@ -173,7 +173,6 @@ export class ToubaExcessCapacity extends BaseComponent<IProps, IState> {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
     );
   }

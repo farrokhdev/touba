@@ -117,7 +117,6 @@ export class ToubaProduct extends BaseComponent<IProps, IState> {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
     );
   }

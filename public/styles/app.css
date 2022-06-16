@@ -3361,7 +3361,7 @@ a {
   background: white;
   border-radius: 16px;
 }
-.filter-sidebar-card .text {
+.filter-sidebar-card .text-title-filter {
   width: auto;
   height: auto;
   font-family: "Poppins";
@@ -3382,7 +3382,7 @@ a {
 .filter-sidebar-card .opacity {
   background: rgb(255, 255, 255);
   opacity: 0.7;
-  height: 10vh;
+  height: 20vh;
 }
 
 .supplier-box {
@@ -3790,6 +3790,34 @@ a {
 }
 .content-submenu-section-body .text-icon-horizontal-title-icon {
   margin: 0 34px;
+}
+
+.filter-sidebar-card {
+  background: white;
+  border-radius: 16px;
+}
+.filter-sidebar-card .text-title-filter {
+  width: auto;
+  height: auto;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #3c557a !important;
+}
+.filter-sidebar-card .search-box {
+  /* Border */
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  background: #FFFFFF;
+}
+.filter-sidebar-card .checkbox {
+  height: 8vh;
+}
+.filter-sidebar-card .opacity {
+  background: rgb(255, 255, 255);
+  opacity: 0.7;
+  height: 20vh;
 }
 
 .top-nav-home {

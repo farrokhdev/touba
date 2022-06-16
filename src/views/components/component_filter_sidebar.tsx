@@ -25,14 +25,14 @@ const ComponentFilterSidebar = ({ showButton }: Props) => {
           </div>
         </div>
       )}
-      <div className="border-bottom p-3">
-        <div className="d-flex align-items-center justify-content-between">
-          <div className="text text-start">Filter by Category </div>
-          <div>
+      <div className="border-bottom p-3 ">
+        <div className="d-flex align-items-center justify-content-between px-2">
+          <div className="text-title-filter">Filter by Category </div>
+          <div className="mr-2">
             <img src={ArrowUp} />
           </div>
         </div>
-        <div className="row p-2 mt-2">
+        <div className="row py-3 mt-2 ">
           <div className="search-box d-flex p-2">
             <img src={iconSearch} alt="search" />
 
@@ -63,13 +63,13 @@ const ComponentFilterSidebar = ({ showButton }: Props) => {
         </div>
       </div>
       <div className="border-bottom p-3">
-        <div className="d-flex align-items-center justify-content-between">
-          <div className="text text-start">Filter by Business Type </div>
+        <div className="d-flex align-items-center justify-content-between px-2">
+          <div className="text-title-filter text-start">Filter by Business Type </div>
           <div>
             <img src={ArrowUp} />
           </div>
         </div>
-        <div className="row p-2 mt-2">
+        <div className="row py-3 mt-2">
           <div className="search-box d-flex p-2">
             <img src={iconSearch} alt="search" />
 
@@ -100,24 +100,24 @@ const ComponentFilterSidebar = ({ showButton }: Props) => {
         </div>
       </div>
       <div className="border-bottom p-3">
-        <div className="d-flex align-items-center justify-content-between">
-          <div className="text text-start">Filter by Business Type</div>
+        <div className="d-flex align-items-center justify-content-between px-2">
+          <div className="text-title-filter text-start">Filter by Business Type</div>
           <div>
             <img src={arrowDown} />
           </div>
         </div>
       </div>
       <div className="border-bottom p-3">
-        <div className="d-flex align-items-center justify-content-between">
-          <div className="text text-start">Filter by Certificate</div>
+        <div className="d-flex align-items-center justify-content-between px-2">
+          <div className="text-title-filter text-start">Filter by Certificate</div>
           <div>
             <img src={arrowDown} />
           </div>
         </div>
       </div>
       <div className="border-bottom p-3">
-        <div className="d-flex align-items-center justify-content-between">
-          <div className="text text-start">Region</div>
+        <div className="d-flex align-items-center justify-content-between px-2">
+          <div className="text-title-filter text-start">Region</div>
           <div>
             <img src={arrowDown} />
           </div>
