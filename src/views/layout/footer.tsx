@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { IconDot, IconFacebook, IconInstagram, IconLinkdin, IconTwitter, IconYoutube, Image7, ImageBoxes, ImageBrandWhite, ImagePerson } from "../../assets";
+import { IconDot, IconFacebook, IconFacebookWhite, IconInstagram, IconInstagramWhite, IconLinkdin, IconLinkdinWhite, IconTwitter, IconTwitterWhite, IconYoutube, IconYoutubeWhite, Image7, ImageBoxes, ImageBrandWhite, ImagePerson } from "../../assets";
 import { Button } from "../components/components";
 
 
@@ -18,24 +18,29 @@ export function Footer() {
                     </p>
                     <div className="footer-section-bottom-content-social">
                         <Link to="/">
-                            <img src={IconInstagram} className="social-link" />
+                            <img src={IconInstagramWhite} className="social-link" />
                         </Link>
                         <Link to="/">
-                            <img src={IconYoutube} className="social-link" />
+                            <img src={IconYoutubeWhite} className="social-link" />
                         </Link>
                         <Link to="/">
-                            <img src={IconTwitter} className="social-link" />
+                            <img src={IconTwitterWhite} className="social-link" />
                         </Link>
                         <Link to="/">
-                            <img src={IconLinkdin} className="social-link" />
+                            <img src={IconLinkdinWhite} className="social-link" />
                         </Link>
                         <Link to="/">
-                            <img src={IconFacebook} className="social-link" />
+                            <img src={IconFacebookWhite} className="social-link" />
                         </Link>
                     </div>
                 </div>
                 <div className="footer-section-bottom-image-boxes">
                     <img src={ImageBoxes} />
+                </div>
+                <div className="footer-section-bottom-name-brand">
+                    <h5 className="footer-section-bottom-name-brand-text">
+                        ALL RIGHTS RESERVED TO TOUBA CO.
+                    </h5>
                 </div>
             </div>
             <div className="footer-section-top">

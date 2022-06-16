@@ -5,7 +5,7 @@ import { ButtonIcon } from "../components/button_icon";
 export function TopNavHome() {
     return (
         <>
-            <div className="top-nav-home">
+            <div className="top-nav-home px-5">
                 <div className="top-nav-home-items">
                     <div className="top-nav-home-items-brand">
                         <img
