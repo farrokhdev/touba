@@ -1,9 +1,9 @@
 import { Component } from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
-import { BackgroundLatest, IconAlibaba, IconArvan, IconNext, IconPrev, ImageControll, ImageLaboratory, ImagePersonBox, ImageTest, ImageTest2, ImageTest3, ImageTest4 } from "../../assets";
+import { BackgroundLatest, IconAddCircle, IconAddCircleWhite, IconAlibaba, IconArvan, IconNext, IconPrev, ImageControll, ImageLaboratory, ImagePersonBox, ImageTest, ImageTest2, ImageTest3, ImageTest4 } from "../../assets";
 import { CHART } from "../components/chart";
-import { Button, CardSearchProduct, CardProduct, CardCategory, CardImage, CardCollectionProduct, CardProductWithPrice, CardBestSeller, CardCollectionBest, Divider, CardNewExcess, CardBestBrand, CardNewProduct, CardCalculate } from "../components/components";
+import { Button, CardSearchProduct, CardProduct, CardCategory, CardImage, CardCollectionProduct, CardProductWithPrice, CardBestSeller, CardCollectionBest, Divider, CardNewExcess, CardBestBrand, CardNewProduct, CardCalculate, ButtonIcon } from "../components/components";
 import HomeController from "../controllers/home_controller";
 import { Pagination, Autoplay, Navigation, Grid } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -38,6 +38,7 @@ class Home extends HomeController {
         };
         return (
             <div className="home">
+                <ButtonIcon icon={IconAddCircleWhite} nameButton={"ADD NEW"}/>
                 <div className="home-header px-5">
                     <div className="home-header-description">
                         <div className="home-header-description-items">
