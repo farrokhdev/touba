@@ -99,3 +99,5 @@ export { default as ImageSideService} from './images/1.jpg';
 export { default as ImageSideService2} from './images/2.jpg';
 export { default as ImageSideService3} from './images/3.jpg';
 export { default as ImageSideService4} from './images/4.jpg';
+export { default as IconMessageSeideservice} from './icons/icon-message-sideservice.svg';
+export { default as IconProfile} from './icons/icon-profile.svg';

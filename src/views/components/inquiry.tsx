@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ImageTest } from "../../assets";
 import { CardCalculate } from "./card_calculate";
 import { QualityStar } from "./components";
+import ProductDetail from "./product-detail";
 import Raiting from "./rating";
 import SingleProductPrice from "./single_product_price";
 
@@ -11,13 +12,11 @@ const Inquiry: React.FC<IProps> = () => {
   const [isSelect, setSelect] = useState(0);
   return (
     <div className="d-flex flex-column align-items-start inquiry mx-auto">
-      <div className="d-flex flex-row align-items-center my-3 product-Detail justify-content-between">
-        <img src={ImageTest} alt="productImg" className="productImg" />
-        <div className="d-flex flex-column align-items-center">
-          <span className="product-Name">Product Name Here Product Name </span>
-          <Raiting rate={4.2} numOfRaiting="12,514" />
-        </div>
-      </div>
+      <ProductDetail
+        name="Product Name Here Product Name "
+        numOfRating="12,514"
+        rate={4.2}
+      />
       <div className="my-3 px-2 ">
         <CardCalculate amount={100} value={1299} />
       </div>
