@@ -1,9 +1,9 @@
 import { Component } from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
-import { BackgroundLatest, IconAddCircle, IconAddCircleWhite, IconAlibaba, IconArvan, IconNext, IconPrev, ImageControll, ImageLaboratory, ImageNasa, ImagePersonBox, ImageTest, ImageTest2, ImageTest3, ImageTest4 } from "../../assets";
+import { BackgroundLatest, IconAddCircle, IconAddCircleWhite, IconAlibaba, IconArrow, IconArrowBlack, IconArvan, IconNext, IconPrev, IconYoutube, ImageControll, ImageLaboratory, ImageNasa, ImagePersonBox, ImageTest, ImageTest2, ImageTest3, ImageTest4 } from "../../assets";
 import { CHART } from "../components/chart";
-import { Button, CardSearchProduct, CardProduct, CardCategory, CardImage, CardCollectionProduct, CardProductWithPrice, CardBestSeller, CardCollectionBest, Divider, CardNewExcess, CardBestBrand, CardNewProduct, CardCalculate, ButtonIcon, CardGroupChat } from "../components/components";
+import { Button, CardSearchProduct, CardProduct, CardCategory, CardImage, CardCollectionProduct, CardProductWithPrice, CardBestSeller, CardCollectionBest, Divider, CardNewExcess, CardBestBrand, CardNewProduct, CardCalculate, ButtonIcon, CardGroupChat, ButtonIconDashboard } from "../components/components";
 import HomeController from "../controllers/home_controller";
 import { Pagination, Autoplay, Navigation, Grid } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -39,12 +39,14 @@ class Home extends HomeController {
         return (
             <div className="home">
                 <ButtonIcon icon={IconAddCircleWhite} nameButton={"ADD NEW"} />
+                <ButtonIconDashboard icon={IconArrowBlack} notification={2}/>
+                <ButtonIconDashboard icon={IconArrowBlack}/>
                 <div style={{ width: "509px" }}>
                     <CardGroupChat
                         title={"Group Title"}
                         amountMessage={7}
                         message={" message Here"}
-                        images={[ImageNasa,ImageNasa,ImageNasa,ImageNasa,ImageNasa,ImageNasa]}
+                        images={[ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa]}
                         date={"25 MINS"}
                     />
                 </div>
