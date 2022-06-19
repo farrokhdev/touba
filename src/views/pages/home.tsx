@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import { BackgroundLatest, IconAddCircle, IconAddCircleWhite, IconAlibaba, IconArrow, IconArrowBlack, IconArvan, IconNext, IconPrev, IconYoutube, ImageControll, ImageLaboratory, ImageNasa, ImagePersonBox, ImageTest, ImageTest2, ImageTest3, ImageTest4 } from "../../assets";
 import { CHART } from "../components/chart";
-import { Button, CardSearchProduct, CardProduct, CardCategory, CardImage, CardCollectionProduct, CardProductWithPrice, CardBestSeller, CardCollectionBest, Divider, CardNewExcess, CardBestBrand, CardNewProduct, CardCalculate, ButtonIcon, CardGroupChat, ButtonIconDashboard } from "../components/components";
+import { Button, CardSearchProduct, CardProduct, CardCategory, CardImage, CardCollectionProduct, CardProductWithPrice, CardBestSeller, CardCollectionBest, Divider, CardNewExcess, CardBestBrand, CardNewProduct, CardCalculate, ButtonIcon, CardGroupChat, ButtonIconDashboard, Offcanvas } from "../components/components";
 import HomeController from "../controllers/home_controller";
 import { Pagination, Autoplay, Navigation, Grid } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -39,8 +39,8 @@ class Home extends HomeController {
         return (
             <div className="home">
                 <ButtonIcon icon={IconAddCircleWhite} nameButton={"ADD NEW"} />
-                <ButtonIconDashboard icon={IconArrowBlack} notification={2}/>
-                <ButtonIconDashboard icon={IconArrowBlack} dropdown={"/profile"}/>
+                <ButtonIconDashboard icon={IconArrowBlack} notification={2} />
+                <ButtonIconDashboard icon={IconArrowBlack} dropdown={"/profile"} />
                 <div style={{ width: "509px" }}>
                     <CardGroupChat
                         title={"Group Title"}
@@ -50,6 +50,9 @@ class Home extends HomeController {
                         date={"25 MINS"}
                     />
                 </div>
+                <Offcanvas />
+                <ButtonIconDashboard icon="" dataBsToggle="offcanvas" dataBsTarget="#offcanvasRight" aria-controls="offcanvasRight"/>
+
                 <div className="home-header px-5">
                     <div className="home-header-description">
                         <div className="home-header-description-items">
