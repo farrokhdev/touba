@@ -111,3 +111,4 @@ export { default as ImageSideService4} from './images/4.jpg';
 export { default as IconAddCircleWhite} from './icons/icon-add-circle-outline.svg';
 export { default as ImageNasa} from './images/image-nasa.png';
 export { default as IconClose} from './icons/icon-close.svg';
+export { default as IconMarker} from './icons/icon-marker.svg';
