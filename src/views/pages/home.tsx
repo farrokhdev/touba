@@ -38,7 +38,7 @@ class Home extends HomeController {
         };
         return (
             <div className="home">
-                <ButtonIcon icon={IconAddCircleWhite} nameButton={"ADD NEW"} />
+                {/* <ButtonIcon icon={IconAddCircleWhite} nameButton={"ADD NEW"} />
                 <ButtonIconDashboard icon={IconArrowBlack} notification={2} />
                 <ButtonIconDashboard icon={IconArrowBlack} dropdown={"/profile"} />
                 <div style={{ width: "509px" }}>
@@ -54,7 +54,7 @@ class Home extends HomeController {
                 <ButtonIconDashboard icon="" dataBsToggle="offcanvas" dataBsTarget="#offcanvasRight" aria-controls="offcanvasRight" />
                 <div style={{ width: "793px" }}>
                     <CardCalculateProduct image={ImageTest} name={"Name Product"} price={15} number={10000} />
-                </div>
+                </div> */}
                 <div className="home-header px-5">
                     <div className="home-header-description">
                         <div className="home-header-description-items">
