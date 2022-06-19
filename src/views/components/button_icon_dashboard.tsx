@@ -12,9 +12,11 @@ interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
     notification?: number;
     icon: string;
     dropdown?: string;
+    dataBsToggle?: string;
+    dataBsTarget?: string;
 }
 
-export function ButtonIconDashboard({ onClick, notification, icon, dropdown }: Props): ReactElement {
+export function ButtonIconDashboard({ onClick, notification, icon, dropdown, dataBsToggle, dataBsTarget }: Props): ReactElement {
 
     const handleOnClick = useCallback((event: MouseEvent<HTMLButtonElement>) => {
         event.stopPropagation();
@@ -28,6 +30,8 @@ export function ButtonIconDashboard({ onClick, notification, icon, dropdown }: P
                     <button
                         className="button-icon-two"
                         onClick={handleOnClick}
+                        data-bs-toggle={dataBsToggle}
+                        data-bs-target={dataBsTarget}
                     >
                         <img src={icon} alt="" className="icon" />
                     </button>
