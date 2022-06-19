@@ -40,7 +40,7 @@ class Home extends HomeController {
             <div className="home">
                 <ButtonIcon icon={IconAddCircleWhite} nameButton={"ADD NEW"} />
                 <ButtonIconDashboard icon={IconArrowBlack} notification={2}/>
-                <ButtonIconDashboard icon={IconArrowBlack}/>
+                <ButtonIconDashboard icon={IconArrowBlack} dropdown={"/profile"}/>
                 <div style={{ width: "509px" }}>
                     <CardGroupChat
                         title={"Group Title"}

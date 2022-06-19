@@ -5,13 +5,16 @@ import {
     MouseEvent,
     ButtonHTMLAttributes
 } from "react";
+import { Link } from "react-router-dom";
+import { IconArrow } from "../../assets";
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
     notification?: number;
     icon: string;
+    dropdown?: string;
 }
 
-export function ButtonIconDashboard({ onClick, notification, icon }: Props): ReactElement {
+export function ButtonIconDashboard({ onClick, notification, icon, dropdown }: Props): ReactElement {
 
     const handleOnClick = useCallback((event: MouseEvent<HTMLButtonElement>) => {
         event.stopPropagation();
@@ -20,21 +23,42 @@ export function ButtonIconDashboard({ onClick, notification, icon }: Props): Rea
 
     return (
         <>
-            <div className="section-two">
-                <button
-                    className="button-icon-two"
-                    onClick={handleOnClick}
-                >
-                    <img src={icon} alt="" className="icon" />
-                </button>
-                {notification !== undefined ? (
-                    <span>
+            {dropdown === undefined || dropdown === "" ? (
+                <div className="section-two">
+                    <button
+                        className="button-icon-two"
+                        onClick={handleOnClick}
+                    >
+                        <img src={icon} alt="" className="icon" />
+                    </button>
+                    {notification !== undefined ? (
                         <span>
-                            {notification}
+                            <span>
+                                {notification}
+                            </span>
                         </span>
-                    </span>
-                ) : (null)}
-            </div>
+                    ) : (null)}
+                </div>
+            ) : (
+                <div className="section-one">
+                    <button
+                        className="button-icon-one"
+                        onClick={handleOnClick}
+                    >
+                        <img src={icon} alt="" className="icon" />
+                    </button>
+                    <Link to={dropdown}>
+                        <img src={IconArrow} className="mx-3" />
+                    </Link>
+                    {notification !== undefined ? (
+                        <span>
+                            <span>
+                                {notification}
+                            </span>
+                        </span>
+                    ) : (null)}
+                </div>
+            )}
         </>
     )
 }

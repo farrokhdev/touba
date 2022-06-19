@@ -6,6 +6,32 @@
         @include Border(1px, $gray, 8px);
         @include Display(flex, center, center);
     }
+  
+    >span {
+        position: absolute;
+        top: -10px;
+        left: 35px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50px;
+        background-color: $green;
+        @include Display(flex, center, center);
+        >span {
+            @include FontStyle(12px, 700, $white);
+            margin: 0;
+        }
+    }
+}
+.section-one {
+    position: relative;
+    @include Display(flex, center, center);
+    .button-icon-one {
+        width: 48px;
+        height: 48px;
+        @include Border(1px, $gray, 8px);
+        @include Display(flex, center, center);
+    }
+  
     >span {
         position: absolute;
         top: -10px;
