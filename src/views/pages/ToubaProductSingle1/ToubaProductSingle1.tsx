@@ -13,6 +13,7 @@ import Footer from "../../layout/footer";
 import TopNav from "../../layout/top_nav_home";
 import shose from "../../../assets/images/Rectangle1417.png";
 import Inquiry from "../../components/inquiry";
+import { useNavigate } from "react-router-dom";
 
 interface IProps {}
 
@@ -26,6 +27,10 @@ export class ToubaProductSingle1 extends BaseComponent<IProps, IState> {
   };
   test = "You are here: Touba >> Products";
 
+   navigateToDetail=()=>{
+    // this.navigate('/detail-product')
+    console.log(7)
+  }
    showInquiry=()=>{
     console.log('sal')
     this.setState({isShow:!this.state.isShow})
@@ -37,10 +42,11 @@ export class ToubaProductSingle1 extends BaseComponent<IProps, IState> {
       // this.setState({ isShow: true });
       console.log("Salam");
     };
+
     return (
       <div className="product-Single-Page">
         <div className="px-5">
-          <div className="smalText p-2">{this.test}</div>
+          <div className="smalText p-2" onClick={this.navigateToDetail}>{this.test}sss</div>
           <div className="row">
             <div className="col-9 p-2">
               <div>
@@ -62,7 +68,7 @@ export class ToubaProductSingle1 extends BaseComponent<IProps, IState> {
             <div className="bigText mt-3">You may also like</div>
             <div className="row mt-4">
               <div className="col-3 p-2">
-                <CardLike />
+                <CardLike navigate="" />
               </div>
               <div className="col-3 p-2">
                 <CardLike />
