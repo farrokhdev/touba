@@ -1,0 +1,24 @@
+.offcanvas-component {
+    .title {
+        @include FontStyle(24px, 700, $sorme);
+        position: relative;
+        top: 15px;
+        left: 80px;
+    }
+    .button-close {
+        width: 48px;
+        height: 48px;
+        background-color: $bgWhite;
+        @include Display(flex, center, center);
+        @include Border(0px , transparent, 100px);
+    }
+    .button-group {
+
+    }
+    .content {
+        &-title {
+            @include FontStyle(19px, 600, $sorme);
+            margin: 24px 0;
+        }
+    }
+}
