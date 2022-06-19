@@ -65,4 +65,5 @@ export { default as ComponentCapicityFilter } from './component_capicity_filter'
 export { default as InputTextPhoneNumber } from './input_text_phonenumber';
 export { default as DropDownBottomMenu } from './dropdown_bottom_menu';
 export { default as CardGroupChat } from './card_group_chat';
+export { default as ButtonIconDashboard } from './button_icon_dashboard';
 
