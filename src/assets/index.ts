@@ -109,3 +109,4 @@ export { default as ImageSideService2} from './images/2.jpg';
 export { default as ImageSideService3} from './images/3.jpg';
 export { default as ImageSideService4} from './images/4.jpg';
 export { default as IconAddCircleWhite} from './icons/icon-add-circle-outline.svg';
+export { default as ImageNasa} from './images/image-nasa.png';
