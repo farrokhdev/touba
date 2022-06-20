@@ -1,0 +1,16 @@
+.component-keyword {
+  background: #21c085;
+  border-radius: 12px 12px 0px 0px;
+  padding: 3%;
+  .text-keyword {
+    @include FontStyle(18px, 600, $white);
+  }
+  .btn-keyword{
+    background: #FFFFFF;
+border-radius: 57px;
+border: none;
+outline: none;
+padding: 9px 20px;
+@include FontStyle(14px,500,#3C557A)
+  }
+}

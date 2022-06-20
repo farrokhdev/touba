@@ -3558,6 +3558,32 @@ a {
   font-size: 16px;
   color: #3c557a !important; }
 
+.component-keyword {
+  background: #21c085;
+  border-radius: 12px 12px 0px 0px;
+  padding: 3%; }
+  .component-keyword .text-keyword {
+    width: auto;
+    height: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF !important; }
+  .component-keyword .btn-keyword {
+    background: #FFFFFF;
+    border-radius: 57px;
+    border: none;
+    outline: none;
+    padding: 9px 20px;
+    width: auto;
+    height: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #3C557A !important; }
+
 .top-nav-home {
   width: 100%;
   min-height: 114px;

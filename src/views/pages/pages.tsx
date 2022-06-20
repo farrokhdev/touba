@@ -5,7 +5,8 @@ import {
   ComponentBinaRazan,
   Map,
   ComponentMapBox,
-  ComponentProgress
+  ComponentProgress,
+  ComponentKeyWord
 } from "../components/components";
 import { BottomNav, Footer, TopNav, TopNavHome } from "../layout/layout";
 import AboutusPage from "./AboutusPage/AboutusPage";
@@ -30,6 +31,9 @@ function Pages() {
       </div>
       <div className="mt-4 mb-4">
         <ComponentProgress/>
+      </div>
+      <div className="col-4 mt-2">
+        <ComponentKeyWord/>
       </div>
       {location.pathname.includes("/login") ||
       location.pathname.includes("/register") ? null : (
