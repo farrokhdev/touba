@@ -65,3 +65,6 @@ export { default as ComponentCapicityFilter } from './component_capicity_filter'
 export { default as InputTextPhoneNumber } from './input_text_phonenumber';
 export { default as DropDownBottomMenu } from './dropdown_bottom_menu';
 
+export { default as Map } from './component_map';
+export { default as ComponentMapBox } from './component_map_box';
+

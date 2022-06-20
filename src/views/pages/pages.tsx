@@ -3,6 +3,8 @@ import { Home, Login } from ".";
 import { CHART, Chart } from "../components/chart";
 import {
   ComponentBinaRazan,
+  Map,
+  ComponentMapBox,
 } from "../components/components";
 import { BottomNav, Footer, TopNav, TopNavHome } from "../layout/layout";
 import AboutusPage from "./AboutusPage/AboutusPage";
@@ -21,14 +23,14 @@ function Pages() {
 
   return (
     <div>
+      <div className="bg-white mb-4" style={{ width: "376px", height: "300px" }}>
+        {" "}
+        <ComponentMapBox />{" "}
+      </div>
       {location.pathname.includes("/login") ||
-        location.pathname.includes("/register") ? null : (
+      location.pathname.includes("/register") ? null : (
         <>
-          {location.pathname === "/" ? (
-            <TopNavHome />
-          ) : (
-            <TopNav />
-          )}
+          {location.pathname === "/" ? <TopNavHome /> : <TopNav />}
           <BottomNav />
         </>
       )}
@@ -47,12 +49,11 @@ function Pages() {
         <Route path="/special-offer" element={<ToubaSpecialOffers />} />
         <Route path="/membership" element={<MembershipPage />} />
         <Route path="/side-service" element={<SideServicePage />} />
-
       </Routes>
       {location.pathname.includes("/login") ||
-        location.pathname.includes("/register") ? null : (
+      location.pathname.includes("/register") ? null : (
         <>
-        <Footer/>
+          <Footer />
         </>
       )}
     </div>
