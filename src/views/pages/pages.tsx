@@ -5,6 +5,7 @@ import {
   ComponentBinaRazan,
   Map,
   ComponentMapBox,
+  ComponentProgress
 } from "../components/components";
 import { BottomNav, Footer, TopNav, TopNavHome } from "../layout/layout";
 import AboutusPage from "./AboutusPage/AboutusPage";
@@ -26,6 +27,9 @@ function Pages() {
       <div className="bg-white mb-4" style={{ width: "376px", height: "300px" }}>
         {" "}
         <ComponentMapBox />{" "}
+      </div>
+      <div className="mt-4 mb-4">
+        <ComponentProgress/>
       </div>
       {location.pathname.includes("/login") ||
       location.pathname.includes("/register") ? null : (
