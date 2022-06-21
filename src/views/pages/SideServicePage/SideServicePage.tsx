@@ -245,7 +245,7 @@ export default class SideServicePage extends BaseComponent<IProps, IState> {
                 </div>
                 <div className="d-flex flex-column align-items-start justify-content-between form-Container">
                   <div className="d-flex flex-row align-items-center w-100">
-                    <div className="input-Container w-50">
+                    <div className="input-Container w-50 ">
                       <label>Full Name</label>
                       <img src={IconProfile} alt="profile" />
                       <input placeholder="Saber Noori" className="input-Icon" />

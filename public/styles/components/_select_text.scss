@@ -6,28 +6,52 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     &-input-text {
         width: 50%;
         height: 100%;
         border: none;
         background-color: transparent;
         margin: 0 20px;
+
         &::placeholder {
-          @include FontStyle(16px, 400, $sorme);  
-          text-align: center;
+            @media (max-width: 370px) {
+                @include FontStyle(16px, 400, $sorme);
+            }
+
+            @media (min-width: 371px) {
+                @include FontStyle(16px, 400, $sorme);
+            }
+
+            @media (min-width: 1181px) {
+                @include FontStyle(10px, 400, $sorme);
+            }
+
+            @media (min-width: 1440px) {
+                @include FontStyle(13px, 400, $sorme);
+            }
+
+            @media (min-width: 1900px) {
+                @include FontStyle(16px, 400, $sorme);
+            }
+            text-align: center;
         }
+
         &:focus {
             outline: none;
         }
     }
+
     &-divider {
         width: 1px;
         height: 90%;
         background-color: $gray;
         margin: auto 5px;
     }
+
     .select-component {
         width: 50%;
+
         >button {
             @include Display(flex, space-between, center);
             border: none;

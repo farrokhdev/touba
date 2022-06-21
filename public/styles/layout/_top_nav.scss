@@ -3,7 +3,7 @@
     height: 173px;
     background-color: $white;
     &-items {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
 
         @include Display(flex, space-between, center);
@@ -13,7 +13,7 @@
         }
         &-links {
             width: 65%;
-            @include Display(flex, space-evenly, center);
+            @include Display(flex, space-between, center);
             .link {
                 .text-link {
                     @include FontStyle(14px, 600, $sorme);
@@ -27,9 +27,9 @@
         }
     }
     &-content {
-        width: 90%;
-        margin: 24px auto;
-        @include Display(flex, space-evenly, center);
+        width: 100%;
+        margin: 24px 0;
+        @include Display(flex, space-between, center);
         &-brand {
             @media (max-width: 900px) {
                 width: 20%;
@@ -50,7 +50,7 @@
             width: 70%;
         }
         &-button {
-            width: 2%;
+            width: 5%;
         }
     }
 }

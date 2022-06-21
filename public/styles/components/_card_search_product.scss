@@ -43,17 +43,19 @@
                 margin: 20px;
             }
             @include FontStyle(16px, 400, $sorme);
-            margin: 0px 20px 40px 20px; 
+            margin: 0px 34px 40px 34px; 
         }
         &-group {
             @media (max-width: 1180px) {
                 @include Display(flex , space-around, center, row, wrap);
             }
             @include Display(flex , space-around, center);
-            width: 100%;
+            width: 97.5%;
+            margin: 0 auto;
             .button-component {
                 width: 40%;
                 margin: 0 10px;
+                z-index: 0;
             }
             >div {
                 margin: 0 10px;

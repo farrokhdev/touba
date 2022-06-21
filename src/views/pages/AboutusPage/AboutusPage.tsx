@@ -12,7 +12,7 @@ import {
   ImageAboutus,
   ImageAboutusDesk,
 } from "../../../assets";
-import aboutUs from '../../../assets/images/aboutAus.svg'
+import aboutUs from "../../../assets/images/aboutAus.svg";
 import {
   ComponentMission,
   ComponentOurTeam,
@@ -26,7 +26,7 @@ export default class AboutusPage extends BaseComponent<IProps, IState> {
   state: IState = {};
   render() {
     return (
-      <div className="aboutus-Page w-100">
+      <div className="aboutus-Page ">
         <div className="section1 d-flex flex-row align-items-center ">
           <div className="desc d-flex flex-column  justify-content-center ">
             <span>
@@ -49,27 +49,34 @@ export default class AboutusPage extends BaseComponent<IProps, IState> {
           <div className="mission d-flex flex-column align-items-start justify-content-center">
             <span className="title mx-auto">Mission</span>
             <div className="mission-Childs d-flex flex-row align-items-start justify-content-center mx-auto">
-              <ComponentMission
-                title="Title Here"
-                desc=" Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+              <div>
+                <ComponentMission
+                  title="Title Here"
+                  desc=" Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                   diam nonummy nibh euismod tincidunt ut laoreet dolore magna
                   aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
                   nostrud exerci tation"
-              />
-              <ComponentMission
-                title="Title Here"
-                desc=" Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                nostrud exerci tation"
-              />
-              <ComponentMission
-                title="Title Here"
-                desc=" Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-              diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-              aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-              nostrud exerci tation"
-              />
+                />
+              </div>
+              <div style={{marginLeft:'2%'}}>
+                <ComponentMission
+                  title="Title Here"
+                  desc=" Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                  aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                  nostrud exerci tation"
+                />
+              </div>
+
+              <div style={{marginLeft:'2%'}}>
+                <ComponentMission
+                  title="Title Here"
+                  desc=" Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                  aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                  nostrud exerci tation"
+                />
+              </div>
             </div>
           </div>
         </div>

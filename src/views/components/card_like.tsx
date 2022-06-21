@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import greenHeart from "../../assets/images/greenHeart.png";
+import greenHeart from "../../assets/icons/icon-heart.svg";
 import shose from "../../assets/images/00.png";
 import settings from "../../assets/images/settings.png";
 import { useNavigate } from "react-router-dom";

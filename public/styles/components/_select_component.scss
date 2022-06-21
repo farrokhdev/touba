@@ -12,14 +12,31 @@
         border-radius: 8px;
         background-color: transparent;
         cursor: pointer;
-        @include FontStyle(16px, 400, $sorme);
         &-icon {
             margin: 0 10px;
             cursor: pointer;
         }
         &-text {
-            @include FontStyle(16px, 400, $sorme);
-            margin: 0 10px;
+            @media (max-width: 370px) {
+                @include FontStyle(16px, 400, $sorme);
+            }
+
+            @media (min-width: 371px) {
+                @include FontStyle(16px, 400, $sorme);
+            }
+
+            @media (min-width: 1181px) {
+                @include FontStyle(10px, 400, $sorme);
+            }
+
+            @media (min-width: 1440px) {
+                @include FontStyle(13px, 400, $sorme);
+            }
+
+            @media (min-width: 1900px) {
+                @include FontStyle(16px, 400, $sorme);
+            }
+            margin: auto 10px;
             cursor: pointer;
         }
     }
@@ -28,6 +45,7 @@
         height: auto;
         background-color: $white;
         border-radius: 8px;
+        z-index: 3;
         @include Display(flex, start, flex-start, column);
         &-links {
             width: 95%;
