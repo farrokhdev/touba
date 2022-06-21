@@ -6,7 +6,8 @@ import {
   Map,
   ComponentMapBox,
   ComponentProgress,
-  ComponentKeyWord
+  ComponentKeyWord,
+  ComponentTableORder
 } from "../components/components";
 import { BottomNav, Footer, TopNav, TopNavHome } from "../layout/layout";
 import AboutusPage from "./AboutusPage/AboutusPage";
@@ -29,12 +30,13 @@ function Pages() {
         {" "}
         <ComponentMapBox />{" "}
       </div>
-      <div className="mt-4 mb-4">
+      <div className="mt-4 col-4 mb-4">
         <ComponentProgress/>
       </div>
       <div className="col-4 mt-2">
         <ComponentKeyWord/>
       </div>
+      <div className="bg-white"><ComponentTableORder/></div>
       {location.pathname.includes("/login") ||
       location.pathname.includes("/register") ? null : (
         <>

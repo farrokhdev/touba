@@ -3547,7 +3547,7 @@ a {
   font-weight: 400;
   font-size: 16px;
   color: #3c557a !important;
-  margin-left: 30%; }
+  margin-left: 4%; }
 
 .component-progress .percent-amount {
   width: auto;
@@ -3557,6 +3557,66 @@ a {
   font-weight: 700;
   font-size: 16px;
   color: #3c557a !important; }
+
+.component-keyword {
+  background: #21c085;
+  border-radius: 12px 12px 0px 0px;
+  padding: 3%; }
+  .component-keyword .text-keyword {
+    width: auto;
+    height: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF !important; }
+  .component-keyword .btn-keyword {
+    background: #FFFFFF;
+    border-radius: 57px;
+    border: none;
+    outline: none;
+    padding: 9px 20px;
+    width: auto;
+    height: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #3C557A !important; }
+
+.table thead tr th {
+  border: inherit; }
+
+.table-header {
+  color: red !important;
+  width: 100%; }
+
+.table {
+  border: 1px inherit #B1B4C1;
+  padding: 3%; }
+
+.table > thead > th > {
+  border-style: solid; }
+
+.table > thead {
+  background-color: #cf1717 !important;
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #6B798C !important;
+  border: 1px none #B1B4C1 !important;
+  border-collapse: collapse;
+  border: none;
+  outline: none; }
+
+.table > thead > tr {
+  text-align: center; }
+
+.table > tbody > tr {
+  text-align: center; }
 
 .top-nav-home {
   width: 100%;

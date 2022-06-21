@@ -3584,6 +3584,87 @@ a {
     font-size: 14px;
     color: #3C557A !important; }
 
+.table-order table {
+  border: inherit;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center; }
+
+.table-order #table-order td {
+  padding: 3% 1%;
+  border-bottom: 1px solid #b1b4c1;
+  text-align: center; }
+
+.table-order #table-order tr > th {
+  padding: 1% 2%;
+  background-color: #d6d6d6 !important;
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #6b798c !important;
+  text-align: center; }
+
+.table-order .text-hashtag {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  color: #FFFFFF;
+  background: #21c085;
+  box-shadow: 0px 9px 11px rgba(230, 57, 70, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.table-order .text-order-number {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #3C557A !important;
+  text-align: center; }
+
+.table-order .text-payment {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  color: #FC4A56 !important;
+  text-align: center; }
+
+.table-order .text-status {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #21C085 !important;
+  text-align: center; }
+
+.table-order .text-client {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #3C557A !important;
+  text-align: center; }
+
+.table-order .produt-box-number {
+  background: #F3F4F6;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 .top-nav-home {
   width: 100%;
   min-height: 114px;

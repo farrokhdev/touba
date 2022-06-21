@@ -69,6 +69,7 @@ export { default as Map } from './component_map';
 export { default as ComponentMapBox } from './component_map_box';
 export { default as ComponentProgress } from './component_progress';
 export { default as ComponentKeyWord } from './component_key_word';
+export { default as ComponentTableORder } from './component_table_order';
 
 
 
