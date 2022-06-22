@@ -8750,4 +8750,474 @@ a {
     font-size: 40px !important;
   }
 }
+
+.company-Profile-Page {
+  position: relative;
+}
+
+.company-Profile-Page .background-Img {
+  position: relative;
+  background-color: #2c246c;
+}
+
+.company-Profile-Page .background-Img img {
+  height: 300px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  mix-blend-mode: luminosity;
+  opacity: 0.2;
+}
+
+.company-Profile-Page .content {
+  width: 90%;
+  position: absolute;
+  top: 15%;
+  right: 3%;
+}
+
+.company-Profile-Page .content .company-Benefit {
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0 25px;
+}
+
+.company-Profile-Page .content .company-Benefit span:first-child {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  color: #FFFFFF !important;
+}
+
+.company-Profile-Page .content .company-Benefit span:last-child {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #FFFFFF !important;
+}
+
+.company-Profile-Page .content .rate img {
+  width: 20px;
+  height: 20px;
+}
+
+.company-Profile-Page .content .company-Nav {
+  margin-top: 100px;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  height: 90px;
+}
+
+.company-Profile-Page .content .company-Nav button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  margin: 0 35px;
+  text-transform: uppercase;
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #3c557a !important;
+}
+
+.company-Profile-Page .content .company-Nav .input-Container img {
+  -webkit-filter: brightness(0) saturate(100%) invert(53%) sepia(19%) saturate(423%) hue-rotate(175deg) brightness(84%) contrast(86%);
+          filter: brightness(0) saturate(100%) invert(53%) sepia(19%) saturate(423%) hue-rotate(175deg) brightness(84%) contrast(86%);
+}
+
+.company-Profile-Page .content .company-Nav .input-Container div {
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  padding: 10px 0px 10px 15px;
+}
+
+.company-Profile-Page .content .company-Nav .input-Container input {
+  outline: none;
+  border: none;
+  padding: 0 15px;
+  width: 360px;
+}
+
+.company-Profile-Page .content .content-Conteiner {
+  width: 100%;
+}
+
+.company-Profile-Page .content .sidebar {
+  width: 25%;
+}
+
+.company-Profile-Page .content .sidebar .menu {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.company-Profile-Page .content .sidebar .menu .title {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  color: #3c557a !important;
+  border-bottom: 1px solid #21C085;
+  padding: 8px 0;
+  margin-bottom: 50px;
+}
+
+.company-Profile-Page .content .sidebar .menu ul {
+  margin-top: 50px;
+  list-style-type: none;
+}
+
+.company-Profile-Page .content .sidebar .menu ul li {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #3c557a !important;
+  margin: 12px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.company-Profile-Page .content .sidebar .menu ul li span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.company-Profile-Page .content .sidebar .menu ul li span::before {
+  content: "\2022";
+  font-size: 30px;
+  color: #21C085;
+  font-weight: bold;
+  display: inline-block;
+  width: 20px;
+  margin-left: -1em;
+}
+
+.company-Profile-Page .content .supplier {
+  background-color: #FFFFFF;
+  padding: 30px;
+  border-radius: 12px;
+  margin-top: 25px;
+  min-width: 330px;
+}
+
+.company-Profile-Page .content .supplier .title {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  color: #3c557a !important;
+}
+
+.company-Profile-Page .content .supplier .supplier-Info {
+  margin: 30px 0;
+}
+
+.company-Profile-Page .content .supplier .supplier-Info img {
+  width: 85px;
+  height: 85px;
+}
+
+.company-Profile-Page .content .supplier .supplier-Info span:first-child {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #3c557a !important;
+}
+
+.company-Profile-Page .content .supplier .supplier-Info span:last-child {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  color: #6b798c !important;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.company-Profile-Page .content .supplier button {
+  background: #21c085;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 63px;
+}
+
+.company-Profile-Page .content .supplier button span {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #FFFFFF !important;
+  text-transform: uppercase;
+}
+
+.company-Profile-Page .content .company-Profile-Content {
+  margin-left: 20px;
+  width: 75%;
+}
+
+.company-Profile-Page .content .company-Profile-Content .company {
+  background-color: #FFFFFF;
+  padding: 50px 40px;
+  border-radius: 12px;
+  margin-top: 30px;
+}
+
+.company-Profile-Page .content .company-Profile-Content .title {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  color: #3c557a !important;
+}
+
+.company-Profile-Page .content .company-Profile-Content img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin: 40px 0;
+}
+
+.company-Profile-Page .content .company-Profile-Content p {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #3c557a !important;
+}
+
+.company-Profile-Page .content .company-Profile-Content p:last-child {
+  background-color: #f3f4f6;
+  border-radius: 12px;
+  padding: 50px 70px 40px 30px;
+}
+
+.company-Profile-Page .content .company-Profile-Content p:last-child span {
+  padding: 20px 0;
+}
+
+.company-Profile-Page .content .company-Profile-Content ul {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  background-color: #f3f4f6;
+  border-radius: 12px;
+  margin-top: 30px;
+}
+
+.company-Profile-Page .content .company-Profile-Content ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  padding: 0 20px;
+}
+
+.company-Profile-Page .content .company-Profile-Content ul li:nth-child(odd) {
+  background-color: #FFFFFF;
+}
+
+.company-Profile-Page .content .company-Profile-Content ul li:nth-child(even) {
+  background-color: rgba(243, 244, 246, 0.5);
+}
+
+.company-Profile-Page .content .company-Profile-Content ul li img {
+  width: 210px;
+  height: 150px;
+}
+
+.company-Profile-Page .content .company-Profile-Content ul .imageField {
+  height: 180px !important;
+}
+
+.company-Profile-Page .content .company-Profile-Content ul .field-Name {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6b798c !important;
+  min-width: 300px;
+}
+
+.company-Profile-Page .content .company-Profile-Content ul .field-Content {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #3c557a !important;
+}
+
+.company-Profile-Page .content .company-Profile-Content ul .redText {
+  color: #fc4a56 !important;
+}
+
+.company-Profile-Page .content .company-Profile-Content ul .greenText {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #21C085 !important;
+  margin-left: 70px;
+}
+
+.company-Profile-Page .content .contactus {
+  background-color: #FFFFFF;
+  padding: 50px 40px;
+  border-radius: 12px;
+}
+
+.company-Profile-Page .content .contactus .contact {
+  width: 80%;
+  border-right: 1px solid #d6d6d6;
+}
+
+.company-Profile-Page .content .contactus .title {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  color: #3c557a !important;
+}
+
+.company-Profile-Page .content .contactus-Item span:first-child {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #6b798c !important;
+}
+
+.company-Profile-Page .content .contactus-Item span:last-child {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #3c557a !important;
+}
+
+.company-Profile-Page .prfileImg {
+  width: 100px;
+  height: 100px;
+}
+
+.company-Profile-Page .diamond {
+  width: 100px;
+  height: 27px;
+}
+
+.company-Profile-Page .region-Container {
+  width: 140px;
+  height: 52px;
+  background-color: rgba(60, 85, 122, 0.5);
+  border-radius: 63px;
+}
+
+.company-Profile-Page .region-Container .region span:first-child {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  color: #6b798c !important;
+  text-transform: uppercase;
+}
+
+.company-Profile-Page .region-Container .region span:last-child {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF !important;
+}
+
+.company-Profile-Page .company-Name {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  color: #FFFFFF !important;
+}
+
+.marginButton {
+  margin-bottom: 4600px;
+}
+
+.marginButtonLow {
+  margin-bottom: 2180px;
+}
+
+.marginButtomCon {
+  margin-bottom: 800px;
+}
 /*# sourceMappingURL=app.css.map */

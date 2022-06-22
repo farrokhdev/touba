@@ -13,6 +13,7 @@ import HelpPage from "./HelpPage/HelpPage";
 import MembershipPage from "./MembershipPage/MembershipPage";
 import ToubaExcessCapacity from "./ToubaExcessCapacity/ToubaExcessCapacity";
 import SideServicePage from "./SideServicePage/SideServicePage";
+import CompanyProfile from "./companyProfile";
 
 function Pages() {
   const location = useLocation();
@@ -41,6 +42,7 @@ function Pages() {
         <Route path="/special-offer" element={<ToubaSpecialOffers />} />
         <Route path="/membership" element={<MembershipPage />} />
         <Route path="/side-service" element={<SideServicePage />} />
+        <Route path="/company-profile" element={<CompanyProfile />} />
       </Routes>
       {location.pathname.includes("/login") ||
       location.pathname.includes("/register") ||
