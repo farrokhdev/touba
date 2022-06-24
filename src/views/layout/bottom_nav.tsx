@@ -158,7 +158,7 @@ export function BottomNav() {
                       active={active === name.id ? true : false}
                       onClick={() => handleActiveLink(name.id)}
                     />
-                    <Divider />
+                    <Divider direction={"vertical"} />
                   </div>
                 ))}
               </div>

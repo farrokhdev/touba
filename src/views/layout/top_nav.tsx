@@ -43,7 +43,7 @@ export function TopNav() {
                     </Link>
                 </div>
             </div>
-            <Divider/>
+            <Divider direction={"vertical"}/>
             <div className="top-nav-content">
                 <div className="top-nav-content-brand">
                     <img
