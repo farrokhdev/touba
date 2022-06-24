@@ -1,10 +1,18 @@
 import { ReactElement, memo } from "react";
 
-export function Divider(): ReactElement {
+interface Props {
+    direction: "horizontal" | "vertical";
+}
+
+export function Divider({direction}: Props): ReactElement {
 
     return (
-        <div className="hr">
-            
+        <div className={direction === "vertical"  ? (
+            "hr"
+        ) : (
+            "hr-horizontal"
+        )}>
+
         </div>
     )
 }
