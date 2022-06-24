@@ -125,3 +125,8 @@ export { default as ImageProfileSupplier} from './images/profileSuppiler.png';
 export { default as IconLocation} from './icons/icon-location-outline.svg';
 export { default as IconTimeCircle} from './icons/icon-time-circle.svg';
 export { default as IconCalling} from './icons/icon-calling.svg';
+export { default as IconLogoSingle} from './icons/icon-logo-single1.svg';
+export { default as IconOntimeBlack} from './icons/icon-ontime-black.svg';
+export { default as IconEmailBlack} from './icons/icon-email-black.svg';
+export { default as ImageLadan} from './images/ladan.png';
+export { default as IconNotification} from './icons/icon-notification.svg';

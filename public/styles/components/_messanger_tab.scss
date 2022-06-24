@@ -1,0 +1,28 @@
+.messenger-Tab {
+    background-color: $bgWhite;
+    border-radius: 75px;
+    padding: 8px;
+    button {
+        outline: none;
+        border: none;
+        padding: 10px 23px;
+        background-color: transparent;
+        .tab-Title {
+            @include FontStyle(16px, 400, $lightSorme);
+        }
+    }
+    .active-Tab {
+        background: $white !important;
+        box-shadow: 0px 9px 11px rgba(107, 121, 140, 0.28);
+        border-radius: 47px;
+        .tab-Title {
+            @include FontStyle(16px, 600, $lightSorme);
+        }
+    }
+    .tab-Amount {
+        @include FontStyle(16px, 600, $white);
+        background: #21c085;
+        border-radius: 50%;
+        padding: 0 7px;
+    }
+}
