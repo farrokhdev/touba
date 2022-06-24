@@ -31,7 +31,7 @@ export function Offcanvas({children }: Props): ReactElement {
                         <h6 className="content-title">
                             Messages
                         </h6>
-                        <Divider/>
+                        <Divider direction={"vertical"}/>
                         <div className="content-body">
                             {children}
                         </div>

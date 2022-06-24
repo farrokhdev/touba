@@ -91,7 +91,7 @@ export function DropDownBottomMenu({onClose}: Props): ReactElement {
                                     active={active === name.id ? true : false}
                                     onClick={() => handleActiveLink(name.id)}
                                 />
-                                <Divider />
+                                <Divider direction={"vertical"} />
                             </div>
                         ))}
                     </div>

@@ -126,13 +126,13 @@ const ComponentDetailPRoductSideCard = () => {
       <div className="d-flex justify-content-center align-items-center mt-4">
         <div className="row d-flex justify-content-center align-items-center">
           <div className="col-5 pl-2">
-            <Divider />
+            <Divider direction={"vertical"} />
           </div>
           <div className="col-2 ">
             <div className="text-desc text-center">Contact</div>
           </div>
           <div className="col-5 pr-2">
-            <Divider />
+            <Divider direction={"vertical"} />
           </div>
         </div>
       </div>
