@@ -7,7 +7,7 @@ const ComponentKeyWord = () => {
         <div className="text-keyword">Top Keywords</div>
       </div>
       <div className="row d-flex align-items-center mt-3">
-        <div className="col-4" >
+        <div className="col-5" >
           <button className="btn-keyword">Wheel Loader</button>
         </div>
         <div className="col-3 ">
@@ -16,7 +16,6 @@ const ComponentKeyWord = () => {
         <div className="col-3">
           <button className="btn-keyword">Excavator</button>
         </div>
-        
       </div>
     </div>
   );

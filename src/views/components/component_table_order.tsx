@@ -4,7 +4,7 @@ import chinchin from "../../assets/images/chinchin.png";
 import zarmakaron from "../../assets/images/zarmakaron.png";
 import pasta from "../../assets/images/pasta.png";
 import { ButtonComponent } from "./button";
-
+import iconG from '../../assets/icons/icon-girls.svg'
 const ComponentTableORder = () => {
   return (
     <div className="table-order">

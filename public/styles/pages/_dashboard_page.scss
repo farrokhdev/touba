@@ -1,0 +1,8 @@
+.btn-add-new{
+    background: #21C085;
+border-radius: 8px;
+text-align: center;
+letter-spacing: 0.75px;
+text-transform: uppercase;
+@include FontStyle(14px,600,$white)
+}  

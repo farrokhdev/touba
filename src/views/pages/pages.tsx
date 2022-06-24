@@ -7,7 +7,8 @@ import {
   ComponentMapBox,
   ComponentProgress,
   ComponentKeyWord,
-  ComponentTableORder
+  ComponentTableORder,
+  ComponentDashboardHeader,
 } from "../components/components";
 import { BottomNav, Footer, TopNav, TopNavHome } from "../layout/layout";
 import AboutusPage from "./AboutusPage/AboutusPage";
@@ -20,23 +21,16 @@ import HelpPage from "./HelpPage/HelpPage";
 import MembershipPage from "./MembershipPage/MembershipPage";
 import ToubaExcessCapacity from "./ToubaExcessCapacity/ToubaExcessCapacity";
 import SideServicePage from "./SideServicePage/SideServicePage";
+import ComponentLineChart from "../components/component_line_chart";
+import DashboardPage from "./dashboard/dasboard";
 
 function Pages() {
   const location = useLocation();
+  {if(location.pathname.includes("/dashboard") ){return <DashboardPage />} }
 
   return (
     <div>
-      <div className="bg-white mb-4" style={{ width: "376px", height: "300px" }}>
-        {" "}
-        <ComponentMapBox />{" "}
-      </div>
-      <div className="mt-4 col-4 mb-4">
-        <ComponentProgress/>
-      </div>
-      <div className="col-4 mt-2">
-        <ComponentKeyWord/>
-      </div>
-      <div className="bg-white"><ComponentTableORder/></div>
+      <ComponentLineChart/>
       {location.pathname.includes("/login") ||
       location.pathname.includes("/register") ? null : (
         <>
@@ -45,6 +39,7 @@ function Pages() {
         </>
       )}
       {location.pathname.includes("/profile") ? <ComponentBinaRazan /> : null}
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutusPage />} />
@@ -59,6 +54,7 @@ function Pages() {
         <Route path="/special-offer" element={<ToubaSpecialOffers />} />
         <Route path="/membership" element={<MembershipPage />} />
         <Route path="/side-service" element={<SideServicePage />} />
+
       </Routes>
       {location.pathname.includes("/login") ||
       location.pathname.includes("/register") ? null : (

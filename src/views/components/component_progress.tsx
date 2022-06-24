@@ -5,7 +5,7 @@ const ComponentProgress = () => {
   return (
     <div className="px-2">
       <div className="row component-progress ">
-        <div className="d-flex align-items-center col-6">
+        <div className="d-flex align-items-center col-8">
           <div>
             <img src={iconedit} />
           </div>
@@ -13,7 +13,7 @@ const ComponentProgress = () => {
             <div className="text-header w-100">Complete the profile</div>
           </div>
         </div>
-        <div className="col-6 text-end">
+        <div className="col-4 text-end">
           <div className="percent-amount">85%</div>
         </div>
       </div>
