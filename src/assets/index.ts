@@ -112,3 +112,6 @@ export { default as IconAddCircleWhite} from './icons/icon-add-circle-outline.sv
 export { default as ImageNasa} from './images/image-nasa.png';
 export { default as IconClose} from './icons/icon-close.svg';
 export { default as IconMarker} from './icons/icon-marker.svg';
+export { default as IconPersonCircle} from './icons/icon-person-circle.svg';
+export { default as ImageFlagChine } from './images/china.png';
+export { default as ImageOil } from './images/image-oil.png';
