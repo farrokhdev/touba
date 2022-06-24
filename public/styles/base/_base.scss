@@ -25,16 +25,16 @@
 }
 
 @mixin Display ($display: flex, $justify: start, $align: flex-start, $direction: row, $wrap: nowrap) {
-  display: $display;
-  justify-content: $justify;
-  align-items: $align;
-  flex-direction: $direction;
-  flex-wrap: $wrap;
+  display: $display !important;
+  justify-content: $justify !important;
+  align-items: $align !important;
+  flex-direction: $direction !important;
+  flex-wrap: $wrap !important;
 }
 
 @mixin Border ($size: 0px, $color: transparent, $radius: 0px) {
-  border: $size solid $color;
-  border-radius: $radius;
+  border: $size solid $color !important;
+  border-radius: $radius !important;
 }
 
 html,
