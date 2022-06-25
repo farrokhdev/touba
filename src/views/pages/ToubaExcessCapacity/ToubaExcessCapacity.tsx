@@ -14,6 +14,7 @@ import TopNav from "../../layout/top_nav_home";
 import honur from "../../../assets/images/honur.svg";
 import image_test from "../../../assets/images/image-test.png";
 import { CardProduct } from "../../components/card_product";
+import Inquiry from "../../components/inquiry";
 
 interface IProps {}
 
@@ -37,9 +38,13 @@ const TEST = [
 ];
 
 export class ToubaExcessCapacity extends BaseComponent<IProps, IState> {
-  test = "You are here: Touba >> Excess";
+  test = "You are here: Touba >> Excess Capacity";
   state: IState = {
     isShow: false,
+  };
+  showInquiry = () => {
+    console.log("sal");
+    this.setState({ isShow: !this.state.isShow });
   };
   render() {
     return (
@@ -60,6 +65,7 @@ export class ToubaExcessCapacity extends BaseComponent<IProps, IState> {
             <div className="col-3 p-2">
               <div>
                 <ComponentProductSideCard
+                  handleAddToCart={() => this.showInquiry()}
                 />
               </div>
             </div>
@@ -173,7 +179,17 @@ export class ToubaExcessCapacity extends BaseComponent<IProps, IState> {
             </div>
           </div>
         </div>
-        <Footer />
+        {this.state.isShow ? (
+          <div className="product-Inquiry d-flex flex-row">
+            <div
+              className="blur-Background"
+              onClick={() => this.setState({ isShow: false })}
+            >
+              <span>sv</span>
+            </div>
+            <Inquiry />
+          </div>
+        ) : null}
       </div>
     );
   }

@@ -1,7 +1,7 @@
 .aboutus-Page {
     .section1 {
         width: 98%;
-        height: 100vh;
+        height: 100%;
         .img-Container {
             background-color: $green;
             width: 50%;
@@ -51,7 +51,7 @@
         }
         .mission-Child {
             margin: 0 20px;
-            padding: 36px; 
+            padding: 36px;
             width: 33%;
             background: $white;
             border-radius: 16px;

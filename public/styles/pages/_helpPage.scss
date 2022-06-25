@@ -1,4 +1,6 @@
 .help-Page {
+    position: relative;
+    margin-bottom: 1520px;
     .help-Content {
         position: absolute;
         z-index: 20;
@@ -37,7 +39,8 @@
             }
         }
         .faq-content {
-            max-width: 75%;
+            width: 80%;
+            max-width: 80%;
         }
         .banner {
             background-color: $green;
