@@ -2,13 +2,11 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import {
   IconActivity,
-  IconBag,
-  IconCategory,
+  IconBagGray,
   IconCategoryDashboard,
   IconChart,
   IconChat,
   IconFolder,
-  IconHeart,
   IconHeartDashboard,
   IconHome,
   IconSetting,
@@ -26,7 +24,7 @@ const Dashboard: React.FC<IProps> = ({}) => {
       <div className="w-100 d-flex flex-column align-items-start justify-content-between">
         <label>General</label>
         <NavLink
-          to="/#"
+          to="/excess"
           className={({ isActive = String }) =>
             isActive
               ? "w-100 d-flex flex-row align-items-center active-Navlink"
@@ -55,8 +53,8 @@ const Dashboard: React.FC<IProps> = ({}) => {
               : "w-100 d-flex flex-row align-items-center"
           }
         >
-          <img src={IconBag} />
-          Orders
+          <img src={IconBagGray} />
+          My Orders
         </NavLink>
         <NavLink
           to="/reviews"
@@ -67,7 +65,7 @@ const Dashboard: React.FC<IProps> = ({}) => {
           }
         >
           <img src={IconChat} />
-          Reviews
+          My Reviews
           <span className="numOfReviews">4</span>
         </NavLink>
         <NavLink

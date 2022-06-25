@@ -79,7 +79,7 @@ export default class MembershipPage extends BaseComponent<IProps, IState> {
                 <button
                   className={
                     this.state.selected === 1
-                      ? "selected d-flex justify-content-between align-items-center"
+                      ? "selected w-100 d-flex justify-content-between align-items-center"
                       : ""
                   }
                   onClick={() => this.setState({ selected: 1 })}
@@ -93,7 +93,7 @@ export default class MembershipPage extends BaseComponent<IProps, IState> {
                 <button
                   className={
                     this.state.selected === 2
-                      ? "selected d-flex flex-row justify-content-between align-items-center"
+                      ? "selected w-100 d-flex flex-row justify-content-between align-items-center"
                       : ""
                   }
                   onClick={() => this.setState({ selected: 2 })}
@@ -107,7 +107,7 @@ export default class MembershipPage extends BaseComponent<IProps, IState> {
                 <button
                   className={
                     this.state.selected === 3
-                      ? "selected d-flex flex-row justify-content-between align-items-center"
+                      ? "selected w-100 d-flex flex-row justify-content-between align-items-center"
                       : ""
                   }
                   onClick={() => this.setState({ selected: 3 })}
@@ -121,7 +121,7 @@ export default class MembershipPage extends BaseComponent<IProps, IState> {
                 <button
                   className={
                     this.state.selected === 4
-                      ? "selected d-flex flex-row justify-content-between align-items-center"
+                      ? "selected w-100 d-flex flex-row justify-content-between align-items-center"
                       : ""
                   }
                   onClick={() => this.setState({ selected: 4 })}
@@ -135,7 +135,7 @@ export default class MembershipPage extends BaseComponent<IProps, IState> {
                 <button
                   className={
                     this.state.selected === 5
-                      ? "selected d-flex flex-row justify-content-between align-items-center"
+                      ? "selected w-100 d-flex flex-row justify-content-between align-items-center"
                       : ""
                   }
                   onClick={() => this.setState({ selected: 5 })}
