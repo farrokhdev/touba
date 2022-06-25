@@ -16,6 +16,12 @@
         height: 263.82px;
         box-shadow: -31px 0px 52px rgba(0, 0, 0, 0.07);
         background-color: #fc4a56;
+        img {
+            position: absolute;
+            transform: scale(0.2);
+            top: -34.2%;
+            left: 60%;
+        }
         span {
             background-color: transparent !important;
             border: none;
@@ -32,6 +38,10 @@
                     @include FontStyle(48px, 800, $white);
                 }
             }
+        }
+        .plan-Time {
+            @include FontStyle(16px, 400, $sorme);
+            height: 26px !important;
         }
         .buy-Pakage {
             padding: 10px 0;
@@ -50,10 +60,6 @@
                 background-color: $green;
                 text-transform: uppercase;
             }
-            .plan-Time {
-                @include FontStyle(16px, 400, $sorme);
-                
-            }
         }
     }
     .plan-Price {
@@ -63,6 +69,9 @@
         height: 263.82px;
         background: #dfe3ea;
         box-shadow: -31px 0px 52px rgba(0, 0, 0, 0.07);
+        img {
+            display: none;
+        }
         span {
             background-color: transparent !important;
         }

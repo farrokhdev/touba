@@ -1,0 +1,48 @@
+.dashboard-Nav {
+    padding: 30px 30px;
+    border-bottom: 1px solid $gray;
+
+    .dashboard-Title {
+        @include FontStyle(34px, 700, $sorme);
+    }
+    .btn-Container {
+        button {
+            border: none;
+            outline: none;
+        }
+        .add-Btn {
+            background: $green;
+            border-radius: 8px;
+            padding: 10px 15px;
+            margin: 0 8px;
+
+            span {
+                @include FontStyle(14px, 600, $white);
+            }
+            img {
+                filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(273deg)
+                    brightness(104%) contrast(101%);
+            }
+        }
+        .icon-Btn {
+            background-color: transparent;
+            border: 1px solid $gray;
+            border-radius: 8px;
+            width: 48px;
+            height: 48px;
+            margin: 0 8px;
+            img {
+                filter: brightness(0) saturate(100%) invert(53%) sepia(18%) saturate(446%) hue-rotate(175deg)
+                    brightness(85%) contrast(87%);
+            }
+        }
+        .arrow-Btn {
+            background-color: transparent;
+
+            img {
+                filter: brightness(0) saturate(100%) invert(53%) sepia(18%) saturate(446%) hue-rotate(175deg)
+                    brightness(85%) contrast(87%);
+            }
+        }
+    }
+}

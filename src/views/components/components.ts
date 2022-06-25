@@ -25,7 +25,7 @@ export { default as ComponentOurTeam } from './component_our_team';
 export { default as ComponentMission } from './component_mission';
 export { default as ComponentLoginIncorrect } from './component_login_incorrect';
 export { default as ComponentSuppliers } from './component_suppliers';
-export { default as ComponentTotlalIncome } from './component_total_income';
+export { default as Summary } from './summary';
 export { default as ComponentShape } from './component_shape';
 export { default as ComponentMessage } from './component_message';
 export { default as ComponentMessageImage } from './component_message_image';

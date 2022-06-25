@@ -18,10 +18,8 @@ export default class DashboardPage extends Component {
   render() {
     return (
       <div className="row">
-        <div className="col-1">
-          <Dashboard />
-        </div>
-        <div className="col-8 px-3">
+        
+        <div className="col-9 px-3">
           <div className="border-bottom mb-4">
             {" "}
             <div className=" bigText border-bottom">Dashboard</div>

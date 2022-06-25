@@ -53,7 +53,7 @@ export default function ComponentLineChart() {
             <div className="text-header-line">Sales Summary</div>
           </div>
           <div className="col-6 text-end">
-            <div className="row box-filter p-3 d-flex align-items-center">
+            <div className="row box-filter p-2 d-flex align-items-center">
               <div onClick={()=>setActive(1)} className={`col-3 text-center ${active==1 && 'active' }`}>
                 <div>1 year</div>
               </div>

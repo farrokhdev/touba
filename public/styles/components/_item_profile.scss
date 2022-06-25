@@ -1,0 +1,87 @@
+.item-Profile {
+    position: relative;
+    border-radius: 11.616px;
+    background-color: $white;
+    width: 363px;
+    .like-Btn {
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        background: #f3f4f6;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        img {
+            transform: scale(1.4);
+        }
+    }
+    .item {
+        margin-top: 38px;
+        &-Logo {
+            width: 107px;
+            height: 107px;
+            border: 0.968px solid $bgWhite;
+            border-radius: 11.616px;
+            padding: 11px 18px;
+            background-color: $white;
+        }
+        &-Title {
+            @include FontStyle(14px, 500, $sorme);
+        }
+        &-Company {
+            @include FontStyle(10px, 700, $gray);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+        &-Diamond {
+            width: 97px;
+            height: 26px;
+        }
+        .company-Nationality {
+            background-color: $bgWhite;
+            border-radius: 60.984px;
+            padding: 8px;
+            .comapny-Country,
+            .company-Membership {
+                width: 50%;
+                span {
+                    &:first-child {
+                        @include FontStyle(10px, 700, $gray);
+                        letter-spacing: 1.5px;
+                        text-transform: uppercase;
+                    }
+                    &:last-child {
+                        @include FontStyle(14px, 500, $sorme);
+                    }
+                }
+            }
+            .comapny-Country {
+                border-right: 1px solid $gray;
+                img {
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+        }
+        .company-Detail {
+            .response,
+            .onTime {
+                span {
+                    &:first-child {
+                        @include FontStyle(12px, 500, $lightSorme);
+                    }
+                    &:last-child {
+                        @include FontStyle(14px, 500, $sorme);
+                    }
+                }
+            }
+        }
+        .swiper-slide {
+            max-width: 80px;
+            img {
+                width: 70px;
+                height: 60px;
+            }
+        }
+    }
+}

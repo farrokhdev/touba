@@ -1,9 +1,8 @@
 import React from "react";
-import { IconTickSquare } from "../../assets";
+import { IconTickSquare, ImageRibbon } from "../../assets";
 
 export type IProps = {
   list: any;
-  
 };
 
 const PlanDetail: React.FC<IProps> = ({ list }) => {
@@ -16,7 +15,8 @@ const PlanDetail: React.FC<IProps> = ({ list }) => {
             : "plan-Price d-flex flex-column align-items-center justify-content-between"
         }
       >
-        <div>
+        <img src={ImageRibbon} alt="ribbon" />
+        <div className="d-flex flex-column align-items-center">
           <div className="d-flex flex-row align-items-center justify-content-between price">
             <span className=" d-flex flex-column align-items-center justify-content-center">
               $
