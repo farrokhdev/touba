@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Line } from "react-chartjs-2";
 import { CategoryScale, LinearScale } from "chart.js";
@@ -44,9 +44,36 @@ const options :any = {
 };
 
 export default function ComponentLineChart() {
+  const [active,setActive]=useState(1)
   return (
-    <div className="App">
-      <Line options={options} data={data} />
+    <div className="">
+      <div className="line-chart p-4">
+        <div className="row d-flex align-items-center ">
+          <div className="col-6">
+            <div className="text-header-line">Sales Summary</div>
+          </div>
+          <div className="col-6 text-end">
+            <div className="row box-filter p-3 d-flex align-items-center">
+              <div onClick={()=>setActive(1)} className={`col-3 text-center ${active==1 && 'active' }`}>
+                <div>1 year</div>
+              </div>
+              <div onClick={()=>setActive(2)} className={`col-3 text-center ${active==2 && 'active' }`}>
+                <div>6 Month</div>
+              </div>
+              <div onClick={()=>setActive(3)} className={`col-3 text-center ${active==3 && 'active' }`}>
+                <div>3 Month</div>
+              </div>
+              <div onClick={()=>setActive(4)} className={`col-3 text-center ${active==4 && 'active' }`}>
+                <div>1 Week</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="mt-3">
+        <Line options={options} data={data} />
+
+        </div>
+      </div>
     </div>
   );
 }
