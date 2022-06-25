@@ -1,8 +1,6 @@
 .section-two {
     position: relative;
     .button-icon-two {
-        width: 48px;
-        height: 48px;
         @include Border(1px, $gray, 8px);
         @include Display(flex, center, center);
     }
@@ -26,8 +24,6 @@
     position: relative;
     @include Display(flex, center, center);
     .button-icon-one {
-        width: 48px;
-        height: 48px;
         @include Border(1px, $gray, 8px);
         @include Display(flex, center, center);
     }

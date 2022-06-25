@@ -4928,8 +4928,6 @@ a {
 }
 
 .section-two .button-icon-two {
-  width: 48px;
-  height: 48px;
   border: 1px solid #d6d6d6 !important;
   border-radius: 8px !important;
   display: -webkit-box !important;
@@ -5005,8 +5003,6 @@ a {
 }
 
 .section-one .button-icon-one {
-  width: 48px;
-  height: 48px;
   border: 1px solid #d6d6d6 !important;
   border-radius: 8px !important;
   display: -webkit-box !important;
