@@ -53,8 +53,8 @@
             width: 97.5%;
             margin: 0 auto;
             .button-component {
-                width: 40%;
-                margin: 0 10px;
+                width: 40% !important;
+                margin: 0 10px !important;
                 z-index: 0;
             }
             >div {

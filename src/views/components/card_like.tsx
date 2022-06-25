@@ -9,12 +9,13 @@ import iconUnit from "../../assets/icons/icon-unit.svg";
 interface Props {
   discount?: boolean;
   percent?: string;
+navigate?:string
 }
-const CardLike = ({ discount, percent }: Props) => {
-  const navigate = useNavigate();
+const CardLike = ({ discount, percent,navigate }: Props) => {
+  const navigation =useNavigate()
   return (
-    <div className="card-border">
-      <div className="row" onClick={() => navigate("/detail-product")}>
+    <div className="card-border" onClick={()=>navigation(navigate || '#')}>
+      <div className="row" >
         <div className="d-flex justify-content-between ">
           <div className="circle ">
             <img src={greenHeart} />

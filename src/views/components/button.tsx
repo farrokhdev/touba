@@ -21,7 +21,7 @@ export function ButtonComponent({ onClick, title }: Props): ReactElement {
 
   return (
     <button
-      className="button-component "
+      className="button-component w-100"
       onClick={handleOnClick}
     >
       <h3 className="button-component-text">

@@ -1,3 +1,5 @@
+@import '../base/variables';
+@import '../base/base';
 @import "./select_component";
 @import "./button_component";
 @import "./select_text";
@@ -67,6 +69,16 @@
 @import './card_calculate_product';
 @import './map';
 @import './modal';
+@import 'search_result_suppliers';
+@import './plan_detail';
+@import './input_text_phonenumber';
+@import './dropDown_bottom_menu';
+@import 'component_filter_sidebar';
+@import './component_progress';
+@import './component_key_word';
+@import "./component_table_order";
+@import './component_dashboard_header';
+@import './component_line_chart';
 @import "search_result_suppliers";
 @import "./plan_detail";
 @import "./input_text_phonenumber";
