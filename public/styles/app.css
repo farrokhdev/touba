@@ -5512,7 +5512,6 @@ a {
   position: relative;
   border-radius: 11.616px;
   background-color: #FFFFFF;
-  width: 363px;
 }
 
 .item-Profile .like-Btn {
@@ -5634,6 +5633,10 @@ a {
   font-weight: 500;
   font-size: 14px;
   color: #3c557a !important;
+}
+
+.item-Profile .item .slider {
+  cursor: pointer;
 }
 
 .item-Profile .item .swiper-slide {
