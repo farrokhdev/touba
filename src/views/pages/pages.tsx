@@ -1,4 +1,4 @@
-import { Route, Routes, useLocation } from "react-router-dom";
+import { HashRouter, Route, Routes, useLocation } from "react-router-dom";
 import { Home, Login } from ".";
 import { CHART, Chart } from "../components/chart";
 import {
@@ -29,14 +29,26 @@ import DashboardTableOrder from "./DashbordTableOrder/dashboard_table_order";
 
 function Pages() {
   const location = useLocation();
-  {if(location.pathname=="/dashboard"){return <DashboardPage />} }
-  {if(location.pathname=="/dashboard-table-order"){return <DashboardTableOrder />} }
+  // {
+  //   if (location.pathname == "/dashboard") {
+  //     return <DashboardPage />;
+  //   }
+  // }
+  // {
+  //   if (location.pathname == "/dashboard-table-order") {
+  //     return <DashboardTableOrder />;
+  //   }
+  // }
 
-  {if(location.pathname=="/dashboard-like-card"){return <DashboardLikeCard />} }
-
+  // {
+  //   if (location.pathname == "/dashboard-like-card") {
+  //     return <DashboardLikeCard />;
+  //   }
+  // }
 
   return (
     <div>
+  
       {location.pathname.includes("/login") ||
       location.pathname.includes("/register") ? null : (
         <>
@@ -47,6 +59,10 @@ function Pages() {
       {location.pathname.includes("/profile") ? <ComponentBinaRazan /> : null}
 
       <Routes>
+        <Route  path="/dashboard" element={<DashboardPage/>} />
+        <Route  path="/dashboard-table-order" element={<DashboardTableOrder/>} />
+        <Route  path="/dashboard-like-card" element={<DashboardLikeCard/>} />
+
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutusPage />} />
         <Route path="/login" element={<Login />} />
