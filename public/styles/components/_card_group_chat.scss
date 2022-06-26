@@ -10,6 +10,7 @@
 .card-group-chat {
     @include Border(1px, $gray, 8px);
     @include Display(flex, space-between, center);
+    margin: 16px 0 !important;
 
     &-message {
         @include Display(flex, space-around, flex-start, column);
