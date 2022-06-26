@@ -70,13 +70,13 @@ export { default as Offcanvas } from './offcanvas';
 export { default as CardCalculateProduct } from './card_calculate_product';
 export { default as MapComponent } from './map';
 export { default as ModalComponent } from './modal';
-
 export { default as Map } from './component_map';
 export { default as ComponentMapBox } from './component_map_box';
 export { default as ComponentProgress } from './component_progress';
 export { default as ComponentKeyWord } from './component_key_word';
 export { default as ComponentTableORder } from './component_table_order';
 export { default as ComponentDashboardHeader } from './component_dashboard_header';
+export { default as MessangerTab } from './messenger_tab';
 
 
 

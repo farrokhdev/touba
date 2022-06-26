@@ -5,13 +5,13 @@ import {
 
 } from "react";
 import { IconClose } from "../../assets";
-import { Divider } from "./components";
+import { Divider, MessangerTab } from "./components";
 
 interface Props extends HTMLAttributes<HTMLElement> {
 
 }
 
-export function Offcanvas({children }: Props): ReactElement {
+export function Offcanvas({ children }: Props): ReactElement {
 
     return (
         <div className="offcanvas-component">
@@ -25,13 +25,13 @@ export function Offcanvas({children }: Props): ReactElement {
                 </div>
                 <div className="offcanvas-body px-4">
                     <div className="button-group">
-
+                        <MessangerTab state={3} setState={undefined} />
                     </div>
                     <div className="content">
                         <h6 className="content-title">
-                            Messages
+                            Group Chats
                         </h6>
-                        <Divider direction={"vertical"}/>
+                        <Divider direction={"vertical"} />
                         <div className="content-body">
                             {children}
                         </div>
