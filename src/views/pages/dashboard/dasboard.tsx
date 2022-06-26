@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import { ButtonIcon } from "../../components/button_icon";
 import {
+  ButtonIconDashboard,
   ComponentKeyWord,
   ComponentMapBox,
   ComponentProgress,
+  Offcanvas,
 } from "../../components/components";
 import ComponentDashboardHeader from "../../components/component_dashboard_header";
 import ComponentLineChart from "../../components/component_line_chart";
@@ -18,7 +20,7 @@ export default class DashboardPage extends Component {
   render() {
     return (
       <div className="row">
-        
+
         <div className="col-9 px-3">
           <div className="border-bottom mb-4">
             {" "}
@@ -44,22 +46,23 @@ export default class DashboardPage extends Component {
             </div>
             <div className="col-2 ">
               <div className="p-1">
-                <ButtonIcon icon={iconRing} nameButton={""} />
+                <ButtonIconDashboard icon={iconRing} />
               </div>
             </div>
             <div className="col-3 ">
               <div className="p-3">
-                <ButtonIcon icon={IconChat} nameButton={""} />
+                <Offcanvas />
+                <ButtonIconDashboard icon={IconChat} dataBsToggle="offcanvas" dataBsTarget="#offcanvasRight" aria-controls="offcanvasRight" />
               </div>
             </div>
             <div className="col-2 ">
               <div className="">
-                <ButtonIcon icon={IconUser} nameButton={""} />
+                <ButtonIconDashboard icon={IconUser} dropdown=""/>
               </div>
             </div>
             <div className="col-1 px-2">
               <div>
-                <img src={iconArrowDown}/>
+                <img src={iconArrowDown} />
               </div>
             </div>
 
