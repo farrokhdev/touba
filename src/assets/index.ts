@@ -137,3 +137,5 @@ export { default as IconOntimeBlack} from './icons/icon-ontime-black.svg';
 export { default as IconEmailBlack} from './icons/icon-email-black.svg';
 export { default as ImageLadan} from './images/ladan.png';
 export { default as IconNotification} from './icons/icon-notification.svg';
+export { default as IconEmailArrow} from './icons/icon-email-arrow.svg';
+export { default as IconClockSuccess} from './icons/icon-clock-success.svg';
