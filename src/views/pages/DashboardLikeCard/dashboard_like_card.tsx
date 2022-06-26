@@ -17,11 +17,19 @@ export default class DashboardLikeCard extends DashboardLikeCardControllre {
         <div className="">
           <DashboardNav title="Liked Items" />
         </div>
-        <div className=" d-flex justify-content-center align-items-center">
-          <div>1</div>
-          <div>2</div>
+        <div className=" row mt-3 justify-content-center align-items-center">
+          <div className=" col-4 nav-like-box  d-flex  justify-content-center align-items-center">
+            <div onClick={()=>this.handleShow(1)} className={`col-4 text-center ${this.state.filter==1 && 'active'}`}>
+              <div >Products</div>
+            </div>
+            <div onClick={()=>this.handleShow(2)} className={`col-4 text-center ${this.state.filter==2 && 'active'}`}>
+              <div>Excess Capacity</div>
+            </div>
 
-          <div>3</div>
+            <div onClick={()=>this.handleShow(3)} className={`col-4 text-center ${this.state.filter==3 && 'active'}`}>
+              <div>Profiles</div>
+            </div>
+          </div>
         </div>
         {this.state.filter == 1 && (
           <>
@@ -64,7 +72,7 @@ export default class DashboardLikeCard extends DashboardLikeCardControllre {
             </div>
           </>
         )}
-        {this.state.filter == 2 && (
+        {this.state.filter == 3 && (
           <>
             {" "}
             <div className="row">

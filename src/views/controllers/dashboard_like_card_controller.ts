@@ -1,7 +1,6 @@
 import { Component } from 'react';
 
 interface IProps {
-
 }
 
 interface IState {
@@ -11,9 +10,12 @@ interface IState {
 export class DashboardLikeCardControllre extends Component<IProps, IState> {
 
     state = {
-        filter: 2,
+        filter: 1,
         
     };
+    handleShow = (e:Number) => {
+        this.setState({ filter: e });
+    }
 
     //list
     

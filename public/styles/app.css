@@ -4431,6 +4431,13 @@ a {
     .dashboard-Nav .btn-Container .arrow-Btn img {
       filter: brightness(0) saturate(100%) invert(53%) sepia(18%) saturate(446%) hue-rotate(175deg) brightness(85%) contrast(87%); }
 
+.total-income-box {
+  background: #FFFFFF;
+  /* Shadow 1 */
+  box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
+  border-radius: 8px;
+  padding: 3%; }
+
 .top-nav-home {
   width: 100%;
   min-height: 114px;
@@ -6437,7 +6444,7 @@ a {
     font-size: 40px !important; } }
 
 .btn-add-new {
-  background: #21C085;
+  background: #21c085;
   border-radius: 8px;
   text-align: center;
   letter-spacing: 0.75px;
@@ -6449,6 +6456,26 @@ a {
   font-weight: 600;
   font-size: 14px;
   color: #FFFFFF !important; }
+
+.nav-like-box {
+  background: #ffffff;
+  border-radius: 75px;
+  padding: 0.6%;
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #6B798C !important; }
+  .nav-like-box .active {
+    background: #21C085;
+    box-shadow: 0px 9px 11px rgba(230, 57, 70, 0.2);
+    border-radius: 47px;
+    padding: 2%;
+    color: #FFFFFF !important; }
+  .nav-like-box .col-4 {
+    cursor: pointer; }
 
 .sideServise-Page {
   margin-bottom: 2300px; }
