@@ -2567,7 +2567,7 @@ a {
 }
 
 .card-offer-horizontal-content {
-  width: 45%;
+  width: 57%;
   height: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2665,6 +2665,7 @@ a {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   cursor: pointer;
+  margin: 0 20px;
 }
 
 .card-offer-horizontal-content-item-button-text {
@@ -2687,6 +2688,133 @@ a {
   color: #d6d6d6 !important;
 }
 
+.card-offer-horizontal-content-footer {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+}
+
+.card-offer-horizontal-content-footer-item {
+  width: 100px;
+  height: 27px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(264.93deg, #FED402 26.79%, #FE9901 94.29%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.card-offer-horizontal-content-footer-item-text {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  color: #000000 !important;
+}
+
+.card-offer-horizontal-content-footer-date {
+  margin: 0 20px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+}
+
+.card-offer-horizontal-content-footer-date-response {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+}
+
+.card-offer-horizontal-content-footer-date-delivery {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+}
+
+.card-offer-horizontal-content-footer-date .title {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #6b798c !important;
+  margin: 0 0 7px 0;
+}
+
+.card-offer-horizontal-content-footer-date .amount {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #3c557a !important;
+  margin: 0;
+}
+
+.card-offer-horizontal-content-footer-date .icon {
+  margin: 0 17px;
+}
+
 .card-offer-horizontal-divider {
   width: 1.03px;
   height: 80%;
@@ -2703,7 +2831,7 @@ a {
 }
 
 .card-offer-horizontal-chart {
-  width: 30%;
+  width: 43%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4894,6 +5022,8 @@ a {
           flex-direction: row !important;
   -ms-flex-wrap: nowrap !important;
       flex-wrap: nowrap !important;
+  background-color: transparent;
+  padding: 13px;
 }
 
 .section-two > span {
@@ -4969,6 +5099,8 @@ a {
           flex-direction: row !important;
   -ms-flex-wrap: nowrap !important;
       flex-wrap: nowrap !important;
+  background-color: transparent;
+  padding: 13px;
 }
 
 .section-one > span {
@@ -5017,7 +5149,9 @@ a {
   color: #3c557a !important;
   position: relative;
   top: 15px;
-  left: 80px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
 }
 
 .offcanvas-component .button-close {
@@ -5052,6 +5186,10 @@ a {
   font-size: 19px;
   color: #3c557a !important;
   margin: 24px 0;
+}
+
+.offcanvas-end {
+  width: 30% !important;
 }
 
 .card-calculate-product {
