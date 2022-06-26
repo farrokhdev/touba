@@ -7,7 +7,7 @@ interface Props {
     message: string;
     images: string[];
     date: string;
-
+    disabled: boolean;
 }
 
 export function CardGroupChat({
@@ -15,11 +15,12 @@ export function CardGroupChat({
     amountMessage,
     message,
     images,
-    date
+    date,
+    disabled
 }: Props): ReactElement {
 
     return (
-        <div className="card-group-chat row">
+        <div className={disabled === true ? "card-group-chat row disabled" : "card-group-chat row"}>
             <div className="card-group-chat-message col-8">
                 <div className="card-group-chat-message-title col-12 text-start p-4">
                     <h4 className="card-group-chat-message-title-text">
