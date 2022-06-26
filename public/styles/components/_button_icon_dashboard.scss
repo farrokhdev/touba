@@ -3,6 +3,8 @@
     .button-icon-two {
         @include Border(1px, $gray, 8px);
         @include Display(flex, center, center);
+        background-color: transparent;
+        padding: 13px;
     }
   
     >span {
@@ -26,6 +28,8 @@
     .button-icon-one {
         @include Border(1px, $gray, 8px);
         @include Display(flex, center, center);
+        background-color: transparent;
+        padding: 13px;
     }
   
     >span {
