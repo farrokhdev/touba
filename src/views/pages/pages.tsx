@@ -9,6 +9,7 @@ import {
   ComponentKeyWord,
   ComponentTableORder,
   ComponentDashboardHeader,
+  ComponentMessageImage,
 } from "../components/components";
 import { BottomNav, Footer, TopNav, TopNavHome } from "../layout/layout";
 import AboutusPage from "./AboutusPage/AboutusPage";
@@ -26,6 +27,7 @@ import DashboardPage from "./dashboard/dasboard";
 import CompanyProfile from "./companyProfile";
 import DashboardLikeCard from "./DashboardLikeCard/dashboard_like_card";
 import DashboardTableOrder from "./DashbordTableOrder/dashboard_table_order";
+import iconRani from "../../assets/icons/icon-rani-message.svg";
 
 function Pages() {
   const location = useLocation();
@@ -48,7 +50,7 @@ function Pages() {
 
   return (
     <div>
-  
+
       {location.pathname.includes("/login") ||
       location.pathname.includes("/register") ? null : (
         <>
@@ -59,9 +61,12 @@ function Pages() {
       {location.pathname.includes("/profile") ? <ComponentBinaRazan /> : null}
 
       <Routes>
-        <Route path="/dashboard" element={<DashboardPage/>} />
-        <Route path="/dashboard-table-order" element={<DashboardTableOrder/>} />
-        <Route path="/dashboard-like-card" element={<DashboardLikeCard/>} />
+        <Route path="/dashboard" element={<DashboardPage />} />
+        <Route
+          path="/dashboard-table-order"
+          element={<DashboardTableOrder />}
+        />
+        <Route path="/dashboard-like-card" element={<DashboardLikeCard />} />
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutusPage />} />
         <Route path="/login" element={<Login />} />

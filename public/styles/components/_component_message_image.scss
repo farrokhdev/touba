@@ -1,0 +1,12 @@
+.message-box-imaege {
+  background: #ffffff;
+  /* Border */
+
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  .time-text {
+    @include FontStyle(11px, 700, #6b798c);
+    opacity: 0.6;
+  }
+}
+ 
