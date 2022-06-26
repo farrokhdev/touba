@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import { BackgroundLatest, IconAddCircle, IconAddCircleWhite, IconAlibaba, IconArrow, IconArrowBlack, IconArvan, IconNext, IconPersonCircle, IconPrev, IconYoutube, ImageControll, ImageFlagChine, ImageLaboratory, ImageNasa, ImageOil, ImagePersonBox, ImageTest, ImageTest2, ImageTest3, ImageTest4 } from "../../assets";
 import { CHART } from "../components/chart";
-import { Button, CardSearchProduct, CardProduct, CardCategory, CardImage, CardCollectionProduct, CardProductWithPrice, CardBestSeller, CardCollectionBest, Divider, CardNewExcess, CardBestBrand, CardNewProduct, CardCalculate, ButtonIcon, CardGroupChat, ButtonIconDashboard, Offcanvas, CardCalculateProduct, ModalComponent } from "../components/components";
+import { Button, CardSearchProduct, CardProduct, CardCategory, CardImage, CardCollectionProduct, CardProductWithPrice, CardBestSeller, CardCollectionBest, Divider, CardNewExcess, CardBestBrand, CardNewProduct, CardCalculate, ButtonIcon, CardGroupChat, ButtonIconDashboard, Offcanvas, CardCalculateProduct, ModalComponent, CardOfferHorizental } from "../components/components";
 import HomeController from "../controllers/home_controller";
 import { Pagination, Autoplay, Navigation, Grid } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -18,7 +18,7 @@ const TESTLINK = [
     { nameLink: "link3", location: "/" },
     { nameLink: "link4", location: "/" },
     { nameLink: "link5", location: "/" },
-  ];
+];
 
 const TEST: CHART[] = [
     { name: "JAN", size: 20 },
@@ -76,6 +76,9 @@ class Home extends HomeController {
                     itemDropDown={TESTLINK}
                     country={"china"}
                 /> */}
+                <div style={{ width: "1165px" }}>
+                    {/* <CardOfferHorizental image={ImageTest} status={"FINISH PRODUCT"} description={"Pomegranate Juice Pet Bottle, Best material and design, Ready to Order"} rate={4.2} country={"CHINA"} chart={TEST} amount={200} type="two" timeDelivery="98.6%" timeResponse="15h" /> */}
+                </div>
                 <div className="home-header px-5">
                     <div className="home-header-description">
                         <div className="home-header-description-items">
