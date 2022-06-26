@@ -3,7 +3,8 @@
         @include FontStyle(24px, 700, $sorme);
         position: relative;
         top: 15px;
-        left: 80px;
+        left: 50%;
+        transform: translate(-50%, 0%);
     }
     .button-close {
         width: 48px;
@@ -21,4 +22,7 @@
             margin: 24px 0;
         }
     }
+}
+.offcanvas-end {
+    width: 30% !important;
 }
