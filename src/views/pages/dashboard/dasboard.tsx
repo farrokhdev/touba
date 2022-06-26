@@ -4,6 +4,8 @@ import {
   ButtonIconDashboard,
   ComponentKeyWord,
   ComponentMapBox,
+  ComponentMessage,
+  ComponentMessageImage,
   ComponentProgress,
   Offcanvas,
 } from "../../components/components";
@@ -16,9 +18,10 @@ import IconChat from "../../../assets/icons/icon-chat.svg";
 import IconUser from "../../../assets/icons/icon-user.svg";
 import iconArrowDown from '../../../assets/images/arrowdown.png'
 import { CardGroupChat } from "../../components/card_group_chat";
-import { ImageNasa } from "../../../assets";
+import { ImageNasa, ImageOil } from "../../../assets";
+import DashboarPageController from "../../controllers/dashboard_page_controller";
 
-export default class DashboardPage extends Component {
+export default class DashboardPage extends DashboarPageController {
   render() {
     return (
       <div className="row">
@@ -53,49 +56,135 @@ export default class DashboardPage extends Component {
             </div>
             <div className="col-3 ">
               <div className="p-3">
-                <Offcanvas>
-                  <CardGroupChat
-                    title={"Group Title"}
-                    amountMessage={7}
-                    message={" message Here"}
-                    images={[ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa]}
-                    date={"25 MINS"}
-                  />
-                  <CardGroupChat
-                    title={"Group Title"}
-                    amountMessage={7}
-                    message={" message Here"}
-                    images={[ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa]}
-                    date={"25 MINS"}
-                  />
-                  <CardGroupChat
-                    title={"Group Title"}
-                    amountMessage={7}
-                    message={" message Here"}
-                    images={[ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa]}
-                    date={"25 MINS"}
-                  />
-                  <CardGroupChat
-                    title={"Group Title"}
-                    amountMessage={7}
-                    message={" message Here"}
-                    images={[ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa]}
-                    date={"25 MINS"}
-                  />
-                  <CardGroupChat
-                    title={"Group Title"}
-                    amountMessage={7}
-                    message={" message Here"}
-                    images={[ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa]}
-                    date={"25 MINS"}
-                  />
-                  <CardGroupChat
-                    title={"Group Title"}
-                    amountMessage={7}
-                    message={" message Here"}
-                    images={[ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa]}
-                    date={"25 MINS"}
-                  />
+                <Offcanvas onActive={this.handleActiveTab}>
+                  {this.state.active === 3 ? (
+                    <>
+                      <CardGroupChat
+                        title={"Group Title"}
+                        amountMessage={7}
+                        message={" message Here"}
+                        images={[ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa]}
+                        date={"25 MINS"} disabled={false} />
+                      <CardGroupChat
+                        title={"Group Title"}
+                        amountMessage={7}
+                        message={" message Here"}
+                        images={[ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa]}
+                        date={"25 MINS"} disabled={false} />
+                      <CardGroupChat
+                        title={"Group Title"}
+                        amountMessage={7}
+                        message={" message Here"}
+                        images={[ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa]}
+                        date={"25 MINS"} disabled={false} />
+                      <CardGroupChat
+                        title={"Group Title"}
+                        amountMessage={7}
+                        message={" message Here"}
+                        images={[ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa]}
+                        date={"25 MINS"} disabled={false} />
+                      <CardGroupChat
+                        title={"Group Title"}
+                        amountMessage={7}
+                        message={" message Here"}
+                        images={[ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa]}
+                        date={"25 MINS"} disabled={false} />
+                      <CardGroupChat
+                        title={"Group Title"}
+                        amountMessage={7}
+                        message={" message Here"}
+                        images={[ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa]}
+                        date={"25 MINS"} disabled={true} />
+                    </>
+                  ) : (
+                    <>
+                      {this.state.active === 2 ? (
+                        <>
+                          <ComponentMessage />
+                          <ComponentMessage />
+                          <ComponentMessage />
+                          <ComponentMessage />
+                          <ComponentMessage />
+                          <ComponentMessage />
+                          <ComponentMessage />
+                        </>
+                      ) : (
+                        <>
+                          <ComponentMessageImage
+                            title={"Message Title Here"}
+                            desc={"Quanzhou Laren Trading Co., Ltd."}
+                            country={"CHINA"}
+                            time={"1HOUR"}
+                            image={ImageOil}
+                          />
+                          <ComponentMessageImage
+                            title={"Message Title Here"}
+                            desc={"Quanzhou Laren Trading Co., Ltd."}
+                            country={"CHINA"}
+                            time={"1HOUR"}
+                            image={ImageOil}
+                          />
+                          <ComponentMessageImage
+                            title={"Message Title Here"}
+                            desc={"Quanzhou Laren Trading Co., Ltd."}
+                            country={"CHINA"}
+                            time={"1HOUR"}
+                            image={ImageOil}
+                          />
+                          <ComponentMessageImage
+                            title={"Message Title Here"}
+                            desc={"Quanzhou Laren Trading Co., Ltd."}
+                            country={"CHINA"}
+                            time={"1HOUR"}
+                            image={ImageOil}
+                          />
+                          <ComponentMessageImage
+                            title={"Message Title Here"}
+                            desc={"Quanzhou Laren Trading Co., Ltd."}
+                            country={"CHINA"}
+                            time={"1HOUR"}
+                            image={ImageOil}
+                          />
+                          <ComponentMessageImage
+                            title={"Message Title Here"}
+                            desc={"Quanzhou Laren Trading Co., Ltd."}
+                            country={"CHINA"}
+                            time={"1HOUR"}
+                            image={ImageOil}
+                          />
+                          <ComponentMessageImage
+                            title={"Message Title Here"}
+                            desc={"Quanzhou Laren Trading Co., Ltd."}
+                            country={"CHINA"}
+                            time={"1HOUR"}
+                            image={ImageOil}
+                          />
+                          <ComponentMessageImage
+                            title={"Message Title Here"}
+                            desc={"Quanzhou Laren Trading Co., Ltd."}
+                            country={"CHINA"}
+                            time={"1HOUR"}
+                            image={ImageOil}
+                          />
+                          <ComponentMessageImage
+                            title={"Message Title Here"}
+                            desc={"Quanzhou Laren Trading Co., Ltd."}
+                            country={"CHINA"}
+                            time={"1HOUR"}
+                            image={ImageOil}
+                          />
+                          <ComponentMessageImage
+                            title={"Message Title Here"}
+                            desc={"Quanzhou Laren Trading Co., Ltd."}
+                            country={"CHINA"}
+                            time={"1HOUR"}
+                            image={ImageOil}
+                          />
+                        </>
+                      )}
+                    </>
+                  )}
+
                 </Offcanvas>
                 <ButtonIconDashboard icon={IconChat} dataBsToggle="offcanvas" dataBsTarget="#offcanvasRight" aria-controls="offcanvasRight" />
               </div>
