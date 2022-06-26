@@ -32,12 +32,11 @@ function Pages() {
   {if(location.pathname=="/dashboard"){return <DashboardPage />} }
   {if(location.pathname=="/dashboard-table-order"){return <DashboardTableOrder />} }
 
-  {if(location.pathname.includes("/dashboard-like-card") ){return <DashboardLikeCard />} }
+  {if(location.pathname=="/dashboard-like-card"){return <DashboardLikeCard />} }
 
 
   return (
     <div>
-      <ComponentLineChart/>
       {location.pathname.includes("/login") ||
       location.pathname.includes("/register") ? null : (
         <>
