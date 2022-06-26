@@ -4814,6 +4814,10 @@ a {
   margin-left: 2%;
 }
 
+.disabled {
+  opacity: 0.5;
+}
+
 .card-group-chat {
   border: 1px solid #d6d6d6 !important;
   border-radius: 8px !important;
