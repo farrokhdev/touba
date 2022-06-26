@@ -8,7 +8,6 @@
   #table-order td {
     padding: 3% 1%;
     border-bottom: 1px solid #b1b4c1;
-    text-align: center;
     
 
 
@@ -18,18 +17,29 @@
     padding: 1% 2%;
     background-color: rgb(214, 214, 214) !important;
     @include FontStyle(14px, 500, #6b798c);
-    text-align: center;
+    text-align: inherit;
   }
   .text-hashtag {
     width: 37px;
     height: 37px;
     border-radius: 50%;
-    color: $white;
-    background: #21c085;
-    box-shadow: 0px 9px 11px rgba(230, 57, 70, 0.2);
+    background: #F3F3F3;
     display: flex;
     align-items: center;
+    color: #6B798C;
     justify-content: center;
+  }
+  .text-hashtag-active{
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    color: $white;
+    display: flex;
+    align-items: center;
+    color: #6B798C;
+    justify-content: center;
+    background: #21C085;
+    box-shadow: 0px 9px 11px rgba(230, 57, 70, 0.2);
   }
   .text-order-number{
     @include FontStyle(16px,400,#3C557A);

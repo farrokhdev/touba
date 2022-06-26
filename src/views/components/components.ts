@@ -71,6 +71,8 @@ export { default as ComponentProgress } from './component_progress';
 export { default as ComponentKeyWord } from './component_key_word';
 export { default as ComponentTableORder } from './component_table_order';
 export { default as ComponentDashboardHeader } from './component_dashboard_header';
+export { default as ComponentTableExcess } from './component_table_excess';
+
 
 
 

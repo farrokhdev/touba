@@ -4,30 +4,32 @@ import chinchin from "../../assets/images/chinchin.png";
 import zarmakaron from "../../assets/images/zarmakaron.png";
 import pasta from "../../assets/images/pasta.png";
 import { ButtonComponent } from "./button";
-import iconG from '../../assets/icons/icon-girls.svg'
+import iconG from "../../assets/icons/icon-girls.svg";
+import IconLogoSingle from "../../assets/icons/icon-small-logo.svg";
+
 const ComponentTableORder = () => {
   return (
     <div className="table-order">
       <table id="table-order" className="">
         <thead className="tbale-header">
-          <tr >
+          <tr>
             <th scope="col text-end">#</th>
             <th scope="col">Order Number</th>
             <th scope="col">Date</th>
             <th scope="col">Payment Amount</th>
             <th scope="col">Status</th>
-            <th scope="col">Client</th>
+            <th scope="col"><div className="text-start">Supplier</div></th>
             <th scope="col">Product</th>
             <th scope="col">Payment Amount</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td >
-              <div className="text-hashtag">5</div>
+            <td>
+              <div className="text-hashtag-active">5</div>
             </td>
             <td>
-              <div className="text-order-number">65423132445</div>
+              <div className="text-order-number">65423132445555</div>
             </td>
             <td>
               <div className="text-order-number">18 Aug 2021</div>
@@ -39,8 +41,16 @@ const ComponentTableORder = () => {
               <div className="text-status">Waiting to send</div>
             </td>
             <td>
-              <div className="text-client">Saber Noori china</div>
-            </td>
+            <div className="row d-flex align-items-center">
+                <div className="item-Logo col-2">
+                  <img src={IconLogoSingle} alt="logo" />
+                </div>
+                <div className="col-8 text-start">
+                  <div className="text-order-number text-start">
+                    Quanzhou Laren Trading Co., Ltd. china
+                  </div>
+                </div>
+              </div>            </td>
             <td>
               <div className="row">
                 <div className="col">
@@ -58,7 +68,7 @@ const ComponentTableORder = () => {
                 </div>
               </div>
             </td>
-            
+
             <td>
               <div>
                 <ButtonComponent title="See Details" />
@@ -82,8 +92,16 @@ const ComponentTableORder = () => {
               <div className="text-status">Waiting to send</div>
             </td>
             <td>
-              <div className="text-client">Saber Noori china</div>
-            </td>
+            <div className="row d-flex align-items-center">
+                <div className="item-Logo col-2">
+                  <img src={IconLogoSingle} alt="logo" />
+                </div>
+                <div className="col-8 text-start">
+                  <div className="text-order-number text-start">
+                    Quanzhou Laren Trading Co., Ltd. china
+                  </div>
+                </div>
+              </div>            </td>
             <td>
               <div className="row">
                 <div className="col">
@@ -110,6 +128,23 @@ const ComponentTableORder = () => {
           </tr>
         </tbody>
       </table>
+      <div className="d-flex justify-content-center pagination mt-2">
+        <div className="bigText">
+          <div>1</div>
+        </div>
+        <div className="bigText">
+          <div>2</div>
+        </div>
+        <div className="bigText">
+          <div className="active">3</div>
+        </div>
+        <div className="bigText">
+          <div>4</div>
+        </div>
+        <div className="bigText">
+          <div className="">5</div>
+        </div>
+      </div>
     </div>
   );
 };
