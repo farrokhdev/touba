@@ -15,6 +15,8 @@ import IconPlus from "../../../assets/icons/icon-plus.svg";
 import IconChat from "../../../assets/icons/icon-chat.svg";
 import IconUser from "../../../assets/icons/icon-user.svg";
 import iconArrowDown from '../../../assets/images/arrowdown.png'
+import { CardGroupChat } from "../../components/card_group_chat";
+import { ImageNasa } from "../../../assets";
 
 export default class DashboardPage extends Component {
   render() {
@@ -51,13 +53,56 @@ export default class DashboardPage extends Component {
             </div>
             <div className="col-3 ">
               <div className="p-3">
-                <Offcanvas />
+                <Offcanvas>
+                  <CardGroupChat
+                    title={"Group Title"}
+                    amountMessage={7}
+                    message={" message Here"}
+                    images={[ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa]}
+                    date={"25 MINS"}
+                  />
+                  <CardGroupChat
+                    title={"Group Title"}
+                    amountMessage={7}
+                    message={" message Here"}
+                    images={[ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa]}
+                    date={"25 MINS"}
+                  />
+                  <CardGroupChat
+                    title={"Group Title"}
+                    amountMessage={7}
+                    message={" message Here"}
+                    images={[ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa]}
+                    date={"25 MINS"}
+                  />
+                  <CardGroupChat
+                    title={"Group Title"}
+                    amountMessage={7}
+                    message={" message Here"}
+                    images={[ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa]}
+                    date={"25 MINS"}
+                  />
+                  <CardGroupChat
+                    title={"Group Title"}
+                    amountMessage={7}
+                    message={" message Here"}
+                    images={[ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa]}
+                    date={"25 MINS"}
+                  />
+                  <CardGroupChat
+                    title={"Group Title"}
+                    amountMessage={7}
+                    message={" message Here"}
+                    images={[ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa]}
+                    date={"25 MINS"}
+                  />
+                </Offcanvas>
                 <ButtonIconDashboard icon={IconChat} dataBsToggle="offcanvas" dataBsTarget="#offcanvasRight" aria-controls="offcanvasRight" />
               </div>
             </div>
             <div className="col-2 ">
               <div className="">
-                <ButtonIconDashboard icon={IconUser} dropdown=""/>
+                <ButtonIconDashboard icon={IconUser} dropdown="" />
               </div>
             </div>
             <div className="col-1 px-2">
