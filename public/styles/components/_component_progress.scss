@@ -1,0 +1,10 @@
+.component-progress {
+        .text-header {
+    @include FontStyle(16px, 400, #3c557a);
+    margin-left: 4%;
+  }
+  .percent-amount{
+    @include FontStyle(16px, 700, #3c557a);
+  }
+}
+  

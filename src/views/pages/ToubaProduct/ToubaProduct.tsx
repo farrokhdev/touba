@@ -22,6 +22,11 @@ interface IState {
 
 export class ToubaProduct extends BaseComponent<IProps, IState> {
   test = "You are here: Touba >> Products";
+
+  navigateToDetail=()=>{
+    // this.navigate('/detail-product')
+    console.log(7)
+  }
   TEST = [
     { name: "JAN", size: 20 },
     { name: "FEB", size: 30 },
@@ -40,7 +45,7 @@ export class ToubaProduct extends BaseComponent<IProps, IState> {
     return (
       <div>
         <div className="px-5">
-          <div className="smalText p-4 px-5">{this.test}</div>
+          <div className="smalText p-4 px-5" onClick={this.navigateToDetail}>{this.test}</div>
 
           <div className="row p-3      ">
             <div className="col-3">
@@ -63,7 +68,7 @@ export class ToubaProduct extends BaseComponent<IProps, IState> {
               </div>
               <div className="row">
                 <div className="col-4 p-2">
-                  <CardLike />
+                  <CardLike navigate="/detail-product"/>
                 </div>
                 <div className="col-4 p-2">
                   <CardLike />
