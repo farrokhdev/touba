@@ -6458,7 +6458,6 @@ a {
 .table-order #table-order td {
   padding: 3% 1%;
   border-bottom: 1px solid #b1b4c1;
-  text-align: center;
 }
 
 .table-order #table-order tr > th {
@@ -6471,26 +6470,44 @@ a {
   font-weight: 500;
   font-size: 14px;
   color: #6b798c !important;
-  text-align: center;
+  text-align: inherit;
 }
 
 .table-order .text-hashtag {
   width: 37px;
   height: 37px;
   border-radius: 50%;
-  color: #FFFFFF;
-  background: #21c085;
-  -webkit-box-shadow: 0px 9px 11px rgba(230, 57, 70, 0.2);
-          box-shadow: 0px 9px 11px rgba(230, 57, 70, 0.2);
+  background: #F3F3F3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #6B798C;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.table-order .text-hashtag-active {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #6B798C;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #21C085;
+  -webkit-box-shadow: 0px 9px 11px rgba(230, 57, 70, 0.2);
+          box-shadow: 0px 9px 11px rgba(230, 57, 70, 0.2);
 }
 
 .table-order .text-order-number {
@@ -7496,5 +7513,14 @@ a {
 .dashboard-Nav .btn-Container .arrow-Btn img {
   -webkit-filter: brightness(0) saturate(100%) invert(53%) sepia(18%) saturate(446%) hue-rotate(175deg) brightness(85%) contrast(87%);
           filter: brightness(0) saturate(100%) invert(53%) sepia(18%) saturate(446%) hue-rotate(175deg) brightness(85%) contrast(87%);
+}
+
+.total-income-box {
+  background: #FFFFFF;
+  /* Shadow 1 */
+  -webkit-box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
+  border-radius: 8px;
+  padding: 3%;
 }
 /*# sourceMappingURL=components-dir.css.map */

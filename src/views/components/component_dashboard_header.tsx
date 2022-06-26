@@ -1,6 +1,5 @@
-import React from "react";
+import React, { memo } from "react";
 import iconG from "../../assets/icons/icon-girls.svg";
-
 
 function ComponentDashboardHeader() {
   return (
@@ -21,7 +20,7 @@ function ComponentDashboardHeader() {
         </div>
         <div className="col-3 d-flex ">
           <div className="d-flex align-items-end image-div">
-            <img src={iconG} height={''} width={'250px'}  />
+            <img src={iconG} height={""} width={"250px"} />
           </div>
         </div>
       </div>
@@ -29,4 +28,4 @@ function ComponentDashboardHeader() {
   );
 }
 
-export default ComponentDashboardHeader;
+export default memo(ComponentDashboardHeader);

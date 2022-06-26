@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import { ButtonSelect } from "../../components/button_select";
-import { ComponentSearch, ComponentTableORder, SelectComponent } from "../../components/components";
+import { ComponentSearch, ComponentTableExcess, ComponentTableORder, SelectComponent } from "../../components/components";
 import DashboardNav from "../../components/dashboard_nav";
 import iconSearch from "../../../assets/icons/icon-search.svg";
+import DashboardTableOrderController from "../../controllers/dashboard_table_order_controller";
 
 
-export default class DashboardTableOrder extends Component {
+export default class DashboardTableOrder extends DashboardTableOrderController {
   render() {
     return (
       <div>
@@ -20,11 +21,11 @@ export default class DashboardTableOrder extends Component {
             <div className="row border-bottom d-flex align-items-center ">
               <div className="col-6 ">
                 <div className="row d-flex -align-items-center ">
-                  <div className="col-4 text-center ">
-                    <div className="item-nav item-active py-4 ">Products</div>
+                  <div onClick={()=>this.handleShow(1)} className="col-4 text-center ">
+                    <div className={`item-nav ${this.state.filter==1 &&'item-active'} py-4 `}>Products</div>
                   </div>
-                  <div className="col-4 text-center ">
-                    <div className="item-nav py-4 ">Excess Capacity</div>
+                  <div onClick={()=>this.handleShow(2)} className="col-4 text-center ">
+                    <div className={`item-nav ${this.state.filter==2 &&'item-active'} py-4 `}>Excess Capacity</div>
                   </div>
                 </div>
               </div>
@@ -45,7 +46,10 @@ export default class DashboardTableOrder extends Component {
               </div>
             </div>
             <div className="mt-3">
-                <ComponentTableORder/>
+
+              {this.state.filter==1 && <ComponentTableORder/>}  
+              {this.state.filter==2 && <ComponentTableExcess/>}  
+
             </div>
           </div>
         </div>
