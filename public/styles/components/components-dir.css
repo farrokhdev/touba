@@ -4781,6 +4781,7 @@ a {
           flex-direction: row !important;
   -ms-flex-wrap: nowrap !important;
       flex-wrap: nowrap !important;
+  margin: 16px 0 !important;
 }
 
 .card-group-chat-message {
