@@ -59,10 +59,9 @@ function Pages() {
       {location.pathname.includes("/profile") ? <ComponentBinaRazan /> : null}
 
       <Routes>
-        <Route  path="/dashboard" element={<DashboardPage/>} />
-        <Route  path="/dashboard-table-order" element={<DashboardTableOrder/>} />
-        <Route  path="/dashboard-like-card" element={<DashboardLikeCard/>} />
-
+        <Route path="/dashboard" element={<DashboardPage/>} />
+        <Route path="/dashboard-table-order" element={<DashboardTableOrder/>} />
+        <Route path="/dashboard-like-card" element={<DashboardLikeCard/>} />
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutusPage />} />
         <Route path="/login" element={<Login />} />
