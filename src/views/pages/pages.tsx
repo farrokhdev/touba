@@ -1,15 +1,6 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import { Home, Login } from ".";
-import { CHART, Chart } from "../components/chart";
-import {
-  ComponentBinaRazan,
-  Map,
-  ComponentMapBox,
-  ComponentProgress,
-  ComponentKeyWord,
-  ComponentTableORder,
-  ComponentDashboardHeader,
-} from "../components/components";
+import { ComponentBinaRazan, } from "../components/components";
 import { BottomNav, Footer, TopNav, TopNavHome } from "../layout/layout";
 import AboutusPage from "./AboutusPage/AboutusPage";
 import ToubaProduct from "./ToubaProduct/ToubaProduct";
@@ -33,7 +24,6 @@ function Pages() {
   { if (location.pathname == "/dashboard-table-order") { return <DashboardTableOrder /> } }
 
   { if (location.pathname.includes("/dashboard-like-card")) { return <DashboardLikeCard /> } }
-
 
   return (
     <div>
