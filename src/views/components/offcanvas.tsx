@@ -2,16 +2,24 @@ import {
     HTMLAttributes,
     memo,
     ReactElement,
+    useEffect,
+    useState,
 
 } from "react";
 import { IconClose } from "../../assets";
 import { Divider, MessangerTab } from "./components";
 
 interface Props extends HTMLAttributes<HTMLElement> {
-
+    onActive(number: number): void;
 }
 
-export function Offcanvas({ children }: Props): ReactElement {
+export function Offcanvas({ children, onActive }: Props): ReactElement {
+
+    const [active, setActive] = useState(1);
+    
+    useEffect(() => {
+        onActive(active)
+    }, [active]);
 
     return (
         <div className="offcanvas-component">
@@ -25,7 +33,7 @@ export function Offcanvas({ children }: Props): ReactElement {
                 </div>
                 <div className="offcanvas-body px-4">
                     <div className="button-group">
-                        <MessangerTab state={3} setState={undefined} />
+                        <MessangerTab state={active} setState={setActive} />
                     </div>
                     <div className="content">
                         <h6 className="content-title">
@@ -33,6 +41,7 @@ export function Offcanvas({ children }: Props): ReactElement {
                         </h6>
                         <Divider direction={"vertical"} />
                         <div className="content-body">
+
                             {children}
                         </div>
                     </div>
