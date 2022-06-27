@@ -1,6 +1,16 @@
-import { Route, Routes, useLocation } from "react-router-dom";
+import { HashRouter, Route, Routes, useLocation } from "react-router-dom";
 import { Home, Login } from ".";
-import { ComponentBinaRazan, } from "../components/components";
+import { CHART, Chart } from "../components/chart";
+import {
+  ComponentBinaRazan,
+  Map,
+  ComponentMapBox,
+  ComponentProgress,
+  ComponentKeyWord,
+  ComponentTableORder,
+  ComponentDashboardHeader,
+  ComponentMessageImage,
+} from "../components/components";
 import { BottomNav, Footer, TopNav, TopNavHome } from "../layout/layout";
 import AboutusPage from "./AboutusPage/AboutusPage";
 import ToubaProduct from "./ToubaProduct/ToubaProduct";
@@ -17,27 +27,51 @@ import DashboardPage from "./dashboard/dasboard";
 import CompanyProfile from "./companyProfile";
 import DashboardLikeCard from "./DashboardLikeCard/dashboard_like_card";
 import DashboardTableOrder from "./DashbordTableOrder/dashboard_table_order";
+import iconRani from "../../assets/icons/icon-rani-message.svg";
 
 function Pages() {
   const location = useLocation();
-  { if (location.pathname == "/dashboard") { return <DashboardPage /> } }
-  { if (location.pathname == "/dashboard-table-order") { return <DashboardTableOrder /> } }
+  // {
+  //   if (location.pathname == "/dashboard") {
+  //     return <DashboardPage />;
+  //   }
+  // }
+  // {
+  //   if (location.pathname == "/dashboard-table-order") {
+  //     return <DashboardTableOrder />;
+  //   }
+  // }
 
-  { if (location.pathname.includes("/dashboard-like-card")) { return <DashboardLikeCard /> } }
+  // {
+  //   if (location.pathname == "/dashboard-like-card") {
+  //     return <DashboardLikeCard />;
+  //   }
+  // }
 
   return (
     <div>
-      <ComponentLineChart />
-      {location.pathname.includes("/login") ||
-        location.pathname.includes("/register") ? null : (
-        <>
-          {location.pathname === "/" ? <TopNavHome /> : <TopNav />}
-          <BottomNav />
-        </>
-      )}
+
+      {
+        location.pathname.includes("/login") ||
+          location.pathname.includes("/register") ||
+          location.pathname.includes("/dashboard") ||
+          location.pathname.includes("/dashboard-table-order") ||
+          location.pathname.includes("/dashboard-like-card")
+          ? null : (
+            <>
+              {location.pathname === "/" ? <TopNavHome /> : <TopNav />}
+              <BottomNav />
+            </>
+          )}
       {location.pathname.includes("/profile") ? <ComponentBinaRazan /> : null}
 
       <Routes>
+        <Route path="/dashboard" element={<DashboardPage />} />
+        <Route
+          path="/dashboard-table-order"
+          element={<DashboardTableOrder />}
+        />
+        <Route path="/dashboard-like-card" element={<DashboardLikeCard />} />
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutusPage />} />
         <Route path="/login" element={<Login />} />
@@ -53,13 +87,18 @@ function Pages() {
         <Route path="/side-service" element={<SideServicePage />} />
         <Route path="/company-profile" element={<CompanyProfile />} />
       </Routes>
-      {location.pathname.includes("/login") ||
-        location.pathname.includes("/register") ||
-        location.pathname.includes("/membership") ? null : (
-        <>
-          <Footer />
-        </>
-      )}
+      {
+        location.pathname.includes("/login") ||
+          location.pathname.includes("/register") ||
+          location.pathname.includes("/membership") ||
+          location.pathname.includes("/dashboard") ||
+          location.pathname.includes("/dashboard-table-order") ||
+          location.pathname.includes("/dashboard-like-card")
+          ? null : (
+            <>
+              <Footer />
+            </>
+          )}
     </div>
   );
 }
