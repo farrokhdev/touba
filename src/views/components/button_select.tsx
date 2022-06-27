@@ -19,12 +19,12 @@ export function ButtonSelect({ onClick, titleButton1, titleButton2 }: Props): Re
 
     function handleOnClickButtonOne () {
         setActiveButton(true);
-        onClick(true)
+        onClick(false)
 
     }; 
     function handleOnClickButtonTwo () {
         setActiveButton(false);
-        onClick(false)
+        onClick(true)
     };
     return (
         <div className="button-select">
