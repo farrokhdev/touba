@@ -14,7 +14,7 @@ export default class DashboardTableOrder extends DashboardTableOrderController {
           <DashboardNav title="Orders" />
         </div>
         <div className="d-flex align-items-center justify-content-center py-3">
-          <ButtonSelect titleButton1="Your Orders" titleButton2="Sales List" />
+          {/* <ButtonSelect titleButton1="Your Orders" titleButton2="Sales List" activeTab={handleActive} /> */}
         </div>
         <div className="row  align-items-center d-flex p-3 ">
           <div className="table-box">
