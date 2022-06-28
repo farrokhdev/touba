@@ -5,18 +5,19 @@ interface IProps {
 }
 
 interface IState {
-showContent:boolean
+    showContent: boolean;
+    activeTab: number;
 }
 
 export class ToubaSpecialOferControllers extends Component<IProps, IState> {
 
     state = {
-        showContent:true
-
+        showContent: true,
+        activeTab: 1,
     };
 
     //list
-    
+
 }
 export default ToubaSpecialOferControllers;
 

@@ -48,9 +48,9 @@ export function TopNavHome() {
                         </Link>
                     </div>
                     <div className="top-nav-home-items-button-group">
-                        <ButtonIcon icon={IconBagGray} />
+                        <ButtonIcon icon={IconBagGray} nameButton={""} />
                         <Link to="/login">
-                            <ButtonIcon icon={IconTwoPerson} />
+                            <ButtonIcon icon={IconTwoPerson} nameButton={""} />
                         </Link>
                     </div>
                 </div>
@@ -72,8 +72,8 @@ export function TopNavHome() {
                                 className="top-nav-home-minimal-brand-image"
                             />
                             <div className="top-nav-home-minimal-brand-button-group">
-                                <ButtonIcon icon={IconBag} />
-                                <ButtonIcon icon={IconTwoPerson} />
+                                <ButtonIcon icon={IconBag} nameButton={""} />
+                                <ButtonIcon icon={IconTwoPerson} nameButton={""} />
                             </div>
                         </div>
                         <div className="top-nav-home-minimal-links">

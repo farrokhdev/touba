@@ -14,7 +14,6 @@
     padding: 1% 2%;
     background-color: rgb(214, 214, 214) !important;
     @include FontStyle(14px, 500, #6b798c);
-    text-align: inherit;
   }
 
   tbody {
@@ -41,6 +40,7 @@
       font-style: italic !important;
     }
   }
+
   .text-hashtag {
     width: 37px;
     height: 37px;
@@ -92,4 +92,8 @@
       height: 20px;
     }
   }
+}
+.reportText {
+  @include FontStyle(16px, 400, $green);
+  font-style: normal !important;
 }

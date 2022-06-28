@@ -21,7 +21,7 @@ export function CardProduct({
     return (
         <div className="card-product">
             <div className="card-product-image">
-                <img src={image}/>
+                <img src={image} width="164px"/>
             </div>
             <div className="card-product-content">
                 <div className="card-product-content-header">

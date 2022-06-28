@@ -9,6 +9,7 @@ import {
   ComponentKeyWord,
   ComponentTableORder,
   ComponentDashboardHeader,
+  ComponentMessageImage,
 } from "../components/components";
 import { BottomNav, Footer, TopNav, TopNavHome } from "../layout/layout";
 import AboutusPage from "./AboutusPage/AboutusPage";
@@ -26,6 +27,7 @@ import DashboardPage from "./dashboard/dasboard";
 import CompanyProfile from "./companyProfile";
 import DashboardLikeCard from "./DashboardLikeCard/dashboard_like_card";
 import DashboardTableOrder from "./DashbordTableOrder/dashboard_table_order";
+import iconRani from "../../assets/icons/icon-rani-message.svg";
 import Review from "./review";
 
 function Pages() {
@@ -34,7 +36,10 @@ function Pages() {
   return (
     <div>
       {location.pathname.includes("/login") ||
-      location.pathname.includes("/register") ? null : (
+      location.pathname.includes("/register") ||
+      location.pathname.includes("/dashboard") ||
+      location.pathname.includes("/dashboard-table-order") ||
+      location.pathname.includes("/dashboard-like-card") ? null : (
         <>
           {location.pathname === "/" ? <TopNavHome /> : <TopNav />}
           <BottomNav />
@@ -43,12 +48,12 @@ function Pages() {
       {location.pathname.includes("/profile") ? <ComponentBinaRazan /> : null}
 
       <Routes>
-        <Route path="/dashboa" element={<Review />} />
         <Route path="/dashboard" element={<DashboardPage />} />
         <Route
           path="/dashboard-table-order"
           element={<DashboardTableOrder />}
         />
+        <Route path="/dashboa" element={<Review />} />
         <Route path="/dashboard-like-card" element={<DashboardLikeCard />} />
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutusPage />} />
@@ -67,7 +72,10 @@ function Pages() {
       </Routes>
       {location.pathname.includes("/login") ||
       location.pathname.includes("/register") ||
-      location.pathname.includes("/membership") ? null : (
+      location.pathname.includes("/membership") ||
+      location.pathname.includes("/dashboard") ||
+      location.pathname.includes("/dashboard-table-order") ||
+      location.pathname.includes("/dashboard-like-card") ? null : (
         <>
           <Footer />
         </>

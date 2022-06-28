@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 import { CardProduct } from "./card_product";
-import image_test from "../../assets/images/image-test.png";
+import image_test from "../../assets/icons/image-test-drink.svg";
 
 const ContentRelated = () => {
   const TEST = [
@@ -26,7 +26,7 @@ const ContentRelated = () => {
               image={image_test}
               status={"exp"}
               description={
-                "Pomegranate Juice Pet Bottle, Best material and design, Ready to Order"
+                "Pomegranate Juice Pet Bottle, "
               }
               chart={TEST}
               amount={5}
@@ -39,7 +39,7 @@ const ContentRelated = () => {
               image={image_test}
               status={"exp"}
               description={
-                "Pomegranate Juice Pet Bottle, Best material and design, Ready to Order"
+                "Pomegranate Juice Pet Bottle, "
               }
               chart={TEST}
               amount={5}

@@ -5,3 +5,14 @@
     border: 5px solid #E5E5E5;
     border-radius: 8px;
 }
+.button-icon-title {
+    width: 135px;
+    height: 48px;
+    background-color: $green;
+    @include Border(0, transparent, 8px);
+    @include Display(flex, space-evenly, center);
+    &-text {
+        @include FontStyle(14px, 600, $white);
+        margin: 0;
+    }
+}

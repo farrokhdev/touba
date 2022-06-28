@@ -1,21 +1,20 @@
 import { BaseComponent } from "utilities_js";
-import { IconSearch } from "../../assets";
 import { ButtonSelect } from "../components/button_select";
-import {
-  ComponentTableExcess,
-  SelectComponent,
-} from "../components/components";
+import { SelectComponent } from "../components/components";
 import DashboardNav from "../components/dashboard_nav";
 import ProductTable from "../components/product_table";
+import ReviewProduct from "../components/review_product";
 
 interface IProps {}
 interface IState {
   filter: number;
+  activeTab: number;
 }
 
 export default class Review extends BaseComponent<IProps, IState> {
   state: IState = {
     filter: 1,
+    activeTab: 1,
   };
   handleShow = (e: number) => {
     this.setState({ filter: e });
@@ -28,6 +27,9 @@ export default class Review extends BaseComponent<IProps, IState> {
         </div>
         <div className="d-flex align-items-center justify-content-center py-3">
           <ButtonSelect
+            state={this.state.activeTab}
+            setState1={() => this.setState({ activeTab: 1 })}
+            setState2={() => this.setState({ activeTab: 2 })}
             titleButton1="My Reviews"
             titleButton2="Reviews on My Items"
           />
@@ -43,7 +45,7 @@ export default class Review extends BaseComponent<IProps, IState> {
                   >
                     <div
                       className={`item-nav ${
-                        this.state.filter == 1 && "item-active"
+                        this.state.filter === 1 && "item-active"
                       } py-4 `}
                     >
                       Products
@@ -55,7 +57,7 @@ export default class Review extends BaseComponent<IProps, IState> {
                   >
                     <div
                       className={`item-nav ${
-                        this.state.filter == 2 && "item-active"
+                        this.state.filter === 2 && "item-active"
                       } py-4 `}
                     >
                       Excess Capacity
@@ -76,10 +78,17 @@ export default class Review extends BaseComponent<IProps, IState> {
                 </div>
               </div>
             </div>
-            <div className="mt-3">
-              {this.state.filter == 1 && <ProductTable />}
-              {this.state.filter == 2 && <ProductTable />}
-            </div>
+            {this.state.activeTab === 1 ? (
+              <div className="mt-3">
+                {this.state.filter === 1 && <ProductTable />}
+                {this.state.filter === 2 && <ProductTable />}
+              </div>
+            ) : (
+              <div className="mt-3">
+                {this.state.filter === 1 && <ReviewProduct />}
+                {this.state.filter === 2 && <ReviewProduct />}
+              </div>
+            )}
           </div>
         </div>
       </div>

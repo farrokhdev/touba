@@ -1,22 +1,16 @@
 .card-product {
-    width: 507px;
-    height: 211px;
+    
     background-color: $white;
     border-radius: 16px;
     display: flex;
     align-items: center;
-    margin-bottom: 100px;
     &-image {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: auto 0;
-        width: 40%;
-        height: 100%;
     }
     &-content {
         width: 60%;
-        height: 90%;
         &-header {
             width: 95%;
             display: flex;

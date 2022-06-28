@@ -8,6 +8,10 @@
     background-color: $green;
     margin: 200px auto 0 auto;
 
+    .button-component {
+        width: 209px !important;
+    }
+
     @media (max-width: 1100px) {
         flex-direction: column-reverse;
     }
@@ -242,7 +246,7 @@
                             width: 50%;
                             position: absolute;
                             top: -33px;
-                            left: 250px;
+                            left: 275px;
                         }
 
                         >img {

@@ -10,25 +10,24 @@ import {
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
     titleButton1: string;
     titleButton2: string;
-    onClick?:any
+    state: number;
+    setState1(): void;
+    setState2(): void;
 }
 
-export function ButtonSelect({ onClick, titleButton1, titleButton2 }: Props): ReactElement {
+export function ButtonSelect({ setState1, setState2, titleButton1, titleButton2, state }: Props): ReactElement {
 
-    const [activeButton, setActiveButton] = useState(true);
 
-    function handleOnClickButtonOne () {
-        setActiveButton(true);
-        onClick(true)
-
-    }; 
-    function handleOnClickButtonTwo () {
-        setActiveButton(false);
-        onClick(false)
+    function handleOnClickButtonOne() {
+        setState1()
     };
+    function handleOnClickButtonTwo() {
+        setState2()
+    };
+
     return (
         <div className="button-select">
-            {activeButton === true ? (
+            {state === 1 ? (
                 <>
                     <button
                         className="button-select-one-active"

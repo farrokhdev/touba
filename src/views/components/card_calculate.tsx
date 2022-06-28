@@ -20,7 +20,7 @@ export function CardCalculate({ amount, value, onChange }: Props): ReactElement 
         <div className="card-calculate">
             <input
                 type="text"
-                placeholder="Enter Quantity"
+                placeholder={value === 0 ? "Enter Quantity" : ""}
                 className="card-calculate-input"
                 value={value}
                 onChange={handleOnChange}
