@@ -1,5 +1,5 @@
 import { HashRouter, Route, Routes, useLocation } from "react-router-dom";
-import { Home, Login } from ".";
+import { EditOrder, Home, Login, DetailsOrder } from ".";
 import { CHART, Chart } from "../components/chart";
 import {
   ComponentBinaRazan,
@@ -28,7 +28,6 @@ import CompanyProfile from "./companyProfile";
 import DashboardLikeCard from "./DashboardLikeCard/dashboard_like_card";
 import DashboardTableOrder from "./DashbordTableOrder/dashboard_table_order";
 import iconRani from "../../assets/icons/icon-rani-message.svg";
-import EditOrder from "./edit_orders";
 
 function Pages() {
   const location = useLocation();
@@ -58,7 +57,8 @@ function Pages() {
           location.pathname.includes("/dashboard") ||
           location.pathname.includes("/dashboard-table-order") ||
           location.pathname.includes("/dashboard-like-card") ||
-          location.pathname.includes("/edit-order") 
+          location.pathname.includes("/edit-order") ||
+          location.pathname.includes("/details-order") 
           ? null : (
             <>
               {location.pathname === "/" ? <TopNavHome /> : <TopNav />}
@@ -89,6 +89,7 @@ function Pages() {
         <Route path="/side-service" element={<SideServicePage />} />
         <Route path="/company-profile" element={<CompanyProfile />} />
         <Route path="/edit-order" element={<EditOrder />} />
+        <Route path="/details-order" element={<DetailsOrder />} />
       </Routes>
       {
         location.pathname.includes("/login") ||
@@ -97,7 +98,9 @@ function Pages() {
           location.pathname.includes("/dashboard") ||
           location.pathname.includes("/dashboard-table-order") ||
           location.pathname.includes("/dashboard-like-card") ||
-          location.pathname.includes("/edit-order") 
+          location.pathname.includes("/edit-order") ||
+          location.pathname.includes("/details-order") 
+
           ? null : (
             <>
               <Footer />
