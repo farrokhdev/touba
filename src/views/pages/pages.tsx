@@ -1,5 +1,5 @@
 import { HashRouter, Route, Routes, useLocation } from "react-router-dom";
-import { EditOrder, Home, Login, DetailsOrder } from ".";
+import { EditOrder, Home, Login, DetailsOrder, PageTestComponent } from ".";
 import { CHART, Chart } from "../components/chart";
 import {
   ComponentBinaRazan,
@@ -90,6 +90,7 @@ function Pages() {
         <Route path="/company-profile" element={<CompanyProfile />} />
         <Route path="/edit-order" element={<EditOrder />} />
         <Route path="/details-order" element={<DetailsOrder />} />
+        <Route path="/test" element={<PageTestComponent />} />
       </Routes>
       {
         location.pathname.includes("/login") ||
