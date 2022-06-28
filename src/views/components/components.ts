@@ -68,7 +68,6 @@ export { default as CardGroupChat } from './card_group_chat';
 export { default as ButtonIconDashboard } from './button_icon_dashboard';
 export { default as Offcanvas } from './offcanvas';
 export { default as CardCalculateProduct } from './card_calculate_product';
-export { default as MapComponent } from './map';
 export { default as ModalComponent } from './modal';
 export { default as Map } from './component_map';
 export { default as ComponentMapBox } from './component_map_box';

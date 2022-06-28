@@ -1,6 +1,6 @@
 .card-calculate-product {
     @include Display(flex, space-between, center);
-
+    padding: 25px 0 !important;
     .section-image {
         @include Display(flex, start, center);
 
@@ -26,13 +26,13 @@
 
             >span {
                 @include FontStyle(16px, 600, $lightSorme);
-                margin: 0 5px;
+                margin: 0 15px;
             }
         }
     }
 
     .section-multiple {
-        @include Display(flex, center, center);
+        @include Display(flex, end, center);
 
         .multiple {
             width: 7px;
@@ -46,7 +46,7 @@
     }
 
     .section-total  {
-        @include Display(flex, center, center);
+        @include Display(flex, end, center);
 
         .total-price {
             @include FontStyle(22px, 500, $lightSorme);

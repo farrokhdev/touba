@@ -23,7 +23,7 @@ const Inquiry: React.FC<IProps> = () => {
     <div className="d-flex flex-column align-items-start inquiry mx-auto">
       {location.includes("excess") ? (
         <>
-          {/* <ProductDetail
+          <ProductDetail
             name="Product Name Here Product Name "
             numOfRating="12,514"
             rate={4.2}
@@ -91,8 +91,7 @@ const Inquiry: React.FC<IProps> = () => {
             <span className="button-component-text h-100 d-flex align-items-center justify-content-center">
               MAKE AN ENQUIRY
             </span>
-          </button> */}
-          <Dashboard />
+          </button>
         </>
       ) : (
         <>

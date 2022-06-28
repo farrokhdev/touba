@@ -7,7 +7,10 @@ import { ButtonComponent } from "./button";
 import iconG from "../../assets/icons/icon-girls.svg";
 import IconLogoSingle from "../../assets/icons/icon-small-logo.svg";
 
-const ComponentTableORder = () => {
+interface Props {
+  mode: string;
+}
+const ComponentTableORder = ({ mode }: Props) => {
   return (
     <div className="table-order">
       <table id="table-order" className="">
@@ -18,9 +21,13 @@ const ComponentTableORder = () => {
             <th scope="col">Date</th>
             <th scope="col">Payment Amount</th>
             <th scope="col">Status</th>
-            <th scope="col"><div className="text-start">Supplier</div></th>
-            <th scope="col">Product</th>
-            <th scope="col">Payment Amount</th>
+            <th scope="col">
+         {mode == "Client" && <div className="text-center">Client</div>} 
+         {mode == "Supplier" && <div className="text-start">Supplier</div>}     
+    
+            </th>
+            <th scope="col"><div className="text-start">Product</div></th>
+            <th scope="col ">Details</th>
           </tr>
         </thead>
         <tbody>
@@ -29,7 +36,7 @@ const ComponentTableORder = () => {
               <div className="text-hashtag-active">5</div>
             </td>
             <td>
-              <div className="text-order-number">65423132445555</div>
+              <div className="text-order-number">65423132445</div>
             </td>
             <td>
               <div className="text-order-number">18 Aug 2021</div>
@@ -41,16 +48,22 @@ const ComponentTableORder = () => {
               <div className="text-status">Waiting to send</div>
             </td>
             <td>
-            <div className="row d-flex align-items-center">
-                <div className="item-Logo col-2">
-                  <img src={IconLogoSingle} alt="logo" />
-                </div>
-                <div className="col-8 text-start">
-                  <div className="text-order-number text-start">
-                    Quanzhou Laren Trading Co., Ltd. china
+              {mode == "Supplier" && (
+                <div className="row d-flex align-items-center">
+                  <div className="item-Logo col-2">
+                    <img src={IconLogoSingle} alt="logo" />
+                  </div>
+                  <div className="col-8 text-start">
+                    <div className="text-order-number text-start">
+                      Quanzhou Laren Trading Co., Ltd. china
+                    </div>
                   </div>
                 </div>
-              </div>            </td>
+              )}
+              {mode == "Client" && (
+                <div className="text-client">Saber Noori china</div>
+              )}
+            </td>
             <td>
               <div className="row">
                 <div className="col">
@@ -62,7 +75,7 @@ const ComponentTableORder = () => {
                 <div className="col">
                   <img height={"48px"} width={"48px"} src={bizhan} />
                 </div>
-                <div className="produt-box-number col">
+                <div className="produt-box-number col ">
                   {" "}
                   <div className="">+3</div>
                 </div>
@@ -92,16 +105,22 @@ const ComponentTableORder = () => {
               <div className="text-status">Waiting to send</div>
             </td>
             <td>
-            <div className="row d-flex align-items-center">
-                <div className="item-Logo col-2">
-                  <img src={IconLogoSingle} alt="logo" />
-                </div>
-                <div className="col-8 text-start">
-                  <div className="text-order-number text-start">
-                    Quanzhou Laren Trading Co., Ltd. china
+            {mode == "Supplier" && (
+                <div className="row d-flex align-items-center">
+                  <div className="item-Logo col-2">
+                    <img src={IconLogoSingle} alt="logo" />
+                  </div>
+                  <div className="col-8 text-start">
+                    <div className="text-order-number text-start">
+                      Quanzhou Laren Trading Co., Ltd. china
+                    </div>
                   </div>
                 </div>
-              </div>            </td>
+              )}
+              {mode == "Client" && (
+                <div className="text-client">Saber Noori china</div>
+              )}
+            </td>
             <td>
               <div className="row">
                 <div className="col">
@@ -113,7 +132,7 @@ const ComponentTableORder = () => {
                 <div className="col">
                   <img height={"48px"} width={"48px"} src={bizhan} />
                 </div>
-                <div className="produt-box-number col">
+                <div className="produt-box-number col p-1">
                   {" "}
                   <div className="">+3</div>
                 </div>
