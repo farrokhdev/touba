@@ -7,7 +7,10 @@ import { ButtonComponent } from "./button";
 import iconG from "../../assets/icons/icon-girls.svg";
 import IconLogoSingle from "../../assets/icons/icon-small-logo.svg";
 import IconRani from "../../assets/icons/icon-rani.svg";
-const ComponentTableExcess = () => {
+interface Props {
+  mode: string;
+}
+const ComponentTableExcess = ({ mode }: Props) => {
   return (
     <div className="table-order">
       <table id="table-order" className="">
@@ -16,11 +19,11 @@ const ComponentTableExcess = () => {
             <th scope="col text-end">#</th>
             <th scope="col">Order Number</th>
             <th scope="col">Date</th>
-            <th scope="col">Amount & Time</th>
+            <th scope="col" >Amount & Time</th>
             <th scope="col">Status</th>
             <th scope="col text-start">
-              <div className="text-start">Supplier</div>
-            </th>
+            {mode == "Client" && <div className="text-center">Client</div>} 
+         {mode == "Supplier" && <div className="text-start">Supplier</div>}               </th>
             <th scope="col">
               <div className="text-start">Excess Capacity</div>
             </th>
@@ -45,16 +48,21 @@ const ComponentTableExcess = () => {
               <div className="text-status">Rejected</div>
             </td>
             <td>
-              <div className="row d-flex align-items-center">
-                <div className="item-Logo col-2">
-                  <img src={IconLogoSingle} alt="logo" />
-                </div>
-                <div className="col-8 text-start">
-                  <div className="text-order-number text-start">
-                    Quanzhou Laren Trading Co., Ltd. china
+            {mode == "Supplier" && (
+                <div className="row d-flex align-items-center">
+                  <div className="item-Logo col-2">
+                    <img src={IconLogoSingle} alt="logo" />
+                  </div>
+                  <div className="col-8 text-start">
+                    <div className="text-order-number text-start">
+                      Quanzhou Laren Trading Co., Ltd. china
+                    </div>
                   </div>
                 </div>
-              </div>
+              )}
+              {mode == "Client" && (
+                <div className="text-client">Saber Noori china</div>
+              )}
             </td>
             <td>
               <div className="row d-flex align-items-center">
@@ -92,16 +100,21 @@ const ComponentTableExcess = () => {
               <div className="text-status text-danger">Pending</div>
             </td>
             <td>
-              <div className="row d-flex align-items-center">
-                <div className="item-Logo col-2">
-                  <img src={IconLogoSingle} alt="logo" />
-                </div>
-                <div className="col-8 text-start">
-                  <div className="text-order-number text-start">
-                    Quanzhou Laren Trading Co., Ltd. china
+            {mode == "Supplier" && (
+                <div className="row d-flex align-items-center">
+                  <div className="item-Logo col-2">
+                    <img src={IconLogoSingle} alt="logo" />
+                  </div>
+                  <div className="col-8 text-start">
+                    <div className="text-order-number text-start">
+                      Quanzhou Laren Trading Co., Ltd. china
+                    </div>
                   </div>
                 </div>
-              </div>
+              )}
+              {mode == "Client" && (
+                <div className="text-client">Saber Noori china</div>
+              )}
             </td>
             <td>
               <div className="row d-flex align-items-center">
