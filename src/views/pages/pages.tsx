@@ -28,6 +28,7 @@ import CompanyProfile from "./companyProfile";
 import DashboardLikeCard from "./DashboardLikeCard/dashboard_like_card";
 import DashboardTableOrder from "./DashbordTableOrder/dashboard_table_order";
 import iconRani from "../../assets/icons/icon-rani-message.svg";
+import EditOrder from "./edit_orders";
 
 function Pages() {
   const location = useLocation();
@@ -56,7 +57,8 @@ function Pages() {
           location.pathname.includes("/register") ||
           location.pathname.includes("/dashboard") ||
           location.pathname.includes("/dashboard-table-order") ||
-          location.pathname.includes("/dashboard-like-card")
+          location.pathname.includes("/dashboard-like-card") ||
+          location.pathname.includes("/edit-order") 
           ? null : (
             <>
               {location.pathname === "/" ? <TopNavHome /> : <TopNav />}
@@ -86,6 +88,7 @@ function Pages() {
         <Route path="/membership" element={<MembershipPage />} />
         <Route path="/side-service" element={<SideServicePage />} />
         <Route path="/company-profile" element={<CompanyProfile />} />
+        <Route path="/edit-order" element={<EditOrder />} />
       </Routes>
       {
         location.pathname.includes("/login") ||
@@ -93,7 +96,8 @@ function Pages() {
           location.pathname.includes("/membership") ||
           location.pathname.includes("/dashboard") ||
           location.pathname.includes("/dashboard-table-order") ||
-          location.pathname.includes("/dashboard-like-card")
+          location.pathname.includes("/dashboard-like-card") ||
+          location.pathname.includes("/edit-order") 
           ? null : (
             <>
               <Footer />
