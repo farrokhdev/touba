@@ -1426,8 +1426,6 @@ a {
 }
 
 .card-product {
-  width: 507px;
-  height: 211px;
   background-color: #FFFFFF;
   border-radius: 16px;
   display: -webkit-box;
@@ -1436,7 +1434,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 100px;
 }
 
 .card-product-image {
@@ -1449,14 +1446,10 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: auto 0;
-  width: 40%;
-  height: 100%;
 }
 
 .card-product-content {
   width: 60%;
-  height: 90%;
 }
 
 .card-product-content-header {
@@ -5213,6 +5206,7 @@ a {
           flex-direction: row !important;
   -ms-flex-wrap: nowrap !important;
       flex-wrap: nowrap !important;
+  padding: 25px 0 !important;
 }
 
 .card-calculate-product .section-image {
@@ -5294,16 +5288,16 @@ a {
   font-weight: 600;
   font-size: 16px;
   color: #6b798c !important;
-  margin: 0 5px;
+  margin: 0 15px;
 }
 
 .card-calculate-product .section-multiple {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
-  -webkit-box-pack: center !important;
-      -ms-flex-pack: center !important;
-          justify-content: center !important;
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: end !important;
   -webkit-box-align: center !important;
       -ms-flex-align: center !important;
           align-items: center !important;
@@ -5335,9 +5329,9 @@ a {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
-  -webkit-box-pack: center !important;
-      -ms-flex-pack: center !important;
-          justify-content: center !important;
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: end !important;
   -webkit-box-align: center !important;
       -ms-flex-align: center !important;
           align-items: center !important;
@@ -7522,5 +7516,23 @@ a {
           box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
   border-radius: 8px;
   padding: 3%;
+}
+
+.message-box-imaege {
+  background: #ffffff;
+  /* Border */
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+}
+
+.message-box-imaege .time-text {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  color: #6b798c !important;
+  opacity: 0.6;
 }
 /*# sourceMappingURL=components-dir.css.map */
