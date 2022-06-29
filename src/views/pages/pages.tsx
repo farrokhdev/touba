@@ -65,7 +65,8 @@ function Pages() {
               {location.pathname === "/" ? <TopNavHome /> : <TopNav />}
               <BottomNav />
             </>
-          )}
+          )
+      }
       {location.pathname.includes("/profile") ? <ComponentBinaRazan /> : null}
       {location.pathname.includes("/dashboard") ? (
         <div className="row">
@@ -77,17 +78,18 @@ function Pages() {
               <Route path="/dashboard" element={<DashboardPage />} />
               <Route path="/dashboard/edit-order" element={<EditOrder />} />
               <Route path="/dashboard/details-order" element={<DetailsOrder />} />
+              <Route
+                path="/dashboard-table-order"
+                element={<DashboardTableOrder />}
+              />
+              <Route path="/dashboard-like-card" element={<DashboardLikeCard />} />
             </Routes>
           </div>
         </div>
-      ) : (null)}
+      ) : (null)
+      }
       <Routes>
 
-        <Route
-          path="/dashboard-table-order"
-          element={<DashboardTableOrder />}
-        />
-        <Route path="/dashboard-like-card" element={<DashboardLikeCard />} />
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutusPage />} />
         <Route path="/login" element={<Login />} />
@@ -119,8 +121,9 @@ function Pages() {
             <>
               <Footer />
             </>
-          )}
-    </div>
+          )
+      }
+    </div >
   );
 }
 
