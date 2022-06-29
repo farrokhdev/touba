@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import {
   IconBag,
   IconBagGray,
@@ -59,13 +59,13 @@ export function TopNavHome() {
             <ButtonIcon nameButton="" icon={IconBagGray} />
          
             {localStorage.getItem("token") == "true" ? (
-            <Link to="/dashboard">
+            <NavLink to="/dashboard">
               <ButtonIcon nameButton="" icon={IconTwoPerson} />
-            </Link>
+            </NavLink>
           ) : (
-            <Link to="/login">
+            <NavLink to="/login">
               <ButtonIcon icon={IconTwoPerson} nameButton={""} />
-            </Link>
+            </NavLink>
           )}
           </div>
         </div>
