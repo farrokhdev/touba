@@ -24,14 +24,14 @@ export function ButtonIcon({ onClick, icon, nameButton }: Props): ReactElement {
                 nameButton === "" || nameButton.trim() === " " ? (
                     <button
                         className="button-icon"
-                        onClick={handleOnClick}
+                        // onClick={handleOnClick}
                     >
                         <img src={icon} alt="" className="icon" />
                     </button>
                 ) : (
                     <button
                         className="button-icon-title"
-                        onClick={handleOnClick}
+                        // onClick={handleOnClick}
                     >
                         <img src={icon} alt="" className="icon" />
                         <h5 className="button-icon-title-text">
