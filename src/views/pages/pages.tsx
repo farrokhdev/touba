@@ -29,6 +29,7 @@ import DashboardLikeCard from "./DashboardLikeCard/dashboard_like_card";
 import DashboardTableOrder from "./DashbordTableOrder/dashboard_table_order";
 import iconRani from "../../assets/icons/icon-rani-message.svg";
 import Review from "./review";
+import Cart from "./cart";
 
 function Pages() {
   const location = useLocation();
@@ -51,21 +52,18 @@ function Pages() {
 
   return (
     <div>
-
-      {
-        location.pathname.includes("/login") ||
-          location.pathname.includes("/register") ||
-          location.pathname.includes("/dashboard") ||
-          location.pathname.includes("/dashboard-table-order") ||
-          location.pathname.includes("/dashboard-like-card") ||
-          location.pathname.includes("/edit-order") ||
-          location.pathname.includes("/details-order") 
-          ? null : (
-            <>
-              {location.pathname === "/" ? <TopNavHome /> : <TopNav />}
-              <BottomNav />
-            </>
-          )}
+      {location.pathname.includes("/login") ||
+      location.pathname.includes("/register") ||
+      location.pathname.includes("/dashboard") ||
+      location.pathname.includes("/dashboard-table-order") ||
+      location.pathname.includes("/dashboard-like-card") ||
+      location.pathname.includes("/edit-order") ||
+      location.pathname.includes("/details-order") ? null : (
+        <>
+          {location.pathname === "/" ? <TopNavHome /> : <TopNav />}
+          <BottomNav />
+        </>
+      )}
       {location.pathname.includes("/profile") ? <ComponentBinaRazan /> : null}
 
       <Routes>
@@ -73,7 +71,8 @@ function Pages() {
         <Route
           path="/dashboard-table-order"
           element={<DashboardTableOrder />}
-        />
+        />{" "}
+        <Route path="/cart" element={<Cart />} />
         <Route path="/review" element={<Review />} />
         <Route path="/dashboard-like-card" element={<DashboardLikeCard />} />
         <Route path="/" element={<Home />} />
@@ -94,21 +93,18 @@ function Pages() {
         <Route path="/details-order" element={<DetailsOrder />} />
         <Route path="/test" element={<PageTestComponent />} />
       </Routes>
-      {
-        location.pathname.includes("/login") ||
-          location.pathname.includes("/register") ||
-          location.pathname.includes("/membership") ||
-          location.pathname.includes("/dashboard") ||
-          location.pathname.includes("/dashboard-table-order") ||
-          location.pathname.includes("/dashboard-like-card") ||
-          location.pathname.includes("/edit-order") ||
-          location.pathname.includes("/details-order") 
-
-          ? null : (
-            <>
-              <Footer />
-            </>
-          )}
+      {location.pathname.includes("/login") ||
+      location.pathname.includes("/register") ||
+      location.pathname.includes("/membership") ||
+      location.pathname.includes("/dashboard") ||
+      location.pathname.includes("/dashboard-table-order") ||
+      location.pathname.includes("/dashboard-like-card") ||
+      location.pathname.includes("/edit-order") ||
+      location.pathname.includes("/details-order") ? null : (
+        <>
+          <Footer />
+        </>
+      )}
     </div>
   );
 }
