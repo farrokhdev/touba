@@ -4,7 +4,7 @@
         @include Border(1px, $gray, 8px);
         @include Display(flex, center, center);
         background-color: transparent;
-        padding: 13px;
+        padding: 10px;
     }
   
     >span {
@@ -29,7 +29,7 @@
         @include Border(1px, $gray, 8px);
         @include Display(flex, center, center);
         background-color: transparent;
-        padding: 13px;
+        padding: 10px;
     }
   
     >span {

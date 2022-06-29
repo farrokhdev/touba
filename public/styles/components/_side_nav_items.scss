@@ -1,0 +1,68 @@
+.side-nav {
+    &-items {
+        background-color: $white;
+        // box-sizing: border-box;
+        padding: 10px 16px;
+
+      
+        .active {
+            padding: 12px 0;
+            height: 52px;
+            background-color: transparent;
+            .side-nav-items-link-content-active {
+                width: 292px;
+                height: 52px;
+
+                .side-nav-items-link-content-title {
+                    @include FontStyle (16px, 400, $white);
+                    margin: 0 18px;
+
+                    .side-nav-items-link-content-title-time {
+                        @include FontStyle (11px, 700, $lightSorme);
+                        margin: 12px 0;
+                    }
+                }
+
+                .side-nav-items-link-content-icon {
+                    margin: 0 5px;
+                }
+            }
+        }
+
+        &-link {
+            @include Display(flex, space-between, center);
+            padding: 12px 0;
+
+            &-content {
+                @include Display(flex, center, center);
+
+                &-title {
+                    @include FontStyle (16px, 400, $sorme);
+                    margin: 0 18px;
+
+                    &-time {
+                        @include FontStyle (11px, 700, $lightSorme);
+                        margin: 12px 0;
+                    }
+                }
+
+                &-icon {
+                    margin: 0 5px;
+                }
+            }
+
+            &-notification {
+                width: auto;
+                height: 26px;
+                @include Display (flex, center, center);
+                background-color: $green;
+                border-radius: 100px;
+                padding: 0 7px;
+
+                >span {
+                    @include FontStyle (16px, 600, $white);
+                }
+            }
+        }
+    }
+}

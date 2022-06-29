@@ -12,7 +12,6 @@ export class DashboarPageController extends Component<IProps, IState> {
 
     state = {
         active: 1,
-
     };
 
     //list

@@ -25,7 +25,7 @@ export function ButtonIconDashboard({ onClick, notification, icon, dropdown, dat
 
     return (
         <>
-            {dropdown === undefined || dropdown === "" ? (
+            {dropdown === undefined ? (
                 <div className="section-two">
                     <button
                         className="button-icon-two"
