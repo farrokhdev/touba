@@ -7,29 +7,25 @@ const TEST_NAV_ITEM = [
     {
         title: "Group Title 1",
         time: "2 MINS",
-        notification: 10,
-        active: true,
-        location: "/",
+        notification: 0,
+        location: "/test",
         id: 1
     },
     {
         title: "Group Title 2",
         notification: 10,
         icon: `${IconCalling}`,
-        active: false,
-        location: "/test",
+        location: "/",
         id: 2
     },
     {
         title: "Group Title 3",
-        icon: `${IconCalling}`,
-        active: false,
+        icon: ``,
         location: "/",
         id: 3
     },
     {
         title: "Group Title 4",
-        active: false,
         location: "/",
         id: 4
     },
@@ -40,8 +36,7 @@ class PageTestComponents extends Component {
     render() {
         return (
             <div className="mx-1">
-                <ImageArrow title={"dgrdfg"}/>
-                <div style={{ width: "315px" }}>
+                <div style={{ width: "315px", height:"100vh" }}>
                     <SideNavItems items={TEST_NAV_ITEM} />
                 </div>
             </div>
