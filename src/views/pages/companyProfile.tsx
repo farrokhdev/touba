@@ -3,31 +3,36 @@ import {
   IconArrowGreen,
   IconCalling,
   IconEmail1,
-  IconHeart,
   IconHeartDashboard,
   IconLocation,
   IconMessages,
-  IconMessageSeideservice,
   IconOntime,
-  IconSearch,
   IconSearchReverse,
   IconShare,
   IconStar,
   IconStartOutline,
   IconTimeCircle,
   ImageBinarazan,
-  ImageBrand,
   ImageCertificate,
   ImageChina,
   ImagecompanyProfileTeam,
   ImageComppanyProfile,
   ImageDiamond,
-  ImagePerson,
   ImageProfileSupplier,
 } from "../../assets";
-import { ComponentBinaRazan } from "../components/components";
-import Component_bina_razan from "../components/component_bina_razan";
+import { CardOfferHorizontal } from "../components/cars_offer_horizontal";
+import {
+  ComponentCapicityFilter,
+  ComponentFilterRangeSlider,
+  ComponentFilterSidebar,
+  ComponentFilterTopbar,
+} from "../components/components";
 import ToubaProduct from "./ToubaProduct/ToubaProduct";
+import image_test from "../../assets/images/image-test.png";
+import Footer from "../layout/footer";
+import TopNav from "../layout/top_nav";
+import BottomNav from "../layout/bottom_nav";
+import Component_search_bar from "../components/component_search_bar";
 
 interface IProps {}
 
@@ -39,6 +44,20 @@ export default class CompanyProfile extends BaseComponent<IProps, IState> {
   state: IState = {
     isShow: 1,
   };
+  TEST = [
+    { name: "JAN", size: 20 },
+    { name: "FEB", size: 30 },
+    { name: "MAR", size: 40 },
+    { name: "APR", size: 50 },
+    { name: "MAY", size: 60 },
+    { name: "JUN", size: 70 },
+    { name: "JUL", size: 80 },
+    { name: "AUG", size: 90 },
+    { name: "SEP", size: 100 },
+    { name: "OCT", size: 20 },
+    { name: "NOV", size: 20 },
+    { name: "DEC", size: 20 },
+  ];
   render() {
     const about = () => {
       return (
@@ -493,6 +512,90 @@ export default class CompanyProfile extends BaseComponent<IProps, IState> {
         </>
       );
     };
+    const expess = () => {
+      return (
+        <div className="excess-section">
+          <div className=" px-4">
+            <div className="row p-3     ">
+              <div className="col-3">
+                <ComponentFilterSidebar showButton={false} />
+              </div>
+              <div className="col-9">
+                <div className="p-2">
+                  <ComponentFilterRangeSlider />
+                </div>
+                <div className="p-2 expess-select d-flex flex-row align-items-center justify-content-between">
+                  <span>4 Products</span>
+                  <select>
+                    <option>Most Relative</option>
+                  </select>
+                </div>
+                <div className="p-2">
+                  <ComponentCapicityFilter />
+                </div>
+                <div className="p-2">
+                  <CardOfferHorizontal
+                    image={image_test}
+                    status={"exp"}
+                    description={
+                      "Pomegranate Juice Pet Bottle, Best material and design, Ready to Order"
+                    }
+                    rate={4}
+                    country={"chin"}
+                    chart={this.TEST}
+                    amount={5}
+                    discountPercent={2}
+                  />
+                </div>
+                <div className="p-2">
+                  <CardOfferHorizontal
+                    image={image_test}
+                    status={"exp"}
+                    description={
+                      "Pomegranate Juice Pet Bottle, Best material and design, Ready to Order"
+                    }
+                    rate={4}
+                    country={"chin"}
+                    chart={this.TEST}
+                    amount={5}
+                    discountPercent={2}
+                  />
+                </div>
+                <div className="p-2">
+                  <CardOfferHorizontal
+                    image={image_test}
+                    status={"exp"}
+                    description={
+                      "Pomegranate Juice Pet Bottle, Best material and design, Ready to Order"
+                    }
+                    rate={4}
+                    country={"chin"}
+                    chart={this.TEST}
+                    amount={5}
+                    discountPercent={2}
+                  />
+                </div>
+                <div className="p-2">
+                  <CardOfferHorizontal
+                    image={image_test}
+                    status={"exp"}
+                    description={
+                      "Pomegranate Juice Pet Bottle, Best material and design, Ready to Order"
+                    }
+                    rate={4}
+                    country={"chin"}
+                    chart={this.TEST}
+                    amount={5}
+                    discountPercent={2}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <Footer />
+        </div>
+      );
+    };
     const contentRender = () => {
       if (this.state.isShow === 1) {
         return about();
@@ -500,6 +603,8 @@ export default class CompanyProfile extends BaseComponent<IProps, IState> {
         return products();
       } else if (this.state.isShow === 4) {
         return contactUs();
+      } else if (this.state.isShow === 3) {
+        return expess();
       } else {
         return about();
       }
@@ -511,6 +616,8 @@ export default class CompanyProfile extends BaseComponent<IProps, IState> {
             ? "marginButton"
             : this.state.isShow === 2
             ? "marginButtonLow"
+            : this.state.isShow === 3
+            ? "excess-section"
             : "marginButtomCon"
         }`}
       >
@@ -571,7 +678,9 @@ export default class CompanyProfile extends BaseComponent<IProps, IState> {
               <button onClick={() => this.setState({ isShow: 2 })}>
                 Products
               </button>
-              <button>Excess Capacity</button>
+              <button onClick={() => this.setState({ isShow: 3 })}>
+                Excess Capacity
+              </button>
               <button onClick={() => this.setState({ isShow: 4 })}>
                 Contact Us
               </button>
