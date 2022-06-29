@@ -144,3 +144,8 @@ export { default as IconPaper} from './icons/icon-paper.svg';
 export { default as IconTick} from './icons/icon-tick.svg';
 export { default as IconInfo} from './icons/icon-info.svg';
 export { default as IconDelete} from './icons/icon-delete.svg';
+export { default as IconSend} from './icons/icon-send.svg';
+export { default as IconAttach} from './icons/icon-attach.svg';
+export { default as IconDeleteWhite} from './icons/icon-delete-white.svg';
+export { default as IconUpload} from './icons/icon-upload.svg';
+export { default as IconUndo} from './icons/icon-undo.svg';

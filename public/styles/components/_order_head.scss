@@ -1,0 +1,33 @@
+.order-head {
+    background: #fc4a56;
+    border-radius: 16px 16px 0px 0px;
+    padding: 30px;
+    .detail {
+        div {
+            height: 50px;
+            &:first-child {
+                padding-right: 64px;
+                border-right: 1px solid #ffffff;
+            }
+            &:last-child {
+                padding-left: 64px;
+                border-left: 1px solid #ffffff;
+            }
+        }
+        .title {
+            @include FontStyle(16px, 400, $white);
+        }
+        .desk {
+            @include FontStyle(16px, 600, $white);
+        }
+    }
+    button {
+        @include FontStyle(16px, 700, $white);
+        background: #f9151d;
+        border-radius: 59px;
+        border: none;
+        outline: none;
+        height: 40px;
+        width: 95px;
+    }
+}

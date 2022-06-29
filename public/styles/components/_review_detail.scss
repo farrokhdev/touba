@@ -10,8 +10,9 @@
     .content {
         max-width: 1427px;
         background-color: $white;
-        margin-top: 15%;
-        margin-left: 12.5%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 11%;
     }
     .head {
         border-bottom: 1px solid $gray;
@@ -112,25 +113,26 @@
                 @include FontStyle(14px, 500, $lightSorme);
             }
         }
-        .btn-container {
-            button {
-                @include FontStyle(14px, 600, $white);
-                height: 50px;
-                border: none;
-                outline: none;
-                border-radius: 8px;
-                letter-spacing: 0.75px;
-                text-transform: uppercase;
-                &:first-child {
-                    background-color: $lightSorme;
-                    width: 90px;
-                    margin-right: 20px;
-                }
-                &:last-child {
-                    background-color: $green;
-                    width: 150px;
-                }
-            }
+    }
+}
+.even-btn-container {
+    button {
+        @include FontStyle(14px, 600, $white);
+        height: 50px;
+        border: none;
+        outline: none;
+        border-radius: 8px;
+        letter-spacing: 0.75px;
+        text-transform: uppercase;
+        padding: 14px 16px;
+        &:first-child {
+            background-color: $lightSorme;
+            // width: 90px;
+            margin-right: 20px;
+        }
+        &:last-child {
+            background-color: $green;
+            // width: 150px;
         }
     }
 }
