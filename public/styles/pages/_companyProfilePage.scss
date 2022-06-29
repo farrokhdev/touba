@@ -273,6 +273,19 @@
     .company-Name {
         @include FontStyle(34px, 700, $white);
     }
+
+    .expess-select {
+        span {
+            @include FontStyle(22px, 800, $sorme);
+        }
+        select {
+            background-color: $white;
+            border: none;
+            outline: none;
+            padding: 20px 40px;
+            border-radius: 8px;
+        }
+    }
 }
 .marginButton {
     margin-bottom: 4600px;
@@ -282,4 +295,7 @@
 }
 .marginButtomCon {
     margin-bottom: 800px;
+}
+.excess-section {
+    margin-bottom: 1500px;
 }

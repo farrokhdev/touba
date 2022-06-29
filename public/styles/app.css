@@ -12127,6 +12127,24 @@ a {
   color: #FFFFFF !important;
 }
 
+.company-Profile-Page .expess-select span {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  color: #3c557a !important;
+}
+
+.company-Profile-Page .expess-select select {
+  background-color: #FFFFFF;
+  border: none;
+  outline: none;
+  padding: 20px 40px;
+  border-radius: 8px;
+}
+
 .marginButton {
   margin-bottom: 4600px;
 }
@@ -12137,6 +12155,10 @@ a {
 
 .marginButtomCon {
   margin-bottom: 800px;
+}
+
+.excess-section {
+  margin-bottom: 1500px;
 }
 
 .table-box {
