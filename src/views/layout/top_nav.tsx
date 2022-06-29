@@ -91,7 +91,6 @@ export function TopNav() {
             <ButtonIcon icon={IconTwoPerson} />
           </Link>
 
-          <button className="btn btn-primary">salam</button>
         </div>
       </div>
     </div>
