@@ -1,0 +1,46 @@
+.product-cart {
+    background: $white;
+    border-radius: 12px;
+    padding: 30px;
+    height: 235px;
+    .product-detail {
+        .product-img {
+            width: 170px;
+            height: 170px;
+            border: 1px solid #f3f4f6;
+            border-radius: 8px;
+        }
+        .name {
+            @include FontStyle(22px, 800, $sorme);
+        }
+        .desk {
+            @include FontStyle(10px, 700, $sorme);
+            img {
+                width: 15px;
+                height: 15px;
+            }
+        }
+        .delivery {
+            span {
+                &:first-child {
+                    @include FontStyle(14px, 500, $lightSorme);
+                }
+                &:last-child {
+                    @include FontStyle(14px, 500, $sorme);
+                }
+            }
+        }
+    }
+    .price-info {
+        .price {
+            @include FontStyle(16px, 400, $lightSorme);
+        }
+        .price2 {
+            @include FontStyle(22px, 500, $lightSorme);
+            border-left: 1px solid #d6d6d6;
+        }
+        .per {
+            @include FontStyle(12px, 500, $lightSorme);
+        }
+    }
+}
