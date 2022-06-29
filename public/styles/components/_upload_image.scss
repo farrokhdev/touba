@@ -1,0 +1,18 @@
+.upload-image {
+    background-color: $bgWhite;
+    border-radius: 16px;
+    padding: 20px;
+    div {
+        border: 2px dashed $gray;
+        border-radius: 8px;
+        height: 100%;
+        width: 100%;
+        span {
+            @include FontStyle(12px, 500, $sorme);
+            margin-top: 15px;
+        }
+        img {
+            transform: scale(120%);
+        }
+    }
+}

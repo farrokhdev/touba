@@ -64,14 +64,21 @@ export { default as ContentRelated } from './content_related';
 export { default as ComponentCapicityFilter } from './component_capicity_filter';
 export { default as InputTextPhoneNumber } from './input_text_phonenumber';
 export { default as DropDownBottomMenu } from './dropdown_bottom_menu';
-
+export { default as CardGroupChat } from './card_group_chat';
+export { default as ButtonIconDashboard } from './button_icon_dashboard';
+export { default as Offcanvas } from './offcanvas';
+export { default as CardCalculateProduct } from './card_calculate_product';
+export { default as ModalComponent } from './modal';
 export { default as Map } from './component_map';
 export { default as ComponentMapBox } from './component_map_box';
 export { default as ComponentProgress } from './component_progress';
 export { default as ComponentKeyWord } from './component_key_word';
 export { default as ComponentTableORder } from './component_table_order';
 export { default as ComponentDashboardHeader } from './component_dashboard_header';
+export { default as MessangerTab } from './messenger_tab';
 export { default as ComponentTableExcess } from './component_table_excess';
+export { default as SideNavItems } from './side_nav_items';
+export { default as ImageArrow } from './image_arrow';
 
 
 

@@ -2,7 +2,6 @@
     position: relative;
     border-radius: 11.616px;
     background-color: $white;
-    width: 363px;
     .like-Btn {
         width: 46px;
         height: 46px;
@@ -75,6 +74,9 @@
                     }
                 }
             }
+        }
+        .slider{
+            cursor: pointer;
         }
         .swiper-slide {
             max-width: 80px;

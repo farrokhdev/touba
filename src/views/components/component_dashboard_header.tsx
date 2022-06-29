@@ -5,7 +5,7 @@ function ComponentDashboardHeader() {
   return (
     <div className="dashboard-header-card">
       <div className="row d-flex pt-4">
-        <div className="col-9 pb-5">
+        <div className="col-9 pb-5 mt-3">
           <div className="">
             <div className="text-title">
               Complete your profile, Get 30% offer!
@@ -20,7 +20,7 @@ function ComponentDashboardHeader() {
         </div>
         <div className="col-3 d-flex ">
           <div className="d-flex align-items-end image-div">
-            <img src={iconG} height={""} width={"250px"} />
+            <img src={iconG} height={""} width={"290px"} />
           </div>
         </div>
       </div>

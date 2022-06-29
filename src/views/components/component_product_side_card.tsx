@@ -8,11 +8,12 @@ import clock from "../../assets/icons/icon-clock.svg";
 import iconMessage from "../../assets/icons/icon-message.svg";
 import iconCard from "../../assets/icons/icon-card.svg";
 import { Divider } from "./components";
+import { Link } from "react-router-dom";
 
-interface Props  {
-  handleAddToCart?:any
+interface Props {
+  handleAddToCart?: any;
 }
-const ComponentProductSideCard = ({handleAddToCart}:Props) => {
+const ComponentProductSideCard = ({ handleAddToCart }: Props) => {
   return (
     <div className="p-3 product-side-card">
       <div className="d-flex justify-content-center align-items-center">
@@ -86,18 +87,20 @@ const ComponentProductSideCard = ({handleAddToCart}:Props) => {
         </div>
       </div>
       <div className="d-flex justify-content-center align-items-center mt-4">
-        <div className="seemore">Supplier Profile</div>
+        <Link to="/company-profile">
+          <div className="seemore">Supplier Profile</div>
+        </Link>
       </div>
       <div className="d-flex justify-content-center align-items-center mt-4">
         <div className="row d-flex justify-content-center align-items-center">
           <div className="col-5 pl-2">
-            <Divider />
+            <Divider direction={"vertical"} />
           </div>
           <div className="col-2 ">
             <div className="text-desc text-center">Contact</div>
           </div>
           <div className="col-5 pr-2">
-            <Divider />
+            <Divider direction={"vertical"} />
           </div>
         </div>
       </div>
@@ -113,7 +116,10 @@ const ComponentProductSideCard = ({handleAddToCart}:Props) => {
         </button>
       </div>
       <div className="d-flex  align-items-center mt-3">
-        <button onClick={()=>handleAddToCart()} className="button-cart w-100 d-flex justify-content-center align-items-center">
+        <button
+          onClick={() => handleAddToCart()}
+          className="button-cart w-100 d-flex justify-content-center align-items-center"
+        >
           <img style={{ marginRight: "2%" }} src={iconCard} />
           Add to cart{" "}
         </button>

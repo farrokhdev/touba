@@ -1,0 +1,174 @@
+.modal-component {
+    .modal-dialog {
+        width: 70% !important;
+        max-width: 1427px !important;
+        border-radius: 12px !important;
+
+        .modal-header {
+            border-bottom: 1px solid $gray  !important;
+        }
+
+        .modal-footer {
+            border-bottom: 1px solid $gray  !important;
+        }
+    }
+
+    .col-1 {
+        width: 1.333% !important;
+    }
+
+    .content {
+        .header {
+            @include Display(flex, space-between, center);
+
+            .user {
+                @include Display(flex, start, center);
+
+                &-name {
+                    @include FontStyle(16px, 600, $sorme);
+                    margin: 0;
+                }
+
+                &-date {
+                    @include FontStyle(12px, 500, $lightSorme);
+                    margin: 0;
+                }
+            }
+
+            .rate {
+                @include Display(flex, end, center);
+
+                .link {
+                    @include FontStyle(14px, 600, $green);
+                    margin: 0;
+                    white-space: nowrap;
+                }
+
+                .icon {
+                    width: 24px;
+                    height: 24px;
+
+                    >img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .description {
+            width: 95%;
+            @include Display(flex, start, center);
+            margin: 20px 0;
+
+            .text {
+                @include FontStyle(16px, 400, $lightSorme);
+                margin: 0;
+                text-align: justify;
+            }
+        }
+    }
+
+    .product {
+        @include Display(flex, start, flex-start, column);
+
+        .title {
+            @include FontStyle(10px, 700, $lightSorme);
+            margin: 36px 0 0 10px;
+        }
+
+        &-image {
+            @include Display(flex, space-between, center);
+
+            >img {
+                width: 123px;
+                height: 122px;
+            }
+
+            >h4 {
+                @include FontStyle(16px, 700, $sorme);
+                margin: 0 20px;
+            }
+        }
+    }
+
+
+
+    .button-close {
+        width: 48px;
+        height: 48px;
+        background-color: $bgWhite;
+        @include Display(flex, center, center);
+        @include Border(0px, transparent, 100px);
+    }
+
+    .rate {
+
+        @include Display(flex, center, center);
+        height: 20px;
+    }
+
+    .modal-footer {
+        @include Display(flex, space-between, center);
+
+        .footer-button-group {
+            @include Display(flex, end, center);
+            margin: 0 15px;
+
+            .my-btn-green {
+                width: 148px;
+                height: 48px;
+                background-color: $green;
+
+                >h6 {
+                    @include FontStyle(14px, 600, $white);
+                    margin: 0;
+                }
+            }
+
+            .my-btn-gray {
+                width: 92px;
+                height: 48px;
+                background-color: $lightSorme;
+                margin: 0 15px;
+
+                >h6 {
+                    @include FontStyle(14px, 600, $gray);
+                    margin: 0;
+                }
+            }
+        }
+        .dropdown-component {
+            margin: 0 15px;
+            position: relative;
+            .dropdown-component-button {
+                width: 175px;
+                height: 48.64px;
+                padding: 0 10px;
+                @include Border(1px, $gray, 8px);
+                @include Display(flex, space-between, center)
+            }
+            .dropdown-component-items {
+                width: 100%;
+                background-color: $white;
+                position: absolute;
+                top: 62px;
+                >a {
+                    @include FontStyle(14px, 600, $lightSorme);
+                }
+            }
+        }
+
+
+        .footer-dropdown {
+            margin: 0 15px;
+
+            >h5 {
+                @include FontStyle(16px, 400, $lightSorme);
+                margin: 0;
+                white-space: nowrap;
+            }
+
+            @include Display(flex, start, center);
+        }
+    }
+}

@@ -8,9 +8,10 @@ import {
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
     icon: string;
+    nameButton: string;
 }
 
-export function ButtonIcon({ onClick, icon }: Props): ReactElement {
+export function ButtonIcon({ onClick, icon, nameButton }: Props): ReactElement {
 
     const handleOnClick = useCallback((event: MouseEvent<HTMLButtonElement>) => {
         event.stopPropagation();
@@ -18,12 +19,28 @@ export function ButtonIcon({ onClick, icon }: Props): ReactElement {
     }, [onClick]);
 
     return (
-        <button
-            className="button-icon"
-            onClick={handleOnClick}
-        >
-            <img src={icon} alt="" className="icon"/>
-        </button>
+        <>
+            {
+                nameButton === "" || nameButton.trim() === " " ? (
+                    <button
+                        className="button-icon"
+                        // onClick={handleOnClick}
+                    >
+                        <img src={icon} alt="" className="icon" />
+                    </button>
+                ) : (
+                    <button
+                        className="button-icon-title"
+                        // onClick={handleOnClick}
+                    >
+                        <img src={icon} alt="" className="icon" />
+                        <h5 className="button-icon-title-text">
+                            {nameButton}
+                        </h5>
+                    </button>
+                )
+            }
+        </>
     )
 }
 

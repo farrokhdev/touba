@@ -21,8 +21,11 @@ export default class DashboardTableOrder extends DashboardTableOrderController {
           <ButtonSelect
             onClick={(e: any) => this.handleNavFilter(e)}
             titleButton1="Your Orders"
-            titleButton2="Sales List"
-          />
+            titleButton2="Sales List" state={0} setState1={function (): void {
+              throw new Error("Function not implemented.");
+            } } setState2={function (): void {
+              throw new Error("Function not implemented.");
+            } }          />
         </div>
         <div className="row  align-items-center d-flex p-3 ">
           <div className="table-box">

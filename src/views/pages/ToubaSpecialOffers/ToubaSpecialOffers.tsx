@@ -44,7 +44,9 @@ export class ToubaSpecialOffers extends ToubaSpecialOferControllers {
 
           <div className="d-flex justify-content-center mt-3">
             <ButtonSelect
-              onClick={(e: boolean) => this.test(e)}
+              state={this.state.activeTab}
+              setState1={()=> this.setState({activeTab : 1})}
+              setState2={()=>this.setState({activeTab : 2})}
               titleButton1="Products"
               titleButton2="Excess Capacity"
             />

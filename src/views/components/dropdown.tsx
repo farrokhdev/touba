@@ -2,7 +2,7 @@ import { HTMLAttributes, MouseEvent, memo, ReactElement, useCallback, useState }
 import { Link } from "react-router-dom";
 import { IconArrowBlack, IconArrowWhite } from "../../assets";
 
-type LINKS = {
+export type LINKS = {
     nameLink: string;
     location: string;
 }

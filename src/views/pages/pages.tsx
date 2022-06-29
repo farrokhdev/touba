@@ -1,5 +1,5 @@
 import { HashRouter, Route, Routes, useLocation } from "react-router-dom";
-import { Home, Login } from ".";
+import { EditOrder, Home, Login, DetailsOrder, PageTestComponent } from ".";
 import { CHART, Chart } from "../components/chart";
 import {
   ComponentBinaRazan,
@@ -28,6 +28,7 @@ import CompanyProfile from "./companyProfile";
 import DashboardLikeCard from "./DashboardLikeCard/dashboard_like_card";
 import DashboardTableOrder from "./DashbordTableOrder/dashboard_table_order";
 import iconRani from "../../assets/icons/icon-rani-message.svg";
+import Dashboard from "../layout/dashboard/dashobord";
 
 function Pages() {
   const location = useLocation();
@@ -51,22 +52,44 @@ function Pages() {
   return (
     <div>
 
-      {location.pathname.includes("/login") ||
-      location.pathname.includes("/register") ? null : (
-        <>
-          {location.pathname === "/" ? <TopNavHome /> : <TopNav />}
-          <BottomNav />
-        </>
-      )}
+      {
+        location.pathname.includes("/login") ||
+          location.pathname.includes("/register") ||
+          location.pathname.includes("/dashboard") ||
+          location.pathname.includes("/dashboard-table-order") ||
+          location.pathname.includes("/dashboard-like-card") ||
+          location.pathname.includes("/dashboard/edit-order") ||
+          location.pathname.includes("/dashboard/details-order")
+          ? null : (
+            <>
+              {location.pathname === "/" ? <TopNavHome /> : <TopNav />}
+              <BottomNav />
+            </>
+          )
+      }
       {location.pathname.includes("/profile") ? <ComponentBinaRazan /> : null}
-
+      {location.pathname.includes("/dashboard") ? (
+        <div className="row">
+          <div className="col-2 bg-white">
+            <Dashboard />
+          </div>
+          <div className="col-10">
+            <Routes>
+              <Route path="/dashboard" element={<DashboardPage />} />
+              <Route path="/dashboard/edit-order" element={<EditOrder />} />
+              <Route path="/dashboard/details-order" element={<DetailsOrder />} />
+              <Route
+                path="/dashboard-table-order"
+                element={<DashboardTableOrder />}
+              />
+              <Route path="/dashboard-like-card" element={<DashboardLikeCard />} />
+            </Routes>
+          </div>
+        </div>
+      ) : (null)
+      }
       <Routes>
-        <Route path="/dashboard" element={<DashboardPage />} />
-        <Route
-          path="/dashboard-table-order"
-          element={<DashboardTableOrder />}
-        />
-        <Route path="/dashboard-like-card" element={<DashboardLikeCard />} />
+
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutusPage />} />
         <Route path="/login" element={<Login />} />
@@ -81,15 +104,26 @@ function Pages() {
         <Route path="/membership" element={<MembershipPage />} />
         <Route path="/side-service" element={<SideServicePage />} />
         <Route path="/company-profile" element={<CompanyProfile />} />
+
+        <Route path="/test" element={<PageTestComponent />} />
       </Routes>
-      {location.pathname.includes("/login") ||
-      location.pathname.includes("/register") ||
-      location.pathname.includes("/membership") ? null : (
-        <>
-          <Footer />
-        </>
-      )}
-    </div>
+      {
+        location.pathname.includes("/login") ||
+          location.pathname.includes("/register") ||
+          location.pathname.includes("/membership") ||
+          location.pathname.includes("/dashboard") ||
+          location.pathname.includes("/dashboard-table-order") ||
+          location.pathname.includes("/dashboard-like-card") ||
+          location.pathname.includes("/dashboard/edit-order") ||
+          location.pathname.includes("/dashboard/details-order")
+
+          ? null : (
+            <>
+              <Footer />
+            </>
+          )
+      }
+    </div >
   );
 }
 

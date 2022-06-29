@@ -1,0 +1,60 @@
+.card-calculate-product {
+    @include Display(flex, space-between, center);
+    padding: 25px 0 !important;
+    .section-image {
+        @include Display(flex, start, center);
+
+        .image {
+            width: 79px;
+            height: 79px;
+        }
+
+        .product-name {
+            @include FontStyle(16px, 600, $sorme);
+            margin: 0 0 20px 0;
+
+            >span {
+                @include FontStyle(16px, 600, $black);
+                margin: 0 5px;
+            }
+        }
+
+        .product-price {
+            @include FontStyle(20px, 600, $lightSorme);
+            margin: 0;
+            @include Display(flex, start, center);
+
+            >span {
+                @include FontStyle(16px, 600, $lightSorme);
+                margin: 0 15px;
+            }
+        }
+    }
+
+    .section-multiple {
+        @include Display(flex, end, center);
+
+        .multiple {
+            width: 7px;
+            height: 7px;
+        }
+
+        >span {
+            @include FontStyle(20px, 400, $sorme);
+            margin: 0 8.5px;
+        }
+    }
+
+    .section-total  {
+        @include Display(flex, end, center);
+
+        .total-price {
+            @include FontStyle(22px, 500, $lightSorme);
+            margin: 0;
+            >span {
+                @include FontStyle(22px, 800, $sorme);
+                margin: 0;
+            }
+        }
+    }
+}

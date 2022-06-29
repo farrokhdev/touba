@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import {
   IconBag,
   IconBagGray,
@@ -56,16 +56,16 @@ export function TopNavHome() {
             </Link>
           </div>
           <div className="top-nav-home-items-button-group">
-            <ButtonIcon icon={IconBagGray} />
+            <ButtonIcon nameButton="" icon={IconBagGray} />
          
             {localStorage.getItem("token") == "true" ? (
-            <Link to="/dashboard">
-              <ButtonIcon icon={IconTwoPerson} />
-            </Link>
+            <NavLink to="/dashboard">
+              <ButtonIcon nameButton="" icon={IconTwoPerson} />
+            </NavLink>
           ) : (
-            <Link to="/login">
-              <ButtonIcon icon={IconTwoPerson} />
-            </Link>
+            <NavLink to="/login">
+              <ButtonIcon icon={IconTwoPerson} nameButton={""} />
+            </NavLink>
           )}
           </div>
         </div>
@@ -103,14 +103,14 @@ export function TopNavHome() {
                 className="top-nav-home-minimal-brand-image"
               />
               <div className="top-nav-home-minimal-brand-button-group">
-                <ButtonIcon icon={IconBag} />
+                <ButtonIcon icon={IconBag} nameButton={""} />
                 {localStorage.getItem("token") == "true" ? (
                   <Link to="/dashboard">
-                    <ButtonIcon icon={IconTwoPerson} />
+                    <ButtonIcon icon={IconTwoPerson} nameButton={""} />
                   </Link>
                 ) : (
                   <Link to="/login">
-                    <ButtonIcon icon={IconTwoPerson} />
+                    <ButtonIcon icon={IconTwoPerson} nameButton={""} />
                   </Link>
                 )}
               </div>

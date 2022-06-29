@@ -1,0 +1,87 @@
+@mixin Avatar ($Left, $ZIndex) {
+    width: 40px;
+    height: 40px;
+    @include Border(0px, $white, 50px);
+    position: absolute;
+    left: $Left;
+    z-index: $ZIndex;
+}
+.disabled {
+    opacity: 0.5;
+}
+
+.card-group-chat {
+    @include Border(1px, $gray, 8px);
+    @include Display(flex, space-between, center);
+    margin: 16px 0 !important;
+    &-message {
+        @include Display(flex, space-around, flex-start, column);
+
+        &-title {
+            @include Display(flex, start, center);
+
+            &-text {
+                @include FontStyle(16px, 700, $sorme);
+                margin: 0;
+            }
+
+            &-amount {
+                width: 23px;
+                height: 26px;
+                border-radius: 40px;
+                @include Display(flex, center, center);
+                background-color: $green;
+                margin: 0 11px;
+
+                >span {
+                    @include FontStyle(16px, 600, $white);
+                    margin: 0;
+                }
+            }
+        }
+
+        &-description {
+            @include FontStyle(16px, 700, $lightSorme);
+            margin: 0;
+
+            >span {
+                @include FontStyle(16px, 500, $lightSorme);
+                margin: 0;
+            }
+        }
+    }
+
+    &-images {
+        @include Display(flex, start, flex-end, column);
+        .content {
+            position: relative;
+            @include Display(flex, end, center);
+            &-avatar1 {
+                @include Avatar(0px, 1);
+            }
+
+            &-avatar2 {
+                @include Avatar(27.5px, 2);
+            }
+
+            &-avatar3 {
+                @include Avatar(55px, 3);
+            }
+
+            &-amount {
+                @include Avatar(84.5px, 4);
+                background-color: #AAE2F5;
+                @include Display(flex, center, center);
+
+                >span {
+                    @include FontStyle(14px, 500, $sorme);
+                    margin: 0;
+                }
+            }
+        }
+        .date {
+            @include FontStyle(11px, 700, $lightSorme);
+            margin: 20px 0;
+        }
+    }
+}

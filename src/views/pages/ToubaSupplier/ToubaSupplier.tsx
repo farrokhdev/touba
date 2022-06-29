@@ -15,6 +15,7 @@ import {
   SelectComponent,
   SelectText,
 } from "../../components/components";
+import { Link } from "react-router-dom";
 interface IProps {}
 
 interface IState {
@@ -48,9 +49,12 @@ export class ToubaSupplier extends BaseComponent<IProps, IState> {
               <div className="p-2 d-flex align-items-center justify-content-between">
                 <div className="bigText">221 Products</div>
                 <div>
-                  <SelectComponent type="one" onSelect={function (name: string): void {
-                    throw new Error("Function not implemented.");
-                  } } />
+                  <SelectComponent
+                    type="one"
+                    onSelect={function (name: string): void {
+                      throw new Error("Function not implemented.");
+                    }}
+                  />
                 </div>
               </div>
               <div className="p-2 mt-4">
@@ -58,19 +62,33 @@ export class ToubaSupplier extends BaseComponent<IProps, IState> {
               </div>
 
               <div className=" p-2">
-                <ComponentSuppliers />
+                {" "}
+                <Link to="/company-profile" className="text-decoration-none">
+                  <ComponentSuppliers />{" "}
+                </Link>
               </div>
               <div className="p-2">
-                <ComponentSuppliers />
+                {" "}
+                <Link to="/company-profile" className="text-decoration-none">
+                  <ComponentSuppliers />{" "}
+                </Link>
               </div>
               <div className="p-2">
-                <ComponentSuppliers />
+                {" "}
+                <Link to="/company-profile" className="text-decoration-none">
+                  <ComponentSuppliers />{" "}
+                </Link>
               </div>
               <div className="p-2">
-                <ComponentSuppliers />
+                {" "}
+                <Link to="/company-profile" className="text-decoration-none">
+                  <ComponentSuppliers />{" "}
+                </Link>
               </div>
               <div className="p-2">
-                <ComponentSuppliers />
+                <Link to="/company-profile" className="text-decoration-none">
+                  <ComponentSuppliers />
+                </Link>
               </div>
 
               <div className="d-flex justify-content-center pagination mt-2">
