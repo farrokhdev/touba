@@ -43,7 +43,7 @@ export function TopNav() {
                     </Link>
                 </div>
             </div>
-            <Divider/>
+            <Divider direction={"vertical"}/>
             <div className="top-nav-content">
                 <div className="top-nav-content-brand">
                     <img
@@ -56,7 +56,7 @@ export function TopNav() {
                 </div>
                 <div className="top-nav-content-button">
                     <Link to="/login">
-                        <ButtonIcon icon={IconTwoPerson} />
+                        <ButtonIcon icon={IconTwoPerson} nameButton={""} />
                     </Link>
                 </div>
             </div>

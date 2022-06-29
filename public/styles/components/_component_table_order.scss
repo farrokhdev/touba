@@ -8,61 +8,95 @@
   #table-order td {
     padding: 3% 1%;
     border-bottom: 1px solid #b1b4c1;
-    
-
-
-}
+  }
 
   #table-order tr > th {
     padding: 1% 2%;
     background-color: rgb(214, 214, 214) !important;
     @include FontStyle(14px, 500, #6b798c);
     text-align: inherit;
+    white-space: nowrap;
+
   }
+
+  tbody {
+    .product {
+      img {
+        width: 48px;
+        height: 48px;
+      }
+      .name {
+        @include FontStyle(14px, 500, $sorme);
+      }
+      .desk {
+        @include FontStyle(10px, 700, $lightSorme);
+        letter-spacing: 1.5px;
+      }
+    }
+    .detail-btn {
+      button {
+        max-height: 50px;
+      }
+    }
+    .review {
+      @include FontStyle(14px, 500, $sorme);
+      font-style: italic !important;
+    }
+  }
+
   .text-hashtag {
     width: 37px;
     height: 37px;
     border-radius: 50%;
-    background: #F3F3F3;
+    background: #f3f3f3;
     display: flex;
     align-items: center;
-    color: #6B798C;
+    color: #6b798c;
     justify-content: center;
   }
-  .text-hashtag-active{
+  .text-hashtag-active {
     width: 37px;
     height: 37px;
     border-radius: 50%;
     color: $white;
     display: flex;
     align-items: center;
-    color: #6B798C;
+    color: #6b798c;
     justify-content: center;
-    background: #21C085;
+    background: #21c085;
     box-shadow: 0px 9px 11px rgba(230, 57, 70, 0.2);
   }
-  .text-order-number{
-    @include FontStyle(16px,400,#3C557A);
+  .text-order-number {
+    @include FontStyle(16px, 400, #3c557a);
     text-align: center;
   }
-  .text-payment{
-    @include FontStyle(22px,800,#FC4A56);
-    text-align: center;
-
-  }
-  .text-status{
-    @include FontStyle(16px,400,#21C085);
+  .text-payment {
+    @include FontStyle(22px, 800, #fc4a56);
     text-align: center;
   }
-  .text-client{
-    @include FontStyle(14px,400,#3C557A);
+  .text-status {
+    @include FontStyle(16px, 400, #21c085);
     text-align: center;
   }
-  .produt-box-number{
-    background: #F3F4F6;
-border-radius: 8px;
-display: flex;
-align-items: center;
-justify-content: center;
+  .text-client {
+    @include FontStyle(14px, 400, #3c557a);
+    text-align: center;
   }
+  .produt-box-number {
+    background: #f3f4f6;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .rate {
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+.reportText {
+  @include FontStyle(16px, 400, $green);
+  font-style: normal !important;
 }

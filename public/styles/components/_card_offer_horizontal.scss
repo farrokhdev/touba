@@ -27,7 +27,7 @@
             width: 95%;
         }
 
-        width: 45%;
+        width: 57%;
         height: 90%;
         display: flex;
         flex-direction: column;
@@ -76,6 +76,7 @@
                 align-items: center;
                 justify-content: space-evenly;
                 cursor: pointer;
+                margin: 0 20px;
 
                 &-text {
                     @include FontStyle(10px, 600, $black);
@@ -85,6 +86,47 @@
 
         &-country {
             @include FontStyle(10px, 700, $gray);
+        }
+
+        &-footer {
+            @include Display(flex, space-between, center);
+            &-item {
+                width: 100px;
+                height: 27px;
+                border: none;
+                border-radius: 8px;
+                background: linear-gradient(264.93deg, #FED402 26.79%, #FE9901 94.29%);
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                cursor: pointer;
+
+                &-text {
+                    @include FontStyle(10px, 600, $black);
+                }
+            }
+
+            &-date {
+                margin: 0 20px;
+                @include Display(flex, center, center);
+                &-response {
+                    @include Display(flex, center, center);
+                }
+                &-delivery {
+                    @include Display(flex, center, center);
+                }
+                .title {
+                    @include FontStyle(12px, 500, $lightSorme);
+                    margin: 0 0 7px 0;
+                }
+                .amount {
+                    @include FontStyle(14px, 700, $sorme);
+                    margin: 0;
+                }
+                .icon {
+                    margin: 0 17px;
+                }
+            }
         }
     }
 
@@ -106,7 +148,7 @@
             width: 95%;
         }
 
-        width: 30%;
+        width: 43%;
         display: flex;
         align-items: center;
         justify-content: space-evenly;

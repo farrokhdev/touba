@@ -135,6 +135,7 @@
                     text-align: justify;
                     text-justify: inter-word;
                 }
+
             }
 
             &-image {
@@ -210,6 +211,10 @@
                     text-align: justify;
                     text-justify: inter-word;
                 }
+            }
+            
+            .button-component {
+                width: 158px !important;
             }
         }
 
@@ -326,6 +331,9 @@
         margin: 0 auto;
         padding: 32px 0;
         max-width: 1920px;
+        .button-component {
+            width: 209px !important;
+        }
     }
 
     &-section-new {

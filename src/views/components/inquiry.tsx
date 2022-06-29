@@ -6,6 +6,7 @@ import {
   IconLogoInquiry,
   ImageChina,
 } from "../../assets";
+import Dashboard from "../layout/dashboard/dashobord";
 import { CardCalculate } from "./card_calculate";
 import { QualityStar } from "./components";
 import NeededCapacity from "./needed_capacity";

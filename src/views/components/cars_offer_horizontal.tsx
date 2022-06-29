@@ -1,5 +1,5 @@
 import { memo, ReactElement } from "react";
-import { IconArrow, IconGem, IconHeart, IconQuestionMark, IconStar, ImageBrandDisacount, ImageTest } from "../../assets";
+import { IconArrow, IconClockSuccess, IconEmailArrow, IconGem, IconHeart, IconQuestionMark, IconStar, ImageBrandDisacount, ImageTest } from "../../assets";
 import { CHART } from "./chart";
 import { Chart } from "./components";
 
@@ -26,7 +26,10 @@ interface Props {
     country: string;
     chart: CHART[];
     amount: number;
-    discountPercent: number;
+    discountPercent?: number;
+    type?: "one" | "two";
+    timeResponse?: string;
+    timeDelivery?: string;
 }
 
 export function CardOfferHorizontal({
@@ -37,7 +40,11 @@ export function CardOfferHorizontal({
     country,
     chart,
     amount,
-    discountPercent
+    discountPercent,
+    type,
+    timeResponse,
+    timeDelivery
+
 }: Props): ReactElement {
     return (
         <div className="card-offer-horizontal">
@@ -53,7 +60,7 @@ export function CardOfferHorizontal({
                 </h4>
                 <div className="card-offer-horizontal-content-item">
                     <div className="card-offer-horizontal-content-item-description">
-                        <p className="card-offer-horizontal-content-item-description-text">
+                        <p className="card-offer-horizontal-content-item-description-text m-0">
                             Quanzhou Laren Trading Co., Ltd.
                         </p>
                         <p className="card-offer-horizontal-content-item-description-rate">
@@ -62,16 +69,52 @@ export function CardOfferHorizontal({
                             {rate} )
                         </p>
                     </div>
-                    <button className="card-offer-horizontal-content-item-button">
-                        <img src={IconGem} alt="" />
-                        <p className="card-offer-horizontal-content-item-button-text">
-                            Diamond
-                        </p>
-                    </button>
+                    {type === "one" || type === undefined ? (
+                        <button className="card-offer-horizontal-content-item-button">
+                            <img src={IconGem} alt="" />
+                            <p className="card-offer-horizontal-content-item-button-text m-0">
+                                Diamond
+                            </p>
+                        </button>
+                    ) : (null)}
                 </div>
                 <p className="card-offer-horizontal-content-country">
                     {country}
                 </p>
+                {type === "two" ? (
+                    <div className="card-offer-horizontal-content-footer">
+                        <button className="card-offer-horizontal-content-footer-item">
+                            <img src={IconGem} alt="" />
+                            <p className="card-offer-horizontal-content-footer-item-text m-0">
+                                Diamond
+                            </p>
+                        </button>
+                        <div className="card-offer-horizontal-content-footer-date">
+                            <div className="card-offer-horizontal-content-footer-date-response">
+                                <img src={IconEmailArrow} alt="" className="icon" />
+                                <div>
+                                    <h6 className="title">
+                                        Response Time
+                                    </h6>
+                                    <h5 className="amount">
+                                        ≤{timeResponse}
+                                    </h5>
+                                </div>
+                            </div>
+                            <div className="card-offer-horizontal-content-footer-date-delivery">
+                                <img src={IconClockSuccess} alt="" className="icon" />
+                                <div>
+                                    <h6 className="title">
+                                        On-time delivery
+                                    </h6>
+                                    <h5 className="amount">
+                                        {timeDelivery}
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                ) : (null)}
             </div>
             <div className="card-offer-horizontal-divider">
             </div>
@@ -89,16 +132,17 @@ export function CardOfferHorizontal({
                     <Chart item={chart} />
                 </div>
                 <div className="card-offer-horizontal-chart-button">
-                    
-                    <div className="card-offer-horizontal-chart-button-discount">
-                        <img
-                            src={ImageBrandDisacount}
-                            className="card-offer-horizontal-chart-button-discount-background"
-                        />
-                        <p className="card-offer-horizontal-chart-button-discount-percent">
-                            {discountPercent}%
-                        </p>
-                    </div>
+                    {discountPercent === undefined ? (null) : (
+                        <div className="card-offer-horizontal-chart-button-discount">
+                            <img
+                                src={ImageBrandDisacount}
+                                className="card-offer-horizontal-chart-button-discount-background"
+                            />
+                            <p className="card-offer-horizontal-chart-button-discount-percent">
+                                {discountPercent}%
+                            </p>
+                        </div>
+                    )}
                     <button>
                         <img src={IconArrow} />
                     </button>
