@@ -1,14 +1,16 @@
 .side-nav {
+    height: 100%;
+    background-color: $white;
     &-items {
         background-color: $white;
         // box-sizing: border-box;
         padding: 10px 16px;
-
-      
+        border-right: 1px solid $gray;
         .active {
-            padding: 12px 0;
-            height: 52px;
+            @include Display(flex, space-between, center);
+            height: 64px;
             background-color: transparent;
+            border-bottom: 1px solid $gray;
             .side-nav-items-link-content-active {
                 width: 292px;
                 height: 52px;
@@ -31,18 +33,28 @@
 
         &-link {
             @include Display(flex, space-between, center);
-            padding: 12px 0;
-
+            height: 64px;
+            border-bottom: 1px solid $gray;
+            .item-disabled {
+                .side-nav-items-link-content-title {
+                    @include FontStyle(16px, 400, $lightSorme);
+                    margin: 0 18px;
+                    .side-nav-items-link-content-title-time {
+                        @include FontStyle (11px, 700, $lightSorme);
+                        margin: 6px 0;
+                    }
+                }
+            }
             &-content {
                 @include Display(flex, center, center);
 
                 &-title {
-                    @include FontStyle (16px, 400, $sorme);
+                    @include FontStyle (16px, 700, $sorme);
                     margin: 0 18px;
 
                     &-time {
                         @include FontStyle (11px, 700, $lightSorme);
-                        margin: 12px 0;
+                        margin: 6px 0;
                     }
                 }
 

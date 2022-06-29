@@ -7721,15 +7721,36 @@ a {
   padding: 0 10%;
 }
 
+.side-nav {
+  height: 100%;
+  background-color: #FFFFFF;
+}
+
 .side-nav-items {
   background-color: #FFFFFF;
   padding: 10px 16px;
+  border-right: 1px solid #d6d6d6;
 }
 
 .side-nav-items .active {
-  padding: 12px 0;
-  height: 52px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+  height: 64px;
   background-color: transparent;
+  border-bottom: 1px solid #d6d6d6;
 }
 
 .side-nav-items .active .side-nav-items-link-content-active {
@@ -7779,7 +7800,30 @@ a {
           flex-direction: row !important;
   -ms-flex-wrap: nowrap !important;
       flex-wrap: nowrap !important;
-  padding: 12px 0;
+  height: 64px;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.side-nav-items-link .item-disabled .side-nav-items-link-content-title {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6b798c !important;
+  margin: 0 18px;
+}
+
+.side-nav-items-link .item-disabled .side-nav-items-link-content-title .side-nav-items-link-content-title-time {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  color: #6b798c !important;
+  margin: 6px 0;
 }
 
 .side-nav-items-link-content {
@@ -7805,7 +7849,7 @@ a {
   height: auto;
   font-family: 'Poppins';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
   color: #3c557a !important;
   margin: 0 18px;
@@ -7819,7 +7863,7 @@ a {
   font-weight: 700;
   font-size: 11px;
   color: #6b798c !important;
-  margin: 12px 0;
+  margin: 6px 0;
 }
 
 .side-nav-items-link-content-icon {
