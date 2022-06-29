@@ -20,7 +20,8 @@ const TEST_NAV_ITEM = [
     },
     {
         title: "Group Title 3",
-        icon: ``,
+        time: "2 MINS",
+        notification: 0,
         location: "/",
         id: 3
     },

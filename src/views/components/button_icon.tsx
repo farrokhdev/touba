@@ -6,17 +6,13 @@ import {
     ButtonHTMLAttributes
 } from "react";
 
-interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface Props {
     icon: string;
     nameButton: string;
+    onClick?(): void;
 }
 
 export function ButtonIcon({ onClick, icon, nameButton }: Props): ReactElement {
-
-    const handleOnClick = useCallback((event: MouseEvent<HTMLButtonElement>) => {
-        event.stopPropagation();
-        onClick?.(event);
-    }, [onClick]);
 
     return (
         <>
@@ -24,14 +20,16 @@ export function ButtonIcon({ onClick, icon, nameButton }: Props): ReactElement {
                 nameButton === "" || nameButton.trim() === " " ? (
                     <button
                         className="button-icon"
-                        onClick={handleOnClick}
+                        onClick={() => onClick}
+                        type="button"
                     >
                         <img src={icon} alt="" className="icon" />
                     </button>
                 ) : (
                     <button
                         className="button-icon-title"
-                        onClick={handleOnClick}
+                        onClick={() => onClick}
+                        type="button"
                     >
                         <img src={icon} alt="" className="icon" />
                         <h5 className="button-icon-title-text">
