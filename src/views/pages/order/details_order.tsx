@@ -5,6 +5,7 @@ import { ButtonDropdown } from "../../components/button_dropdown";
 import { ButtonOutline } from "../../components/button_outline";
 import { CHART } from "../../components/chart";
 import { Button, CardSearchProduct, CardProduct, CardCategory, CardImage, CardCollectionProduct, CardProductWithPrice, CardBestSeller, CardCollectionBest, Divider, CardNewExcess, CardBestBrand, CardNewProduct, InputTextLabel, ComponentRadioSquare, CardCalculateProduct, Map, DropDown } from "../../components/components";
+import DashboardNav from "../../components/dashboard_nav";
 import HomeController from "../../controllers/home_controller";
 import LoginControll from "../../controllers/login_controll";
 
@@ -13,6 +14,7 @@ class DetailsOrder extends Component {
     render() {
         return (
             <div className="details-order row">
+                <DashboardNav title={"Orders"} />
                 <div className="details-order-header col-12">
 
                 </div>
