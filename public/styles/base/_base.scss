@@ -23,13 +23,24 @@
   //   font-size: $fontSize ;
   // }
 }
+.leaflet-container {
+  height: 30vh;
+}
 
 @mixin Display ($display: flex, $justify: start, $align: flex-start, $direction: row, $wrap: nowrap) {
+<<<<<<< HEAD
   display: $display !important;
   justify-content: $justify !important;
   align-items: $align !important;
   flex-direction: $direction !important;
   flex-wrap: $wrap !important;
+=======
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction; 
+  flex-wrap: $wrap;
+>>>>>>> 0d7176c (change map)
 }
 
 @mixin Border ($size: 0px, $color: transparent, $radius: 0px) {

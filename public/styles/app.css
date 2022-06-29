@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+@charset "UTF-8";
+.leaflet-container {
+  height: 30vh; }
+
+>>>>>>> 0d7176c (change map)
 html,
 body {
   padding: 0;
@@ -48,6 +55,9 @@ a {
   color: #6b798c;
   /* Inside auto layout */
 }
+
+.leaflet-container {
+  height: 30vh; }
 
 html,
 body {
@@ -12952,6 +12962,7 @@ a {
   margin: 0 0 8px 0;
 }
 
+<<<<<<< HEAD
 .details-order-content-address-top-items-location-description {
   width: auto;
   height: auto;
@@ -12960,6 +12971,14 @@ a {
   font-weight: 600;
   font-size: 16px;
   color: #3c557a !important;
+=======
+.leaflet-container {
+  height: 30vh; }
+
+html,
+body {
+  padding: 0;
+>>>>>>> 0d7176c (change map)
   margin: 0;
 }
 

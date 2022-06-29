@@ -56,12 +56,26 @@ export function TopNavHome() {
             </Link>
           </div>
           <div className="top-nav-home-items-button-group">
+<<<<<<< HEAD
             <Link to="/cart">
               <ButtonIcon icon={IconBagGray} nameButton={""} />
             </Link>
             <Link to="/login">
               <ButtonIcon icon={IconTwoPerson} nameButton={""} />
             </Link>
+=======
+            <ButtonIcon icon={IconBagGray} />
+         
+            {localStorage.getItem("token") == "true" ? (
+            <Link to="/dashboard">
+              <ButtonIcon icon={IconTwoPerson} />
+            </Link>
+          ) : (
+            <Link to="/login">
+              <ButtonIcon icon={IconTwoPerson} />
+            </Link>
+          )}
+>>>>>>> 0d7176c (change map)
           </div>
         </div>
       </div>
@@ -98,8 +112,21 @@ export function TopNavHome() {
                 className="top-nav-home-minimal-brand-image"
               />
               <div className="top-nav-home-minimal-brand-button-group">
+<<<<<<< HEAD
                 <ButtonIcon icon={IconBag} nameButton={""} />
                 <ButtonIcon icon={IconTwoPerson} nameButton={""} />
+=======
+                <ButtonIcon icon={IconBag} />
+                {localStorage.getItem("token") == "true" ? (
+                  <Link to="/dashboard">
+                    <ButtonIcon icon={IconTwoPerson} />
+                  </Link>
+                ) : (
+                  <Link to="/login">
+                    <ButtonIcon icon={IconTwoPerson} />
+                  </Link>
+                )}
+>>>>>>> 0d7176c (change map)
               </div>
             </div>
             <div className="top-nav-home-minimal-links">
