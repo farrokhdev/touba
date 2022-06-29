@@ -23,12 +23,15 @@
   //   font-size: $fontSize ;
   // }
 }
+.leaflet-container {
+  height: 30vh;
+}
 
 @mixin Display ($display: flex, $justify: start, $align: flex-start, $direction: row, $wrap: nowrap) {
   display: $display;
   justify-content: $justify;
   align-items: $align;
-  flex-direction: $direction;
+  flex-direction: $direction; 
   flex-wrap: $wrap;
 }
 
