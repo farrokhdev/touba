@@ -1,3 +1,7 @@
+.leaflet-container {
+  height: 30vh;
+}
+
 html,
 body {
   padding: 0;
@@ -47,6 +51,10 @@ a {
   /* Sorme2 */
   color: #6b798c;
   /* Inside auto layout */
+}
+
+.leaflet-container {
+  height: 30vh;
 }
 
 html,

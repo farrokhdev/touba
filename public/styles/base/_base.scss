@@ -23,6 +23,9 @@
   //   font-size: $fontSize ;
   // }
 }
+.leaflet-container {
+  height: 30vh;
+}
 
 @mixin Display ($display: flex, $justify: start, $align: flex-start, $direction: row, $wrap: nowrap) {
   display: $display !important;

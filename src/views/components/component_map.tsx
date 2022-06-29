@@ -1,46 +1,22 @@
-import React from 'react'
-import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
+import L, { LatLngExpression } from "leaflet";
+import "leaflet/dist/leaflet.css";
+import { MapContainer, Marker, TileLayer, Popup } from "react-leaflet";
+import React from "react";
 
-const containerStyle = {
-  width:'100%',
-  height: '30vh'
-};
+export default function MyComponentMap() {
+  // Default coordinates set to Oslo central station
+  const position: LatLngExpression = [59.91174337077401, 10.750425582038146];
+  const zoom: number = 15;
 
-const center = {
-  lat: -3.745,
-  lng: -38.523
-};
-
-function MyComponentMap() {
-  const { isLoaded } = useJsApiLoader({
-    id: 'google-map-script',
-    googleMapsApiKey: "AIzaSyA16d9FJFh__vK04jU1P64vnEpPc3jenec"
-  })
-
-  const [map, setMap] = React.useState(null)
-
-  const onLoad = React.useCallback(function callback(map:any) {
-    const bounds = new window.google.maps.LatLngBounds(center);
-    map.fitBounds(bounds);
-    setMap(map)
-  }, [])
-
-  const onUnmount = React.useCallback(function callback(map:any) {
-    setMap(null)
-  }, [])
-
-  return isLoaded ? (
-      <GoogleMap
-        mapContainerStyle={containerStyle}
-        center={center}
-        zoom={10}
-        onLoad={onLoad}
-        onUnmount={onUnmount}
-      >
-        { /* Child components, such as markers, info windows, etc. */ }
-        <></>
-      </GoogleMap>
-  ) : <></>
+  return (
+    <MapContainer center={position} zoom={zoom} scrollWheelZoom={false}>
+      <TileLayer
+        attribution="&copy; <a href='http://osm.org/copyright'>OpenStreetMap</a> contributors"
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      />
+      {
+        // Placeholder, we'll put our markers here
+      }
+    </MapContainer>
+  );
 }
-
-export default React.memo(MyComponentMap)
