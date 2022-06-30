@@ -79,6 +79,8 @@ export { default as MessangerTab } from './messenger_tab';
 export { default as ComponentTableExcess } from './component_table_excess';
 export { default as SideNavItems } from './side_nav_items';
 export { default as ImageArrow } from './image_arrow';
+export { default as ComponentProductDetail } from './component_product_detail';
+
 
 
 

@@ -10,6 +10,7 @@ import {
   ComponentTableORder,
   ComponentDashboardHeader,
   ComponentMessageImage,
+  ComponentProductDetail,
 } from "../components/components";
 import { BottomNav, Footer, TopNav, TopNavHome } from "../layout/layout";
 import AboutusPage from "./AboutusPage/AboutusPage";
@@ -51,6 +52,9 @@ function Pages() {
 
   return (
     <div>
+      <div className="mt-3">
+        <ComponentProductDetail/>
+      </div>
 
       {
         location.pathname.includes("/login") ||

@@ -1,6 +1,9 @@
 .leaflet-container {
   height: 30vh; }
 
+.progress {
+  height: 20px; }
+
 html,
 body {
   padding: 0;
@@ -45,6 +48,9 @@ a {
 
 .leaflet-container {
   height: 30vh; }
+
+.progress {
+  height: 20px; }
 
 html,
 body {
@@ -5222,6 +5228,35 @@ a {
   border-radius: 8px;
   white-space: nowwrap;
   padding: 2%; }
+
+.product-detail-box {
+  background: #FFFFFF;
+  /* BoxShadow */
+  box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
+  border-radius: 12px; }
+  .product-detail-box .progress-detail {
+    height: 5px; }
+  .product-detail-box .progress-bar-detail {
+    background-color: #21C085; }
+  .product-detail-box .header-text {
+    width: auto;
+    height: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    color: #3C557A !important; }
+  .product-detail-box .desc-text {
+    width: auto;
+    height: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #6B798C !important; }
+
+.border-right-dashed {
+  border-right: 1px dashed #D6D6D6; }
 
 .top-nav-home {
   width: 100%;
