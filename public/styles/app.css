@@ -5398,6 +5398,18 @@ a {
   border: 5px solid #6b798c;
   border-radius: 50%; }
 
+.component-storage .btn {
+  background: #FFFFFF;
+  /* Green Brand */
+  display: flex;
+  align-items: center;
+  border: 1px solid #21C085;
+  border-radius: 7px;
+  color: #21C085; }
+
+.component-storage .span {
+  font-size: 30px; }
+
 .top-nav-home {
   width: 100%;
   min-height: 114px;

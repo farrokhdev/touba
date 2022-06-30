@@ -35,6 +35,7 @@ import DashboardLikeCard from "./DashboardLikeCard/dashboard_like_card";
 import DashboardTableOrder from "./DashbordTableOrder/dashboard_table_order";
 import iconRani from "../../assets/icons/icon-rani-message.svg";
 import Dashboard from "../layout/dashboard/dashobord";
+import ComponentStorage from "../components/component_storage";
 
 function Pages() {
   const location = useLocation();
@@ -58,7 +59,7 @@ function Pages() {
   return (
     <div>
       <div className="mt-3 ">
-        <ComponentColors/> 
+        <ComponentStorage/> 
       </div>
 
       {
