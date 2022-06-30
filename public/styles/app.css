@@ -8223,6 +8223,130 @@ a {
   padding: 0 25px;
 }
 
+.chart-doughnut {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+}
+
+.chart-doughnut-chart {
+  width: 40%;
+}
+
+.chart-doughnut-content {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.chart-doughnut-content-green {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: start !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+}
+
+.chart-doughnut-content-green > span {
+  width: 8px;
+  height: 8px;
+  background-color: #21C085;
+  border-radius: 50px;
+  margin: 0 10%;
+}
+
+.chart-doughnut-content-green-text > h6 {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #6b798c !important;
+  margin: 0 0 10px 0;
+}
+
+.chart-doughnut-content-green-text > h5 {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #3c557a !important;
+  margin: 0;
+}
+
+.chart-doughnut-content-red {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: start !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+  margin-top: 9px;
+}
+
+.chart-doughnut-content-red > span {
+  width: 8px;
+  height: 8px;
+  background-color: #FC4A56;
+  border-radius: 50px;
+  margin: 0 10%;
+}
+
+.chart-doughnut-content-red-text > h6 {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #6b798c !important;
+  margin: 0 0 10px 0;
+}
+
+.chart-doughnut-content-red-text > h5 {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #3c557a !important;
+  margin: 0;
+}
+
 .top-nav-home {
   width: 100%;
   min-height: 114px;

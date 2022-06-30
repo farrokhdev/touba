@@ -81,6 +81,7 @@ export { default as SideNavItems } from './side_nav_items';
 export { default as ImageArrow } from './image_arrow';
 export { default as CardProductGroupTitle } from './card_product_group_title';
 export { default as Rate } from './rating';
+export { default as ChartDoughnut } from './chart_doughnut';
 
 
 
