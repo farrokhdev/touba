@@ -5379,6 +5379,25 @@ a {
       font-size: 13px;
       color: #FFFFFF !important; }
 
+.component-colors .circle-orange {
+  width: 64px;
+  height: 64px;
+  background: #ffc700;
+  /* Sorme2 */
+  border: 5px solid #6b798c;
+  border-radius: 50%; }
+
+.component-colors .circle-green {
+  width: 64px;
+  height: 64px;
+  background: #e0ff1f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Sorme2 */
+  border: 5px solid #6b798c;
+  border-radius: 50%; }
+
 .top-nav-home {
   width: 100%;
   min-height: 114px;
