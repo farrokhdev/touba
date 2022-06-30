@@ -81,6 +81,8 @@ export { default as SideNavItems } from './side_nav_items';
 export { default as ImageArrow } from './image_arrow';
 export { default as ComponentProductDetail } from './component_product_detail';
 export { default as ComponentCompanyModal } from './component_company_modal';
+export { default as ComponentSortandSearch } from './component_sort_search';
+
 
 
 

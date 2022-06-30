@@ -7923,26 +7923,27 @@ a {
   .table-box .item-active {
     border-bottom: 3px solid #21C085;
     color: #21C085 !important; }
-  .table-box .search-table {
-    background: #FFFFFF;
-    /* Border */
-    border: 1px solid #D6D6D6;
-    border-radius: 8px;
-    padding: 2%;
-    display: flex;
-    align-items: center; }
-    .table-box .search-table .input-search {
-      border: none;
-      outline: none; }
-    .table-box .search-table .input-search::placeholder {
-      width: auto;
-      height: auto;
-      font-family: 'Poppins';
-      font-style: normal;
-      font-weight: 22;
-      font-size: 14px;
-      color: #6B798C !important;
-      margin-left: 3%; }
+
+.search-table {
+  background: #FFFFFF;
+  /* Border */
+  border: 1px solid #D6D6D6;
+  border-radius: 8px;
+  padding: 2%;
+  display: flex;
+  align-items: center; }
+  .search-table .input-search {
+    border: none;
+    outline: none; }
+  .search-table .input-search::placeholder {
+    width: auto;
+    height: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 22;
+    font-size: 14px;
+    color: #6B798C !important;
+    margin-left: 3%; }
 
 .edit-order {
   background-color: #FFFFFF;
