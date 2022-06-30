@@ -11,6 +11,7 @@ import {
   ComponentDashboardHeader,
   ComponentMessageImage,
   ComponentProductDetail,
+  ComponentCompanyModal,
 } from "../components/components";
 import { BottomNav, Footer, TopNav, TopNavHome } from "../layout/layout";
 import AboutusPage from "./AboutusPage/AboutusPage";
@@ -52,8 +53,8 @@ function Pages() {
 
   return (
     <div>
-      <div className="mt-3">
-        <ComponentProductDetail/>
+      <div className="mt-3 p-5">
+        <ComponentCompanyModal/>
       </div>
 
       {

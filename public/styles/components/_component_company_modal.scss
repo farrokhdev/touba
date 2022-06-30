@@ -1,0 +1,52 @@
+.component-company-modal {
+  background: #ffffff;
+  border-radius: 12px;
+  .image-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #f3f4f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fieldset-box {
+    /* Border */
+
+    border: 1px solid #d6d6d6;
+    border-radius: 12px;
+    .text-content {
+      text-align: justify;
+      @include FontStyle(16px, 400, #3c557a);
+    }
+  }
+  .border-text {
+    text-align: center;
+    font-size: 10px;
+    margin-top: -8px;
+    margin-left: 15px;
+    background: white;
+    width: 90px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #3c557a;
+  }
+  .btn-save-change {
+    background: #21c085;
+    border-radius: 8px;
+    @include FontStyle(14px, 600, #ffffff);
+    outline: none;
+    border: none;
+    padding: 15%;
+    white-space: nowrap;
+  }
+  .btn-cancle {
+    background: #6b798c;
+    border-radius: 8px;
+    @include FontStyle(14px, 600, #ffffff);
+    outline: none;
+    border: none;
+    padding: 15%;
+    white-space: nowrap;
+  }
+}

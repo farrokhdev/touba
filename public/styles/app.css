@@ -5258,6 +5258,69 @@ a {
 .border-right-dashed {
   border-right: 1px dashed #D6D6D6; }
 
+.component-company-modal {
+  background: #ffffff;
+  border-radius: 12px; }
+  .component-company-modal .image-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #f3f4f6;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .component-company-modal .fieldset-box {
+    /* Border */
+    border: 1px solid #d6d6d6;
+    border-radius: 12px; }
+    .component-company-modal .fieldset-box .text-content {
+      text-align: justify;
+      width: auto;
+      height: auto;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      color: #3c557a !important; }
+  .component-company-modal .border-text {
+    text-align: center;
+    font-size: 10px;
+    margin-top: -8px;
+    margin-left: 15px;
+    background: white;
+    width: 90px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #3c557a; }
+  .component-company-modal .btn-save-change {
+    background: #21c085;
+    border-radius: 8px;
+    width: auto;
+    height: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff !important;
+    outline: none;
+    border: none;
+    padding: 15%;
+    white-space: nowrap; }
+  .component-company-modal .btn-cancle {
+    background: #6b798c;
+    border-radius: 8px;
+    width: auto;
+    height: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff !important;
+    outline: none;
+    border: none;
+    padding: 15%;
+    white-space: nowrap; }
+
 .top-nav-home {
   width: 100%;
   min-height: 114px;
