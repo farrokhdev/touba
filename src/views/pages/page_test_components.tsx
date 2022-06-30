@@ -1,6 +1,6 @@
 import { Component } from "react";
-import { IconCalling } from "../../assets";
-import { ImageArrow } from "../components/components";
+import { IconCalling, ImageJuicer } from "../../assets";
+import { CardProductGroupTitle, ImageArrow } from "../components/components";
 import { SideNavItems } from "../components/side_nav_items";
 
 const TEST_NAV_ITEM = [
@@ -36,9 +36,19 @@ const TEST_NAV_ITEM = [
 class PageTestComponents extends Component {
     render() {
         return (
-            <div className="mx-1">
+            <div className="mx-1 ">
+                <div>
+                    <h1>New Image and Icon</h1>
+                    <img src={ImageJuicer} alt="" />
+                </div>
+                <h1>
+                    New Components
+                </h1>
                 <div style={{ width: "315px", height:"100vh" }}>
                     <SideNavItems items={TEST_NAV_ITEM} />
+                </div>
+                <div className="mx-auto" style={{ width: "752px", height:"573px" }}>
+                    <CardProductGroupTitle />
                 </div>
             </div>
         )
