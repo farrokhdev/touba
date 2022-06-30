@@ -18,7 +18,7 @@ const MyCompanyNav: React.FC<IProps> = ({ state }: IProps) => {
         </button>
         <button className={state === 4 ? "active" : ""}>Faq</button>
       </div>
-      <button className="view-btn">View as visitor</button>
+      <button className="outline-btn">View as visitor</button>
     </div>
   );
 };

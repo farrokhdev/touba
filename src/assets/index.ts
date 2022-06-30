@@ -149,3 +149,7 @@ export { default as IconAttach} from './icons/icon-attach.svg';
 export { default as IconDeleteWhite} from './icons/icon-delete-white.svg';
 export { default as IconUpload} from './icons/icon-upload.svg';
 export { default as IconUndo} from './icons/icon-undo.svg';
+export { default as IconEdit} from './icons/icon-edit.svg';
+export { default as IconLocationButton} from './icons/icon-location-button.svg';
+export { default as ImageCongratulationBanner} from './images/CongratulationBanner.png';
+export { default as ImageCongratulationBanner2} from './images/CongratulationBanner2.png';

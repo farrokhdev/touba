@@ -13,6 +13,8 @@ import DeleteImage from "../components/delete_image";
 import MyCompanyNav from "../components/mycompany_nav";
 import ProfileHeaderImage from "../components/profile_header_image";
 import OrderHead from "../components/order_head";
+import Location from "../components/location";
+import CongratulationBanner from "../components/congratulation_banner";
 
 interface IState {
   isShow: boolean;
@@ -78,6 +80,17 @@ class PageTestComponents extends Component {
         <MyCompanyNav state={this.state.activeNav} />
         <ProfileHeaderImage />
         <OrderHead orderNumber={2334217651} client="Saber Noori" />
+        <Location
+          index={1}
+          name="Bandar Abbas Office"
+          area="BandarAbbas, Iran"
+        />
+        <div style={{ width: "1200px", height: "670px" }}>
+          <CongratulationBanner activeTab="Other Details" />
+        </div>
+        <div style={{ width: "1200px", height: "670px" }} className="my-3">
+          <CongratulationBanner activeTab="Related Items" />
+        </div>
       </div>
     );
   }

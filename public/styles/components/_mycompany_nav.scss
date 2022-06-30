@@ -16,11 +16,25 @@
             color: #21c085 !important;
         }
     }
-    .view-btn {
-        @include FontStyle(14px, 600, $green);
-        letter-spacing: 0.75px;
-        padding: 13px 16px;
-        border: 1px solid #21c085;
-        border-radius: 8px;
-    }
+}
+.outline-btn {
+    @include FontStyle(14px, 600, $green);
+    letter-spacing: 0.75px;
+    padding: 13px 16px;
+    border: 1px solid $green !important;
+    border-radius: 8px;
+    background-color: $white;
+    text-transform: uppercase;
+    outline: none;
+}
+.green-btn {
+    @include FontStyle(14px, 600, $white);
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    padding: 14px 16px;
+    background-color: $green;
 }

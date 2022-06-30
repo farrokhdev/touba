@@ -1,0 +1,45 @@
+.congratulation-banner {
+    background-color: $white;
+    box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
+    border-radius: 16px;
+    width: 100%;
+    height: 100%;
+    .content-banner {
+        padding: 55px 0 100px 45px;
+        height: 100%;
+        span {
+            @include FontStyle(34px, 700, $sorme);
+        }
+        p {
+            @include FontStyle(14px, 500, $lightSorme);
+        }
+    }
+    .image-banner {
+        max-height: 100%;
+        height: 100%;
+        img {
+            height: 100%;
+        }
+    }
+    .product-progress {
+        background-color: $white;
+        span {
+            &:first-child {
+                @include FontStyle(16px, 400, $lightSorme);
+            }
+            &:last-child {
+                @include FontStyle(16px, 700, $sorme);
+            }
+        }
+        .product-progress-bar {
+            height: 5px;
+            background: #d6d6d6;
+            border-radius: 31px;
+            div {
+                height: 5px;
+                background: $green;
+                border-radius: 31px;
+            }
+        }
+    }
+}
