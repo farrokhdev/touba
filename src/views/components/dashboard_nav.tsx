@@ -92,7 +92,7 @@ const DashboardNav = ({ title }: IProps) => {
                       <ComponentMessage />
                     </>
                   ) : (
-                    <>
+                    <div className="p-2">
                       <ComponentMessageImage
                         title={"Message Title Here"}
                         desc={"Quanzhou Laren Trading Co., Ltd."}
@@ -163,7 +163,7 @@ const DashboardNav = ({ title }: IProps) => {
                         time={"1HOUR"}
                         image={ImageOil}
                       />
-                    </>
+                    </div>
                   )}
                 </>
               )}
