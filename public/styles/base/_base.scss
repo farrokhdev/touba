@@ -29,6 +29,9 @@
 .progress{
   height: 20px;
 }
+.Calendar {
+  width: 500px !important;
+}
 
 @mixin Display ($display: flex, $justify: start, $align: flex-start, $direction: row, $wrap: nowrap) {
   display: $display !important;

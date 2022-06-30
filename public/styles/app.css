@@ -4,6 +4,9 @@
 .progress {
   height: 20px; }
 
+.Calendar {
+  width: 500px !important; }
+
 html,
 body {
   padding: 0;
@@ -51,6 +54,9 @@ a {
 
 .progress {
   height: 20px; }
+
+.Calendar {
+  width: 500px !important; }
 
 html,
 body {
