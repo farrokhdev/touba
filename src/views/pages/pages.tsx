@@ -14,6 +14,7 @@ import {
   ComponentCompanyModal,
   ComponentSortandSearch,
   ComponentCalender,
+  ComponentSoldBox,
 } from "../components/components";
 import { BottomNav, Footer, TopNav, TopNavHome } from "../layout/layout";
 import AboutusPage from "./AboutusPage/AboutusPage";
@@ -55,8 +56,8 @@ function Pages() {
 
   return (
     <div>
-      <div className="mt-3 p-5">
-        <ComponentCalender/> 
+      <div className="mt-3 col-2">
+        <ComponentSoldBox/> 
       </div>
 
       {

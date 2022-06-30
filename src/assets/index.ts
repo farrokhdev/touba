@@ -144,3 +144,5 @@ export { default as IconPaper} from './icons/icon-paper.svg';
 export { default as IconTick} from './icons/icon-tick.svg';
 export { default as IconInfo} from './icons/icon-info.svg';
 export { default as IconDelete} from './icons/icon-delete.svg';
+export { default as IconChartSold} from './icons/icon-chart-sold.svg';
+

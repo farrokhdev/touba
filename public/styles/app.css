@@ -5327,6 +5327,58 @@ a {
     padding: 15%;
     white-space: nowrap; }
 
+.component-sold-box {
+  background: inherit;
+  /* Shadow 1 */
+  box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
+  border-radius: 16px 0; }
+  .component-sold-box .green-card {
+    border-radius: 16px 16px 0 0;
+    background: #21C085; }
+    .component-sold-box .green-card .text-header {
+      width: auto;
+      height: auto;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 19px;
+      color: #FFFFFF !important; }
+    .component-sold-box .green-card .text-desc {
+      width: auto;
+      height: auto;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      color: #FFFFFF !important; }
+    .component-sold-box .green-card .text-percent {
+      width: auto;
+      height: auto;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 22px;
+      color: #FFFFFF !important; }
+  .component-sold-box .primary-card {
+    border-radius: 0 0 16px 16px;
+    background: #3C557A; }
+    .component-sold-box .primary-card .text-time {
+      width: auto;
+      height: auto;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 10px;
+      color: #FFFFFF !important; }
+    .component-sold-box .primary-card .text-price {
+      width: auto;
+      height: auto;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      color: #FFFFFF !important; }
+
 .top-nav-home {
   width: 100%;
   min-height: 114px;
