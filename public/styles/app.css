@@ -5410,6 +5410,55 @@ a {
 .component-storage .span {
   font-size: 30px; }
 
+.download-box {
+  /* Shadow 1 */
+  box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
+  border-radius: 16px; }
+  .download-box .report-text {
+    width: auto;
+    height: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF !important; }
+  .download-box .green-box {
+    background: #21c085;
+    border-radius: 16px 16px 0 0; }
+    .download-box .green-box .download-text {
+      width: auto;
+      height: auto;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      color: #FFFFFF !important; }
+    .download-box .green-box .btn-white {
+      background: #ffffff;
+      border-radius: 8px;
+      width: auto;
+      height: auto;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      color: #21C085 !important;
+      border: none; }
+  .download-box .primary-box {
+    border-radius: 0px 0px 16px 16px;
+    background: #3c557a; }
+    .download-box .primary-box .btn-green {
+      background: #21C085;
+      border-radius: 8px;
+      width: auto;
+      height: auto;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      color: #FFFFFF !important;
+      border: none; }
+
 .top-nav-home {
   width: 100%;
   min-height: 114px;
