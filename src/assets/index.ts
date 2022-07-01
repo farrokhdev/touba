@@ -139,4 +139,5 @@ export { default as ImageLadan} from './images/ladan.png';
 export { default as IconNotification} from './icons/icon-notification.svg';
 export { default as IconEmailArrow} from './icons/icon-email-arrow.svg';
 export { default as IconClockSuccess} from './icons/icon-clock-success.svg';
+export { default as IconShop} from './icons/icon-shop.svg';
 export { default as ImageJuicer} from './images/image-juicer.png';
