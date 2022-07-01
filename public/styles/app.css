@@ -5554,6 +5554,29 @@ a {
     border: none;
     white-space: nowrap; }
 
+.component-fildest-box {
+  background: #ffffff;
+  /* Border */
+  border: 1px solid #d6d6d6;
+  border-radius: 8px; }
+  .component-fildest-box .border-text {
+    text-align: center;
+    font-size: 10px;
+    margin-top: -27px;
+    margin-left: 2px;
+    background: white;
+    font-size: 12px;
+    font-weight: 500;
+    color: #3c557a; }
+  .component-fildest-box .text-content {
+    width: auto;
+    height: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3C557A !important; }
+
 .top-nav-home {
   width: 100%;
   min-height: 114px;

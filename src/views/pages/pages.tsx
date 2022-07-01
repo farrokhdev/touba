@@ -19,6 +19,7 @@ import {
   ComponentDownloadBox,
   ComponentColorSelect,
   ComponentColorPicker,
+  ComponentFieldsetPrice,
 } from "../components/components";
 import { BottomNav, Footer, TopNav, TopNavHome } from "../layout/layout";
 import AboutusPage from "./AboutusPage/AboutusPage";
@@ -60,8 +61,8 @@ function Pages() {
 
   return (
     <div>
-      <div className="mt-3 col-4">
-        <ComponentColorPicker/> 
+      <div className="mt-3 p-3 bg-white">
+        <ComponentFieldsetPrice/> 
       </div>
 
       {
