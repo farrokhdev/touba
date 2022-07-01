@@ -86,6 +86,8 @@ export { default as ComponentCalender } from './component_calendar';
 export { default as ComponentSoldBox } from './component_sold_box';
 export { default as ComponentColors } from './component_colors';
 export { default as ComponentDownloadBox } from './component_download_box';
+export { default as ComponentColorSelect } from './component_color_select';
+
 
 
 
