@@ -1,6 +1,6 @@
 import { Component } from "react";
-import { IconCalling, ImageJuicer } from "../../assets";
-import { CardProductGroupTitle, ChartDoughnut, ImageArrow, TableTransaction } from "../components/components";
+import { IconCalling, IconShop, ImageJuicer } from "../../assets";
+import { CardOverall, CardProductGroupTitle, ChartDoughnut, ImageArrow, TableTransaction } from "../components/components";
 import { SideNavItems } from "../components/side_nav_items";
 
 const TEST_NAV_ITEM = [
@@ -40,6 +40,7 @@ class PageTestComponents extends Component {
                 <div>
                     <h1>New Image and Icon</h1>
                     <img src={ImageJuicer} alt="" />
+                    <img src={IconShop} alt="" className="mx-5" />
                 </div>
                 <h1>
                     New Components
@@ -53,7 +54,15 @@ class PageTestComponents extends Component {
                 <div style={{ width: "347px", height: "162px" }}>
                     <ChartDoughnut dataChart={["152423", "242423"]} />
                 </div>
-                <TableTransaction items={[]}/>
+                <TableTransaction items={[]} />
+                <div style={{ width: "390px", height: "100px" }}>
+                    <CardOverall
+                        image={IconShop}
+                        type={"Product"}
+                        amountSold={120524}
+                        amountBought={35183}
+                    />
+                </div>
             </div>
         )
     }
