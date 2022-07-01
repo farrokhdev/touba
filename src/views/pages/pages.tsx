@@ -18,6 +18,7 @@ import {
   ComponentColors,
   ComponentDownloadBox,
   ComponentColorSelect,
+  ComponentColorPicker,
 } from "../components/components";
 import { BottomNav, Footer, TopNav, TopNavHome } from "../layout/layout";
 import AboutusPage from "./AboutusPage/AboutusPage";
@@ -35,7 +36,6 @@ import DashboardPage from "./dashboard/dasboard";
 import CompanyProfile from "./companyProfile";
 import DashboardLikeCard from "./DashboardLikeCard/dashboard_like_card";
 import DashboardTableOrder from "./DashbordTableOrder/dashboard_table_order";
-import iconRani from "../../assets/icons/icon-rani-message.svg";
 import Dashboard from "../layout/dashboard/dashobord";
 import ComponentStorage from "../components/component_storage";
 
@@ -60,8 +60,8 @@ function Pages() {
 
   return (
     <div>
-      <div className="mt-3 col-3">
-        <ComponentColorSelect/> 
+      <div className="mt-3 col-4">
+        <ComponentColorPicker/> 
       </div>
 
       {

@@ -7,6 +7,9 @@
 .Calendar {
   width: 500px !important; }
 
+.react-colorful {
+  width: 100% !important; }
+
 html,
 body {
   padding: 0;
@@ -57,6 +60,9 @@ a {
 
 .Calendar {
   width: 500px !important; }
+
+.react-colorful {
+  width: 100% !important; }
 
 html,
 body {
@@ -5491,6 +5497,62 @@ a {
     display: flex;
     align-items: center;
     justify-content: center; }
+
+.color-picker-box {
+  background: #FFFFFF;
+  /* BoxShadow */
+  box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
+  border-radius: 16px; }
+  .color-picker-box .header-modal .text-header {
+    width: auto;
+    height: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    color: #3C557A !important; }
+  .color-picker-box .header-modal .image-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #f3f4f6;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .color-picker-box .hex-text {
+    width: auto;
+    height: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #3C557A !important; }
+  .color-picker-box .btn-save-change {
+    background: #21c085;
+    border-radius: 8px;
+    width: auto;
+    height: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff !important;
+    outline: none;
+    border: none;
+    white-space: nowrap; }
+  .color-picker-box .btn-cancle {
+    background: #6b798c;
+    border-radius: 8px;
+    width: auto;
+    height: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff !important;
+    outline: none;
+    border: none;
+    white-space: nowrap; }
 
 .top-nav-home {
   width: 100%;
