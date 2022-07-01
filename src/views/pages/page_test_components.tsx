@@ -1,6 +1,6 @@
 import { Component } from "react";
 import { IconCalling, ImageJuicer } from "../../assets";
-import { CardProductGroupTitle, ChartDoughnut, ImageArrow } from "../components/components";
+import { CardProductGroupTitle, ChartDoughnut, ImageArrow, TableTransaction } from "../components/components";
 import { SideNavItems } from "../components/side_nav_items";
 
 const TEST_NAV_ITEM = [
@@ -53,6 +53,7 @@ class PageTestComponents extends Component {
                 <div style={{ width: "347px", height: "162px" }}>
                     <ChartDoughnut dataChart={["152423", "242423"]} />
                 </div>
+                <TableTransaction items={[]}/>
             </div>
         )
     }
