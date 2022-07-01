@@ -82,6 +82,7 @@ export { default as ImageArrow } from './image_arrow';
 export { default as CardProductGroupTitle } from './card_product_group_title';
 export { default as Rate } from './rating';
 export { default as ChartDoughnut } from './chart_doughnut';
+export { default as TableTransaction } from './table_transactions';
 
 
 

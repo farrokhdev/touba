@@ -98,7 +98,8 @@
         "_side_nav_items.scss",
         "_image_arrow.scss",
         "_card_product_group_title.scss",
-        "_chart_doughnut.scss"
+        "_chart_doughnut.scss",
+        "_table_transaction.scss"
     ],
     "names": [],
     "file": "components-dir.css"
