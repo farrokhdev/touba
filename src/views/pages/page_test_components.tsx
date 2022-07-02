@@ -1,6 +1,6 @@
 import { Component } from "react";
-import { IconCalling, IconShop, ImageJuicer, ImageManFlying, ImageManWithBox } from "../../assets";
-import { BannerCongratulations, BannerLetsStart, Calendar, CardOverall, CardProductGroupTitle, ChartDoughnut, ChartSale, ImageArrow, TableTransaction } from "../components/components";
+import { IconCalling, IconDanger, IconShop, ImageJuicer, ImageManFlying, ImageManWithBox } from "../../assets";
+import { BannerCongratulations, BannerLetsStart, Calendar, CardOverall, CardProductGroupTitle, ChartDoughnut, ChartSale, ImageArrow, TableTransaction, TextIconVertical, TextIconVerticalDashboard } from "../components/components";
 import { SideNavItems } from "../components/side_nav_items";
 
 const TEST_NAV_ITEM = [
@@ -43,6 +43,7 @@ class PageTestComponents extends Component {
                     <img src={IconShop} alt="" className="mx-5" />
                     <img src={ImageManWithBox} className="mx-5" />
                     <img src={ImageManFlying} className="mx-5" />
+                    <img src={IconDanger} className="mx-5" />
                 </div>
                 <h1>
                     New Components
@@ -77,6 +78,7 @@ class PageTestComponents extends Component {
                 <div style={{ width: "1258px", height: "225px" }}>
                     <BannerLetsStart/>
                 </div>
+                <TextIconVerticalDashboard icon={IconDanger} title={"Hint text about the title"}/>
             </div>
         )
     }
