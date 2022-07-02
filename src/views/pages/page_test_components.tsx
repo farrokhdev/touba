@@ -1,6 +1,6 @@
 import { Component } from "react";
 import { IconCalling, IconDanger, IconShop, ImageJuicer, ImageManFlying, ImageManWithBox } from "../../assets";
-import { BannerCongratulations, BannerLetsStart, Calendar, CardOverall, CardProductGroupTitle, ChartDoughnut, ChartSale, ImageArrow, TableTransaction, TextIconVertical, TextIconVerticalDashboard } from "../components/components";
+import { BannerCongratulations, BannerLetsStart, Calendar, CardOverall, CardProductGroupTitle, ChartDoughnut, ChartSale, ImageArrow, SelectComponent, SelectComponentDouble, TableTransaction, TextIconVertical, TextIconVerticalDashboard } from "../components/components";
 import { SideNavItems } from "../components/side_nav_items";
 
 const TEST_NAV_ITEM = [
@@ -30,6 +30,18 @@ const TEST_NAV_ITEM = [
         location: "/",
         id: 4
     },
+];
+
+const DROPDOWN = [
+    { name: "link1", id: 1 },
+    { name: "link2", id: 2 },
+    { name: "link3", id: 3 },
+    { name: "link4", id: 4 },
+    { name: "link5", id: 5 },
+    { name: "link6", id: 6 },
+    { name: "link7", id: 7 },
+    { name: "link8", id: 8 },
+    { name: "link9", id: 9 },
 ]
 
 
@@ -73,12 +85,15 @@ class PageTestComponents extends Component {
                     <Calendar />
                 </div>
                 <div style={{ width: "1525px", height: "155px" }}>
-                    <BannerCongratulations/>
+                    <BannerCongratulations />
                 </div>
                 <div style={{ width: "1258px", height: "225px" }}>
-                    <BannerLetsStart/>
+                    <BannerLetsStart />
                 </div>
-                <TextIconVerticalDashboard icon={IconDanger} title={"Hint text about the title"}/>
+                <TextIconVerticalDashboard icon={IconDanger} title={"Hint text about the title"} />
+                <div  style={{ width: "572.5px", height: "64px" }} className="m-5">
+                    <SelectComponentDouble items1={DROPDOWN} items2={DROPDOWN} />
+                </div>
             </div>
         )
     }
