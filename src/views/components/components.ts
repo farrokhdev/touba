@@ -85,6 +85,7 @@ export { default as ChartDoughnut } from './chart_doughnut';
 export { default as TableTransaction } from './table_transactions';
 export { default as CardOverall } from './card_overrall';
 export { default as ChartSale } from './chart_sale';
+export { default as Calendar } from './calendar';
 
 
 
