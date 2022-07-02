@@ -8555,4 +8555,87 @@ a {
   border: 1.5px solid #FC4A56 !important;
   border-radius: 9px !important;
 }
+
+.banner-congratulations {
+  position: relative;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+  background-color: #21C085;
+  width: 100%;
+  padding: 30px 50px;
+  border-radius: 16px;
+}
+
+.banner-congratulations > img {
+  position: absolute;
+  bottom: 0px;
+}
+
+.banner-congratulations-content {
+  position: relative;
+  left: 30%;
+}
+
+.banner-congratulations-content-title {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 34px !important;
+  color: #FFFFFF !important;
+  margin: 0;
+}
+
+.banner-congratulations-content-description {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  color: #FFFFFF !important;
+  margin: 0;
+}
+
+.banner-congratulations-content-description > span {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 900 !important;
+  font-size: 17px !important;
+  color: #FFFFFF !important;
+  margin: 0;
+}
+
+.banner-congratulations-button .button-icon-title {
+  width: auto;
+  background-color: #FFFFFF;
+  padding: 14px 18px;
+}
+
+.banner-congratulations-button .button-icon-title > h5 {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 18px !important;
+  color: #21C085 !important;
+  margin: 0;
+}
 /*# sourceMappingURL=components-dir.css.map */
