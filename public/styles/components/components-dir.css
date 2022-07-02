@@ -8435,4 +8435,44 @@ a {
   color: #3c557a !important;
   margin: 0;
 }
+
+.chart-sale {
+  width: 100%;
+  border: 1px solid #f3f4f6 !important;
+  border-radius: 12px !important;
+  padding: 12px 7px;
+}
+
+.chart-sale-title {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #6b798c !important;
+  margin: 0 0 5px 0;
+}
+
+.chart-sale-day {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #6b798c !important;
+  margin: 0;
+}
+
+.chart-sale-day > span {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #3c557a !important;
+  margin: 0;
+}
 /*# sourceMappingURL=components-dir.css.map */
