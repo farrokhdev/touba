@@ -1,6 +1,6 @@
 import { Component } from "react";
 import { IconCalling, IconShop, ImageJuicer } from "../../assets";
-import { CardOverall, CardProductGroupTitle, ChartDoughnut, ImageArrow, TableTransaction } from "../components/components";
+import { CardOverall, CardProductGroupTitle, ChartDoughnut, ChartSale, ImageArrow, TableTransaction } from "../components/components";
 import { SideNavItems } from "../components/side_nav_items";
 
 const TEST_NAV_ITEM = [
@@ -62,6 +62,9 @@ class PageTestComponents extends Component {
                         amountSold={120524}
                         amountBought={35183}
                     />
+                </div>
+                <div style={{ width: "390px", height: "100px" }}>
+                    <ChartSale />
                 </div>
             </div>
         )
