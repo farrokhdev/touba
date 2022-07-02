@@ -1,0 +1,19 @@
+.chart-sale {
+    width: 100%;
+    @include Border(1px, $bgWhite, 12px);
+    padding: 12px 7px;
+    &-title {
+        @include FontStyle(12px, 500, $lightSorme);
+        margin: 0 0 5px 0;
+    }
+
+    &-day {
+        @include FontStyle(16px, 600, $lightSorme);
+        margin: 0;
+
+        >span {
+            @include FontStyle(16px, 600, $sorme);
+            margin: 0;
+        }
+    }
+}

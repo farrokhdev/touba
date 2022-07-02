@@ -21,7 +21,7 @@ const Raiting: React.FC<IProps> = ({ rate, numOfRaiting }) => {
           {numOfRaiting === undefined ? (
             null
           ) : (
-            `${rate} | ${numOfRaiting} Ratings`
+            `${rate} | ${numOfRaiting} `
           )}
         </span>
       </div>

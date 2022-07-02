@@ -1,0 +1,44 @@
+.banner-lets-start {
+    width: 100%;
+    height: 225px;
+    position: relative;
+    padding: 20px;
+
+    >img {
+        position: absolute;
+        bottom: 65px;
+        z-index: 2;
+    }
+
+    &-groups {
+        height: 80%;
+        @include Display(flex, center, center);
+        background-color: $green;
+        border-radius: 12px;
+
+        &-image {
+            width: 30%;
+            height: 100%;
+            background-color: $sorme;
+            @include Display(flex, center, center);
+            clip-path: polygon(0% 0%, 96% 0, 100% 50%, 96% 100%, 0% 100%);
+            border-top-left-radius: 12px;
+            border-bottom-left-radius: 12px;
+        }
+
+        &-description {
+            width: 70%;
+            height: 100%;
+            padding: 0 30px;
+            @include Display(flex, center, flex-start, column);
+            &-title {
+                @include FontStyle (34px, 700, $white);
+                margin: 0px 0 7px 0;
+            }
+            &-text {
+                @include FontStyle (14px, 500, $white);
+                margin: 0px;
+            }
+        }
+    }
+}

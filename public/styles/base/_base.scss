@@ -1,10 +1,10 @@
 @mixin FontStyle($fontSize, $fontWeight, $Color) {
   width: auto;
   height: auto;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: $fontWeight;
-  font-size: $fontSize;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: $fontWeight !important;
+  font-size: $fontSize !important;
   color: $Color  !important;
 
   // @media (max-width: 375px) {

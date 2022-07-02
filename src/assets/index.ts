@@ -109,6 +109,7 @@ export { default as ImageSideService2} from './images/2.jpg';
 export { default as ImageSideService3} from './images/3.jpg';
 export { default as ImageSideService4} from './images/4.jpg';
 export { default as IconAddCircleWhite} from './icons/icon-add-circle-outline.svg';
+export { default as IconAddCircleGreen} from './icons/icon-add-circle-green.svg';
 export { default as ImageNasa} from './images/image-nasa.png';
 export { default as IconClose} from './icons/icon-close.svg';
 export { default as IconMarker} from './icons/icon-marker.svg';
@@ -155,3 +156,8 @@ export { default as ImageCongratulationBanner} from './images/CongratulationBann
 export { default as ImageCongratulationBanner2} from './images/CongratulationBanner2.png';
 export { default as IconChartSold} from './icons/icon-chart-sold.svg';
 
+export { default as IconShop} from './icons/icon-shop.svg';
+export { default as IconDanger} from './icons/icon-danger.svg';
+export { default as ImageJuicer} from './images/image-juicer.png';
+export { default as ImageManWithBox} from './images/image-man-with-box.png';
+export { default as ImageManFlying} from './images/image-man-flying.png';

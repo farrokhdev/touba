@@ -98,6 +98,16 @@ export { default as ComponentFieldsetPrice } from './component_fieldset_price';
 
 
 
+export { default as CardProductGroupTitle } from './card_product_group_title';
+export { default as Rate } from './rating';
+export { default as ChartDoughnut } from './chart_doughnut';
+export { default as TableTransaction } from './table_transactions';
+export { default as CardOverall } from './card_overrall';
+export { default as ChartSale } from './chart_sale';
+export { default as Calendar } from './calendar';
+export { default as BannerCongratulations } from './baner_congratulations';
+export { default as BannerLetsStart } from './banner_lets_start';
+export { default as TextIconVerticalDashboard } from './text_icon_vertical_dahsboard';
 
 
 
