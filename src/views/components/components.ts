@@ -88,6 +88,7 @@ export { default as ChartSale } from './chart_sale';
 export { default as Calendar } from './calendar';
 export { default as BannerCongratulations } from './baner_congratulations';
 export { default as BannerLetsStart } from './banner_lets_start';
+export { default as TextIconVerticalDashboard } from './text_icon_vertical_dahsboard';
 
 
 
