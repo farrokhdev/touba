@@ -1,4 +1,4 @@
-import { Component } from "react";
+git import { Component } from "react";
 import { Link } from "react-router-dom";
 import { BackgroundLatest, IconAlibaba, IconArvan, IconEmail, IconError, IconLinkdin, IconLinkdinGray, IconTouba, IconTwiterGray, IconTwitter, ImageBackgroundLogin, ImageControll, ImageLaboratory, ImagePersonBox, ImageTest, ImageTest2, ImageTest3, ImageTest4 } from "../../assets";
 import { ButtonOutline } from "../components/button_outline";

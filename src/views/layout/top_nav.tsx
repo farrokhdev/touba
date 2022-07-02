@@ -55,7 +55,7 @@ export function TopNav() {
                     <ComponentSearch />
                 </div>
                 <div className="top-nav-content-button">
-                    <Link to="/login">
+                    <Link to="/">
                         <ButtonIcon icon={IconTwoPerson} nameButton={""} />
                     </Link>
                 </div>

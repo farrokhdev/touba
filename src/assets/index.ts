@@ -153,3 +153,5 @@ export { default as IconEdit} from './icons/icon-edit.svg';
 export { default as IconLocationButton} from './icons/icon-location-button.svg';
 export { default as ImageCongratulationBanner} from './images/CongratulationBanner.png';
 export { default as ImageCongratulationBanner2} from './images/CongratulationBanner2.png';
+export { default as IconChartSold} from './icons/icon-chart-sold.svg';
+

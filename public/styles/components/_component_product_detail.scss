@@ -1,0 +1,30 @@
+.product-detail-box{
+    background: #FFFFFF;
+    /* BoxShadow */
+    
+    box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
+    border-radius: 12px;
+    .progress-detail{
+        height: 5px;
+    }
+    .progress-bar-detail{
+        background-color: #21C085
+        ;
+    }
+    .header-text{
+        @include FontStyle(34px,700,#3C557A
+        );
+
+    }
+    .desc-text{
+        @include FontStyle(14px,500,#6B798C
+        );
+
+    }
+   
+}
+
+.border-right-dashed{
+    border-right: 1px dashed #D6D6D6;
+
+}

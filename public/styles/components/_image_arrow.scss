@@ -1,0 +1,27 @@
+.image-arrow {
+    width: 132%;
+    @include Display(flex, start, center);
+    position: relative;
+
+    &-rectangle {
+        background-color: $sorme;
+        width: 80%;
+        height: 52px;
+        @include Display(flex, start, center);
+
+        >h5 {
+            @include FontStyle(16px, 700, $white);
+            margin: 0 5%;
+        }
+    }
+
+    &-trigle {
+        background-color: $sorme;
+        width: 39px;
+        height: 39px;
+        border-radius: 4px;
+        transform: rotate(45deg);
+        position: absolute;
+        left: 75%;
+    }
+}

@@ -18,7 +18,7 @@ const ComponentMapBox = () => {
           <div className="smalText mt-2">Last Week</div>
         </div>
       </div>
-      <div className="mt-2">
+      <div className="">
         <Map/>
       </div>
     </div>

@@ -12,7 +12,7 @@ interface Props {
 const ComponentMesageImage = ({ title, desc, country, time, image }: Props) => {
   return (
     <div>
-      <div className="message-box-imaege">
+      <div className="message-box-imaege mt-2">
         <div className="row ">
           <div className="col-3">
             <img src={image} width="105px"/>

@@ -1,0 +1,42 @@
+.color-picker-box{
+    background: #FFFFFF;
+    /* BoxShadow */
+    
+    box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
+    border-radius: 16px;
+    .header-modal{
+        .text-header{
+            @include FontStyle(22px,600,#3C557A)
+        }
+        .image-circle {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: #f3f4f6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          } 
+    }
+    .hex-text{
+
+    @include FontStyle(16px,700,#3C557A)
+    }
+    .btn-save-change {
+        background: #21c085;
+        border-radius: 8px;
+        @include FontStyle(14px, 600, #ffffff);
+        outline: none;
+        border: none;
+        
+        white-space: nowrap;
+      }
+      .btn-cancle {
+        background: #6b798c;
+        border-radius: 8px;
+        @include FontStyle(14px, 600, #ffffff);
+        outline: none;
+        border: none;
+        white-space: nowrap;
+      }
+}

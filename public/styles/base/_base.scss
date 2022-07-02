@@ -23,7 +23,18 @@
   //   font-size: $fontSize ;
   // }
 }
-
+.leaflet-container {
+  height: 30vh;
+}
+.progress{
+  height: 20px;
+}
+.Calendar {
+  width: 500px !important;
+}
+.react-colorful{
+  width: 100% !important;
+}
 @mixin Display ($display: flex, $justify: start, $align: flex-start, $direction: row, $wrap: nowrap) {
   display: $display !important;
   justify-content: $justify !important;

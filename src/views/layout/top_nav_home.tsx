@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import {
   IconBag,
   IconBagGray,
@@ -56,12 +56,17 @@ export function TopNavHome() {
             </Link>
           </div>
           <div className="top-nav-home-items-button-group">
-            <Link to="/cart">
-              <ButtonIcon icon={IconBagGray} nameButton={""} />
-            </Link>
-            <Link to="/login">
+            <ButtonIcon nameButton="" icon={IconBagGray} />
+         
+            {localStorage.getItem("token") == "true" ? (
+            <NavLink to="/dashboard">
+              <ButtonIcon nameButton="" icon={IconTwoPerson} />
+            </NavLink>
+          ) : (
+            <NavLink to="/login">
               <ButtonIcon icon={IconTwoPerson} nameButton={""} />
-            </Link>
+            </NavLink>
+          )}
           </div>
         </div>
       </div>
@@ -99,7 +104,15 @@ export function TopNavHome() {
               />
               <div className="top-nav-home-minimal-brand-button-group">
                 <ButtonIcon icon={IconBag} nameButton={""} />
-                <ButtonIcon icon={IconTwoPerson} nameButton={""} />
+                {localStorage.getItem("token") == "true" ? (
+                  <Link to="/dashboard">
+                    <ButtonIcon icon={IconTwoPerson} nameButton={""} />
+                  </Link>
+                ) : (
+                  <Link to="/login">
+                    <ButtonIcon icon={IconTwoPerson} nameButton={""} />
+                  </Link>
+                )}
               </div>
             </div>
             <div className="top-nav-home-minimal-links">

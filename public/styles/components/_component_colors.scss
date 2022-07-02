@@ -1,0 +1,25 @@
+.component-colors {
+  .circle-orange {
+    width: 64px;
+    height: 64px;
+
+    background: #ffc700;
+    /* Sorme2 */
+
+    border: 5px solid #6b798c;
+    border-radius: 50%;
+  }
+  .circle-green {
+    width: 64px;
+    height: 64px;
+
+    background: #e0ff1f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Sorme2 */
+
+    border: 5px solid #6b798c;
+    border-radius: 50%;
+  }
+}

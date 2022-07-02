@@ -1,0 +1,35 @@
+.download-box {
+  /* Shadow 1 */
+
+  box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
+  border-radius: 16px;
+  .report-text {
+    @include FontStyle(16px, 500, $white);
+  }
+  .green-box {
+    background: #21c085;
+    border-radius: 16px 16px 0 0;
+
+    .download-text {
+      @include FontStyle(22px, 600, $white);
+    }
+    
+    .btn-white {
+      background: #ffffff;
+      border-radius: 8px;
+      @include FontStyle(18px,600,#21C085);
+      border: none;
+    }
+  }
+  .primary-box {
+    border-radius: 0px 0px 16px 16px;
+
+    background: #3c557a;
+    .btn-green {
+        background: #21C085;
+        border-radius: 8px;
+        @include FontStyle(18px,600,$white);
+        border: none;
+      }
+  }
+}

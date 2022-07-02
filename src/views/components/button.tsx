@@ -5,16 +5,22 @@ import {
   MouseEvent,
   ButtonHTMLAttributes,
 } from "react";
+import { useNavigate } from "react-router-dom";
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   title: string;
+  route?:string
 }
 
-export function ButtonComponent({ onClick, title }: Props): ReactElement {
+export function ButtonComponent({ onClick, title,route }: Props): ReactElement {
+  const navigate = useNavigate()
   const handleOnClick = useCallback(
     (event: MouseEvent<HTMLButtonElement>) => {
       event.stopPropagation();
       onClick?.(event);
+      if(route){
+        navigate(route)
+      }
     },
     [onClick]
   );
