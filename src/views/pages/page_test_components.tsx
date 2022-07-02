@@ -1,6 +1,6 @@
 import { Component } from "react";
-import { IconCalling, IconShop, ImageJuicer } from "../../assets";
-import { Calendar, CardOverall, CardProductGroupTitle, ChartDoughnut, ChartSale, ImageArrow, TableTransaction } from "../components/components";
+import { IconCalling, IconShop, ImageJuicer, ImageManWithBox } from "../../assets";
+import { BannerCongratulations, Calendar, CardOverall, CardProductGroupTitle, ChartDoughnut, ChartSale, ImageArrow, TableTransaction } from "../components/components";
 import { SideNavItems } from "../components/side_nav_items";
 
 const TEST_NAV_ITEM = [
@@ -41,6 +41,7 @@ class PageTestComponents extends Component {
                     <h1>New Image and Icon</h1>
                     <img src={ImageJuicer} alt="" />
                     <img src={IconShop} alt="" className="mx-5" />
+                    <img src={ImageManWithBox} className="mx-5" />
                 </div>
                 <h1>
                     New Components
@@ -68,6 +69,9 @@ class PageTestComponents extends Component {
                 </div>
                 <div className="mx-auto my-5" style={{ width: "347px", height: "383px" }}>
                     <Calendar />
+                </div>
+                <div style={{ width: "1525px", height: "155px" }}>
+                    <BannerCongratulations/>
                 </div>
             </div>
         )
