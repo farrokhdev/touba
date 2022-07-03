@@ -42,6 +42,44 @@ const DROPDOWN = [
     { name: "link7", id: 7 },
     { name: "link8", id: 8 },
     { name: "link9", id: 9 },
+];
+
+const TABLE = [
+    {
+        id : 1, 
+        code : 65423132445, 
+        date: "18 Aug 2021 - 14:15", 
+        amount: 1850, 
+        detail: "INVOICE"
+    },
+    {
+        id : 2, 
+        code : 65423132445, 
+        date: "18 Aug 2021 - 14:15", 
+        amount: 36214, 
+        detail: "INVOICE"
+    },
+    {
+        id : 3, 
+        code : 65423132445, 
+        date: "18 Aug 2021 - 14:15", 
+        amount: 36214, 
+        detail: "INVOICE"
+    },
+    {
+        id : 4, 
+        code : 65423132445, 
+        date: "18 Aug 2021 - 14:15", 
+        amount: 518, 
+        detail: "INVOICE"
+    },
+    {
+        id : 5, 
+        code : 65423132445, 
+        date: "18 Aug 2021 - 14:15", 
+        amount: 518, 
+        detail: "INVOICE"
+    },
 ]
 
 
@@ -69,7 +107,9 @@ class PageTestComponents extends Component {
                 <div style={{ width: "347px", height: "162px" }}>
                     <ChartDoughnut dataChart={["152423", "242423"]} />
                 </div>
-                <TableTransaction items={[]} />
+                <div style={{ width: "830px", height: "598px" }}>
+                    <TableTransaction items={TABLE} />
+                </div>
                 <div style={{ width: "390px", height: "100px" }}>
                     <CardOverall
                         image={IconShop}
@@ -91,7 +131,7 @@ class PageTestComponents extends Component {
                     <BannerLetsStart />
                 </div>
                 <TextIconVerticalDashboard icon={IconDanger} title={"Hint text about the title"} />
-                <div  style={{ width: "572.5px", height: "64px" }} className="m-5">
+                <div style={{ width: "572.5px", height: "64px" }} className="m-5">
                     <SelectComponentDouble items1={DROPDOWN} items2={DROPDOWN} />
                 </div>
             </div>
