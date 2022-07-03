@@ -18,7 +18,7 @@ const ComponentSuppliers = () => {
       <div className="supplier-box">
         <div className="row">
           <div className="col-2 col-xl-2 col-sm-12">
-            <div className="logo-box">LOGO</div>
+            <div className="logo-box text-dark">LOGO</div>
           </div>
           <div className="col-9 col-xl-9 col-sm-12 px-5">
             <div className="bold-text">Supplier Name here</div>

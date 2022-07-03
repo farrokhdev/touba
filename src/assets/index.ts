@@ -140,6 +140,13 @@ export { default as ImageLadan} from './images/ladan.png';
 export { default as IconNotification} from './icons/icon-notification.svg';
 export { default as IconEmailArrow} from './icons/icon-email-arrow.svg';
 export { default as IconClockSuccess} from './icons/icon-clock-success.svg';
+export { default as IconImage} from './icons/icon-image.svg';
+export { default as IconPaper} from './icons/icon-paper.svg';
+export { default as IconTick} from './icons/icon-tick.svg';
+export { default as IconInfo} from './icons/icon-info.svg';
+export { default as IconDelete} from './icons/icon-delete.svg';
+export { default as IconChartSold} from './icons/icon-chart-sold.svg';
+
 export { default as IconShop} from './icons/icon-shop.svg';
 export { default as IconDanger} from './icons/icon-danger.svg';
 export { default as IconDecrease} from './icons/icon-decraise.svg';

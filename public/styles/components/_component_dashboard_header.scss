@@ -5,7 +5,8 @@
   display: flex;
   align-items: center;
   padding: 4%;
-  height: 22vh;
+  min-height: 24vh;
+  max-height: 27vh;
   position: relative;
   justify-content: center;
   .text-title {
@@ -21,8 +22,9 @@
     padding: 1% 5%;
     @include FontStyle(18px, 600, #21c085);
   }
-  .image-div{
+  .image-div {
     position: absolute;
     bottom: 0;
+    right:0;
   }
 }

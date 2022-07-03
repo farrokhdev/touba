@@ -10,6 +10,16 @@ import {
   ComponentTableORder,
   ComponentDashboardHeader,
   ComponentMessageImage,
+  ComponentProductDetail,
+  ComponentCompanyModal,
+  ComponentSortandSearch,
+  ComponentCalender,
+  ComponentSoldBox,
+  ComponentColors,
+  ComponentDownloadBox,
+  ComponentColorSelect,
+  ComponentColorPicker,
+  ComponentFieldsetPrice,
 } from "../components/components";
 import { BottomNav, Footer, TopNav, TopNavHome } from "../layout/layout";
 import AboutusPage from "./AboutusPage/AboutusPage";
@@ -27,8 +37,8 @@ import DashboardPage from "./dashboard/dasboard";
 import CompanyProfile from "./companyProfile";
 import DashboardLikeCard from "./DashboardLikeCard/dashboard_like_card";
 import DashboardTableOrder from "./DashbordTableOrder/dashboard_table_order";
-import iconRani from "../../assets/icons/icon-rani-message.svg";
 import Dashboard from "../layout/dashboard/dashobord";
+import ComponentStorage from "../components/component_storage";
 
 function Pages() {
   const location = useLocation();
@@ -51,6 +61,9 @@ function Pages() {
 
   return (
     <div>
+      <div className="mt-3 p-3 bg-white">
+        <ComponentFieldsetPrice/> 
+      </div>
 
       {
         location.pathname.includes("/login") ||

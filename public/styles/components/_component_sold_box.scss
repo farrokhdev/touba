@@ -1,0 +1,32 @@
+.component-sold-box {
+  background: inherit;
+  /* Shadow 1 */
+  box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
+  border-radius: 16px 0;
+  .green-card{
+    border-radius: 16px 16px 0 0;
+
+    background: #21C085;
+    .text-header{
+        @include FontStyle(19px,600,#FFFFFF)
+    }
+    .text-desc{
+        @include FontStyle(12px,500,#FFFFFF)
+    }
+    .text-percent{
+        @include FontStyle(22px,800,#FFFFFF)
+    }
+  }
+  .primary-card{
+    border-radius:0 0 16px 16px;
+
+    background: #3C557A;
+    .text-time{
+        @include FontStyle(10px,500,#FFFFFF)
+    }
+    .text-price{
+        @include FontStyle(13px,500,#FFFFFF)
+    }
+   
+  }
+}

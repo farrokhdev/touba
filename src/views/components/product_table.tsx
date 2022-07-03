@@ -8,7 +8,7 @@ import iconG from "../../assets/icons/icon-girls.svg";
 import IconLogoSingle from "../../assets/icons/icon-small-logo.svg";
 import { IconStar, IconStartOutline } from "../../assets";
 
-const productTable = () => {
+const ProductTable = () => {
   return (
     <div className="table-order">
       <table id="table-order" className="">
@@ -139,7 +139,7 @@ const productTable = () => {
                 <ButtonComponent title="See Details" />
               </div>
             </td>
-          </tr>{" "}
+          </tr>
           <tr>
             <td>
               <div className="text-hashtag">2</div>
@@ -239,4 +239,4 @@ const productTable = () => {
   );
 };
 
-export default memo(productTable);
+export default memo(ProductTable);

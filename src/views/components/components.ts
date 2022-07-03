@@ -79,6 +79,25 @@ export { default as MessangerTab } from './messenger_tab';
 export { default as ComponentTableExcess } from './component_table_excess';
 export { default as SideNavItems } from './side_nav_items';
 export { default as ImageArrow } from './image_arrow';
+export { default as ComponentProductDetail } from './component_product_detail';
+export { default as ComponentCompanyModal } from './component_company_modal';
+export { default as ComponentSortandSearch } from './component_sort_search';
+export { default as ComponentCalender } from './component_calendar';
+export { default as ComponentSoldBox } from './component_sold_box';
+export { default as ComponentColors } from './component_colors';
+export { default as ComponentDownloadBox } from './component_download_box';
+export { default as ComponentColorSelect } from './component_color_select';
+export { default as ComponentColorPicker } from './component_color_picker';
+export { default as ComponentFieldsetPrice } from './component_fieldset_price';
+
+
+
+
+
+
+
+
+
 export { default as CardProductGroupTitle } from './card_product_group_title';
 export { default as Rate } from './rating';
 export { default as ChartDoughnut } from './chart_doughnut';

@@ -82,7 +82,7 @@ export default class DashboardPage extends DashboarPageController {
           <div className=" px-3 row d-flex align-items-center">
             <div className="col-12 dashboard-Nav d-flex">
               <div className="btn-Container align-items-center d-flex">
-                <button className="add-Btn w-100">
+                <button className="add-Btn d-flex align-items-center">
                   <img src={IconAddCircle} alt="add" />
                   <span>ADD NEW</span>
                 </button>

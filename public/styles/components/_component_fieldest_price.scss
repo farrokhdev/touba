@@ -1,0 +1,20 @@
+.component-fildest-box {
+  background: #ffffff;
+  /* Border */
+
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  .border-text {
+    text-align: center;
+    font-size: 10px;
+    margin-top: -27px;
+    margin-left: 2px;
+    background: white;
+    font-size: 12px;
+    font-weight: 500;
+    color: #3c557a;
+  }
+  .text-content{
+    @include FontStyle(16px,400,#3C557A    )
+  }
+}

@@ -43,6 +43,7 @@
       font-style: italic !important;
     }
   }
+
   .text-hashtag {
     width: 37px;
     height: 37px;
@@ -94,4 +95,8 @@
       height: 20px;
     }
   }
+}
+.reportText {
+  @include FontStyle(16px, 400, $green);
+  font-style: normal !important;
 }
