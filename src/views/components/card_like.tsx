@@ -9,17 +9,26 @@ import iconUnit from "../../assets/icons/icon-unit.svg";
 interface Props {
   discount?: boolean;
   percent?: string;
-navigate?:string
+  navigate?: string;
+  icon?: any;
 }
-const CardLike = ({ discount, percent,navigate }: Props) => {
-  const navigation =useNavigate()
+const CardLike = ({ discount, percent, navigate, icon }: Props) => {
+  const navigation = useNavigate();
   return (
-    <div className="card-border" onClick={()=>navigation(navigate || '#')}>
-      <div className="row" >
+    <div className="card-border" onClick={() => navigation(navigate || "#")}>
+      <div className="row">
         <div className="d-flex justify-content-between ">
-          <div className="circle ">
-            <img src={greenHeart} />
-          </div>
+          {icon ? (
+            <div className="m-2">
+            <img src={icon} />
+            </div>
+          ) : (
+            <div className="circle ">
+
+              <img src={greenHeart} />
+            </div>
+          )}
+
           <div>
             {" "}
             {discount && (
@@ -45,7 +54,7 @@ const CardLike = ({ discount, percent,navigate }: Props) => {
           <div className=" py-1">
             <img src={iconUnit} />
           </div>
-          <div style={{marginLeft:'8%'}}>
+          <div style={{ marginLeft: "8%" }}>
             <div className="text-header">Unit:</div>
             <div className="boldText">Pair:</div>
           </div>
@@ -54,7 +63,7 @@ const CardLike = ({ discount, percent,navigate }: Props) => {
           <div className="px-2 py-1">
             <img src={settings} />
           </div>
-          <div style={{marginLeft:'8%'}}>
+          <div style={{ marginLeft: "8%" }}>
             <div className="text-header">Min. Order</div>
             <div className="boldText">12</div>
           </div>

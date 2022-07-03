@@ -1,0 +1,23 @@
+.message-input {
+    background-color: $white;
+    padding: 15px 40px;
+    .text-input {
+        width: calc(100% - 100px);
+        border: 1px solid #d6d6d6;
+        border-radius: 8px;
+        outline: none;
+        padding: 23px;
+        &::placeholder {
+            @include FontStyle(16px, 400, rgba($color: #6b798c, $alpha: 0.7));
+        }
+    }
+    label {
+        cursor: pointer;
+    }
+    button {
+        outline: none;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+    }
+}

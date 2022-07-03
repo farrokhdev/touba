@@ -1,0 +1,40 @@
+.mycompany-nav {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 15px 15px 15px 30px;
+    button {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        text-transform: uppercase;
+    }
+    .nav-button {
+        button {
+            @include FontStyle(14px, 600, $sorme);
+        }
+        .active {
+            color: #21c085 !important;
+        }
+    }
+}
+.outline-btn {
+    @include FontStyle(14px, 600, $green);
+    letter-spacing: 0.75px;
+    padding: 13px 16px;
+    border: 1px solid $green !important;
+    border-radius: 8px;
+    background-color: $white;
+    text-transform: uppercase;
+    outline: none;
+}
+.green-btn {
+    @include FontStyle(14px, 600, $white);
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    padding: 14px 16px;
+    background-color: $green;
+}

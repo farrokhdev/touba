@@ -75,7 +75,7 @@ const ReviewDetail = ({ setState }: IProps) => {
             <option>Approve</option>
           </select>
         </div>
-        <div className="btn-container">
+        <div className="even-btn-container">
           <button onClick={setState}>Cancle</button>
           <button onClick={setState}>Save Changes</button>
         </div>

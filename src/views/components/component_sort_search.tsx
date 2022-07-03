@@ -11,7 +11,7 @@ const ComponentSortandSearch = () => {
             <div className="">
               <img src={iconSearch} />
             </div>
-            <input className="input-search" placeholder="Search in Orders" />
+            <input className="input-search w-75" placeholder="Search in Orders" />
           </div>
         </div>
         <div className="col-2 px-2">

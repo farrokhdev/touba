@@ -1,0 +1,40 @@
+.profile-header-image {
+    position: relative;
+    // height: 180px;
+    .background-Img {
+        position: relative;
+        background-color: #2c246c;
+        img {
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+            mix-blend-mode: luminosity;
+            opacity: 0.2;
+        }
+    }
+    .content {
+        position: absolute;
+        top: 30%;
+        right: 42%;
+        button,
+        label {
+            background-color: $white;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            &:last-child {
+                img {
+                    transform: scale(1.2);
+                    filter: brightness(0) saturate(100%) invert(53%) sepia(62%) saturate(497%) hue-rotate(106deg)
+                        brightness(101%) contrast(93%);
+                }
+            }
+        }
+        span {
+            @include FontStyle(16px, 400, $white);
+        }
+    }
+}
