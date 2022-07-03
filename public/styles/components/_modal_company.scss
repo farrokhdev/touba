@@ -1,0 +1,78 @@
+.modal-company {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    @include Display(flex, center, center);
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    z-index: 10;
+
+    &-card {
+        width: 80%;
+        max-width: 1204px;
+        height: auto;
+        background-color: $white;
+        border-radius: 12px;
+
+        &-header {
+            width: 95%;
+            margin: 0 auto;
+            padding: 25px 0;
+            @include Display(flex, space-between, center);
+
+            &-title {
+                @include FontStyle(19px, 600, $sorme);
+                margin: 0;
+            }
+
+            &-close {
+                width: 48px;
+                height: 48px;
+                @include Display(flex, center, center);
+                background-color: $bgWhite;
+                border-radius: 100px;
+            }
+        }
+
+        &-content {
+            width: 95%;
+            margin: 0 auto;
+            padding: 25px 0 40px 0;
+        }
+
+        &-footer {
+            width: 95%;
+            margin: 0 auto;
+            padding: 25px 0;
+            @include Display(flex, start, center);
+            &-button-save {
+                @include Display(flex, center, center);
+                border: none;
+                border-radius: 8px;
+                background-color: $green;
+                padding: 13px 16px;
+                &-text {
+                    @include FontStyle(14px, 600, $white);
+                    margin: 0;
+                }
+            }
+            &-button-cancel {
+                margin: 0 10px;
+                @include Display(flex, center, center);
+                border: none;
+                border-radius: 8px;
+                background-color: $lightSorme;
+                padding: 13px 16px;
+                &-text {
+                    @include FontStyle(14px, 600, $white);
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

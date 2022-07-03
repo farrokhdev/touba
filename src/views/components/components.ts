@@ -92,6 +92,7 @@ export { default as ComponentFieldsetPrice } from './component_fieldset_price';
 export { default as SummaryDashboard } from './summary_dashboard';
 export { default as ProductCart } from './product_cart';
 export { default as Location } from './location';
+export { default as ModalCompany } from './modal_company';
 
 
 
