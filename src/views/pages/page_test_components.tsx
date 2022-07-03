@@ -113,12 +113,14 @@ interface IState {
     isShow: boolean;
     activeNav: number;
     showmodal: boolean;
+    activeLink: number;
 }
 class PageTestComponents extends Component {
     state: IState = {
         isShow: false,
         activeNav: 4,
         showmodal: false,
+        activeLink: 1,
     };
 
     handleShowModal = () => {
@@ -129,8 +131,12 @@ class PageTestComponents extends Component {
         this.setState({showmodal: false});
     }
 
-    render() {
+    handleGetActiveLink = (id: number) => {
+        this.setState({activeLink: id})
+    }
 
+    render() {
+        console.log(this.state.activeLink)
         return (
             <div className="mx-1 ">
                 <div>
@@ -145,7 +151,7 @@ class PageTestComponents extends Component {
                     New Components
                 </h1>
                 <div style={{ width: "315px", height: "100vh" }}>
-                    <SideNavItems items={TEST_NAV_ITEM} />
+                    <SideNavItems items={TEST_NAV_ITEM} onActive={this.handleGetActiveLink} />
                 </div>
                 <div className="mx-auto" style={{ width: "752px", height: "573px" }}>
                     <CardProductGroupTitle />
@@ -180,7 +186,7 @@ class PageTestComponents extends Component {
                 <div style={{ width: "572.5px", height: "64px" }} className="m-5">
                     <SelectComponentDouble items1={DROPDOWN} items2={DROPDOWN} />
                 </div>
-                {/* <ButtonAdd onClick={() => alert("add")} />
+                <ButtonAdd onClick={() => alert("add")} />
                 <UploadImage title="Product Images" />
                 <SummaryDashboard price1="18,251" price2="78,681" price3="3,524" />
                 <ProductCart />
@@ -224,7 +230,7 @@ class PageTestComponents extends Component {
                 </div>
                 <div style={{ width: "1200px", height: "670px" }} className="my-3">
                     <CongratulationBanner activeTab="Related Items" />
-                </div> */}
+                </div>
                 <div style={{ width: "1920px" }}>
                     <button onClick={this.handleShowModal}>
                         open modal
