@@ -82,7 +82,7 @@ function Pages() {
       }
       {location.pathname.includes("/profile") ? <ComponentBinaRazan /> : null}
       {location.pathname.includes("/dashboard") ? (
-        <div className="row">
+        <div className="row p-0 m-0">
           <div className="col-2 bg-white">
             <Dashboard />
           </div>

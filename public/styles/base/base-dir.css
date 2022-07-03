@@ -1,3 +1,7 @@
+.leaflet-container {
+  height: 30vh;
+}
+
 html,
 body {
   padding: 0;

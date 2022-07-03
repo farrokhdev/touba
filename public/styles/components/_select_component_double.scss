@@ -1,0 +1,103 @@
+.select-component-double {
+    width: 100%;
+    height: 64px;
+    @include Display(flex, center, center);
+    @include Border(1px, $gray, 8px);
+
+    &-section-one {
+        width: 50%;
+        position: relative;
+        padding: 0 25px;
+
+        &-title {
+            @include Display(flex, center, center);
+            background-color: $white;
+            padding: 3px 12px;
+            position: absolute;
+            bottom: 32px;
+            left: 13px;
+
+            >h6 {
+                @include FontStyle(12px, 500, $sorme);
+                margin: 0;
+            }
+        }
+
+        &-input {
+            width: 100%;
+            @include Display(flex, space-between, center);
+
+            &-header {
+                @include FontStyle(16px, 400, $sorme);
+                margin: 0;
+            }
+        }
+
+        &-dropdown {
+            width: 100%;
+            position: absolute;
+            top: 43px;
+            left: 0px;
+            border-radius: 8px;
+            background-color: $gray;
+            &-links {
+                margin: 10px;
+                &-link {
+                    @include FontStyle(14px, 400, $sorme);
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    &-section-divider {
+        height: 80%;
+        margin: auto 0;
+    }
+
+    &-section-two {
+        width: 50%;
+        position: relative;
+        padding: 0 25px;
+
+        &-title {
+            @include Display(flex, center, center);
+            background-color: $white;
+            padding: 3px 12px;
+            position: absolute;
+            bottom: 32px;
+            left: 13px;
+
+            >h6 {
+                @include FontStyle(12px, 500, $sorme);
+                margin: 0;
+            }
+        }
+
+        &-input {
+            width: 100%;
+            @include Display(flex, space-between, center);
+
+            &-header {
+                @include FontStyle(16px, 400, $sorme);
+                margin: 0;
+            }
+        }
+
+        &-dropdown {
+            width: 100%;
+            position: absolute;
+            top: 43px;
+            left: 0px;
+            border-radius: 8px;
+            background-color: $gray;
+            &-links {
+                margin: 10px;
+                &-link {
+                    @include FontStyle(14px, 400, $sorme);
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

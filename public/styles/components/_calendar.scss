@@ -1,0 +1,45 @@
+.calendar-component {
+    @include FontStyle(15.2px, 500, $lightSorme);
+    @include Display(flex, center, center);
+    margin: 0;
+    .react-calendar {
+        @include Border(1px, $gray, 8px);
+        padding: 35px;
+    }
+    .react-calendar__tile {
+        background: transparent;
+
+        &:focus {
+            @include Border(1.5px, $red, 9px);
+            background: transparent !important;
+        }
+      
+        &:active {
+            background: transparent !important;
+        }
+
+        >:nth-child(1) {
+            @include FontStyle(15.2px, 500, $lightSorme);
+            margin: 0;
+        }
+    }
+    .react-calendar__tile--rangeStart {
+        &:focus {
+            @include Border(1.5px, $red, 9px);
+            background: transparent !important;
+        }
+        &:active {
+            @include Border(1.5px, $red, 9px);
+            background: transparent !important;
+        }
+    }
+    .react-calendar__tile--rangeEnd {
+        &:focus {
+            @include Border(1.5px, $green, 9px);
+            background: transparent !important;
+        }
+    }
+    .react-calendar__tile--range {
+        @include Border(1.5px, $red, 9px);
+    }
+}

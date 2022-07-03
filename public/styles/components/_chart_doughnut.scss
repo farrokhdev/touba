@@ -1,0 +1,51 @@
+.chart-doughnut {
+    @include Display(flex, center, center);
+    &-chart {
+        width: 40%;
+    }
+    &-content {
+        width: 60%;
+        margin: 0 auto;
+        &-green {
+            @include Display(flex, start, center);
+            >span {
+                width: 8px;
+                height: 8px;
+                background-color: $green;
+                border-radius: 50px;
+                margin: 0 10%;
+            }
+            &-text {
+                >h6 {
+                    @include FontStyle(14px, 500, $lightSorme);
+                    margin: 0 0 10px 0;
+                }
+                >h5 {
+                    @include FontStyle(16px, 700, $sorme);
+                    margin: 0;
+                }
+            }
+        }
+        &-red {
+            @include Display(flex, start, center);
+            margin-top: 9px;
+            >span {
+                width: 8px;
+                height: 8px;
+                background-color: $red;
+                border-radius: 50px;
+                margin: 0 10%;
+            }
+            &-text {
+                >h6 {
+                    @include FontStyle(14px, 500, $lightSorme);
+                    margin: 0 0 10px 0;
+                }
+                >h5 {
+                    @include FontStyle(16px, 700, $sorme);
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.banner-congratulations {
+    position: relative;
+    @include Display(flex, space-between, center);
+    background-color: $green;
+    width: 100%;
+    padding: 30px 50px;
+    border-radius: 16px;
+    >img {
+        position: absolute;
+        bottom: 0px;
+    }
+
+    &-content {
+        position: relative;
+        left: 30%;
+        &-title {
+            @include FontStyle(34px, 700, $white);
+            margin: 0;
+        }
+        &-description {
+            @include FontStyle(14px, 500, $white);
+            margin: 0;
+            >span {
+                @include FontStyle(17px, 900, $white);
+                margin: 0;
+            }
+        }
+    }
+
+    &-button {
+        .button-icon-title {
+           width: auto;
+           background-color: $white;
+           padding: 14px 18px;
+            >h5 {
+                @include FontStyle(18px, 600, $green);
+                margin: 0;
+            }
+        }
+    }
+}

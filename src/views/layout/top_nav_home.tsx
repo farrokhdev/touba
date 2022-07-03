@@ -56,17 +56,17 @@ export function TopNavHome() {
             </Link>
           </div>
           <div className="top-nav-home-items-button-group">
-            <ButtonIcon nameButton="" icon={IconBagGray} />
-         
+            <ButtonIcon icon={IconBagGray} nameButton={""} />
+
             {localStorage.getItem("token") == "true" ? (
-            <NavLink to="/dashboard">
-              <ButtonIcon nameButton="" icon={IconTwoPerson} />
-            </NavLink>
-          ) : (
-            <NavLink to="/login">
-              <ButtonIcon icon={IconTwoPerson} nameButton={""} />
-            </NavLink>
-          )}
+              <Link to="/dashboard">
+                <ButtonIcon icon={IconTwoPerson} nameButton={""} onClick={() => console.log("asd")}/>
+              </Link>
+            ) : (
+              <Link to="/login">
+                <ButtonIcon icon={IconTwoPerson} nameButton={""} onClick={() => console.log("asd")}/>
+              </Link>
+            )}
           </div>
         </div>
       </div>
