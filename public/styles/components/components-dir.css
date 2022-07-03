@@ -7630,8 +7630,9 @@ a {
 .review-detail .content {
   max-width: 1427px;
   background-color: #FFFFFF;
-  margin-top: 15%;
-  margin-left: 12.5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 11%;
 }
 
 .review-detail .head {
@@ -7800,7 +7801,7 @@ a {
   color: #6b798c !important;
 }
 
-.review-detail .bottom-section .btn-container button {
+.even-btn-container button {
   width: auto;
   height: auto;
   font-family: 'Poppins' !important;
@@ -7814,17 +7815,16 @@ a {
   border-radius: 8px;
   letter-spacing: 0.75px;
   text-transform: uppercase;
+  padding: 14px 16px;
 }
 
-.review-detail .bottom-section .btn-container button:first-child {
+.even-btn-container button:first-child {
   background-color: #6b798c;
-  width: 90px;
   margin-right: 20px;
 }
 
-.review-detail .bottom-section .btn-container button:last-child {
+.even-btn-container button:last-child {
   background-color: #21C085;
-  width: 150px;
 }
 
 .button-add {
@@ -10167,5 +10167,474 @@ a {
   font-size: 14px !important;
   color: #3c557a !important;
   margin: 0;
+}
+
+.activity-chart {
+  background-color: #FFFFFF;
+  padding: 30px;
+  -webkit-box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
+  border-radius: 16px;
+}
+
+.activity-chart .chart-head span {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 19px !important;
+  color: #3c557a !important;
+}
+
+.activity-chart .chart-head .chart-btn {
+  border-radius: 75px;
+  background: #d6d6d6;
+  padding: 8px;
+}
+
+.activity-chart .chart-head .chart-btn button {
+  background-color: transparent;
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 12px !important;
+  color: rgba(107, 121, 140, 0.8) !important;
+  outline: none;
+  border: none;
+  padding: 10px 12px;
+}
+
+.activity-chart .chart-head .chart-btn .active-btn {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  color: #6b798c !important;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 9px 11px rgba(107, 121, 140, 0.28);
+          box-shadow: 0px 9px 11px rgba(107, 121, 140, 0.28);
+  border-radius: 47px;
+}
+
+.message-input {
+  background-color: #FFFFFF;
+  padding: 15px 40px;
+}
+
+.message-input .text-input {
+  width: calc(100% - 100px);
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  outline: none;
+  padding: 23px;
+}
+
+.message-input .text-input::-webkit-input-placeholder {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  color: rgba(107, 121, 140, 0.7) !important;
+}
+
+.message-input .text-input:-ms-input-placeholder {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  color: rgba(107, 121, 140, 0.7) !important;
+}
+
+.message-input .text-input::-ms-input-placeholder {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  color: rgba(107, 121, 140, 0.7) !important;
+}
+
+.message-input .text-input::placeholder {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  color: rgba(107, 121, 140, 0.7) !important;
+}
+
+.message-input label {
+  cursor: pointer;
+}
+
+.message-input button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.delete-image {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.delete-image .content {
+  -webkit-box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
+  border-radius: 16px;
+  max-width: 400px;
+  background-color: #FFFFFF;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 11%;
+}
+
+.delete-image .content .head {
+  padding: 17px 25px 15px 25px;
+  border-bottom: 1px solid #b1b4c1;
+}
+
+.delete-image .content .head span {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 22px !important;
+  color: #3c557a !important;
+}
+
+.delete-image .content .head button {
+  border: none;
+  outline: none;
+  background-color: #f3f4f6;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+}
+
+.delete-image .content .body {
+  padding: 30px 25px;
+}
+
+.delete-image .content .body span {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  color: #3c557a !important;
+}
+
+.delete-image .content .body button img {
+  -webkit-filter: brightness(0) saturate(100%) invert(100%) sepia(36%) saturate(787%) hue-rotate(62deg) brightness(133%) contrast(100%);
+          filter: brightness(0) saturate(100%) invert(100%) sepia(36%) saturate(787%) hue-rotate(62deg) brightness(133%) contrast(100%);
+}
+
+.mycompany-nav {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 15px 15px 15px 30px;
+}
+
+.mycompany-nav button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+
+.mycompany-nav .nav-button button {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  color: #3c557a !important;
+}
+
+.mycompany-nav .nav-button .active {
+  color: #21c085 !important;
+}
+
+.outline-btn {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  color: #21C085 !important;
+  letter-spacing: 0.75px;
+  padding: 13px 16px;
+  border: 1px solid #21C085 !important;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.green-btn {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  color: #FFFFFF !important;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  padding: 14px 16px;
+  background-color: #21C085;
+}
+
+.profile-header-image {
+  position: relative;
+}
+
+.profile-header-image .background-Img {
+  position: relative;
+  background-color: #2c246c;
+}
+
+.profile-header-image .background-Img img {
+  height: 300px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  mix-blend-mode: luminosity;
+  opacity: 0.2;
+}
+
+.profile-header-image .content {
+  position: absolute;
+  top: 30%;
+  right: 42%;
+}
+
+.profile-header-image .content button,
+.profile-header-image .content label {
+  background-color: #FFFFFF;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.profile-header-image .content button:last-child img,
+.profile-header-image .content label:last-child img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-filter: brightness(0) saturate(100%) invert(53%) sepia(62%) saturate(497%) hue-rotate(106deg) brightness(101%) contrast(93%);
+          filter: brightness(0) saturate(100%) invert(53%) sepia(62%) saturate(497%) hue-rotate(106deg) brightness(101%) contrast(93%);
+}
+
+.profile-header-image .content span {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  color: #FFFFFF !important;
+}
+
+.order-head {
+  background: #fc4a56;
+  border-radius: 16px 16px 0px 0px;
+  padding: 30px;
+}
+
+.order-head .detail div {
+  height: 50px;
+}
+
+.order-head .detail div:first-child {
+  padding-right: 64px;
+  border-right: 1px solid #ffffff;
+}
+
+.order-head .detail div:last-child {
+  padding-left: 64px;
+  border-left: 1px solid #ffffff;
+}
+
+.order-head .detail .title {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  color: #FFFFFF !important;
+}
+
+.order-head .detail .desk {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  color: #FFFFFF !important;
+}
+
+.order-head button {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  color: #FFFFFF !important;
+  background: #f9151d;
+  border-radius: 59px;
+  border: none;
+  outline: none;
+  height: 40px;
+  width: 95px;
+}
+
+.location-item {
+  background-color: #FFFFFF;
+  padding: 15px 20px;
+}
+
+.location-item span {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  color: #3c557a !important;
+}
+
+.location-item span:first-child {
+  width: 37px;
+  height: 37px;
+  background-color: #f3f3f3;
+  border-radius: 50%;
+}
+
+.location-item .btn-container button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.location-item .btn-container button:first-child img, .location-item .btn-container button:nth-child(2) img {
+  -webkit-filter: brightness(0) saturate(100%) invert(29%) sepia(53%) saturate(443%) hue-rotate(177deg) brightness(93%) contrast(91%);
+          filter: brightness(0) saturate(100%) invert(29%) sepia(53%) saturate(443%) hue-rotate(177deg) brightness(93%) contrast(91%);
+}
+
+.location-item .btn-container button:last-child img {
+  -webkit-filter: brightness(0) saturate(100%) invert(56%) sepia(77%) saturate(416%) hue-rotate(106deg) brightness(94%) contrast(92%);
+          filter: brightness(0) saturate(100%) invert(56%) sepia(77%) saturate(416%) hue-rotate(106deg) brightness(94%) contrast(92%);
+}
+
+.congratulation-banner {
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+}
+
+.congratulation-banner .content-banner {
+  padding: 55px 0 100px 45px;
+  height: 100%;
+}
+
+.congratulation-banner .content-banner span {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 34px !important;
+  color: #3c557a !important;
+}
+
+.congratulation-banner .content-banner p {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  color: #6b798c !important;
+}
+
+.congratulation-banner .image-banner {
+  max-height: 100%;
+  height: 100%;
+}
+
+.congratulation-banner .image-banner img {
+  height: 100%;
+}
+
+.congratulation-banner .product-progress {
+  background-color: #FFFFFF;
+}
+
+.congratulation-banner .product-progress span:first-child {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  color: #6b798c !important;
+}
+
+.congratulation-banner .product-progress span:last-child {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  color: #3c557a !important;
+}
+
+.congratulation-banner .product-progress .product-progress-bar {
+  height: 5px;
+  background: #d6d6d6;
+  border-radius: 31px;
+}
+
+.congratulation-banner .product-progress .product-progress-bar div {
+  height: 5px;
+  background: #21C085;
+  border-radius: 31px;
 }
 /*# sourceMappingURL=components-dir.css.map */

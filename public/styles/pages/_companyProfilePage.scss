@@ -233,17 +233,8 @@
                 @include FontStyle(22px, 800, $sorme);
             }
         }
-        .contactus-Item {
-            span {
-                &:first-child {
-                    @include FontStyle(14px, 500, $lightSorme);
-                }
-                &:last-child {
-                    @include FontStyle(16px, 400, $sorme);
-                }
-            }
-        }
     }
+
     .prfileImg {
         width: 100px;
         height: 100px;
@@ -284,6 +275,16 @@
             outline: none;
             padding: 20px 40px;
             border-radius: 8px;
+        }
+    }
+}
+.contactus-Item {
+    span {
+        &:first-child {
+            @include FontStyle(14px, 500, $lightSorme);
+        }
+        &:last-child {
+            @include FontStyle(16px, 400, $sorme);
         }
     }
 }

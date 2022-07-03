@@ -89,6 +89,9 @@ export { default as ComponentDownloadBox } from './component_download_box';
 export { default as ComponentColorSelect } from './component_color_select';
 export { default as ComponentColorPicker } from './component_color_picker';
 export { default as ComponentFieldsetPrice } from './component_fieldset_price';
+export { default as SummaryDashboard } from './summary_dashboard';
+export { default as ProductCart } from './product_cart';
+export { default as Location } from './location';
 
 
 
