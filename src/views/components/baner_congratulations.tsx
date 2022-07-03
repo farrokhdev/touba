@@ -6,10 +6,11 @@ import { IconAddCircle, IconAddCircleGreen, ImageManWithBox } from "../../assets
 import { ButtonIcon } from "./components";
 
 interface Props {
+    onClick?: (e:  React.MouseEvent<HTMLButtonElement>) => void;
 
 }
 
-export function BannerCongratulations({ }: Props): ReactElement {
+export function BannerCongratulations({ onClick}: Props): ReactElement {
 
     return (
         <div className="banner-congratulations">
@@ -23,7 +24,7 @@ export function BannerCongratulations({ }: Props): ReactElement {
                 </p>
             </div>
             <div className="banner-congratulations-button">
-                <ButtonIcon icon={IconAddCircleGreen} nameButton={"Add New Product"} />
+                <ButtonIcon onClick={onClick} icon={IconAddCircleGreen} nameButton={"Add New Product"} />
             </div>
         </div>
     )

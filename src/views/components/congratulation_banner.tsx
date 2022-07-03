@@ -6,9 +6,10 @@ import {
 
 export type IProps = {
   activeTab: string;
+  onClick?:any
 };
 
-const CongratulationBanner: React.FC<IProps> = ({ activeTab }: IProps) => {
+const CongratulationBanner: React.FC<IProps> = ({ activeTab,onClick }: IProps) => {
   const percent = "60%";
   return activeTab === "Related Items" ? (
     <div className="congratulation-banner d-flex flex-row align-items-start justify-content-between">
@@ -21,7 +22,7 @@ const CongratulationBanner: React.FC<IProps> = ({ activeTab }: IProps) => {
           best selling products!
         </p>
         <div className="d-flex flex-row align-items-center">
-          <button className="green-btn me-4">Add New Product</button>
+          <button onClick={()=>onClick} className="green-btn me-4">Add New Product</button>
           <button className="outline-btn">Get back to dashboard</button>
         </div>
       </div>

@@ -149,6 +149,7 @@ export { default as IconChartSold} from './icons/icon-chart-sold.svg';
 
 export { default as IconShop} from './icons/icon-shop.svg';
 export { default as IconDanger} from './icons/icon-danger.svg';
+export { default as IconDecrease} from './icons/icon-decraise.svg';
 export { default as ImageJuicer} from './images/image-juicer.png';
 export { default as ImageManWithBox} from './images/image-man-with-box.png';
 export { default as ImageManFlying} from './images/image-man-flying.png';

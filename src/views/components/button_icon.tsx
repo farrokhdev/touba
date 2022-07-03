@@ -9,7 +9,7 @@ import {
 interface Props {
     icon: string;
     nameButton: string;
-    onClick?(): void;
+    onClick?: (e:  React.MouseEvent<HTMLButtonElement>) => void;
 }
 
 export function ButtonIcon({ onClick, icon, nameButton }: Props): ReactElement {
@@ -20,7 +20,7 @@ export function ButtonIcon({ onClick, icon, nameButton }: Props): ReactElement {
                 nameButton === "" || nameButton.trim() === " " ? (
                     <button
                         className="button-icon"
-                        onClick={() => onClick}
+                        onClick={onClick}
                         type="button"
                     >
                         <img src={icon} alt="" className="icon" />
@@ -28,7 +28,7 @@ export function ButtonIcon({ onClick, icon, nameButton }: Props): ReactElement {
                 ) : (
                     <button
                         className="button-icon-title"
-                        onClick={() => onClick}
+                        onClick={ onClick}
                         type="button"
                     >
                         <img src={icon} alt="" className="icon" />

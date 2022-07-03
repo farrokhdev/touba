@@ -4,8 +4,33 @@ import { CardLike, ComponentSortandSearch } from "../../components/components";
 import DashboardNav from "../../components/dashboard_nav";
 import DashboardCompanyProfileController from "../../controllers/dashboard_company_profile_controller";
 import iconEdit from "../../../assets/icons/icon-edit.svg";
+import { SideNavItems } from "../../components/side_nav_items";
+import { ButtonIcon } from "../../components/button_icon";
 
 class DashboardCompanyProfile extends DashboardCompanyProfileController {
+  
+  TEST_NAV_ITEM = [
+    {
+      title: "Group Title 1",
+      location: "/dashboard-company-profile",
+      id: 0,
+    },
+    {
+      title: "Group Title 2",
+      location: "/dashboard-company-add",
+      id: 2,
+    },
+    {
+      title: "Group Title 3",
+      location: "/",
+      id: 3,
+    },
+    {
+      title: "Group Title 4",
+      location: "/",
+      id: 4,
+    },
+  ];
   searchAndSort = () => {
     return <ComponentSortandSearch />;
   };
@@ -27,34 +52,56 @@ class DashboardCompanyProfile extends DashboardCompanyProfileController {
       </div>
     );
   };
+  test = () => {
+    console.log(4);
+  };
+  starterPage = () => {
+    return (
+      <div className="mt-5 p-3">
+        <div className="mt-5">
+          <BannerCongratulations onClick={() => this.handleShowSection(2)} />
+        </div>
+        <div className="mt-2">{this.searchAndSort()}</div>
+        {this.cardLike()} {this.cardLike()}{" "}
+        <div className="d-flex justify-content-center pagination mt-2">
+          <div className="bigText">
+            <div>1</div>
+          </div>
+          <div className="bigText">
+            <div>2</div>
+          </div>
+          <div className="bigText">
+            <div className="active">3</div>
+          </div>
+          <div className="bigText">
+            <div>4</div>
+          </div>
+          <div className="bigText">
+            <div className="">5</div>
+          </div>
+        </div>
+      </div>
+    );
+  };
+  addProductOne = () => {
+    return (
+      <div className="row">
+        <div className="col-2">
+          <SideNavItems items={this.TEST_NAV_ITEM} />
+        </div>
+        
+      </div>
+    );
+  };
+ 
   render() {
+    
     return (
       <div>
         <DashboardNav title="Products" />
-        <div className="mt-5 p-3">
-          <div className="mt-5">
-            <BannerCongratulations />
-          </div>
-          <div className="mt-2">{this.searchAndSort()}</div>
-          {this.cardLike()} {this.cardLike()}{" "}
-          <div className="d-flex justify-content-center pagination mt-2">
-            <div className="bigText">
-              <div>1</div>
-            </div>
-            <div className="bigText">
-              <div>2</div>
-            </div>
-            <div className="bigText">
-              <div className="active">3</div>
-            </div>
-            <div className="bigText">
-              <div>4</div>
-            </div>
-            <div className="bigText">
-              <div className="">5</div>
-            </div>
-          </div>
-        </div>
+        {this.state.status == 1 && this.starterPage()}
+        {this.state.status == 2 && this.addProductOne()}
+
       </div>
     );
   }

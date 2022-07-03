@@ -5,18 +5,21 @@ interface IProps {
 }
 
 interface IState {
-    active: number;
+    status: number;
+    location:string;
 }
 
 export class DashboardCompanyProfileController extends Component<IProps, IState> {
-
+    componentDidMount(){
+this.setState({location:window.location.pathname})      }
     state = {
-        active: 1,
+        status: 1,
+        location:''
     };
 
     //list
-    handleActiveTab = (number: number) => {
-        this.setState({active: number});
+    handleShowSection = (number: number) => {
+        this.setState({status: number});
     }
 }
 export default DashboardCompanyProfileController;
