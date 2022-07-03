@@ -8097,6 +8097,7 @@ a {
 }
 
 .side-nav-items .active {
+  width: 100%;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -8114,6 +8115,7 @@ a {
       flex-wrap: nowrap !important;
   height: 64px;
   background-color: transparent;
+  border: 0;
   border-bottom: 1px solid #d6d6d6;
 }
 
@@ -8149,6 +8151,7 @@ a {
 }
 
 .side-nav-items-link {
+  width: 100%;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -8165,7 +8168,9 @@ a {
   -ms-flex-wrap: nowrap !important;
       flex-wrap: nowrap !important;
   height: 64px;
+  border: 0;
   border-bottom: 1px solid #d6d6d6;
+  background-color: transparent;
 }
 
 .side-nav-items-link .item-disabled .side-nav-items-link-content-title {
