@@ -4,7 +4,7 @@ import ActivityChart from "../components/activity_chart";
 import ButtonAdd from "../components/button_add";
 import { CardOfferHorizontal } from "../components/cars_offer_horizontal";
 import { CompanyAddres } from "../components/company_address";
-import { BannerCongratulations, BannerLetsStart, Calendar, CardOverall, CardProductGroupTitle, ChartDoughnut, ChartSale, ImageArrow, Location, ProductCart, SelectComponent, SelectComponentDouble, SummaryDashboard, TableTransaction, TextIconVertical, TextIconVerticalDashboard } from "../components/components";
+import { BannerCongratulations, BannerLetsStart, Calendar, CardOverall, CardProductGroupTitle, ChartDoughnut, ChartSale, ImageArrow, Location, ModalCompany, ProductCart, SelectComponent, SelectComponentDouble, SummaryDashboard, TableTransaction, TextIconVertical, TextIconVerticalDashboard } from "../components/components";
 import CongratulationBanner from "../components/congratulation_banner";
 import DeleteImage from "../components/delete_image";
 import MessageInput from "../components/message_input";
@@ -112,14 +112,25 @@ const TEST = [
 interface IState {
     isShow: boolean;
     activeNav: number;
+    showmodal: boolean;
 }
 class PageTestComponents extends Component {
     state: IState = {
         isShow: false,
         activeNav: 4,
+        showmodal: false,
     };
+
+    handleShowModal = () => {
+        this.setState({showmodal: true});
+    }
+
+    handleCloseModal = () => {
+        this.setState({showmodal: false});
+    }
+
     render() {
-        
+
         return (
             <div className="mx-1 ">
                 <div>
@@ -169,7 +180,7 @@ class PageTestComponents extends Component {
                 <div style={{ width: "572.5px", height: "64px" }} className="m-5">
                     <SelectComponentDouble items1={DROPDOWN} items2={DROPDOWN} />
                 </div>
-                <ButtonAdd onClick={() => alert("add")} />
+                {/* <ButtonAdd onClick={() => alert("add")} />
                 <UploadImage title="Product Images" />
                 <SummaryDashboard price1="18,251" price2="78,681" price3="3,524" />
                 <ProductCart />
@@ -213,6 +224,12 @@ class PageTestComponents extends Component {
                 </div>
                 <div style={{ width: "1200px", height: "670px" }} className="my-3">
                     <CongratulationBanner activeTab="Related Items" />
+                </div> */}
+                <div style={{ width: "1920px" }}>
+                    <button onClick={this.handleShowModal}>
+                        open modal
+                    </button>
+                    <ModalCompany show={this.state.showmodal} onClose={this.handleCloseModal} />
                 </div>
             </div>
         )
