@@ -55,9 +55,9 @@ export class CompanyProfileController extends Component<IProps, IState> {
         console.log(this.state.image);
     };
     
-    // handleDeleteImage = (name: any) => {
-    //     this.setState({ image: this.state.images.filter(image => image !== name) })
-    // }
+    handleDeleteImage = () => {
+        this.setState({ image: "" })
+    }
     
 }
 export default CompanyProfileController;
