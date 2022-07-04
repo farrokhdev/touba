@@ -36,7 +36,7 @@ class CompanyProfileEdit extends CompanyProfileController {
                                             onChange={(event) => this.handleGetImage(event)}
                                         />
                                     </div>
-                                    <img src={IconDeletGreen} alt="" />
+                                    <img src={IconDeletGreen} alt="" onClick={this.handleDeleteImage}/>
                                 </div>
                                 <div className="body-content-items-banner-image">
                                     <img src={this.state.image === "" ? ImageBanner : this.state.image} alt="" />
