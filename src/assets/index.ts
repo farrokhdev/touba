@@ -155,9 +155,11 @@ export { default as IconLocationButton} from './icons/icon-location-button.svg';
 export { default as ImageCongratulationBanner} from './images/CongratulationBanner.png';
 export { default as ImageCongratulationBanner2} from './images/CongratulationBanner2.png';
 export { default as IconChartSold} from './icons/icon-chart-sold.svg';
+export { default as IconChartRed} from './icons/icon-chart-red.svg';
 
 export { default as IconShop} from './icons/icon-shop.svg';
 export { default as IconDanger} from './icons/icon-danger.svg';
 export { default as ImageJuicer} from './images/image-juicer.png';
 export { default as ImageManWithBox} from './images/image-man-with-box.png';
 export { default as ImageManFlying} from './images/image-man-flying.png';
+export { default as ImageExcessBanner} from './images/excess-banner.jpg';

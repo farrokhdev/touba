@@ -38,6 +38,7 @@ import {
   TextIconVertical,
   TextIconVerticalDashboard,
 } from "../components/components";
+import Transaction from "../components/transaction";
 
 const TEST_NAV_ITEM = [
   {
@@ -198,6 +199,9 @@ class PageTestComponents extends Component {
           icon={IconDanger}
           title={"Hint text about the title"}
         />
+        <div style={{ width: "830px", height: "155px" }}>
+          <Transaction mode="Client" />
+        </div>
       </div>
     );
   }
