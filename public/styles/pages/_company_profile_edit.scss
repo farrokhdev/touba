@@ -1,10 +1,12 @@
 .company-profile-edit {
+    height: 100%;
     .body {
+        height: 100%;
         @include Display(flex, start, flex-start);
 
         &-side-item {
             width: 20%;
-            height: 100vh;
+            height: 100%;
         }
 
         &-content {
@@ -19,7 +21,7 @@
 
             &-items {
                 width: 90%;
-                height: 100vh;
+                height: auto;
                 margin: 0 auto;
                 background-color: $white;
                 border-radius: 12px;
@@ -29,6 +31,7 @@
                     width: 100%;
                     margin: 0px auto;
                     padding: 40px 0;
+
                     &-text {
                         @include FontStyle(22px, 800, $sorme);
                         margin: 0;
@@ -42,10 +45,13 @@
                     &-icons {
                         width: 5%;
                         @include Display(flex, center, center, column);
+
                         .label-photo {
                             margin-bottom: 20px;
                         }
+
                         position: relative;
+
                         .input-photo {
                             width: 18.5px;
                             height: 18.5px;
@@ -53,18 +59,20 @@
                             position: absolute;
                             top: 0;
                         }
+
                         .input-photo {
                             background-color: aquamarine;
                             opacity: 0;
                         }
-    
+
                     }
 
                     &-image {
                         width: 85%;
                         margin: 0 auto;
                         height: 225px;
-                        > img {
+
+                        >img {
                             width: 100%;
                             max-height: 225px;
                         }
@@ -74,17 +82,82 @@
                 &-description {
                     @include Display(flex, space-between, flex-start);
                     width: 100%;
+
                     &-icon {
                         @include Display(flex, center, center);
                         width: 5%;
                     }
+
                     &-text {
                         width: 85%;
                         margin: 0 auto;
-                        > p {
+
+                        >p {
                             @include FontStyle(16px, 400, $sorme);
                             margin: 0;
                             text-align: justify;
+                        }
+                    }
+                }
+
+                &-details {
+                    padding: 40px 0;
+                    @include Display(flex, space-between, flex-start);
+                    width: 100%;
+
+                    &-icon {
+                        @include Display(flex, center, center);
+                        width: 5%;
+                        padding: 17px 0;
+                    }
+
+                    &-table {
+                        width: 90%;
+                        margin: 0 auto;
+
+                        >div:nth-child(2n) {
+                            background-color: $bgWhite;
+                        }
+
+                        &-row {
+                            @include Display(flex, start, center);
+                            padding: 17px;
+                            width: 95%;
+                            margin: 0 auto;
+
+                            &-title {
+                                width: 35%;
+
+                                >h6 {
+                                    @include FontStyle(16px, 400, $lightSorme);
+                                    margin: 0;
+                                }
+                            }
+                            .text-red {
+                                >h6 {
+                                    @include FontStyle(16px, 500, $red);
+                                    margin: 0;
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                }
+                            }
+
+                            &-amount {
+                                width: 65%;
+
+                                >h6 {
+                                    @include FontStyle(16px, 500, $sorme);
+                                    margin: 0;
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    >span {
+                                        @include FontStyle(16px, 500, $green);
+                                        margin: 0 30px;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
