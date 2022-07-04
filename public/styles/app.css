@@ -15980,4 +15980,9 @@ a {
   color: #21C085 !important;
   margin: 0;
 }
+
+.company-profile-edit-side-item {
+  width: 20%;
+  height: 100vh;
+}
 /*# sourceMappingURL=app.css.map */
