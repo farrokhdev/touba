@@ -163,6 +163,7 @@ export { default as IconWalletSorme} from './icons/icon-wallet-sorme.svg';
 export { default as IconLocationSorme} from './icons/icon-location-sorme.svg';
 export { default as IconStarSorme} from './icons/icon-start-sorme.svg';
 export { default as IconCallSorme} from './icons/icon-call-sorme.svg';
+export { default as IconEditSorme} from './icons/icon-edit-sorme.svg';
 export { default as IconImageBlack} from './icons/icon-image-black.svg';
 export { default as IconDeletGreen} from './icons/icon-delete-green.svg';
 export { default as IconLocationButton} from './icons/icon-location-button.svg';
