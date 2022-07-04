@@ -217,7 +217,9 @@ class PageTestComponents extends Component {
                 {this.state.isShow ? (
                     <DeleteImage onClick={() => this.setState({ isShow: false })} />
                 ) : null}
-                <MyCompanyNav state={this.state.activeNav} />
+                <MyCompanyNav onActive={function (id: number): void {
+                    throw new Error("Function not implemented.");
+                } } />
                 <ProfileHeaderImage />
                 <OrderHead orderNumber={2334217651} client="Saber Noori" />
                 <Location index={1} name={"Bandar Abbas Office"} area={"BandarAbbas, Iran"}/>
@@ -231,7 +233,7 @@ class PageTestComponents extends Component {
                     <button onClick={this.handleShowModal}>
                         open modal
                     </button>
-                    <ModalCompany show={this.state.showmodal} onClose={this.handleCloseModal} />
+                    {/* <ModalCompany show={this.state.showmodal} onClose={this.handleCloseModal} /> */}
                 </div>
             </div>
         )
