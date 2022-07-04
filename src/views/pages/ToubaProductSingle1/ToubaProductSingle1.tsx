@@ -129,7 +129,6 @@ export class ToubaProductSingle1 extends BaseComponent<IProps, IState> {
             </div>
           </div>
         </div>
-        <Footer />
         {this.state.isShow ? (
           <div className="product-Inquiry d-flex flex-row">
             <div

@@ -2,6 +2,18 @@
   height: 30vh;
 }
 
+.progress {
+  height: 20px;
+}
+
+.Calendar {
+  width: 500px !important;
+}
+
+.react-colorful {
+  width: 100% !important;
+}
+
 html,
 body {
   padding: 0;

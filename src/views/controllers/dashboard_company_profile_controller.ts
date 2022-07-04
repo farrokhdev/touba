@@ -7,6 +7,7 @@ interface IProps {
 interface IState {
     status: number;
     location:string;
+    show:number
 }
 
 export class DashboardCompanyProfileController extends Component<IProps, IState> {
@@ -14,12 +15,18 @@ export class DashboardCompanyProfileController extends Component<IProps, IState>
 this.setState({location:window.location.pathname})      }
     state = {
         status: 1,
-        location:''
+        location:'',
+        show:0
     };
+  
 
     //list
     handleShowSection = (number: number) => {
         this.setState({status: number});
+    }
+    handleShowSideNavItem = (number: number) => {
+        console.log("s",number)
+        this.setState({show: number});
     }
 }
 export default DashboardCompanyProfileController;

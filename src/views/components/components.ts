@@ -89,6 +89,12 @@ export { default as ComponentDownloadBox } from './component_download_box';
 export { default as ComponentColorSelect } from './component_color_select';
 export { default as ComponentColorPicker } from './component_color_picker';
 export { default as ComponentFieldsetPrice } from './component_fieldset_price';
+export { default as SummaryDashboard } from './summary_dashboard';
+export { default as ProductCart } from './product_cart';
+export { default as Location } from './location';
+export { default as ModalCompany } from './modal_company';
+export { default as ComponentBasicInformation } from './component_basic_information';
+
 
 
 
@@ -109,6 +115,8 @@ export { default as BannerCongratulations } from './baner_congratulations';
 export { default as BannerLetsStart } from './banner_lets_start';
 export { default as TextIconVerticalDashboard } from './text_icon_vertical_dahsboard';
 export { default as SelectComponentDouble } from './select_component_double';
+export { default as ComponentTextArea } from './component_text_area';
+
 
 
 
