@@ -1,6 +1,76 @@
 .company-profile-edit {
-    &-side-item {
-        width: 20%;
-        height: 100vh;
+    .body {
+        @include Display(flex, start, flex-start);
+
+        &-side-item {
+            width: 20%;
+            height: 100vh;
+        }
+
+        &-content {
+            width: 80%;
+
+            &-header {
+                width: 90%;
+                height: 80px;
+                margin: 32px auto;
+                background-color: $white;
+            }
+
+            &-items {
+                width: 90%;
+                height: 100vh;
+                margin: 0 auto;
+                background-color: $white;
+                border-radius: 12px;
+                padding: 0 35px;
+
+                &-title {
+                    width: 100%;
+                    margin: 0px auto;
+                    padding: 40px 0;
+                    &-text {
+                        @include FontStyle(22px, 800, $sorme);
+                        margin: 0;
+                    }
+                }
+
+                &-banner {
+                    @include Display(flex, space-between, flex-start);
+                    width: 100%;
+
+                    &-icons {
+                        width: 5%;
+                        @include Display(flex, center, center, column);
+                        .label-photo {
+                            margin-bottom: 20px;
+                        }
+                        position: relative;
+                        .input-photo {
+                            width: 18.5px;
+                            height: 18.5px;
+                            background-color: aqua;
+                            position: absolute;
+                            top: 0;
+                        }
+                        .input-photo {
+                            background-color: aquamarine;
+                            opacity: 0;
+                        }
+    
+                    }
+
+                    &-image {
+                        width: 85%;
+                        margin: 0 auto;
+                        height: 225px;
+                        > img {
+                            width: 100%;
+                            max-height: 225px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
