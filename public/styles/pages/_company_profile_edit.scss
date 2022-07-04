@@ -70,6 +70,24 @@
                         }
                     }
                 }
+
+                &-description {
+                    @include Display(flex, space-between, flex-start);
+                    width: 100%;
+                    &-icon {
+                        @include Display(flex, center, center);
+                        width: 5%;
+                    }
+                    &-text {
+                        width: 85%;
+                        margin: 0 auto;
+                        > p {
+                            @include FontStyle(16px, 400, $sorme);
+                            margin: 0;
+                            text-align: justify;
+                        }
+                    }
+                }
             }
         }
     }
