@@ -10828,4 +10828,59 @@ a {
   color: #FFFFFF !important;
   margin: 0;
 }
+
+.textarea-lable {
+  width: 100%;
+  position: relative;
+}
+
+.textarea-lable-title {
+  background-color: #FFFFFF;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+  padding: 3px 12px;
+  position: absolute;
+  top: -10px;
+  left: 20px;
+}
+
+.textarea-lable-title-text {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 12px !important;
+  color: #3c557a !important;
+  margin: 0;
+}
+
+.textarea-lable-input {
+  width: 100% !important;
+  min-height: 300px;
+  border: 1px solid #d6d6d6 !important;
+  border-radius: 12px !important;
+  padding: 40px 20px;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 16px;
+  color: #3c557a;
+}
+
+.textarea-lable-input:focus {
+  outline: none;
+}
 /*# sourceMappingURL=components-dir.css.map */

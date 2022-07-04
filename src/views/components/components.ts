@@ -93,6 +93,7 @@ export { default as SummaryDashboard } from './summary_dashboard';
 export { default as ProductCart } from './product_cart';
 export { default as Location } from './location';
 export { default as ModalCompany } from './modal_company';
+export { default as TextAreaLabel } from './textarea_lable';
 
 
 
