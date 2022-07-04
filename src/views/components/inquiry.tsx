@@ -100,7 +100,7 @@ const Inquiry: React.FC<IProps> = () => {
             numOfRating="12,514"
             rate={4.2}
           />
-          <div className="my-3 px-2 ">
+          <div className="my-3 px-2 w-100">
             <CardCalculate amount={100} value={1299} />
           </div>
           <div className="offer-Price px-2">

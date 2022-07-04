@@ -1,3 +1,132 @@
 .table-transaction {
-    
+    width: 100%;
+
+    &-title {
+        width: 100;
+        @include Display(flex, start, center);
+        padding: 32px;
+        background-color: $white;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        >h4 {
+            @include FontStyle(22px, 600, $sorme);
+            margin: 0;
+        }
+    }
+
+    &-header {
+        @include Display(flex, space-between, center);
+        width: 100%;
+        background-color: $gray;
+        padding: 14px 0px 14px 30px;
+
+        &-id {
+            width: 10%;
+            @include Display(flex, start, center);
+        }
+
+        &-code {
+            width: 25%;
+            @include Display(flex, start, center);
+        }
+
+        &-date {
+            width: 25%;
+            @include Display(flex, start, center);
+        }
+
+        &-amount {
+            width: 20%;
+            @include Display(flex, start, center);
+        }
+
+        &-details {
+            width: 20%;
+            @include Display(flex, start, center);
+        }
+
+        >div {
+            >h6 {
+                @include FontStyle(14px, 500, $lightSorme);
+                margin: 0;
+            }
+        }
+    }
+
+    &-content {
+        @include Display(flex, space-between, center);
+        width: 100%;
+        background-color: $white;
+        padding: 22px 0px 22px 25px;
+        border-bottom: 1px solid $gray;
+
+        &-id {
+            width: 10%;
+            @include Display(flex, start, center);
+
+            >div {
+                margin: 0;
+                width: 37px;
+                height: 37px;
+                @include Display(flex, center, center);
+                background-color: $darkWhite;
+                border-radius: 100px;
+
+                >h6 {
+                    @include FontStyle(16px, 500, $lightSorme);
+                    margin: 0;
+                }
+            }
+        }
+
+        &-code {
+            width: 25%;
+            @include Display(flex, start, center);
+
+            >h6 {
+                @include FontStyle(16px, 500, $lightSorme);
+                margin: 0;
+            }
+        }
+
+        &-date {
+            width: 25%;
+            @include Display(flex, start, center);
+
+            >h6 {
+                @include FontStyle(16px, 500, $lightSorme);
+                margin: 0;
+            }
+        }
+
+        &-amount {
+            width: 20%;
+            @include Display(flex, start, center);
+
+            >h5 {
+                @include FontStyle(22px, 800, $sorme);
+                margin: 0;
+
+                >span {
+                    @include FontStyle(14px, 600, $sorme);
+                    margin: 0;
+                }
+            }
+        }
+
+        &-details {
+            width: 20%;
+            @include Display(flex, start, center);
+
+            >h6 {
+                @include FontStyle(14px, 600, $green);
+                margin: 0;
+            }
+        }
+    }
+
+    &-footer {
+        width: 100;
+        background-color: $white;
+    }
 }

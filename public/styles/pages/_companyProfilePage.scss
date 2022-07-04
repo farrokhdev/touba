@@ -47,6 +47,10 @@
                 text-transform: uppercase;
                 @include FontStyle(14px, 600, $sorme);
             }
+            .active-btn {
+                border-bottom: 1px solid $green;
+                padding-bottom: 5px;
+            }
             .input-Container {
                 img {
                     filter: brightness(0) saturate(100%) invert(53%) sepia(19%) saturate(423%) hue-rotate(175deg)
@@ -158,6 +162,9 @@
                 padding: 50px 40px;
                 border-radius: 12px;
                 margin-top: 30px;
+                &:first-child {
+                    margin-top: 0 !important;
+                }
             }
             .title {
                 @include FontStyle(22px, 800, $sorme);

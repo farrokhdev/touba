@@ -1,15 +1,18 @@
 .side-nav {
     height: 100%;
     background-color: $white;
+
     &-items {
         background-color: $white;
         // box-sizing: border-box;
         padding: 10px 16px;
         border-right: 1px solid $gray;
         .active {
+            width: 100%;
             @include Display(flex, space-between, center);
             height: 64px;
             background-color: transparent;
+            border: 0;
             border-bottom: 1px solid $gray;
             .side-nav-items-link-content-active {
                 width: 292px;
@@ -32,9 +35,12 @@
         }
 
         &-link {
+            width: 100%;
             @include Display(flex, space-between, center);
             height: 64px;
+            border: 0;
             border-bottom: 1px solid $gray;
+            background-color: transparent;
             .item-disabled {
                 .side-nav-items-link-content-title {
                     @include FontStyle(16px, 400, $lightSorme);

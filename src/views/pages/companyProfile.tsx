@@ -25,14 +25,10 @@ import {
   ComponentCapicityFilter,
   ComponentFilterRangeSlider,
   ComponentFilterSidebar,
-  ComponentFilterTopbar,
 } from "../components/components";
 import ToubaProduct from "./ToubaProduct/ToubaProduct";
 import image_test from "../../assets/images/image-test.png";
 import Footer from "../layout/footer";
-import TopNav from "../layout/top_nav";
-import BottomNav from "../layout/bottom_nav";
-import Component_search_bar from "../components/component_search_bar";
 
 interface IProps {}
 
@@ -65,11 +61,10 @@ export default class CompanyProfile extends BaseComponent<IProps, IState> {
           <div className="smalText p-4 px-4">
             {"You are here: Touba >> Suppliers >> Company Name >> About"}
           </div>
-          <div className="d-flex flex-row content-Conteiner">
+          <div className="d-flex flex-row align-items-start content-Conteiner">
             <div className="sidebar">
               <div className="menu">
                 <span className="title">About</span>
-
                 <ul>
                   <li>
                     <span>Company Profile</span>
@@ -451,7 +446,7 @@ export default class CompanyProfile extends BaseComponent<IProps, IState> {
                 </div>
               </div>
             </div>
-          </div>{" "}
+          </div>
         </>
       );
     };
@@ -514,7 +509,7 @@ export default class CompanyProfile extends BaseComponent<IProps, IState> {
     };
     const expess = () => {
       return (
-        <div className="excess-section">
+        <div>
           <div className=" px-4">
             <div className="row p-3     ">
               <div className="col-3">
@@ -592,7 +587,6 @@ export default class CompanyProfile extends BaseComponent<IProps, IState> {
               </div>
             </div>
           </div>
-          <Footer />
         </div>
       );
     };
@@ -672,16 +666,28 @@ export default class CompanyProfile extends BaseComponent<IProps, IState> {
           </div>
           <div className="w-100 d-flex flex-row align-items-center justify-content-between company-Nav">
             <div>
-              <button onClick={() => this.setState({ isShow: 1 })}>
+              <button
+                onClick={() => this.setState({ isShow: 1 })}
+                className={this.state.isShow === 1 ? "active-btn" : ""}
+              >
                 About
               </button>
-              <button onClick={() => this.setState({ isShow: 2 })}>
+              <button
+                onClick={() => this.setState({ isShow: 2 })}
+                className={this.state.isShow === 2 ? "active-btn" : ""}
+              >
                 Products
               </button>
-              <button onClick={() => this.setState({ isShow: 3 })}>
+              <button
+                onClick={() => this.setState({ isShow: 3 })}
+                className={this.state.isShow === 3 ? "active-btn" : ""}
+              >
                 Excess Capacity
               </button>
-              <button onClick={() => this.setState({ isShow: 4 })}>
+              <button
+                onClick={() => this.setState({ isShow: 4 })}
+                className={this.state.isShow === 4 ? "active-btn" : ""}
+              >
                 Contact Us
               </button>
             </div>

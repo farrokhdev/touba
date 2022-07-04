@@ -55,7 +55,7 @@ export class ToubaSpecialOffers extends ToubaSpecialOferControllers {
             <div className="col-3">
               <ComponentFilterSidebar showButton={true} />
             </div>
-            {!this.state.showContent && (
+            {this.state.activeTab==2 && (
               <div className="col-9">
                 <div className="p-2">
                   <CardOfferHorizontal
@@ -115,7 +115,7 @@ export class ToubaSpecialOffers extends ToubaSpecialOferControllers {
                 </div>
               </div>
             )}
-            {this.state.showContent && (
+            {this.state.activeTab==1 && (
               <div className="col-9">
                 <div className="row">
                   <div className="col-4 p-2">

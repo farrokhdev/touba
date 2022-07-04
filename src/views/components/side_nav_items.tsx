@@ -1,4 +1,4 @@
-import { memo, ReactElement } from "react";
+import { memo, ReactElement, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Divider } from "./components";
 import { ImageArrow } from "./image_arrow";
@@ -8,34 +8,39 @@ export type navItems = {
     time?: string;
     notification?: number;
     icon?: string;
-    location: string;
     id: number;
 }
 
 interface Props {
     items: navItems[];
+    onActive(id: number): void;
 }
 
-export function SideNavItems({ items }: Props): ReactElement {
+export function SideNavItems({ items, onActive }: Props): ReactElement {
 
-    const url = useLocation().pathname;
+    const [activeLink, setActiveLink] = useState(0)
+
+    function handleActiveLink(id: number) {
+        setActiveLink(id);
+        onActive(id);
+    }
 
     return (
         <div className="side-nav">
             <div className="side-nav-items">
                 {items.map(item => (
-                    <>
-                        <Link
+                    <div key={item.id}>
+                        <button
                             key={item.id}
-                            to={item.location}
+                            onClick={() => handleActiveLink(item.id)}
                             className={
-                                item.location ===  url ?
+                                item.id === activeLink ?
                                     "side-nav-items-link active" :
                                     "side-nav-items-link"
                             }
 
                         >
-                            {item.location ===  url ? (
+                            {item.id === activeLink ? (
                                 <div className="side-nav-items-link-content-active">
                                     <ImageArrow title={item.title} />
                                 </div>
@@ -63,7 +68,7 @@ export function SideNavItems({ items }: Props): ReactElement {
                             {
                                 item.notification === undefined ||
                                     item.notification === 0 ||
-                                    item.location ===  url ?
+                                    item.id === activeLink ?
                                     (null)
                                     :
                                     (
@@ -73,8 +78,8 @@ export function SideNavItems({ items }: Props): ReactElement {
                                             </span>
                                         </div>
                                     )}
-                        </Link>
-                    </>
+                        </button>
+                    </div>
                 ))}
             </div>
 

@@ -40,3 +40,27 @@
         white-space: nowrap;
       }
 }
+.btn-save-change {
+  background: #21c085;
+  border-radius: 8px;
+  @include FontStyle(14px, 600, #ffffff);
+  outline: none;
+  border: none;
+  
+  white-space: nowrap;
+}
+.btn-outline{
+  background: #FFFFFF;
+/* Green Brand */
+@include FontStyle(14px,600,#21C085);
+border: 1px solid #21C085;
+border-radius: 8px;
+}
+.btn-cancle {
+  background: #6b798c;
+  border-radius: 8px;
+  @include FontStyle(14px, 600, #ffffff);
+  outline: none;
+  border: none;
+  white-space: nowrap;
+}
