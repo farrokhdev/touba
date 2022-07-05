@@ -16,6 +16,7 @@ import {
   BannerCongratulations,
   BannerLetsStart,
   Calendar,
+  CardOfferHorizental,
   CardOverall,
   CardProductGroupTitle,
   ChartDoughnut,
@@ -42,6 +43,7 @@ import OrderHead from "../components/order_head";
 import ProfileHeaderImage from "../components/profile_header_image";
 import { SideNavItems } from "../components/side_nav_items";
 import UploadImage from "../components/upload_image";
+import image_test from "../../assets/images/image-test.png";
 
 const TEST_NAV_ITEM = [
   {
@@ -146,7 +148,20 @@ class PageTestComponents extends Component {
     showmodal: false,
     activeLink: 1,
   };
-
+  TEST = [
+    { name: "JAN", size: 20 },
+    { name: "FEB", size: 30 },
+    { name: "MAR", size: 40 },
+    { name: "APR", size: 50 },
+    { name: "MAY", size: 60 },
+    { name: "JUN", size: 70 },
+    { name: "JUL", size: 80 },
+    { name: "AUG", size: 90 },
+    { name: "SEP", size: 100 },
+    { name: "OCT", size: 20 },
+    { name: "NOV", size: 20 },
+    { name: "DEC", size: 20 },
+  ];
   handleShowModal = () => {
     this.setState({ showmodal: true });
   };
@@ -280,6 +295,7 @@ class PageTestComponents extends Component {
         <div style={{ width: "390px", height: "100px" }}>
           <ItemProfile />
         </div>
+        
       </div>
     );
   }

@@ -16336,4 +16336,74 @@ a {
 .finance-page .right-sidebar .calendar {
   max-width: 100%;
 }
+
+.company-profile-excess-page .content {
+  padding: 0 30px;
+  border-top: 1px solid #d6d6d6;
+  padding-top: 25px;
+}
+
+.company-profile-excess-page .content .banner {
+  background: #eb3a47;
+  border-radius: 16px;
+  height: 155px;
+  padding: 0 30px;
+}
+
+.company-profile-excess-page .content .banner span {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 34px !important;
+  color: #FFFFFF !important;
+}
+
+.company-profile-excess-page .content .banner p {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  color: #FFFFFF !important;
+  margin-top: 20px;
+}
+
+.company-profile-excess-page .content .banner p span {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 900 !important;
+  font-size: 17px !important;
+  color: #FFFFFF !important;
+}
+
+.company-profile-excess-page .content .banner button {
+  border: none;
+  outline: none;
+  background-color: #FFFFFF;
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 18px !important;
+  color: #21C085 !important;
+  border-radius: 8px;
+  height: 55px;
+  padding: 0 20px;
+}
+
+.company-profile-excess-page .content .card-offer-title {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 800 !important;
+  font-size: 22px !important;
+  color: #3c557a !important;
+}
 /*# sourceMappingURL=app.css.map */

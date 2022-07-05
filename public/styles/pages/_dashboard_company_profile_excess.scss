@@ -1,0 +1,35 @@
+.company-profile-excess-page {
+    .content {
+        padding: 0 30px;
+        border-top: 1px solid #d6d6d6;
+        padding-top: 25px;
+        .banner {
+            background: #eb3a47;
+            border-radius: 16px;
+            height: 155px;
+            padding: 0 30px;
+            span {
+                @include FontStyle(34px, 700, $white);
+            }
+            p {
+                @include FontStyle(14px, 500, $white);
+                margin-top: 20px;
+                span {
+                    @include FontStyle(17px, 900, $white);
+                }
+            }
+            button {
+                border: none;
+                outline: none;
+                background-color: $white;
+                @include FontStyle(18px, 600, $green);
+                border-radius: 8px;
+                height: 55px;
+                padding: 0 20px;
+            }
+        }
+        .card-offer-title {
+            @include FontStyle(22px, 800, $sorme);
+        }
+    }
+}
