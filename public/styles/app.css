@@ -10779,7 +10779,6 @@ a {
 .modal-company-card {
   width: 80%;
   max-width: 1204px;
-  height: auto;
   background-color: #FFFFFF;
   border-radius: 12px;
 }
@@ -10839,9 +10838,11 @@ a {
 }
 
 .modal-company-card-content {
+  height: auto !important;
   width: 95%;
   margin: 0 auto;
   padding: 25px 0 40px 0;
+  position: relative;
 }
 
 .modal-company-card-footer {
@@ -10985,6 +10986,280 @@ a {
 
 .textarea-lable-input:focus {
   outline: none;
+}
+
+.input-date {
+  width: 100%;
+  position: relative;
+}
+
+.input-date-title {
+  background-color: #FFFFFF;
+  padding: 3px 12px;
+  position: absolute;
+  top: -10px;
+  left: 13px;
+  z-index: 2;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+}
+
+.input-date-title-text {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 12px !important;
+  color: #3c557a !important;
+  margin: 0;
+}
+
+.input-date input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background: url("../../icon-calendar.svg") no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.input-date-input {
+  width: 100%;
+  position: relative;
+}
+
+.input-date-input .input {
+  width: 100%;
+  border: 1px solid #d6d6d6 !important;
+  border-radius: 8px !important;
+  padding: 19px 24px;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 16px;
+  color: #3c557a;
+}
+
+.input-date-input .input:focus {
+  outline: none;
+}
+
+.input-date-input .icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.card-upload-image {
+  width: 100%;
+  height: 100%;
+  background-color: #f3f4f6;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+  padding: 32px;
+  border-radius: 16px;
+}
+
+.card-upload-image-content {
+  width: 100%;
+  height: 100%;
+  border: 1px dotted #d6d6d6;
+  border-radius: 8px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+}
+
+.card-upload-image-content-input {
+  width: 53px;
+  height: 53px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+  position: relative;
+}
+
+.card-upload-image-content-input > img {
+  position: absolute;
+  top: 0;
+  width: 100% !important;
+}
+
+.card-upload-image-content-input > input {
+  opacity: 0;
+}
+
+.card-upload-image-content-text {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  color: #3c557a !important;
+  margin: 0;
+  padding: 28px 0;
+}
+
+.card-show-image {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+  position: relative;
+  border-radius: 16px;
+}
+
+.card-show-image > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+
+.card-show-image-buttons {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+  position: absolute;
+  top: 35%;
+}
+
+.card-show-image-buttons-upload {
+  background-color: #FFFFFF;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+  width: 83px;
+  height: 83px;
+  border: none;
+  border-radius: 100px;
+  margin: 0 10px;
+}
+
+.card-show-image-buttons-upload > input {
+  opacity: 0;
+}
+
+.card-show-image-buttons-upload > img {
+  width: 56px;
+  height: 56px;
+  position: absolute;
+}
+
+.card-show-image-buttons > button {
+  background-color: #FFFFFF;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+  width: 83px;
+  height: 83px;
+  border: none;
+  border-radius: 100px;
+  margin: 0 10px;
+}
+
+.card-show-image-buttons > button > img {
+  width: 56px;
+  height: 56px;
 }
 
 .top-nav-home {
@@ -16387,6 +16662,161 @@ a {
   margin: 0 30px;
 }
 
+.company-profile-edit .body-content-items-certificate {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: flex-start !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+}
+
+.company-profile-edit .body-content-items-certificate-table {
+  padding: 0px 0 60px 0;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: flex-start !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+  width: 45%;
+}
+
+.company-profile-edit .body-content-items-certificate-table-icon {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+  width: 5%;
+  padding: 17px 0;
+}
+
+.company-profile-edit .body-content-items-certificate-table-details {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.company-profile-edit .body-content-items-certificate-table-details > div:nth-child(2n+1) {
+  background-color: #f3f4f6;
+}
+
+.company-profile-edit .body-content-items-certificate-table-details-row {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: start !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+  padding: 17px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.company-profile-edit .body-content-items-certificate-table-details-row .title {
+  width: 40%;
+}
+
+.company-profile-edit .body-content-items-certificate-table-details-row .title > h6 {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  color: #6b798c !important;
+  margin: 0;
+}
+
+.company-profile-edit .body-content-items-certificate-table-details-row .text-red > h6 {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  color: #FC4A56 !important;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.company-profile-edit .body-content-items-certificate-table-details-row .amount {
+  width: 60%;
+}
+
+.company-profile-edit .body-content-items-certificate-table-details-row .amount > h6 {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  color: #3c557a !important;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.company-profile-edit .body-content-items-certificate-table-details-row .amount > h6 > span {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  color: #21C085 !important;
+  margin: 0 30px;
+}
+
+.company-profile-edit .body-content-items-certificate-table-details-row .image {
+  width: 60%;
+}
+
+.company-profile-edit .body-content-items-button-add-certificate {
+  width: 100%;
+  padding: 0px 0 100px 0;
+}
+
 .company-profile-edit .body-content .input-group {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -16432,6 +16862,15 @@ a {
 
 .company-profile-edit .body-content .input-group .input-text-label-input::placeholder {
   opacity: 1 !important;
+}
+
+.company-profile-edit .body-content .input-group .input-date {
+  margin: 20px 10px 0 0;
+}
+
+.company-profile-edit .body-content .card-image {
+  width: 50% !important;
+  padding: 30px 0;
 }
 
 .company-profile-edit .body-content .value-red-scound > div:nth-of-type(2) .input-text-label-input {

@@ -31,6 +31,13 @@ interface IState {
     registeredCapital: string;
     planeArea: string;
     details: DETAILS;
+    modalAddCertificate: boolean,
+    modalEditCertificate: boolean,
+    registerDate: string;
+    expireDate: string;
+    certificateName: string;
+    certificateCode: string;
+    imageCertificate: string;
 }
 
 export const TEST_NAV_ITEM = [
@@ -65,8 +72,8 @@ export class CompanyProfileController extends Component<IProps, IState> {
 
     state = {
         activeLink: 1,
-        image: '',
-        activeTab: 1,
+        image: "",
+        activeTab: 3,
         modalDelete: false,
         modalDescription: false,
         getDiscription: "",
@@ -90,6 +97,13 @@ export class CompanyProfileController extends Component<IProps, IState> {
             registeredCapital: "",
             planeArea: "",
         },
+        modalAddCertificate: false,
+        modalEditCertificate: false,
+        registerDate: "",
+        expireDate: "",
+        certificateName: "",
+        certificateCode: "",
+        imageCertificate: "",
     };
 
     handleGetActiveLink = (id: number) => {
@@ -171,6 +185,40 @@ export class CompanyProfileController extends Component<IProps, IState> {
         }
         this.setState({ details: newDeatils });
         this.setState({ modalDetails: false })
+    };
+
+    handleShowModalAddCretificate = () => {
+        this.setState({ modalAddCertificate: true })
+    };
+
+    handleCloseModalAddCretificate = () => {
+        this.setState({ modalAddCertificate: false })
+    };
+
+    handleShowModalEditCretificate = () => {
+        this.setState({ modalEditCertificate: true })
+    };
+
+    handleCloseModalEditCretificate = () => {
+        this.setState({ modalEditCertificate: false })
+    };
+
+    handleGetDateRegister = (value: string) => {
+        this.setState({registerDate: value})
+    };
+
+    handleGetDateExpire = (value: string) => {
+        this.setState({expireDate: value})
+    };
+
+    handleGetCodeCertificate = (value: string) => {
+        this.setState({certificateCode: value})
+    };
+
+    handleGetImageCertificate = (image: string) => {
+        console.log(image)
+        this.setState({imageCertificate: image})
     }
+
 }
 export default CompanyProfileController;

@@ -1,5 +1,6 @@
-import { IconCalling, IconCallSorme, IconDeletGreen, IconEdit, IconEditSorme, IconImageBlack, IconLocationSorme, IconPaperBlack, IconStarSorme, IconWalletSorme, ImageBanner } from "../../../assets";
-import { InputTextLabel, ModalCompany, ModalComponent, SelectComponent, TextAreaLabel } from "../../components/components";
+import { IconCalling, IconCallSorme, IconDeletGreen, IconEdit, IconEditSorme, IconImageBlack, IconLocationSorme, IconPaperBlack, IconStarSorme, IconWalletSorme, ImageBanner, ImageCertificate } from "../../../assets";
+import ButtonAdd from "../../components/button_add";
+import { CardUploadImage, InputDate, InputTextLabel, ModalCompany, ModalComponent, SelectComponent, TextAreaLabel } from "../../components/components";
 import DashboardNav from "../../components/dashboard_nav";
 import DeleteImage from "../../components/delete_image";
 import MyCompanyNav from "../../components/mycompany_nav";
@@ -494,12 +495,162 @@ class CompanyProfileEdit extends CompanyProfileController {
             </>
         )
     }
+    sectionCertificates() {
+        const {
+            details
+        } = this.state;
+        return (
+            <>
+                <div className="body-content-items-title">
+                    <h4 className="body-content-items-title-text">
+                        Certificates
+                    </h4>
+                </div>
+                <div className="body-content-items-certificate">
+                    <div className="body-content-items-certificate-table">
+                        <div className="body-content-items-certificate-table-icon">
+                            <img
+                                src={IconEditSorme}
+                                alt=""
+                                onClick={this.handleShowModalEditCretificate}
+                            />
+                        </div>
+                        <div className="body-content-items-certificate-table-details">
+                            <div className="body-content-items-certificate-table-details-row">
+                                <div className="title">
+                                    <h6>
+                                        Certificate:
+                                    </h6>
+                                </div>
+                                <div className="amount">
+                                    <h6>
+                                        Certificate Name
+                                    </h6>
+                                </div>
+                            </div>
+                            <div className="body-content-items-certificate-table-details-row">
+                                <div className="title">
+                                    <h6>
+                                        Code:
+                                    </h6>
+                                </div>
+                                <div className="amount">
+                                    <h6>
+                                        1651316465
+                                    </h6>
+                                </div>
+                            </div>
+                            <div className="body-content-items-certificate-table-details-row">
+                                <div className="title">
+                                    <h6>
+                                        Registered Date:
+                                    </h6>
+                                </div>
+                                <div className="amount">
+                                    <h6>
+                                        1/31/2021
+                                    </h6>
+                                </div>
+                            </div>
+                            <div className="body-content-items-certificate-table-details-row">
+                                <div className="title">
+                                    <h6>
+                                        Expire Date:
+                                    </h6>
+                                </div>
+                                <div className="amount">
+                                    <h6>
+                                        7/31/2023
+                                    </h6>
+                                </div>
+                            </div>
+                            <div className="body-content-items-certificate-table-details-row">
+                                <img
+                                    src={ImageCertificate}
+                                    alt=""
+                                    className="image"
+                                />
+                            </div>
+                        </div>
+
+                    </div>
+                    <div className="body-content-items-certificate-table">
+                        <div className="body-content-items-certificate-table-icon">
+                            <img
+                                src={IconEditSorme}
+                                alt=""
+                                onClick={this.handleShowModalEditCretificate}
+                            />
+                        </div>
+                        <div className="body-content-items-certificate-table-details">
+                            <div className="body-content-items-certificate-table-details-row">
+                                <div className="title">
+                                    <h6>
+                                        Certificate:
+                                    </h6>
+                                </div>
+                                <div className="amount">
+                                    <h6>
+                                        Certificate Name
+                                    </h6>
+                                </div>
+                            </div>
+                            <div className="body-content-items-certificate-table-details-row">
+                                <div className="title">
+                                    <h6>
+                                        Code:
+                                    </h6>
+                                </div>
+                                <div className="amount">
+                                    <h6>
+                                        1651316465
+                                    </h6>
+                                </div>
+                            </div>
+                            <div className="body-content-items-certificate-table-details-row">
+                                <div className="title">
+                                    <h6>
+                                        Registered Date:
+                                    </h6>
+                                </div>
+                                <div className="amount">
+                                    <h6>
+                                        1/31/2021
+                                    </h6>
+                                </div>
+                            </div>
+                            <div className="body-content-items-certificate-table-details-row">
+                                <div className="title">
+                                    <h6>
+                                        Expire Date:
+                                    </h6>
+                                </div>
+                                <div className="amount">
+                                    <h6>
+                                        7/31/2023
+                                    </h6>
+                                </div>
+                            </div>
+                            <div className="body-content-items-certificate-table-details-row">
+                                <img
+                                    src={ImageCertificate}
+                                    alt=""
+                                    className="image"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="body-content-items-button-add-certificate">
+                    <ButtonAdd onClick={this.handleShowModalAddCretificate} />
+                </div>
+            </>
+        )
+    }
     render() {
         const {
-            image,
             modalDelete,
             modalDescription,
-            description,
             modalDetails,
             establishedYear,
             mainProducts,
@@ -508,8 +659,10 @@ class CompanyProfileEdit extends CompanyProfileController {
             registeredCapital,
             details,
             activeTab,
+            modalAddCertificate,
+            modalEditCertificate,
+            certificateName,
         } = this.state;
-        console.log(details);
         return (
             <div className="company-profile-edit">
                 <DashboardNav title={"My Company Profile"} />
@@ -528,10 +681,13 @@ class CompanyProfileEdit extends CompanyProfileController {
                                 activeTab === 2 ? (
                                     this.sectionSpecifications()
                                 ) : (
-                                    <h3>
-                                        77
-                                        87
-                                    </h3>
+                                    activeTab === 3 ? (
+                                        this.sectionCertificates()
+                                    ) : (
+                                        <h4>
+                                            fghfg
+                                        </h4>
+                                    )
                                 )
                             )}
                         </div>
@@ -649,6 +805,42 @@ class CompanyProfileEdit extends CompanyProfileController {
                                         title="Plant Area"
                                     />
                                 </div>
+                            </ModalCompany>
+                        ) : (null)}
+                        {modalAddCertificate === true ? (
+                            <ModalCompany onClose={this.handleCloseModalAddCretificate} onSave={() => { }}>
+                                <div className="input-group">
+                                    <InputTextLabel
+                                        value={certificateName}
+                                        title={"Certificate"}
+                                        placeholder={""}
+                                        type={"text"}
+                                        showDropDown={false}
+                                        onChange={(event) => this.setState({ certificateName: event.currentTarget.value })}
+                                    />
+                                    <SelectComponent
+                                        type={"two"}
+                                        placeholder={""}
+                                        onSelect={this.handleGetCodeCertificate}
+                                        items={items}
+                                        title="Code"
+                                    />
+                                </div>
+                                <div className="input-group">
+                                    <InputDate title={"Registered Date"} handleGetValue={this.handleGetDateRegister} />
+                                    <InputDate title={"Registered Date"} handleGetValue={this.handleGetDateExpire} />
+                                </div>
+                                <div className="card-image">
+                                    <CardUploadImage
+                                        title={"Upload Certificate Image Here"}
+                                        handleGetImage={this.handleGetImageCertificate}
+                                    />
+                                </div>
+                            </ModalCompany>
+                        ) : (null)}
+                        {modalEditCertificate === true ? (
+                            <ModalCompany onClose={this.handleCloseModalEditCretificate} onSave={() => { }}>
+                                <h2>Edit</h2>
                             </ModalCompany>
                         ) : (null)}
                     </div>

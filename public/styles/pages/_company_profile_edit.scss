@@ -164,26 +164,114 @@
                         }
                     }
                 }
-            }
 
+                &-certificate {
+                    @include Display(flex, space-between, flex-start);
+
+                    &-table {
+                        padding: 0px 0 60px 0;
+                        @include Display(flex, space-between, flex-start);
+                        width: 45%;
+
+                        &-icon {
+                            @include Display(flex, center, center);
+                            width: 5%;
+                            padding: 17px 0;
+                        }
+
+                        &-details {
+                            width: 90%;
+                            margin: 0 auto;
+
+                            >div:nth-child(2n+1) {
+                                background-color: $bgWhite;
+                            }
+
+                            &-row {
+                                @include Display(flex, start, center);
+                                padding: 17px;
+                                width: 95%;
+                                margin: 0 auto;
+
+                                .title {
+                                    width: 40%;
+
+                                    >h6 {
+                                        @include FontStyle(16px, 400, $lightSorme);
+                                        margin: 0;
+                                    }
+                                }
+
+                                .text-red {
+                                    >h6 {
+                                        @include FontStyle(16px, 500, $red);
+                                        margin: 0;
+                                        white-space: nowrap;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                    }
+                                }
+
+                                .amount {
+                                    width: 60%;
+
+                                    >h6 {
+                                        @include FontStyle(16px, 500, $sorme);
+                                        margin: 0;
+                                        white-space: nowrap;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+
+                                        >span {
+                                            @include FontStyle(16px, 500, $green);
+                                            margin: 0 30px;
+                                        }
+                                    }
+                                }
+
+                                .image {
+                                    width: 60%;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &-button-add-certificate {
+                    width: 100%;
+                    padding: 0px 0 100px 0;
+                }
+            }
 
             .input-group {
                 @include Display(flex, center, center);
+
                 .select-component {
                     margin: 20px 10px 0 0;
                 }
+
                 .input-text-label {
                     margin: 20px 10px 0 0;
                 }
 
                 .input-text-label-input {
                     @include Border(1px, $gray, 8px);
+
                     &::placeholder {
                         opacity: 1 !important;
                     }
                 }
+
+                .input-date {
+                    margin: 20px 10px 0 0;
+                }
+
             }
-            
+            .card-image {
+                width: 50% !important;
+                padding: 30px 0;
+            }
+
             .value-red-scound {
                 >div:nth-of-type(2) {
                     .input-text-label-input {
@@ -191,6 +279,7 @@
                         font-weight: 500 !important;
                         font-size: 16px !important;
                         color: $red  !important;
+
                         &::placeholder {
                             color: $red  !important;
                         }
@@ -205,6 +294,7 @@
                         font-weight: 500 !important;
                         font-size: 16px !important;
                         color: $red  !important;
+
                         &::placeholder {
                             color: $red  !important;
                         }
