@@ -17,18 +17,12 @@ import { CardOverall } from "../../components/card_overrall";
 import { ChartDoughnut } from "../../components/chart_doughnut";
 import { ChartSale } from "../../components/chart_sale";
 import {
-  BannerCongratulations,
   Calendar,
   ComponentCalender,
-  ComponentMapBox,
   ComponentMessage,
   ComponentMessageImage,
   ComponentSoldBox,
-  ComponentTableExcess,
-  ComponentTableORder,
   Map,
-  TextIconHorizontal,
-  TextIconVerticalDashboard,
 } from "../../components/components";
 import ComponentLineChart from "../../components/component_line_chart";
 import { Offcanvas } from "../../components/offcanvas";
@@ -139,7 +133,11 @@ export default class DashboardFinance extends DashboarPageController {
             />
           </div>
           <div>
-            <TableTransaction items={TABLE} />
+            <TableTransaction
+              transactionBtn={true}
+              title="Recent Transactions"
+              items={TABLE}
+            />
           </div>
         </div>
       );
@@ -147,7 +145,7 @@ export default class DashboardFinance extends DashboarPageController {
     const soldItems = () => {
       return (
         <div className="ps-4 pe-3">
-          <div className="top-section d-flex flex-row align-items-center">
+          <div className="top-section d-flex flex-row align-items-center ">
             <div>
               <ComponentSoldBox />
             </div>
@@ -167,7 +165,7 @@ export default class DashboardFinance extends DashboarPageController {
             </div>
           </div>
           <div className="my-4">
-            <TableTransaction items={TABLE} />
+            <TableTransaction transactionBtn={true} items={TABLE} />
           </div>
           <div className="order-table">
             <div className="row d-flex -align-items-center table-box w-50">
@@ -216,7 +214,11 @@ export default class DashboardFinance extends DashboarPageController {
             <img src={ImageDeliveryMan} alt="banner" />
           </div>
           <div className="my-4">
-            <TableTransaction items={TABLE} />
+            <TableTransaction
+              transactionBtn={true}
+              title="Outgoing Transactions"
+              items={TABLE}
+            />
           </div>
           <div className="order-table">
             <div className="row d-flex -align-items-center table-box w-50">
@@ -264,7 +266,11 @@ export default class DashboardFinance extends DashboarPageController {
             <img src={ImageManMoney} alt="banner" />
           </div>
           <div className="my-4">
-            <TableTransaction items={TABLE} />
+            <TableTransaction
+              transactionBtn={true}
+              title="Last Transactions"
+              items={TABLE}
+            />
           </div>
         </div>
       );
@@ -276,6 +282,7 @@ export default class DashboardFinance extends DashboarPageController {
         </div>
       );
     };
+    console.log(this.state.activeLink);
     return (
       <div className="finance-page d-flex flex-row align-items-start">
         <div className="content mx-auto">
@@ -298,14 +305,16 @@ export default class DashboardFinance extends DashboarPageController {
                 ? purchasedItems()
                 : this.state.activeLink === 4
                 ? redeemedInvoices()
-                : incomePayCalendar()}
+                : this.state.activeLink === 5
+                ? incomePayCalendar()
+                : null}
             </div>
           </div>
         </div>
         <div className="right-sidebar">
           <div className=" px-3 row d-flex align-items-center">
             <div className="col-12 dashboard-Nav d-flex">
-              <div className="btn-Container align-items-center d-flex">
+              <div className="btn-Container align-items-center d-flex flex-row ">
                 <button className="add-Btn d-flex align-items-center">
                   <img src={IconAddCircle} alt="add" />
                   <span>ADD NEW</span>
@@ -535,7 +544,7 @@ export default class DashboardFinance extends DashboarPageController {
             <ChartSale />
           </div>
           <div className="calendar">
-            <ComponentCalender />
+            <Calendar />
           </div>
         </div>
       </div>

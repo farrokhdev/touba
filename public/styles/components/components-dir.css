@@ -9188,6 +9188,21 @@ a {
   margin: 0;
 }
 
+.table-transaction-title button {
+  border: none;
+  outline: none;
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  color: #21C085 !important;
+  background-color: #FFFFFF;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+}
+
 .table-transaction-header {
   display: -webkit-box !important;
   display: -ms-flexbox !important;

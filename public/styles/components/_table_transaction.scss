@@ -8,9 +8,17 @@
         background-color: $white;
         border-top-left-radius: 16px;
         border-top-right-radius: 16px;
-        >h4 {
+        > h4 {
             @include FontStyle(22px, 600, $sorme);
             margin: 0;
+        }
+        button {
+            border: none;
+            outline: none;
+            @include FontStyle(14px, 600, $green);
+            background-color: $white;
+            letter-spacing: 0.75px;
+            text-transform: uppercase;
         }
     }
 
@@ -45,8 +53,8 @@
             @include Display(flex, start, center);
         }
 
-        >div {
-            >h6 {
+        > div {
+            > h6 {
                 @include FontStyle(14px, 500, $lightSorme);
                 margin: 0;
             }
@@ -64,7 +72,7 @@
             width: 10%;
             @include Display(flex, start, center);
 
-            >div {
+            > div {
                 margin: 0;
                 width: 37px;
                 height: 37px;
@@ -72,7 +80,7 @@
                 background-color: $darkWhite;
                 border-radius: 100px;
 
-                >h6 {
+                > h6 {
                     @include FontStyle(16px, 500, $lightSorme);
                     margin: 0;
                 }
@@ -83,7 +91,7 @@
             width: 25%;
             @include Display(flex, start, center);
 
-            >h6 {
+            > h6 {
                 @include FontStyle(16px, 500, $lightSorme);
                 margin: 0;
             }
@@ -93,7 +101,7 @@
             width: 25%;
             @include Display(flex, start, center);
 
-            >h6 {
+            > h6 {
                 @include FontStyle(16px, 500, $lightSorme);
                 margin: 0;
             }
@@ -103,11 +111,11 @@
             width: 20%;
             @include Display(flex, start, center);
 
-            >h5 {
+            > h5 {
                 @include FontStyle(22px, 800, $sorme);
                 margin: 0;
 
-                >span {
+                > span {
                     @include FontStyle(14px, 600, $sorme);
                     margin: 0;
                 }
@@ -118,7 +126,7 @@
             width: 20%;
             @include Display(flex, start, center);
 
-            >h6 {
+            > h6 {
                 @include FontStyle(14px, 600, $green);
                 margin: 0;
             }
