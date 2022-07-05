@@ -18,9 +18,10 @@ interface Props {
     placeholder?: string;
     items?: Items[];
     onSelect(name: string): void;
+    title?: string;
 }
 
-function SelectComponent({ type, placeholder, items, onSelect }: Props): ReactElement {
+function SelectComponent({ type, placeholder, items, onSelect, title }: Props): ReactElement {
 
     const [dropdown, setDropdown] = useState(false);
     const [selectItem, setSelectItem] = useState({ name: "", id: 0 });
@@ -42,6 +43,11 @@ function SelectComponent({ type, placeholder, items, onSelect }: Props): ReactEl
         <div className="select-component w-100 "
             onMouseLeave={handleCloseDropDown}
         >
+            <div className="select-component-title">
+                <h6>
+                    {title}
+                </h6>
+            </div>
             <button
                 className="select-component-button w-100"
                 onClick={handleShowDropDown}
@@ -69,8 +75,10 @@ function SelectComponent({ type, placeholder, items, onSelect }: Props): ReactEl
                 >
                     {items?.map((link) => (
                         <div
+                            key={link.id}
                             className="select-component-dropdown-links"
-                            onClick={() => handleSelectItem(link.id, link.name)}>
+                            onClick={() => handleSelectItem(link.id, link.name)}
+                        >
                             <span
                                 key={link.id}
                                 className="select-component-dropdown-links-link"
