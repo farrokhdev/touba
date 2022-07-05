@@ -94,7 +94,7 @@ export { default as ProductCart } from './product_cart';
 export { default as Location } from './location';
 export { default as ModalCompany } from './modal_company';
 export { default as ComponentBasicInformation } from './component_basic_information';
-
+export { default as TextAreaLabel } from './textarea_lable';
 
 
 
@@ -116,6 +116,11 @@ export { default as BannerLetsStart } from './banner_lets_start';
 export { default as TextIconVerticalDashboard } from './text_icon_vertical_dahsboard';
 export { default as SelectComponentDouble } from './select_component_double';
 export { default as ComponentTextArea } from './component_text_area';
+export {default as ComponentOtherDetail} from './component_other_detail';
+export {default as ComponentTradeInformation} from './component_trade_information'
+export {default as ComponentRelatedItems} from './component_related_items'
+
+
 
 
 

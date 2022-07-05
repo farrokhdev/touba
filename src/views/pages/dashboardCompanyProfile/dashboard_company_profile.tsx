@@ -1,6 +1,13 @@
 import React, { Component } from "react";
 import { BannerCongratulations } from "../../components/baner_congratulations";
-import { CardLike, ComponentBasicInformation, ComponentSortandSearch } from "../../components/components";
+import {
+  CardLike,
+  ComponentBasicInformation,
+  ComponentOtherDetail,
+  ComponentRelatedItems,
+  ComponentSortandSearch,
+  ComponentTradeInformation,
+} from "../../components/components";
 import DashboardNav from "../../components/dashboard_nav";
 import DashboardCompanyProfileController from "../../controllers/dashboard_company_profile_controller";
 import iconEdit from "../../../assets/icons/icon-edit.svg";
@@ -88,21 +95,30 @@ class DashboardCompanyProfile extends DashboardCompanyProfileController {
             items={this.TEST_NAV_ITEM}
           />
         </div>
-        <div className="col-10 px-4 mt-5 pt-3">
-        {this.state.show == 0 && (
-            <div >
-              <ComponentBasicInformation/>
+        <div className="col-10 px-4 mt-5 ">
+          {this.state.show == 0 && (
+            <div>
+              <ComponentBasicInformation />
             </div>
           )}
           {this.state.show == 1 && (
-            <div style={{ width: "960px", height: "670px" }}>
-              <CongratulationBanner activeTab="Other Details" />
+            <div>
+              <ComponentOtherDetail />
             </div>
           )}
-             {this.state.show == 3 && (
-            <div style={{ width: "960px", height: "670px" }}>
-              <CongratulationBanner activeTab="Related Items" />
+          {this.state.show == 2 && (
+            <div>
+              <ComponentTradeInformation />
             </div>
+          )}
+          {this.state.show == 3 && (
+            <div>
+              <ComponentRelatedItems />
+            </div>
+
+            // <div style={{ width: "960px", height: "670px" }}>
+            //   <CongratulationBanner activeTab="Related Items" />
+            // </div>
           )}
         </div>
       </div>

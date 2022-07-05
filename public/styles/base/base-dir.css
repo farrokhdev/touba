@@ -1,3 +1,7 @@
+.border-bottom-dashed {
+  border-bottom: 2px dashed #D6D6D6;
+}
+
 .leaflet-container {
   height: 30vh;
 }

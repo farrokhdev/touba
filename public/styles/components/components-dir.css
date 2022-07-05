@@ -1,3 +1,7 @@
+.border-bottom-dashed {
+  border-bottom: 2px dashed #D6D6D6;
+}
+
 .leaflet-container {
   height: 30vh;
 }
@@ -69,6 +73,42 @@ a {
   width: 100%;
   height: 64px;
   cursor: pointer;
+  z-index: 2;
+  position: relative;
+}
+
+.select-component-title {
+  background-color: #FFFFFF;
+  padding: 3px 12px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+  position: absolute;
+  top: -9px;
+  left: 20px;
+}
+
+.select-component-title > h6 {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 12px !important;
+  color: #3c557a !important;
+  margin: 0;
 }
 
 .select-component-button {
@@ -77,9 +117,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -878,6 +918,10 @@ a {
   /* Sorme */
   color: #3c557a;
   z-index: 1;
+}
+
+.border-optional {
+  border: 1px solid #D6D6D6;
 }
 
 .card-main {
@@ -10906,8 +10950,8 @@ a {
 .text-area .title {
   font-size: 10px;
   position: absolute;
-  top: 14px;
-  left: 40px;
+  top: -10px;
+  left: 30px;
   background: white;
   font-size: 12px;
   font-weight: 500;
@@ -10952,5 +10996,60 @@ a {
   font-weight: 400 !important;
   font-size: 16px !important;
   color: #3C557A !important;
+}
+
+.textarea-lable {
+  width: 100%;
+  position: relative;
+}
+
+.textarea-lable-title {
+  background-color: #FFFFFF;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+  padding: 3px 12px;
+  position: absolute;
+  top: -10px;
+  left: 20px;
+}
+
+.textarea-lable-title-text {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 12px !important;
+  color: #3c557a !important;
+  margin: 0;
+}
+
+.textarea-lable-input {
+  width: 100% !important;
+  min-height: 300px;
+  border: 1px solid #d6d6d6 !important;
+  border-radius: 12px !important;
+  padding: 40px 20px;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 16px;
+  color: #3c557a;
+}
+
+.textarea-lable-input:focus {
+  outline: none;
 }
 /*# sourceMappingURL=components-dir.css.map */
