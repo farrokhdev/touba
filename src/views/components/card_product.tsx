@@ -19,7 +19,7 @@ export function CardProduct({
     chart
 }:Props): ReactElement {
     return (
-        <div className="card-product">
+        <div className="card-product border-optional">
             <div className="card-product-image">
                 <img src={image} width="164px"/>
             </div>

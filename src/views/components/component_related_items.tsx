@@ -12,6 +12,8 @@ import {
   TextIconVerticalDashboard,
 } from "./components";
 import { InputTextLabel } from "./input_text_label";
+import image_test from "../../assets/images/image-test.png";
+
 import {
   IconCalling,
   IconDanger,
@@ -25,8 +27,25 @@ import Select_component_double from "./select_component_double";
 import ButtonAdd from "./button_add";
 import ComponentStorage from "./component_storage";
 import { Divider } from "./divider";
+import { ModalCompany } from "./modal_company";
+import { CardProduct } from "./card_product";
 const ComponentRelatedItems = () => {
   const [active, setActive] = useState(0);
+  const [shoModalProduct, setShowModalProduct] = useState(false);
+  const TEST = [
+    { name: "JAN", size: 20 },
+    { name: "FEB", size: 30 },
+    { name: "MAR", size: 40 },
+    { name: "APR", size: 50 },
+    { name: "MAY", size: 60 },
+    { name: "JUN", size: 70 },
+    { name: "JUL", size: 80 },
+    { name: "AUG", size: 90 },
+    { name: "SEP", size: 100 },
+    { name: "OCT", size: 20 },
+    { name: "NOV", size: 20 },
+    { name: "DEC", size: 20 },
+  ];
   return (
     <div>
       <div>
@@ -64,78 +83,133 @@ const ComponentRelatedItems = () => {
                 <div className="col-4 p-2">
                   <CardLike />
                 </div>
-                <div className="p-2 mt-3"><ButtonAdd onClick={()=>{}}/></div>
+                <div className="p-2 mt-3">
+                  <ButtonAdd onClick={() => setShowModalProduct(true)} />
+                </div>
+                <div>
+                  {shoModalProduct && (
+                    <ModalCompany
+                      onClose={() => setShowModalProduct(false)}
+                      onSave={() => setShowModalProduct(false)}
+                    >
+                      <div className="p-2">
+                        <div className="pt-3 col-5 border-bottom">
+                        <div className="col-5 mb-3 ">
+                            <InputTextLabel
+                              type="select"
+                              placeholder="Name of product"
+                              title="Search Products"
+                              value=""
+                              onChange={() => {}}
+                              showDropDown={true}
+                            />
+                          </div>
+                        </div>
+                        <div className="row mt-3">
+                          {" "}
+                          <div className="col-4 p-2">
+                            <CardLike />
+                          </div>
+                          <div className="col-4 p-2">
+                            <CardLike />
+                          </div>
+                          <div className="col-4 p-2">
+                            <CardLike />
+                          </div>
+                        </div>
+                      </div>{" "}
+                    </ModalCompany>
+                  )}
+                </div>
               </div>
             )}
             {active == 1 && (
               <div>
                 <div className="row">
-                  <div className="col-3 px-2">
-                    <div className="smalText">Suply Type:</div>
+                  <div className="col-6 p-2">
+                    <CardProduct
+                      image={image_test}
+                      status={"exp"}
+                      description={"Pomegranate Juice Pet Bottle, "}
+                      chart={TEST}
+                      amount={5}
+                    />{" "}
                   </div>
-                  <div className="col-6 px-2">
-                    <div className="row">
-                      <div className="col-6">
-                        <ComponentRadioCircle title="OEM Price" active={true} />
-                      </div>
-                      <div className="col-6">
-                        <ComponentRadioCircle
-                          title=" In Stock"
-                          active={false}
-                        />
-                      </div>
-                    </div>
+                  <div className="col-6 p-2">
+                    <CardProduct
+                      image={image_test}
+                      status={"exp"}
+                      description={"Pomegranate Juice Pet Bottle, "}
+                      chart={TEST}
+                      amount={5}
+                    />{" "}
                   </div>
-                </div>
-                <div className="row mt-3">
-                  <div className="col-4">
-                    {" "}
-                    <InputTextLabel
-                      type="select"
-                      placeholder=""
-                      title="Suply Ability"
-                      value=""
-                      onChange={() => {}}
-                      showDropDown={true}
-                    />
+                  <div className="p-2 mt-3">
+                    <ButtonAdd onClick={() => setShowModalProduct(true)} />
                   </div>
-                  <div className="col-4 px-2">
-                    {" "}
-                    <InputTextLabel
-                      type="select"
-                      placeholder=""
-                      title="Select Unit"
-                      value=""
-                      onChange={() => {}}
-                      showDropDown={true}
-                    />
-                  </div>
-                  <div className="col-4 px-2">
-                    {" "}
-                    <InputTextLabel
-                      type="select"
-                      placeholder=""
-                      title="Time"
-                      value=""
-                      onChange={() => {}}
-                      showDropDown={true}
-                    />
-                  </div>
-                </div>
-                <div className="row mt-3">
-                  <div className="col-3 px-2">
-                    <div className="smalText">Overseas Office:</div>
-                  </div>
-                  <div className="col-6 px-2">
-                    <div className="row">
-                      <div className="col-6">
-                        <ComponentRadioCircle title="Yes" active={true} />
-                      </div>
-                      <div className="col-6">
-                        <ComponentRadioCircle title="No" active={false} />
-                      </div>
-                    </div>
-                  </div>
+                  {shoModalProduct && (
+                    <ModalCompany
+                      onClose={() => setShowModalProduct(false)}
+                      onSave={() => setShowModalProduct(false)}
+                    >
+                      <div className="p-2">
+                        <div className="pt-3  border-bottom">
+                          <div className="col-5 mb-3 ">
+                            <InputTextLabel
+                              type="select"
+                              placeholder="Name of excess capacity"
+                              title="Search Excess Capacity"
+                              value=""
+                              onChange={() => {}}
+                              showDropDown={true}
+                            />
+                          </div>
+                        </div>
+                        <div className="row mt-3">
+                          {" "}
+                          <div className="col-6 p-2">
+                            <CardProduct
+                              image={image_test}
+                              status={"exp"}
+                              description={"Pomegranate Juice Pet Bottle, "}
+                              chart={TEST}
+                              amount={5}
+                            />{" "}
+                          </div>
+                          <div className="col-6 p-2">
+                            <CardProduct
+                              image={image_test}
+                              status={"exp"}
+                              description={"Pomegranate Juice Pet Bottle, "}
+                              chart={TEST}
+                              amount={5}
+                            />{" "}
+                          </div>
+                        </div>
+                        <div className="row mt-3">
+                          {" "}
+                          <div className="col-6 p-2">
+                            <CardProduct
+                              image={image_test}
+                              status={"exp"}
+                              description={"Pomegranate Juice Pet Bottle, "}
+                              chart={TEST}
+                              amount={5}
+                            />{" "}
+                          </div>
+                          <div className="col-6 p-2">
+                            <CardProduct
+                              image={image_test}
+                              status={"exp"}
+                              description={"Pomegranate Juice Pet Bottle, "}
+                              chart={TEST}
+                              amount={5}
+                            />{" "}
+                          </div>
+                        </div>
+                      </div>{" "}
+                    </ModalCompany>
+                  )}
                 </div>
               </div>
             )}

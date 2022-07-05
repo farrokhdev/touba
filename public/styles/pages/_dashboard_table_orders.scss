@@ -17,7 +17,7 @@ border-radius: 16px;
     ;
 
 }
-
+ 
 }  
 .search-table{
     background: #FFFFFF;
@@ -36,5 +36,5 @@ align-items: center;
 .input-search::placeholder{
     @include FontStyle(14px,22,#6B798C);
     margin-left: 3%;
-}
+} 
 }

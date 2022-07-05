@@ -94,6 +94,16 @@ export { default as ProductCart } from './product_cart';
 export { default as Location } from './location';
 export { default as ModalCompany } from './modal_company';
 export { default as ComponentBasicInformation } from './component_basic_information';
+export { default as TextAreaLabel } from './textarea_lable';
+
+
+
+
+
+
+
+
+
 export { default as CardProductGroupTitle } from './card_product_group_title';
 export { default as Rate } from './rating';
 export { default as ChartDoughnut } from './chart_doughnut';

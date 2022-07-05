@@ -1,5 +1,5 @@
 import { HashRouter, Route, Routes, useLocation } from "react-router-dom";
-import { EditOrder, Home, Login, DetailsOrder, PageTestComponent } from ".";
+import { EditOrder, Home, Login, DetailsOrder, PageTestComponent, CompanyProfileEdit } from ".";
 import { CHART, Chart } from "../components/chart";
 import {
   ComponentBinaRazan,
@@ -63,6 +63,9 @@ function Pages() {
   return (
     <div>
  
+      {/* <div className="mt-3 p-3 bg-white">
+        <ComponentFieldsetPrice/> 
+      </div> */}
 
       {
         location.pathname.includes("/login") ||
@@ -71,7 +74,7 @@ function Pages() {
           location.pathname.includes("/dashboard-table-order") ||
           location.pathname.includes("/dashboard-like-card") ||
           location.pathname.includes("/dashboard/edit-order") ||
-          location.pathname.includes("/dashboard/details-order")
+          location.pathname.includes("/dashboard/details-order") 
           ? null : (
             <>
               {location.pathname === "/" ? <TopNavHome /> : <TopNav />}
@@ -97,6 +100,7 @@ function Pages() {
               <Route path="/dashboard-like-card" element={<DashboardLikeCard />} />
               <Route path="/dashboard-company-profile" element={<DashboardCompanyProfile />} />
 
+              <Route path="/dashboard/company/edit" element={<CompanyProfileEdit />} />
             </Routes>
           </div>
         </div>

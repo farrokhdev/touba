@@ -1,0 +1,32 @@
+.textarea-lable {
+    width: 100%;
+    position: relative;
+
+    &-title {
+        background-color: $white;
+        @include Display(flex, center, center);
+        padding: 3px 12px;
+        position: absolute;
+        top: -10px;
+        left: 20px;
+
+        &-text {
+            @include FontStyle(12px, 500, $sorme);
+            margin: 0;
+        }
+    }
+
+    &-input {
+        width: 100% !important;
+        min-height: 300px;
+        @include Border(1px, $gray, 12px);
+        padding: 40px 20px;
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 16px;
+        color: $sorme;
+        &:focus {
+            outline: none;
+        }
+    }
+}
