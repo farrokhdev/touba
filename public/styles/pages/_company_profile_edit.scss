@@ -1,5 +1,6 @@
 .company-profile-edit {
     height: 100%;
+
     .body {
         height: 100%;
         @include Display(flex, start, flex-start);
@@ -133,6 +134,7 @@
                                     margin: 0;
                                 }
                             }
+
                             .text-red {
                                 >h6 {
                                     @include FontStyle(16px, 500, $red);
@@ -152,12 +154,59 @@
                                     white-space: nowrap;
                                     overflow: hidden;
                                     text-overflow: ellipsis;
+
                                     >span {
                                         @include FontStyle(16px, 500, $green);
                                         margin: 0 30px;
                                     }
                                 }
                             }
+                        }
+                    }
+                }
+            }
+
+
+            .input-group {
+                @include Display(flex, center, center);
+                .select-component {
+                    margin: 20px 10px 0 0;
+                }
+                .input-text-label {
+                    margin: 20px 10px 0 0;
+                }
+
+                .input-text-label-input {
+                    @include Border(1px, $gray, 8px);
+                    &::placeholder {
+                        opacity: 1 !important;
+                    }
+                }
+            }
+            
+            .value-red-scound {
+                >div:nth-of-type(2) {
+                    .input-text-label-input {
+                        font-family: 'Poppins' !important;
+                        font-weight: 500 !important;
+                        font-size: 16px !important;
+                        color: $red  !important;
+                        &::placeholder {
+                            color: $red  !important;
+                        }
+                    }
+                }
+            }
+
+            .value-red-first {
+                >div:nth-of-type(1) {
+                    .input-text-label-input {
+                        font-family: 'Poppins' !important;
+                        font-weight: 500 !important;
+                        font-size: 16px !important;
+                        color: $red  !important;
+                        &::placeholder {
+                            color: $red  !important;
                         }
                     }
                 }

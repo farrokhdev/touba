@@ -1,14 +1,34 @@
 import { IconCalling, IconCallSorme, IconDeletGreen, IconEdit, IconEditSorme, IconImageBlack, IconLocationSorme, IconPaperBlack, IconStarSorme, IconWalletSorme, ImageBanner } from "../../../assets";
-import { ModalCompany, TextAreaLabel } from "../../components/components";
+import { InputTextLabel, ModalCompany, ModalComponent, SelectComponent, TextAreaLabel } from "../../components/components";
 import DashboardNav from "../../components/dashboard_nav";
 import DeleteImage from "../../components/delete_image";
 import MyCompanyNav from "../../components/mycompany_nav";
 import { SideNavItems } from "../../components/side_nav_items";
 import CompanyProfileController, { TEST_NAV_ITEM } from "../../controllers/company_profile_controller";
 
+const items = [
+    { name: "item1", id: 1 },
+    { name: "item2", id: 2 },
+    { name: "item3", id: 3 },
+    { name: "item4", id: 4 },
+]
+
 class CompanyProfileEdit extends CompanyProfileController {
     render() {
-        const { image, modalDelete, modalDescription, description } = this.state;
+        const {
+            image,
+            modalDelete,
+            modalDescription,
+            description,
+            modalDetails,
+            establishedYear,
+            mainProducts,
+            mainMarket,
+            numberOfEmployee,
+            registeredCapital,
+            details
+        } = this.state;
+        console.log(details);
         return (
             <div className="company-profile-edit">
                 <DashboardNav title={"My Company Profile"} />
@@ -56,12 +76,15 @@ class CompanyProfileEdit extends CompanyProfileController {
                                     <p>
                                         {description}
                                     </p>
-
                                 </div>
                             </div>
                             <div className="body-content-items-details">
                                 <div className="body-content-items-details-icon">
-                                    <img src={IconEditSorme} alt="" />
+                                    <img
+                                        src={IconEditSorme}
+                                        alt=""
+                                        onClick={this.handleShowModalDetails}
+                                    />
                                 </div>
                                 <div className="body-content-items-details-table">
                                     <div className="body-content-items-details-table-row">
@@ -72,7 +95,7 @@ class CompanyProfileEdit extends CompanyProfileController {
                                         </div>
                                         <div className="body-content-items-details-table-row-amount">
                                             <h6>
-                                                2015
+                                                {details.establishedYear}
                                             </h6>
                                         </div>
                                     </div>
@@ -84,7 +107,7 @@ class CompanyProfileEdit extends CompanyProfileController {
                                         </div>
                                         <div className="body-content-items-details-table-row-amount">
                                             <h6>
-                                                Manufacturer/Factory
+                                                {details.businessType}
                                             </h6>
                                         </div>
                                     </div>
@@ -96,7 +119,7 @@ class CompanyProfileEdit extends CompanyProfileController {
                                         </div>
                                         <div className="body-content-items-details-table-row-amount">
                                             <h6>
-                                                Cosmetic and Hygiene
+                                                {details.businessCategory}
                                             </h6>
                                         </div>
                                     </div>
@@ -108,7 +131,7 @@ class CompanyProfileEdit extends CompanyProfileController {
                                         </div>
                                         <div className="body-content-items-details-table-row-amount text-red">
                                             <h6>
-                                                Milk Powder , Food Powders , Food raw materials
+                                                {details.mainProducts}
                                             </h6>
                                         </div>
                                     </div>
@@ -120,7 +143,7 @@ class CompanyProfileEdit extends CompanyProfileController {
                                         </div>
                                         <div className="body-content-items-details-table-row-amount text-red">
                                             <h6>
-                                                Wheel Loader , Forklift , Excavator , Tractor , Bulldozer , Roadroller , Trailer , Telescopic ...
+                                                {details.mainProducts}
                                             </h6>
                                         </div>
                                     </div>
@@ -132,7 +155,7 @@ class CompanyProfileEdit extends CompanyProfileController {
                                         </div>
                                         <div className="body-content-items-details-table-row-amount text-red">
                                             <h6>
-                                                Iran , Iraq , Turkey
+                                                {details.mainMarket}
                                             </h6>
                                         </div>
                                     </div>
@@ -144,7 +167,7 @@ class CompanyProfileEdit extends CompanyProfileController {
                                         </div>
                                         <div className="body-content-items-details-table-row-amount">
                                             <h6>
-                                                Number of empolyee
+                                                {details.numberOfEmployee}
                                             </h6>
                                         </div>
                                     </div>
@@ -156,7 +179,7 @@ class CompanyProfileEdit extends CompanyProfileController {
                                         </div>
                                         <div className="body-content-items-details-table-row-amount">
                                             <h6>
-                                                2000000 RMB
+                                                {details.registeredCapital}
                                             </h6>
                                         </div>
                                     </div>
@@ -168,7 +191,7 @@ class CompanyProfileEdit extends CompanyProfileController {
                                         </div>
                                         <div className="body-content-items-details-table-row-amount">
                                             <h6>
-                                                {">"}2000 square meters
+                                                {details.planeArea}
                                             </h6>
                                         </div>
                                     </div>
@@ -271,6 +294,114 @@ class CompanyProfileEdit extends CompanyProfileController {
                         {modalDescription === true ? (
                             <ModalCompany onClose={this.handleCloseModalDescription} onSave={this.handleSubmitChangeDescription}>
                                 <TextAreaLabel title={"Introduction"} handleGetValue={this.handleGetDescription} />
+                            </ModalCompany>
+                        ) : (null)}
+                        {modalDetails === true ? (
+                            <ModalCompany onClose={this.handleCloseModalDetails} onSave={this.handleSaveDeatils}>
+                                <div className="input-group">
+                                    <InputTextLabel
+                                        value={establishedYear}
+                                        title={"Established Year"}
+                                        placeholder={"Technical Support"}
+                                        type={"text"}
+                                        showDropDown={false}
+                                        onChange={(event) => { this.setState({ establishedYear: event.currentTarget.value }) }}
+                                    />
+                                    <SelectComponent
+                                        type={"two"}
+                                        placeholder={"Manufacturer/Factory"}
+                                        onSelect={this.handleGetBusinessType}
+                                        items={items}
+                                        title="Business Type"
+                                    />
+                                </div>
+                                <div className="input-group value-red-scound">
+                                    <SelectComponent
+                                        type={"two"}
+                                        placeholder={"Technical Support"}
+                                        onSelect={this.handleGetBusinessCategory}
+                                        items={items}
+                                        title="Business Category"
+                                    />
+                                    <InputTextLabel
+                                        value={mainProducts}
+                                        title={"Main Products"}
+                                        placeholder={"Milk Powder , Food Powders , Food raw materials"}
+                                        type={"text"}
+                                        showDropDown={false}
+                                        onChange={(event) => { this.setState({ mainProducts: event.currentTarget.value }) }}
+                                    />
+                                </div>
+                                <div className="input-group value-red-scound">
+                                    <SelectComponent
+                                        type={"two"}
+                                        placeholder={"Technical Support"}
+                                        onSelect={this.handleGetBusinessCategory}
+                                        items={items}
+                                        title="Business Category"
+                                    />
+                                    <InputTextLabel
+                                        value={mainProducts}
+                                        title={"Main Products"}
+                                        placeholder={"Milk Powder , Food Powders , Food raw materials"}
+                                        type={"text"}
+                                        showDropDown={false}
+                                        onChange={(event) => { this.setState({ mainProducts: event.currentTarget.value }) }}
+                                    />
+                                </div>
+                                <div className="input-group value-red-first">
+                                    <InputTextLabel
+                                        value={mainMarket}
+                                        title={"Main Market"}
+                                        placeholder={"Iran , Iraq , Turkey "}
+                                        type={"text"}
+                                        showDropDown={false}
+                                        onChange={(event) => { this.setState({ mainMarket: event.currentTarget.value }) }}
+                                    />
+                                    <InputTextLabel
+                                        value={numberOfEmployee}
+                                        title={"Number of empolyee"}
+                                        placeholder={"30000"}
+                                        type={"text"}
+                                        showDropDown={false}
+                                        onChange={(event) => { this.setState({ numberOfEmployee: event.currentTarget.value }) }}
+                                    />
+                                </div>
+                                <div className="input-group value-red-first">
+                                    <InputTextLabel
+                                        value={mainMarket}
+                                        title={"Main Market"}
+                                        placeholder={"Iran , Iraq , Turkey "}
+                                        type={"text"}
+                                        showDropDown={false}
+                                        onChange={(event) => { this.setState({ mainMarket: event.currentTarget.value }) }}
+                                    />
+                                    <InputTextLabel
+                                        value={numberOfEmployee}
+                                        title={"Number of empolyee"}
+                                        placeholder={"30000"}
+                                        type={"text"}
+                                        showDropDown={false}
+                                        onChange={(event) => { this.setState({ numberOfEmployee: event.currentTarget.value }) }}
+                                    />
+                                </div>
+                                <div className="input-group">
+                                    <InputTextLabel
+                                        value={registeredCapital}
+                                        title={"Registered Capital"}
+                                        placeholder={"2000000 RMB"}
+                                        type={"text"}
+                                        showDropDown={false}
+                                        onChange={(event) => { this.setState({ registeredCapital: event.currentTarget.value }) }}
+                                    />
+                                    <SelectComponent
+                                        type={"two"}
+                                        placeholder={">2000 square meters"}
+                                        onSelect={this.handleGetPlantArea}
+                                        items={items}
+                                        title="Plant Area"
+                                    />
+                                </div>
                             </ModalCompany>
                         ) : (null)}
                     </div>
