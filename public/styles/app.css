@@ -1,3 +1,6 @@
+.border-bottom-dashed {
+  border-bottom: 2px dashed #D6D6D6; }
+
 .leaflet-container {
   height: 30vh; }
 
@@ -51,6 +54,9 @@ a {
   /* Sorme2 */
   color: #6b798c;
   /* Inside auto layout */ }
+
+.border-bottom-dashed {
+  border-bottom: 2px dashed #D6D6D6; }
 
 .leaflet-container {
   height: 30vh; }
@@ -460,6 +466,9 @@ a {
   /* Sorme */
   color: #3c557a;
   z-index: 1; }
+
+.border-optional {
+  border: 1px solid #D6D6D6; }
 
 .card-main {
   padding-top: 2%;

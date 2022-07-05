@@ -15,7 +15,7 @@ interface Props {
 const CardLike = ({ discount, percent, navigate, icon }: Props) => {
   const navigation = useNavigate();
   return (
-    <div className="card-border" onClick={() => navigation(navigate || "#")}>
+    <div className="card-border border-optional" onClick={() => navigation(navigate || "#")}>
       <div className="row">
         <div className="d-flex justify-content-between ">
           {icon ? (

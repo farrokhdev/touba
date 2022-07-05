@@ -6,7 +6,7 @@ import {
 
 export type IProps = {
   activeTab: string;
-  onClick?:any
+  onClick?: (e:  React.MouseEvent<HTMLButtonElement>) => void;
 };
 
 const CongratulationBanner: React.FC<IProps> = ({ activeTab,onClick }: IProps) => {
@@ -22,7 +22,7 @@ const CongratulationBanner: React.FC<IProps> = ({ activeTab,onClick }: IProps) =
           best selling products!
         </p>
         <div className="d-flex flex-row align-items-center">
-          <button onClick={()=>onClick} className="green-btn me-4">Add New Product</button>
+          <button onClick={onClick} className="green-btn me-4">Add New Product</button>
           <button className="outline-btn">Get back to dashboard</button>
         </div>
       </div>
@@ -42,7 +42,7 @@ const CongratulationBanner: React.FC<IProps> = ({ activeTab,onClick }: IProps) =
             in best selling products!
           </p>
           <div className="d-flex flex-row align-items-center">
-            <button className="green-btn me-4">
+            <button onClick={onClick} className="green-btn me-4">
               I want to complete prduct Information
             </button>
             <button className="outline-btn">Save & Publish</button>

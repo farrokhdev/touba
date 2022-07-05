@@ -5,6 +5,7 @@
   .discount-box {
     position: relative;
   }
+  
   .discount-percent {
     position: absolute;
     top: 0;
@@ -71,4 +72,8 @@
 
   color: #3c557a;
   z-index: 1;
+}
+.border-optional{
+  border: 1px solid #D6D6D6;
+
 }
