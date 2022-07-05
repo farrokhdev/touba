@@ -15,7 +15,6 @@
     &-card {
         width: 80%;
         max-width: 1204px;
-        height: auto;
         background-color: $white;
         border-radius: 12px;
 
@@ -40,9 +39,11 @@
         }
 
         &-content {
+            height: auto !important;
             width: 95%;
             margin: 0 auto;
             padding: 25px 0 40px 0;
+            position: relative;
         }
 
         &-footer {
