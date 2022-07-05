@@ -1,5 +1,7 @@
+import { type } from "os";
 import { ChangeEvent, Component } from "react";
 import { IconCalling, IconCallSorme, IconLocationSorme, IconPaperBlack, IconStarSorme, IconWalletSorme } from "../../assets";
+import { nanoid } from 'nanoid';
 
 type DETAILS = {
     establishedYear: string;
@@ -10,6 +12,15 @@ type DETAILS = {
     numberOfEmployee: string | number;
     registeredCapital: string;
     planeArea: string;
+}
+
+type CERTIFICATE = {
+    registerDate: string;
+    expireDate: string;
+    certificateName: string;
+    certificateCode: string;
+    imageCertificate: string;
+    id: string;
 }
 
 interface IProps { }
@@ -38,6 +49,8 @@ interface IState {
     certificateName: string;
     certificateCode: string;
     imageCertificate: string;
+    certificate: CERTIFICATE[];
+    idEditCertification?: string;
 }
 
 export const TEST_NAV_ITEM = [
@@ -73,7 +86,7 @@ export class CompanyProfileController extends Component<IProps, IState> {
     state = {
         activeLink: 1,
         image: "",
-        activeTab: 3,
+        activeTab: 1,
         modalDelete: false,
         modalDescription: false,
         getDiscription: "",
@@ -104,6 +117,15 @@ export class CompanyProfileController extends Component<IProps, IState> {
         certificateName: "",
         certificateCode: "",
         imageCertificate: "",
+        certificate: [{
+            registerDate: "",
+            expireDate: "",
+            certificateName: "",
+            certificateCode: "",
+            imageCertificate: "",
+            id: ""
+        }],
+        idEditCertification: "",
     };
 
     handleGetActiveLink = (id: number) => {
@@ -195,8 +217,9 @@ export class CompanyProfileController extends Component<IProps, IState> {
         this.setState({ modalAddCertificate: false })
     };
 
-    handleShowModalEditCretificate = () => {
+    handleShowModalEditCretificate = (id?: string) => {
         this.setState({ modalEditCertificate: true })
+        this.setState({ idEditCertification: id })
     };
 
     handleCloseModalEditCretificate = () => {
@@ -204,20 +227,57 @@ export class CompanyProfileController extends Component<IProps, IState> {
     };
 
     handleGetDateRegister = (value: string) => {
-        this.setState({registerDate: value})
+        this.setState({ registerDate: value })
     };
 
     handleGetDateExpire = (value: string) => {
-        this.setState({expireDate: value})
+        this.setState({ expireDate: value })
     };
 
     handleGetCodeCertificate = (value: string) => {
-        this.setState({certificateCode: value})
+        this.setState({ certificateCode: value })
     };
 
     handleGetImageCertificate = (image: string) => {
-        console.log(image)
-        this.setState({imageCertificate: image})
+        this.setState({ imageCertificate: image })
+    };
+
+    handleAddCertificatios = () => {
+        const newCertification: CERTIFICATE = {
+            registerDate: this.state.registerDate,
+            expireDate: this.state.expireDate,
+            certificateName: this.state.certificateName,
+            certificateCode: this.state.certificateCode,
+            imageCertificate: this.state.imageCertificate,
+            id: nanoid(),
+        }
+        this.setState({ certificate: [...this.state.certificate, newCertification] })
+        this.setState({ modalAddCertificate: false })
+    };
+
+    handleEditCertificatios = () => {
+        const newCertification: CERTIFICATE = {
+            registerDate: this.state.registerDate,
+            expireDate: this.state.expireDate,
+            certificateName: this.state.certificateName,
+            certificateCode: this.state.certificateCode,
+            imageCertificate: this.state.imageCertificate,
+            id: this.state.idEditCertification,
+        }
+
+        if (this.state.certificate.find(item => item.id === this.state.idEditCertification)) {
+            this.setState({
+                certificate: [{
+                    registerDate: this.state.registerDate,
+                    expireDate: this.state.expireDate,
+                    certificateName: this.state.certificateName,
+                    certificateCode: this.state.certificateCode,
+                    imageCertificate: this.state.imageCertificate,
+                    id: this.state.idEditCertification,
+                }]
+            })
+        }
+        this.setState({ modalEditCertificate: false })
     }
 
 }

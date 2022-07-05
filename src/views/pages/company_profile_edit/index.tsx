@@ -497,7 +497,8 @@ class CompanyProfileEdit extends CompanyProfileController {
     }
     sectionCertificates() {
         const {
-            details
+            details,
+            certificate
         } = this.state;
         return (
             <>
@@ -512,7 +513,7 @@ class CompanyProfileEdit extends CompanyProfileController {
                             <img
                                 src={IconEditSorme}
                                 alt=""
-                                onClick={this.handleShowModalEditCretificate}
+                                onClick={() => this.handleShowModalEditCretificate("")}
                             />
                         </div>
                         <div className="body-content-items-certificate-table-details">
@@ -560,7 +561,7 @@ class CompanyProfileEdit extends CompanyProfileController {
                                 </div>
                                 <div className="amount">
                                     <h6>
-                                        7/31/2023
+                                        1/31/2021
                                     </h6>
                                 </div>
                             </div>
@@ -572,14 +573,13 @@ class CompanyProfileEdit extends CompanyProfileController {
                                 />
                             </div>
                         </div>
-
                     </div>
                     <div className="body-content-items-certificate-table">
                         <div className="body-content-items-certificate-table-icon">
                             <img
                                 src={IconEditSorme}
                                 alt=""
-                                onClick={this.handleShowModalEditCretificate}
+                                onClick={() => this.handleShowModalEditCretificate("")}
                             />
                         </div>
                         <div className="body-content-items-certificate-table-details">
@@ -627,7 +627,7 @@ class CompanyProfileEdit extends CompanyProfileController {
                                 </div>
                                 <div className="amount">
                                     <h6>
-                                        7/31/2023
+                                        1/31/2021
                                     </h6>
                                 </div>
                             </div>
@@ -640,6 +640,78 @@ class CompanyProfileEdit extends CompanyProfileController {
                             </div>
                         </div>
                     </div>
+                    {certificate.map(item => (
+                        <>
+                            {item.id !== "" ? (
+                                <div key={item.id} className="body-content-items-certificate-table">
+                                    <div className="body-content-items-certificate-table-icon">
+                                        <img
+                                            src={IconEditSorme}
+                                            alt=""
+                                            onClick={() => this.handleShowModalEditCretificate(item.id)}
+                                        />
+                                    </div>
+                                    <div className="body-content-items-certificate-table-details">
+                                        <div className="body-content-items-certificate-table-details-row">
+                                            <div className="title">
+                                                <h6>
+                                                    Certificate:
+                                                </h6>
+                                            </div>
+                                            <div className="amount">
+                                                <h6>
+                                                    {item.certificateName}
+                                                </h6>
+                                            </div>
+                                        </div>
+                                        <div className="body-content-items-certificate-table-details-row">
+                                            <div className="title">
+                                                <h6>
+                                                    Code:
+                                                </h6>
+                                            </div>
+                                            <div className="amount">
+                                                <h6>
+                                                    {item.certificateCode}
+                                                </h6>
+                                            </div>
+                                        </div>
+                                        <div className="body-content-items-certificate-table-details-row">
+                                            <div className="title">
+                                                <h6>
+                                                    Registered Date:
+                                                </h6>
+                                            </div>
+                                            <div className="amount">
+                                                <h6>
+                                                    {item.registerDate}
+                                                </h6>
+                                            </div>
+                                        </div>
+                                        <div className="body-content-items-certificate-table-details-row">
+                                            <div className="title">
+                                                <h6>
+                                                    Expire Date:
+                                                </h6>
+                                            </div>
+                                            <div className="amount">
+                                                <h6>
+                                                    {item.expireDate}
+                                                </h6>
+                                            </div>
+                                        </div>
+                                        <div className="body-content-items-certificate-table-details-row">
+                                            <img
+                                                src={item.imageCertificate}
+                                                alt=""
+                                                className="image"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            ) : (null)}
+                        </>
+                    ))}
                 </div>
                 <div className="body-content-items-button-add-certificate">
                     <ButtonAdd onClick={this.handleShowModalAddCretificate} />
@@ -808,7 +880,7 @@ class CompanyProfileEdit extends CompanyProfileController {
                             </ModalCompany>
                         ) : (null)}
                         {modalAddCertificate === true ? (
-                            <ModalCompany onClose={this.handleCloseModalAddCretificate} onSave={() => { }}>
+                            <ModalCompany onClose={this.handleCloseModalAddCretificate} onSave={this.handleAddCertificatios}>
                                 <div className="input-group">
                                     <InputTextLabel
                                         value={certificateName}
@@ -839,8 +911,34 @@ class CompanyProfileEdit extends CompanyProfileController {
                             </ModalCompany>
                         ) : (null)}
                         {modalEditCertificate === true ? (
-                            <ModalCompany onClose={this.handleCloseModalEditCretificate} onSave={() => { }}>
-                                <h2>Edit</h2>
+                            <ModalCompany onClose={this.handleCloseModalEditCretificate} onSave={this.handleEditCertificatios}>
+                                <div className="input-group">
+                                    <InputTextLabel
+                                        value={certificateName}
+                                        title={"Certificate"}
+                                        placeholder={""}
+                                        type={"text"}
+                                        showDropDown={false}
+                                        onChange={(event) => this.setState({ certificateName: event.currentTarget.value })}
+                                    />
+                                    <SelectComponent
+                                        type={"two"}
+                                        placeholder={""}
+                                        onSelect={this.handleGetCodeCertificate}
+                                        items={items}
+                                        title="Code"
+                                    />
+                                </div>
+                                <div className="input-group">
+                                    <InputDate title={"Registered Date"} handleGetValue={this.handleGetDateRegister} />
+                                    <InputDate title={"Registered Date"} handleGetValue={this.handleGetDateExpire} />
+                                </div>
+                                <div className="card-image">
+                                    <CardUploadImage
+                                        title={"Upload Certificate Image Here"}
+                                        handleGetImage={this.handleGetImageCertificate}
+                                    />
+                                </div>
                             </ModalCompany>
                         ) : (null)}
                     </div>

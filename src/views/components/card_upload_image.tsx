@@ -11,13 +11,13 @@ export function CardUploadImage({ handleGetImage }: Props): ReactElement {
 
     const [image, setImage] = useState("");
 
-    const handleGetImageCard = useCallback((event: ChangeEvent<HTMLInputElement>) => {
+    const handleGetImageCard = (event: ChangeEvent<HTMLInputElement>) => {
         const files = (event.currentTarget as HTMLInputElement).files;
         if (files && files.length > 0) {
+            handleGetImage(URL.createObjectURL(files[0]))
             setImage(URL.createObjectURL(files[0]))
-            handleGetImage(image);
         }
-    },  [image]);
+    };
 
     function handleDeleteImage() {
         setImage("");
