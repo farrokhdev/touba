@@ -8,10 +8,14 @@ const FAQ = () => {
         <div className="text-faq">FAQ</div>
       </div>
       <div className="">
-        <FAQCard open={true} />
+        <FAQCard open={true} onClick={function (): void {
+          throw new Error("Function not implemented.");
+        } } />
       </div>
       <div className="mt-2">
-        <FAQCard open={false} />
+        <FAQCard open={false} onClick={function (): void {
+          throw new Error("Function not implemented.");
+        } } />
       </div>
     </div>
   );

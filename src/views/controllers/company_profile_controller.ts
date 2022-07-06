@@ -1,5 +1,7 @@
+import { type } from "os";
 import { ChangeEvent, Component } from "react";
 import { IconCalling, IconCallSorme, IconLocationSorme, IconPaperBlack, IconStarSorme, IconWalletSorme } from "../../assets";
+import { nanoid } from 'nanoid';
 
 type DETAILS = {
     establishedYear: string;
@@ -10,6 +12,15 @@ type DETAILS = {
     numberOfEmployee: string | number;
     registeredCapital: string;
     planeArea: string;
+}
+
+type CERTIFICATE = {
+    registerDate: string;
+    expireDate: string;
+    certificateName: string;
+    certificateCode: string;
+    imageCertificate: string;
+    id: string;
 }
 
 interface IProps { }
@@ -31,6 +42,27 @@ interface IState {
     registeredCapital: string;
     planeArea: string;
     details: DETAILS;
+    modalAddCertificate: boolean,
+    modalEditCertificate: boolean,
+    registerDate: string;
+    expireDate: string;
+    certificateName: string;
+    certificateCode: string;
+    imageCertificate: string;
+    certificate: CERTIFICATE[];
+    idEditCertification?: string;
+    modalFAQ: boolean;
+    question: string;
+    faq: {
+        image: string,
+        text: string,
+    };
+    modalContact: boolean;
+    address: string;
+    phoneCode: string | number,
+    phoneNumber: string | number,
+    contactSuplier: string;
+    modalLocation: boolean;
 }
 
 export const TEST_NAV_ITEM = [
@@ -61,11 +93,12 @@ export const TEST_NAV_ITEM = [
     }
 ];
 
+
 export class CompanyProfileController extends Component<IProps, IState> {
 
     state = {
         activeLink: 1,
-        image: '',
+        image: "",
         activeTab: 1,
         modalDelete: false,
         modalDescription: false,
@@ -90,7 +123,37 @@ export class CompanyProfileController extends Component<IProps, IState> {
             registeredCapital: "",
             planeArea: "",
         },
+        modalAddCertificate: false,
+        modalEditCertificate: false,
+        registerDate: "",
+        expireDate: "",
+        certificateName: "",
+        certificateCode: "",
+        imageCertificate: "",
+        certificate: [{
+            registerDate: "",
+            expireDate: "",
+            certificateName: "",
+            certificateCode: "",
+            imageCertificate: "",
+            id: ""
+        }],
+        idEditCertification: "",
+        modalFAQ: false,
+        question: "",
+        faq: {
+            image: "",
+            text: "",
+        },
+        modalContact: false,
+        address: "",
+        phoneCode: "",
+        phoneNumber: "",
+        contactSuplier: "",
+        modalLocation: false,
     };
+
+
 
     handleGetActiveLink = (id: number) => {
         this.setState({ activeLink: id })
@@ -171,6 +234,106 @@ export class CompanyProfileController extends Component<IProps, IState> {
         }
         this.setState({ details: newDeatils });
         this.setState({ modalDetails: false })
-    }
+    };
+
+    handleShowModalAddCretificate = () => {
+        this.setState({ modalAddCertificate: true })
+    };
+
+    handleCloseModalAddCretificate = () => {
+        this.setState({ modalAddCertificate: false })
+    };
+
+    handleShowModalEditCretificate = (id?: string) => {
+        this.setState({ modalEditCertificate: true })
+        this.setState({ idEditCertification: id })
+    };
+
+    handleCloseModalEditCretificate = () => {
+        this.setState({ modalEditCertificate: false })
+    };
+
+    handleGetDateRegister = (value: string) => {
+        this.setState({ registerDate: value })
+    };
+
+    handleGetDateExpire = (value: string) => {
+        this.setState({ expireDate: value })
+    };
+
+    handleGetCodeCertificate = (value: string) => {
+        this.setState({ certificateCode: value })
+    };
+
+    handleGetImageCertificate = (image: string) => {
+        this.setState({ imageCertificate: image })
+    };
+
+    handleAddCertificatios = () => {
+        const newCertification: CERTIFICATE = {
+            registerDate: this.state.registerDate,
+            expireDate: this.state.expireDate,
+            certificateName: this.state.certificateName,
+            certificateCode: this.state.certificateCode,
+            imageCertificate: this.state.imageCertificate,
+            id: nanoid(),
+        }
+        this.setState({ certificate: [...this.state.certificate, newCertification] })
+        this.setState({ modalAddCertificate: false })
+    };
+
+    handleEditCertificatios = () => {
+        const newCertification: CERTIFICATE = {
+            registerDate: this.state.registerDate,
+            expireDate: this.state.expireDate,
+            certificateName: this.state.certificateName,
+            certificateCode: this.state.certificateCode,
+            imageCertificate: this.state.imageCertificate,
+            id: this.state.idEditCertification,
+        }
+
+        if (this.state.certificate.find(item => item.id === this.state.idEditCertification)) {
+            this.setState({
+                certificate: [{
+                    registerDate: this.state.registerDate,
+                    expireDate: this.state.expireDate,
+                    certificateName: this.state.certificateName,
+                    certificateCode: this.state.certificateCode,
+                    imageCertificate: this.state.imageCertificate,
+                    id: this.state.idEditCertification,
+                }]
+            })
+        }
+        this.setState({ modalEditCertificate: false })
+    };
+
+    handleShowModalFAQ = () => {
+        this.setState({ modalFAQ: true })
+    };
+
+    handleCloseModalFAQ = () => {
+        this.setState({ modalFAQ: false })
+    };
+
+    handleGetValuesFAQ = (image: string, text: string) => {
+        const newFAQ = { image, text };
+        this.setState({ faq: newFAQ })
+    };
+
+    handleShowModalContact = () => {
+        this.setState({modalContact: true})
+    };
+
+    handleCloseModalContact = () => {
+        this.setState({modalContact: false})
+    };
+
+    handleShowModalLocation = () => {
+        this.setState({modalLocation: true})
+    };
+
+    handleCloseModalLocation = () => {
+        this.setState({modalLocation: false})
+    };
 }
 export default CompanyProfileController;

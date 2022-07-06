@@ -1,0 +1,52 @@
+.input-date {
+    width: 100%;
+    position: relative;
+
+    &-title {
+        background-color: $white;
+        padding: 3px 12px;
+        position: absolute;
+        top: -10px;
+        left: 13px;
+        z-index: 2;
+        @include Display(flex, center, center);
+        &-text {
+            @include FontStyle(12px, 500, $sorme);
+            margin: 0;
+        }
+    }
+
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        color: rgba(0, 0, 0, 0);
+        opacity: 1;
+        display: block;
+        background: url("../../icon-calendar.svg") no-repeat;
+        width: 20px;
+        height: 20px;
+    }
+
+    &-input {
+        width: 100%;
+        position: relative;
+
+        .input {
+            width: 100%;
+            @include Border(1px, $gray, 8px);
+            padding: 19px 24px;
+            font-family: 'Poppins';
+            font-weight: 400;
+            font-size: 16px;
+            color: $sorme;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .icon {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}

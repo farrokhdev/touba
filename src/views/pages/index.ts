@@ -5,3 +5,4 @@ export { default as EditOrder} from './order/edit_orders';
 export { default as DetailsOrder} from './order/details_order';
 export { default as PageTestComponent} from './page_test_components';
 export { default as CompanyProfileEdit} from './company_profile_edit';
+export { default as CompanyProfileStart} from './company_profile_start';

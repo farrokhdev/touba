@@ -16,24 +16,7 @@ import { ButtonIcon } from "../../components/button_icon";
 import CongratulationBanner from "../../components/congratulation_banner";
 
 class DashboardCompanyProfile extends DashboardCompanyProfileController {
-  TEST_NAV_ITEM = [
-    {
-      title: "Basic Information",
-      id: 0,
-    },
-    {
-      title: "Other Details",
-      id: 1,
-    },
-    {
-      title: "Trade Information",
-      id: 2,
-    },
-    {
-      title: "Related Items",
-      id: 3,
-    },
-  ];
+ 
   searchAndSort = () => {
     return <ComponentSortandSearch />;
   };
