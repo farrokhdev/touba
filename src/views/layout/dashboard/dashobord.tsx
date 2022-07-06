@@ -128,7 +128,7 @@ const Dashboard: React.FC<IProps> = ({}) => {
           Products
         </NavLink>
         <NavLink
-          to="/excess-capacity"
+          to="dashboard/company/start"
           className={({ isActive = String }) =>
             isActive
               ? "w-100 d-flex flex-row align-items-center active-Navlink"

@@ -4,6 +4,7 @@
 
 .leaflet-container {
   height: 30vh;
+  z-index: 1;
 }
 
 .progress {
@@ -75,6 +76,7 @@ a {
 
 .leaflet-container {
   height: 30vh;
+  z-index: 1;
 }
 
 .progress {
