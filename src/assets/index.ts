@@ -172,3 +172,4 @@ export { default as ImageCongratulationBanner} from './images/CongratulationBann
 export { default as ImageCongratulationBanner2} from './images/CongratulationBanner2.png';
 export { default as ImageBanner} from './images/image-banner.png';
 export { default as ImageFoot} from './images/image-foot.png';
+export { default as ImageManager} from './images/image-manager.png';
