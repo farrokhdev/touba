@@ -5,6 +5,7 @@ import DashboardNav from "../../components/dashboard_nav";
 import DeleteImage from "../../components/delete_image";
 import { Divider } from "../../components/divider";
 import MyCompanyNav from "../../components/mycompany_nav";
+import ProfileHeaderImage from "../../components/profile_header_image";
 import { SideNavItems } from "../../components/side_nav_items";
 import CompanyProfileController, { TEST_NAV_ITEM } from "../../controllers/company_profile_controller";
 
@@ -389,9 +390,29 @@ class CompanyProfileEdit extends CompanyProfileController {
                 ) : (null)}
                 {modalLocation === true ? (
                     <ModalCompany onClose={this.handleCloseModalLocation} onSave={() => { }}>
-                        <Map/>
+                        <Map />
                     </ModalCompany>
                 ) : (null)}
+            </>
+        )
+    }
+    sectionSetting() {
+        return (
+            <>
+                <div className="body-content-items mt-4">
+                    <div className="body-content-items-title">
+                        <h4 className="body-content-items-title-text">
+                            Visual Settings
+                        </h4>
+                        <ButtonOutline title={"View as visitor"} />
+                    </div>
+                    <div>
+                        <ProfileHeaderImage />
+                    </div>
+                    <div className="card-image-setting">
+                        <CardUploadImage title={"Upload Company Logo"} handleGetImage={() => { }} />
+                    </div>
+                </div>
             </>
         )
     }
@@ -1129,7 +1150,11 @@ class CompanyProfileEdit extends CompanyProfileController {
                 <DashboardNav title={"My Company Profile"} />
                 <div className="body">
                     <div className="body-side-item">
-                        <SideNavItems items={TEST_NAV_ITEM} onActive={this.handleGetActiveLink} />
+                        <SideNavItems
+                            items={TEST_NAV_ITEM}
+                            onActive={this.handleGetActiveLink}
+                            showProgress={true}
+                        />
                     </div>
                     <div className="body-content">
                         {activeLink === 1 ? (
@@ -1138,9 +1163,14 @@ class CompanyProfileEdit extends CompanyProfileController {
                             activeLink === 2 ? (
                                 this.sectionContactUs()
                             ) : (
-                                <h3>
-                                    sdfsdf
-                                </h3>
+                                activeLink === 5 ? (
+                                    this.sectionSetting()
+                                ) : (
+                                    <h1>
+                                        not design
+                                    </h1>
+                                )
+
                             )
                         )}
                     </div>

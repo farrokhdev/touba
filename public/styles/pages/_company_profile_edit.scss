@@ -42,9 +42,11 @@
                     padding: 40px 0;
 
                     @include Display (flex, space-between, center);
+
                     .button-outline {
                         border-radius: 8px !important;
                     }
+
                     &-text {
                         @include FontStyle(22px, 800, $sorme);
                         margin: 0;
@@ -279,15 +281,19 @@
                     &-details {
                         width: 90%;
                         margin: 0 auto;
+
                         &-text {
                             @include Display(flex, start, center);
                             margin-bottom: 40px;
+
                             >div {
                                 margin: 0 16px;
+
                                 >h6 {
                                     @include FontStyle(14px, 500, $sorme);
                                     margin: 0 0 10px 0;
                                 }
+
                                 >h5 {
                                     @include FontStyle(16px, 400, $sorme);
                                     margin: 0;
@@ -295,6 +301,7 @@
                             }
                         }
                     }
+
                     &-divider {
                         width: 40%;
                     }
@@ -304,20 +311,24 @@
                     width: 30%;
                     margin-bottom: 40px;
                     @include Display(flex, space-between, center);
+
                     &-title {
                         @include FontStyle(14px, 500, $sorme);
                         margin: 0;
                     }
+
                     &-image {
                         width: 85px;
                         height: 85px;
                         border-radius: 100px;
                     }
+
                     &-name {
                         >h5 {
                             @include FontStyle(16px, 600, $sorme);
                             margin: 0 0 10px 0;
                         }
+
                         >h6 {
                             @include FontStyle(10px, 700, $lightSorme);
                             margin: 0;
@@ -376,11 +387,46 @@
             .card-image {
                 width: 50% !important;
                 padding: 30px 0;
+
+                .card-upload-image {
+                    width: 546px;
+                    height: 272px;
+                }
+
+                .card-show-image {
+                    width: 546px;
+                    height: 272px;
+                }
             }
 
             .card-image-contact {
                 width: 30% !important;
                 padding: 30px 0;
+
+                .card-upload-image {
+                    width: 228px;
+                    height: 228px;
+                }
+
+                .card-show-image {
+                    width: 228px;
+                    height: 228px;
+                }
+            }
+
+            .card-image-setting {
+                width: 30% !important;
+                padding: 30px 0 50px 0;
+
+                .card-upload-image {
+                    width: 340px;
+                    height: 340px;
+                }
+
+                .card-show-image {
+                    width: 340px;
+                    height: 340px;
+                }
             }
 
             .value-red-scound {

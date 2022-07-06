@@ -17225,9 +17225,44 @@ a {
   padding: 30px 0;
 }
 
+.company-profile-edit .body-content .card-image .card-upload-image {
+  width: 546px;
+  height: 272px;
+}
+
+.company-profile-edit .body-content .card-image .card-show-image {
+  width: 546px;
+  height: 272px;
+}
+
 .company-profile-edit .body-content .card-image-contact {
   width: 30% !important;
   padding: 30px 0;
+}
+
+.company-profile-edit .body-content .card-image-contact .card-upload-image {
+  width: 228px;
+  height: 228px;
+}
+
+.company-profile-edit .body-content .card-image-contact .card-show-image {
+  width: 228px;
+  height: 228px;
+}
+
+.company-profile-edit .body-content .card-image-setting {
+  width: 30% !important;
+  padding: 30px 0 50px 0;
+}
+
+.company-profile-edit .body-content .card-image-setting .card-upload-image {
+  width: 340px;
+  height: 340px;
+}
+
+.company-profile-edit .body-content .card-image-setting .card-show-image {
+  width: 340px;
+  height: 340px;
 }
 
 .company-profile-edit .body-content .value-red-scound > div:nth-of-type(2) .input-text-label-input {
