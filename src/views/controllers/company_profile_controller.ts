@@ -93,6 +93,7 @@ export const TEST_NAV_ITEM = [
     }
 ];
 
+
 export class CompanyProfileController extends Component<IProps, IState> {
 
     state = {
@@ -151,6 +152,8 @@ export class CompanyProfileController extends Component<IProps, IState> {
         contactSuplier: "",
         modalLocation: false,
     };
+
+
 
     handleGetActiveLink = (id: number) => {
         this.setState({ activeLink: id })

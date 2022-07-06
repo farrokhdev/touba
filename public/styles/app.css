@@ -16517,6 +16517,14 @@ a {
   padding: 0 35px;
 }
 
+.company-profile-edit .body-content-items .contact-us-map {
+  height: 600px !important;
+}
+
+.company-profile-edit .body-content-items .contact-us-map .leaflet-container {
+  height: 600px !important;
+}
+
 .company-profile-edit .body-content-items-title {
   width: 100%;
   margin: 0px auto;

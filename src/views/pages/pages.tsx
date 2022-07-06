@@ -1,5 +1,5 @@
 import { HashRouter, Route, Routes, useLocation } from "react-router-dom";
-import { EditOrder, Home, Login, DetailsOrder, PageTestComponent, CompanyProfileEdit } from ".";
+import { EditOrder, Home, Login, DetailsOrder, PageTestComponent, CompanyProfileEdit, CompanyProfileStart } from ".";
 import { CHART, Chart } from "../components/chart";
 import {
   ComponentBinaRazan,
@@ -97,6 +97,7 @@ function Pages() {
               />
               <Route path="/dashboard-like-card" element={<DashboardLikeCard />} />
               <Route path="/dashboard/company/edit" element={<CompanyProfileEdit />} />
+              <Route path="/dashboard/company/start" element={<CompanyProfileStart />} />
             </Routes>
           </div>
         </div>

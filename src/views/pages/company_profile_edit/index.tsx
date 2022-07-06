@@ -390,7 +390,9 @@ class CompanyProfileEdit extends CompanyProfileController {
                 ) : (null)}
                 {modalLocation === true ? (
                     <ModalCompany onClose={this.handleCloseModalLocation} onSave={() => { }}>
-                        <Map />
+                        <div className="contact-us-map">
+                            <Map />
+                        </div>
                     </ModalCompany>
                 ) : (null)}
             </>
