@@ -106,11 +106,7 @@ const Dashboard: React.FC<IProps> = ({}) => {
       <div className="w-100 d-flex flex-column align-items-start justify-content-between">
         <label>Selling Center</label>
         <NavLink
-<<<<<<< HEAD
-          to="/dashboard-company-profile"
-=======
           to="dashboard/company/edit"
->>>>>>> 4e969edfb43c88a5d79ebd8e7713801b8f6d313d
           className={({ isActive = String }) =>
             isActive
               ? "w-100 d-flex flex-row align-items-center active-Navlink"
