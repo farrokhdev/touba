@@ -256,7 +256,8 @@ class CompanyProfileEdit extends CompanyProfileController {
             address,
             phoneCode,
             phoneNumber,
-            contactSuplier
+            contactSuplier,
+            modalLocation
         } = this.state;
         return (
             <>
@@ -330,7 +331,7 @@ class CompanyProfileEdit extends CompanyProfileController {
                     </div>
                     <div className="body-content-items-location">
                         <div className="body-content-items-location-icon">
-                            <img src={IconEditSorme} alt="" onClick={this.handleShowModalDescription} />
+                            <img src={IconEditSorme} alt="" onClick={this.handleShowModalLocation} />
                         </div>
                         <div className="body-content-items-location-map">
                             <Map />
@@ -345,15 +346,15 @@ class CompanyProfileEdit extends CompanyProfileController {
                             placeholder={""}
                             type={"text"}
                             showDropDown={false}
-                            onChange={(event) => this.setState({address: event.currentTarget.value})}
+                            onChange={(event) => this.setState({ address: event.currentTarget.value })}
                         />
                         <div className="input-group">
                             <InputTextPhoneNumber
                                 valueCode={phoneCode}
                                 valuephone={phoneNumber}
                                 title={"Phone Number"}
-                                onChangeCode={(event) => {this.setState({phoneCode: event.currentTarget.value}) }}
-                                onChangePhone={(event) => {this.setState({phoneNumber: event.currentTarget.value}) }}
+                                onChangeCode={(event) => { this.setState({ phoneCode: event.currentTarget.value }) }}
+                                onChangePhone={(event) => { this.setState({ phoneNumber: event.currentTarget.value }) }}
                             />
                             <SelectComponent
                                 type={"two"}
@@ -369,7 +370,7 @@ class CompanyProfileEdit extends CompanyProfileController {
                                 placeholder={""}
                                 type={"text"}
                                 showDropDown={false}
-                                onChange={(event) => this.setState({contactSuplier: event.currentTarget.value})}
+                                onChange={(event) => this.setState({ contactSuplier: event.currentTarget.value })}
                             />
                             <SelectComponent
                                 type={"two"}
@@ -384,6 +385,11 @@ class CompanyProfileEdit extends CompanyProfileController {
                                 handleGetImage={() => { }}
                             />
                         </div>
+                    </ModalCompany>
+                ) : (null)}
+                {modalLocation === true ? (
+                    <ModalCompany onClose={this.handleCloseModalLocation} onSave={() => { }}>
+                        <Map/>
                     </ModalCompany>
                 ) : (null)}
             </>

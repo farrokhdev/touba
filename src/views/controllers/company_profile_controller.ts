@@ -62,6 +62,7 @@ interface IState {
     phoneCode: string | number,
     phoneNumber: string | number,
     contactSuplier: string;
+    modalLocation: boolean;
 }
 
 export const TEST_NAV_ITEM = [
@@ -148,6 +149,7 @@ export class CompanyProfileController extends Component<IProps, IState> {
         phoneCode: "",
         phoneNumber: "",
         contactSuplier: "",
+        modalLocation: false,
     };
 
     handleGetActiveLink = (id: number) => {
@@ -321,6 +323,14 @@ export class CompanyProfileController extends Component<IProps, IState> {
 
     handleCloseModalContact = () => {
         this.setState({modalContact: false})
+    };
+
+    handleShowModalLocation = () => {
+        this.setState({modalLocation: true})
+    };
+
+    handleCloseModalLocation = () => {
+        this.setState({modalLocation: false})
     };
 }
 export default CompanyProfileController;
