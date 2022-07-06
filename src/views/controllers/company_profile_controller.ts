@@ -90,7 +90,7 @@ export const TEST_NAV_ITEM = [
 export class CompanyProfileController extends Component<IProps, IState> {
 
     state = {
-        activeLink: 1,
+        activeLink: 2,
         image: "",
         activeTab: 1,
         modalDelete: false,

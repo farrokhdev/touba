@@ -1,8 +1,9 @@
-import { IconCalling, IconCallSorme, IconDeletGreen, IconEdit, IconEditSorme, IconImageBlack, IconLocationSorme, IconPaperBlack, IconStarSorme, IconWalletSorme, ImageBanner, ImageCertificate } from "../../../assets";
+import { IconCalling, IconCallSorme, IconDeletGreen, IconEdit, IconEditSorme, IconImageBlack, IconLocation, IconLocationSorme, IconPaperBlack, IconStarSorme, IconWalletSorme, ImageBanner, ImageCertificate, ImageManager, ImagePerson } from "../../../assets";
 import ButtonAdd from "../../components/button_add";
-import { CardFAQ, CardUploadImage, InputDate, InputTextLabel, ModalCompany, ModalComponent, SelectComponent, TextAreaLabel, TextAreaLabelImage } from "../../components/components";
+import { ButtonOutline, CardFAQ, CardUploadImage, InputDate, InputTextLabel, Map, ModalCompany, ModalComponent, SelectComponent, TextAreaLabel, TextAreaLabelImage } from "../../components/components";
 import DashboardNav from "../../components/dashboard_nav";
 import DeleteImage from "../../components/delete_image";
+import { Divider } from "../../components/divider";
 import MyCompanyNav from "../../components/mycompany_nav";
 import { SideNavItems } from "../../components/side_nav_items";
 import CompanyProfileController, { TEST_NAV_ITEM } from "../../controllers/company_profile_controller";
@@ -15,6 +16,323 @@ const items = [
 ]
 
 class CompanyProfileEdit extends CompanyProfileController {
+    sectionAboutPage() {
+        const {
+            modalDelete,
+            modalDescription,
+            modalDetails,
+            establishedYear,
+            mainProducts,
+            mainMarket,
+            numberOfEmployee,
+            registeredCapital,
+            activeTab,
+            modalAddCertificate,
+            modalEditCertificate,
+            certificateName,
+            modalFAQ,
+            question,
+        } = this.state;
+        return (
+            <>
+                <div className="body-content-header">
+                    <MyCompanyNav onActive={this.handleGetActiveTab} />
+                </div>
+                <div className="body-content-items">
+                    {activeTab === 1 ? (
+                        this.sectionDescription()
+                    ) : (
+                        activeTab === 2 ? (
+                            this.sectionSpecifications()
+                        ) : (
+                            activeTab === 3 ? (
+                                this.sectionCertificates()
+                            ) : (
+                                this.sectionFAQ()
+                            )
+                        )
+                    )}
+                </div>
+                {modalDelete === true ? (
+                    <DeleteImage onClick={this.handleCloseModalDelete} />
+                ) : (null)}
+                {modalDescription === true ? (
+                    <ModalCompany onClose={this.handleCloseModalDescription} onSave={this.handleSubmitChangeDescription}>
+                        <TextAreaLabel title={"Introduction"} handleGetValue={this.handleGetDescription} />
+                    </ModalCompany>
+                ) : (null)}
+                {modalDetails === true ? (
+                    <ModalCompany onClose={this.handleCloseModalDetails} onSave={this.handleSaveDeatils}>
+                        <div className="input-group">
+                            <InputTextLabel
+                                value={establishedYear}
+                                title={"Established Year"}
+                                placeholder={"Technical Support"}
+                                type={"text"}
+                                showDropDown={false}
+                                onChange={(event) => { this.setState({ establishedYear: event.currentTarget.value }) }}
+                            />
+                            <SelectComponent
+                                type={"two"}
+                                placeholder={"Manufacturer/Factory"}
+                                onSelect={this.handleGetBusinessType}
+                                items={items}
+                                title="Business Type"
+                            />
+                        </div>
+                        <div className="input-group value-red-scound">
+                            <SelectComponent
+                                type={"two"}
+                                placeholder={"Technical Support"}
+                                onSelect={this.handleGetBusinessCategory}
+                                items={items}
+                                title="Business Category"
+                            />
+                            <InputTextLabel
+                                value={mainProducts}
+                                title={"Main Products"}
+                                placeholder={"Milk Powder , Food Powders , Food raw materials"}
+                                type={"text"}
+                                showDropDown={false}
+                                onChange={(event) => { this.setState({ mainProducts: event.currentTarget.value }) }}
+                            />
+                        </div>
+                        <div className="input-group value-red-scound">
+                            <SelectComponent
+                                type={"two"}
+                                placeholder={"Technical Support"}
+                                onSelect={this.handleGetBusinessCategory}
+                                items={items}
+                                title="Business Category"
+                            />
+                            <InputTextLabel
+                                value={mainProducts}
+                                title={"Main Products"}
+                                placeholder={"Milk Powder , Food Powders , Food raw materials"}
+                                type={"text"}
+                                showDropDown={false}
+                                onChange={(event) => { this.setState({ mainProducts: event.currentTarget.value }) }}
+                            />
+                        </div>
+                        <div className="input-group value-red-first">
+                            <InputTextLabel
+                                value={mainMarket}
+                                title={"Main Market"}
+                                placeholder={"Iran , Iraq , Turkey "}
+                                type={"text"}
+                                showDropDown={false}
+                                onChange={(event) => { this.setState({ mainMarket: event.currentTarget.value }) }}
+                            />
+                            <InputTextLabel
+                                value={numberOfEmployee}
+                                title={"Number of empolyee"}
+                                placeholder={"30000"}
+                                type={"text"}
+                                showDropDown={false}
+                                onChange={(event) => { this.setState({ numberOfEmployee: event.currentTarget.value }) }}
+                            />
+                        </div>
+                        <div className="input-group value-red-first">
+                            <InputTextLabel
+                                value={mainMarket}
+                                title={"Main Market"}
+                                placeholder={"Iran , Iraq , Turkey "}
+                                type={"text"}
+                                showDropDown={false}
+                                onChange={(event) => { this.setState({ mainMarket: event.currentTarget.value }) }}
+                            />
+                            <InputTextLabel
+                                value={numberOfEmployee}
+                                title={"Number of empolyee"}
+                                placeholder={"30000"}
+                                type={"text"}
+                                showDropDown={false}
+                                onChange={(event) => { this.setState({ numberOfEmployee: event.currentTarget.value }) }}
+                            />
+                        </div>
+                        <div className="input-group">
+                            <InputTextLabel
+                                value={registeredCapital}
+                                title={"Registered Capital"}
+                                placeholder={"2000000 RMB"}
+                                type={"text"}
+                                showDropDown={false}
+                                onChange={(event) => { this.setState({ registeredCapital: event.currentTarget.value }) }}
+                            />
+                            <SelectComponent
+                                type={"two"}
+                                placeholder={">2000 square meters"}
+                                onSelect={this.handleGetPlantArea}
+                                items={items}
+                                title="Plant Area"
+                            />
+                        </div>
+                    </ModalCompany>
+                ) : (null)}
+                {modalAddCertificate === true ? (
+                    <ModalCompany onClose={this.handleCloseModalAddCretificate} onSave={this.handleAddCertificatios}>
+                        <div className="input-group">
+                            <InputTextLabel
+                                value={certificateName}
+                                title={"Certificate"}
+                                placeholder={""}
+                                type={"text"}
+                                showDropDown={false}
+                                onChange={(event) => this.setState({ certificateName: event.currentTarget.value })}
+                            />
+                            <SelectComponent
+                                type={"two"}
+                                placeholder={""}
+                                onSelect={this.handleGetCodeCertificate}
+                                items={items}
+                                title="Code"
+                            />
+                        </div>
+                        <div className="input-group">
+                            <InputDate title={"Registered Date"} handleGetValue={this.handleGetDateRegister} />
+                            <InputDate title={"Registered Date"} handleGetValue={this.handleGetDateExpire} />
+                        </div>
+                        <div className="card-image">
+                            <CardUploadImage
+                                title={"Upload Certificate Image Here"}
+                                handleGetImage={this.handleGetImageCertificate}
+                            />
+                        </div>
+                    </ModalCompany>
+                ) : (null)}
+                {modalEditCertificate === true ? (
+                    <ModalCompany onClose={this.handleCloseModalEditCretificate} onSave={this.handleEditCertificatios}>
+                        <div className="input-group">
+                            <InputTextLabel
+                                value={certificateName}
+                                title={"Certificate"}
+                                placeholder={""}
+                                type={"text"}
+                                showDropDown={false}
+                                onChange={(event) => this.setState({ certificateName: event.currentTarget.value })}
+                            />
+                            <SelectComponent
+                                type={"two"}
+                                placeholder={""}
+                                onSelect={this.handleGetCodeCertificate}
+                                items={items}
+                                title="Code"
+                            />
+                        </div>
+                        <div className="input-group">
+                            <InputDate title={"Registered Date"} handleGetValue={this.handleGetDateRegister} />
+                            <InputDate title={"Registered Date"} handleGetValue={this.handleGetDateExpire} />
+                        </div>
+                        <div className="card-image">
+                            <CardUploadImage
+                                title={"Upload Certificate Image Here"}
+                                handleGetImage={this.handleGetImageCertificate}
+                            />
+                        </div>
+                    </ModalCompany>
+                ) : (null)}
+                {modalFAQ === true ? (
+                    <ModalCompany onClose={this.handleCloseModalFAQ} onSave={() => { }}>
+                        <InputTextLabel
+                            value={question}
+                            title={"Question"}
+                            placeholder={""}
+                            type={"text"}
+                            showDropDown={false}
+                            onChange={(event) => { this.setState({ question: event.currentTarget.value }) }}
+                        />
+                        <TextAreaLabelImage
+                            title={"Answer"}
+                            handleGetValues={this.handleGetValuesFAQ}
+                        />
+                    </ModalCompany>
+                ) : (null)}
+            </>
+        )
+    }
+    sectionContactUs() {
+        return (
+            <>
+                <div className="body-content-items mt-4">
+                    <div className="body-content-items-title">
+                        <h4 className="body-content-items-title-text">
+                            Contact Us Page
+                        </h4>
+                        <ButtonOutline title={"View as visitor"} />
+                    </div>
+                    <div className="body-content-items-contact-us">
+                        <div className="body-content-items-contact-us-icon">
+                            <img src={IconEditSorme} alt="" onClick={this.handleShowModalDescription} />
+                        </div>
+                        <div className="body-content-items-contact-us-details">
+                            <div className="body-content-items-contact-us-details-text">
+                                <img src={IconLocation} alt="" />
+                                <div>
+                                    <h6>
+                                        Address:
+                                    </h6>
+                                    <h5>
+                                        Yanjialing Village, Tongji Office, Jimo District, Qingdao, Shandong, China 266000
+                                    </h5>
+                                </div>
+                            </div>
+                            <div className="body-content-items-contact-us-details-text">
+                                <img src={IconLocation} alt="" />
+                                <div>
+                                    <h6>
+                                        Local Time:
+                                    </h6>
+                                    <h5>
+                                        4:25PM Thu Jan 27
+                                    </h5>
+                                </div>
+                            </div>
+                            <div className="body-content-items-contact-us-details-text">
+                                <img src={IconLocation} alt="" />
+                                <div>
+                                    <h6>
+                                        Telephone:
+                                    </h6>
+                                    <h5>
+                                        +98-9120295053
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="body-content-items-person">
+                        <h5 className="body-content-items-person-title">
+                            Message Supplier:
+                        </h5>
+                        <img
+                            src={ImageManager}
+                            alt=""
+                            className="body-content-items-person-image"
+                        />
+                        <div className="body-content-items-person-name">
+                            <h5>
+                                Name Here
+                            </h5>
+                            <h6>
+                                SALES MANAGER
+                            </h6>
+                        </div>
+                    </div>
+                    <div className="body-content-items-divider">
+                        <Divider direction="vertical" />
+                    </div>
+                    <div className="body-content-items-location">
+                        <div className="body-content-items-location-icon">
+                            <img src={IconEditSorme} alt="" onClick={this.handleShowModalDescription} />
+                        </div>
+                        <div className="body-content-items-location-map">
+                            <Map/>
+                        </div>
+                    </div>
+                </div>
+            </>
+        )
+    }
     sectionDescription() {
         const {
             image,
@@ -742,20 +1060,7 @@ class CompanyProfileEdit extends CompanyProfileController {
     }
     render() {
         const {
-            modalDelete,
-            modalDescription,
-            modalDetails,
-            establishedYear,
-            mainProducts,
-            mainMarket,
-            numberOfEmployee,
-            registeredCapital,
-            activeTab,
-            modalAddCertificate,
-            modalEditCertificate,
-            certificateName,
-            modalFAQ,
-            question,
+            activeLink,
         } = this.state;
         return (
             <div className="company-profile-edit">
@@ -765,218 +1070,17 @@ class CompanyProfileEdit extends CompanyProfileController {
                         <SideNavItems items={TEST_NAV_ITEM} onActive={this.handleGetActiveLink} />
                     </div>
                     <div className="body-content">
-                        <div className="body-content-header">
-                            <MyCompanyNav onActive={this.handleGetActiveTab} />
-                        </div>
-                        <div className="body-content-items">
-                            {activeTab === 1 ? (
-                                this.sectionDescription()
+                        {activeLink === 1 ? (
+                            this.sectionAboutPage()
+                        ) : (
+                            activeLink === 2 ? (
+                                this.sectionContactUs()
                             ) : (
-                                activeTab === 2 ? (
-                                    this.sectionSpecifications()
-                                ) : (
-                                    activeTab === 3 ? (
-                                        this.sectionCertificates()
-                                    ) : (
-                                        this.sectionFAQ()
-                                    )
-                                )
-                            )}
-                        </div>
-                        {modalDelete === true ? (
-                            <DeleteImage onClick={this.handleCloseModalDelete} />
-                        ) : (null)}
-                        {modalDescription === true ? (
-                            <ModalCompany onClose={this.handleCloseModalDescription} onSave={this.handleSubmitChangeDescription}>
-                                <TextAreaLabel title={"Introduction"} handleGetValue={this.handleGetDescription} />
-                            </ModalCompany>
-                        ) : (null)}
-                        {modalDetails === true ? (
-                            <ModalCompany onClose={this.handleCloseModalDetails} onSave={this.handleSaveDeatils}>
-                                <div className="input-group">
-                                    <InputTextLabel
-                                        value={establishedYear}
-                                        title={"Established Year"}
-                                        placeholder={"Technical Support"}
-                                        type={"text"}
-                                        showDropDown={false}
-                                        onChange={(event) => { this.setState({ establishedYear: event.currentTarget.value }) }}
-                                    />
-                                    <SelectComponent
-                                        type={"two"}
-                                        placeholder={"Manufacturer/Factory"}
-                                        onSelect={this.handleGetBusinessType}
-                                        items={items}
-                                        title="Business Type"
-                                    />
-                                </div>
-                                <div className="input-group value-red-scound">
-                                    <SelectComponent
-                                        type={"two"}
-                                        placeholder={"Technical Support"}
-                                        onSelect={this.handleGetBusinessCategory}
-                                        items={items}
-                                        title="Business Category"
-                                    />
-                                    <InputTextLabel
-                                        value={mainProducts}
-                                        title={"Main Products"}
-                                        placeholder={"Milk Powder , Food Powders , Food raw materials"}
-                                        type={"text"}
-                                        showDropDown={false}
-                                        onChange={(event) => { this.setState({ mainProducts: event.currentTarget.value }) }}
-                                    />
-                                </div>
-                                <div className="input-group value-red-scound">
-                                    <SelectComponent
-                                        type={"two"}
-                                        placeholder={"Technical Support"}
-                                        onSelect={this.handleGetBusinessCategory}
-                                        items={items}
-                                        title="Business Category"
-                                    />
-                                    <InputTextLabel
-                                        value={mainProducts}
-                                        title={"Main Products"}
-                                        placeholder={"Milk Powder , Food Powders , Food raw materials"}
-                                        type={"text"}
-                                        showDropDown={false}
-                                        onChange={(event) => { this.setState({ mainProducts: event.currentTarget.value }) }}
-                                    />
-                                </div>
-                                <div className="input-group value-red-first">
-                                    <InputTextLabel
-                                        value={mainMarket}
-                                        title={"Main Market"}
-                                        placeholder={"Iran , Iraq , Turkey "}
-                                        type={"text"}
-                                        showDropDown={false}
-                                        onChange={(event) => { this.setState({ mainMarket: event.currentTarget.value }) }}
-                                    />
-                                    <InputTextLabel
-                                        value={numberOfEmployee}
-                                        title={"Number of empolyee"}
-                                        placeholder={"30000"}
-                                        type={"text"}
-                                        showDropDown={false}
-                                        onChange={(event) => { this.setState({ numberOfEmployee: event.currentTarget.value }) }}
-                                    />
-                                </div>
-                                <div className="input-group value-red-first">
-                                    <InputTextLabel
-                                        value={mainMarket}
-                                        title={"Main Market"}
-                                        placeholder={"Iran , Iraq , Turkey "}
-                                        type={"text"}
-                                        showDropDown={false}
-                                        onChange={(event) => { this.setState({ mainMarket: event.currentTarget.value }) }}
-                                    />
-                                    <InputTextLabel
-                                        value={numberOfEmployee}
-                                        title={"Number of empolyee"}
-                                        placeholder={"30000"}
-                                        type={"text"}
-                                        showDropDown={false}
-                                        onChange={(event) => { this.setState({ numberOfEmployee: event.currentTarget.value }) }}
-                                    />
-                                </div>
-                                <div className="input-group">
-                                    <InputTextLabel
-                                        value={registeredCapital}
-                                        title={"Registered Capital"}
-                                        placeholder={"2000000 RMB"}
-                                        type={"text"}
-                                        showDropDown={false}
-                                        onChange={(event) => { this.setState({ registeredCapital: event.currentTarget.value }) }}
-                                    />
-                                    <SelectComponent
-                                        type={"two"}
-                                        placeholder={">2000 square meters"}
-                                        onSelect={this.handleGetPlantArea}
-                                        items={items}
-                                        title="Plant Area"
-                                    />
-                                </div>
-                            </ModalCompany>
-                        ) : (null)}
-                        {modalAddCertificate === true ? (
-                            <ModalCompany onClose={this.handleCloseModalAddCretificate} onSave={this.handleAddCertificatios}>
-                                <div className="input-group">
-                                    <InputTextLabel
-                                        value={certificateName}
-                                        title={"Certificate"}
-                                        placeholder={""}
-                                        type={"text"}
-                                        showDropDown={false}
-                                        onChange={(event) => this.setState({ certificateName: event.currentTarget.value })}
-                                    />
-                                    <SelectComponent
-                                        type={"two"}
-                                        placeholder={""}
-                                        onSelect={this.handleGetCodeCertificate}
-                                        items={items}
-                                        title="Code"
-                                    />
-                                </div>
-                                <div className="input-group">
-                                    <InputDate title={"Registered Date"} handleGetValue={this.handleGetDateRegister} />
-                                    <InputDate title={"Registered Date"} handleGetValue={this.handleGetDateExpire} />
-                                </div>
-                                <div className="card-image">
-                                    <CardUploadImage
-                                        title={"Upload Certificate Image Here"}
-                                        handleGetImage={this.handleGetImageCertificate}
-                                    />
-                                </div>
-                            </ModalCompany>
-                        ) : (null)}
-                        {modalEditCertificate === true ? (
-                            <ModalCompany onClose={this.handleCloseModalEditCretificate} onSave={this.handleEditCertificatios}>
-                                <div className="input-group">
-                                    <InputTextLabel
-                                        value={certificateName}
-                                        title={"Certificate"}
-                                        placeholder={""}
-                                        type={"text"}
-                                        showDropDown={false}
-                                        onChange={(event) => this.setState({ certificateName: event.currentTarget.value })}
-                                    />
-                                    <SelectComponent
-                                        type={"two"}
-                                        placeholder={""}
-                                        onSelect={this.handleGetCodeCertificate}
-                                        items={items}
-                                        title="Code"
-                                    />
-                                </div>
-                                <div className="input-group">
-                                    <InputDate title={"Registered Date"} handleGetValue={this.handleGetDateRegister} />
-                                    <InputDate title={"Registered Date"} handleGetValue={this.handleGetDateExpire} />
-                                </div>
-                                <div className="card-image">
-                                    <CardUploadImage
-                                        title={"Upload Certificate Image Here"}
-                                        handleGetImage={this.handleGetImageCertificate}
-                                    />
-                                </div>
-                            </ModalCompany>
-                        ) : (null)}
-                        {modalFAQ === true ? (
-                            <ModalCompany onClose={this.handleCloseModalFAQ} onSave={() => { }}>
-                                <InputTextLabel
-                                    value={question}
-                                    title={"Question"}
-                                    placeholder={""}
-                                    type={"text"}
-                                    showDropDown={false}
-                                    onChange={(event) => { this.setState({ question: event.currentTarget.value }) }}
-                                />
-                                <TextAreaLabelImage
-                                    title={"Answer"}
-                                    handleGetValues={this.handleGetValuesFAQ}
-                                />
-                            </ModalCompany>
-                        ) : (null)}
+                                <h3>
+                                    sdfsdf
+                                </h3>
+                            )
+                        )}
                     </div>
                 </div>
             </div>
