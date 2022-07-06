@@ -7,7 +7,7 @@ interface Props {
     handleGetImage(image: string): void;
 }
 
-export function CardUploadImage({ handleGetImage }: Props): ReactElement {
+export function CardUploadImage({ handleGetImage, title }: Props): ReactElement {
 
     const [image, setImage] = useState("");
 
@@ -39,7 +39,7 @@ export function CardUploadImage({ handleGetImage }: Props): ReactElement {
                             />
                         </div>
                         <h5 className="card-upload-image-content-text">
-                            Upload Certificate Image Here
+                            {title}
                         </h5>
                     </div>
                 </div>
