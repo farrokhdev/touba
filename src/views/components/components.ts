@@ -96,6 +96,7 @@ export { default as ModalCompany } from './modal_company';
 export { default as TextAreaLabel } from './textarea_lable';
 export { default as InputDate } from './input_date';
 export { default as CardUploadImage } from './card_upload_image';
+export { default as TextAreaLabelImage } from './textarea_lable_image';
 
 
 
