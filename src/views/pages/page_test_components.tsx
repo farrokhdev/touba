@@ -120,15 +120,15 @@ class PageTestComponents extends Component {
     };
 
     handleShowModal = () => {
-        this.setState({showmodal: true});
+        this.setState({ showmodal: true });
     }
 
     handleCloseModal = () => {
-        this.setState({showmodal: false});
+        this.setState({ showmodal: false });
     }
 
     handleGetActiveLink = (id: number) => {
-        this.setState({activeLink: id})
+        this.setState({ activeLink: id })
     }
 
     render() {
@@ -219,10 +219,10 @@ class PageTestComponents extends Component {
                 ) : null}
                 <MyCompanyNav onActive={function (id: number): void {
                     throw new Error("Function not implemented.");
-                } } />
+                }} />
                 <ProfileHeaderImage />
                 <OrderHead orderNumber={2334217651} client="Saber Noori" />
-                <Location index={1} name={"Bandar Abbas Office"} area={"BandarAbbas, Iran"}/>
+                <Location index={1} name={"Bandar Abbas Office"} area={"BandarAbbas, Iran"} />
                 <div style={{ width: "1200px", height: "670px" }}>
                     <CongratulationBanner activeTab="Other Details" />
                 </div>
