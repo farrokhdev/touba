@@ -29,7 +29,9 @@ export function CardCalculate({ amount, value, onChange }: Props): ReactElement 
             <p className="card-calculate-amount"> $ {amount} </p>
             <p className="card-calculate-equal"> = </p>
             <p className="card-calculate-value">${value * amount}</p>
-            <Button title={"ADD TO CART"} />
+            <div className="card-calculate-button">
+                <Button title={"ADD TO CART"} />
+            </div>
         </div>
     )
 }

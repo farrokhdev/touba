@@ -64,4 +64,8 @@
         @include FontStyle(22px, 800, $white);
         margin: 0;
     }
+
+    &-button {
+        width: 158px;
+    }
 }

@@ -2767,6 +2767,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   margin: 0%;
+  white-space: nowrap;
 }
 
 .card-offer-horizontal-content-item-description-rate > img {
@@ -2800,6 +2801,7 @@ a {
   font-weight: 600 !important;
   font-size: 10px !important;
   color: #000000 !important;
+  margin: 0;
 }
 
 .card-offer-horizontal-content-country {
@@ -3220,6 +3222,10 @@ a {
   font-size: 22px !important;
   color: #FFFFFF !important;
   margin: 0;
+}
+
+.card-calculate-button {
+  width: 158px;
 }
 
 .card-collection-best {
