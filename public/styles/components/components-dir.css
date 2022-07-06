@@ -1,3 +1,7 @@
+.border-bottom-dashed {
+  border-bottom: 2px dashed #D6D6D6;
+}
+
 .leaflet-container {
   height: 30vh;
 }
@@ -914,6 +918,10 @@ a {
   /* Sorme */
   color: #3c557a;
   z-index: 1;
+}
+
+.border-optional {
+  border: 1px solid #D6D6D6;
 }
 
 .card-main {
@@ -7442,6 +7450,7 @@ a {
 
 .item-Profile .item {
   margin-top: 38px;
+  padding: 20px 25px;
 }
 
 .item-Profile .item-Logo {
@@ -8321,14 +8330,6 @@ a {
   border-radius: 12px;
 }
 
-.product-detail-box .progress-detail {
-  height: 5px;
-}
-
-.product-detail-box .progress-bar-detail {
-  background-color: #21C085;
-}
-
 .product-detail-box .header-text {
   width: auto;
   height: auto;
@@ -8351,6 +8352,14 @@ a {
 
 .border-right-dashed {
   border-right: 1px dashed #D6D6D6;
+}
+
+.progress-detail {
+  height: 5px !important;
+}
+
+.progress-bar-detail {
+  background-color: #21C085;
 }
 
 .component-company-modal {
@@ -8718,6 +8727,50 @@ a {
 }
 
 .color-picker-box .btn-cancle {
+  background: #6b798c;
+  border-radius: 8px;
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  color: #ffffff !important;
+  outline: none;
+  border: none;
+  white-space: nowrap;
+}
+
+.btn-save-change {
+  background: #21c085;
+  border-radius: 8px;
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  color: #ffffff !important;
+  outline: none;
+  border: none;
+  white-space: nowrap;
+}
+
+.btn-outline {
+  background: #FFFFFF;
+  /* Green Brand */
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  color: #21C085 !important;
+  border: 1px solid #21C085;
+  border-radius: 8px;
+}
+
+.btn-cancle {
   background: #6b798c;
   border-radius: 8px;
   width: auto;
@@ -10230,7 +10283,7 @@ a {
 
 .activity-chart .chart-head .chart-btn {
   border-radius: 75px;
-  background: #d6d6d6;
+  background: #f3f4f6;
   padding: 8px;
 }
 
@@ -10866,6 +10919,126 @@ a {
   margin: 0;
 }
 
+.text-area {
+  /* Border */
+  position: relative;
+}
+
+.text-area .input-area {
+  background-color: #FFFFFF;
+  outline: none;
+  border: none;
+  border: 1px solid #D6D6D6;
+  border-radius: 8px;
+  min-height: 50vh;
+}
+
+.text-area .title {
+  font-size: 10px;
+  position: absolute;
+  top: -10px;
+  left: 30px;
+  background: white;
+  font-size: 12px;
+  font-weight: 500;
+  color: #3c557a;
+}
+
+.text-area .input-area::-webkit-input-placeholder {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  color: #3C557A !important;
+}
+
+.text-area .input-area:-ms-input-placeholder {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  color: #3C557A !important;
+}
+
+.text-area .input-area::-ms-input-placeholder {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  color: #3C557A !important;
+}
+
+.text-area .input-area::placeholder {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  color: #3C557A !important;
+}
+
+.textarea-lable {
+  width: 100%;
+  position: relative;
+}
+
+.textarea-lable-title {
+  background-color: #FFFFFF;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+  padding: 3px 12px;
+  position: absolute;
+  top: -10px;
+  left: 20px;
+}
+
+.textarea-lable-title-text {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 12px !important;
+  color: #3c557a !important;
+  margin: 0;
+}
+
+.textarea-lable-input {
+  width: 100% !important;
+  min-height: 300px;
+  border: 1px solid #d6d6d6 !important;
+  border-radius: 12px !important;
+  padding: 40px 20px;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 16px;
+  color: #3c557a;
+}
+
+.textarea-lable-input:focus {
+  outline: none;
+}
+
 .textarea-lable {
   width: 100%;
   position: relative;
@@ -11294,5 +11467,70 @@ a {
   width: 32px;
   height: 32px;
   z-index: 1;
+}
+
+.text-area {
+  /* Border */
+  position: relative;
+}
+
+.text-area .input-area {
+  background-color: #FFFFFF;
+  outline: none;
+  border: none;
+  border: 1px solid #D6D6D6;
+  border-radius: 8px;
+  min-height: 50vh;
+}
+
+.text-area .title {
+  font-size: 10px;
+  position: absolute;
+  top: -10px;
+  left: 30px;
+  background: white;
+  font-size: 12px;
+  font-weight: 500;
+  color: #3c557a;
+}
+
+.text-area .input-area::-webkit-input-placeholder {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  color: #3C557A !important;
+}
+
+.text-area .input-area:-ms-input-placeholder {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  color: #3C557A !important;
+}
+
+.text-area .input-area::-ms-input-placeholder {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  color: #3C557A !important;
+}
+
+.text-area .input-area::placeholder {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  color: #3C557A !important;
 }
 /*# sourceMappingURL=components-dir.css.map */

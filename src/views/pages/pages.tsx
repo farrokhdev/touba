@@ -39,6 +39,7 @@ import DashboardLikeCard from "./DashboardLikeCard/dashboard_like_card";
 import DashboardTableOrder from "./DashbordTableOrder/dashboard_table_order";
 import Dashboard from "../layout/dashboard/dashobord";
 import ComponentStorage from "../components/component_storage";
+import DashboardFinance from "./DashboardFinance/DashboatdFinance";
 import DashboardCompanyProfile from "./dashboardCompanyProfile/dashboard_company_profile";
 
 function Pages() {
@@ -92,7 +93,11 @@ function Pages() {
             <Routes>
               <Route path="/dashboard" element={<DashboardPage />} />
               <Route path="/dashboard/edit-order" element={<EditOrder />} />
-              <Route path="/dashboard/details-order" element={<DetailsOrder />} />
+              <Route
+                path="/dashboard/details-order"
+                element={<DetailsOrder />}
+              />
+              <Route path="/dashboard/finance" element={<DashboardFinance />} />
               <Route
                 path="/dashboard-table-order"
                 element={<DashboardTableOrder />}
@@ -105,10 +110,8 @@ function Pages() {
             </Routes>
           </div>
         </div>
-      ) : (null)
-      }
+      ) : null}
       <Routes>
-
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutusPage />} />
         <Route path="/login" element={<Login />} />
@@ -126,23 +129,18 @@ function Pages() {
 
         <Route path="/test" element={<PageTestComponent />} />
       </Routes>
-      {
-        location.pathname.includes("/login") ||
-          location.pathname.includes("/register") ||
-          location.pathname.includes("/membership") ||
-          location.pathname.includes("/dashboard") ||
-          location.pathname.includes("/dashboard-table-order") ||
-          location.pathname.includes("/dashboard-like-card") ||
-          location.pathname.includes("/dashboard/edit-order") ||
-          location.pathname.includes("/dashboard/details-order")
-
-          ? null : (
-            <>
-              <Footer />
-            </>
-          )
-      }
-    </div >
+      {location.pathname.includes("/login") ||
+      location.pathname.includes("/register") ||
+      location.pathname.includes("/dashboard") ||
+      location.pathname.includes("/dashboard-table-order") ||
+      location.pathname.includes("/dashboard-like-card") ||
+      location.pathname.includes("/dashboard/edit-order") ||
+      location.pathname.includes("/dashboard/details-order") ? null : (
+        <>
+          <Footer />
+        </>
+      )}
+    </div>
   );
 }
 
