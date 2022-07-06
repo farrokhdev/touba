@@ -1,6 +1,6 @@
 import { IconCalling, IconCallSorme, IconDeletGreen, IconEdit, IconEditSorme, IconImageBlack, IconLocation, IconLocationSorme, IconPaperBlack, IconStarSorme, IconWalletSorme, ImageBanner, ImageCertificate, ImageManager, ImagePerson } from "../../../assets";
 import ButtonAdd from "../../components/button_add";
-import { ButtonOutline, CardFAQ, CardUploadImage, InputDate, InputTextLabel, Map, ModalCompany, ModalComponent, SelectComponent, TextAreaLabel, TextAreaLabelImage } from "../../components/components";
+import { ButtonOutline, CardFAQ, CardUploadImage, InputDate, InputTextLabel, InputTextPhoneNumber, Map, ModalCompany, ModalComponent, SelectComponent, TextAreaLabel, TextAreaLabelImage } from "../../components/components";
 import DashboardNav from "../../components/dashboard_nav";
 import DeleteImage from "../../components/delete_image";
 import { Divider } from "../../components/divider";
@@ -251,6 +251,13 @@ class CompanyProfileEdit extends CompanyProfileController {
         )
     }
     sectionContactUs() {
+        const {
+            modalContact,
+            address,
+            phoneCode,
+            phoneNumber,
+            contactSuplier
+        } = this.state;
         return (
             <>
                 <div className="body-content-items mt-4">
@@ -262,7 +269,7 @@ class CompanyProfileEdit extends CompanyProfileController {
                     </div>
                     <div className="body-content-items-contact-us">
                         <div className="body-content-items-contact-us-icon">
-                            <img src={IconEditSorme} alt="" onClick={this.handleShowModalDescription} />
+                            <img src={IconEditSorme} alt="" onClick={this.handleShowModalContact} />
                         </div>
                         <div className="body-content-items-contact-us-details">
                             <div className="body-content-items-contact-us-details-text">
@@ -326,10 +333,59 @@ class CompanyProfileEdit extends CompanyProfileController {
                             <img src={IconEditSorme} alt="" onClick={this.handleShowModalDescription} />
                         </div>
                         <div className="body-content-items-location-map">
-                            <Map/>
+                            <Map />
                         </div>
                     </div>
                 </div>
+                {modalContact === true ? (
+                    <ModalCompany onClose={this.handleCloseModalContact} onSave={() => { }}>
+                        <InputTextLabel
+                            value={address}
+                            title={"Address"}
+                            placeholder={""}
+                            type={"text"}
+                            showDropDown={false}
+                            onChange={(event) => this.setState({address: event.currentTarget.value})}
+                        />
+                        <div className="input-group">
+                            <InputTextPhoneNumber
+                                valueCode={phoneCode}
+                                valuephone={phoneNumber}
+                                title={"Phone Number"}
+                                onChangeCode={(event) => {this.setState({phoneCode: event.currentTarget.value}) }}
+                                onChangePhone={(event) => {this.setState({phoneNumber: event.currentTarget.value}) }}
+                            />
+                            <SelectComponent
+                                type={"two"}
+                                onSelect={() => { }}
+                                items={items}
+                                title="Time Zone"
+                            />
+                        </div>
+                        <div className="input-group">
+                            <InputTextLabel
+                                value={contactSuplier}
+                                title={"Supplier Name"}
+                                placeholder={""}
+                                type={"text"}
+                                showDropDown={false}
+                                onChange={(event) => this.setState({contactSuplier: event.currentTarget.value})}
+                            />
+                            <SelectComponent
+                                type={"two"}
+                                onSelect={() => { }}
+                                items={items}
+                                title="Position In Company"
+                            />
+                        </div>
+                        <div className="card-image-contact">
+                            <CardUploadImage
+                                title={"Upload Avatar"}
+                                handleGetImage={() => { }}
+                            />
+                        </div>
+                    </ModalCompany>
+                ) : (null)}
             </>
         )
     }

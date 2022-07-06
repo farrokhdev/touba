@@ -56,7 +56,12 @@ interface IState {
     faq: {
         image: string,
         text: string,
-    }
+    };
+    modalContact: boolean;
+    address: string;
+    phoneCode: string | number,
+    phoneNumber: string | number,
+    contactSuplier: string;
 }
 
 export const TEST_NAV_ITEM = [
@@ -137,7 +142,12 @@ export class CompanyProfileController extends Component<IProps, IState> {
         faq: {
             image: "",
             text: "",
-        }
+        },
+        modalContact: false,
+        address: "",
+        phoneCode: "",
+        phoneNumber: "",
+        contactSuplier: "",
     };
 
     handleGetActiveLink = (id: number) => {
@@ -303,6 +313,14 @@ export class CompanyProfileController extends Component<IProps, IState> {
     handleGetValuesFAQ = (image: string, text: string) => {
         const newFAQ = { image, text };
         this.setState({ faq: newFAQ })
-    }
+    };
+
+    handleShowModalContact = () => {
+        this.setState({modalContact: true})
+    };
+
+    handleCloseModalContact = () => {
+        this.setState({modalContact: false})
+    };
 }
 export default CompanyProfileController;

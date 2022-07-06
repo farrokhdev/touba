@@ -16968,7 +16968,7 @@ a {
 }
 
 .company-profile-edit .body-content-items-contact-us {
-  padding: 40px 0;
+  padding: 0 0 40px 0;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -17191,6 +17191,10 @@ a {
   margin: 20px 10px 0 0;
 }
 
+.company-profile-edit .body-content .input-group .input-text-phonenumber {
+  margin: 20px 10px 0 0;
+}
+
 .company-profile-edit .body-content .input-group .input-text-label-input {
   border: 1px solid #d6d6d6 !important;
   border-radius: 8px !important;
@@ -17218,6 +17222,11 @@ a {
 
 .company-profile-edit .body-content .card-image {
   width: 50% !important;
+  padding: 30px 0;
+}
+
+.company-profile-edit .body-content .card-image-contact {
+  width: 30% !important;
   padding: 30px 0;
 }
 

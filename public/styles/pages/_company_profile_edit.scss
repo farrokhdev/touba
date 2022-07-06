@@ -266,7 +266,7 @@
                 }
 
                 &-contact-us {
-                    padding: 40px 0;
+                    padding: 0 0 40px 0;
                     @include Display(flex, space-between, flex-start);
                     width: 100%;
 
@@ -355,6 +355,10 @@
                     margin: 20px 10px 0 0;
                 }
 
+                .input-text-phonenumber {
+                    margin: 20px 10px 0 0;
+                }
+
                 .input-text-label-input {
                     @include Border(1px, $gray, 8px);
 
@@ -371,6 +375,11 @@
 
             .card-image {
                 width: 50% !important;
+                padding: 30px 0;
+            }
+
+            .card-image-contact {
+                width: 30% !important;
                 padding: 30px 0;
             }
 

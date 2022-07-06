@@ -4,7 +4,7 @@ import { Divider } from "./components";
 
 interface Props extends InputHTMLAttributes<HTMLInputElement> {
     valueCode: string | number;
-    valuephone: string;
+    valuephone: string | number;
     title: string;
     onChangeCode(event: ChangeEvent<HTMLInputElement>): void;
     onChangePhone(event: ChangeEvent<HTMLInputElement>): void;
