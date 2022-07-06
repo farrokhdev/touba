@@ -51,6 +51,12 @@ interface IState {
     imageCertificate: string;
     certificate: CERTIFICATE[];
     idEditCertification?: string;
+    modalFAQ: boolean;
+    question: string;
+    faq: {
+        image: string,
+        text: string,
+    }
 }
 
 export const TEST_NAV_ITEM = [
@@ -126,6 +132,12 @@ export class CompanyProfileController extends Component<IProps, IState> {
             id: ""
         }],
         idEditCertification: "",
+        modalFAQ: false,
+        question: "",
+        faq: {
+            image: "",
+            text: "",
+        }
     };
 
     handleGetActiveLink = (id: number) => {
@@ -278,7 +290,19 @@ export class CompanyProfileController extends Component<IProps, IState> {
             })
         }
         this.setState({ modalEditCertificate: false })
-    }
+    };
 
+    handleShowModalFAQ = () => {
+        this.setState({ modalFAQ: true })
+    };
+
+    handleCloseModalFAQ = () => {
+        this.setState({ modalFAQ: false })
+    };
+
+    handleGetValuesFAQ = (image: string, text: string) => {
+        const newFAQ = { image, text };
+        this.setState({ faq: newFAQ })
+    }
 }
 export default CompanyProfileController;

@@ -1,6 +1,6 @@
 import { IconCalling, IconCallSorme, IconDeletGreen, IconEdit, IconEditSorme, IconImageBlack, IconLocationSorme, IconPaperBlack, IconStarSorme, IconWalletSorme, ImageBanner, ImageCertificate } from "../../../assets";
 import ButtonAdd from "../../components/button_add";
-import { CardUploadImage, InputDate, InputTextLabel, ModalCompany, ModalComponent, SelectComponent, TextAreaLabel } from "../../components/components";
+import { CardFAQ, CardUploadImage, InputDate, InputTextLabel, ModalCompany, ModalComponent, SelectComponent, TextAreaLabel, TextAreaLabelImage } from "../../components/components";
 import DashboardNav from "../../components/dashboard_nav";
 import DeleteImage from "../../components/delete_image";
 import MyCompanyNav from "../../components/mycompany_nav";
@@ -283,7 +283,7 @@ class CompanyProfileEdit extends CompanyProfileController {
                         Specifications
                     </h4>
                 </div>
-                <div className="body-content-items-details">
+                <div className="body-content-items-details pt-0">
                     <div className="body-content-items-details-icon">
                         <img
                             src={IconEditSorme}
@@ -719,6 +719,27 @@ class CompanyProfileEdit extends CompanyProfileController {
             </>
         )
     }
+    sectionFAQ() {
+        const {
+
+        } = this.state;
+        return (
+            <>
+                <div className="body-content-items-title">
+                    <h4 className="body-content-items-title-text">
+                        FAQ
+                    </h4>
+                </div>
+                <div className="body-content-items-faq">
+                    <CardFAQ open={true} showIcon={true} onClick={this.handleShowModalFAQ} />
+                    <CardFAQ open={true} showIcon={true} onClick={this.handleShowModalFAQ} />
+                </div>
+                <div className="body-content-items-button-add-faq">
+                    <ButtonAdd onClick={this.handleShowModalFAQ} />
+                </div>
+            </>
+        )
+    }
     render() {
         const {
             modalDelete,
@@ -729,11 +750,12 @@ class CompanyProfileEdit extends CompanyProfileController {
             mainMarket,
             numberOfEmployee,
             registeredCapital,
-            details,
             activeTab,
             modalAddCertificate,
             modalEditCertificate,
             certificateName,
+            modalFAQ,
+            question,
         } = this.state;
         return (
             <div className="company-profile-edit">
@@ -756,9 +778,7 @@ class CompanyProfileEdit extends CompanyProfileController {
                                     activeTab === 3 ? (
                                         this.sectionCertificates()
                                     ) : (
-                                        <h4>
-                                            fghfg
-                                        </h4>
+                                        this.sectionFAQ()
                                     )
                                 )
                             )}
@@ -939,6 +959,22 @@ class CompanyProfileEdit extends CompanyProfileController {
                                         handleGetImage={this.handleGetImageCertificate}
                                     />
                                 </div>
+                            </ModalCompany>
+                        ) : (null)}
+                        {modalFAQ === true ? (
+                            <ModalCompany onClose={this.handleCloseModalFAQ} onSave={() => { }}>
+                                <InputTextLabel
+                                    value={question}
+                                    title={"Question"}
+                                    placeholder={""}
+                                    type={"text"}
+                                    showDropDown={false}
+                                    onChange={(event) => { this.setState({ question: event.currentTarget.value }) }}
+                                />
+                                <TextAreaLabelImage
+                                    title={"Answer"}
+                                    handleGetValues={this.handleGetValuesFAQ}
+                                />
                             </ModalCompany>
                         ) : (null)}
                     </div>
