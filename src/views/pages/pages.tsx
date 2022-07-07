@@ -39,8 +39,9 @@ import DashboardLikeCard from "./DashboardLikeCard/dashboard_like_card";
 import DashboardTableOrder from "./DashbordTableOrder/dashboard_table_order";
 import Dashboard from "../layout/dashboard/dashobord";
 import ComponentStorage from "../components/component_storage";
-import DashboardFinance from "./DashboardFinance/DashboatdFinance";
+import DashboardFinance from "./DashboardFinance/DashboardFinance";
 import DashboardCompanyProfile from "./dashboardCompanyProfile/dashboard_company_profile";
+import Review from "./review";
 
 function Pages() {
   const location = useLocation();
@@ -97,16 +98,20 @@ function Pages() {
                 path="/dashboard/details-order"
                 element={<DetailsOrder />}
               />
-              <Route path="/dashboard/finance" element={<DashboardFinance />} />
+              <Route path="/dashboard-finance" element={<DashboardFinance />} />
               <Route
                 path="/dashboard-table-order"
                 element={<DashboardTableOrder />}
               />
+              <Route
+                path="/dashboard-review"
+                element={<Review />}
+              />
               <Route path="/dashboard-like-card" element={<DashboardLikeCard />} />
               <Route path="/dashboard-company-profile" element={<DashboardCompanyProfile />} />
 
-              <Route path="/dashboard/company/edit" element={<CompanyProfileEdit />} />
-              <Route path="/dashboard/company/start" element={<CompanyProfileStart />} />
+              <Route path="/dashboard-ompany-edit" element={<CompanyProfileEdit />} />
+              <Route path="/dashboard-company-start" element={<CompanyProfileStart />} />
             </Routes>
           </div>
         </div>

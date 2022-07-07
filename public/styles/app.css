@@ -15827,11 +15827,20 @@ a {
 }
 
 .edit-order {
-  background-color: #FFFFFF;
+  background-color: #F4F5F9;
   margin: 0 auto;
 }
 
-.edit-order-content {
+.edit-order-card {
+  width: 95% !important;
+  margin: 30px auto !important;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
+  border-radius: 16px;
+}
+
+.edit-order-card-content {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -15849,7 +15858,7 @@ a {
       flex-wrap: nowrap !important;
 }
 
-.edit-order-content-product {
+.edit-order-card-content-product {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -15867,7 +15876,7 @@ a {
       flex-wrap: nowrap !important;
 }
 
-.edit-order-content-product-counting {
+.edit-order-card-content-product-counting {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -15885,7 +15894,7 @@ a {
       flex-wrap: nowrap !important;
 }
 
-.edit-order-content-product-counting-details {
+.edit-order-card-content-product-counting-details {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -15904,7 +15913,7 @@ a {
   margin: 16px 0;
 }
 
-.edit-order-content-product-counting-details-title {
+.edit-order-card-content-product-counting-details-title {
   width: auto;
   height: auto;
   font-family: 'Poppins' !important;
@@ -15915,7 +15924,7 @@ a {
   margin: 0;
 }
 
-.edit-order-content-product-counting-details-price {
+.edit-order-card-content-product-counting-details-price {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -15941,7 +15950,7 @@ a {
   margin: 0;
 }
 
-.edit-order-content-product-counting-details-price-total {
+.edit-order-card-content-product-counting-details-price-total {
   width: auto;
   height: auto;
   font-family: 'Poppins' !important;
@@ -15952,7 +15961,7 @@ a {
   margin: 0;
 }
 
-.edit-order-content-product-counting-details-price > span {
+.edit-order-card-content-product-counting-details-price > span {
   width: auto;
   height: auto;
   font-family: 'Poppins' !important;
@@ -15963,7 +15972,7 @@ a {
   margin: 0;
 }
 
-.edit-order-content-address {
+.edit-order-card-content-address {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -15982,11 +15991,11 @@ a {
   margin: 25px 0 0 0;
 }
 
-.edit-order-content-address .row > * {
+.edit-order-card-content-address .row > * {
   max-width: 95.5% !important;
 }
 
-.edit-order-content-address-top {
+.edit-order-card-content-address-top {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -16004,7 +16013,7 @@ a {
       flex-wrap: nowrap !important;
 }
 
-.edit-order-content-address-top-image {
+.edit-order-card-content-address-top-image {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -16022,7 +16031,7 @@ a {
       flex-wrap: nowrap !important;
 }
 
-.edit-order-content-address-top-items {
+.edit-order-card-content-address-top-items {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -16040,12 +16049,12 @@ a {
       flex-wrap: nowrap !important;
 }
 
-.edit-order-content-address-top-items-location {
+.edit-order-card-content-address-top-items-location {
   width: 100%;
   margin: 0 0 16px 0;
 }
 
-.edit-order-content-address-top-items-location-title {
+.edit-order-card-content-address-top-items-location-title {
   width: auto;
   height: auto;
   font-family: 'Poppins' !important;
@@ -16056,7 +16065,7 @@ a {
   margin: 0 0 8px 0;
 }
 
-.edit-order-content-address-top-items-location-description {
+.edit-order-card-content-address-top-items-location-description {
   width: auto;
   height: auto;
   font-family: 'Poppins' !important;
@@ -16067,7 +16076,7 @@ a {
   margin: 0;
 }
 
-.edit-order-content-address-top-items-details {
+.edit-order-card-content-address-top-items-details {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -16086,11 +16095,11 @@ a {
   width: 100%;
 }
 
-.edit-order-content-address-top-items-details-text {
+.edit-order-card-content-address-top-items-details-text {
   width: 33%;
 }
 
-.edit-order-content-address-top-items-details-text .title {
+.edit-order-card-content-address-top-items-details-text .title {
   width: auto;
   height: auto;
   font-family: 'Poppins' !important;
@@ -16101,7 +16110,7 @@ a {
   margin: 16px 0 8px 0;
 }
 
-.edit-order-content-address-top-items-details-text .description {
+.edit-order-card-content-address-top-items-details-text .description {
   width: auto;
   height: auto;
   font-family: 'Poppins' !important;
@@ -16112,16 +16121,16 @@ a {
   margin: 0 0 16px 0;
 }
 
-.edit-order-content-address-map > div {
+.edit-order-card-content-address-map > div {
   height: 41vh !important;
 }
 
-.edit-order-divider {
+.edit-order-card-divider {
   width: 90% !important;
   margin: 0 auto;
 }
 
-.edit-order-footer {
+.edit-order-card-footer {
   width: 90% !important;
   margin: 0 auto;
   padding: 46px 0;
@@ -16142,7 +16151,7 @@ a {
       flex-wrap: nowrap !important;
 }
 
-.edit-order-footer-button-group {
+.edit-order-card-footer-button-group {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -16161,13 +16170,13 @@ a {
   margin: 0 15px;
 }
 
-.edit-order-footer-button-group .my-btn-green {
+.edit-order-card-footer-button-group .my-btn-green {
   width: 148px;
   height: 48px;
   background-color: #21C085;
 }
 
-.edit-order-footer-button-group .my-btn-green > h6 {
+.edit-order-card-footer-button-group .my-btn-green > h6 {
   width: auto;
   height: auto;
   font-family: 'Poppins' !important;
@@ -16178,14 +16187,14 @@ a {
   margin: 0;
 }
 
-.edit-order-footer-button-group .my-btn-gray {
+.edit-order-card-footer-button-group .my-btn-gray {
   width: 92px;
   height: 48px;
   background-color: #6b798c;
   margin: 0 15px;
 }
 
-.edit-order-footer-button-group .my-btn-gray > h6 {
+.edit-order-card-footer-button-group .my-btn-gray > h6 {
   width: auto;
   height: auto;
   font-family: 'Poppins' !important;
@@ -16196,7 +16205,7 @@ a {
   margin: 0;
 }
 
-.edit-order-footer-select {
+.edit-order-card-footer-select {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -16216,7 +16225,7 @@ a {
   position: relative;
 }
 
-.edit-order-footer-select > h5 {
+.edit-order-card-footer-select > h5 {
   width: auto;
   height: auto;
   font-family: 'Poppins' !important;
@@ -16228,7 +16237,7 @@ a {
   white-space: nowrap;
 }
 
-.edit-order-footer-select .dropdown-component-button {
+.edit-order-card-footer-select .dropdown-component-button {
   width: 175px;
   height: 48.64px;
   padding: 0 10px;
@@ -16251,14 +16260,14 @@ a {
       flex-wrap: nowrap !important;
 }
 
-.edit-order-footer-select .dropdown-component-items {
+.edit-order-card-footer-select .dropdown-component-items {
   width: 100%;
   background-color: #FFFFFF;
   position: absolute;
   top: 62px;
 }
 
-.edit-order-footer-select .dropdown-component-items > a {
+.edit-order-card-footer-select .dropdown-component-items > a {
   width: auto;
   height: auto;
   font-family: 'Poppins' !important;
@@ -16269,7 +16278,7 @@ a {
   margin: 0;
 }
 
-.edit-order-footer .footer-dropdown {
+.edit-order-card-footer .footer-dropdown {
   margin: 0 15px;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -16288,7 +16297,7 @@ a {
       flex-wrap: nowrap !important;
 }
 
-.edit-order-footer .footer-dropdown > h5 {
+.edit-order-card-footer .footer-dropdown > h5 {
   width: auto;
   height: auto;
   font-family: 'Poppins' !important;

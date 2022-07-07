@@ -272,7 +272,7 @@ export default class DashboardFinance extends DashboarPageController {
     const incomePayCalendar = () => {
       return (
         <div className="ps-4 pe-3">
-          <ComponentCalender />
+          {/* <ComponentCalender /> */}
         </div>
       );
     };
