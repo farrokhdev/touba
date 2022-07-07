@@ -70,7 +70,7 @@ const Dashboard: React.FC<IProps> = ({}) => {
           <span className="numOfReviews">4</span>
         </NavLink>
         <NavLink
-          to="/dashboard"
+          to="/"
           className={({ isActive = String }) =>
             isActive
               ? "w-100 d-flex flex-row align-items-center active-Navlink"
@@ -92,7 +92,7 @@ const Dashboard: React.FC<IProps> = ({}) => {
           Finance
         </NavLink>
         <NavLink
-          to="/dashboard"
+          to="/"
           className={({ isActive = String }) =>
             isActive
               ? "w-100 d-flex flex-row align-items-center active-Navlink"
@@ -139,7 +139,7 @@ const Dashboard: React.FC<IProps> = ({}) => {
           Excess Capacity
         </NavLink>
         <NavLink
-          to="/dashboard"
+          to="/"
           className={({ isActive = String }) =>
             isActive
               ? "w-100 d-flex flex-row align-items-center active-Navlink"
