@@ -47,7 +47,7 @@ const Dashboard: React.FC<IProps> = ({}) => {
           Liked Items
         </NavLink>
         <NavLink
-          to="/orders"
+          to="/dashboard-table-order"
           className={({ isActive = String }) =>
             isActive
               ? "w-100 d-flex flex-row align-items-center active-Navlink"
@@ -58,7 +58,7 @@ const Dashboard: React.FC<IProps> = ({}) => {
           My Orders
         </NavLink>
         <NavLink
-          to="/reviews"
+          to="/dashboard-review"
           className={({ isActive = String }) =>
             isActive
               ? "w-100 d-flex flex-row align-items-center active-Navlink"
@@ -70,7 +70,7 @@ const Dashboard: React.FC<IProps> = ({}) => {
           <span className="numOfReviews">4</span>
         </NavLink>
         <NavLink
-          to="/work-group"
+          to="/"
           className={({ isActive = String }) =>
             isActive
               ? "w-100 d-flex flex-row align-items-center active-Navlink"
@@ -81,7 +81,7 @@ const Dashboard: React.FC<IProps> = ({}) => {
           Work Groups
         </NavLink>
         <NavLink
-          to="/finance"
+          to="/dashboard-finance"
           className={({ isActive = String }) =>
             isActive
               ? "w-100 d-flex flex-row align-items-center active-Navlink"
@@ -92,7 +92,7 @@ const Dashboard: React.FC<IProps> = ({}) => {
           Finance
         </NavLink>
         <NavLink
-          to="/setting"
+          to="/"
           className={({ isActive = String }) =>
             isActive
               ? "w-100 d-flex flex-row align-items-center active-Navlink"
@@ -117,7 +117,7 @@ const Dashboard: React.FC<IProps> = ({}) => {
           My Company Profile
         </NavLink>
         <NavLink
-          to="/products"
+          to="/dashboard-company-profile"
           className={({ isActive = String }) =>
             isActive
               ? "w-100 d-flex flex-row align-items-center active-Navlink"
@@ -128,7 +128,7 @@ const Dashboard: React.FC<IProps> = ({}) => {
           Products
         </NavLink>
         <NavLink
-          to="/excess-capacity"
+          to="/dashboard-ompany-start"
           className={({ isActive = String }) =>
             isActive
               ? "w-100 d-flex flex-row align-items-center active-Navlink"
@@ -139,7 +139,7 @@ const Dashboard: React.FC<IProps> = ({}) => {
           Excess Capacity
         </NavLink>
         <NavLink
-          to="/report"
+          to="/"
           className={({ isActive = String }) =>
             isActive
               ? "w-100 d-flex flex-row align-items-center active-Navlink"

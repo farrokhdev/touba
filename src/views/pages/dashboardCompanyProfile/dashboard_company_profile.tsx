@@ -72,13 +72,13 @@ class DashboardCompanyProfile extends DashboardCompanyProfileController {
   addProductOne = () => {
     return (
       <div className="row">
-        <div className="col-2">
+        <div className="col-3">
           <SideNavItems
             onActive={(e) => this.handleShowSideNavItem(e)}
             items={this.TEST_NAV_ITEM}
           />
         </div>
-        <div className="col-10 px-4 mt-5 ">
+        <div className="col-9 px-4 mt-5 ">
           {this.state.show == 0 && (
             <div>
               <ComponentBasicInformation />

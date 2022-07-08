@@ -21,7 +21,6 @@ import {
   ChartDoughnut,
   ChartSale,
   ComponentBasicInformation,
-  ComponentMultiInput,
   ComponentTextArea,
   ImageArrow,
   Location,
@@ -36,6 +35,7 @@ import {
 } from "../components/components";
 import CongratulationBanner from "../components/congratulation_banner";
 import DeleteImage from "../components/delete_image";
+import ItemProfile from "../components/item_profile";
 import MessageInput from "../components/message_input";
 import MyCompanyNav from "../components/mycompany_nav";
 import OrderHead from "../components/order_head";
@@ -162,8 +162,8 @@ class PageTestComponents extends Component {
   render() {
     console.log(this.state.activeLink);
     return (
-      <div className="mx-1 p-4 bg-white ">
-        <ComponentMultiInput lableOne="Feature Title:" lableTwo="Feature Details:" placeholderOne="Weight" placeholderTwo="2800 KG"/>{" "}
+      <div className="mx-1 ">
+        <ComponentTextArea />
         <div className="col-9">
           <ComponentBasicInformation />
         </div>
@@ -249,38 +249,34 @@ class PageTestComponents extends Component {
         <CompanyAddres
           address="Yanjialing Village, Tongji Office, Jimo District, Qingdao, Shandong,
           China 266000"
-        />
-        <button onClick={() => this.setState({ isShow: true })}>
-          show delete image component
-        </button>
-        {this.state.isShow ? (
-          <DeleteImage onClick={() => this.setState({ isShow: false })} />
-        ) : null}
-        <MyCompanyNav
-          onActive={function (id: number): void {
-            throw new Error("Function not implemented.");
-          }}
-        />
-        <ProfileHeaderImage />
-        <OrderHead orderNumber={2334217651} client="Saber Noori" />
-        <Location
-          index={1}
-          name={"Bandar Abbas Office"}
-          area={"BandarAbbas, Iran"}
-        />
-        <div style={{ width: "1200px", height: "670px" }}>
-          <CongratulationBanner activeTab="Other Details" />
-        </div>
-        <div style={{ width: "1200px", height: "670px" }} className="my-3">
-          <CongratulationBanner activeTab="Related Items" />
-        </div>
-        <div style={{ width: "1920px" }}>
-          <button onClick={this.handleShowModal}>open modal</button>
-          {/* <ModalCompany show={this.state.showmodal} onClose={this.handleCloseModal} /> */}
-        </div>
-      </div>
-    );
-  }
+                />
+                <button onClick={() => this.setState({ isShow: true })}>
+                    show delete image component
+                </button>
+                {this.state.isShow ? (
+                    <DeleteImage onClick={() => this.setState({ isShow: false })} />
+                ) : null}
+                <MyCompanyNav onActive={function (id: number): void {
+                    throw new Error("Function not implemented.");
+                }} />
+                <ProfileHeaderImage />
+                <OrderHead orderNumber={2334217651} client="Saber Noori" />
+                <Location index={1} name={"Bandar Abbas Office"} area={"BandarAbbas, Iran"} />
+                <div style={{ width: "1200px", height: "670px" }}>
+                    <CongratulationBanner activeTab="Other Details" />
+                </div>
+                <div style={{ width: "1200px", height: "670px" }} className="my-3">
+                    <CongratulationBanner activeTab="Related Items" />
+                </div>
+                <div style={{ width: "1920px" }}>
+                    <button onClick={this.handleShowModal}>
+                        open modal
+                    </button>
+                    {/* <ModalCompany show={this.state.showmodal} onClose={this.handleCloseModal} /> */}
+                </div>
+            </div>
+        )
+    }
 }
 
 export default PageTestComponents;

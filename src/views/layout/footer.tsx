@@ -55,7 +55,7 @@ export function Footer() {
                                 Get 7 Days premium touba account
                                 for free!
                             </p>
-                            <Button title="JOIN TOYBA NOW" />
+                            <Button title="JOIN TOUBA NOW" />
                         </div>
                         <div className="footer-section-top-content-description-image">
                             <img src={Image7} />

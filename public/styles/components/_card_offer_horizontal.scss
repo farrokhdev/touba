@@ -59,6 +59,7 @@
                     display: flex;
                     align-items: center;
                     margin: 0%;
+                    white-space: nowrap;
 
                     >img {
                         margin: 0 3px;
@@ -80,6 +81,7 @@
 
                 &-text {
                     @include FontStyle(10px, 600, $black);
+                    margin: 0;
                 }
             }
         }
@@ -90,6 +92,7 @@
 
         &-footer {
             @include Display(flex, space-between, center);
+
             &-item {
                 width: 100px;
                 height: 27px;
@@ -109,20 +112,25 @@
             &-date {
                 margin: 0 20px;
                 @include Display(flex, center, center);
+
                 &-response {
                     @include Display(flex, center, center);
                 }
+
                 &-delivery {
                     @include Display(flex, center, center);
                 }
+
                 .title {
                     @include FontStyle(12px, 500, $lightSorme);
                     margin: 0 0 7px 0;
                 }
+
                 .amount {
                     @include FontStyle(14px, 700, $sorme);
                     margin: 0;
                 }
+
                 .icon {
                     margin: 0 17px;
                 }

@@ -146,7 +146,6 @@ export { default as IconTick} from './icons/icon-tick.svg';
 export { default as IconInfo} from './icons/icon-info.svg';
 export { default as IconDelete} from './icons/icon-delete.svg';
 export { default as IconChartSold} from './icons/icon-chart-sold.svg';
-
 export { default as IconShop} from './icons/icon-shop.svg';
 export { default as IconDanger} from './icons/icon-danger.svg';
 export { default as IconDecrease} from './icons/icon-decraise.svg';
@@ -174,3 +173,7 @@ export { default as ImageCongratulationBanner2} from './images/CongratulationBan
 export { default as ImageBanner} from './images/image-banner.png';
 export { default as ImageFoot} from './images/image-foot.png';
 export { default as ImageManager} from './images/image-manager.png';
+export { default as IconChartRed} from './icons/icon-chart-red.svg';
+export { default as ImageExcessBanner} from './images/excess-banner.jpg';
+export { default as ImageDeliveryMan} from './images/delivery-man.png';
+export { default as ImageManMoney} from './images/man-money.png';
