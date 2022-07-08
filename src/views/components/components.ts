@@ -98,15 +98,6 @@ export { default as TextAreaLabel } from './textarea_lable';
 export { default as InputDate } from './input_date';
 export { default as CardUploadImage } from './card_upload_image';
 export { default as TextAreaLabelImage } from './textarea_lable_image';
-
-
-
-
-
-
-
-
-
 export { default as CardProductGroupTitle } from './card_product_group_title';
 export { default as Rate } from './rating';
 export { default as ChartDoughnut } from './chart_doughnut';
@@ -122,6 +113,9 @@ export { default as ComponentTextArea } from './component_text_area';
 export {default as ComponentOtherDetail} from './component_other_detail';
 export {default as ComponentTradeInformation} from './component_trade_information'
 export {default as ComponentRelatedItems} from './component_related_items'
+export {default as ComponentMultiInput} from './component_multi_input'
+
+
 
 
 

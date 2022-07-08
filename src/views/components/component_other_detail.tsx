@@ -4,6 +4,7 @@ import {
   ComponentColors,
   ComponentColorSelect,
   ComponentFieldsetPrice,
+  ComponentMultiInput,
   ComponentProductDetail,
   ComponentRadioSquare,
   ComponentTextArea,
@@ -102,8 +103,23 @@ const ComponentOtherDetail = () => {
               {active == 0 && (
                 <div className="">
                   {" "}
-                  <ButtonAdd onClick={() => {}} />
+                  <div className="">
+                  <ComponentMultiInput
+                    lableOne="Feature Title:"
+                    lableTwo="Feature Details:"
+                    placeholderOne="Weight"
+                    placeholderTwo="2800 KG"
+                  />{" "}
                 </div>
+                <div className="mt-4">
+                  <ComponentMultiInput
+                    lableOne="Feature Title:"
+                    lableTwo="Feature Details:"
+                    placeholderOne="Weight"
+                    placeholderTwo="2800 KG"
+                  />{" "}
+                </div>
+                <div className="mt-2"><ButtonAdd  onClick={()=>{}}/></div>                </div>
               )}
               {active == 1 && (
                 <div>

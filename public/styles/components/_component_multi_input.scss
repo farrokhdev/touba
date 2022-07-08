@@ -1,0 +1,28 @@
+.multi-input-box{
+    background: #FFFFFF;
+/* Border */
+position: relative;
+
+border: 1px solid #D6D6D6;
+border-radius: 8px;
+.input-text{
+    border: none;
+    outline: none;
+}
+.label-text{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height, or 133% */
+
+letter-spacing: 0.4px;
+
+/* Sorme */
+position: absolute;
+color: #3C557A;
+top: -8px;
+background-color: white;
+}
+}
