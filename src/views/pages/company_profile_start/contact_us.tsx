@@ -7,9 +7,7 @@ class ContactUs extends CompanyProfileStartController {
 
         return (
             <>
-                <div className="body-content-header">
-                    <MyCompanyNav onActive={this.handleGetActiveTab} />
-                </div>
+                
             </>
         )
     }
