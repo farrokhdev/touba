@@ -2,8 +2,13 @@
     background: linear-gradient(180deg, #0e2649 0%, #071a36 100%);
     padding: 0 30px 0 0;
 
-    .logoTouba {
-        margin: 26px 0 46px 34px;
+    .link-image {
+        margin-bottom: 46px;
+        .logoTouba {
+            width: 144px;
+            height: 57.62px;
+            margin: 26px 0 46px 34px;
+        }
     }
 
     label {
@@ -56,6 +61,7 @@
         }
     }
 }
-.text-red{
-    @include FontStyle(16px,400,#FC4A56)
+
+.text-red {
+    @include FontStyle(16px, 400, #FC4A56)
 }

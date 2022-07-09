@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import {
   IconActivity,
   IconBagGray,
@@ -13,18 +13,21 @@ import {
   IconToubaSource,
   IconUser,
   IconWallet,
+  ToubaLogo1,
 } from "../../../assets";
 
 export type IProps = {};
 
-const Dashboard: React.FC<IProps> = ({}) => {
+const Dashboard: React.FC<IProps> = ({ }) => {
   return (
     <div className="dashboard d-flex flex-column align-items-start">
-      <img src={IconToubaSource} alt="logo" className="logoTouba" />
+      <Link to="/" className="link-image">
+        <img src={ToubaLogo1} alt="logo" className="logoTouba" />
+      </Link>
       <div className="w-100 d-flex flex-column align-items-start justify-content-between">
         <label>General</label>
         <NavLink
-          
+
           end to="/dashboard"
           className={({ isActive = String }) =>
             isActive

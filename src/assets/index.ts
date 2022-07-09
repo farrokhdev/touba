@@ -185,3 +185,5 @@ export { default as ImageShop} from './images/image-shop.png';
 export { default as ImageTwoUser} from './images/image-two-user.png';
 export { default as ImageChat} from './images/image-chat.png';
 export { default as ImageWorld} from './images/image-world.png';
+export { default as ToubaLogo1} from './images/ToubaLogo1.png';
+export { default as ToubaLogo2} from './images/ToubaLogo2.svg';

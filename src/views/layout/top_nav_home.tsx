@@ -10,6 +10,7 @@ import {
   IconTwoPerson,
   IconYoutube,
   ImageBrand,
+  ToubaLogo1,
 } from "../../assets";
 import { ButtonIcon } from "../components/button_icon";
 
@@ -19,7 +20,9 @@ export function TopNavHome() {
       <div className="top-nav-home px-5">
         <div className="top-nav-home-items">
           <div className="top-nav-home-items-brand">
-            <img src={ImageBrand} className="top-nav-home-items-brand-image" />
+            <Link to="/">
+              <img src={ToubaLogo1} className="top-nav-home-items-brand-image" />
+            </Link>
           </div>
           <div className="top-nav-home-items-links">
             <Link to="/" className="link">
@@ -60,11 +63,11 @@ export function TopNavHome() {
 
             {localStorage.getItem("token") == "true" ? (
               <Link to="/dashboard">
-                <ButtonIcon icon={IconTwoPerson} nameButton={""} onClick={() => console.log("asd")}/>
+                <ButtonIcon icon={IconTwoPerson} nameButton={""} onClick={() => console.log("asd")} />
               </Link>
             ) : (
               <Link to="/login">
-                <ButtonIcon icon={IconTwoPerson} nameButton={""} onClick={() => console.log("asd")}/>
+                <ButtonIcon icon={IconTwoPerson} nameButton={""} onClick={() => console.log("asd")} />
               </Link>
             )}
           </div>

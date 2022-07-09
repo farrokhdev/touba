@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { IconBag, IconBar, IconFacebook, IconInstagram, IconLinkdin, IconTwitter, IconTwoPerson, IconYoutube, ImageBrand } from "../../assets";
+import { IconBag, IconBar, IconFacebook, IconInstagram, IconLinkdin, IconTwitter, IconTwoPerson, IconYoutube, ImageBrand, ToubaLogo1 } from "../../assets";
 import { ButtonIcon } from "../components/button_icon";
 import { ComponentSearch, Divider } from "../components/components";
 
@@ -16,13 +16,13 @@ export function TopNav() {
                     <Link to="/help" className={location.pathname === "/help" ? "link active" : "link"}>
                         <p className="text-link">HELP</p>
                     </Link>
-                    <Link to="/membership"  className={location.pathname === "/membership" ? "link active" : "link"}>
+                    <Link to="/membership" className={location.pathname === "/membership" ? "link active" : "link"}>
                         <p className="text-link">Membership</p>
                     </Link>
-                    <Link to="/about-us"  className={location.pathname === "/about-us" ? "link active" : "link"}>
+                    <Link to="/about-us" className={location.pathname === "/about-us" ? "link active" : "link"}>
                         <p className="text-link">ABOUT US</p>
                     </Link>
-                    <Link to="/contact-us"  className={location.pathname === "/contact-us" ? "link active" : "link"}>
+                    <Link to="/contact-us" className={location.pathname === "/contact-us" ? "link active" : "link"}>
                         <p className="text-link">CONTACT US</p>
                     </Link>
                 </div>
@@ -44,13 +44,15 @@ export function TopNav() {
                     </Link>
                 </div>
             </div>
-            <Divider direction={"vertical"}/>
+            <Divider direction={"vertical"} />
             <div className="top-nav-content">
                 <div className="top-nav-content-brand">
-                    <img
-                        src={ImageBrand}
-                        className="top-nav-content-brand-image"
-                    />
+                    <Link to="/">
+                        <img
+                            src={ToubaLogo1}
+                            className="top-nav-content-brand-image"
+                        />
+                    </Link>
                 </div>
                 <div className="top-nav-content-search">
                     <ComponentSearch />
