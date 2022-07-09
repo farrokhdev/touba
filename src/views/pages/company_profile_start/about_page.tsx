@@ -9,10 +9,6 @@ class AboutPage extends CompanyProfileStartController {
     Certificate() {
         const {
             certificateName,
-            certificateCode,
-            registerDate,
-            expireDate,
-            image,
         } = this.state;
         return (
             <>
