@@ -1,3 +1,32 @@
 .company-profile-start {
-    
+    height: 100%;
+
+    .body {
+        height: 100%;
+        @include Display(flex, start, flex-start);
+
+        .input-text-label-input {
+            @include Border(1px, $gray, 8px);
+
+            &::placeholder {
+                opacity: 1 !important;
+            }
+        }
+
+        &-side-item {
+            width: 20%;
+            height: 100%;
+        }
+
+        &-content {
+            width: 80%;
+
+            &-header {
+                width: 90%;
+                height: 80px;
+                margin: 32px auto;
+                background-color: $white;
+            }
+        }
+    }
 }

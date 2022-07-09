@@ -17631,6 +17631,66 @@ a {
   color: #FC4A56 !important;
 }
 
+.company-profile-start {
+  height: 100%;
+}
+
+.company-profile-start .body {
+  height: 100%;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: start !important;
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: flex-start !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+}
+
+.company-profile-start .body .input-text-label-input {
+  border: 1px solid #d6d6d6 !important;
+  border-radius: 8px !important;
+}
+
+.company-profile-start .body .input-text-label-input::-webkit-input-placeholder {
+  opacity: 1 !important;
+}
+
+.company-profile-start .body .input-text-label-input:-ms-input-placeholder {
+  opacity: 1 !important;
+}
+
+.company-profile-start .body .input-text-label-input::-ms-input-placeholder {
+  opacity: 1 !important;
+}
+
+.company-profile-start .body .input-text-label-input::placeholder {
+  opacity: 1 !important;
+}
+
+.company-profile-start .body-side-item {
+  width: 20%;
+  height: 100%;
+}
+
+.company-profile-start .body-content {
+  width: 80%;
+}
+
+.company-profile-start .body-content-header {
+  width: 90%;
+  height: 80px;
+  margin: 32px auto;
+  background-color: #FFFFFF;
+}
+
 .finance-page {
   background-color: #f4f5f9;
 }
