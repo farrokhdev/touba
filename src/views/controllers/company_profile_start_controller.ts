@@ -25,7 +25,7 @@ interface IState {
 export class CompanyProfileStartController extends Component<IProps, IState> {
 
     state = {
-        activeLink: 4,
+        activeLink: 1,
         activeTab: 1,
         certificateName: "",
         certificateCode: "",

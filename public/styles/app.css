@@ -18167,6 +18167,41 @@ a {
   height: 390px !important;
 }
 
+.company-profile-start .body-content-setting {
+  background-color: #FFFFFF;
+  width: 90%;
+  min-height: 819px;
+  margin: 24px auto;
+  border-radius: 16px;
+  -webkit-box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
+  padding: 0 40px;
+}
+
+.company-profile-start .body-content-setting-title {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.company-profile-start .body-content-setting-title > h4 {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 800 !important;
+  font-size: 22px !important;
+  color: #3c557a !important;
+  margin: 0;
+  padding: 35px 0;
+}
+
+.company-profile-start .body-content-setting-image {
+  margin: 0 auto;
+  width: 30%;
+  height: 340px;
+  margin: 32px 0;
+}
+
 .finance-page {
   background-color: #f4f5f9;
 }
