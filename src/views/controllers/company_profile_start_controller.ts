@@ -11,18 +11,32 @@ interface IState {
     registerDate: string;
     expireDate: string;
     image: string;
+    address: string;
+    phoneCode: number | string;
+    phoneNumber: number | string;
+    timeZone: string;
+    supplierName: string;
+    positionInCountry: string;
+    imageUser: string;
 }
 
 export class CompanyProfileStartController extends Component<IProps, IState> {
 
     state = {
-        activeLink: 1,
+        activeLink: 2,
         activeTab: 1,
         certificateName: "",
         certificateCode: "",
         registerDate: "",
         expireDate: "",
         image: "",
+        address: "",
+        phoneCode: "",
+        phoneNumber: "",
+        timeZone: "",
+        supplierName: "",
+        positionInCountry: "",
+        imageUser: "",
     };
 
     TEST_NAV_ITEM = [
@@ -52,7 +66,7 @@ export class CompanyProfileStartController extends Component<IProps, IState> {
             id: 5
         }
     ];
-    
+
 
     items = [
         { name: "item1", id: 1 },
@@ -70,19 +84,31 @@ export class CompanyProfileStartController extends Component<IProps, IState> {
     };
 
     getCertificateCode = (text: string) => {
-        this.setState({certificateCode: text})
+        this.setState({ certificateCode: text })
     };
 
     getRegisterDate = (date: string) => {
-        this.setState({registerDate: date})
+        this.setState({ registerDate: date })
     };
 
     getExpireDate = (date: string) => {
-        this.setState({expireDate: date})
+        this.setState({ expireDate: date })
     };
 
     getImage = (image: string) => {
-        this.setState({image: image})
+        this.setState({ image: image })
+    };
+
+    getTimeZone = (value: string) => {
+        this.setState({ timeZone: value })
+    };
+
+    getPositionInCountry = (value: string) => {
+        this.setState({ positionInCountry: value })
+    };
+
+    getImageUser = (image: string) => {
+        this.setState({ imageUser: image })
     };
 
 }

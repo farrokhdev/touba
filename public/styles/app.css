@@ -146,7 +146,7 @@ a {
   width: 100%;
   height: 64px;
   cursor: pointer;
-  z-index: 4;
+  z-index: 1;
   position: relative;
 }
 
@@ -171,6 +171,7 @@ a {
   position: absolute;
   top: -9px;
   left: 20px;
+  z-index: 1;
 }
 
 .select-component-title > h6 {
@@ -185,6 +186,7 @@ a {
 }
 
 .select-component-button {
+  position: relative;
   width: 100%;
   height: 64px !important;
   display: -webkit-box;
@@ -200,6 +202,7 @@ a {
   border-radius: 8px;
   background-color: transparent;
   cursor: pointer;
+  z-index: 1;
 }
 
 .select-component-button-icon {
@@ -17889,6 +17892,258 @@ a {
 }
 
 .company-profile-start .body-content-main-footer-button-cancel > h5 {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  color: #FFFFFF !important;
+  margin: 0;
+}
+
+.company-profile-start .body-content-contact {
+  background-color: #FFFFFF;
+  width: 90%;
+  margin: 24px auto;
+  border-radius: 16px;
+  -webkit-box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
+}
+
+.company-profile-start .body-content-contact-header {
+  width: 95%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.company-profile-start .body-content-contact-header > h4 {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 18px !important;
+  color: #3c557a !important;
+  margin: 0;
+}
+
+.company-profile-start .body-content-contact-main-inputs {
+  width: 95%;
+  margin: 0 auto 20px;
+}
+
+.company-profile-start .body-content-contact-main-inputs .input-text-label {
+  margin: 20px auto 0;
+}
+
+.company-profile-start .body-content-contact-main-inputs .Zindex > div:nth-of-type(2) {
+  z-index: 2;
+}
+
+.company-profile-start .body-content-contact-main-inputs-group {
+  width: 100%;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+  margin: 0 auto;
+}
+
+.company-profile-start .body-content-contact-main-inputs-group .select-component {
+  margin: 20px 0px 0 0;
+}
+
+.company-profile-start .body-content-contact-main-inputs-group .input-text-label {
+  margin: 20px 10px 0 0;
+}
+
+.company-profile-start .body-content-contact-main-inputs-group .input-date {
+  margin: 20px 10px 0 0;
+}
+
+.company-profile-start .body-content-contact-main-inputs-group .input-text-phonenumber {
+  margin: 20px 10px 0 0;
+}
+
+.company-profile-start .body-content-contact-main-image {
+  width: 20%;
+  height: 228px;
+  margin: 0 2.5% 20px;
+}
+
+.company-profile-start .body-content-contact-main-divider {
+  width: 95%;
+  height: 1px;
+  margin: 0 auto;
+  border: 1px dotted #d6d6d6;
+}
+
+.company-profile-start .body-content-contact-main-location {
+  width: 95%;
+  margin: 0 auto 25px;
+}
+
+.company-profile-start .body-content-contact-main-location-title {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 20px !important;
+  color: #3c557a !important;
+  margin: 25px 0;
+}
+
+.company-profile-start .body-content-contact-main-location-map {
+  height: 560px;
+  border-radius: 12px;
+}
+
+.company-profile-start .body-content-contact-main-location-map > div {
+  height: 100%;
+}
+
+.company-profile-start .body-content-contact-footer {
+  width: 95%;
+  margin: 0 auto;
+  padding: 25px 0;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+}
+
+.company-profile-start .body-content-contact-footer-button-group {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+}
+
+.company-profile-start .body-content-contact-footer-button-group-next {
+  border: none;
+  border-radius: 8px;
+  background-color: #21C085;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+  padding: 13.5px 16px;
+}
+
+.company-profile-start .body-content-contact-footer-button-group-next > h5 {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  color: #FFFFFF !important;
+  margin: 0;
+}
+
+.company-profile-start .body-content-contact-footer-button-group-back {
+  border: 1px solid #21C085 !important;
+  border-radius: 8px !important;
+  background-color: transparent;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+  padding: 13.5px 16px;
+  margin: 0 16px;
+}
+
+.company-profile-start .body-content-contact-footer-button-group-back > h5 {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  color: #21C085 !important;
+  margin: 0;
+}
+
+.company-profile-start .body-content-contact-footer-button-cancel {
+  border: none;
+  border-radius: 8px;
+  background-color: #6b798c;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+  padding: 13.5px 16px;
+}
+
+.company-profile-start .body-content-contact-footer-button-cancel > h5 {
   width: auto;
   height: auto;
   font-family: 'Poppins' !important;
