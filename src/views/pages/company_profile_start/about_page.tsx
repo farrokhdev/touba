@@ -10,6 +10,9 @@ class AboutPage extends CompanyProfileStartController {
                 <div className="body-content-header">
                     <MyCompanyNav onActive={this.handleGetActiveTab} />
                 </div>
+                <div className="body-content-">
+
+                </div>
             </>
         )
     }
