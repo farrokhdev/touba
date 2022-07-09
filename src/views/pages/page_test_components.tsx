@@ -257,8 +257,8 @@ class PageTestComponents extends Component {
                     <DeleteImage onClick={() => this.setState({ isShow: false })} />
                 ) : null}
                 <MyCompanyNav onActive={function (id: number): void {
-                    throw new Error("Function not implemented.");
-                }} />
+          throw new Error("Function not implemented.");
+        } } showButton={true} />
                 <ProfileHeaderImage />
                 <OrderHead orderNumber={2334217651} client="Saber Noori" />
                 <Location index={1} name={"Bandar Abbas Office"} area={"BandarAbbas, Iran"} />

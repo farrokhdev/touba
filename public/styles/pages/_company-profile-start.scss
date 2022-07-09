@@ -24,8 +24,96 @@
             &-header {
                 width: 90%;
                 height: 80px;
-                margin: 32px auto;
+                margin: 24px auto 0;
                 background-color: $white;
+                border-top-left-radius: 12px;
+                border-top-right-radius: 12px;
+                @include Display(flex, start, center);
+            }
+
+            &-main {
+                width: 90%;
+                height: auto;
+                margin: 0 auto;
+                background-color: $white;
+                border-bottom-left-radius: 12px;
+                border-bottom-right-radius: 12px;
+                padding: 0 35px;
+
+                &-inputs {
+                    margin: 0 0 20px;
+
+                    &-group {
+                        @include Display(flex, center, center);
+
+                        .select-component {
+                            margin: 20px 10px 0 0;
+                        }
+
+                        .input-text-label {
+                            margin: 20px 10px 0 0;
+                        }
+
+                        .input-date {
+                            margin: 20px 10px 0 0;
+                        }
+                    }
+                }
+
+                &-image {
+                    width: 50%;
+                    height: 339px;
+                }
+
+                &-button {
+                    margin: 25px 0;
+                }
+
+                &-footer {
+                    width: 100%;
+                    padding: 25px 0;
+                    @include Display (flex, space-between, center);
+                    &-button-group {
+                        @include Display (flex, center, center);
+
+                        &-next {
+                            border: none;
+                            border-radius: 8px;
+                            background-color: $green;
+                            @include Display (flex, center, center);
+                            padding: 13.5px 16px;
+
+                            >h5 {
+                                @include FontStyle(14px, 600, $white);
+                                margin: 0;
+                            }
+                        }
+
+                        &-back {
+                            @include Border(1px ,$green, 8px);
+                            background-color: transparent;
+                            @include Display (flex, center, center);
+                            padding: 13.5px 16px;
+                            margin: 0 16px;
+                            >h5 {
+                                @include FontStyle(14px, 600, $green);
+                                margin: 0;
+                            }
+                        }
+                    }
+                    &-button-cancel {
+                        border: none;
+                        border-radius: 8px;
+                        background-color: $lightSorme;
+                        @include Display (flex, center, center);
+                        padding: 13.5px 16px;
+
+                        >h5 {
+                            @include FontStyle(14px, 600, $white);
+                            margin: 0;
+                        }
+                    }
+                }
             }
         }
     }

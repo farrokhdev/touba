@@ -1,13 +1,5 @@
-import { IconCalling, IconCallSorme, IconDeletGreen, IconEdit, IconEditSorme, IconImageBlack, IconLocation, IconLocationSorme, IconPaperBlack, IconStarSorme, IconWalletSorme, ImageBanner, ImageCertificate, ImageManager, ImagePerson } from "../../../assets";
-import ButtonAdd from "../../components/button_add";
-import { ButtonOutline, CardFAQ, CardUploadImage, InputDate, InputTextLabel, InputTextPhoneNumber, Map, ModalCompany, ModalComponent, SelectComponent, TextAreaLabel, TextAreaLabelImage } from "../../components/components";
 import DashboardNav from "../../components/dashboard_nav";
-import DeleteImage from "../../components/delete_image";
-import { Divider } from "../../components/divider";
-import MyCompanyNav from "../../components/mycompany_nav";
-import ProfileHeaderImage from "../../components/profile_header_image";
 import { SideNavItems } from "../../components/side_nav_items";
-import CompanyProfileController, { TEST_NAV_ITEM } from "../../controllers/company_profile_controller";
 import CompanyProfileStartController from "../../controllers/company_profile_start_controller";
 import AboutPage from "./about_page";
 import ContactUs from "./contact_us";
@@ -27,8 +19,8 @@ class CompoanyProfileStart extends CompanyProfileStartController {
                 <div className="body">
                     <div className="body-side-item">
                         <SideNavItems
-                            items={TEST_NAV_ITEM}
-                            onActive={this.handleGetActiveLink}
+                            items={this.TEST_NAV_ITEM}
+                            onActive={this.getActiveLink}
                             showProgress={false}
                         />
                     </div>

@@ -17687,8 +17687,216 @@ a {
 .company-profile-start .body-content-header {
   width: 90%;
   height: 80px;
-  margin: 32px auto;
+  margin: 24px auto 0;
   background-color: #FFFFFF;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: start !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+}
+
+.company-profile-start .body-content-main {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 0 35px;
+}
+
+.company-profile-start .body-content-main-inputs {
+  margin: 0 0 20px;
+}
+
+.company-profile-start .body-content-main-inputs-group {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+}
+
+.company-profile-start .body-content-main-inputs-group .select-component {
+  margin: 20px 10px 0 0;
+}
+
+.company-profile-start .body-content-main-inputs-group .input-text-label {
+  margin: 20px 10px 0 0;
+}
+
+.company-profile-start .body-content-main-inputs-group .input-date {
+  margin: 20px 10px 0 0;
+}
+
+.company-profile-start .body-content-main-image {
+  width: 50%;
+  height: 339px;
+}
+
+.company-profile-start .body-content-main-button {
+  margin: 25px 0;
+}
+
+.company-profile-start .body-content-main-footer {
+  width: 100%;
+  padding: 25px 0;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+}
+
+.company-profile-start .body-content-main-footer-button-group {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+}
+
+.company-profile-start .body-content-main-footer-button-group-next {
+  border: none;
+  border-radius: 8px;
+  background-color: #21C085;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+  padding: 13.5px 16px;
+}
+
+.company-profile-start .body-content-main-footer-button-group-next > h5 {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  color: #FFFFFF !important;
+  margin: 0;
+}
+
+.company-profile-start .body-content-main-footer-button-group-back {
+  border: 1px solid #21C085 !important;
+  border-radius: 8px !important;
+  background-color: transparent;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+  padding: 13.5px 16px;
+  margin: 0 16px;
+}
+
+.company-profile-start .body-content-main-footer-button-group-back > h5 {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  color: #21C085 !important;
+  margin: 0;
+}
+
+.company-profile-start .body-content-main-footer-button-cancel {
+  border: none;
+  border-radius: 8px;
+  background-color: #6b798c;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+  padding: 13.5px 16px;
+}
+
+.company-profile-start .body-content-main-footer-button-cancel > h5 {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  color: #FFFFFF !important;
+  margin: 0;
 }
 
 .finance-page {
