@@ -18154,6 +18154,19 @@ a {
   margin: 0;
 }
 
+.company-profile-start .body-content-location .modal-location-input {
+  margin: 35px 0;
+}
+
+.company-profile-start .body-content-location .modal-location-map {
+  margin: 35px 0;
+  height: 390px;
+}
+
+.company-profile-start .body-content-location .modal-location-map > div {
+  height: 390px !important;
+}
+
 .finance-page {
   background-color: #f4f5f9;
 }

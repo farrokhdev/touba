@@ -250,6 +250,19 @@
                     }
                 }
             }
+
+            &-location {
+                .modal-location-input {
+                    margin: 35px 0;
+                }
+                .modal-location-map {
+                    margin: 35px 0;
+                    height: 390px;
+                    > div {
+                        height: 390px !important;
+                    }
+                }
+            }
         }
     }
 }

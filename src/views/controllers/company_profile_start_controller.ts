@@ -18,12 +18,14 @@ interface IState {
     supplierName: string;
     positionInCountry: string;
     imageUser: string;
+    modalLocation: boolean;
+    locationName: string;
 }
 
 export class CompanyProfileStartController extends Component<IProps, IState> {
 
     state = {
-        activeLink: 2,
+        activeLink: 4,
         activeTab: 1,
         certificateName: "",
         certificateCode: "",
@@ -37,6 +39,8 @@ export class CompanyProfileStartController extends Component<IProps, IState> {
         supplierName: "",
         positionInCountry: "",
         imageUser: "",
+        modalLocation: false,
+        locationName: "",
     };
 
     TEST_NAV_ITEM = [
@@ -56,7 +60,7 @@ export class CompanyProfileStartController extends Component<IProps, IState> {
             id: 3
         },
         {
-            title: "Payments Setting",
+            title: "Locations",
             icon: `${IconLocationSorme}`,
             id: 4
         },
@@ -109,6 +113,14 @@ export class CompanyProfileStartController extends Component<IProps, IState> {
 
     getImageUser = (image: string) => {
         this.setState({ imageUser: image })
+    };
+
+    closeModalLocation = () => {
+        this.setState({modalLocation: false})
+    };
+
+    showModalLocation = () => {
+        this.setState({modalLocation: true})
     };
 
 }
