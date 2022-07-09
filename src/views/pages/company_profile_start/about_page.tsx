@@ -27,7 +27,7 @@ class AboutPage extends CompanyProfileStartController {
                             placeholder={"Manufacturer/Factory"}
                             onSelect={this.getCertificateCode}
                             items={this.items}
-                            title="Business Type"
+                            title="Code"
                         />
                     </div>
                     <div className="body-content-main-inputs-group">
@@ -84,7 +84,7 @@ class AboutPage extends CompanyProfileStartController {
                     <MyCompanyNav onActive={this.getActiveTab} showButton={false} />
                 </div>
                 <div className="body-content-main">
-                    {activeTab === 1 ? (
+                    {activeTab === 3 ? (
                         this.Certificate()
                     ) : (
                         <h3>
