@@ -139,7 +139,7 @@ const Dashboard: React.FC<IProps> = ({}) => {
           Excess Capacity
         </NavLink>
         <NavLink
-          to="/"
+          to="/dashboard-report"
           className={({ isActive = String }) =>
             isActive
               ? "w-100 d-flex flex-row align-items-center active-Navlink"

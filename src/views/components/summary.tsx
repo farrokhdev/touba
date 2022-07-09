@@ -13,7 +13,7 @@ const Summary = ({ img, title, amount }: IProps) => {
           <div className="col-3 text-cente">
             <img src={img} alt={title} />
           </div>
-          <div className="col-9  p-3">
+          <div className="col-9  p-3 ">
             <div className="smalText">{title}</div>
             <div className="bigText">{amount}</div>
           </div>
