@@ -110,7 +110,7 @@ function Pages() {
               <Route path="/dashboard-like-card" element={<DashboardLikeCard />} />
               <Route path="/dashboard-company-profile" element={<DashboardCompanyProfile />} />
 
-              <Route path="/dashboard-ompany-edit" element={<CompanyProfileEdit />} />
+              <Route path="/dashboard-company-edit" element={<CompanyProfileEdit />} />
               <Route path="/dashboard-company-start" element={<CompanyProfileStart />} />
               <Route path="/dashboard-report" element={<Report />} />
             </Routes>
