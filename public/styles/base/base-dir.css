@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../../fonts/Poppins-Medium.ttf);
+}
+
 .border-bottom-dashed {
   border-bottom: 2px dashed #D6D6D6;
 }

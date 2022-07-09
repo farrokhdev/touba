@@ -1,3 +1,17 @@
+@font-face {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 700;
+    src: url(../../fonts/Poppins-Bold.ttf)
+}
+
+@font-face {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 500;
+    src: url(../../fonts/Poppins-Medium.ttf)
+}
+
 @mixin FontStyle($fontSize, $fontWeight, $Color) {
   width: auto;
   height: auto;
