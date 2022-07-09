@@ -6,7 +6,7 @@
     @include Display(flex, center, center);
 
     @media (max-width: 1000px) {
-        display: none;
+        display: none !important;
     }
 
     &-items {
@@ -16,17 +16,17 @@
         position: relative;
 
         @media (max-width: 1000px) {
-            display: none;
+            display: none !important;
         }
 
         @media (min-width: 1001px) {
-            flex-wrap: wrap;
-            flex-direction: column-reverse;
+            flex-wrap: wrap !important;
+            flex-direction: column-reverse !important;
         }
 
         @media (min-width: 1395px) {
-            flex-wrap: nowrap;
-            flex-direction: row;
+            flex-wrap: nowrap !important;
+            flex-direction: row !important;
         }
 
         &-search {

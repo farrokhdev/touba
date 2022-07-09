@@ -55,7 +55,7 @@ export function BottomNav() {
   const [showMinimalDropDown, setShowMinimalDropDown] = useState(false);
   const navigate = useNavigate();
   const [active, setActive] = useState(0);
-  
+
   function handleActiveLink(id: number) {
     setActive(id);
   }
@@ -76,12 +76,6 @@ export function BottomNav() {
   const navigator = (page: string) => {
     navigate(page);
   };
-  function handleNavigationSpecial() {
-    navigate("/special-offer")
-  }
-  function handleNavigationProduct() {
-    navigate("/detail-product")
-  }
 
   return (
     <>
@@ -96,11 +90,11 @@ export function BottomNav() {
               title={"EXCESS CAPACITY"}
             />
             <Button onClick={() => navigator("/product")} title={"PRODUCT"} />
-            <ButtonDropdown title={"SUPPLIERS"} links={TEST} />
-            <ButtonDropdown title={"DEMANDERS"} links={[]} />
-            <ButtonDropdown title={"BROKERS"} links={[]} />
-            <ButtonDropdown title={"SIDE SERVICES"} links={sideService} />
-            <Button title={"SPECIAL OFFERS"} onClick={handleNavigationSpecial} />
+            <Button onClick={() => navigator("/supplier")} title={"SUPPLIERS"} />
+            <Button title={"DEMANDERS"} />
+            <Button title={"BROKERS"} />
+            <Button onClick={() => navigator("/side-service")} title={"SIDE SERVICES"} />
+            <Button onClick={() => navigator("/special-offer")} title={"SPECIAL OFFERS"} />
             <Button title={"MAP"} />
           </div>
           {showDropDown === true ? (

@@ -188,6 +188,7 @@ export function CardSearchProduct(
                                 placeholderSelect={"Select Unit"}
                                 onSelected={handleGetSelectedTextExcess}
                                 onChange={handleGetValueSelectedExcess}
+                                items={DROPDOWN}
                             />
                             <SelectComponent
                                 type={"one"}
@@ -218,6 +219,7 @@ export function CardSearchProduct(
                                     placeholderSelect={"Select Unit"}
                                     onSelected={handleGetSelectedTextProduct}
                                     onChange={handleGetValueSelectedProduct}
+                                    items={DROPDOWN}
                                 />
                                 <SelectComponent
                                     type={"one"}
@@ -247,6 +249,7 @@ export function CardSearchProduct(
                                     placeholderSelect={"Select Unit"}
                                     onSelected={handleGetSelectedTextSuppliers}
                                     onChange={handleGetValueSelectedSuppliers}
+                                    items={DROPDOWN}
                                 />
                                 <SelectComponent
                                     type={"one"}

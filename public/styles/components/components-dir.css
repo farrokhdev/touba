@@ -2386,11 +2386,17 @@ a {
 }
 
 .button-icon {
-  width: 60px;
-  height: 60px;
   background-color: #FFFFFF;
-  border: 5px solid #E5E5E5;
+  border: 5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(#e5e5e511, #e5e5e542);
   border-radius: 8px;
+  padding: 11px;
+}
+
+.button-icon > img {
+  width: 30px;
+  height: 30px;
 }
 
 .button-icon-title {
@@ -6381,7 +6387,7 @@ a {
 }
 
 .content-submenu {
-  width: 33%;
+  width: 30%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7305,7 +7311,7 @@ a {
 }
 
 .content-submenu {
-  width: 33%;
+  width: 30%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;

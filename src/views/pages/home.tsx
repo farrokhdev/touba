@@ -46,39 +46,6 @@ class Home extends HomeController {
         };
         return (
             <div className="home">
-                {/* <ButtonIcon icon={IconAddCircleWhite} nameButton={"ADD NEW"} />
-                <ButtonIconDashboard icon={IconArrowBlack} notification={2} />
-                <ButtonIconDashboard icon={IconArrowBlack} dropdown={"/profile"} />
-                <div style={{ width: "509px" }}>
-                    <CardGroupChat
-                        title={"Group Title"}
-                        amountMessage={7}
-                        message={" message Here"}
-                        images={[ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa, ImageNasa]}
-                        date={"25 MINS"}
-                    />
-                </div>
-                <Offcanvas />
-                <ButtonIconDashboard icon="" dataBsToggle="offcanvas" dataBsTarget="#offcanvasRight" aria-controls="offcanvasRight" />
-                <div style={{ width: "793px" }}>
-                    <CardCalculateProduct image={ImageTest} name={"Name Product"} price={15} number={10000} />
-                </div> */}
-                {/* <ModalComponent
-                    iconPerson={IconPersonCircle}
-                    namePerson={"Name Here"}
-                    date={"12.0.2022"}
-                    rateStar={5}
-                    iconCountry={ImageFlagChine}
-                    location={"/"}
-                    description={"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis aute"}
-                    imageProduct={ImageOil}
-                    nameProduct={"Product Name Here Name Here"}
-                    itemDropDown={TESTLINK}
-                    country={"china"}
-                /> */}
-                <div style={{ width: "1165px" }}>
-                    {/* <CardOfferHorizental image={ImageTest} status={"FINISH PRODUCT"} description={"Pomegranate Juice Pet Bottle, Best material and design, Ready to Order"} rate={4.2} country={"CHINA"} chart={TEST} amount={200} type="two" timeDelivery="98.6%" timeResponse="15h" /> */}
-                </div>
                 <div className="home-header px-5">
                     <div className="home-header-description">
                         <div className="home-header-description-items">

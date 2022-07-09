@@ -1,13 +1,19 @@
 import { ChangeEvent, InputHTMLAttributes, memo, ReactElement, useCallback, useState } from "react";
 import { SelectComponent } from "./components";
 
+type Items = {
+    name: string;
+    id: number;
+}
+
 interface Props extends InputHTMLAttributes<HTMLInputElement> {
     value: string;
     placeholderSelect?: string;
     onSelected(select: string): void;
+    items: Items[];
 }
 
-function SelectText({ value, onChange, placeholderSelect, onSelected }: Props): ReactElement {
+function SelectText({ value, onChange, placeholderSelect, onSelected, items }: Props): ReactElement {
 
     const handleOnChange = useCallback((event: ChangeEvent<HTMLInputElement>) => {
         onChange?.(event)
@@ -30,6 +36,7 @@ function SelectText({ value, onChange, placeholderSelect, onSelected }: Props): 
             </div>
             <SelectComponent
                 type={"two"}
+                items={items}
                 placeholder={placeholderSelect}
                 onSelect={handleGetSelected}
             />

@@ -1,9 +1,14 @@
 .button-icon {
-    width: 60px;
-    height: 60px;
     background-color: $white;
-    border: 5px solid #E5E5E5;
+    border: 5px solid ;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(#e5e5e511, #e5e5e542);
     border-radius: 8px;
+    padding: 11px;
+    >img {
+        width: 30px;
+        height: 30px;
+    }
 }
 .button-icon-title {
     width: 135px;

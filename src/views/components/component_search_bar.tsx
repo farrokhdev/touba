@@ -12,7 +12,7 @@ const ComponentSearchBar = () => {
       <div className="col-xl-3 col-sm-12 p-2">
         <SelectText value={""} onSelected={function (name: string): void {
           throw new Error("Function not implemented.");
-        } } />
+        } } items={[]} />
       </div>
       <div className="col-xl-3 col-sm-12 p-2 justify-content-center">
         <SelectComponent type='one' onSelect={function (name: string): void {

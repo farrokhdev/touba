@@ -34,7 +34,7 @@ interface PropsSubMenu {
 }
 
 interface Props {
-    onClose(): void;
+    onClose(event?: MouseEvent): void;
 }
 
 function SubMenu({ subMenu }: PropsSubMenu) {
@@ -73,10 +73,15 @@ export function DropDownBottomMenu({onClose}: Props): ReactElement {
         onClose()
     }, [onClose]);
 
+    function handlePreventPropaggination (event: MouseEvent<HTMLElement>) {
+        event.stopPropagation();
+    }
+
     return (
         <div
             className="dropdown-bottom-menu"
             onMouseLeave={handleCloseMenu}
+            onClick={handlePreventPropaggination}
         >
             <div className="section-rectangle">
                 <div className="section-triggle"></div>

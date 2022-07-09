@@ -2472,11 +2472,17 @@ a {
 }
 
 .button-icon {
-  width: 60px;
-  height: 60px;
   background-color: #FFFFFF;
-  border: 5px solid #E5E5E5;
+  border: 5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(#e5e5e511, #e5e5e542);
   border-radius: 8px;
+  padding: 11px;
+}
+
+.button-icon > img {
+  width: 30px;
+  height: 30px;
 }
 
 .button-icon-title {
@@ -6467,7 +6473,7 @@ a {
 }
 
 .content-submenu {
-  width: 33%;
+  width: 30%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7391,7 +7397,7 @@ a {
 }
 
 .content-submenu {
-  width: 33%;
+  width: 30%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11696,7 +11702,7 @@ a {
 
 @media (max-width: 750px) {
   .top-nav-home {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -11716,21 +11722,21 @@ a {
 
 @media (max-width: 750px) {
   .top-nav-home-items {
-    display: none;
+    display: none !important;
   }
 }
 
 @media (min-width: 751px) {
   .top-nav-home-items {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
   }
 }
 
 @media (min-width: 1251px) {
   .top-nav-home-items {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap !important;
+        flex-wrap: nowrap !important;
   }
 }
 
@@ -11926,7 +11932,7 @@ a {
 
 @media (max-width: 1000px) {
   .bottom-nav {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -11953,29 +11959,29 @@ a {
 
 @media (max-width: 1000px) {
   .bottom-nav-items {
-    display: none;
+    display: none !important;
   }
 }
 
 @media (min-width: 1001px) {
   .bottom-nav-items {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
   }
 }
 
 @media (min-width: 1395px) {
   .bottom-nav-items {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-wrap: nowrap !important;
+        flex-wrap: nowrap !important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
   }
 }
 

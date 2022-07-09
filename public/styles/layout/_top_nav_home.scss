@@ -6,7 +6,7 @@
     @include Display(flex, center, center);
     
     @media (max-width: 750px) {
-        display: none;
+        display: none !important;
     }
 
     &-items {
@@ -16,15 +16,15 @@
         align-items: center;
         justify-content: space-between;
         @media (max-width: 750px) {
-            display: none;
+            display: none !important;
         }
 
         @media (min-width: 751px) {
-            flex-wrap: wrap;
+            flex-wrap: wrap !important;
         }
 
         @media (min-width: 1251px) {
-            flex-wrap: nowrap;
+            flex-wrap: nowrap !important;
         }
 
         &-brand {
