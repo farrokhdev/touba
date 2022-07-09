@@ -1,12 +1,12 @@
 .mycompany-nav {
     background: #ffffff;
-    border-radius: 12px;
-    padding: 15px 15px 15px 30px;
     button {
         border: none;
         outline: none;
         background-color: transparent;
         text-transform: uppercase;
+        padding: 15px 15px 15px 30px;
+
     }
     .nav-button {
         button {
@@ -14,6 +14,7 @@
         }
         .active {
             color: #21c085 !important;
+            border-bottom: #21c085 1px solid;
         }
     }
 }

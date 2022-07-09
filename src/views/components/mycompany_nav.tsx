@@ -15,7 +15,7 @@ const MyCompanyNav = ({ onActive, showButton }: Props) => {
   }
 
   return (
-    <div className="mycompany-nav d-flex flex-row align-items-center justify-content-between">
+    <div className="mycompany-nav d-flex flex-row align-items-center justify-content-between border-bottom w-100">
       <div className="nav-button">
         <button className={activeTab === 1 ? "active me-5" : "me-5"} onClick={() => handleActiveTab(1)}>
           Description
