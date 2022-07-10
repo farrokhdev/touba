@@ -10563,8 +10563,6 @@ a {
 
 .mycompany-nav {
   background: #ffffff;
-  border-radius: 12px;
-  padding: 15px 15px 15px 30px;
 }
 
 .mycompany-nav button {
@@ -10572,6 +10570,7 @@ a {
   outline: none;
   background-color: transparent;
   text-transform: uppercase;
+  padding: 15px 15px 15px 30px;
 }
 
 .mycompany-nav .nav-button button {
@@ -10586,6 +10585,7 @@ a {
 
 .mycompany-nav .nav-button .active {
   color: #21c085 !important;
+  border-bottom: #21c085 1px solid;
 }
 
 .outline-btn {
