@@ -79,157 +79,174 @@ class AboutPage extends CompanyProfileStartController {
   }
 
   render() {
-    const { activeTab } = this.state;
+    const { activeTab, startPage } = this.state;
     return (
       <>
-        <div className="body-content-header">
-          <MyCompanyNav onActive={this.getActiveTab} showButton={false} />
-        </div>
-        <div className="body-content-main">
-          {activeTab === 1 && (
-            <>
-              <div className="">
-                <UploadImage title="Upload Image Here" />
-              </div>
-              <div className="mt-4">
-                <TextAreaLabel handleGetValue={() => {}} title="Description" />
-              </div>
-              <div className="mt-3">
-                <TextIconVerticalDashboard
-                  icon={IconDanger}
-                  title={"Hint text about the title"}
-                />{" "}
-              </div>
-              <div className="mt-4">
-                <ComponentMultiInput
-                  lableOne="Specifications"
-                  lableTwo="Amount"
-                  placeholderOne="Weight"
-                  placeholderTwo="2800 KG"
-                />
-              </div>
-              <div className="mt-4">
-                <ComponentMultiInput
-                  lableOne="Specifications"
-                  lableTwo="Amount"
-                  placeholderOne="Weight"
-                  placeholderTwo="2800 KG"
-                />
-              </div>
-              <div className="mt-4 mb-2">
-                <ComponentMultiInput
-                  lableOne="Specifications"
-                  lableTwo="Amount"
-                  placeholderOne="Weight"
-                  placeholderTwo="2800 KG"
-                />
-              </div>
-            </>
-          )}
-          {activeTab == 2 && (
-            <>
-              {" "}
-              <div className="">
-                <ComponentMultiInput
-                  lableOne="Specifications"
-                  lableTwo="Amount"
-                  placeholderOne="Weight"
-                  placeholderTwo="2800 KG"
-                />
-              </div>
-              <div className="mt-4">
-                <ComponentMultiInput
-                  lableOne="Specifications"
-                  lableTwo="Amount"
-                  placeholderOne="Weight"
-                  placeholderTwo="2800 KG"
-                />
-              </div>
-              <div className="mt-4 mb-2">
-                <ComponentMultiInput
-                  lableOne="Specifications"
-                  lableTwo="Amount"
-                  placeholderOne="Weight"
-                  placeholderTwo="2800 KG"
-                />
-              </div>
-              <div className="mb-3 mt-3">
-                <ButtonAdd onClick={() => {}} />
-              </div>
-            </>
-          )}
-          {activeTab == 4 && (
-            <>
-              <div>
-                {" "}
-                <InputTextLabel
-                  type="text"
-                  showDropDown={false}
-                  value=""
-                  onChange={() => {}}
-                  title="Question"
-                  placeholder="Type Question Here"
-                />
-              </div>
-              <div className="mt-4 ">
-                {" "}
-                <InputTextLabel
-                  type="text"
-                  showDropDown={false}
-                  value=""
-                  onChange={() => {}}
-                  title="Answer"
-                  placeholder="Type Answer"
-                />
-              </div>
-              <div className="border-bottom-dashed mt-3"></div>
-              <div className="mt-3">
-                {" "}
-                <InputTextLabel
-                  type="text"
-                  showDropDown={false}
-                  value=""
-                  onChange={() => {}}
-                  title="Question"
-                  placeholder="Type Question Here"
-                />
-              </div>
-              <div className="mt-4 ">
-                {" "}
-                <InputTextLabel
-                  type="text"
-                  showDropDown={false}
-                  value=""
-                  onChange={() => {}}
-                  title="Answer"
-                  placeholder="Type Answer"
-                />
-              </div>
-              <div className="border-bottom-dashed mt-3"></div>
-              <div className="mb-3 mt-3">
-                <ButtonAdd onClick={() => {}} />
-              </div>
-
-            </>
-          )}
-                      {activeTab===3 && this.Certificate()}
-
-
-          <Divider direction={"vertical"} />
-          <div className="body-content-main-footer">
-            <div className="body-content-main-footer-button-group">
-              <button className="body-content-main-footer-button-group-next">
-                <h5>NEXT STEP</h5>
-              </button>
-              <button className="body-content-main-footer-button-group-back">
-                <h5>BACK</h5>
+        {startPage ? (
+          <div className="start-suppiler p-4 mt-4 mx-5 d-flex align-items-center justify-content-center">
+            <div className="d-flex flex-column align-items-center">
+              <span>Want to be a supplier?</span>
+              <button
+                className="outline-btn mt-5"
+                onClick={this.closeStartPage}
+              >
+                Let’s start Introduce your company
               </button>
             </div>
-            <button className="body-content-main-footer-button-cancel">
-              <h5>CANCEL</h5>
-            </button>
           </div>
-        </div>
+        ) : (
+          <>
+            <div className="body-content-header">
+              <MyCompanyNav onActive={this.getActiveTab} showButton={false} />
+            </div>
+            <div className="body-content-main">
+              {activeTab === 1 && (
+                <>
+                  <div className="">
+                    <UploadImage title="Upload Image Here" />
+                  </div>
+                  <div className="mt-4">
+                    <TextAreaLabel
+                      handleGetValue={() => {}}
+                      title="Description"
+                    />
+                  </div>
+                  <div className="mt-3">
+                    <TextIconVerticalDashboard
+                      icon={IconDanger}
+                      title={"Hint text about the title"}
+                    />{" "}
+                  </div>
+                  <div className="mt-4">
+                    <ComponentMultiInput
+                      lableOne="Specifications"
+                      lableTwo="Amount"
+                      placeholderOne="Weight"
+                      placeholderTwo="2800 KG"
+                    />
+                  </div>
+                  <div className="mt-4">
+                    <ComponentMultiInput
+                      lableOne="Specifications"
+                      lableTwo="Amount"
+                      placeholderOne="Weight"
+                      placeholderTwo="2800 KG"
+                    />
+                  </div>
+                  <div className="mt-4 mb-2">
+                    <ComponentMultiInput
+                      lableOne="Specifications"
+                      lableTwo="Amount"
+                      placeholderOne="Weight"
+                      placeholderTwo="2800 KG"
+                    />
+                  </div>
+                </>
+              )}
+              {activeTab == 2 && (
+                <>
+                  {" "}
+                  <div className="">
+                    <ComponentMultiInput
+                      lableOne="Specifications"
+                      lableTwo="Amount"
+                      placeholderOne="Weight"
+                      placeholderTwo="2800 KG"
+                    />
+                  </div>
+                  <div className="mt-4">
+                    <ComponentMultiInput
+                      lableOne="Specifications"
+                      lableTwo="Amount"
+                      placeholderOne="Weight"
+                      placeholderTwo="2800 KG"
+                    />
+                  </div>
+                  <div className="mt-4 mb-2">
+                    <ComponentMultiInput
+                      lableOne="Specifications"
+                      lableTwo="Amount"
+                      placeholderOne="Weight"
+                      placeholderTwo="2800 KG"
+                    />
+                  </div>
+                  <div className="mb-3 mt-3">
+                    <ButtonAdd onClick={() => {}} />
+                  </div>
+                </>
+              )}
+              {activeTab == 4 && (
+                <>
+                  <div>
+                    {" "}
+                    <InputTextLabel
+                      type="text"
+                      showDropDown={false}
+                      value=""
+                      onChange={() => {}}
+                      title="Question"
+                      placeholder="Type Question Here"
+                    />
+                  </div>
+                  <div className="mt-4 ">
+                    {" "}
+                    <InputTextLabel
+                      type="text"
+                      showDropDown={false}
+                      value=""
+                      onChange={() => {}}
+                      title="Answer"
+                      placeholder="Type Answer"
+                    />
+                  </div>
+                  <div className="border-bottom-dashed mt-3"></div>
+                  <div className="mt-3">
+                    {" "}
+                    <InputTextLabel
+                      type="text"
+                      showDropDown={false}
+                      value=""
+                      onChange={() => {}}
+                      title="Question"
+                      placeholder="Type Question Here"
+                    />
+                  </div>
+                  <div className="mt-4 ">
+                    {" "}
+                    <InputTextLabel
+                      type="text"
+                      showDropDown={false}
+                      value=""
+                      onChange={() => {}}
+                      title="Answer"
+                      placeholder="Type Answer"
+                    />
+                  </div>
+                  <div className="border-bottom-dashed mt-3"></div>
+                  <div className="mb-3 mt-3">
+                    <ButtonAdd onClick={() => {}} />
+                  </div>
+                </>
+              )}
+              {activeTab === 3 && this.Certificate()}
+
+              <Divider direction={"vertical"} />
+              <div className="body-content-main-footer">
+                <div className="body-content-main-footer-button-group">
+                  <button className="body-content-main-footer-button-group-next">
+                    <h5>NEXT STEP</h5>
+                  </button>
+                  <button className="body-content-main-footer-button-group-back">
+                    <h5>BACK</h5>
+                  </button>
+                </div>
+                <button className="body-content-main-footer-button-cancel">
+                  <h5>CANCEL</h5>
+                </button>
+              </div>
+            </div>
+          </>
+        )}
       </>
     );
   }

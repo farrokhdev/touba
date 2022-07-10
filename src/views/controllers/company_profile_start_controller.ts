@@ -20,7 +20,7 @@ interface IState {
     imageUser: string;
     modalLocation: boolean;
     locationName: string;
-    
+    startPage:boolean
 }
 
 export class CompanyProfileStartController extends Component<IProps, IState> {
@@ -42,6 +42,7 @@ export class CompanyProfileStartController extends Component<IProps, IState> {
         imageUser: "",
         modalLocation: false,
         locationName: "",
+        startPage:true,
     };
 
     TEST_NAV_ITEM = [
@@ -122,6 +123,9 @@ export class CompanyProfileStartController extends Component<IProps, IState> {
 
     showModalLocation = () => {
         this.setState({modalLocation: true})
+    };
+    closeStartPage = () => {
+        this.setState({startPage: false})
     };
 
 }

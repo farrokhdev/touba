@@ -72,7 +72,7 @@
                 &-footer {
                     width: 100%;
                     padding: 25px 0;
-                    @include Display (flex, space-between, center);
+                    @include Display(flex, space-between, center);
 
                     &-button-group {
                         @include Display(flex, center, center);
@@ -130,7 +130,7 @@
                     margin: 0 auto;
                     padding: 30px 0;
 
-                    >h4 {
+                    > h4 {
                         @include FontStyle(18px, 600, $sorme);
                         margin: 0;
                     }
@@ -142,11 +142,11 @@
                         margin: 0 auto 20px;
 
                         .input-text-label {
-                            margin: 20px auto 0 ;
+                            margin: 20px auto 0;
                         }
 
                         .Zindex {
-                            >div:nth-of-type(2){
+                            > div:nth-of-type(2) {
                                 z-index: 2;
                             }
                         }
@@ -193,7 +193,7 @@
                         &-map {
                             height: 560px;
                             border-radius: 12px;
-                            >div {
+                            > div {
                                 height: 100%;
                             }
                         }
@@ -203,19 +203,19 @@
                     width: 95%;
                     margin: 0 auto;
                     padding: 25px 0;
-                    @include Display (flex, space-between, center);
+                    @include Display(flex, space-between, center);
 
                     &-button-group {
-                        @include Display (flex, center, center);
+                        @include Display(flex, center, center);
 
                         &-next {
                             border: none;
                             border-radius: 8px;
                             background-color: $green;
-                            @include Display (flex, center, center);
+                            @include Display(flex, center, center);
                             padding: 13.5px 16px;
 
-                            >h5 {
+                            > h5 {
                                 @include FontStyle(14px, 600, $white);
                                 margin: 0;
                             }
@@ -224,11 +224,11 @@
                         &-back {
                             @include Border(1px, $green, 8px);
                             background-color: transparent;
-                            @include Display (flex, center, center);
+                            @include Display(flex, center, center);
                             padding: 13.5px 16px;
                             margin: 0 16px;
 
-                            >h5 {
+                            > h5 {
                                 @include FontStyle(14px, 600, $green);
                                 margin: 0;
                             }
@@ -239,10 +239,10 @@
                         border: none;
                         border-radius: 8px;
                         background-color: $lightSorme;
-                        @include Display (flex, center, center);
+                        @include Display(flex, center, center);
                         padding: 13.5px 16px;
 
-                        >h5 {
+                        > h5 {
                             @include FontStyle(14px, 600, $white);
                             margin: 0;
                         }
@@ -274,7 +274,7 @@
                 &-title {
                     width: 100%;
                     margin: 0 auto;
-                    >h4 {
+                    > h4 {
                         @include FontStyle(22px, 800, $sorme);
                         margin: 0;
                         padding: 35px 0;
@@ -285,6 +285,59 @@
                     width: 30%;
                     height: 340px;
                     margin: 32px 0;
+                }
+            }
+            .location-start {
+                background-color: $white;
+                .title {
+                    @include FontStyle(18px, 600, $sorme);
+                    padding: 30px 0;
+                    border-bottom: 1px solid rgba($color: #b1b4c1, $alpha: 0.5);
+                }
+                .location-table {
+                    border: 1px solid #d6d6d6;
+                    border-radius: 16px;
+                    width: 65%;
+                    .head {
+                        .head-title {
+                            @include FontStyle(22px, 600, $sorme);
+                        }
+                    }
+                    .table-head {
+                        padding: 0 52px 0 31px;
+                        background-color: rgba($color: #d6d6d6, $alpha: 0.5);
+                        height: 50px;
+                        span {
+                            @include FontStyle(14px, 500, $sorme);
+                            margin: 0;
+                            &:nth-child(2) {
+                                padding-right: 50px;
+                            }
+                            &:nth-child(3) {
+                                padding-right: 30px;
+                            }
+                        }
+                    }
+                }
+                .map-container {
+                    width: 35%;
+                    height: 100%;
+                    > div {
+                        height: 686px;
+                    }
+                }
+            }
+            .start-suppiler {
+                background-color: #eb3a47;
+                border-radius: 16px;
+                height: 800px;
+                span {
+                    @include FontStyle(34px, 700, $white);
+                }
+                button {
+                    @include FontStyle(18px, 600, $green);
+                    border: none !important;
+                    padding: 15px 35px;
                 }
             }
         }
