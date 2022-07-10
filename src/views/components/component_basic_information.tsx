@@ -4,6 +4,7 @@ import {
   ComponentColors,
   ComponentColorSelect,
   ComponentFieldsetPrice,
+  ComponentMultiInput,
   ComponentRadioSquare,
   ComponentTextArea,
   TextIconVerticalDashboard,
@@ -22,6 +23,8 @@ import Select_component_double from "./select_component_double";
 import ButtonAdd from "./button_add";
 import ComponentStorage from "./component_storage";
 import { Divider } from "./divider";
+import UploadImage from "./upload_image";
+import { CardUploadImage } from "./card_upload_image";
 
 const ComponentBasicInformation = () => {
   const [active, setActive] = useState(0);
@@ -125,20 +128,63 @@ const ComponentBasicInformation = () => {
                   <div className="smalText ">Add 3 More Keywords</div>
                 </div>
               </div>
+              <div className="mt-3 mb-4 p-2 col-4">
+                <CardUploadImage
+                  handleGetImage={() => {}}
+                  title="Product Images"
+                />
+              </div>
             </div>
           )}
           {active == 1 && (
-            <div>
-              <TextIconVerticalDashboard
-                icon={IconDanger}
-                title={"Hint text about the feature"}
-              />
+            <div className="p-2">
+              <div>
+                <ComponentMultiInput
+                  lableOne="Feature Title:"
+                  lableTwo="Feature Details:"
+                  placeholderOne="Weight"
+                  placeholderTwo="2800 KG"
+                />{" "}
+              </div>
+
+              <div
+                className="
+            mt-4"
+              >
+                <TextIconVerticalDashboard
+                  icon={IconDanger}
+                  title={"Hint text about the feature"}
+                />
+                <div className="mt-4">
+                  <ComponentMultiInput
+                    lableOne="Feature Title:"
+                    lableTwo="Feature Details:"
+                    placeholderOne="Weight"
+                    placeholderTwo="2800 KG"
+                  />{" "}
+                </div>
+              </div>
               <div className="mt-3">
                 <TextIconVerticalDashboard
                   icon={IconDanger}
                   title={"Hint text about the feature"}
                 />
               </div>
+              <div className="mt-4">
+                <ComponentMultiInput
+                  lableOne="Feature Title:"
+                  lableTwo="Feature Details:"
+                  placeholderOne="Weight"
+                  placeholderTwo="2800 KG"
+                />{" "}
+              </div>
+              <div className="mt-3">
+                <TextIconVerticalDashboard
+                  icon={IconDanger}
+                  title={"Hint text about the feature"}
+                />
+              </div>
+
               <div className="p-2">
                 <ComponentColors />
               </div>
@@ -218,6 +264,35 @@ const ComponentBasicInformation = () => {
                   title={"Hint text about the feature"}
                 />
               </div>
+            </div>
+          )}
+          {active==4 && (
+            <div className="p-2">
+              <div className="">
+                  <ComponentMultiInput
+                    lableOne="Feature Title:"
+                    lableTwo="Feature Details:"
+                    placeholderOne="Weight"
+                    placeholderTwo="2800 KG"
+                  />{" "}
+                </div>
+                <div className="mt-4">
+                  <ComponentMultiInput
+                    lableOne="Feature Title:"
+                    lableTwo="Feature Details:"
+                    placeholderOne="Weight"
+                    placeholderTwo="2800 KG"
+                  />{" "}
+                </div>
+                <div className="mt-4">
+                  <ComponentMultiInput
+                    lableOne="Feature Title:"
+                    lableTwo="Feature Details:"
+                    placeholderOne="Weight"
+                    placeholderTwo="2800 KG"
+                  />{" "}
+                </div>
+                <div className="mt-2"><ButtonAdd  onClick={()=>{}}/></div>
             </div>
           )}
         </div>

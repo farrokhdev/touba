@@ -1,184 +1,198 @@
 .edit-order {
-    background-color: $white;
+    background-color: #F4F5F9;
     margin: 0 auto;
-    &-content {
-        @include Display(flex, center, flex-start);
 
-        &-product {
-            @include Display(flex, center, flex-end, column);
+    &-card {
+        width: 95% !important;
+        margin: 30px auto !important;
+        background: $white;
+        box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
+        border-radius: 16px;
 
-            &-counting {
-                @include Display(flex, center, space-between, column);
+        &-content {
+            @include Display(flex, center, flex-start);
 
-                &-details {
-                    @include Display(flex, space-between, center);
-                    margin: 16px 0;
+            &-product {
+                @include Display(flex, center, flex-end, column);
 
-                    &-title {
-                        @include FontStyle(16px, 400, $lightSorme);
-                        margin: 0;
-                    }
+                &-counting {
+                    @include Display(flex, center, space-between, column);
 
-                    &-price {
-                        @include Display(flex, center, center);
-                        @include FontStyle(22px, 500, $lightSorme);
-                        margin: 0;
-                        
-                        &-total {
-                            @include FontStyle(22px, 800, $green);
-                            margin: 0;
-                        }
-
-                        >span {
-                            @include FontStyle(22px, 800, $sorme);
-                            margin: 0;
-                        }
-
-                    }
-                }
-            }
-        }
-
-        &-address {
-            @include Display(flex, space-between, flex-start, column);
-            margin: 25px 0 0 0;
-
-            .row>* {
-                max-width: 95.5% !important;
-            }
-
-            &-top {
-                @include Display(flex, space-between, flex-start);
-
-                &-image {
-                    @include Display(flex, center, flex-start);
-                }
-
-                &-items {
-                    @include Display(flex, start, flex-start, column);
-
-                    &-location {
-                        width: 100%;
-                        margin: 0 0 16px 0;
+                    &-details {
+                        @include Display(flex, space-between, center);
+                        margin: 16px 0;
 
                         &-title {
                             @include FontStyle(16px, 400, $lightSorme);
-                            margin: 0 0 8px 0;
-                        }
-
-                        &-description {
-                            @include FontStyle(16px, 600, $sorme);
                             margin: 0;
                         }
-                    }
 
-                    &-details {
-                        @include Display(flex, start, center, row, wrap);
-                        width: 100%;
+                        &-price {
+                            @include Display(flex, center, center);
+                            @include FontStyle(22px, 500, $lightSorme);
+                            margin: 0;
 
-                        &-text {
-                            width: 33%;
-
-                            .title {
-                                @include FontStyle(16px, 400, $lightSorme);
-                                margin: 16px 0 8px 0;
+                            &-total {
+                                @include FontStyle(22px, 800, $green);
+                                margin: 0;
                             }
 
-                            .description {
-                                @include FontStyle(16px, 600, $sorme);
-                                margin: 0 0 16px 0;
+                            >span {
+                                @include FontStyle(22px, 800, $sorme);
+                                margin: 0;
                             }
+
                         }
                     }
                 }
             }
 
-            &-map {
-                >div {
-                    height: 41vh !important;
-                }
-            }
+            &-address {
+                @include Display(flex, space-between, flex-start, column);
+                margin: 25px 0 0 0;
 
+                .row>* {
+                    max-width: 95.5% !important;
+                }
+
+                &-top {
+                    @include Display(flex, space-between, flex-start);
+
+                    &-image {
+                        @include Display(flex, center, flex-start);
+                    }
+
+                    &-items {
+                        @include Display(flex, start, flex-start, column);
+
+                        &-location {
+                            width: 100%;
+                            margin: 0 0 16px 0;
+
+                            &-title {
+                                @include FontStyle(16px, 400, $lightSorme);
+                                margin: 0 0 8px 0;
+                            }
+
+                            &-description {
+                                @include FontStyle(16px, 600, $sorme);
+                                margin: 0;
+                            }
+                        }
+
+                        &-details {
+                            @include Display(flex, start, center, row, wrap);
+                            width: 100%;
+
+                            &-text {
+                                width: 33%;
+
+                                .title {
+                                    @include FontStyle(16px, 400, $lightSorme);
+                                    margin: 16px 0 8px 0;
+                                }
+
+                                .description {
+                                    @include FontStyle(16px, 600, $sorme);
+                                    margin: 0 0 16px 0;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &-map {
+                    >div {
+                        height: 41vh !important;
+                    }
+                }
+
+            }
         }
-    }
 
-    &-divider {
-        width: 90% !important;
-        margin: 0 auto;
-    }
+        &-divider {
+            width: 90% !important;
+            margin: 0 auto;
+        }
 
-    &-footer {
-        width: 90% !important;
-        margin: 0 auto;
-        padding: 46px 0;
-        @include Display(flex, space-between, center);
+        &-footer {
+            width: 90% !important;
+            margin: 0 auto;
+            padding: 46px 0;
+            @include Display(flex, space-between, center);
 
-        &-button-group {
-            @include Display(flex, end, center);
-            margin: 0 15px;
-
-            .my-btn-green {
-                width: 148px;
-                height: 48px;
-                background-color: $green;
-
-                >h6 {
-                    @include FontStyle(14px, 600, $white);
-                    margin: 0;
-                }
-            }
-
-            .my-btn-gray {
-                width: 92px;
-                height: 48px;
-                background-color: $lightSorme;
+            &-button-group {
+                @include Display(flex, end, center);
                 margin: 0 15px;
 
-                >h6 {
-                    @include FontStyle(14px, 600, $gray);
-                    margin: 0;
+                .my-btn-green {
+                    width: 148px;
+                    height: 48px;
+                    background-color: $green;
+
+                    >h6 {
+                        @include FontStyle(14px, 600, $white);
+                        margin: 0;
+                    }
+                }
+
+                .my-btn-gray {
+                    width: 92px;
+                    height: 48px;
+                    background-color: $lightSorme;
+                    margin: 0 15px;
+
+                    >h6 {
+                        @include FontStyle(14px, 600, $gray);
+                        margin: 0;
+                    }
                 }
             }
-        }
-        &-select {
-            @include Display(flex, space-between, center);
-            margin: 0 15px;
-            position: relative;
-            >h5 {
-                @include FontStyle(16px, 400, $lightSorme);
-                margin: 0 20px 0 0;
-                white-space: nowrap;
-            }
-            .dropdown-component-button {
-                width: 175px;
-                height: 48.64px;
-                padding: 0 10px;
-                @include Border(1px, $gray, 8px);
-                @include Display(flex, space-evenly, center)
-            }
-            .dropdown-component-items {
-                width: 100%;
-                background-color: $white;
-                position: absolute;
-                top: 62px;
-                >a {
-                    @include FontStyle(14px, 500, $lightSorme);
-                    margin: 0;
+
+            &-select {
+                @include Display(flex, space-between, center);
+                margin: 0 15px;
+                position: relative;
+
+                >h5 {
+                    @include FontStyle(16px, 400, $lightSorme);
+                    margin: 0 20px 0 0;
+                    white-space: nowrap;
+                }
+
+                .dropdown-component-button {
+                    width: 175px;
+                    height: 48.64px;
+                    padding: 0 10px;
+                    @include Border(1px, $gray, 8px);
+                    @include Display(flex, space-evenly, center)
+                }
+
+                .dropdown-component-items {
+                    width: 100%;
+                    background-color: $white;
+                    position: absolute;
+                    top: 62px;
+
+                    >a {
+                        @include FontStyle(14px, 500, $lightSorme);
+                        margin: 0;
+                    }
                 }
             }
-        }
 
 
-        .footer-dropdown {
-            margin: 0 15px;
+            .footer-dropdown {
+                margin: 0 15px;
 
-            >h5 {
-                @include FontStyle(16px, 400, $lightSorme);
-                margin: 0;
-                white-space: nowrap;
+                >h5 {
+                    @include FontStyle(16px, 400, $lightSorme);
+                    margin: 0;
+                    white-space: nowrap;
+                }
+
+                @include Display(flex, start, center);
             }
-
-            @include Display(flex, start, center);
         }
     }
 }

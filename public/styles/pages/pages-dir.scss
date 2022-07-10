@@ -1,3 +1,4 @@
+@import "./../base/variables";
 @import "./home";
 @import "./aboutus";
 @import "./login";
@@ -12,6 +13,7 @@
 @import "./dashboard_table_orders";
 @import "./edit_order";
 @import "./details_order";
-@import "./dashboard_finance";
-@import "./dashboard_company_profile_excess";
 @import "./company_profile_edit";
+@import "./company-profile-start";
+@import "./dashboard_finance";
+@import "./report";

@@ -4,8 +4,8 @@ export type IProps = {};
 
 const ProfileHeaderImage: React.FC<IProps> = ({}: IProps) => {
   return (
-    <div className="profile-header-image">
-      <div className="background-Img">
+    <div className="profile-header-image h-100 w-100">
+      <div className="background-Img ">
         <img src={ImageComppanyProfile} alt="background" />
       </div>
       <div className="content d-flex flex-column align-items-center">

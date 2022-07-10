@@ -60,7 +60,7 @@ function SelectComponent({ type, placeholder, items, onSelect, title }: Props): 
                 ) : (null)}
 
                 <h3 className="select-component-button-text">
-                    {placeholder}
+                    {selectItem.name === "" ? placeholder : selectItem.name}
                 </h3>
                 {type === "two" ? (
                     <img

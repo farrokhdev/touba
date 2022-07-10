@@ -1,5 +1,5 @@
 import { HashRouter, Route, Routes, useLocation } from "react-router-dom";
-import { EditOrder, Home, Login, DetailsOrder, PageTestComponent, CompanyProfileEdit } from ".";
+import { EditOrder, Home, Login, DetailsOrder, PageTestComponent, CompanyProfileEdit, CompanyProfileStart, Report } from ".";
 import { CHART, Chart } from "../components/chart";
 import {
   ComponentBinaRazan,
@@ -39,9 +39,10 @@ import DashboardLikeCard from "./DashboardLikeCard/dashboard_like_card";
 import DashboardTableOrder from "./DashbordTableOrder/dashboard_table_order";
 import Dashboard from "../layout/dashboard/dashobord";
 import ComponentStorage from "../components/component_storage";
-import DashboardFinance from "./DashboardFinance/DashboatdFinance";
+import DashboardFinance from "./DashboardFinance/DashboardFinance";
 import DashboardCompanyProfile from "./dashboardCompanyProfile/dashboard_company_profile";
 import DashboardCompanyPofileExcess from "./dashboard_company_profile_excess/DashboardCompanyProfileExcess";
+import Review from "./review";
 
 function Pages() {
   const location = useLocation();
@@ -87,7 +88,7 @@ function Pages() {
       {location.pathname.includes("/profile") ? <ComponentBinaRazan /> : null}
       {location.pathname.includes("/dashboard") ? (
         <div className="row p-0 m-0">
-          <div className="col-2 bg-white">
+          <div className="col-2 ">
             <Dashboard />
           </div>
           <div className="col-10">
@@ -103,14 +104,21 @@ function Pages() {
                 path="/dashboard/companyprofile/excess"
                 element={<DashboardCompanyPofileExcess />}
               />
+              <Route path="/dashboard-finance" element={<DashboardFinance />} />
               <Route
                 path="/dashboard-table-order"
                 element={<DashboardTableOrder />}
               />
+              <Route
+                path="/dashboard-review"
+                element={<Review />}
+              />
               <Route path="/dashboard-like-card" element={<DashboardLikeCard />} />
               <Route path="/dashboard-company-profile" element={<DashboardCompanyProfile />} />
 
-              <Route path="/dashboard/company/edit" element={<CompanyProfileEdit />} />
+              <Route path="/dashboard-company-edit" element={<CompanyProfileEdit />} />
+              <Route path="/dashboard-company-start" element={<CompanyProfileStart />} />
+              <Route path="/dashboard-report" element={<Report />} />
             </Routes>
           </div>
         </div>

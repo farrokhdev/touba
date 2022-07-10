@@ -16,24 +16,7 @@ import { ButtonIcon } from "../../components/button_icon";
 import CongratulationBanner from "../../components/congratulation_banner";
 
 class DashboardCompanyProfile extends DashboardCompanyProfileController {
-  TEST_NAV_ITEM = [
-    {
-      title: "Basic Information",
-      id: 0,
-    },
-    {
-      title: "Other Details",
-      id: 1,
-    },
-    {
-      title: "Trade Information",
-      id: 2,
-    },
-    {
-      title: "Related Items",
-      id: 3,
-    },
-  ];
+ 
   searchAndSort = () => {
     return <ComponentSortandSearch />;
   };
@@ -89,13 +72,13 @@ class DashboardCompanyProfile extends DashboardCompanyProfileController {
   addProductOne = () => {
     return (
       <div className="row">
-        <div className="col-2">
+        <div className="col-3">
           <SideNavItems
             onActive={(e) => this.handleShowSideNavItem(e)}
             items={this.TEST_NAV_ITEM}
           />
         </div>
-        <div className="col-10 px-4 mt-5 ">
+        <div className="col-9 px-4 mt-5 ">
           {this.state.show == 0 && (
             <div>
               <ComponentBasicInformation />

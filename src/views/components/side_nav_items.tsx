@@ -1,6 +1,6 @@
 import { memo, ReactElement, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Divider } from "./components";
+import { Button, ComponentProgress, Divider } from "./components";
 import { ImageArrow } from "./image_arrow";
 
 export type navItems = {
@@ -14,9 +14,10 @@ export type navItems = {
 interface Props {
     items: navItems[];
     onActive(id: number): void;
+    showProgress?: boolean;
 }
 
-export function SideNavItems({ items, onActive }: Props): ReactElement {
+export function SideNavItems({ items, onActive, showProgress }: Props): ReactElement {
 
     const [activeLink, setActiveLink] = useState(0)
 
@@ -82,7 +83,27 @@ export function SideNavItems({ items, onActive }: Props): ReactElement {
                     </div>
                 ))}
             </div>
-
+            {showProgress !== undefined && showProgress !== false ? (
+                <div className="mt-5 px-2">
+                    <ComponentProgress />
+                    <div className="my-3">
+                        <Divider direction="vertical" />
+                    </div>
+                    <ComponentProgress />
+                    <div className="my-3">
+                        <Divider direction="vertical" />
+                    </div>
+                    <ComponentProgress />
+                    <div className="my-3">
+                        <Divider direction="vertical" />
+                    </div>
+                    <ComponentProgress />
+                    <div className="my-3">
+                        <Divider direction="vertical" />
+                    </div>
+                    <Button title={"copmlete profile"} />
+                </div>
+            ) : (null)}
         </div>
     )
 }

@@ -55,14 +55,14 @@ const ComponentRelatedItems = () => {
         <div className="table-box mt-3 ">
           <div className="row border-bottom d-flex align-items-center ">
             <div className="row d-flex -align-items-center ">
-              <div onClick={() => setActive(0)} className="col-3 text-center ">
+              <div onClick={() => setActive(0)} className="col-4 text-center ">
                 <div
                   className={`item-nav py-4 ${active == 0 && "item-active"} `}
                 >
                   Related Products{" "}
                 </div>
               </div>
-              <div onClick={() => setActive(1)} className="col-3 text-center ">
+              <div onClick={() => setActive(1)} className="col-4 text-center ">
                 <div
                   className={`item-nav py-4 ${active == 1 && "item-active"} `}
                 >

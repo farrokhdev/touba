@@ -35,6 +35,26 @@ this.setState({location:window.location.pathname})      }
         { name: "NOV", size: 20 },
         { name: "DEC", size: 20 },
       ];
+    
+    TEST_NAV_ITEM = [
+        {
+          title: "Basic Information",
+          id: 0,
+        },
+        {
+          title: "Other Details",
+          id: 1,
+        },
+        {
+          title: "Trade Information",
+          id: 2,
+        },
+        {
+          title: "Related Items",
+          id: 3,
+        },
+      ];
+  
 
     //list
     handleShowSection = (number: number) => {

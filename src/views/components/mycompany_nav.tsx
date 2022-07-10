@@ -2,19 +2,20 @@ import React, { useState } from "react";
 
 interface Props {
   onActive(id: number): void;
+  showButton: boolean;
 }
 
-const MyCompanyNav = ({ onActive }: Props) => {
+const MyCompanyNav = ({ onActive, showButton }: Props) => {
 
   const [activeTab, setActiveTab] = useState(1);
 
-  function handleActiveTab (id: number) {
+  function handleActiveTab(id: number) {
     setActiveTab(id);
     onActive(id);
   }
 
   return (
-    <div className="mycompany-nav d-flex flex-row align-items-center justify-content-between">
+    <div className="mycompany-nav d-flex flex-row align-items-center justify-content-between border-bottom w-100">
       <div className="nav-button">
         <button className={activeTab === 1 ? "active me-5" : "me-5"} onClick={() => handleActiveTab(1)}>
           Description
@@ -27,7 +28,9 @@ const MyCompanyNav = ({ onActive }: Props) => {
         </button>
         <button className={activeTab === 4 ? "active" : ""} onClick={() => handleActiveTab(4)}>Faq</button>
       </div>
-      <button className="outline-btn">View as visitor</button>
+      {showButton === true ? (
+        <button className="outline-btn">View as visitor</button>
+      ) : (null)}
     </div>
   );
 };

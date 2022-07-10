@@ -56,3 +56,6 @@
         }
     }
 }
+.text-red{
+    @include FontStyle(16px,400,#FC4A56)
+}

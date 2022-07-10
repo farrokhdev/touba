@@ -38,7 +38,7 @@ export default class DashboardPage extends DashboarPageController {
             {" "}
             <div className=" bigText border-bottom p-4">Dashboard</div>
           </div>
-          <div className="mt-5 pt-5 ">
+          <div className="mt-5 pt-5 p-2 ">
             <ComponentDashboardHeader />
           </div>
           <div className=" mt-5 ">
@@ -247,8 +247,8 @@ export default class DashboardPage extends DashboarPageController {
             <ComponentProgress />
           </div>
           <div className="d-flex justify-content-between align-items-center p-3">
-            <div>Insights</div>
-            <div>View All</div>
+            <div className="boldText">Insights</div>
+            <div className="text-red">View All</div>
           </div>
           <div className="p-3">
             <ComponentMapBox />

@@ -4,7 +4,7 @@ import "react-calendar/dist/Calendar.css";
 
 interface Props {}
 
-export function ButtonComponent({}: Props): ReactElement {
+export function ComponentCalendar({}: Props): ReactElement {
   const [value, onChange] = useState(new Date());
   console.log(value);
   return (
@@ -19,4 +19,4 @@ export function ButtonComponent({}: Props): ReactElement {
   );
 }
 
-export default memo(ButtonComponent);
+export default memo(ComponentCalendar);
