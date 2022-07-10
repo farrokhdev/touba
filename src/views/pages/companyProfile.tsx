@@ -25,20 +25,26 @@ import {
   ComponentCapicityFilter,
   ComponentFilterRangeSlider,
   ComponentFilterSidebar,
+  ModalCompany,
 } from "../components/components";
 import ToubaProduct from "./ToubaProduct/ToubaProduct";
 import image_test from "../../assets/images/image-test.png";
 import Footer from "../layout/footer";
+import { Modal } from "../components/modal";
+import { Chart } from "../components/chart";
+import { MouseEvent } from "react";
 
 interface IProps {}
 
 interface IState {
   isShow: number;
+  showChartModal: boolean;
 }
 
 export default class CompanyProfile extends BaseComponent<IProps, IState> {
   state: IState = {
     isShow: 1,
+    showChartModal: false,
   };
   TEST = [
     { name: "JAN", size: 20 },
@@ -55,6 +61,9 @@ export default class CompanyProfile extends BaseComponent<IProps, IState> {
     { name: "DEC", size: 20 },
   ];
   render() {
+    function handlePreventOnClick(event: MouseEvent<HTMLElement>) {
+      event.stopPropagation();
+    }
     const about = () => {
       return (
         <>
@@ -540,6 +549,7 @@ export default class CompanyProfile extends BaseComponent<IProps, IState> {
                     chart={this.TEST}
                     amount={5}
                     discountPercent={2}
+                    chartOnClick={() => this.setState({ showChartModal: true })}
                   />
                 </div>
                 <div className="p-2">
@@ -554,6 +564,7 @@ export default class CompanyProfile extends BaseComponent<IProps, IState> {
                     chart={this.TEST}
                     amount={5}
                     discountPercent={2}
+                    chartOnClick={() => this.setState({ showChartModal: true })}
                   />
                 </div>
                 <div className="p-2">
@@ -568,6 +579,7 @@ export default class CompanyProfile extends BaseComponent<IProps, IState> {
                     chart={this.TEST}
                     amount={5}
                     discountPercent={2}
+                    chartOnClick={() => this.setState({ showChartModal: true })}
                   />
                 </div>
                 <div className="p-2">
@@ -582,11 +594,36 @@ export default class CompanyProfile extends BaseComponent<IProps, IState> {
                     chart={this.TEST}
                     amount={5}
                     discountPercent={2}
+                    chartOnClick={() => this.setState({ showChartModal: true })}
                   />
                 </div>
               </div>
             </div>
           </div>
+          {this.state.showChartModal ? (
+            <div
+              className="modal-company"
+              onClick={() => this.setState({ showChartModal: false })}
+            >
+              <div
+                onClick={handlePreventOnClick}
+                className="excess-modal p-4 d-flex flex-column align-items-start justify-content-between"
+              >
+                <div className="px-4 gray-background d-flex flex-column align-items-center justify-content-around">
+                  <span>
+                    a Quick motiongraphy to help user undrestanding this diagram
+                  </span>
+                  <Chart item={this.TEST} />
+                </div>
+                <button
+                  className="green-btn"
+                  onClick={() => this.setState({ showChartModal: false })}
+                >
+                  Got it
+                </button>
+              </div>
+            </div>
+          ) : null}
         </div>
       );
     };

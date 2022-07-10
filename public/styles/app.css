@@ -15777,6 +15777,57 @@ a {
   border-radius: 8px;
 }
 
+.company-Profile-Page .excess-modal {
+  background-color: #fff;
+  width: 900px;
+  height: 600px;
+  border-radius: 24px;
+}
+
+.company-Profile-Page .excess-modal .gray-background {
+  background: rgba(243, 244, 246, 0.5);
+  border-radius: 12px;
+  height: 450px;
+}
+
+.company-Profile-Page .excess-modal .gray-background .chart {
+  height: 110px;
+}
+
+.company-Profile-Page .excess-modal .gray-background .chart-content {
+  height: 100%;
+}
+
+.company-Profile-Page .excess-modal .gray-background .chart-content-column-top {
+  width: 38px;
+}
+
+.company-Profile-Page .excess-modal .gray-background .chart-content-column-bottom {
+  height: 100%;
+  width: 25px;
+}
+
+.company-Profile-Page .excess-modal .gray-background .chart-content-column {
+  height: 100%;
+}
+
+.company-Profile-Page .excess-modal span {
+  text-transform: uppercase;
+  text-align: center;
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 32px !important;
+  color: rgba(60, 85, 122, 0.7) !important;
+}
+
+.company-Profile-Page .excess-modal button {
+  width: 200px;
+  height: 63px;
+}
+
 .contactus-Item span:first-child {
   width: auto;
   height: auto;

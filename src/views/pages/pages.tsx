@@ -1,5 +1,14 @@
 import { HashRouter, Route, Routes, useLocation } from "react-router-dom";
-import { EditOrder, Home, Login, DetailsOrder, PageTestComponent, CompanyProfileEdit, CompanyProfileStart, Report } from ".";
+import {
+  EditOrder,
+  Home,
+  Login,
+  DetailsOrder,
+  PageTestComponent,
+  CompanyProfileEdit,
+  CompanyProfileStart,
+  Report,
+} from ".";
 import { CHART, Chart } from "../components/chart";
 import {
   ComponentBinaRazan,
@@ -43,6 +52,7 @@ import DashboardFinance from "./DashboardFinance/DashboardFinance";
 import DashboardCompanyProfile from "./dashboardCompanyProfile/dashboard_company_profile";
 import DashboardCompanyPofileExcess from "./dashboard_company_profile_excess/DashboardCompanyProfileExcess";
 import Review from "./review";
+import CartPage from "./cart/cart";
 
 function Pages() {
   const location = useLocation();
@@ -65,26 +75,22 @@ function Pages() {
 
   return (
     <div>
- 
       {/* <div className="mt-3 p-3 bg-white">
         <ComponentFieldsetPrice/> 
       </div> */}
 
-      {
-        location.pathname.includes("/login") ||
-          location.pathname.includes("/register") ||
-          location.pathname.includes("/dashboard") ||
-          location.pathname.includes("/dashboard-table-order") ||
-          location.pathname.includes("/dashboard-like-card") ||
-          location.pathname.includes("/dashboard/edit-order") ||
-          location.pathname.includes("/dashboard/details-order") 
-          ? null : (
-            <>
-              {location.pathname === "/" ? <TopNavHome /> : <TopNav />}
-              <BottomNav />
-            </>
-          )
-      }
+      {location.pathname.includes("/login") ||
+      location.pathname.includes("/register") ||
+      location.pathname.includes("/dashboard") ||
+      location.pathname.includes("/dashboard-table-order") ||
+      location.pathname.includes("/dashboard-like-card") ||
+      location.pathname.includes("/dashboard/edit-order") ||
+      location.pathname.includes("/dashboard/details-order") ? null : (
+        <>
+          {location.pathname === "/" ? <TopNavHome /> : <TopNav />}
+          <BottomNav />
+        </>
+      )}
       {location.pathname.includes("/profile") ? <ComponentBinaRazan /> : null}
       {location.pathname.includes("/dashboard") ? (
         <div className="row p-0 m-0">
@@ -109,15 +115,23 @@ function Pages() {
                 path="/dashboard-table-order"
                 element={<DashboardTableOrder />}
               />
+              <Route path="/dashboard-review" element={<Review />} />
               <Route
-                path="/dashboard-review"
-                element={<Review />}
+                path="/dashboard-like-card"
+                element={<DashboardLikeCard />}
               />
-              <Route path="/dashboard-like-card" element={<DashboardLikeCard />} />
-              <Route path="/dashboard-company-profile" element={<DashboardCompanyProfile />} />
-
-              <Route path="/dashboard-company-edit" element={<CompanyProfileEdit />} />
-              <Route path="/dashboard-company-start" element={<CompanyProfileStart />} />
+              <Route
+                path="/dashboard-company-profile"
+                element={<DashboardCompanyProfile />}
+              />
+              <Route
+                path="/dashboard-company-edit"
+                element={<CompanyProfileEdit />}
+              />
+              <Route
+                path="/dashboard-company-start"
+                element={<CompanyProfileStart />}
+              />
               <Route path="/dashboard-report" element={<Report />} />
             </Routes>
           </div>
@@ -138,6 +152,7 @@ function Pages() {
         <Route path="/membership" element={<MembershipPage />} />
         <Route path="/side-service" element={<SideServicePage />} />
         <Route path="/company-profile" element={<CompanyProfile />} />
+        <Route path="/cart" element={<CartPage />} />
 
         <Route path="/test" element={<PageTestComponent />} />
       </Routes>

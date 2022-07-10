@@ -42,6 +42,7 @@ interface Props {
   timeResponse?: string;
   timeDelivery?: string;
   edit?: boolean;
+  chartOnClick?(): void;
 }
 
 export function CardOfferHorizontal({
@@ -57,6 +58,7 @@ export function CardOfferHorizontal({
   timeResponse,
   timeDelivery,
   edit = false,
+  chartOnClick,
 }: Props): ReactElement {
   return (
     <div className="card-offer-horizontal">
@@ -118,7 +120,10 @@ export function CardOfferHorizontal({
       </div>
       <div className="card-offer-horizontal-divider"></div>
       <div className="card-offer-horizontal-chart">
-        <div className="card-offer-horizontal-chart-content">
+        <div
+          className="card-offer-horizontal-chart-content "
+          onClick={chartOnClick}
+        >
           <div className="card-offer-horizontal-chart-content-header">
             <h5 className="card-offer-horizontal-chart-content-header-text">
               Overall Capacity: {amount}Tons/Monthly
