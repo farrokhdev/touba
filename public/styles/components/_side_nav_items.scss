@@ -52,12 +52,12 @@
                 }
             }
             &-content {
-                @include Display(flex, center, center);
+                @include Display(flex, start, center);
 
                 &-title {
                     @include FontStyle (16px, 700, $sorme);
                     margin: 0 18px;
-
+                    text-align: start;
                     &-time {
                         @include FontStyle (11px, 700, $lightSorme);
                         margin: 6px 0;

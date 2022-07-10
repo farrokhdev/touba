@@ -8293,9 +8293,9 @@ a {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
-  -webkit-box-pack: center !important;
-      -ms-flex-pack: center !important;
-          justify-content: center !important;
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: start !important;
   -webkit-box-align: center !important;
       -ms-flex-align: center !important;
           align-items: center !important;
@@ -8316,6 +8316,7 @@ a {
   font-size: 16px !important;
   color: #3c557a !important;
   margin: 0 18px;
+  text-align: start;
 }
 
 .side-nav-items-link-content-title-time {
@@ -11371,6 +11372,7 @@ a {
   color: #3c557a !important;
   margin: 0;
   padding: 28px 0;
+  text-align: center;
 }
 
 .card-show-image {
