@@ -38,12 +38,11 @@ import Location from "../../components/location";
 //         )
 //     }
 
-
 class LocationPage extends CompanyProfileStartController {
   render() {
     return (
       <div className="contact-us-start  mx-4">
-        {/* <div className="title">
+        <div className="title">
           <span className="px-5">Locations</span>
         </div>
         <div className="py-3 px-5">
@@ -88,7 +87,7 @@ class LocationPage extends CompanyProfileStartController {
           <button className="body-content-main-footer-button-cancel">
             <h5>CANCEL</h5>
           </button>
-        </div> */}
+        </div>
       </div>
     );
   }
