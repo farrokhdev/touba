@@ -43,7 +43,6 @@ export class ToubaExcessCapacity extends BaseComponent<IProps, IState> {
     isShow: false,
   };
   showInquiry = () => {
-    console.log("sal");
     this.setState({ isShow: !this.state.isShow });
   };
   render() {

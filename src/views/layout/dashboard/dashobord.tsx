@@ -24,8 +24,8 @@ const Dashboard: React.FC<IProps> = ({}) => {
       <div className="w-100 d-flex flex-column align-items-start justify-content-between">
         <label>General</label>
         <NavLink
-          
-          end to="/dashboard"
+          end
+          to="/dashboard"
           className={({ isActive = String }) =>
             isActive
               ? "w-100 d-flex flex-row align-items-center active-Navlink"
@@ -36,7 +36,8 @@ const Dashboard: React.FC<IProps> = ({}) => {
           Dashboard
         </NavLink>
         <NavLink
-          end to="/dashboard-like-card"
+          end
+          to="/dashboard-like-card"
           className={({ isActive = String }) =>
             isActive
               ? "w-100 d-flex flex-row align-items-center active-Navlink"
@@ -81,7 +82,7 @@ const Dashboard: React.FC<IProps> = ({}) => {
           Work Groups
         </NavLink>
         <NavLink
-          to="/finance"
+          to="/dashboard/finance"
           className={({ isActive = String }) =>
             isActive
               ? "w-100 d-flex flex-row align-items-center active-Navlink"
@@ -128,7 +129,7 @@ const Dashboard: React.FC<IProps> = ({}) => {
           Products
         </NavLink>
         <NavLink
-          to="/excess-capacity"
+          to="/dashboard/companyprofile/excess"
           className={({ isActive = String }) =>
             isActive
               ? "w-100 d-flex flex-row align-items-center active-Navlink"

@@ -1,0 +1,28 @@
+.basic-information {
+    .upload-image-container {
+        width: 183px;
+        height: 183px;
+    }
+    .hint-text {
+        width: 347px;
+    }
+    .hint-text-small {
+        width: 260px;
+    }
+    .chart-container {
+        width: 95%;
+
+        .chart-content-column-bottom {
+            height: 104.9px;
+            width: 21.4px;
+        }
+
+        .chart-content-column-top {
+            width: 32.11px;
+        }
+    }
+    .select-Container {
+        position: relative;
+        z-index: 10;
+    }
+}

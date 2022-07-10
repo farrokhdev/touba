@@ -41,7 +41,7 @@ import Dashboard from "../layout/dashboard/dashobord";
 import ComponentStorage from "../components/component_storage";
 import DashboardFinance from "./DashboardFinance/DashboatdFinance";
 import DashboardCompanyProfile from "./dashboardCompanyProfile/dashboard_company_profile";
-import DashboardCompanyPofileExcess from "./dashboardCompanyProfileExcess/DashboardCompanyProfileExcess";
+import DashboardCompanyPofileExcess from "./dashboard_company_profile_excess/DashboardCompanyProfileExcess";
 
 function Pages() {
   const location = useLocation();

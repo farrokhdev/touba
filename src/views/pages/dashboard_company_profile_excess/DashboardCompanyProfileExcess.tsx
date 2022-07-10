@@ -1,37 +1,74 @@
-import { BaseComponent } from "utilities_js";
-import { IconAddCircleGreen, ImageTest } from "../../../assets";
+import { IconAddCircleGreen, IconEdit, ImageTest } from "../../../assets";
+import { BannerCongratulations } from "../../components/baner_congratulations";
+import BasicInformationExcess from "../../components/basic_information_excess";
 
 import {
+  CardLike,
   CardOfferHorizental,
+  ComponentOtherDetail,
+  ComponentRelatedItems,
   ComponentSortandSearch,
+  ComponentTradeInformation,
 } from "../../components/components";
 import DashboardNav from "../../components/dashboard_nav";
+import { SideNavItems } from "../../components/side_nav_items";
+import DashboardCompanyProfileController from "../../controllers/dashboard_company_profile_controller";
 
-const TEST = [
-  { name: "JAN", size: 20 },
-  { name: "FEB", size: 30 },
-  { name: "MAR", size: 40 },
-  { name: "APR", size: 50 },
-  { name: "MAY", size: 60 },
-  { name: "JUN", size: 70 },
-  { name: "JUL", size: 80 },
-  { name: "AUG", size: 90 },
-  { name: "SEP", size: 100 },
-  { name: "OCT", size: 20 },
-  { name: "NOV", size: 20 },
-  { name: "DEC", size: 20 },
-];
-interface IProps {}
+export default class DashboardCompanyPofileExcess extends DashboardCompanyProfileController {
+  TEST_NAV_ITEM = [
+    {
+      title: "Basic Information",
+      id: 0,
+    },
+    {
+      title: "Other Details",
+      id: 1,
+    },
+    {
+      title: "Trade Information",
+      id: 2,
+    },
+    {
+      title: "Related Items",
+      id: 3,
+    },
+  ];
 
-interface IState {
-  isShow: number;
-}
-export default class DashboardCompanyPofileExcess extends BaseComponent<
-  IProps,
-  IState
-> {
-  state: IState = {
-    isShow: 0,
+  addProductOne = () => {
+    return (
+      <div className="row">
+        <div className="col-2">
+          <SideNavItems
+            onActive={(e) => this.handleShowSideNavItem(e)}
+            items={this.TEST_NAV_ITEM}
+          />
+        </div>
+        <div className="col-10 px-4 mt-5 ">
+          {this.state.show == 0 && (
+            <div>
+              <BasicInformationExcess
+                onClick={() => this.setState({ isShow: 0 })}
+              />
+            </div>
+          )}
+          {this.state.show == 1 && (
+            <div>
+              <ComponentOtherDetail />
+            </div>
+          )}
+          {this.state.show == 2 && (
+            <div>
+              <ComponentTradeInformation />
+            </div>
+          )}
+          {this.state.show == 3 && (
+            <div>
+              <ComponentRelatedItems />
+            </div>
+          )}
+        </div>
+      </div>
+    );
   };
   render() {
     const landing = () => {
@@ -63,7 +100,7 @@ export default class DashboardCompanyPofileExcess extends BaseComponent<
                 }
                 rate={4.2}
                 country={"CHINA"}
-                chart={TEST}
+                chart={this.TEST}
                 amount={200}
                 type="two"
                 timeDelivery="98.6%"
@@ -79,7 +116,7 @@ export default class DashboardCompanyPofileExcess extends BaseComponent<
               }
               rate={4.2}
               country={"CHINA"}
-              chart={TEST}
+              chart={this.TEST}
               amount={200}
               type="two"
               timeDelivery="98.6%"
@@ -101,7 +138,7 @@ export default class DashboardCompanyPofileExcess extends BaseComponent<
                 }
                 rate={4.2}
                 country={"CHINA"}
-                chart={TEST}
+                chart={this.TEST}
                 amount={200}
                 type="two"
                 timeDelivery="98.6%"
@@ -117,7 +154,7 @@ export default class DashboardCompanyPofileExcess extends BaseComponent<
               }
               rate={4.2}
               country={"CHINA"}
-              chart={TEST}
+              chart={this.TEST}
               amount={200}
               type="two"
               timeDelivery="98.6%"
@@ -133,7 +170,7 @@ export default class DashboardCompanyPofileExcess extends BaseComponent<
           <DashboardNav title="Excess Capacity" />
         </div>
         <div className="content w-100">
-          {this.state.isShow === 0 ? landing() : null}
+          {this.state.isShow === 0 ? landing() : this.addProductOne()}
         </div>
       </div>
     );

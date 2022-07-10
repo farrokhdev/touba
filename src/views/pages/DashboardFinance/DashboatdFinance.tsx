@@ -32,43 +32,6 @@ import SummaryDashboard from "../../components/summary_dashboard";
 import { TableTransaction } from "../../components/table_transactions";
 import DashboarPageController from "../../controllers/dashboard_page_controller";
 
-const TABLE = [
-  {
-    id: 1,
-    code: 65423132445,
-    date: "18 Aug 2021 - 14:15",
-    amount: 1850,
-    detail: "INVOICE",
-  },
-  {
-    id: 2,
-    code: 65423132445,
-    date: "18 Aug 2021 - 14:15",
-    amount: 36214,
-    detail: "INVOICE",
-  },
-  {
-    id: 3,
-    code: 65423132445,
-    date: "18 Aug 2021 - 14:15",
-    amount: 36214,
-    detail: "INVOICE",
-  },
-  {
-    id: 4,
-    code: 65423132445,
-    date: "18 Aug 2021 - 14:15",
-    amount: 518,
-    detail: "INVOICE",
-  },
-  {
-    id: 5,
-    code: 65423132445,
-    date: "18 Aug 2021 - 14:15",
-    amount: 518,
-    detail: "INVOICE",
-  },
-];
 export default class DashboardFinance extends DashboarPageController {
   render() {
     const TEST_NAV_ITEM = [
@@ -136,7 +99,7 @@ export default class DashboardFinance extends DashboarPageController {
             <TableTransaction
               transactionBtn={true}
               title="Recent Transactions"
-              items={TABLE}
+              items={this.TABLE}
             />
           </div>
         </div>
@@ -165,7 +128,7 @@ export default class DashboardFinance extends DashboarPageController {
             </div>
           </div>
           <div className="my-4">
-            <TableTransaction transactionBtn={true} items={TABLE} />
+            <TableTransaction transactionBtn={true} items={this.TABLE} />
           </div>
           <div className="order-table">
             <div className="row d-flex -align-items-center table-box w-50">
@@ -217,7 +180,7 @@ export default class DashboardFinance extends DashboarPageController {
             <TableTransaction
               transactionBtn={true}
               title="Outgoing Transactions"
-              items={TABLE}
+              items={this.TABLE}
             />
           </div>
           <div className="order-table">
@@ -269,7 +232,7 @@ export default class DashboardFinance extends DashboarPageController {
             <TableTransaction
               transactionBtn={true}
               title="Last Transactions"
-              items={TABLE}
+              items={this.TABLE}
             />
           </div>
         </div>
@@ -282,7 +245,6 @@ export default class DashboardFinance extends DashboarPageController {
         </div>
       );
     };
-    console.log(this.state.activeLink);
     return (
       <div className="finance-page d-flex flex-row align-items-start">
         <div className="content mx-auto">
