@@ -4,8 +4,6 @@ import CompanyProfileStartController from "../../controllers/company_profile_sta
 
 class ContactUs extends CompanyProfileStartController {
 
-
-
     render() {
         const {
             address,

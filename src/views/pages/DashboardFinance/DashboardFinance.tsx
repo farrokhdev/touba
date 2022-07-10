@@ -17,18 +17,12 @@ import { CardOverall } from "../../components/card_overrall";
 import { ChartDoughnut } from "../../components/chart_doughnut";
 import { ChartSale } from "../../components/chart_sale";
 import {
-  BannerCongratulations,
   Calendar,
   ComponentCalender,
-  ComponentMapBox,
   ComponentMessage,
   ComponentMessageImage,
   ComponentSoldBox,
-  ComponentTableExcess,
-  ComponentTableORder,
   Map,
-  TextIconHorizontal,
-  TextIconVerticalDashboard,
 } from "../../components/components";
 import ComponentLineChart from "../../components/component_line_chart";
 import { Offcanvas } from "../../components/offcanvas";
@@ -38,43 +32,6 @@ import SummaryDashboard from "../../components/summary_dashboard";
 import { TableTransaction } from "../../components/table_transactions";
 import DashboarPageController from "../../controllers/dashboard_page_controller";
 
-const TABLE = [
-  {
-    id: 1,
-    code: 65423132445,
-    date: "18 Aug 2021 - 14:15",
-    amount: 1850,
-    detail: "INVOICE",
-  },
-  {
-    id: 2,
-    code: 65423132445,
-    date: "18 Aug 2021 - 14:15",
-    amount: 36214,
-    detail: "INVOICE",
-  },
-  {
-    id: 3,
-    code: 65423132445,
-    date: "18 Aug 2021 - 14:15",
-    amount: 36214,
-    detail: "INVOICE",
-  },
-  {
-    id: 4,
-    code: 65423132445,
-    date: "18 Aug 2021 - 14:15",
-    amount: 518,
-    detail: "INVOICE",
-  },
-  {
-    id: 5,
-    code: 65423132445,
-    date: "18 Aug 2021 - 14:15",
-    amount: 518,
-    detail: "INVOICE",
-  },
-];
 export default class DashboardFinance extends DashboarPageController {
   render() {
     const TEST_NAV_ITEM = [
@@ -139,7 +96,11 @@ export default class DashboardFinance extends DashboarPageController {
             />
           </div>
           <div>
-            <TableTransaction items={TABLE} />
+            <TableTransaction
+              transactionBtn={true}
+              title="Recent Transactions"
+              items={this.TABLE}
+            />
           </div>
         </div>
       );
@@ -147,7 +108,7 @@ export default class DashboardFinance extends DashboarPageController {
     const soldItems = () => {
       return (
         <div className="ps-4 pe-3">
-          <div className="top-section d-flex flex-row align-items-center">
+          <div className="top-section d-flex flex-row align-items-center ">
             <div>
               <ComponentSoldBox />
             </div>
@@ -167,7 +128,7 @@ export default class DashboardFinance extends DashboarPageController {
             </div>
           </div>
           <div className="my-4">
-            <TableTransaction items={TABLE} />
+            <TableTransaction transactionBtn={true} items={this.TABLE} />
           </div>
           <div className="order-table">
             <div className="row d-flex -align-items-center table-box w-50">
@@ -216,7 +177,11 @@ export default class DashboardFinance extends DashboarPageController {
             <img src={ImageDeliveryMan} alt="banner" />
           </div>
           <div className="my-4">
-            <TableTransaction items={TABLE} />
+            <TableTransaction
+              transactionBtn={true}
+              title="Outgoing Transactions"
+              items={this.TABLE}
+            />
           </div>
           <div className="order-table">
             <div className="row d-flex -align-items-center table-box w-50">
@@ -264,7 +229,11 @@ export default class DashboardFinance extends DashboarPageController {
             <img src={ImageManMoney} alt="banner" />
           </div>
           <div className="my-4">
-            <TableTransaction items={TABLE} />
+            <TableTransaction
+              transactionBtn={true}
+              title="Last Transactions"
+              items={this.TABLE}
+            />
           </div>
         </div>
       );
@@ -298,14 +267,16 @@ export default class DashboardFinance extends DashboarPageController {
                 ? purchasedItems()
                 : this.state.activeLink === 4
                 ? redeemedInvoices()
-                : incomePayCalendar()}
+                : this.state.activeLink === 5
+                ? incomePayCalendar()
+                : null}
             </div>
           </div>
         </div>
         <div className="right-sidebar">
           <div className=" px-3 row d-flex align-items-center">
             <div className="col-12 dashboard-Nav d-flex">
-              <div className="btn-Container align-items-center d-flex">
+              <div className="btn-Container align-items-center d-flex flex-row ">
                 <button className="add-Btn d-flex align-items-center">
                   <img src={IconAddCircle} alt="add" />
                   <span>ADD NEW</span>
@@ -535,7 +506,7 @@ export default class DashboardFinance extends DashboarPageController {
             <ChartSale />
           </div>
           <div className="calendar">
-            <ComponentCalender />
+            <Calendar />
           </div>
         </div>
       </div>

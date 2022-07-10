@@ -41,6 +41,7 @@ import Dashboard from "../layout/dashboard/dashobord";
 import ComponentStorage from "../components/component_storage";
 import DashboardFinance from "./DashboardFinance/DashboardFinance";
 import DashboardCompanyProfile from "./dashboardCompanyProfile/dashboard_company_profile";
+import DashboardCompanyPofileExcess from "./dashboard_company_profile_excess/DashboardCompanyProfileExcess";
 import Review from "./review";
 
 function Pages() {
@@ -97,6 +98,11 @@ function Pages() {
               <Route
                 path="/dashboard/details-order"
                 element={<DetailsOrder />}
+              />
+              <Route path="/dashboard/finance" element={<DashboardFinance />} />{" "}
+              <Route
+                path="/dashboard/companyprofile/excess"
+                element={<DashboardCompanyPofileExcess />}
               />
               <Route path="/dashboard-finance" element={<DashboardFinance />} />
               <Route

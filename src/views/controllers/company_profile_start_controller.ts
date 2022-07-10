@@ -20,6 +20,11 @@ interface IState {
     imageUser: string;
     modalLocation: boolean;
     locationName: string;
+    email:string;
+    code:string;
+    phone:string;
+    timezone:string;
+    suppiler:string;
 }
 
 export class CompanyProfileStartController extends Component<IProps, IState> {
@@ -41,6 +46,11 @@ export class CompanyProfileStartController extends Component<IProps, IState> {
         imageUser: "",
         modalLocation: false,
         locationName: "",
+        email:"",
+        code: "98",
+        phone: "",
+        timezone:"GMT (+3:30)",
+        suppiler:""
     };
 
     TEST_NAV_ITEM = [

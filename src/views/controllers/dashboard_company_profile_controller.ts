@@ -7,7 +7,9 @@ interface IProps {
 interface IState {
     status: number;
     location:string;
-    show:number
+    show:number;
+    isShow: number;
+
 }
 
 export class DashboardCompanyProfileController extends Component<IProps, IState> {
@@ -16,8 +18,24 @@ this.setState({location:window.location.pathname})      }
     state = {
         status: 1,
         location:'',
-        show:0
-    };
+        show:0,
+        isShow:0,   
+     };
+     TEST = [
+        { name: "JAN", size: 20 },
+        { name: "FEB", size: 30 },
+        { name: "MAR", size: 40 },
+        { name: "APR", size: 50 },
+        { name: "MAY", size: 60 },
+        { name: "JUN", size: 70 },
+        { name: "JUL", size: 80 },
+        { name: "AUG", size: 90 },
+        { name: "SEP", size: 100 },
+        { name: "OCT", size: 20 },
+        { name: "NOV", size: 20 },
+        { name: "DEC", size: 20 },
+      ];
+    
     TEST_NAV_ITEM = [
         {
           title: "Basic Information",
@@ -43,7 +61,6 @@ this.setState({location:window.location.pathname})      }
         this.setState({status: number});
     }
     handleShowSideNavItem = (number: number) => {
-        console.log("s",number)
         this.setState({show: number});
     }
 }

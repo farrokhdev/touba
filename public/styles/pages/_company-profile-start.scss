@@ -75,16 +75,16 @@
                     @include Display (flex, space-between, center);
 
                     &-button-group {
-                        @include Display (flex, center, center);
+                        @include Display(flex, center, center);
 
                         &-next {
                             border: none;
                             border-radius: 8px;
                             background-color: $green;
-                            @include Display (flex, center, center);
+                            @include Display(flex, center, center);
                             padding: 13.5px 16px;
 
-                            >h5 {
+                            > h5 {
                                 @include FontStyle(14px, 600, $white);
                                 margin: 0;
                             }
@@ -93,11 +93,10 @@
                         &-back {
                             @include Border(1px, $green, 8px);
                             background-color: transparent;
-                            @include Display (flex, center, center);
+                            @include Display(flex, center, center);
                             padding: 13.5px 16px;
                             margin: 0 16px;
-
-                            >h5 {
+                            > h5 {
                                 @include FontStyle(14px, 600, $green);
                                 margin: 0;
                             }
@@ -108,10 +107,10 @@
                         border: none;
                         border-radius: 8px;
                         background-color: $lightSorme;
-                        @include Display (flex, center, center);
+                        @include Display(flex, center, center);
                         padding: 13.5px 16px;
 
-                        >h5 {
+                        > h5 {
                             @include FontStyle(14px, 600, $white);
                             margin: 0;
                         }

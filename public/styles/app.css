@@ -9349,6 +9349,21 @@ a {
   margin: 0;
 }
 
+.table-transaction-title button {
+  border: none;
+  outline: none;
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  color: #21C085 !important;
+  background-color: #FFFFFF;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+}
+
 .table-transaction-header {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -11036,6 +11051,37 @@ a {
   margin: 0;
 }
 
+.basic-information .upload-image-container {
+  width: 183px;
+  height: 183px;
+}
+
+.basic-information .hint-text {
+  width: 347px;
+}
+
+.basic-information .hint-text-small {
+  width: 260px;
+}
+
+.basic-information .chart-container {
+  width: 95%;
+}
+
+.basic-information .chart-container .chart-content-column-bottom {
+  height: 104.9px;
+  width: 21.4px;
+}
+
+.basic-information .chart-container .chart-content-column-top {
+  width: 32.11px;
+}
+
+.basic-information .select-Container {
+  position: relative;
+  z-index: 10;
+}
+
 .text-area {
   /* Border */
   position: relative;
@@ -11099,61 +11145,6 @@ a {
   font-weight: 400 !important;
   font-size: 16px !important;
   color: #3C557A !important;
-}
-
-.textarea-lable {
-  width: 100%;
-  position: relative;
-}
-
-.textarea-lable-title {
-  background-color: #FFFFFF;
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-pack: center !important;
-      -ms-flex-pack: center !important;
-          justify-content: center !important;
-  -webkit-box-align: center !important;
-      -ms-flex-align: center !important;
-          align-items: center !important;
-  -webkit-box-orient: horizontal !important;
-  -webkit-box-direction: normal !important;
-      -ms-flex-direction: row !important;
-          flex-direction: row !important;
-  -ms-flex-wrap: nowrap !important;
-      flex-wrap: nowrap !important;
-  padding: 3px 12px;
-  position: absolute;
-  top: -10px;
-  left: 20px;
-}
-
-.textarea-lable-title-text {
-  width: auto;
-  height: auto;
-  font-family: 'Poppins' !important;
-  font-style: normal !important;
-  font-weight: 500 !important;
-  font-size: 12px !important;
-  color: #3c557a !important;
-  margin: 0;
-}
-
-.textarea-lable-input {
-  width: 100% !important;
-  min-height: 300px;
-  border: 1px solid #d6d6d6 !important;
-  border-radius: 12px !important;
-  padding: 40px 20px;
-  font-family: 'Poppins';
-  font-weight: 400;
-  font-size: 16px;
-  color: #3c557a;
-}
-
-.textarea-lable-input:focus {
-  outline: none;
 }
 
 .textarea-lable {
@@ -14548,7 +14539,7 @@ a {
 
 .membership-Page .plans-Container {
   position: absolute;
-  z-index: 20;
+  z-index: 1;
   width: 90%;
   height: 800px;
   margin-top: 340px;
@@ -18431,6 +18422,10 @@ a {
   border-radius: 16px;
   height: 292px;
   max-width: 34%;
+}
+
+.finance-page .content .center-content .Calendar {
+  width: 100% !important;
 }
 
 .finance-page .right-sidebar {
