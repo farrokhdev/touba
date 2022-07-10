@@ -14,30 +14,27 @@ import LoginControll from "../../controllers/login_controll";
 class EditOrder extends Component {
     render() {
         return (
-            <div className="edit-order row">
+            <div className="edit-order">
                 <DashboardNav title={"Orders"} />
                 <div className="edit-order-card">
-                    <div className="edit-order-card-header col-12">
+                    <div className="edit-order-card-header">
                         <OrderHead orderNumber={2334217651} client={"Saber Noori"} />
                     </div>
-                    <div className="edit-order-card-content col-12">
-                        <div className="edit-order-card-content-product col-7 ">
+                    <div className="edit-order-card-content">
+                        <div className="edit-order-card-content-product">
                             <CardCalculateProduct image={ImageTest} name={"Product Name Here"} price={12} number={250} />
-                            <div className="row">
+                            <div className="">
                                 <Divider direction={"vertical"} />
                             </div>
                             <CardCalculateProduct image={ImageTest} name={"Product Name Here"} price={12} number={250} />
-                            <div className="row">
+                            <div className="">
                                 <Divider direction={"vertical"} />
                             </div>
                             <CardCalculateProduct image={ImageTest} name={"Product Name Here"} price={12} number={250} />
-                            <div className="row">
+                            <div className="edit-order-card-content-product-divider">
                                 <Divider direction={"vertical"} />
                             </div>
-                            <div className="col-7">
-
-                            </div>
-                            <div className="edit-order-card-content-product-counting col-4 px-3">
+                            <div className="edit-order-card-content-product-counting">
                                 <div className="edit-order-card-content-product-counting-details">
                                     <h6 className="edit-order-card-content-product-counting-details-title">
                                         Subtotal:
@@ -72,15 +69,12 @@ class EditOrder extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className=" h-100">
-                            <Divider direction={"horizontal"} />
-                        </div>
-                        <div className="edit-order-card-content-address col-4">
+                        <div className="edit-order-card-content-address">
                             <div className="edit-order-card-content-address-top">
-                                <div className="edit-order-card-content-address-top-image col-2">
+                                <div className="edit-order-card-content-address-top-image ">
                                     <img src={IconMarker} alt="" />
                                 </div>
-                                <div className="edit-order-card-content-address-top-items col-10">
+                                <div className="edit-order-card-content-address-top-items">
                                     <div className="edit-order-card-content-address-top-items-location">
                                         <h5 className="edit-order-card-content-address-top-items-location-title">
                                             Address-top:
@@ -137,7 +131,7 @@ class EditOrder extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="edit-order-card-content-address-map row">
+                            <div className="edit-order-card-content-address-map">
                                 <Map />
                             </div>
                         </div>

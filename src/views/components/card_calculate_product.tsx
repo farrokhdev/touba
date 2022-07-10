@@ -16,7 +16,7 @@ interface Props {
 export function CardCalculateProduct({ image, name, price, number}: Props): ReactElement {
 
     return (
-        <div className="card-calculate-product row px-3">
+        <div className="card-calculate-product row px-5">
             <div className="section-image col-6">
                 <div className="col-3">
                     <img src={ImageTest} className="image" />
