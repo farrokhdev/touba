@@ -8334,7 +8334,7 @@ a {
 .image-arrow-rectangle > img {
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
-  margin: 0 16px;
+  margin: 0 7px 0 16px;
 }
 
 .image-arrow-rectangle > h5 {
