@@ -1,5 +1,4 @@
 import { memo, ReactElement, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
 import { Button, ComponentProgress, Divider } from "./components";
 import { ImageArrow } from "./image_arrow";
 
@@ -19,7 +18,7 @@ interface Props {
 
 export function SideNavItems({ items, onActive, showProgress }: Props): ReactElement {
 
-    const [activeLink, setActiveLink] = useState(0)
+    const [activeLink, setActiveLink] = useState(1)
 
     function handleActiveLink(id: number) {
         setActiveLink(id);
