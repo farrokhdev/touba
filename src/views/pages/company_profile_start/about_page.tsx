@@ -58,7 +58,7 @@ class AboutPage extends CompanyProfileStartController {
           />
         </div>
         <div className="body-content-main-button">
-          <ButtonAdd onClick={() => {}} />
+          <ButtonAdd onClick={() => { }} />
         </div>
         {/* <Divider direction={"vertical"} />
         <div className="body-content-main-footer">
@@ -97,7 +97,11 @@ class AboutPage extends CompanyProfileStartController {
         ) : (
           <>
             <div className="body-content-header">
-              <MyCompanyNav onActive={this.getActiveTab} showButton={false} />
+              <MyCompanyNav
+                onActive={this.getActiveTab}
+                showButton={false}
+                activeBorder={true}
+              />
             </div>
             <div className="body-content-main">
               {activeTab === 1 && (
@@ -107,7 +111,7 @@ class AboutPage extends CompanyProfileStartController {
                   </div>
                   <div className="mt-4">
                     <TextAreaLabel
-                      handleGetValue={() => {}}
+                      handleGetValue={() => { }}
                       title="Description"
                     />
                   </div>
@@ -171,7 +175,7 @@ class AboutPage extends CompanyProfileStartController {
                     />
                   </div>
                   <div className="mb-3 mt-3">
-                    <ButtonAdd onClick={() => {}} />
+                    <ButtonAdd onClick={() => { }} />
                   </div>
                 </>
               )}
@@ -183,7 +187,7 @@ class AboutPage extends CompanyProfileStartController {
                       type="text"
                       showDropDown={false}
                       value=""
-                      onChange={() => {}}
+                      onChange={() => { }}
                       title="Question"
                       placeholder="Type Question Here"
                     />
@@ -194,7 +198,7 @@ class AboutPage extends CompanyProfileStartController {
                       type="text"
                       showDropDown={false}
                       value=""
-                      onChange={() => {}}
+                      onChange={() => { }}
                       title="Answer"
                       placeholder="Type Answer"
                     />
@@ -206,7 +210,7 @@ class AboutPage extends CompanyProfileStartController {
                       type="text"
                       showDropDown={false}
                       value=""
-                      onChange={() => {}}
+                      onChange={() => { }}
                       title="Question"
                       placeholder="Type Question Here"
                     />
@@ -217,14 +221,14 @@ class AboutPage extends CompanyProfileStartController {
                       type="text"
                       showDropDown={false}
                       value=""
-                      onChange={() => {}}
+                      onChange={() => { }}
                       title="Answer"
                       placeholder="Type Answer"
                     />
                   </div>
                   <div className="border-bottom-dashed mt-3"></div>
                   <div className="mb-3 mt-3">
-                    <ButtonAdd onClick={() => {}} />
+                    <ButtonAdd onClick={() => { }} />
                   </div>
                 </>
               )}

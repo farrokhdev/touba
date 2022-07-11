@@ -10492,6 +10492,7 @@ a {
 
 .mycompany-nav {
   background: #ffffff;
+  border-radius: 12px;
 }
 
 .mycompany-nav button {

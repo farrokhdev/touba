@@ -16,7 +16,6 @@ export function ButtonComponent({ onClick, title,route }: Props): ReactElement {
   const navigate = useNavigate()
   const handleOnClick = useCallback(
     (event: MouseEvent<HTMLButtonElement>) => {
-      event.stopPropagation();
       onClick?.(event);
       if(route){
         navigate(route)

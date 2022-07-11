@@ -96,7 +96,7 @@ class Home extends HomeController {
                                 vulputate
                             </p>
                         </div>
-                        <Button title="LEARN MORE" />
+                        <Button title="LEARN MORE" route="/excess" />
                     </div>
                     <div className="home-section-earn-image">
                         <img src={ImageLaboratory} className="image-laboratory" />

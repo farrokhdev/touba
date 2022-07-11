@@ -10578,6 +10578,7 @@ a {
 
 .mycompany-nav {
   background: #ffffff;
+  border-radius: 12px;
 }
 
 .mycompany-nav button {
@@ -17001,6 +17002,16 @@ a {
   height: 80px;
   margin: 32px auto;
   background-color: #FFFFFF;
+  border-radius: 12px !important;
+}
+
+.company-profile-edit .body-content-header .mycompany-nav {
+  border: none;
+}
+
+.company-profile-edit .body-content-header .mycompany-nav .active {
+  color: #21C085 !important;
+  border-bottom: 0;
 }
 
 .company-profile-edit .body-content-items {

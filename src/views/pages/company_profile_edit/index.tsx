@@ -37,7 +37,11 @@ class CompanyProfileEdit extends CompanyProfileController {
         return (
             <>
                 <div className="body-content-header">
-                    <MyCompanyNav onActive={this.handleGetActiveTab} showButton={true} />
+                    <MyCompanyNav
+                        onActive={this.handleGetActiveTab}
+                        showButton={true}
+                        activeBorder={false}
+                    />
                 </div>
                 <div className="body-content-items">
                     {activeTab === 1 ? (

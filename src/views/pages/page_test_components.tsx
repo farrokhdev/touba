@@ -273,7 +273,7 @@ class PageTestComponents extends Component {
                 ) : null}
                 <MyCompanyNav onActive={function (id: number): void {
           throw new Error("Function not implemented.");
-        } } showButton={true} />
+        } } showButton={true} activeBorder={false} />
                 <ProfileHeaderImage />
                 <OrderHead orderNumber={2334217651} client="Saber Noori" />
                 <Location index={1} name={"Bandar Abbas Office"} area={"BandarAbbas, Iran"} />
