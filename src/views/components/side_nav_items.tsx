@@ -42,7 +42,7 @@ export function SideNavItems({ items, onActive, showProgress }: Props): ReactEle
                         >
                             {item.id === activeLink ? (
                                 <div className="side-nav-items-link-content-active">
-                                    <ImageArrow title={item.title} />
+                                    <ImageArrow title={item.title} image={item.icon} />
                                 </div>
                             ) : (
                                 <div

@@ -7,13 +7,15 @@ import {
 
 interface Props {
     title: string;
+    image?: string;
 }
 
-export function ImageArrow({title}: Props): ReactElement {
+export function ImageArrow({title, image}: Props): ReactElement {
 
     return (
         <div className="image-arrow">
             <div className="image-arrow-rectangle">
+                <img src={image} alt="" />
                 <h5>
                     {title}
                 </h5>
