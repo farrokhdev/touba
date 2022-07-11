@@ -2,10 +2,15 @@
     &-header {
         width: 97%;
         margin: 0 auto;
-        @include Display(flex, start, center, row, wrap);
+        @include Display(flex, space-between, center, row, wrap);
+
+        @media (max-width: 1540px) {
+            @include Display(flex, start, center, row, wrap);
+        }
 
         .total-income-box {
-            min-width: 295px;
+            min-width: 295px !important;
+            max-width: 100% !important;
             margin: 27px 7px;
         }
     }
@@ -56,12 +61,15 @@
                 &-top {
                     @include Display(flex, space-between, center);
                     margin: 0 0 40px 0;
+
                     &-name {
                         @include Display(flex, center, center);
+
                         >img {
                             width: 24px;
                             height: 24px;
                         }
+
                         >h6 {
                             @include FontStyle(16px, 400, $lightSorme);
                             margin: 0 11px;
@@ -71,6 +79,7 @@
                     &-sale {
                         @include FontStyle(16px, 700, $sorme);
                         margin: 0;
+
                         >span {
                             @include FontStyle(12px, 500, $sorme);
                             margin: 0;
@@ -83,6 +92,7 @@
         &-download {
             width: 28.5%;
             height: 488px;
+
             &-report {
                 background-color: $green;
                 width: 100%;
@@ -91,14 +101,17 @@
                 box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
                 border-top-left-radius: 16px;
                 border-top-right-radius: 16px;
+
                 &-title {
                     @include FontStyle(22px, 600, $white);
-                    margin: 0 0 24px ;
+                    margin: 0 0 24px;
                 }
+
                 &-description {
                     @include FontStyle(16px, 500, $white);
-                    margin: 0 0 24px ;
+                    margin: 0 0 24px;
                 }
+
                 &-button {
                     width: 100%;
                     height: 56px;
@@ -106,15 +119,18 @@
                     border-radius: 8px;
                     background-color: $white;
                     @include Display(flex, center, center);
+
                     >h5 {
                         @include FontStyle(18px, 600, $green);
                         margin: 0;
                     }
+
                     >img {
                         margin: 0 10px;
                     }
                 }
             }
+
             &-summary {
                 background-color: $sorme;
                 width: 100%;
@@ -123,10 +139,12 @@
                 box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
                 border-bottom-left-radius: 16px;
                 border-bottom-right-radius: 16px;
+
                 &-description {
                     @include FontStyle(16px, 500, $white);
                     margin: 0 0 30px;
                 }
+
                 &-button {
                     width: 100%;
                     height: 56px;
@@ -134,10 +152,12 @@
                     border-radius: 8px;
                     background-color: $green;
                     @include Display(flex, center, center);
+
                     >h5 {
                         @include FontStyle(18px, 600, $white);
                         margin: 0;
                     }
+
                     >img {
                         margin: 0 10px;
                     }
@@ -148,49 +168,69 @@
 
     &-summary {
         width: 97%;
-        height: 495px;
         margin: 0px auto 27px auto;
+        min-height: 495px !important;
         @include Display(flex, space-between, center);
+
+        .line-chart {
+            max-height: 495px;
+
+            >div:nth-of-type(2) {
+                >canvas {
+                    max-height: 371px !important;
+                }
+            }
+        }
+
         &-insights {
             width: 28.5%;
-            height: 495px;
+            min-height: 495px !important;
             background-color: $white;
             border-radius: 16px;
+
             &-title {
                 @include FontStyle(22px, 600, $sorme);
                 margin: 0px;
                 padding: 41px 17px 23px;
             }
+
             &-details {
                 padding: 18px 32px;
                 height: 84px;
                 @include Display(flex, space-between, center);
+
                 &-text {
                     >h6 {
                         @include FontStyle(16px, 700, $sorme);
                         margin: 0;
                     }
+
                     >p {
                         @include FontStyle(14px, 500, $lightSorme);
                         margin: 0;
                     }
                 }
             }
+
             &-product {
                 width: 100%;
                 padding: 27px 15px 0px;
+
                 &-title {
                     @include FontStyle(14px, 600, $green);
                     margin: 0 2px 16px;
                 }
+
                 &-content {
                     width: 100%;
                     @include Border(1px, $gray, 8px);
                     @include Display(flex, start, center);
+
                     >img {
                         width: 74px;
                         height: 74px;
                     }
+
                     >p {
                         @include FontStyle(13.55px, 500, $sorme);
                         margin: 0 8px;
@@ -198,36 +238,52 @@
                 }
             }
         }
+
         &-chart {
             width: 70%;
-            height: 495px !important;
+            min-height: 495px !important;
         }
     }
 
     &-statistics {
         width: 97%;
-        height: 585px;
+        min-height: 585px;
         margin: 0px auto 27px auto;
         @include Display(flex, space-between, center);
+
+        @media (max-width: 1500px) {
+            @include Display(flex, start, center, column);
+        }
+
         &-activity {
+            @media (max-width: 1500px) {
+                width: 100%;
+            }
             width: 45%;
-            height: 585px;
+            min-height: 585px;
             background-color: $white;
             border-radius: 16px;
             box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
         }
+
         &-details {
+            @media (max-width: 1500px) {
+                width: 100%;
+                margin-top: 10px;
+            }
             width: 54.5%;
-            height: 585px;
+            min-height: 585px;
             @include Display(flex, space-between, center, column);
+
             &-chart {
                 width: 100%;
-                height: 49%;
+                height: 50%;
                 @include Display(flex, space-between, center);
                 background-color: $white;
                 border-radius: 16px;
                 box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
-                padding: 24px 43px;
+                padding: 54px 43px;
+
                 >div {
                     >span {
                         @include FontStyle(19px, 600, $sorme);
@@ -237,21 +293,25 @@
                     }
                 }
             }
+
             &-keyword {
                 width: 100%;
-                height: 49%;
+                height: 50%;
                 background-color: $white;
                 border-radius: 16px;
                 box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
                 padding: 24px 43px;
+
                 &-title {
                     @include FontStyle(19px, 600, $sorme);
                     margin: 0;
                 }
+
                 &-button {
                     width: 100%;
                     margin: 8px 0;
                     @include Display (flex, start, center, row, wrap);
+
                     .button-outline {
                         margin: 8px;
                     }
