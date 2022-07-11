@@ -259,8 +259,6 @@ class CompanyProfileEdit extends CompanyProfileController {
         const {
             modalContact,
             address,
-            phoneCode,
-            phoneNumber,
             contactSuplier,
             modalLocation
         } = this.state;
@@ -355,11 +353,8 @@ class CompanyProfileEdit extends CompanyProfileController {
                         />
                         <div className="input-group">
                             <InputTextPhoneNumber
-                                valueCode={phoneCode}
-                                valuephone={phoneNumber}
                                 title={"Phone Number"}
-                                onChangeCode={(event) => { this.setState({ phoneCode: event.currentTarget.value }) }}
-                                onChangePhone={(event) => { this.setState({ phoneNumber: event.currentTarget.value }) }}
+                                getPhoneNumber={this.getPhoneNumber}
                             />
                             <SelectComponent
                                 type={"two"}

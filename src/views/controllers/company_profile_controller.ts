@@ -59,8 +59,7 @@ interface IState {
     };
     modalContact: boolean;
     address: string;
-    phoneCode: string | number,
-    phoneNumber: string | number,
+    phoneNumber: string,
     contactSuplier: string;
     modalLocation: boolean;
 }
@@ -334,6 +333,10 @@ export class CompanyProfileController extends Component<IProps, IState> {
 
     handleCloseModalLocation = () => {
         this.setState({modalLocation: false})
+    };
+
+    getPhoneNumber = (value: string) => {
+        this.setState({phoneNumber: value})
     };
 }
 export default CompanyProfileController;

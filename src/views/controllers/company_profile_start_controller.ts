@@ -124,9 +124,14 @@ export class CompanyProfileStartController extends Component<IProps, IState> {
     showModalLocation = () => {
         this.setState({modalLocation: true})
     };
+
     closeStartPage = () => {
         this.setState({startPage: false})
     };
+
+    getPhoneNumber = (value: string) => {
+        this.setState({phoneNumber: value})
+    }
 
 }
 export default CompanyProfileStartController;

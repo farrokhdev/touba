@@ -96,15 +96,8 @@ class Register extends RegisterControll {
             </div>
             <div className="register-modal-input-group-phone">
               <InputTextPhoneNumber
-                valueCode={this.state.code}
-                valuephone={this.state.phone}
                 title={"Phone Number"}
-                onChangeCode={(event) =>
-                  this.setState({ code: event?.currentTarget.value })
-                }
-                onChangePhone={(event) =>
-                  this.setState({ phone: event?.currentTarget.value })
-                }
+                getPhoneNumber={this.getPhoneNumber}
               />
             </div>
             <div className="register-modal-input-group-password">

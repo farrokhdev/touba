@@ -27,6 +27,10 @@ export class RegisterControll extends Component<IProps, IState> {
     };
 
     //list
+
+    getPhoneNumber = (value: string) => {
+        this.setState({phone: value})
+    }
     
 }
 export default RegisterControll;

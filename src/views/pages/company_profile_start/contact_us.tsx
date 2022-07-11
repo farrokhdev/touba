@@ -28,15 +28,12 @@ class ContactUs extends CompanyProfileStartController {
                                 placeholder={"Yanjialing Village, Tongji Office, Jimo District, Qingdao, Shandong, China 266000"}
                                 type={"text"}
                                 showDropDown={false}
-                                onChange={(event) => this.setState({address: event.currentTarget.value})}
+                                onChange={(event) => this.setState({ address: event.currentTarget.value })}
                             />
                             <div className="body-content-contact-main-inputs-group Zindex">
                                 <InputTextPhoneNumber
-                                    valueCode={phoneCode}
-                                    valuephone={phoneNumber}
                                     title={"Phone Number"}
-                                    onChangeCode={(event) => this.setState({phoneCode: event.currentTarget.value})}
-                                    onChangePhone={(event) => this.setState({phoneNumber: event.currentTarget.value})}
+                                    getPhoneNumber={this.getPhoneNumber}
                                 />
                                 <SelectComponent
                                     type={"two"}
@@ -53,7 +50,7 @@ class ContactUs extends CompanyProfileStartController {
                                     placeholder={"Saber Noori"}
                                     type={"text"}
                                     showDropDown={false}
-                                    onChange={(event) => this.setState({supplierName: event.currentTarget.value})}
+                                    onChange={(event) => this.setState({ supplierName: event.currentTarget.value })}
                                 />
                                 <SelectComponent
                                     type={"two"}

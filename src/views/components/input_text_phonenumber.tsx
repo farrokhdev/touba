@@ -1,22 +1,25 @@
-import { ChangeEvent, InputHTMLAttributes, memo, ReactElement, useCallback } from "react";
+import { ChangeEvent, InputHTMLAttributes, memo, ReactElement, useCallback, useEffect, useState } from "react";
 import { Iran } from "../../assets";
 import { Divider } from "./components";
+import PhoneInput from 'react-phone-input-2'
+import 'react-phone-input-2/lib/style.css'
 
-interface Props extends InputHTMLAttributes<HTMLInputElement> {
-    valueCode: string | number;
-    valuephone: string | number;
+interface Props {
+    getPhoneNumber(value: string): void;
     title: string;
-    onChangeCode(event: ChangeEvent<HTMLInputElement>): void;
-    onChangePhone(event: ChangeEvent<HTMLInputElement>): void;
+    
 }
 
 export function InputTextPhoneNumber({
-    valueCode,
-    valuephone,
     title,
-    onChangeCode,
-    onChangePhone
+    getPhoneNumber
 }: Props): ReactElement {
+
+    const [phone, setPhone] = useState<any>();
+
+    useEffect(() => {
+        getPhoneNumber(phone);
+    }, [getPhoneNumber, phone]);
 
     return (
         <div className="input-text-phonenumber">
@@ -26,23 +29,14 @@ export function InputTextPhoneNumber({
                 </h6>
             </div>
             <div className="input-text-phonenumber-inputs">
-                <input
-                    type="number"
-                    value={valueCode}
-                    className="input-text-phonenumber-inputs-code"
-                    onChange={onChangeCode}
-                />
-                <img src={Iran} className="icon-flag" />
-                <div className="divider">
-                </div>
-                <input
-                    type="number"
-                    value={valuephone}
-                    onChange={onChangePhone}
-                    className="input-text-phonenumber-inputs-phone"
+                <PhoneInput
+                    country={'ir'}
+                    value={phone}
+                    onChange={phone => setPhone(phone)}
                 />
             </div>
         </div>
+
     )
 }
 export default memo(InputTextPhoneNumber);
