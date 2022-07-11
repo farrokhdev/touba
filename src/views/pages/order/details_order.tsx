@@ -1,15 +1,10 @@
 import { Component } from "react";
-import { Link } from "react-router-dom";
-import { BackgroundLatest, IconAlibaba, IconArvan, IconEmail, IconError, IconLinkdin, IconLinkdinGray, IconMarker, IconTouba, IconTwiterGray, IconTwitter, ImageBackgroundLogin, ImageControll, ImageLaboratory, ImagePersonBox, ImageTest, ImageTest2, ImageTest3, ImageTest4 } from "../../../assets";
-import { ButtonDropdown } from "../../components/button_dropdown";
-import { ButtonOutline } from "../../components/button_outline";
-import { CHART } from "../../components/chart";
-import { Button, CardSearchProduct, CardProduct, CardCategory, CardImage, CardCollectionProduct, CardProductWithPrice, CardBestSeller, CardCollectionBest, Divider, CardNewExcess, CardBestBrand, CardNewProduct, InputTextLabel, ComponentRadioSquare, CardCalculateProduct, Map, DropDown } from "../../components/components";
+import { ImageTest, IconMarker } from "../../../assets";
+import { CardCalculateProduct } from "../../components/card_calculate_product";
 import DashboardNav from "../../components/dashboard_nav";
+import Divider from "../../components/divider";
 import OrderHead from "../../components/order_head";
-import HomeController from "../../controllers/home_controller";
-import LoginControll from "../../controllers/login_controll";
-
+import Map from "../../components/component_map";
 
 class EditOrder extends Component {
     render() {

@@ -18,7 +18,7 @@ const PriceSummary: React.FC<IProps> = ({ list }) => {
             <span className="title">Total Quantity</span>
             <span className="items mx-1">({list.length} Items)</span>
           </div>
-          <span className="quantity">1500</span>
+          <span className="quantity">300</span>
         </div>
         <div className="subtotal d-flex flex-row align-items-center justify-content-between">
           <div>

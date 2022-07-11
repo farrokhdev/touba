@@ -15777,6 +15777,57 @@ a {
   border-radius: 8px;
 }
 
+.company-Profile-Page .excess-modal {
+  background-color: #fff;
+  width: 900px;
+  height: 600px;
+  border-radius: 24px;
+}
+
+.company-Profile-Page .excess-modal .gray-background {
+  background: rgba(243, 244, 246, 0.5);
+  border-radius: 12px;
+  height: 450px;
+}
+
+.company-Profile-Page .excess-modal .gray-background .chart {
+  height: 110px;
+}
+
+.company-Profile-Page .excess-modal .gray-background .chart-content {
+  height: 100%;
+}
+
+.company-Profile-Page .excess-modal .gray-background .chart-content-column-top {
+  width: 38px;
+}
+
+.company-Profile-Page .excess-modal .gray-background .chart-content-column-bottom {
+  height: 100%;
+  width: 25px;
+}
+
+.company-Profile-Page .excess-modal .gray-background .chart-content-column {
+  height: 100%;
+}
+
+.company-Profile-Page .excess-modal span {
+  text-transform: uppercase;
+  text-align: center;
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 32px !important;
+  color: rgba(60, 85, 122, 0.7) !important;
+}
+
+.company-Profile-Page .excess-modal button {
+  width: 200px;
+  height: 63px;
+}
+
 .contactus-Item span:first-child {
   width: auto;
   height: auto;
@@ -18331,6 +18382,100 @@ a {
   margin: 32px 0;
 }
 
+.company-profile-start .body-content .location-start {
+  background-color: #FFFFFF;
+}
+
+.company-profile-start .body-content .location-start .title {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 18px !important;
+  color: #3c557a !important;
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(177, 180, 193, 0.5);
+}
+
+.company-profile-start .body-content .location-start .location-table {
+  border: 1px solid #d6d6d6;
+  border-radius: 16px;
+  width: 65%;
+}
+
+.company-profile-start .body-content .location-start .location-table .head .head-title {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 22px !important;
+  color: #3c557a !important;
+}
+
+.company-profile-start .body-content .location-start .location-table .table-head {
+  padding: 0 52px 0 31px;
+  background-color: rgba(214, 214, 214, 0.5);
+  height: 50px;
+}
+
+.company-profile-start .body-content .location-start .location-table .table-head span {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  color: #3c557a !important;
+  margin: 0;
+}
+
+.company-profile-start .body-content .location-start .location-table .table-head span:nth-child(2) {
+  padding-right: 50px;
+}
+
+.company-profile-start .body-content .location-start .location-table .table-head span:nth-child(3) {
+  padding-right: 30px;
+}
+
+.company-profile-start .body-content .location-start .map-container {
+  width: 35%;
+  height: 100%;
+}
+
+.company-profile-start .body-content .location-start .map-container > div {
+  height: 686px;
+}
+
+.company-profile-start .body-content .start-suppiler {
+  background-color: #eb3a47;
+  border-radius: 16px;
+  height: 800px;
+}
+
+.company-profile-start .body-content .start-suppiler span {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 34px !important;
+  color: #FFFFFF !important;
+}
+
+.company-profile-start .body-content .start-suppiler button {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 18px !important;
+  color: #21C085 !important;
+  border: none !important;
+  padding: 15px 35px;
+}
+
 .finance-page {
   background-color: #f4f5f9;
 }
@@ -19143,5 +19288,75 @@ a {
 
 .report-statistics-details-keyword-button .button-outline {
   margin: 8px;
+}
+
+.company-profile-excess-page .content {
+  padding: 0 30px;
+  border-top: 1px solid #d6d6d6;
+  padding-top: 25px;
+}
+
+.company-profile-excess-page .content .banner {
+  background: #eb3a47;
+  border-radius: 16px;
+  height: 155px;
+  padding: 0 30px;
+}
+
+.company-profile-excess-page .content .banner span {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 34px !important;
+  color: #FFFFFF !important;
+}
+
+.company-profile-excess-page .content .banner p {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  color: #FFFFFF !important;
+  margin-top: 20px;
+}
+
+.company-profile-excess-page .content .banner p span {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 900 !important;
+  font-size: 17px !important;
+  color: #FFFFFF !important;
+}
+
+.company-profile-excess-page .content .banner button {
+  border: none;
+  outline: none;
+  background-color: #FFFFFF;
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 18px !important;
+  color: #21C085 !important;
+  border-radius: 8px;
+  height: 55px;
+  padding: 0 20px;
+}
+
+.company-profile-excess-page .content .card-offer-title {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 800 !important;
+  font-size: 22px !important;
+  color: #3c557a !important;
 }
 /*# sourceMappingURL=app.css.map */

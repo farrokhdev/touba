@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
   IconAddCircle,
   IconFolder,
@@ -133,11 +133,13 @@ const Inquiry: React.FC<IProps> = () => {
               selected={isSelect === 4 ? true : false}
             />
           </div>
-          <button
-            className={isSelect ? "button-component my-5 mx-2 " : "d-none"}
-          >
-            <span className="button-component-text">COMPLETE ORDER</span>
-          </button>
+          <Link to="/cart" className="text-decoration-none">
+            <button
+              className={isSelect ? "button-component my-5 mx-2 " : "d-none"}
+            >
+              <span className="button-component-text">COMPLETE ORDER</span>
+            </button>
+          </Link>
         </>
       )}
     </div>
