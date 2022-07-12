@@ -55,7 +55,7 @@ export function BottomNav() {
   const [showMinimalDropDown, setShowMinimalDropDown] = useState(false);
   const navigate = useNavigate();
   const [active, setActive] = useState(0);
-  
+
   function handleActiveLink(id: number) {
     setActive(id);
   }
@@ -77,15 +77,18 @@ export function BottomNav() {
     navigate(page);
   };
   function handleNavigationSpecial() {
-    navigate("/special-offer")
+    navigate("/special-offer");
   }
   function handleNavigationProduct() {
-    navigate("/detail-product")
+    navigate("/detail-product");
   }
 
   return (
     <>
-      <div className="bottom-nav px-5">
+      <div
+        className="bottom-nav px-5"
+        onMouseMove={(e) => e.screenY <290 && setShowDropDown(false)}
+      >
         <div className="bottom-nav-items">
           <div className="bottom-nav-items-search">
             <SelectCategories onOpen={handleshowDropDown} />
@@ -100,7 +103,10 @@ export function BottomNav() {
             <ButtonDropdown title={"DEMANDERS"} links={[]} />
             <ButtonDropdown title={"BROKERS"} links={[]} />
             <ButtonDropdown title={"SIDE SERVICES"} links={sideService} />
-            <Button title={"SPECIAL OFFERS"} onClick={handleNavigationSpecial} />
+            <Button
+              title={"SPECIAL OFFERS"}
+              onClick={handleNavigationSpecial}
+            />
             <Button title={"MAP"} />
           </div>
           {showDropDown === true ? (
