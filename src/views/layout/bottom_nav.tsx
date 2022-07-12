@@ -76,10 +76,19 @@ export function BottomNav() {
   const navigator = (page: string) => {
     navigate(page);
   };
+  function handleNavigationSpecial() {
+    navigate("/special-offer");
+  }
+  function handleNavigationProduct() {
+    navigate("/detail-product");
+  }
 
   return (
     <>
-      <div className="bottom-nav px-5">
+      <div
+        className="bottom-nav px-5"
+        onMouseMove={(e) => e.screenY <290 && setShowDropDown(false)}
+      >
         <div className="bottom-nav-items">
           <div className="bottom-nav-items-search">
             <SelectCategories onOpen={handleshowDropDown} />
