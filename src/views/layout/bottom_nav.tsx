@@ -81,7 +81,7 @@ export function BottomNav() {
     <>
       <div
         className="bottom-nav px-5"
-        onMouseMove={(e) => e.screenY <290 && setShowDropDown(false)}
+        onMouseMove={(e) => e.screenY <190 && setShowDropDown(false)}
       >
         <div className="bottom-nav-items">
           <div className="bottom-nav-items-search">
