@@ -76,12 +76,6 @@ export function BottomNav() {
   const navigator = (page: string) => {
     navigate(page);
   };
-  function handleNavigationSpecial() {
-    navigate("/special-offer");
-  }
-  function handleNavigationProduct() {
-    navigate("/detail-product");
-  }
 
   return (
     <>
