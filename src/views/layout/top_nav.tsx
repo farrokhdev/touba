@@ -19,7 +19,7 @@ export function TopNav() {
                     <Link to="/membership" className={location.pathname === "/membership" ? "link active" : "link"}>
                         <p className="text-link">Membership</p>
                     </Link>
-                    <Link to="/about-us" className={location.pathname === "/about-us" ? "link active" : "link"}>
+                    <Link to="/about" className={location.pathname === "/about-us" ? "link active" : "link"}>
                         <p className="text-link">ABOUT US</p>
                     </Link>
                     <Link to="/contact-us" className={location.pathname === "/contact-us" ? "link active" : "link"}>

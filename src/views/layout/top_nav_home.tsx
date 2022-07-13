@@ -34,7 +34,7 @@ export function TopNavHome() {
             <Link to="/membership" className="link">
               <p className="text-link">Membership</p>
             </Link>
-            <Link to="/about-us" className="link">
+            <Link to="/about" className="link">
               <p className="text-link">ABOUT US</p>
             </Link>
             <Link to="/contact-us" className="link">

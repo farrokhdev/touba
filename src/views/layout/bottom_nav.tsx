@@ -89,7 +89,7 @@ export function BottomNav() {
           </div>
           <div className="bottom-nav-items-links">
             <Button
-              onClick={() => navigator("/excess")}
+              onClick={() => navigator("/excess-capacity")}
               title={"EXCESS CAPACITY"}
             />
             <Button onClick={() => navigator("/product")} title={"PRODUCT"} />
