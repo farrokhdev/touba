@@ -1,0 +1,17 @@
+.work-group {
+    width: 100%;
+    height: 100%;
+    &-body {
+        height: 100%;
+        @include Display(flex, start, flex-start);
+        &-side-nav {
+            width: 20%;
+            height: 100%;
+            max-width: 319px;
+        }
+        &-content {
+            width: 75%;
+            margin: 0 auto;
+        }
+    }
+}

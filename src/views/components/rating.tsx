@@ -2,7 +2,7 @@ import React from "react";
 import { IconStar, IconStartOutline } from "../../assets";
 
 export type IProps = {
-  rate: number;
+  rate: number | string;
   numOfRaiting?: string;
 };
 

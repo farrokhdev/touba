@@ -1,110 +1,126 @@
 import { memo, ReactElement } from "react";
-import { IconQuestionMark, IconSharpSign, ImageJuicer } from "../../assets";
+import { IconQuestionMark, IconSharpSign, IconWolf, ImageJuicer } from "../../assets";
 import { ButtonOutline } from "./button_outline";
 import { CHART } from "./chart";
 import { Chart, Rate } from "./components";
 import { Divider } from "./divider";
 
-interface Props {
 
+
+type Card = {
+    icon: string;
+    userName: string;
+    status: string;
+    type: string;
+    image: string;
+    description: string;
+    rate: number;
+    chart: CHART[];
+    amount: number;
+    price1: number;
+    price2: number;
+    price3: number;
+    time: string;
 }
 
-const TEST: CHART[] = [
-    { name: "JAN", size: 20 },
-    { name: "FEB", size: 30 },
-    { name: "MAR", size: 40 },
-    { name: "APR", size: 50 },
-    { name: "MAY", size: 60 },
-    { name: "JUN", size: 70 },
-    { name: "JUL", size: 80 },
-    { name: "AUG", size: 90 },
-    { name: "SEP", size: 100 },
-    { name: "OCT", size: 20 },
-    { name: "NOV", size: 20 },
-    { name: "DEC", size: 20 },
-];
+interface Props {
+    items: Card;
+}
 
-export function CardProductGroupTitle({ }: Props): ReactElement {
+export function CardProductGroupTitle({ items }: Props): ReactElement {
 
     return (
         <div className="card-product-group-title">
-            <div className="card-product-group-title-header">
-                <div className="name">
-                    <h5 className="user-name">
-                        User Name
-                    </h5>
-                    <h5 className="status">
-                        Updated an
-                    </h5>
-                    <h5 className="product">
-                        Excess Capacity
-                    </h5>
+            <div className="card-product-group-title-icon">
+                <div className="card-product-group-title-icon-image">
+                    <img src={items.icon} alt="" />
                 </div>
-                <h6 className="title">
-                    Group Title
-                </h6>
             </div>
-            <div className="card-product-group-title-content">
-                <div className="card-product-group-title-content-header">
-                    <img src={ImageJuicer} alt="" />
-                    <div className="description">
-                        <div className="description-title">
-                            <h5>
-                                Pomegranate Juice Pet Bottle, Best material and design, Ready to Order
-                            </h5>
-                        </div>
-                        <div className="description-rate">
-                            <Rate rate={4} numOfRaiting={`(${4.2}${"  "}|${"  "}${12.514} Rating)  ${"  "}|${"  "} ${988} Customer Reviews`} />
-                        </div>
-                    </div>
-                </div>
-                <Divider direction={"vertical"} />
-                <div className="card-product-group-title-content-body">
-                    <div className="card-product-group-title-content-body-header">
-                        <h5 className="card-product-group-title-content-body-header-title">
-                            overall Capacity:
-                            <span>
-                                200Tons/Monthly
-                            </span>
+            <div className="card-product-group-title-chat">
+                <div className="card-product-group-title-chat-header">
+                    <div className="name">
+                        <h5 className="user-name">
+                            {items.userName}
                         </h5>
-                        <img src={IconQuestionMark} alt="" />
+                        <h5 className="status">
+                            {items.status}
+                        </h5>
+                        <h5 className="product">
+                            {items.type}
+                        </h5>
                     </div>
-                    <div className="card-product-group-title-content-body-chart">
-                        <Chart item={TEST} />
+                    <h6 className="title-chat">
+                        Group Title
+                    </h6>
+                </div>
+                <div className="card-product-group-title-chat-content">
+                    <div className="card-product-group-title-chat-content-header">
+                        <img src={items.image} alt="" />
+                        <div className="description">
+                            <div className="description-title-chat">
+                                <h5>
+                                    {items.description}
+                                </h5>
+                            </div>
+                            <div className="description-rate">
+                                <Rate rate={4} numOfRaiting={`(${items.rate}${"  "}|${"  "}${12.514} Rating)  ${"  "}|${"  "} ${988} Customer Reviews`} />
+                            </div>
+                        </div>
+                    </div>
+                    <Divider direction={"vertical"} />
+                    <div className="card-product-group-title-chat-content-body">
+                        <div className="card-product-group-title-chat-content-body-header">
+                            <h5 className="card-product-group-title-chat-content-body-header-title-chat">
+                                overall Capacity:
+                                <span>
+                                    {items.amount}Tons/Monthly
+                                </span>
+                            </h5>
+                            <img src={IconQuestionMark} alt="" />
+                        </div>
+                        <div className="card-product-group-title-chat-content-body-chart">
+                            <Chart item={items.chart} />
+                        </div>
+                    </div>
+                    <Divider direction={"vertical"} />
+                    <div className="card-product-group-title-chat-content-footer">
+                        <div className="card-product-group-title-chat-content-footer-price">
+                            <div>
+                                <h5>
+                                    ${items.price1}
+                                </h5>
+                                <h6>
+                                    {">"}10,000 Piece
+                                </h6>
+                            </div>
+                            <div>
+                                <h5>
+                                    ${items.price2}
+                                </h5>
+                                <h6>
+                                    10,000-20,000
+                                </h6>
+                            </div>
+                            <div>
+                                <h5>
+                                    ${items.price3}
+                                </h5>
+                                <h6>
+                                    {"<"}20,000
+                                </h6>
+                            </div>
+                        </div>
+                        <ButtonOutline title={"view details"} />
                     </div>
                 </div>
-                <Divider direction={"vertical"} />
-                <div className="card-product-group-title-content-footer">
-                    <div className="card-product-group-title-content-footer-price">
-                        <div>
-                            <h5>
-                                $5.00
-                            </h5>
-                            <h6>
-                                {">"}10,000 Piece
-                            </h6>
-                        </div>
-                        <div>
-                            <h5>
-                                $4.00
-                            </h5>
-                            <h6>
-                                10,000-20,000
-                            </h6>
-                        </div>
-                        <div>
-                            <h5>
-                                $3.20
-                            </h5>
-                            <h6>
-                                {"<"}20,000
-                            </h6>
-                        </div>
-                    </div>
-                    <ButtonOutline title={"VIEW DETAILS"}/>
+                <div className="card-product-group-title-chat-footer">
+                    <h6 className="card-product-group-title-chat-footer-time">
+                        {items.time}
+                    </h6>
                 </div>
             </div>
         </div>
+
     )
 }
 

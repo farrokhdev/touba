@@ -10,3 +10,4 @@ export { default as EditOrder} from './order/edit_orders';
 export { default as Report} from './report';
 export { default as Review} from './reviews';
 export { default as TableOrder} from './table_order';
+export { default as WorkGroup} from './work_group';

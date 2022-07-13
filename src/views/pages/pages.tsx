@@ -1,5 +1,5 @@
 import { Route, Routes, useLocation } from "react-router-dom";
-import { CompanyProfileEdit, CompanyProfileExcess, CompanyProfileProduct, CompanyProfileStart, Dashboard, DetailsOrder, EditOrder, Finance, LikeCard, Report, Review, TableOrder } from "./dashboard";
+import { CompanyProfileEdit, CompanyProfileExcess, CompanyProfileProduct, CompanyProfileStart, Dashboard, DetailsOrder, EditOrder, Finance, LikeCard, Report, Review, TableOrder, WorkGroup } from "./dashboard";
 import { About, Card, CompanyProfile, ExcessCapacity, Help, Home, Login, Membership, Product, ProductSingle, Register, ResultExcessCapacity, ResultProduct, ResultSupplier, SideService, SpecialOffer, Supplier } from "./desktop";
 import { default as DashboarNav } from "../layout/dashboard/dashobord";
 import { TopNavHome, TopNav, BottomNav, Footer } from "../layout/layout";
@@ -39,6 +39,7 @@ function Pages() {
                 <Route path="dashboard/review" element={<Review />} />
                 <Route path="dashboard/table-order" element={<TableOrder />} />
                 <Route path="dashboard/table-order" element={<TableOrder />} />
+                <Route path="dashboard/work-group" element={<WorkGroup />} />
               </Routes>
             </div>
           </div>

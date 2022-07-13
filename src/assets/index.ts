@@ -75,6 +75,7 @@ export { default as IconArvan} from './icons/icon-arvan.svg';
 export { default as IconSnapp} from './icons/icon-snapp.svg';
 export { default as IconAboutUs} from './icons/icon-about-us.svg';
 export { default as IconIranTalent} from './icons/icon-irantalent.svg';
+export { default as IconWolf} from './icons/icon-wolf.svg';
 export { default as ImageAboutusDesk} from './images/aboutus-desk.png';
 export { default as ImageAboutus} from './images/aboutusPic.png';
 export { default as ImageLaboratory} from './images/image-laboratory.png';

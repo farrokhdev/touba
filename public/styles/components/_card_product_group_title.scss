@@ -1,117 +1,141 @@
 .card-product-group-title {
     width: 100%;
     height: 100%;
-    background-color: $white;
-    border-radius: 25.1538px 25.1538px 25.1538px 0px;
-    padding: 24px;
+    @include Display(flex, start, flex-end);
+    margin: 25px 0;
 
-    &-header {
-        @include Display(flex, space-between, center);
-
-        .name {
-            @include Display(flex, center, center);
-
-            .user-name {
-                @include FontStyle(16px, 500, $sorme);
-                margin: 0;
-            }
-
-            .status {
-                @include FontStyle(16px, 400, $gray);
-                margin: 0 5px;
-            }
-
-            .product {
-                @include FontStyle(16px, 400, $lightSorme);
-                margin: 0;
-            }
-        }
-
-        .title {
-            @include FontStyle(12px, 500, $sorme);
-            margin: 0;
-        }
-    }
-
-    &-content {
-        width: 100%;
-        height: 90%;
-        @include Border(1px, $gray, 8px);
-        margin: 25px 0;
-
+    &-chat {
+        width: 90%;
+        max-width: 90%;
+        height: 100%;
+        background-color: $white;
+        border-radius: 25.1538px 25.1538px 25.1538px 0px;
+        padding: 24px;
+    
         &-header {
-            @include Display(flex, start, center);
-
-            .description {
-                margin: 0 28px;
-
-                &-title {
-                    width: 60%;
-
-                    >h5 {
-                        @include FontStyle(16px, 700, $sorme);
-                        margin: 0 0 10px 0;
-                    }
+            @include Display(flex, space-between, center);
+    
+            .name {
+                @include Display(flex, center, center);
+    
+                .user-name {
+                    @include FontStyle(16px, 500, $sorme);
+                    margin: 0;
                 }
+    
+                .status {
+                    @include FontStyle(16px, 400, $gray);
+                    margin: 0 5px;
+                }
+    
+                .product {
+                    @include FontStyle(16px, 400, $lightSorme);
+                    margin: 0;
+                }
+            }
+    
+            .title {
+                @include FontStyle(12px, 500, $sorme);
+                margin: 0;
             }
         }
-
-        &-body {
+    
+        &-content {
+            width: 100%;
+            height: 90%;
+            @include Border(1px, $gray, 8px);
+            margin: 25px 0;
+    
             &-header {
-                width: 95%;
-                margin: 25px auto;
-                @include Display(flex, space-between, center);
-
-                &-title {
-                    @include FontStyle(14.98px, 500, $lightSorme);
-                    margin: 0;
-
-                    >span {
-                        @include FontStyle(14.98px, 500, $sorme);
-                        margin: 0 5px;
+                @include Display(flex, start, center);
+    
+                .description {
+                    margin: 0 28px;
+    
+                    &-title {
+                        width: 60%;
+    
+                        >h5 {
+                            @include FontStyle(16px, 700, $sorme);
+                            margin: 0 0 10px 0;
+                        }
                     }
                 }
             }
-
-            &-chart {
-                width: 95%;
-                margin: 0 auto 25px auto;
-
-                .chart-content-column-bottom {
-                    height: 104.9px;
-                    width: 21.4px
+    
+            &-body {
+                &-header {
+                    width: 95%;
+                    margin: 25px auto;
+                    @include Display(flex, space-between, center);
+    
+                    &-title {
+                        @include FontStyle(14.98px, 500, $lightSorme);
+                        margin: 0;
+    
+                        >span {
+                            @include FontStyle(14.98px, 500, $sorme);
+                            margin: 0 5px;
+                        }
+                    }
                 }
-
-                .chart-content-column-top {
-                    width: 32.11px;
+    
+                &-chart {
+                    width: 95%;
+                    margin: 0 auto 25px auto;
+    
+                    .chart-content-column-bottom {
+                        height: 104.9px;
+                        width: 21.4px
+                    }
+    
+                    .chart-content-column-top {
+                        width: 32.11px;
+                    }
+                }
+            }
+    
+            &-footer {
+                padding: 30px 0;
+                width: 96%;
+                height: 25%;
+                @include Display(flex, space-between, center);
+                margin: 0 auto;
+                &-price {
+                    width: 50%;
+                    @include Display(flex, space-between, center);
+                    >div {
+                        >h5 {
+                            @include FontStyle(17.36px, 700, $sorme);
+                            margin: 0 0 8px 0;
+                        }
+                        >h6 {
+                            @include FontStyle(13.55px, 500, $lightSorme);
+                            margin: 0;
+                        }
+                    }
+                    >div:nth-of-type(2) {
+                        border-left: 1px solid $gray;
+                        border-right: 1px solid $gray;
+                        padding: 0 25px;
+                    }
                 }
             }
         }
 
         &-footer {
-            width: 96%;
-            height: 25%;
-            @include Display(flex, space-between, center);
-            margin: 0 auto;
-            &-price {
-                width: 50%;
-                @include Display(flex, space-between, center);
-                >div {
-                    >h5 {
-                        @include FontStyle(17.36px, 700, $sorme);
-                        margin: 0 0 8px 0;
-                    }
-                    >h6 {
-                        @include FontStyle(13.55px, 500, $lightSorme);
-                        margin: 0;
-                    }
-                }
-                >div:nth-of-type(2) {
-                    border-left: 1px solid $gray;
-                    border-right: 1px solid $gray;
-                    padding: 0 25px;
-                }
+            width: 100%;
+            @include Display(flex, end, center);
+
+            &-time {
+                @include FontStyle(12px, 500, $lightSorme);
+                margin: 0;
             }
         }
+    }
+    &-icon {
+        height: 100%;
+        width: 5%;
+        min-width: 60px;
     }
 }

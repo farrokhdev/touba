@@ -74,7 +74,7 @@ const Dashboard: React.FC<IProps> = ({ }) => {
           <span className="numOfReviews">4</span>
         </NavLink>
         <NavLink
-          to="/"
+          to="/dashboard/work-group"
           className={({ isActive = String }) =>
             isActive
               ? "w-100 d-flex flex-row align-items-center active-Navlink"
