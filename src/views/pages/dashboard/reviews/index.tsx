@@ -4,22 +4,13 @@ import { SelectComponent } from "../../../components/components";
 import DashboardNav from "../../../components/dashboard_nav";
 import ProductTable from "../../../components/product_table";
 import ReviewProduct from "../../../components/review_product";
+import ReviewController from "../../../controllers/review_controller";
 
-interface IProps {}
-interface IState {
-  filter: number;
-  activeTab: number;
-}
 
-export default class Review extends BaseComponent<IProps, IState> {
-  state: IState = {
-    filter: 1,
-    activeTab: 1,
-  };
-  handleShow = (e: number) => {
-    this.setState({ filter: e });
-  };
+export default class Review extends ReviewController {
+
   render() {
+    const { filter, activeTab } = this.state;
     return (
       <div className="review-Page">
         <div>
@@ -27,7 +18,7 @@ export default class Review extends BaseComponent<IProps, IState> {
         </div>
         <div className="d-flex align-items-center justify-content-center py-3">
           <ButtonSelect
-            state={this.state.activeTab}
+            state={activeTab}
             setState1={() => this.setState({ activeTab: 1 })}
             setState2={() => this.setState({ activeTab: 2 })}
             titleButton1="My Reviews"
@@ -44,9 +35,8 @@ export default class Review extends BaseComponent<IProps, IState> {
                     onClick={() => this.handleShow(1)}
                   >
                     <div
-                      className={`item-nav ${
-                        this.state.filter === 1 && "item-active"
-                      } py-4 `}
+                      className={`item-nav ${filter === 1 && "item-active"
+                        } py-4 `}
                     >
                       Products
                     </div>
@@ -56,9 +46,8 @@ export default class Review extends BaseComponent<IProps, IState> {
                     onClick={() => this.handleShow(2)}
                   >
                     <div
-                      className={`item-nav ${
-                        this.state.filter === 2 && "item-active"
-                      } py-4 `}
+                      className={`item-nav ${filter === 2 && "item-active"
+                        } py-4 `}
                     >
                       Excess Capacity
                     </div>
@@ -71,22 +60,22 @@ export default class Review extends BaseComponent<IProps, IState> {
                   <div className="col-4 px-2">
                     <SelectComponent
                       type="one"
-                      onSelect={() => {}}
+                      onSelect={() => { }}
                       placeholder="Status Sorting"
                     />
                   </div>
                 </div>
               </div>
             </div>
-            {this.state.activeTab === 1 ? (
+            {activeTab === 1 ? (
               <div className="mt-3">
-                {this.state.filter === 1 && <ProductTable />}
-                {this.state.filter === 2 && <ProductTable />}
+                {filter === 1 && <ProductTable />}
+                {filter === 2 && <ProductTable />}
               </div>
             ) : (
               <div className="mt-3">
-                {this.state.filter === 1 && <ReviewProduct />}
-                {this.state.filter === 2 && <ReviewProduct />}
+                {filter === 1 && <ReviewProduct />}
+                {filter === 2 && <ReviewProduct />}
               </div>
             )}
           </div>
