@@ -1,31 +1,8 @@
-import React, { Component } from "react";
-import iconRing from "../../../assets/icons/icon-ring.svg";
-import IconPlus from "../../../assets/icons/icon-plus.svg";
-import IconChat from "../../../assets/icons/icon-chat.svg";
-import IconUser from "../../../assets/icons/icon-user.svg";
-import iconArrowDown from "../../../assets/images/arrowdown.png";
-import { ButtonIcon } from "../../../components/button_icon";
 import DashboardNav from "../../../components/dashboard_nav";
 import { CardLike, CardOfferHorizental } from "../../../components/components";
 import DashboardLikeCardControllre from "../../../controllers/dashboard_like_card_controller";
 import ItemProfile from "../../../components/item_profile";
 import { ImageTest } from "../../../../assets";
-import { CHART } from "../../../components/chart";
-
-const TEST: CHART[] = [
-  { name: "JAN", size: 20 },
-  { name: "FEB", size: 30 },
-  { name: "MAR", size: 40 },
-  { name: "APR", size: 50 },
-  { name: "MAY", size: 60 },
-  { name: "JUN", size: 70 },
-  { name: "JUL", size: 80 },
-  { name: "AUG", size: 90 },
-  { name: "SEP", size: 100 },
-  { name: "OCT", size: 20 },
-  { name: "NOV", size: 20 },
-  { name: "DEC", size: 20 },
-];
 
 export default class DashboardLikeCard extends DashboardLikeCardControllre {
   render() {
@@ -101,7 +78,7 @@ export default class DashboardLikeCard extends DashboardLikeCardControllre {
                   description={"Pomegranate Juice Pet Bottle, Best material and design, Ready to Order"}
                   rate={4.2}
                   country={"CHINA"}
-                  chart={TEST}
+                  chart={this.TEST}
                   amount={200}
                   type="two"
                   timeDelivery="98.6%"
@@ -116,7 +93,7 @@ export default class DashboardLikeCard extends DashboardLikeCardControllre {
                   description={"Pomegranate Juice Pet Bottle, Best material and design, Ready to Order"}
                   rate={4.2}
                   country={"CHINA"}
-                  chart={TEST}
+                  chart={this.TEST}
                   amount={200}
                   type="two"
                   timeDelivery="98.6%"
@@ -131,7 +108,7 @@ export default class DashboardLikeCard extends DashboardLikeCardControllre {
                   description={"Pomegranate Juice Pet Bottle, Best material and design, Ready to Order"}
                   rate={4.2}
                   country={"CHINA"}
-                  chart={TEST}
+                  chart={this.TEST}
                   amount={200}
                   type="two"
                   timeDelivery="98.6%"
@@ -146,7 +123,7 @@ export default class DashboardLikeCard extends DashboardLikeCardControllre {
                   description={"Pomegranate Juice Pet Bottle, Best material and design, Ready to Order"}
                   rate={4.2}
                   country={"CHINA"}
-                  chart={TEST}
+                  chart={this.TEST}
                   amount={200}
                   type="two"
                   timeDelivery="98.6%"
