@@ -1,39 +1,13 @@
-import { Component } from "react";
 import { Link } from "react-router-dom";
-import Slider from "react-slick";
-import { BackgroundLatest, IconAddCircle, IconAddCircleWhite, IconAlibaba, IconArrow, IconArrowBlack, IconArvan, IconNext, IconPersonCircle, IconPrev, IconYoutube, ImageControll, ImageFlagChine, ImageLaboratory, ImageNasa, ImageOil, ImagePersonBox, ImageTest, ImageTest2, ImageTest3, ImageTest4 } from "../../../../assets";
-import { CHART } from "../../../components/chart";
-import { Button, CardSearchProduct, CardProduct, CardCategory, CardImage, CardCollectionProduct, CardProductWithPrice, CardBestSeller, CardCollectionBest, Divider, CardNewExcess, CardBestBrand, CardNewProduct, CardCalculate, ButtonIcon, CardGroupChat, ButtonIconDashboard, Offcanvas, CardCalculateProduct, ModalComponent, CardOfferHorizental } from "../../../components/components";
+import { BackgroundLatest ,IconAlibaba, IconArvan, ImageControll, ImageLaboratory, ImagePersonBox, ImageTest, ImageTest2, ImageTest3, ImageTest4 } from "../../../../assets";
+import { Button, CardSearchProduct, CardProduct, CardCategory, CardImage, CardCollectionProduct, CardProductWithPrice, CardBestSeller, CardCollectionBest, Divider, CardNewExcess, CardBestBrand, CardNewProduct } from "../../../components/components";
 import HomeController from "../../../controllers/home_controller";
-import { Pagination, Autoplay, Navigation, Grid } from 'swiper';
+import { Navigation, Grid } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/grid";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
-const TESTLINK = [
-    { nameLink: "link1", location: "/supplier" },
-    { nameLink: "link2", location: "/" },
-    { nameLink: "link3", location: "/" },
-    { nameLink: "link4", location: "/" },
-    { nameLink: "link5", location: "/" },
-];
-
-const TEST: CHART[] = [
-    { name: "JAN", size: 20 },
-    { name: "FEB", size: 30 },
-    { name: "MAR", size: 40 },
-    { name: "APR", size: 50 },
-    { name: "MAY", size: 60 },
-    { name: "JUN", size: 70 },
-    { name: "JUL", size: 80 },
-    { name: "AUG", size: 90 },
-    { name: "SEP", size: 100 },
-    { name: "OCT", size: 20 },
-    { name: "NOV", size: 20 },
-    { name: "DEC", size: 20 },
-];
 
 class Home extends HomeController {
     render() {
@@ -145,7 +119,7 @@ class Home extends HomeController {
                                     status={"Finish Product"}
                                     description={"Pomegranate Juice Pet Bottle..."}
                                     amount={200}
-                                    chart={TEST}
+                                    chart={this.TEST}
                                 />
                             </SwiperSlide>
                             <SwiperSlide className="item-swiper">
@@ -154,7 +128,7 @@ class Home extends HomeController {
                                     status={"Finish Product"}
                                     description={"Pomegranate Juice Pet Bottle..."}
                                     amount={200}
-                                    chart={TEST}
+                                    chart={this.TEST}
                                 />
                             </SwiperSlide>
                             <SwiperSlide className="item-swiper">
@@ -163,7 +137,7 @@ class Home extends HomeController {
                                     status={"Finish Product"}
                                     description={"Pomegranate Juice Pet Bottle..."}
                                     amount={200}
-                                    chart={TEST}
+                                    chart={this.TEST}
                                 />
                             </SwiperSlide>
                             <SwiperSlide className="item-swiper">
@@ -172,7 +146,7 @@ class Home extends HomeController {
                                     status={"Finish Product"}
                                     description={"Pomegranate Juice Pet Bottle..."}
                                     amount={200}
-                                    chart={TEST}
+                                    chart={this.TEST}
                                 />
                             </SwiperSlide>
                             <SwiperSlide className="item-swiper">
@@ -181,7 +155,7 @@ class Home extends HomeController {
                                     status={"Finish Product"}
                                     description={"Pomegranate Juice Pet Bottle..."}
                                     amount={200}
-                                    chart={TEST}
+                                    chart={this.TEST}
                                 />
                             </SwiperSlide>
                             <SwiperSlide className="item-swiper">
@@ -190,7 +164,7 @@ class Home extends HomeController {
                                     status={"Finish Product"}
                                     description={"Pomegranate Juice Pet Bottle..."}
                                     amount={200}
-                                    chart={TEST}
+                                    chart={this.TEST}
                                 />
                             </SwiperSlide>
                             <SwiperSlide className="item-swiper">
@@ -199,7 +173,7 @@ class Home extends HomeController {
                                     status={"Finish Product"}
                                     description={"Pomegranate Juice Pet Bottle..."}
                                     amount={200}
-                                    chart={TEST}
+                                    chart={this.TEST}
                                 />
                             </SwiperSlide>
                             <SwiperSlide className="item-swiper">
@@ -208,7 +182,7 @@ class Home extends HomeController {
                                     status={"Finish Product"}
                                     description={"Pomegranate Juice Pet Bottle..."}
                                     amount={200}
-                                    chart={TEST}
+                                    chart={this.TEST}
                                 />
                             </SwiperSlide>
                             <SwiperSlide className="item-swiper">
@@ -217,131 +191,10 @@ class Home extends HomeController {
                                     status={"Finish Product"}
                                     description={"Pomegranate Juice Pet Bottle..."}
                                     amount={200}
-                                    chart={TEST}
+                                    chart={this.TEST}
                                 />
                             </SwiperSlide>
                         </Swiper>
-                        {/* <Swiper
-                            navigation={true}
-                            freeMode={true}
-                            breakpoints={{
-                                640: {
-                                    slidesPerView: 1,
-                                    spaceBetween: 80,
-                                },
-                                768: {
-                                    slidesPerView: 1,
-                                    spaceBetween: 80,
-                                },
-                                1024: {
-                                    slidesPerView: 2,
-                                    spaceBetween: 50,
-                                },
-                                1440: {
-                                    slidesPerView: 2,
-                                    spaceBetween: 30,
-                                }
-                            }}
-                            modules={[Navigation, Grid]}
-                            className="mySwiper"
-                        >
-                            <SwiperSlide className="item-swiper">
-                                <CardProduct
-                                    image={ImageTest}
-                                    status={"Finish Product"}
-                                    description={"Pomegranate Juice Pet Bottle..."}
-                                    amount={200}
-                                    chart={TEST}
-                                />
-                                <CardProduct
-                                    image={ImageTest}
-                                    status={"Finish Product"}
-                                    description={"Pomegranate Juice Pet Bottle..."}
-                                    amount={200}
-                                    chart={TEST}
-                                />
-                            </SwiperSlide>
-                            <SwiperSlide className="item-swiper">
-                                <CardProduct
-                                    image={ImageTest}
-                                    status={"Finish Product"}
-                                    description={"Pomegranate Juice Pet Bottle..."}
-                                    amount={200}
-                                    chart={TEST}
-                                />
-                                <CardProduct
-                                    image={ImageTest}
-                                    status={"Finish Product"}
-                                    description={"Pomegranate Juice Pet Bottle..."}
-                                    amount={200}
-                                    chart={TEST}
-                                />
-                            </SwiperSlide>
-                            <SwiperSlide className="item-swiper">
-                                <CardProduct
-                                    image={ImageTest}
-                                    status={"Finish Product"}
-                                    description={"Pomegranate Juice Pet Bottle..."}
-                                    amount={200}
-                                    chart={TEST}
-                                />
-                                <CardProduct
-                                    image={ImageTest}
-                                    status={"Finish Product"}
-                                    description={"Pomegranate Juice Pet Bottle..."}
-                                    amount={200}
-                                    chart={TEST}
-                                />
-                            </SwiperSlide>
-                            <SwiperSlide className="item-swiper">
-                                <CardProduct
-                                    image={ImageTest}
-                                    status={"Finish Product"}
-                                    description={"Pomegranate Juice Pet Bottle..."}
-                                    amount={200}
-                                    chart={TEST}
-                                />
-                                <CardProduct
-                                    image={ImageTest}
-                                    status={"Finish Product"}
-                                    description={"Pomegranate Juice Pet Bottle..."}
-                                    amount={200}
-                                    chart={TEST}
-                                />
-                            </SwiperSlide>
-                            <SwiperSlide className="item-swiper">
-                                <CardProduct
-                                    image={ImageTest}
-                                    status={"Finish Product"}
-                                    description={"Pomegranate Juice Pet Bottle..."}
-                                    amount={200}
-                                    chart={TEST}
-                                />
-                                <CardProduct
-                                    image={ImageTest}
-                                    status={"Finish Product"}
-                                    description={"Pomegranate Juice Pet Bottle..."}
-                                    amount={200}
-                                    chart={TEST}
-                                />
-                            </SwiperSlide>
-                            <SwiperSlide className="item-swiper">
-                                <CardProduct
-                                    image={ImageTest}
-                                    status={"Finish Product"}
-                                    description={"Pomegranate Juice Pet Bottle..."}
-                                    amount={200}
-                                    chart={TEST}
-                                />
-                                <CardProduct
-                                    image={ImageTest}
-                                    status={"Finish Product"}
-                                    description={"Pomegranate Juice Pet Bottle..."}
-                                    amount={200}
-                                    chart={TEST}
-                                />
-                            </SwiperSlide>
-                        </Swiper> */}
                     </div>
                 </div>
                 <div className="home-section-categories px-5">
@@ -474,62 +327,62 @@ class Home extends HomeController {
                     <div className="home-section-new-content">
                         <CardNewExcess
                             image={ImageControll}
-                            items={TEST}
+                            items={this.TEST}
                             title={"Name of Excess Capacity"}
                         />
                         <CardNewExcess
                             image={ImageControll}
-                            items={TEST}
+                            items={this.TEST}
                             title={"Name of Excess Capacity"}
                         />
                         <CardNewExcess
                             image={ImageControll}
-                            items={TEST}
+                            items={this.TEST}
                             title={"Name of Excess Capacity"}
                         />
                         <CardNewExcess
                             image={ImageControll}
-                            items={TEST}
+                            items={this.TEST}
                             title={"Name of Excess Capacity"}
                         />
                         <CardNewExcess
                             image={ImageControll}
-                            items={TEST}
+                            items={this.TEST}
                             title={"Name of Excess Capacity"}
                         />
                         <CardNewExcess
                             image={ImageControll}
-                            items={TEST}
+                            items={this.TEST}
                             title={"Name of Excess Capacity"}
                         />
                         <CardNewExcess
                             image={ImageControll}
-                            items={TEST}
+                            items={this.TEST}
                             title={"Name of Excess Capacity"}
                         />
                         <CardNewExcess
                             image={ImageControll}
-                            items={TEST}
+                            items={this.TEST}
                             title={"Name of Excess Capacity"}
                         />
                         <CardNewExcess
                             image={ImageControll}
-                            items={TEST}
+                            items={this.TEST}
                             title={"Name of Excess Capacity"}
                         />
                         <CardNewExcess
                             image={ImageControll}
-                            items={TEST}
+                            items={this.TEST}
                             title={"Name of Excess Capacity"}
                         />
                         <CardNewExcess
                             image={ImageControll}
-                            items={TEST}
+                            items={this.TEST}
                             title={"Name of Excess Capacity"}
                         />
                         <CardNewExcess
                             image={ImageControll}
-                            items={TEST}
+                            items={this.TEST}
                             title={"Name of Excess Capacity"}
                         />
                     </div>
