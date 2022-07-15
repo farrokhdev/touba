@@ -24,6 +24,7 @@ import Select_component_double from "./select_component_double";
 import ButtonAdd from "./button_add";
 import ComponentStorage from "./component_storage";
 import { Divider } from "./divider";
+import { NavLink } from "react-router-dom";
 const ComponentTradeInformation = () => {
   const [active, setActive] = useState(0);
   return (
@@ -157,7 +158,12 @@ const ComponentTradeInformation = () => {
           </div>
           <div className="d-flex p-4 justify-content-between align-items-center">
             <div className="d-flex align-items-center ">
-              <button className="btn-save-change p-3">Next Step</button>
+              <NavLink to="/dashboard/profile-start">
+                <button className="btn-save-change p-3">
+                  {" "}
+                  Publish Product
+                </button>
+              </NavLink>
               {active > 0 && (
                 <div className="px-2">
                   <button

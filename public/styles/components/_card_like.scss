@@ -5,7 +5,10 @@
   .discount-box {
     position: relative;
   }
-  
+  .image-discount {
+    filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(800%) contrast(0.8);
+  }
+
   .discount-percent {
     position: absolute;
     top: 0;
@@ -21,7 +24,7 @@
     /* White */
 
     color: #ffffff;
-@include FontStyle(20px,700,#ffffff);
+    @include FontStyle(20px, 700, #ffffff);
     transform: rotate(45deg);
   }
 }
@@ -31,8 +34,8 @@
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background: #f3f4f6; 
-  margin: 3%  ;
+  background: #f3f4f6;
+  margin: 3%;
 }
 
 .boldText {
@@ -40,7 +43,7 @@
 
   font-family: "Poppins";
   font-style: normal;
-  font-weight:700;
+  font-weight: 700;
   font-size: 16px;
   line-height: 22px;
   /* identical to box height, or 157% */
@@ -73,7 +76,6 @@
   color: #3c557a;
   z-index: 1;
 }
-.border-optional{
-  border: 1px solid #D6D6D6;
-
+.border-optional {
+  border: 1px solid #d6d6d6;
 }

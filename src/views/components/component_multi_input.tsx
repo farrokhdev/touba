@@ -8,7 +8,7 @@ interface Props {
 }
 const ComponentMultiInput = ({lableOne,lableTwo,placeholderOne,placeholderTwo}:Props) => {
   return (
-    <div className='row multi-input-box p-2'>
+    <div className='row multi-input-box p-3'>
         <div className='col-3 border-right'>
             <label className='label-text'>{lableOne}</label>
             <input className='input-text' type="text" placeholder={placeholderOne}/>

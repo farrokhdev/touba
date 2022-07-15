@@ -1,11 +1,21 @@
-import { IconEdit } from "../../../../assets";
-import { BannerCongratulations } from "../../../components/baner_congratulations";
-import { ComponentSortandSearch, CardLike, ComponentBasicInformation, ComponentOtherDetail, ComponentTradeInformation, ComponentRelatedItems } from "../../../components/components";
-import DashboardNav from "../../../components/dashboard_nav";
-import { SideNavItems } from "../../../components/side_nav_items";
-import CompanyProfileProductController from "../../../controllers/dashboard_company_profile_controller";
+import React, { Component } from "react";
+import { BannerCongratulations } from "../../components/baner_congratulations";
+import {
+  CardLike,
+  ComponentBasicInformation,
+  ComponentOtherDetail,
+  ComponentRelatedItems,
+  ComponentSortandSearch,
+  ComponentTradeInformation,
+} from "../../components/components";
+import DashboardNav from "../../components/dashboard_nav";
+import DashboardCompanyProfileController from "../../controllers/dashboard_company_profile_controller";
+import iconEdit from "../../../assets/icons/icon-edit.svg";
+import { SideNavItems } from "../../components/side_nav_items";
+import { ButtonIcon } from "../../components/button_icon";
+import CongratulationBanner from "../../components/congratulation_banner";
 
-class CompanyProfileProduct extends CompanyProfileProductController {
+class DashboardCompanyProfile extends DashboardCompanyProfileController {
  
   searchAndSort = () => {
     return <ComponentSortandSearch />;
@@ -14,23 +24,20 @@ class CompanyProfileProduct extends CompanyProfileProductController {
     return (
       <div className="row">
         <div className="col-3 p-2">
-          <CardLike icon={IconEdit} />
+          <CardLike icon={iconEdit} />
         </div>
         <div className="col-3 p-2">
-          <CardLike icon={IconEdit} />
+          <CardLike icon={iconEdit} />
         </div>
         <div className="col-3 p-2">
-          <CardLike icon={IconEdit} />
+          <CardLike icon={iconEdit} />
         </div>
         <div className="col-3 p-2">
-          <CardLike icon={IconEdit} />
         </div>
       </div>
     );
   };
-  test = () => {
-    console.log(4);
-  };
+
   starterPage = () => {
     return (
       <div className="mt-5 p-3">
@@ -53,7 +60,6 @@ class CompanyProfileProduct extends CompanyProfileProductController {
             <div>4</div>
           </div>
           <div className="bigText">
-            <div className="">5</div>
           </div>
         </div>
       </div>
@@ -108,4 +114,4 @@ class CompanyProfileProduct extends CompanyProfileProductController {
     );
   }
 }
-export default CompanyProfileProduct;
+export default DashboardCompanyProfile;

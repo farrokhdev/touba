@@ -952,6 +952,11 @@ a {
   position: relative;
 }
 
+.card-border .image-discount {
+  -webkit-filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(800%) contrast(0.8);
+          filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(800%) contrast(0.8);
+}
+
 .card-border .discount-percent {
   position: absolute;
   top: 0;
@@ -1025,7 +1030,7 @@ a {
 }
 
 .border-optional {
-  border: 1px solid #D6D6D6;
+  border: 1px solid #d6d6d6;
 }
 
 .card-main {
@@ -6492,6 +6497,7 @@ a {
 }
 
 .component-keyword .text-keyword {
+  white-space: nowrap;
   width: auto;
   height: auto;
   font-family: 'Poppins' !important;
@@ -10025,9 +10031,9 @@ a {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
-  -webkit-box-pack: center !important;
-      -ms-flex-pack: center !important;
-          justify-content: center !important;
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: start !important;
   -webkit-box-align: center !important;
       -ms-flex-align: center !important;
           align-items: center !important;

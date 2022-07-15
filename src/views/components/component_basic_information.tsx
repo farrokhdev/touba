@@ -33,7 +33,7 @@ const ComponentBasicInformation = () => {
       <div>
         <BannerLetsStart />
       </div>
-      <div className="table-box ">
+      <div className="table-box s ">
         <div className="row border-bottom d-flex align-items-center ">
           <div className="row d-flex -align-items-center ">
             <div onClick={() => setActive(0)} className="col-2 text-center ">
@@ -63,7 +63,7 @@ const ComponentBasicInformation = () => {
             </div>
           </div>
         </div>
-        <div className="mt-3 border-bottom">
+        <div className="mt-3 border-bottom px-3">
           {active == 0 && (
             <div>
               {" "}
