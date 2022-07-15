@@ -18,7 +18,6 @@ import { ChartDoughnut } from "../../../components/chart_doughnut";
 import { ChartSale } from "../../../components/chart_sale";
 import {
   Calendar,
-  ComponentCalender,
   ComponentMessage,
   ComponentMessageImage,
   ComponentSoldBox,
@@ -30,9 +29,9 @@ import OrderTableDashboard from "../../../components/order_table_dashbard";
 import { SideNavItems } from "../../../components/side_nav_items";
 import SummaryDashboard from "../../../components/summary_dashboard";
 import { TableTransaction } from "../../../components/table_transactions";
-import DashboarPageController from "../../../controllers/dashboard_page_controller";
+import FinanceController from "../../../controllers/finance_controller";
 
-export default class DashboardFinance extends DashboarPageController {
+export default class DashboardFinance extends FinanceController {
   render() {
     const TEST_NAV_ITEM = [
       {
