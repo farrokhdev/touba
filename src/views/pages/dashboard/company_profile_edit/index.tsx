@@ -7,7 +7,7 @@ import { Divider } from "../../../components/divider";
 import MyCompanyNav from "../../../components/mycompany_nav";
 import ProfileHeaderImage from "../../../components/profile_header_image";
 import { SideNavItems } from "../../../components/side_nav_items";
-import CompanyProfileController, { TEST_NAV_ITEM } from "../../../controllers/company_profile_controller";
+import CompanyProfileEditController, { TEST_NAV_ITEM } from "../../../controllers/company_profile_edit_controller";
 
 const items = [
     { name: "item1", id: 1 },
@@ -16,7 +16,7 @@ const items = [
     { name: "item4", id: 4 },
 ]
 
-class CompanyProfileEdit extends CompanyProfileController {
+class CompanyProfileEdit extends CompanyProfileEditController {
     sectionAboutPage() {
         const {
             modalDelete,
