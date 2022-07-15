@@ -1,53 +1,14 @@
-import React, { Component } from "react";
-import { BaseComponent } from "utilities_js";
-import { CardOfferHorizontal } from "../../../components/cars_offer_horizontal";
-import Component_search_bar from "../../../components/component_search_bar";
-import BottomNav from "../../../layout/bottom_nav";
-import Footer from "../../../layout/footer";
-import TopNav from "../../../layout/top_nav_home";
-import image_test from "../../../assets/images/image-test.png";
-import {
-  CardLike,
-  ComponentCapicityFilter,
-  ComponentFilterRangeSlider,
-  ComponentFilterSidebar,
-  SelectComponent,
-  SelectText,
-} from "../../../components/components";
-interface IProps {}
+import { ComponentFilterSidebar, ComponentFilterRangeSlider, SelectComponent, ComponentCapicityFilter, CardLike } from "../../../components/components";
+import ProductController from "../../../controllers/product_controller";
 
-interface IState {
-  fakeList: any;
-}
-
-export class ToubaProduct extends BaseComponent<IProps, IState> {
-  test = "You are here: Touba >> Products";
-
-  navigateToDetail=()=>{
-    // this.navigate('/detail-product')
-    console.log(7)
-  }
-  TEST = [
-    { name: "JAN", size: 20 },
-    { name: "FEB", size: 30 },
-    { name: "MAR", size: 40 },
-    { name: "APR", size: 50 },
-    { name: "MAY", size: 60 },
-    { name: "JUN", size: 70 },
-    { name: "JUL", size: 80 },
-    { name: "AUG", size: 90 },
-    { name: "SEP", size: 100 },
-    { name: "OCT", size: 20 },
-    { name: "NOV", size: 20 },
-    { name: "DEC", size: 20 },
-  ];
+export class ToubaProduct extends ProductController {
+  
   render() {
     return (
       <div>
         <div className="px-5">
           <div className="smalText p-4 px-5" onClick={this.navigateToDetail}>{this.test}</div>
-
-          <div className="row p-3      ">
+          <div className="row p-3">
             <div className="col-3">
               <ComponentFilterSidebar showButton={true} />
             </div>
