@@ -12429,11 +12429,12 @@ a {
 }
 
 .dashboard .link-image {
+  width: 60%;
   margin-bottom: 46px;
 }
 
 .dashboard .link-image .logoTouba {
-  width: 144px;
+  width: 100%;
   height: 57.62px;
   margin: 26px 0 46px 34px;
 }
