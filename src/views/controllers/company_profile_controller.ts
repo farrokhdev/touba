@@ -81,7 +81,7 @@ export const TEST_NAV_ITEM = [
         id: 3
     },
     {
-        title: "Payments Setting",
+        title: "Locations",
         icon: `${IconLocationSorme}`,
         id: 4
     },
