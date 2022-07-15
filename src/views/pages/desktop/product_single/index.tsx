@@ -2,36 +2,12 @@ import { BaseComponent } from "utilities_js";
 import { ImageTest } from "../../../../assets";
 import { CardMain, ComponentProductSideCard, CardLike, CardDetails, ComponentDetailPRoductSideCard } from "../../../components/components";
 import Inquiry from "../../../components/inquiry";
+import ProductSingleController from "../../../controllers/product_single_controller";
 
-
-interface IProps {}
-
-interface IState {
-  isShow: boolean;
-}
-
-export class ToubaProductSingle1 extends BaseComponent<IProps, IState> {
-  state: IState = {
-    isShow: false,
-  };
-  test = "You are here: Touba >> Products";
-
-   navigateToDetail=()=>{
-    // this.navigate('/detail-product')
-    console.log(7)
-  }
-   showInquiry=()=>{
-    console.log('sal')
-    this.setState({isShow:!this.state.isShow})
-  }
+export class ToubaProductSingle1 extends ProductSingleController {
 
   render() {
-    console.log(this.state.isShow);
-    const clickHandler = () => {
-      // this.setState({ isShow: true });
-      console.log("Salam");
-    };
-
+    const { isShow } = this.state;
     return (
       <div className="product-Single-Page">
         <div className="px-5">
@@ -49,7 +25,7 @@ export class ToubaProductSingle1 extends BaseComponent<IProps, IState> {
             </div>
             <div className="col-3 p-2">
               <div>
-                <ComponentProductSideCard handleAddToCart={()=>this.showInquiry()} />
+                <ComponentProductSideCard handleAddToCart={() => this.showInquiry()} />
               </div>
             </div>
           </div>
@@ -78,7 +54,7 @@ export class ToubaProductSingle1 extends BaseComponent<IProps, IState> {
               </div>
               <div className="col-3 p-2">
                 <div>
-                  <ComponentDetailPRoductSideCard  />
+                  <ComponentDetailPRoductSideCard />
                 </div>
               </div>
             </div>
