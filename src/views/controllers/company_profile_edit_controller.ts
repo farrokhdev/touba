@@ -1,6 +1,5 @@
-import { type } from "os";
 import { ChangeEvent, Component } from "react";
-import { IconCalling, IconCallSorme, IconLocationSorme, IconPaperBlack, IconStarSorme, IconWalletSorme } from "../../assets";
+import { IconCallSorme, IconLocationSorme, IconPaperBlack, IconStarSorme, IconWalletSorme } from "../../assets";
 import { nanoid } from 'nanoid';
 
 type DETAILS = {
@@ -64,35 +63,6 @@ interface IState {
     modalLocation: boolean;
 }
 
-export const TEST_NAV_ITEM = [
-    {
-        title: "About Page",
-        icon: `${IconPaperBlack}`,
-        id: 1
-    },
-    {
-        title: "Contact Us Page",
-        icon: `${IconCallSorme}`,
-        id: 2
-    },
-    {
-        title: "Payments Setting",
-        icon: `${IconWalletSorme}`,
-        id: 3
-    },
-    {
-        title: "Locations",
-        icon: `${IconLocationSorme}`,
-        id: 4
-    },
-    {
-        title: "Visual Settings",
-        icon: `${IconStarSorme}`,
-        id: 5
-    }
-];
-
-
 export class CompanyProfileEditController extends Component<IProps, IState> {
 
     state = {
@@ -152,7 +122,40 @@ export class CompanyProfileEditController extends Component<IProps, IState> {
         modalLocation: false,
     };
 
+    items = [
+        { name: "item1", id: 1 },
+        { name: "item2", id: 2 },
+        { name: "item3", id: 3 },
+        { name: "item4", id: 4 },
+    ]
 
+    TEST_NAV_ITEM = [
+        {
+            title: "About Page",
+            icon: `${IconPaperBlack}`,
+            id: 1
+        },
+        {
+            title: "Contact Us Page",
+            icon: `${IconCallSorme}`,
+            id: 2
+        },
+        {
+            title: "Payments Setting",
+            icon: `${IconWalletSorme}`,
+            id: 3
+        },
+        {
+            title: "Locations",
+            icon: `${IconLocationSorme}`,
+            id: 4
+        },
+        {
+            title: "Visual Settings",
+            icon: `${IconStarSorme}`,
+            id: 5
+        }
+    ];
 
     handleGetActiveLink = (id: number) => {
         this.setState({ activeLink: id })

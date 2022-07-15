@@ -1,20 +1,13 @@
-import { IconCalling, IconCallSorme, IconDeletGreen, IconEdit, IconEditSorme, IconImageBlack, IconLocation, IconLocationSorme, IconPaperBlack, IconStarSorme, IconWalletSorme, ImageBanner, ImageCertificate, ImageManager, ImagePerson } from "../../../../assets";
+import { IconDeletGreen, IconEditSorme, IconImageBlack, IconLocation, ImageBanner, ImageCertificate, ImageManager, } from "../../../../assets";
 import ButtonAdd from "../../../components/button_add";
-import { ButtonOutline, CardFAQ, CardUploadImage, InputDate, InputTextLabel, InputTextPhoneNumber, Map, ModalCompany, ModalComponent, SelectComponent, TextAreaLabel, TextAreaLabelImage } from "../../../components/components";
+import { ButtonOutline, CardFAQ, CardUploadImage, InputDate, InputTextLabel, InputTextPhoneNumber, Map, ModalCompany, SelectComponent, TextAreaLabel, TextAreaLabelImage } from "../../../components/components";
 import DashboardNav from "../../../components/dashboard_nav";
 import DeleteImage from "../../../components/delete_image";
 import { Divider } from "../../../components/divider";
 import MyCompanyNav from "../../../components/mycompany_nav";
 import ProfileHeaderImage from "../../../components/profile_header_image";
 import { SideNavItems } from "../../../components/side_nav_items";
-import CompanyProfileEditController, { TEST_NAV_ITEM } from "../../../controllers/company_profile_edit_controller";
-
-const items = [
-    { name: "item1", id: 1 },
-    { name: "item2", id: 2 },
-    { name: "item3", id: 3 },
-    { name: "item4", id: 4 },
-]
+import CompanyProfileEditController from "../../../controllers/company_profile_edit_controller";
 
 class CompanyProfileEdit extends CompanyProfileEditController {
     sectionAboutPage() {
@@ -81,7 +74,7 @@ class CompanyProfileEdit extends CompanyProfileEditController {
                                 type={"two"}
                                 placeholder={"Manufacturer/Factory"}
                                 onSelect={this.handleGetBusinessType}
-                                items={items}
+                                items={this.items}
                                 title="Business Type"
                             />
                         </div>
@@ -90,7 +83,7 @@ class CompanyProfileEdit extends CompanyProfileEditController {
                                 type={"two"}
                                 placeholder={"Technical Support"}
                                 onSelect={this.handleGetBusinessCategory}
-                                items={items}
+                                items={this.items}
                                 title="Business Category"
                             />
                             <InputTextLabel
@@ -107,7 +100,7 @@ class CompanyProfileEdit extends CompanyProfileEditController {
                                 type={"two"}
                                 placeholder={"Technical Support"}
                                 onSelect={this.handleGetBusinessCategory}
-                                items={items}
+                                items={this.items}
                                 title="Business Category"
                             />
                             <InputTextLabel
@@ -168,7 +161,7 @@ class CompanyProfileEdit extends CompanyProfileEditController {
                                 type={"two"}
                                 placeholder={">2000 square meters"}
                                 onSelect={this.handleGetPlantArea}
-                                items={items}
+                                items={this.items}
                                 title="Plant Area"
                             />
                         </div>
@@ -189,7 +182,7 @@ class CompanyProfileEdit extends CompanyProfileEditController {
                                 type={"two"}
                                 placeholder={""}
                                 onSelect={this.handleGetCodeCertificate}
-                                items={items}
+                                items={this.items}
                                 title="Code"
                             />
                         </div>
@@ -220,7 +213,7 @@ class CompanyProfileEdit extends CompanyProfileEditController {
                                 type={"two"}
                                 placeholder={""}
                                 onSelect={this.handleGetCodeCertificate}
-                                items={items}
+                                items={this.items}
                                 title="Code"
                             />
                         </div>
@@ -359,7 +352,7 @@ class CompanyProfileEdit extends CompanyProfileEditController {
                             <SelectComponent
                                 type={"two"}
                                 onSelect={() => { }}
-                                items={items}
+                                items={this.items}
                                 title="Time Zone"
                             />
                         </div>
@@ -375,7 +368,7 @@ class CompanyProfileEdit extends CompanyProfileEditController {
                             <SelectComponent
                                 type={"two"}
                                 onSelect={() => { }}
-                                items={items}
+                                items={this.items}
                                 title="Position In Company"
                             />
                         </div>
@@ -1152,7 +1145,7 @@ class CompanyProfileEdit extends CompanyProfileEditController {
                 <div className="body">
                     <div className="body-side-item">
                         <SideNavItems
-                            items={TEST_NAV_ITEM}
+                            items={this.TEST_NAV_ITEM}
                             onActive={this.handleGetActiveLink}
                             showProgress={true}
                         />
