@@ -1,14 +1,10 @@
 import { BaseComponent } from "utilities_js";
 import { ImageAboutusDesk, IconArrowLeftCircle, IconArrowRightCircle, IconAlibaba, IconArvan, IconDigikala, IconIranTalent, IconSnapp, IconArrowRightBlack, IconAboutUs } from "../../../../assets";
 import { ComponentMission, ComponentOurTeam } from "../../../components/components";
+import AboutController from "../../../controllers/about_controller";
 
-
-interface IProps {}
-
-interface IState {}
-
-export default class AboutusPage extends BaseComponent<IProps, IState> {
-  state: IState = {};
+export default class AboutusPage extends AboutController {
+  
   render() {
     return (
       <div className="aboutus-Page ">
