@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
-import { IconDot, IconFacebook, IconFacebookWhite, IconInstagram, IconInstagramWhite, IconLinkdin, IconLinkdinWhite, IconTwitter, IconTwitterWhite, IconYoutube, IconYoutubeWhite, Image7, ImageBoxes, ImageBrandWhite, ImagePerson } from "../../assets";
+import { IconDot, IconFacebookWhite, IconInstagramWhite, IconLinkdinWhite, IconTwitterWhite, IconYoutubeWhite, Image7, ImageBoxes, ImageBrandWhite, ImagePerson } from "../../assets";
 import { Button } from "../components/components";
-
 
 export function Footer() {
 
