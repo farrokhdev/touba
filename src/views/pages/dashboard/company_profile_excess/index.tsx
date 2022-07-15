@@ -12,24 +12,6 @@ import { SideNavItems } from "../../../components/side_nav_items";
 import CompanyProfileProductController from "../../../controllers/dashboard_company_profile_controller";
 
 export default class CompanyPofileExcess extends CompanyProfileProductController {
-  TEST_NAV_ITEM = [
-    {
-      title: "Basic Information",
-      id: 0,
-    },
-    {
-      title: "Other Details",
-      id: 1,
-    },
-    {
-      title: "Trade Information",
-      id: 2,
-    },
-    {
-      title: "Related Items",
-      id: 3,
-    },
-  ];
 
   addProductOne = () => {
     return (

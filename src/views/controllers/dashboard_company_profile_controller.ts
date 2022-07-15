@@ -56,7 +56,6 @@ export class CompanyProfileProductController extends Component<IProps, IState> {
     },
   ];
 
-
   //list
   handleShowSection = (number: number) => {
     this.setState({ status: number });
