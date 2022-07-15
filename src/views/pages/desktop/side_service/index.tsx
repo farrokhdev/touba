@@ -17,20 +17,14 @@ import {
   ImageSideService3,
   ImageSideService4,
 } from "../../../../assets";
+import SideServiceController from "../../../controllers/side_service_controller";
 
-interface IProps {}
+export default class SideServicePage extends SideServiceController {
 
-interface IState {
-  id: number;
-}
-
-export default class SideServicePage extends BaseComponent<IProps, IState> {
-  state: IState = {
-    id: 4,
-  };
   render() {
+    const { id } = this.state;
     const serviceContent = () => {
-      if (this.state.id === 4) {
+      if (id === 4) {
         return (
           <div className="items">
             <div className="d-flex flex-column align-items-start content-Item ">
@@ -74,7 +68,7 @@ export default class SideServicePage extends BaseComponent<IProps, IState> {
             </div>
           </div>
         );
-      } else if (this.state.id === 3) {
+      } else if (id === 3) {
         return (
           <div className="d-flex flex-column align-items-start single-Content-Item ">
             <img src={ImageSideService} alt="sideService" />
@@ -144,90 +138,80 @@ export default class SideServicePage extends BaseComponent<IProps, IState> {
           <div className="services d-flex flex-row align-items-start my-5">
             <div className="sidebar ">
               <button
-                className={`d-flex flex-row align-items-center justify-content-start ${
-                  this.state.id === 1 && "active-Btn"
-                }`}
+                className={`d-flex flex-row align-items-center justify-content-start ${id === 1 && "active-Btn"
+                  }`}
                 onClick={() => this.setState({ id: 1 })}
               >
                 <img className="mx-3" src={IconAward} />
                 <span>Standardization</span>
               </button>
               <button
-                className={`d-flex flex-row align-items-center justify-content-start ${
-                  this.state.id === 2 && "active-Btn"
-                }`}
+                className={`d-flex flex-row align-items-center justify-content-start ${id === 2 && "active-Btn"
+                  }`}
                 onClick={() => this.setState({ id: 2 })}
               >
                 <img className="mx-3" src={IconTrading} />
                 <span>Trading Services</span>
               </button>
               <button
-                className={`d-flex flex-row align-items-center justify-content-start ${
-                  this.state.id === 3 && "active-Btn"
-                }`}
+                className={`d-flex flex-row align-items-center justify-content-start ${id === 3 && "active-Btn"
+                  }`}
                 onClick={() => this.setState({ id: 3 })}
               >
                 <img className="mx-3" src={IconFile} />
                 <span>Legal and Promotion</span>
               </button>
               <button
-                className={`d-flex flex-row align-items-center justify-content-start ${
-                  this.state.id === 4 && "active-Btn"
-                }`}
+                className={`d-flex flex-row align-items-center justify-content-start ${id === 4 && "active-Btn"
+                  }`}
                 onClick={() => this.setState({ id: 4 })}
               >
                 <img className="mx-3" src={IconInvestment} />
                 <span>Consulting</span>
               </button>
               <button
-                className={`d-flex flex-row align-items-center justify-content-start ${
-                  this.state.id === 5 && "active-Btn"
-                }`}
+                className={`d-flex flex-row align-items-center justify-content-start ${id === 5 && "active-Btn"
+                  }`}
                 onClick={() => this.setState({ id: 5 })}
               >
                 <img className="mx-3" src={IconFranchise} />
                 <span>Franchise & Representation</span>
               </button>
               <button
-                className={`d-flex flex-row align-items-center justify-content-start ${
-                  this.state.id === 6 && "active-Btn"
-                }`}
+                className={`d-flex flex-row align-items-center justify-content-start ${id === 6 && "active-Btn"
+                  }`}
                 onClick={() => this.setState({ id: 6 })}
               >
                 <img className="mx-3" src={IconDistribution} />
                 <span>Distribution</span>
               </button>
               <button
-                className={`d-flex flex-row align-items-center justify-content-start ${
-                  this.state.id === 7 && "active-Btn"
-                }`}
+                className={`d-flex flex-row align-items-center justify-content-start ${id === 7 && "active-Btn"
+                  }`}
                 onClick={() => this.setState({ id: 7 })}
               >
                 <img className="mx-3" src={IconIdeation} />
                 <span>Ideation and accelerator services</span>
               </button>
               <button
-                className={`d-flex flex-row align-items-center justify-content-start ${
-                  this.state.id === 8 && "active-Btn"
-                }`}
+                className={`d-flex flex-row align-items-center justify-content-start ${id === 8 && "active-Btn"
+                  }`}
                 onClick={() => this.setState({ id: 8 })}
               >
                 <img className="mx-3" src={IconProductManagment} />
                 <span>Project management and control</span>
               </button>
               <button
-                className={`d-flex flex-row align-items-center justify-content-start ${
-                  this.state.id === 9 && "active-Btn"
-                }`}
+                className={`d-flex flex-row align-items-center justify-content-start ${id === 9 && "active-Btn"
+                  }`}
                 onClick={() => this.setState({ id: 9 })}
               >
                 <img className="mx-3" src={IconCertification} />
                 <span>Training academies and certification:</span>
               </button>
               <button
-                className={`d-flex flex-row align-items-center justify-content-start ${
-                  this.state.id === 10 && "active-Btn"
-                }`}
+                className={`d-flex flex-row align-items-center justify-content-start ${id === 10 && "active-Btn"
+                  }`}
                 onClick={() => this.setState({ id: 10 })}
               >
                 <img className="mx-3" src={IconMarketing} />
