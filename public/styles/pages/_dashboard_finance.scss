@@ -136,6 +136,7 @@
         .overall {
             .title {
                 @include FontStyle(19px, 600, $sorme);
+                margin: 0 0 16px 0;
             }
         }
         .calendar {

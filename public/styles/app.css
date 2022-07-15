@@ -9580,12 +9580,13 @@ a {
 
 .card-overall {
   width: 100%;
+  margin-bottom: 16px;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
-  -webkit-box-pack: start !important;
-      -ms-flex-pack: start !important;
-          justify-content: start !important;
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: end !important;
   -webkit-box-align: center !important;
       -ms-flex-align: center !important;
           align-items: center !important;
@@ -9595,6 +9596,7 @@ a {
           flex-direction: row !important;
   -ms-flex-wrap: nowrap !important;
       flex-wrap: nowrap !important;
+  position: relative;
 }
 
 .card-overall-image {
@@ -9619,8 +9621,8 @@ a {
           flex-direction: row !important;
   -ms-flex-wrap: nowrap !important;
       flex-wrap: nowrap !important;
-  position: relative;
-  left: 35px;
+  position: absolute;
+  left: 0px;
 }
 
 .card-overall-content {
@@ -9639,7 +9641,7 @@ a {
           flex-direction: column !important;
   -ms-flex-wrap: nowrap !important;
       flex-wrap: nowrap !important;
-  width: 80%;
+  width: 90%;
   height: 100px;
   background: linear-gradient(114.19deg, #F3F4F6 6.23%, rgba(243, 244, 246, 0.51) 99.04%);
   border-radius: 16px;
@@ -9686,7 +9688,8 @@ a {
   font-weight: 500 !important;
   font-size: 12px !important;
   color: #6b798c !important;
-  margin: 0;
+  margin: 0 10px 0 0;
+  white-space: nowrap;
 }
 
 .card-overall-content-status-sold > span {
@@ -9697,7 +9700,7 @@ a {
   font-weight: 600 !important;
   font-size: 16px !important;
   color: #3c557a !important;
-  margin: 0;
+  margin: 0 2px;
 }
 
 .card-overall-content-status-bought {
@@ -9708,7 +9711,8 @@ a {
   font-weight: 500 !important;
   font-size: 12px !important;
   color: #6b798c !important;
-  margin: 0;
+  margin: 0 10px;
+  white-space: nowrap;
 }
 
 .card-overall-content-status-bought > span {
@@ -9719,7 +9723,7 @@ a {
   font-weight: 600 !important;
   font-size: 16px !important;
   color: #3c557a !important;
-  margin: 0;
+  margin: 0 2px;
 }
 
 .chart-sale {
@@ -18578,6 +18582,7 @@ a {
   font-weight: 600 !important;
   font-size: 19px !important;
   color: #3c557a !important;
+  margin: 0 0 16px 0;
 }
 
 .finance-page .right-sidebar .calendar {
