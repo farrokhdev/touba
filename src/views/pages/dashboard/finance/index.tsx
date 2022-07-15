@@ -33,38 +33,7 @@ import FinanceController from "../../../controllers/finance_controller";
 
 export default class DashboardFinance extends FinanceController {
   render() {
-    const TEST_NAV_ITEM = [
-      {
-        title: "Overview",
-        active: true,
-        location: "/",
-        id: 1,
-      },
-      {
-        title: "Sold Items",
-        active: false,
-        location: "/test",
-        id: 2,
-      },
-      {
-        title: "Purchased Items",
-        active: false,
-        location: "/",
-        id: 3,
-      },
-      {
-        title: "Redeemed Invoices",
-        active: false,
-        location: "/",
-        id: 4,
-      },
-      {
-        title: "Income/Pay Calendar",
-        active: false,
-        location: "/",
-        id: 5,
-      },
-    ];
+    
     const overview = () => {
       return (
         <div className="ps-4 pe-3">
@@ -253,7 +222,7 @@ export default class DashboardFinance extends FinanceController {
           <div className="row">
             <div className="left-sidebar">
               <SideNavItems
-                items={TEST_NAV_ITEM}
+                items={this.TEST_NAV_ITEM}
                 onActive={this.handleGetActiveLink}
               />
             </div>
