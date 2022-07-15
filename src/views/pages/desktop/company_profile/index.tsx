@@ -4,38 +4,16 @@ import { IconArrowGreen, ImageProfileSupplier, IconMessages, ImagecompanyProfile
 import { CardOfferHorizontal } from "../../../components/cars_offer_horizontal";
 import { ComponentFilterSidebar, ComponentFilterRangeSlider, ComponentCapicityFilter } from "../../../components/components";
 import ToubaProduct from "../product";
+import CompanyProfileController from "../../../controllers/company_profile_controller";
 
+export default class CompanyProfile extends CompanyProfileController {
 
-interface IProps {}
-
-interface IState {
-  isShow: number;
-  showChartModal: boolean;
-}
-
-export default class CompanyProfile extends Component<IProps, IState> {
-  state: IState = {
-    isShow: 1,
-    showChartModal: false,
-  };
-  TEST = [
-    { name: "JAN", size: 20 },
-    { name: "FEB", size: 30 },
-    { name: "MAR", size: 40 },
-    { name: "APR", size: 50 },
-    { name: "MAY", size: 60 },
-    { name: "JUN", size: 70 },
-    { name: "JUL", size: 80 },
-    { name: "AUG", size: 90 },
-    { name: "SEP", size: 100 },
-    { name: "OCT", size: 20 },
-    { name: "NOV", size: 20 },
-    { name: "DEC", size: 20 },
-  ];
   render() {
-    function handlePreventOnClick(event: MouseEvent<HTMLElement>) {
-      event.stopPropagation();
-    }
+    const {
+      isShow,
+      showChartModal,
+    } = this.state;
+    
     const about = () => {
       return (
         <>
@@ -572,13 +550,13 @@ export default class CompanyProfile extends Component<IProps, IState> {
               </div>
             </div>
           </div>
-          {this.state.showChartModal ? (
+          {showChartModal ? (
             <div
               className="modal-company"
               onClick={() => this.setState({ showChartModal: false })}
             >
               <div
-                onClick={handlePreventOnClick}
+                onClick={this.handlePreventOnClick}
                 className="excess-modal p-4 d-flex flex-column align-items-start justify-content-between"
               >
                 <div className="px-4 gray-background d-flex flex-column align-items-center justify-content-around">
@@ -600,13 +578,13 @@ export default class CompanyProfile extends Component<IProps, IState> {
       );
     };
     const contentRender = () => {
-      if (this.state.isShow === 1) {
+      if (isShow === 1) {
         return about();
-      } else if (this.state.isShow === 2) {
+      } else if (isShow === 2) {
         return products();
-      } else if (this.state.isShow === 4) {
+      } else if (isShow === 4) {
         return contactUs();
-      } else if (this.state.isShow === 3) {
+      } else if (isShow === 3) {
         return expess();
       } else {
         return about();
@@ -614,15 +592,14 @@ export default class CompanyProfile extends Component<IProps, IState> {
     };
     return (
       <div
-        className={`company-Profile-Page ${
-          this.state.isShow === 1
-            ? "marginButton"
-            : this.state.isShow === 2
+        className={`company-Profile-Page ${isShow === 1
+          ? "marginButton"
+          : isShow === 2
             ? "marginButtonLow"
-            : this.state.isShow === 3
-            ? "excess-section"
-            : "marginButtomCon"
-        }`}
+            : isShow === 3
+              ? "excess-section"
+              : "marginButtomCon"
+          }`}
       >
         <div className="background-Img">
           <img src={ImageComppanyProfile} alt="background" />
@@ -677,25 +654,25 @@ export default class CompanyProfile extends Component<IProps, IState> {
             <div>
               <button
                 onClick={() => this.setState({ isShow: 1 })}
-                className={this.state.isShow === 1 ? "active-btn" : ""}
+                className={isShow === 1 ? "active-btn" : ""}
               >
                 About
               </button>
               <button
                 onClick={() => this.setState({ isShow: 2 })}
-                className={this.state.isShow === 2 ? "active-btn" : ""}
+                className={isShow === 2 ? "active-btn" : ""}
               >
                 Products
               </button>
               <button
                 onClick={() => this.setState({ isShow: 3 })}
-                className={this.state.isShow === 3 ? "active-btn" : ""}
+                className={isShow === 3 ? "active-btn" : ""}
               >
                 Excess Capacity
               </button>
               <button
                 onClick={() => this.setState({ isShow: 4 })}
-                className={this.state.isShow === 4 ? "active-btn" : ""}
+                className={isShow === 4 ? "active-btn" : ""}
               >
                 Contact Us
               </button>
