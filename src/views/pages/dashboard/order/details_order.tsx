@@ -5,8 +5,9 @@ import DashboardNav from "../../../components/dashboard_nav";
 import Divider from "../../../components/divider";
 import OrderHead from "../../../components/order_head";
 import Map from "../../../components/component_map";
+import DashboardTableOrderController from "../../../controllers/dashboard_table_order_controller";
 
-class EditOrder extends Component {
+class EditOrder extends DashboardTableOrderController {
     render() {
         return (
             <div className="details-order">

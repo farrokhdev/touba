@@ -3,8 +3,9 @@ import { IconMarker, ImageTest} from "../../../../assets";
 import { Divider, CardCalculateProduct, Map, DropDown } from "../../../components/components";
 import DashboardNav from "../../../components/dashboard_nav";
 import OrderHead from "../../../components/order_head";
+import DashboardTableOrderController from "../../../controllers/dashboard_table_order_controller";
 
-class EditOrder extends Component {
+class EditOrder extends DashboardTableOrderController {
     render() {
         return (
             <div className="edit-order">
