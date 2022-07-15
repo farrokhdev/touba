@@ -61,6 +61,9 @@ function Pages() {
           <Route path="result-supplier" element={<ResultSupplier />} />
           <Route path="side-service" element={<SideService />} />
           <Route path="special-offer" element={<SpecialOffer />} />
+          <Route path="detail-product" element={<ProductSingle />} />
+
+
           <Route path="supplier" element={<Supplier />} />
         </Routes>
         {

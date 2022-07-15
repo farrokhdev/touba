@@ -1,5 +1,5 @@
 .text-icon-vertical-dshboard {
-    @include Display(flex, center, center);
+    @include Display(flex, start, center);
     &-title {
         @include FontStyle(16px, 400, $lightSorme);
         margin: 0px 14px;

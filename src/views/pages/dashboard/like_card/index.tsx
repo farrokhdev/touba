@@ -35,7 +35,7 @@ export default class DashboardLikeCard extends DashboardLikeCardControllre {
           <DashboardNav title="Liked Items" />
         </div>
         <div className=" row mt-3 justify-content-center align-items-center">
-          <div className=" col-4 nav-like-box  d-flex  justify-content-center align-items-center">
+          <div className=" col-5 nav-like-box  d-flex  justify-content-center align-items-center px-3">
             <div onClick={() => this.handleShow(1)} className={`col-4 text-center ${this.state.filter == 1 && 'active'}`}>
               <div >Products</div>
             </div>

@@ -30,10 +30,9 @@ const CardLike = ({ discount, percent, navigate, icon }: Props) => {
           )}
 
           <div>
-            {" "}
             {discount && (
               <div className="discount-box">
-                <img src={ImageBrandDisacount} />
+                <img className="image-discount" src={ImageBrandDisacount} />
                 <div className="discount-percent">{percent}%</div>
               </div>
             )}

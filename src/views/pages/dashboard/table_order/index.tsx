@@ -1,9 +1,12 @@
 import { IconSearch } from "../../../../assets";
 import { ButtonSelect } from "../../../components/button_select";
-import { SelectComponent, ComponentTableORder, ComponentTableExcess } from "../../../components/components";
+import {
+  SelectComponent,
+  ComponentTableORder,
+  ComponentTableExcess,
+} from "../../../components/components";
 import DashboardNav from "../../../components/dashboard_nav";
 import DashboardTableOrderController from "../../../controllers/dashboard_table_order_controller";
-
 
 export default class DashboardTableOrder extends DashboardTableOrderController {
   render() {
@@ -14,13 +17,12 @@ export default class DashboardTableOrder extends DashboardTableOrderController {
         </div>
         <div className="d-flex align-items-center justify-content-center py-3">
           <ButtonSelect
-            onClick={(e: any) => this.handleNavFilter(e)}
+            setState1={() => this.setState({ navFilter: 1 })}
+            setState2={() => this.setState({ navFilter: 2 })}
             titleButton1="Your Orders"
-            titleButton2="Sales List" state={0} setState1={function (): void {
-              throw new Error("Function not implemented.");
-            } } setState2={function (): void {
-              throw new Error("Function not implemented.");
-            } }          />
+            titleButton2="Sales List"
+            state={this.state.navFilter}
+          />
         </div>
         <div className="row  align-items-center d-flex p-3 ">
           <div className="table-box">
@@ -77,16 +79,24 @@ export default class DashboardTableOrder extends DashboardTableOrderController {
               </div>
             </div>
             <div className="mt-3">
-              {this.state.navFilter == false && (
+              {this.state.navFilter == 2 && (
                 <div>
-                  {this.state.filter == 1 &&this.state.navFilter==false && <ComponentTableORder mode='Supplier'/>}
-                  {this.state.filter == 2 &&this.state.navFilter==false &&  <ComponentTableExcess mode='Supplier'/>}
+                  {this.state.filter == 1 && this.state.navFilter == 2 && (
+                    <ComponentTableORder mode="Supplier" />
+                  )}
+                  {this.state.filter == 2 && this.state.navFilter == 2 && (
+                    <ComponentTableExcess mode="Supplier" />
+                  )}
                 </div>
               )}
-               {this.state.navFilter == true && (
+              {this.state.navFilter == 1 && (
                 <div>
-                  {this.state.filter == 1 &&this.state.navFilter==true && <ComponentTableORder mode='Client'/>}
-                  {this.state.filter == 2 &&this.state.navFilter==true &&  <ComponentTableExcess mode='Client'/>}
+                  {this.state.filter == 1 && this.state.navFilter == 1 && (
+                    <ComponentTableORder mode="Client" />
+                  )}
+                  {this.state.filter == 2 && this.state.navFilter == 1 && (
+                    <ComponentTableExcess mode="Client" />
+                  )}
                 </div>
               )}
             </div>

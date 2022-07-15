@@ -157,7 +157,7 @@ const ComponentTradeInformation = () => {
           </div>
           <div className="d-flex p-4 justify-content-between align-items-center">
             <div className="d-flex align-items-center ">
-              <button className="btn-save-change p-3">Next Step</button>
+              <button className="btn-save-change p-3"> Publish Product</button>
               {active > 0 && (
                 <div className="px-2">
                   <button

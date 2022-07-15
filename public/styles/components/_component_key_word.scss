@@ -3,6 +3,7 @@
   border-radius: 12px 12px 0px 0px;
   padding: 3%;
   .text-keyword {
+    white-space: nowrap;
     @include FontStyle(18px, 600, $white);
   }
   .btn-keyword{

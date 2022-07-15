@@ -4,20 +4,18 @@ interface IProps {}
 
 interface IState {
   filter: Number;
-  navFilter: boolean;
+  navFilter: number;
 }
 
 export class DashboardTableOrderController extends Component<IProps, IState> {
   state = {
     filter: 1,
-    navFilter: false,
+    navFilter: 1,
   };
   handleShow = (e: Number) => {
     this.setState({ filter: e });
   };
-  handleNavFilter = (e: boolean) => {
-    this.setState({ navFilter: e });
-  };
+  
 
   //list
 }
