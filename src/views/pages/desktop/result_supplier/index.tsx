@@ -1,20 +1,13 @@
-import React, { Component } from "react";
-import { BaseComponent } from "utilities_js";
-import { CardOfferHorizontal } from "../../../components/cars_offer_horizontal";
+import { ComponentFilterTopbar, ComponentSuppliers } from "../../../components/components";
+import Component_filter_sidebar from "../../../components/component_filter_sidebar";
 import Component_search_bar from "../../../components/component_search_bar";
+import ResultSupplierController from "../../../controllers/result_supplier_controller";
 import BottomNav from "../../../layout/bottom_nav";
 import Footer from "../../../layout/footer";
-import TopNav from "../../../layout/top_nav_home";
-import image_test from "../../../assets/images/image-test.png";
-import { CardLike, ComponentFilterTopbar, ComponentSuppliers } from "../../../components/components";
-import Component_filter_sidebar from "../../../components/component_filter_sidebar";
-interface IProps {}
+import TopNav from "../../../layout/top_nav";
 
-interface IState {
-  fakeList: any;
-}
+export class SearchResultSupplier extends ResultSupplierController {
 
-export class SearchResultProduct extends BaseComponent<IProps, IState> {
   render() {
     return (
       <div>
@@ -71,4 +64,4 @@ export class SearchResultProduct extends BaseComponent<IProps, IState> {
   }
 }
 
-export default SearchResultProduct;
+export default SearchResultSupplier;
