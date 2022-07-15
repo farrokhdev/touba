@@ -1,47 +1,10 @@
-import { Component } from "react";
 import { Link } from "react-router-dom";
-import {
-  BackgroundLatest,
-  IconAlibaba,
-  IconArvan,
-  IconEmail,
-  IconError,
-  IconLinkdin,
-  IconLinkdinGray,
-  IconTouba,
-  IconTwiterGray,
-  IconTwitter,
-  ImageBackgroundLogin,
-  ImageControll,
-  ImageLaboratory,
-  ImagePersonBox,
-  ImageTest,
-  ImageTest2,
-  ImageTest3,
-  ImageTest4,
-} from "../../../../assets";
+import { ImageBackgroundLogin, IconTouba, IconEmail, IconTwiterGray, IconLinkdinGray } from "../../../../assets";
+import Button from "../../../components/button";
 import { ButtonOutline } from "../../../components/button_outline";
-import { CHART } from "../../../components/chart";
-import {
-  Button,
-  CardSearchProduct,
-  CardProduct,
-  CardCategory,
-  CardImage,
-  CardCollectionProduct,
-  CardProductWithPrice,
-  CardBestSeller,
-  CardCollectionBest,
-  Divider,
-  CardNewExcess,
-  CardBestBrand,
-  CardNewProduct,
-  InputTextLabel,
-  ComponentRadioSquare,
-  SelectText,
-  InputTextPhoneNumber,
-} from "../../../components/components";
-import HomeController from "../../../controllers/home_controller";
+import { ComponentRadioSquare } from "../../../components/components";
+import { InputTextLabel } from "../../../components/input_text_label";
+import { InputTextPhoneNumber } from "../../../components/input_text_phonenumber";
 import RegisterControll from "../../../controllers/register_controller";
 
 class Register extends RegisterControll {
