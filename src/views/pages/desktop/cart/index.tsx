@@ -1,39 +1,13 @@
-import { BaseComponent } from "utilities_js";
-import {
-  CardDetails,
-  CardLike,
-  CardMain,
-  ComponentDetailPRoductSideCard,
-  ComponentProductSideCard,
-  ProductCart,
-} from "../../../components/components";
-import honur from "../../../assets/images/honur.svg";
-import image_test from "../../../assets/images/image-test.png";
-import { CardProduct } from "../../../components/card_product";
-import Inquiry from "../../../components/inquiry";
+import { ProductCart } from "../../../components/components";
 import PriceSummary from "../../../components/price_summary";
+import CardController from "../../../controllers/card_controller";
 
-interface IProps {}
+export class CardPage extends CardController {
 
-interface IState {
-  isShow: boolean;
-}
-
-const TEST = [
-  { quantity: 1, price: 100 },
-  { quantity: 1, price: 310 },
-  { quantity: 1, price: 401 },
-];
-
-export class CartPage extends BaseComponent<IProps, IState> {
-  test = "You are here: Touba >> Cart";
-  state: IState = {
-    isShow: false,
-  };
-  showInquiry = () => {
-    this.setState({ isShow: !this.state.isShow });
-  };
   render() {
+    const {
+      isShow,
+    } = this.state;
     return (
       <div>
         <div className="px-5">
@@ -57,7 +31,7 @@ export class CartPage extends BaseComponent<IProps, IState> {
             </div>
             <div className="col-3 p-2">
               <div>
-                <PriceSummary list={TEST} />
+                <PriceSummary list={this.TEST} />
               </div>
             </div>
           </div>
@@ -67,4 +41,4 @@ export class CartPage extends BaseComponent<IProps, IState> {
   }
 }
 
-export default CartPage;
+export default CardPage;
