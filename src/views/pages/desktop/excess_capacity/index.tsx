@@ -1,40 +1,15 @@
-import { BaseComponent } from "utilities_js";
 import { ImageTest } from "../../../../assets";
 import { CardProduct } from "../../../components/card_product";
 import { CardMain, ComponentProductSideCard, CardDetails, ComponentDetailPRoductSideCard, CardLike } from "../../../components/components";
 import Inquiry from "../../../components/inquiry";
+import ExcessCapacityController from "../../../controllers/excess_capacity_controller";
 
+export class ToubaExcessCapacity extends ExcessCapacityController {
 
-interface IProps {}
-
-interface IState {
-  isShow: boolean;
-}
-
-const TEST = [
-  { name: "JAN", size: 20 },
-  { name: "FEB", size: 30 },
-  { name: "MAR", size: 40 },
-  { name: "APR", size: 50 },
-  { name: "MAY", size: 60 },
-  { name: "JUN", size: 70 },
-  { name: "JUL", size: 80 },
-  { name: "AUG", size: 90 },
-  { name: "SEP", size: 100 },
-  { name: "OCT", size: 20 },
-  { name: "NOV", size: 20 },
-  { name: "DEC", size: 20 },
-];
-
-export class ToubaExcessCapacity extends BaseComponent<IProps, IState> {
-  test = "You are here: Touba >> Excess Capacity";
-  state: IState = {
-    isShow: false,
-  };
-  showInquiry = () => {
-    this.setState({ isShow: !this.state.isShow });
-  };
   render() {
+    const {
+      isShow,
+    } = this.state;
     return (
       <div>
         <div className="px-5">
@@ -68,7 +43,7 @@ export class ToubaExcessCapacity extends BaseComponent<IProps, IState> {
                   description={
                     "Pomegranate Juice Pet Bottle, Best material and design, Ready to Order"
                   }
-                  chart={TEST}
+                  chart={this.TEST}
                   amount={5}
                 />
               </div>
@@ -79,7 +54,7 @@ export class ToubaExcessCapacity extends BaseComponent<IProps, IState> {
                   description={
                     "Pomegranate Juice Pet Bottle, Best material and design, Ready to Order"
                   }
-                  chart={TEST}
+                  chart={this.TEST}
                   amount={5}
                 />
               </div>
@@ -90,7 +65,7 @@ export class ToubaExcessCapacity extends BaseComponent<IProps, IState> {
                   description={
                     "Pomegranate Juice Pet Bottle, Best material and design, Ready to Order"
                   }
-                  chart={TEST}
+                  chart={this.TEST}
                   amount={5}
                 />
               </div>
@@ -121,7 +96,7 @@ export class ToubaExcessCapacity extends BaseComponent<IProps, IState> {
                   description={
                     "Pomegranate Juice Pet Bottle, Best material and design, Ready to Order"
                   }
-                  chart={TEST}
+                  chart={this.TEST}
                   amount={5}
                 />
               </div>
@@ -132,7 +107,7 @@ export class ToubaExcessCapacity extends BaseComponent<IProps, IState> {
                   description={
                     "Pomegranate Juice Pet Bottle, Best material and design, Ready to Order"
                   }
-                  chart={TEST}
+                  chart={this.TEST}
                   amount={5}
                 />
               </div>
@@ -143,7 +118,7 @@ export class ToubaExcessCapacity extends BaseComponent<IProps, IState> {
                   description={
                     "Pomegranate Juice Pet Bottle, Best material and design, Ready to Order"
                   }
-                  chart={TEST}
+                  chart={this.TEST}
                   amount={5}
                 />
               </div>
@@ -167,7 +142,7 @@ export class ToubaExcessCapacity extends BaseComponent<IProps, IState> {
             </div>
           </div>
         </div>
-        {this.state.isShow ? (
+        {isShow ? (
           <div className="product-Inquiry d-flex flex-row">
             <div
               className="blur-Background"
