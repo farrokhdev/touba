@@ -1,63 +1,40 @@
 import { BaseComponent } from "utilities_js";
 import { IconArrowGreen, IconHelpBanner } from "../../../../assets";
 import QuestionAnswer from "../../../components/question_answer";
+import HelpController from "../../../controllers/help_controller";
 
-interface IProps {}
-interface IState {
-  selected: number;
-  fakeList: any[];
-}
 
-export default class MembershipPage extends BaseComponent<IProps, IState> {
-  state: IState = {
-    selected: 1,
-    fakeList: [
-      {
-        id: 1,
-        Q: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh?",
-        A: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,",
-      },
-      {
-        id: 2,
-        Q: "Lorem ipsum dolor sit amet, consectetuer , sed diam nonummy nibh?",
-        A: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,",
-      },
-      {
-        id: 3,
-        Q: "Lorem ipsum, consectetuer , sed diam nonummy nibh?",
-        A: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,",
-      },
-      {
-        id: 4,
-        Q: "Lorem dolor sit amet, consectetuer , sed diam nonummy nibh?",
-        A: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,",
-      },
-    ],
-  };
+
+export default class Help extends HelpController {
+
 
   render() {
+    const {
+      selected,
+      fakeList,
+    } = this.state;
     const Q_A = () => {
-      if (this.state.selected == 1) {
+      if (selected == 1) {
         return (
           <>
-            <QuestionAnswer text={this.state.fakeList[0]} />
-            <QuestionAnswer text={this.state.fakeList[1]} />
-            <QuestionAnswer text={this.state.fakeList[2]} />
-            <QuestionAnswer text={this.state.fakeList[3]} />
+            <QuestionAnswer text={fakeList[0]} />
+            <QuestionAnswer text={fakeList[1]} />
+            <QuestionAnswer text={fakeList[2]} />
+            <QuestionAnswer text={fakeList[3]} />
           </>
         );
-      } else if (this.state.selected == 2) {
+      } else if (selected == 2) {
         return (
           <>
-            <QuestionAnswer text={this.state.fakeList[0]} />
-            <QuestionAnswer text={this.state.fakeList[1]} />
+            <QuestionAnswer text={fakeList[0]} />
+            <QuestionAnswer text={fakeList[1]} />
           </>
         );
       } else {
         return (
           <>
-            <QuestionAnswer text={this.state.fakeList[2]} />
-            <QuestionAnswer text={this.state.fakeList[3]} />
+            <QuestionAnswer text={fakeList[2]} />
+            <QuestionAnswer text={fakeList[3]} />
           </>
         );
       }
@@ -78,7 +55,7 @@ export default class MembershipPage extends BaseComponent<IProps, IState> {
               <div className="faq-Sidebar d-flex flex-column align-items-start mx-4">
                 <button
                   className={
-                    this.state.selected === 1
+                    selected === 1
                       ? "selected w-100 d-flex justify-content-between align-items-center"
                       : ""
                   }
@@ -87,12 +64,12 @@ export default class MembershipPage extends BaseComponent<IProps, IState> {
                   How to sell Products
                   <img
                     src={IconArrowGreen}
-                    className={this.state.selected === 1 ? "d-flex" : "d-none"}
+                    className={selected === 1 ? "d-flex" : "d-none"}
                   />
                 </button>
                 <button
                   className={
-                    this.state.selected === 2
+                    selected === 2
                       ? "selected w-100 d-flex flex-row justify-content-between align-items-center"
                       : ""
                   }
@@ -101,12 +78,12 @@ export default class MembershipPage extends BaseComponent<IProps, IState> {
                   Excess Capacity
                   <img
                     src={IconArrowGreen}
-                    className={this.state.selected === 2 ? "d-flex" : "d-none"}
+                    className={selected === 2 ? "d-flex" : "d-none"}
                   />
                 </button>
                 <button
                   className={
-                    this.state.selected === 3
+                    selected === 3
                       ? "selected w-100 d-flex flex-row justify-content-between align-items-center"
                       : ""
                   }
@@ -115,12 +92,12 @@ export default class MembershipPage extends BaseComponent<IProps, IState> {
                   Logistics
                   <img
                     src={IconArrowGreen}
-                    className={this.state.selected === 3 ? "d-flex" : "d-none"}
+                    className={selected === 3 ? "d-flex" : "d-none"}
                   />
                 </button>
                 <button
                   className={
-                    this.state.selected === 4
+                    selected === 4
                       ? "selected w-100 d-flex flex-row justify-content-between align-items-center"
                       : ""
                   }
@@ -129,12 +106,12 @@ export default class MembershipPage extends BaseComponent<IProps, IState> {
                   Payments
                   <img
                     src={IconArrowGreen}
-                    className={this.state.selected === 4 ? "d-flex" : "d-none"}
+                    className={selected === 4 ? "d-flex" : "d-none"}
                   />
                 </button>
                 <button
                   className={
-                    this.state.selected === 5
+                    selected === 5
                       ? "selected w-100 d-flex flex-row justify-content-between align-items-center"
                       : ""
                   }
@@ -143,7 +120,7 @@ export default class MembershipPage extends BaseComponent<IProps, IState> {
                   Support Ways
                   <img
                     src={IconArrowGreen}
-                    className={this.state.selected === 5 ? "d-flex" : "d-none"}
+                    className={selected === 5 ? "d-flex" : "d-none"}
                   />
                 </button>
               </div>
