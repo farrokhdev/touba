@@ -1,4 +1,4 @@
-import { memo, ReactElement } from "react";
+import { memo, ReactElement, useState } from "react";
 import { IconQuestionMark, IconSharpSign, IconWolf, ImageJuicer } from "../../assets";
 import { ButtonOutline } from "./button_outline";
 import { CHART } from "./chart";
@@ -28,6 +28,12 @@ interface Props {
 }
 
 export function CardProductGroupTitle({ items }: Props): ReactElement {
+
+    const [showDetails, setShowDetails] = useState(false);
+
+    function showMoreDetails () {
+        setShowDetails(!showDetails);
+    }
 
     return (
         <div className="card-product-group-title">
@@ -68,20 +74,22 @@ export function CardProductGroupTitle({ items }: Props): ReactElement {
                         </div>
                     </div>
                     <Divider direction={"vertical"} />
-                    <div className="card-product-group-title-chat-content-body">
-                        <div className="card-product-group-title-chat-content-body-header">
-                            <h5 className="card-product-group-title-chat-content-body-header-title-chat">
-                                overall Capacity:
-                                <span>
-                                    {items.amount}Tons/Monthly
-                                </span>
-                            </h5>
-                            <img src={IconQuestionMark} alt="" />
+                    {showDetails === true ? (
+                        <div className="card-product-group-title-chat-content-body">
+                            <div className="card-product-group-title-chat-content-body-header">
+                                <h5 className="card-product-group-title-chat-content-body-header-title-chat">
+                                    overall Capacity:
+                                    <span>
+                                        {items.amount}Tons/Monthly
+                                    </span>
+                                </h5>
+                                <img src={IconQuestionMark} alt="" />
+                            </div>
+                            <div className="card-product-group-title-chat-content-body-chart">
+                                <Chart item={items.chart} />
+                            </div>
                         </div>
-                        <div className="card-product-group-title-chat-content-body-chart">
-                            <Chart item={items.chart} />
-                        </div>
-                    </div>
+                    ) : (null)}
                     <Divider direction={"vertical"} />
                     <div className="card-product-group-title-chat-content-footer">
                         <div className="card-product-group-title-chat-content-footer-price">
@@ -110,7 +118,7 @@ export function CardProductGroupTitle({ items }: Props): ReactElement {
                                 </h6>
                             </div>
                         </div>
-                        <ButtonOutline title={"view details"} />
+                        <ButtonOutline title={"view details"} onClick={showMoreDetails}/>
                     </div>
                 </div>
                 <div className="card-product-group-title-chat-footer">
