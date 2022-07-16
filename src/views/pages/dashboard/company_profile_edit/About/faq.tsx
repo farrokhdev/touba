@@ -17,14 +17,14 @@ class Faq extends CompanyProfileEditController {
                     </h4>
                 </div>
                 <div className="body-content-items-faq">
-                    <CardFAQ open={true} showIcon={true} onClick={this.handleShowModalFAQ} />
-                    <CardFAQ open={true} showIcon={true} onClick={this.handleShowModalFAQ} />
+                    <CardFAQ open={true} showIcon={true} onClick={this.showModalFAQ} />
+                    <CardFAQ open={true} showIcon={true} onClick={this.showModalFAQ} />
                 </div>
                 <div className="body-content-items-button-add-faq">
-                    <ButtonAdd onClick={this.handleShowModalFAQ} />
+                    <ButtonAdd onClick={this.showModalFAQ} />
                 </div>
                 {modalFAQ === true ? (
-                    <ModalCompany onClose={this.handleCloseModalFAQ} onSave={() => { }}>
+                    <ModalCompany onClose={this.closeModalFAQ} onSave={() => { }}>
                         <InputTextLabel
                             value={question}
                             title={"Question"}
@@ -35,7 +35,7 @@ class Faq extends CompanyProfileEditController {
                         />
                         <TextAreaLabelImage
                             title={"Answer"}
-                            handleGetValues={this.handleGetValuesFAQ}
+                            handleGetValues={this.getValuesFAQ}
                         />
                     </ModalCompany>
                 ) : (null)}

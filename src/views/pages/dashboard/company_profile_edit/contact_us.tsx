@@ -28,7 +28,7 @@ class ContactUs extends CompanyProfileEditController {
                     </div>
                     <div className="body-content-items-contact-us">
                         <div className="body-content-items-contact-us-icon">
-                            <img src={IconEditSorme} alt="" onClick={this.handleShowModalContact} />
+                            <img src={IconEditSorme} alt="" onClick={this.showModalContact} />
                         </div>
                         <div className="body-content-items-contact-us-details">
                             <div className="body-content-items-contact-us-details-text">
@@ -89,7 +89,7 @@ class ContactUs extends CompanyProfileEditController {
                     </div>
                     <div className="body-content-items-location">
                         <div className="body-content-items-location-icon">
-                            <img src={IconEditSorme} alt="" onClick={this.handleShowModalLocation} />
+                            <img src={IconEditSorme} alt="" onClick={this.showModalLocation} />
                         </div>
                         <div className="body-content-items-location-map">
                             <Map />
@@ -97,7 +97,7 @@ class ContactUs extends CompanyProfileEditController {
                     </div>
                 </div>
                 {modalContact === true ? (
-                    <ModalCompany onClose={this.handleCloseModalContact} onSave={() => { }}>
+                    <ModalCompany onClose={this.closeModalContact} onSave={() => { }}>
                         <InputTextLabel
                             value={address}
                             title={"Address"}
@@ -143,7 +143,7 @@ class ContactUs extends CompanyProfileEditController {
                     </ModalCompany>
                 ) : (null)}
                 {modalLocation === true ? (
-                    <ModalCompany onClose={this.handleCloseModalLocation} onSave={() => { }}>
+                    <ModalCompany onClose={this.closeModalLocation} onSave={() => { }}>
                         <div className="contact-us-map">
                             <Map />
                         </div>

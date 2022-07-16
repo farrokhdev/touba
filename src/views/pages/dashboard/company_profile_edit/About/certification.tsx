@@ -29,7 +29,7 @@ class Certification extends CompanyProfileEditController {
                             <img
                                 src={IconEditSorme}
                                 alt=""
-                                onClick={() => this.handleShowModalEditCretificate("")}
+                                onClick={() => this.showModalEditCretificate("")}
                             />
                         </div>
                         <div className="body-content-items-certificate-table-details">
@@ -95,7 +95,7 @@ class Certification extends CompanyProfileEditController {
                             <img
                                 src={IconEditSorme}
                                 alt=""
-                                onClick={() => this.handleShowModalEditCretificate("")}
+                                onClick={() => this.showModalEditCretificate("")}
                             />
                         </div>
                         <div className="body-content-items-certificate-table-details">
@@ -164,7 +164,7 @@ class Certification extends CompanyProfileEditController {
                                         <img
                                             src={IconEditSorme}
                                             alt=""
-                                            onClick={() => this.handleShowModalEditCretificate(item.id)}
+                                            onClick={() => this.showModalEditCretificate(item.id)}
                                         />
                                     </div>
                                     <div className="body-content-items-certificate-table-details">
@@ -230,10 +230,10 @@ class Certification extends CompanyProfileEditController {
                     ))}
                 </div>
                 <div className="body-content-items-button-add-certificate">
-                    <ButtonAdd onClick={this.handleShowModalAddCretificate} />
+                    <ButtonAdd onClick={this.showModalAddCretificate} />
                 </div>
                 {modalAddCertificate === true ? (
-                    <ModalCompany onClose={this.handleCloseModalAddCretificate} onSave={this.handleAddCertificatios}>
+                    <ModalCompany onClose={this.closeModalAddCretificate} onSave={this.addCertificatios}>
                         <div className="input-group">
                             <InputTextLabel
                                 value={certificateName}
@@ -246,25 +246,25 @@ class Certification extends CompanyProfileEditController {
                             <SelectComponent
                                 type={"two"}
                                 placeholder={""}
-                                onSelect={this.handleGetCodeCertificate}
+                                onSelect={this.getCodeCertificate}
                                 items={this.items}
                                 title="Code"
                             />
                         </div>
                         <div className="input-group">
-                            <InputDate title={"Registered Date"} handleGetValue={this.handleGetDateRegister} />
-                            <InputDate title={"Registered Date"} handleGetValue={this.handleGetDateExpire} />
+                            <InputDate title={"Registered Date"} handleGetValue={this.getDateRegister} />
+                            <InputDate title={"Registered Date"} handleGetValue={this.getDateExpire} />
                         </div>
                         <div className="card-image">
                             <CardUploadImage
                                 title={"Upload Certificate Image Here"}
-                                handleGetImage={this.handleGetImageCertificate}
+                                handleGetImage={this.getImageCertificate}
                             />
                         </div>
                     </ModalCompany>
                 ) : (null)}
                 {modalEditCertificate === true ? (
-                    <ModalCompany onClose={this.handleCloseModalEditCretificate} onSave={this.handleEditCertificatios}>
+                    <ModalCompany onClose={this.closeModalEditCretificate} onSave={this.editCertificatios}>
                         <div className="input-group">
                             <InputTextLabel
                                 value={certificateName}
@@ -277,19 +277,19 @@ class Certification extends CompanyProfileEditController {
                             <SelectComponent
                                 type={"two"}
                                 placeholder={""}
-                                onSelect={this.handleGetCodeCertificate}
+                                onSelect={this.getCodeCertificate}
                                 items={this.items}
                                 title="Code"
                             />
                         </div>
                         <div className="input-group">
-                            <InputDate title={"Registered Date"} handleGetValue={this.handleGetDateRegister} />
-                            <InputDate title={"Registered Date"} handleGetValue={this.handleGetDateExpire} />
+                            <InputDate title={"Registered Date"} handleGetValue={this.getDateRegister} />
+                            <InputDate title={"Registered Date"} handleGetValue={this.getDateExpire} />
                         </div>
                         <div className="card-image">
                             <CardUploadImage
                                 title={"Upload Certificate Image Here"}
-                                handleGetImage={this.handleGetImageCertificate}
+                                handleGetImage={this.getImageCertificate}
                             />
                         </div>
                     </ModalCompany>

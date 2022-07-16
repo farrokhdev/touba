@@ -41,10 +41,10 @@ class Description extends CompanyProfileEditController {
                                 accept="image/png, image/jpg, image/jpeg"
                                 type="file"
                                 className="input-photo"
-                                onChange={(event) => this.handleGetImage(event)}
+                                onChange={(event) => this.getImage(event)}
                             />
                         </div>
-                        <img src={IconDeletGreen} alt="" onClick={this.handleDeleteImage} />
+                        <img src={IconDeletGreen} alt="" onClick={this.showModalDelete} />
                     </div>
                     <div className="body-content-items-banner-image">
                         <img
@@ -55,7 +55,7 @@ class Description extends CompanyProfileEditController {
                 </div>
                 <div className="body-content-items-description">
                     <div className="body-content-items-description-icon">
-                        <img src={IconEditSorme} alt="" onClick={this.handleShowModalDescription} />
+                        <img src={IconEditSorme} alt="" onClick={this.showModalDescription} />
                     </div>
                     <div className="body-content-items-description-text">
                         <p>
@@ -68,7 +68,7 @@ class Description extends CompanyProfileEditController {
                         <img
                             src={IconEditSorme}
                             alt=""
-                            onClick={this.handleShowModalDetails}
+                            onClick={this.showModalDetails}
                         />
                     </div>
                     <div className="body-content-items-details-table">
@@ -273,15 +273,17 @@ class Description extends CompanyProfileEditController {
                     </div>
                 </div>
                 {modalDelete === true ? (
-                    <DeleteImage onClick={this.handleCloseModalDelete} />
+                    <DeleteImage
+                        onClick={this.closeModalDelete}
+                        onDelete={this.deleteImage} />
                 ) : (null)}
                 {modalDescription === true ? (
-                    <ModalCompany onClose={this.handleCloseModalDescription} onSave={this.handleSubmitChangeDescription}>
-                        <TextAreaLabel title={"Introduction"} handleGetValue={this.handleGetDescription} />
+                    <ModalCompany onClose={this.closeModalDescription} onSave={this.submitChangeDescription}>
+                        <TextAreaLabel title={"Introduction"} handleGetValue={this.getDescription} />
                     </ModalCompany>
                 ) : (null)}
                 {modalDetails === true ? (
-                    <ModalCompany onClose={this.handleCloseModalDetails} onSave={this.handleSaveDeatils}>
+                    <ModalCompany onClose={this.closeModalDetails} onSave={this.saveDeatils}>
                         <div className="input-group">
                             <InputTextLabel
                                 value={establishedYear}
@@ -294,7 +296,7 @@ class Description extends CompanyProfileEditController {
                             <SelectComponent
                                 type={"two"}
                                 placeholder={"Manufacturer/Factory"}
-                                onSelect={this.handleGetBusinessType}
+                                onSelect={this.getBusinessType}
                                 items={this.items}
                                 title="Business Type"
                             />
@@ -303,7 +305,7 @@ class Description extends CompanyProfileEditController {
                             <SelectComponent
                                 type={"two"}
                                 placeholder={"Technical Support"}
-                                onSelect={this.handleGetBusinessCategory}
+                                onSelect={this.getBusinessCategory}
                                 items={this.items}
                                 title="Business Category"
                             />
@@ -320,7 +322,7 @@ class Description extends CompanyProfileEditController {
                             <SelectComponent
                                 type={"two"}
                                 placeholder={"Technical Support"}
-                                onSelect={this.handleGetBusinessCategory}
+                                onSelect={this.getBusinessCategory}
                                 items={this.items}
                                 title="Business Category"
                             />
@@ -381,7 +383,7 @@ class Description extends CompanyProfileEditController {
                             <SelectComponent
                                 type={"two"}
                                 placeholder={">2000 square meters"}
-                                onSelect={this.handleGetPlantArea}
+                                onSelect={this.getPlantArea}
                                 items={this.items}
                                 title="Plant Area"
                             />

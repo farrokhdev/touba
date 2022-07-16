@@ -157,11 +157,11 @@ export class CompanyProfileEditController extends Component<IProps, IState> {
         }
     ];
 
-    handleGetActiveLink = (id: number) => {
+    getActiveLink = (id: number) => {
         this.setState({ activeLink: id })
     }
 
-    handleGetImage = (event: ChangeEvent<HTMLInputElement>) => {
+    getImage = (event: ChangeEvent<HTMLInputElement>) => {
         const files = (event.currentTarget as HTMLInputElement).files;
         if (files && files.length > 0) {
             this.setState({ image: URL.createObjectURL(files[0]) });
@@ -169,61 +169,61 @@ export class CompanyProfileEditController extends Component<IProps, IState> {
         console.log(this.state.image);
     };
 
-    handleDeleteImage = () => {
-        this.setState({ modalDelete: true })
+    deleteImage = () => {
+        this.setState({ modalDelete: false })
         this.setState({ image: "" })
     };
 
-    handleGetActiveTab = (id: number) => {
+    getActiveTab = (id: number) => {
         this.setState({ activeTab: id })
     };
 
-    handleShowModalDelete = () => {
+    showModalDelete = () => {
         this.setState({ modalDelete: true })
     };
 
-    handleCloseModalDelete = () => {
+    closeModalDelete = () => {
         this.setState({ modalDelete: false })
     };
 
-    handleShowModalDescription = () => {
+    showModalDescription = () => {
         this.setState({ modalDescription: true })
     };
 
-    handleCloseModalDescription = () => {
+    closeModalDescription = () => {
         this.setState({ modalDescription: false })
     };
 
-    handleSubmitChangeDescription = () => {
+    submitChangeDescription = () => {
         this.setState({ description: this.state.getDiscription });
         this.setState({ modalDescription: false });
     };
 
-    handleGetDescription = (text: string) => {
+    getDescription = (text: string) => {
         this.setState({ getDiscription: text })
     }
 
-    handleShowModalDetails = () => {
+    showModalDetails = () => {
         this.setState({ modalDetails: true })
     };
 
-    handleCloseModalDetails = () => {
+    closeModalDetails = () => {
         this.setState({ modalDetails: false })
     };
 
-    handleGetBusinessType = (value: string) => {
+    getBusinessType = (value: string) => {
         this.setState({ businessType: value })
     };
 
-    handleGetBusinessCategory = (value: string) => {
+    getBusinessCategory = (value: string) => {
         this.setState({ businessCategory: value })
     };
 
-    handleGetPlantArea = (value: string) => {
+    getPlantArea = (value: string) => {
         this.setState({ planeArea: value })
     };
 
-    handleSaveDeatils = () => {
+    saveDeatils = () => {
         const newDeatils: DETAILS = {
             establishedYear: this.state.establishedYear,
             businessType: this.state.businessType,
@@ -238,40 +238,40 @@ export class CompanyProfileEditController extends Component<IProps, IState> {
         this.setState({ modalDetails: false })
     };
 
-    handleShowModalAddCretificate = () => {
+    showModalAddCretificate = () => {
         this.setState({ modalAddCertificate: true })
     };
 
-    handleCloseModalAddCretificate = () => {
+    closeModalAddCretificate = () => {
         this.setState({ modalAddCertificate: false })
     };
 
-    handleShowModalEditCretificate = (id?: string) => {
+    showModalEditCretificate = (id?: string) => {
         this.setState({ modalEditCertificate: true })
         this.setState({ idEditCertification: id })
     };
 
-    handleCloseModalEditCretificate = () => {
+    closeModalEditCretificate = () => {
         this.setState({ modalEditCertificate: false })
     };
 
-    handleGetDateRegister = (value: string) => {
+    getDateRegister = (value: string) => {
         this.setState({ registerDate: value })
     };
 
-    handleGetDateExpire = (value: string) => {
+    getDateExpire = (value: string) => {
         this.setState({ expireDate: value })
     };
 
-    handleGetCodeCertificate = (value: string) => {
+    getCodeCertificate = (value: string) => {
         this.setState({ certificateCode: value })
     };
 
-    handleGetImageCertificate = (image: string) => {
+    getImageCertificate = (image: string) => {
         this.setState({ imageCertificate: image })
     };
 
-    handleAddCertificatios = () => {
+    addCertificatios = () => {
         const newCertification: CERTIFICATE = {
             registerDate: this.state.registerDate,
             expireDate: this.state.expireDate,
@@ -284,7 +284,7 @@ export class CompanyProfileEditController extends Component<IProps, IState> {
         this.setState({ modalAddCertificate: false })
     };
 
-    handleEditCertificatios = () => {
+    editCertificatios = () => {
         const newCertification: CERTIFICATE = {
             registerDate: this.state.registerDate,
             expireDate: this.state.expireDate,
@@ -309,32 +309,32 @@ export class CompanyProfileEditController extends Component<IProps, IState> {
         this.setState({ modalEditCertificate: false })
     };
 
-    handleShowModalFAQ = () => {
+    showModalFAQ = () => {
         this.setState({ modalFAQ: true })
     };
 
-    handleCloseModalFAQ = () => {
+    closeModalFAQ = () => {
         this.setState({ modalFAQ: false })
     };
 
-    handleGetValuesFAQ = (image: string, text: string) => {
+    getValuesFAQ = (image: string, text: string) => {
         const newFAQ = { image, text };
         this.setState({ faq: newFAQ })
     };
 
-    handleShowModalContact = () => {
+    showModalContact = () => {
         this.setState({modalContact: true})
     };
 
-    handleCloseModalContact = () => {
+    closeModalContact = () => {
         this.setState({modalContact: false})
     };
 
-    handleShowModalLocation = () => {
+    showModalLocation = () => {
         this.setState({modalLocation: true})
     };
 
-    handleCloseModalLocation = () => {
+    closeModalLocation = () => {
         this.setState({modalLocation: false})
     };
 

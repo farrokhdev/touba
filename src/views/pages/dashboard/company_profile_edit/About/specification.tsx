@@ -28,7 +28,7 @@ class Specification extends CompanyProfileEditController {
                         <img
                             src={IconEditSorme}
                             alt=""
-                            onClick={this.handleShowModalDetails}
+                            onClick={this.showModalDetails}
                         />
                     </div>
                     <div className="body-content-items-details-table">
@@ -233,7 +233,7 @@ class Specification extends CompanyProfileEditController {
                     </div>
                 </div>
                 {modalDetails === true ? (
-                    <ModalCompany onClose={this.handleCloseModalDetails} onSave={this.handleSaveDeatils}>
+                    <ModalCompany onClose={this.closeModalDetails} onSave={this.saveDeatils}>
                         <div className="input-group">
                             <InputTextLabel
                                 value={establishedYear}
@@ -246,7 +246,7 @@ class Specification extends CompanyProfileEditController {
                             <SelectComponent
                                 type={"two"}
                                 placeholder={"Manufacturer/Factory"}
-                                onSelect={this.handleGetBusinessType}
+                                onSelect={this.getBusinessType}
                                 items={this.items}
                                 title="Business Type"
                             />
@@ -255,7 +255,7 @@ class Specification extends CompanyProfileEditController {
                             <SelectComponent
                                 type={"two"}
                                 placeholder={"Technical Support"}
-                                onSelect={this.handleGetBusinessCategory}
+                                onSelect={this.getBusinessCategory}
                                 items={this.items}
                                 title="Business Category"
                             />
@@ -272,7 +272,7 @@ class Specification extends CompanyProfileEditController {
                             <SelectComponent
                                 type={"two"}
                                 placeholder={"Technical Support"}
-                                onSelect={this.handleGetBusinessCategory}
+                                onSelect={this.getBusinessCategory}
                                 items={this.items}
                                 title="Business Category"
                             />
@@ -333,7 +333,7 @@ class Specification extends CompanyProfileEditController {
                             <SelectComponent
                                 type={"two"}
                                 placeholder={">2000 square meters"}
-                                onSelect={this.handleGetPlantArea}
+                                onSelect={this.getPlantArea}
                                 items={this.items}
                                 title="Plant Area"
                             />

@@ -25,7 +25,7 @@ class CompanyProfileEdit extends CompanyProfileEditController {
                     <div className="body-side-item">
                         <SideNavItems
                             items={this.TEST_NAV_ITEM}
-                            onActive={this.handleGetActiveLink}
+                            onActive={this.getActiveLink}
                             showProgress={true}
                         />
                     </div>

@@ -30,7 +30,7 @@ class SectionAbout extends CompanyProfileEditController {
             <>
                 <div className="body-content-header">
                     <MyCompanyNav
-                        onActive={this.handleGetActiveTab}
+                        onActive={this.getActiveTab}
                         showButton={true}
                         activeBorder={false}
                     />
