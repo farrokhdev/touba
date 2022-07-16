@@ -32,6 +32,7 @@
             }
         }
         .body {
+            @include Display (flex, center, center, column);
             padding: 30px 25px;
             span {
                 @include FontStyle(16px, 600, $sorme);

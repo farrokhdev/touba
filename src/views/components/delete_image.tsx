@@ -3,9 +3,10 @@ import { IconClose, IconDeleteWhite } from "../../assets";
 
 export type IProps = {
   onClick?(): void;
+  onDelete(): void;
 };
 
-const DeleteImage: React.FC<IProps> = ({ onClick }: IProps) => {
+const DeleteImage: React.FC<IProps> = ({ onClick, onDelete }: IProps) => {
   return (
     <div className="delete-image">
       <div className="content">
@@ -21,8 +22,8 @@ const DeleteImage: React.FC<IProps> = ({ onClick }: IProps) => {
         <div className="body">
           <span>Are you sure you want to delete this image?</span>
           <div className="even-btn-container mt-4">
-            <button>No, Nevermind</button>
-            <button>
+            <button onClick={onClick}>No, Nevermind</button>
+            <button onClick={onDelete}>
               <img src={IconDeleteWhite} alt="delete" className="me-2" />
               Yes remove it
             </button>
