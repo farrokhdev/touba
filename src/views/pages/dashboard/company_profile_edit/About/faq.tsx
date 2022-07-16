@@ -1,12 +1,13 @@
 import ButtonAdd from "../../../../components/button_add";
-import { CardFAQ } from "../../../../components/components";
+import { CardFAQ, InputTextLabel, ModalCompany, TextAreaLabelImage } from "../../../../components/components";
 import CompanyProfileEditController from "../../../../controllers/company_profile_edit_controller";
 
 class Faq extends CompanyProfileEditController {
 
     render() {
         const {
-
+            modalFAQ,
+            question
         } = this.state;
         return (
             <>
@@ -22,6 +23,22 @@ class Faq extends CompanyProfileEditController {
                 <div className="body-content-items-button-add-faq">
                     <ButtonAdd onClick={this.handleShowModalFAQ} />
                 </div>
+                {modalFAQ === true ? (
+                    <ModalCompany onClose={this.handleCloseModalFAQ} onSave={() => { }}>
+                        <InputTextLabel
+                            value={question}
+                            title={"Question"}
+                            placeholder={""}
+                            type={"text"}
+                            showDropDown={false}
+                            onChange={(event) => { this.setState({ question: event.currentTarget.value }) }}
+                        />
+                        <TextAreaLabelImage
+                            title={"Answer"}
+                            handleGetValues={this.handleGetValuesFAQ}
+                        />
+                    </ModalCompany>
+                ) : (null)}
             </>
         )
     }

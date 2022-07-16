@@ -1,11 +1,20 @@
 import { IconEditSorme } from "../../../../../assets";
+import { SelectComponent } from "../../../../components/components";
+import { InputTextLabel } from "../../../../components/input_text_label";
+import { ModalCompany } from "../../../../components/modal_company";
 import CompanyProfileEditController from "../../../../controllers/company_profile_edit_controller";
 
 class Specification extends CompanyProfileEditController {
    
     render() {
         const {
-            details
+            details,
+            modalDetails,
+            establishedYear,
+            mainProducts,
+            mainMarket,
+            numberOfEmployee,
+            registeredCapital,
         } = this.state;
         return (
             <>
@@ -223,6 +232,114 @@ class Specification extends CompanyProfileEditController {
                         </div>
                     </div>
                 </div>
+                {modalDetails === true ? (
+                    <ModalCompany onClose={this.handleCloseModalDetails} onSave={this.handleSaveDeatils}>
+                        <div className="input-group">
+                            <InputTextLabel
+                                value={establishedYear}
+                                title={"Established Year"}
+                                placeholder={"Technical Support"}
+                                type={"text"}
+                                showDropDown={false}
+                                onChange={(event) => { this.setState({ establishedYear: event.currentTarget.value }) }}
+                            />
+                            <SelectComponent
+                                type={"two"}
+                                placeholder={"Manufacturer/Factory"}
+                                onSelect={this.handleGetBusinessType}
+                                items={this.items}
+                                title="Business Type"
+                            />
+                        </div>
+                        <div className="input-group value-red-scound">
+                            <SelectComponent
+                                type={"two"}
+                                placeholder={"Technical Support"}
+                                onSelect={this.handleGetBusinessCategory}
+                                items={this.items}
+                                title="Business Category"
+                            />
+                            <InputTextLabel
+                                value={mainProducts}
+                                title={"Main Products"}
+                                placeholder={"Milk Powder , Food Powders , Food raw materials"}
+                                type={"text"}
+                                showDropDown={false}
+                                onChange={(event) => { this.setState({ mainProducts: event.currentTarget.value }) }}
+                            />
+                        </div>
+                        <div className="input-group value-red-scound">
+                            <SelectComponent
+                                type={"two"}
+                                placeholder={"Technical Support"}
+                                onSelect={this.handleGetBusinessCategory}
+                                items={this.items}
+                                title="Business Category"
+                            />
+                            <InputTextLabel
+                                value={mainProducts}
+                                title={"Main Products"}
+                                placeholder={"Milk Powder , Food Powders , Food raw materials"}
+                                type={"text"}
+                                showDropDown={false}
+                                onChange={(event) => { this.setState({ mainProducts: event.currentTarget.value }) }}
+                            />
+                        </div>
+                        <div className="input-group value-red-first">
+                            <InputTextLabel
+                                value={mainMarket}
+                                title={"Main Market"}
+                                placeholder={"Iran , Iraq , Turkey "}
+                                type={"text"}
+                                showDropDown={false}
+                                onChange={(event) => { this.setState({ mainMarket: event.currentTarget.value }) }}
+                            />
+                            <InputTextLabel
+                                value={numberOfEmployee}
+                                title={"Number of empolyee"}
+                                placeholder={"30000"}
+                                type={"text"}
+                                showDropDown={false}
+                                onChange={(event) => { this.setState({ numberOfEmployee: event.currentTarget.value }) }}
+                            />
+                        </div>
+                        <div className="input-group value-red-first">
+                            <InputTextLabel
+                                value={mainMarket}
+                                title={"Main Market"}
+                                placeholder={"Iran , Iraq , Turkey "}
+                                type={"text"}
+                                showDropDown={false}
+                                onChange={(event) => { this.setState({ mainMarket: event.currentTarget.value }) }}
+                            />
+                            <InputTextLabel
+                                value={numberOfEmployee}
+                                title={"Number of empolyee"}
+                                placeholder={"30000"}
+                                type={"text"}
+                                showDropDown={false}
+                                onChange={(event) => { this.setState({ numberOfEmployee: event.currentTarget.value }) }}
+                            />
+                        </div>
+                        <div className="input-group">
+                            <InputTextLabel
+                                value={registeredCapital}
+                                title={"Registered Capital"}
+                                placeholder={"2000000 RMB"}
+                                type={"text"}
+                                showDropDown={false}
+                                onChange={(event) => { this.setState({ registeredCapital: event.currentTarget.value }) }}
+                            />
+                            <SelectComponent
+                                type={"two"}
+                                placeholder={">2000 square meters"}
+                                onSelect={this.handleGetPlantArea}
+                                items={this.items}
+                                title="Plant Area"
+                            />
+                        </div>
+                    </ModalCompany>
+                ) : (null)}
             </>
         )
     }

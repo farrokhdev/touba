@@ -1,13 +1,20 @@
 import { IconEditSorme, ImageCertificate } from "../../../../../assets";
 import ButtonAdd from "../../../../components/button_add";
+import { CardUploadImage } from "../../../../components/card_upload_image";
+import { SelectComponent } from "../../../../components/components";
+import { InputDate } from "../../../../components/input_date";
+import { InputTextLabel } from "../../../../components/input_text_label";
+import { ModalCompany } from "../../../../components/modal_company";
 import CompanyProfileEditController from "../../../../controllers/company_profile_edit_controller";
 
 class Certification extends CompanyProfileEditController {
-   
+
     render() {
         const {
-            details,
-            certificate
+            certificate,
+            modalAddCertificate,
+            certificateName,
+            modalEditCertificate,
         } = this.state;
         return (
             <>
@@ -225,6 +232,68 @@ class Certification extends CompanyProfileEditController {
                 <div className="body-content-items-button-add-certificate">
                     <ButtonAdd onClick={this.handleShowModalAddCretificate} />
                 </div>
+                {modalAddCertificate === true ? (
+                    <ModalCompany onClose={this.handleCloseModalAddCretificate} onSave={this.handleAddCertificatios}>
+                        <div className="input-group">
+                            <InputTextLabel
+                                value={certificateName}
+                                title={"Certificate"}
+                                placeholder={""}
+                                type={"text"}
+                                showDropDown={false}
+                                onChange={(event) => this.setState({ certificateName: event.currentTarget.value })}
+                            />
+                            <SelectComponent
+                                type={"two"}
+                                placeholder={""}
+                                onSelect={this.handleGetCodeCertificate}
+                                items={this.items}
+                                title="Code"
+                            />
+                        </div>
+                        <div className="input-group">
+                            <InputDate title={"Registered Date"} handleGetValue={this.handleGetDateRegister} />
+                            <InputDate title={"Registered Date"} handleGetValue={this.handleGetDateExpire} />
+                        </div>
+                        <div className="card-image">
+                            <CardUploadImage
+                                title={"Upload Certificate Image Here"}
+                                handleGetImage={this.handleGetImageCertificate}
+                            />
+                        </div>
+                    </ModalCompany>
+                ) : (null)}
+                {modalEditCertificate === true ? (
+                    <ModalCompany onClose={this.handleCloseModalEditCretificate} onSave={this.handleEditCertificatios}>
+                        <div className="input-group">
+                            <InputTextLabel
+                                value={certificateName}
+                                title={"Certificate"}
+                                placeholder={""}
+                                type={"text"}
+                                showDropDown={false}
+                                onChange={(event) => this.setState({ certificateName: event.currentTarget.value })}
+                            />
+                            <SelectComponent
+                                type={"two"}
+                                placeholder={""}
+                                onSelect={this.handleGetCodeCertificate}
+                                items={this.items}
+                                title="Code"
+                            />
+                        </div>
+                        <div className="input-group">
+                            <InputDate title={"Registered Date"} handleGetValue={this.handleGetDateRegister} />
+                            <InputDate title={"Registered Date"} handleGetValue={this.handleGetDateExpire} />
+                        </div>
+                        <div className="card-image">
+                            <CardUploadImage
+                                title={"Upload Certificate Image Here"}
+                                handleGetImage={this.handleGetImageCertificate}
+                            />
+                        </div>
+                    </ModalCompany>
+                ) : (null)}
             </>
         )
     }
