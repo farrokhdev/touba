@@ -1,54 +1,11 @@
 import { IconAddCircleGreen, ImageTest } from "../../../../assets";
-import BasicInformationExcess from "../../../components/basic_information_excess";
-import {
-  CardOfferHorizental,
-  ComponentOtherDetail,
-  ComponentRelatedItems,
-  ComponentSortandSearch,
-  ComponentTradeInformation,
-} from "../../../components/components";
+import { ComponentSortandSearch, CardOfferHorizental } from "../../../components/components";
 import DashboardNav from "../../../components/dashboard_nav";
-import { SideNavItems } from "../../../components/side_nav_items";
 import CompanyProfileProductController from "../../../controllers/dashboard_company_profile_controller";
+import AddProductOne from "./add_product_one";
 
 export default class CompanyPofileExcess extends CompanyProfileProductController {
 
-  addProductOne = () => {
-    return (
-      <div className="row">
-        <div className="col-2">
-          <SideNavItems
-            onActive={(e) => this.handleShowSideNavItem(e)}
-            items={this.TEST_NAV_ITEM}
-          />
-        </div>
-        <div className="col-10 px-4 mt-5 ">
-          {this.state.show == 0 && (
-            <div>
-              <BasicInformationExcess
-                onClick={() => this.setState({ isShow: 0 })}
-              />
-            </div>
-          )}
-          {this.state.show == 1 && (
-            <div>
-              <ComponentOtherDetail />
-            </div>
-          )}
-          {this.state.show == 2 && (
-            <div>
-              <ComponentTradeInformation />
-            </div>
-          )}
-          {this.state.show == 3 && (
-            <div>
-              <ComponentRelatedItems />
-            </div>
-          )}
-        </div>
-      </div>
-    );
-  };
   render() {
     const landing = () => {
       return (
@@ -149,7 +106,7 @@ export default class CompanyPofileExcess extends CompanyProfileProductController
           <DashboardNav title="Excess Capacity" />
         </div>
         <div className="content w-100">
-          {this.state.isShow === 0 ? landing() : this.addProductOne()}
+          {this.state.isShow === 0 ? landing() : <AddProductOne/>}
         </div>
       </div>
     );
