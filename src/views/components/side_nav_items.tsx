@@ -18,7 +18,7 @@ interface Props {
 
 export function SideNavItems({ items, onActive, showProgress }: Props): ReactElement {
 
-    const [activeLink, setActiveLink] = useState(1);
+    const [activeLink, setActiveLink] = useState(0);
 
     function handleActiveLink(id: number) {
         setActiveLink(id);

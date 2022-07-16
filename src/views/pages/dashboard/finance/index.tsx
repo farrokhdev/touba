@@ -227,15 +227,15 @@ export default class DashboardFinance extends FinanceController {
               />
             </div>
             <div className="center-content">
-              {this.state.activeLink === 1
+              {this.state.activeLink === 0
                 ? overview()
-                : this.state.activeLink === 2
+                : this.state.activeLink === 1
                 ? soldItems()
-                : this.state.activeLink === 3
+                : this.state.activeLink === 2
                 ? purchasedItems()
-                : this.state.activeLink === 4
+                : this.state.activeLink === 3
                 ? redeemedInvoices()
-                : this.state.activeLink === 5
+                : this.state.activeLink === 4
                 ? incomePayCalendar()
                 : null}
             </div>

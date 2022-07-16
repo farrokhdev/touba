@@ -25,16 +25,16 @@ class CompoanyProfileStart extends CompanyProfileStartController {
                         />
                     </div>
                     <div className="body-content">
-                        {activeLink === 1 ? (
+                        {activeLink === 0 ? (
                             <AboutPage />
                         ) : (
-                            activeLink === 2 ? (
+                            activeLink === 1 ? (
                                 <ContactUs />
                             ) : (
-                                activeLink === 3 ? (
+                                activeLink === 2 ? (
                                     <></>
                                 ) : (
-                                    activeLink === 4 ? (
+                                    activeLink === 3 ? (
                                         <LocationPage />
                                     ) : (
                                         <VisualSettings />

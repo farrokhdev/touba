@@ -26,7 +26,7 @@ interface IState {
 export class CompanyProfileStartController extends Component<IProps, IState> {
 
     state = {
-        activeLink: 1,
+        activeLink: 0,
         activeTab: 1,
         certificateName: "",
         certificateCode: "",
@@ -49,27 +49,27 @@ export class CompanyProfileStartController extends Component<IProps, IState> {
         {
             title: "About Page",
             icon: `${IconPaperBlack}`,
-            id: 1
+            id: 0
         },
         {
             title: "Contact Us Page",
             icon: `${IconCallSorme}`,
-            id: 2
+            id: 1
         },
         {
             title: "Payments Setting",
             icon: `${IconWalletSorme}`,
-            id: 3
+            id: 2
         },
         {
             title: "Locations",
             icon: `${IconLocationSorme}`,
-            id: 4
+            id: 3
         },
         {
             title: "Visual Settings",
             icon: `${IconStarSorme}`,
-            id: 5
+            id: 4
         }
     ];
 

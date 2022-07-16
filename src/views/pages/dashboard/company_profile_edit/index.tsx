@@ -30,13 +30,13 @@ class CompanyProfileEdit extends CompanyProfileEditController {
                         />
                     </div>
                     <div className="body-content">
-                        {activeLink === 1 ? (
+                        {activeLink === 0 ? (
                             <SectionAbout/>
                         ) : (
-                            activeLink === 2 ? (
+                            activeLink === 1 ? (
                                 <ContactUs/>
                             ) : (
-                                activeLink === 5 ? (
+                                activeLink === 4 ? (
                                     <Setting/>
                                 ) : (
                                     <h1>

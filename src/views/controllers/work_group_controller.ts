@@ -35,18 +35,23 @@ export class WorkGroupController extends Component<IProps, IState> {
         {
             title: "Last Activities",
             time: "2 MINS",
-            id: 1
+            id: 0
         },
         {
             title: "Group Title",
             time: "2 MINS",
             notification: 12,
-            id: 2
+            id: 1
         },
         {
             title: "Group Title",
             time: "2 MINS",
             notification: 7,
+            id: 2
+        },
+        {
+            title: "Group Title",
+            time: "2 MINS",
             id: 3
         },
         {
@@ -58,11 +63,6 @@ export class WorkGroupController extends Component<IProps, IState> {
             title: "Group Title",
             time: "2 MINS",
             id: 5
-        },
-        {
-            title: "Group Title",
-            time: "2 MINS",
-            id: 6
         }
     ];
 

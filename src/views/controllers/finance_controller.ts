@@ -14,7 +14,7 @@ export class FinanceController extends Component<IProps, IState> {
 
   state = {
     active: 1,
-    activeLink: 1,
+    activeLink: 0,
     filter: 1,
 
   };
@@ -60,31 +60,31 @@ export class FinanceController extends Component<IProps, IState> {
       title: "Overview",
       active: true,
       location: "/",
-      id: 1,
+      id: 0,
     },
     {
       title: "Sold Items",
       active: false,
       location: "/test",
-      id: 2,
+      id: 1,
     },
     {
       title: "Purchased Items",
       active: false,
       location: "/",
-      id: 3,
+      id: 2,
     },
     {
       title: "Redeemed Invoices",
       active: false,
       location: "/",
-      id: 4,
+      id: 3,
     },
     {
       title: "Income/Pay Calendar",
       active: false,
       location: "/",
-      id: 5,
+      id: 4,
     },
   ];
   //list
