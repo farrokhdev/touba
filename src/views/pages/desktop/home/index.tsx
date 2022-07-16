@@ -20,13 +20,7 @@ import Description from "./description";
 
 class Home extends HomeController {
     render() {
-        const settings = {
-            dots: true,
-            infinite: true,
-            speed: 500,
-            slidesToShow: 1,
-            slidesToScroll: 1
-        };
+      
         return (
             <div className="home">
                 <div className="home-header px-5">
