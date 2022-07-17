@@ -1,9 +1,10 @@
 import { IconEdit } from "../../../../assets";
 import { BannerCongratulations } from "../../../components/baner_congratulations";
-import { ComponentSortandSearch, CardLike, ComponentBasicInformation, ComponentOtherDetail, ComponentTradeInformation, ComponentRelatedItems } from "../../../components/components";
+import { ComponentSortandSearch, CardLike, ComponentOtherDetail, ComponentTradeInformation, ComponentRelatedItems } from "../../../components/components";
 import DashboardNav from "../../../components/dashboard_nav";
 import { SideNavItems } from "../../../components/side_nav_items";
 import CompanyProfileProductController from "../../../controllers/dashboard_company_profile_controller";
+import Component_basic_information from "./basicInformation";
 
 class CompanyProfileProduct extends CompanyProfileProductController {
  
@@ -71,7 +72,7 @@ class CompanyProfileProduct extends CompanyProfileProductController {
         <div className="col-10 px-4 mt-5 ">
           {this.state.show == 0 && (
             <div>
-              <ComponentBasicInformation />
+              <Component_basic_information />
             </div>
           )}
           {this.state.show == 1 && (

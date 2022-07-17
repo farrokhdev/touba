@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { BannerCongratulations } from "../../components/baner_congratulations";
 import {
   CardLike,
-  ComponentBasicInformation,
   ComponentOtherDetail,
   ComponentRelatedItems,
   ComponentSortandSearch,
@@ -14,6 +13,7 @@ import iconEdit from "../../../assets/icons/icon-edit.svg";
 import { SideNavItems } from "../../components/side_nav_items";
 import { ButtonIcon } from "../../components/button_icon";
 import CongratulationBanner from "../../components/congratulation_banner";
+import Component_basic_information from "../dashboard/company_profile_product/basicInformation";
 
 class DashboardCompanyProfile extends DashboardCompanyProfileController {
  
@@ -77,7 +77,7 @@ class DashboardCompanyProfile extends DashboardCompanyProfileController {
         <div className="col-10 px-4 mt-5 ">
           {this.state.show == 0 && (
             <div>
-              <ComponentBasicInformation />
+              <Component_basic_information />
             </div>
           )}
           {this.state.show == 1 && (
