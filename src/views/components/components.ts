@@ -109,9 +109,6 @@ export { default as BannerLetsStart } from './banner_lets_start';
 export { default as TextIconVerticalDashboard } from './text_icon_vertical_dahsboard';
 export { default as SelectComponentDouble } from './select_component_double';
 export { default as ComponentTextArea } from './component_text_area';
-export {default as ComponentOtherDetail} from './component_other_detail';
-export {default as ComponentTradeInformation} from './component_trade_information'
-export {default as ComponentRelatedItems} from './component_related_items'
 export {default as ComponentMultiInput} from './component_multi_input'
 
 

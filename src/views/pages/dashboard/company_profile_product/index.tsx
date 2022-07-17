@@ -1,10 +1,13 @@
 import { IconEdit } from "../../../../assets";
 import { BannerCongratulations } from "../../../components/baner_congratulations";
-import { ComponentSortandSearch, CardLike, ComponentOtherDetail, ComponentTradeInformation, ComponentRelatedItems } from "../../../components/components";
+import { ComponentSortandSearch, CardLike } from "../../../components/components";
 import DashboardNav from "../../../components/dashboard_nav";
 import { SideNavItems } from "../../../components/side_nav_items";
 import CompanyProfileProductController from "../../../controllers/dashboard_company_profile_controller";
 import Component_basic_information from "./basicInformation";
+import OtherDetail from "./other_detail";
+import RelatedItems from "./related_items";
+import TradeInformation from "./trade_information";
 
 class CompanyProfileProduct extends CompanyProfileProductController {
  
@@ -77,17 +80,17 @@ class CompanyProfileProduct extends CompanyProfileProductController {
           )}
           {this.state.show == 1 && (
             <div>
-              <ComponentOtherDetail />
+              <OtherDetail />
             </div>
           )}
           {this.state.show == 2 && (
             <div>
-              <ComponentTradeInformation />
+              <TradeInformation />
             </div>
           )}
           {this.state.show == 3 && (
             <div>
-              <ComponentRelatedItems />
+              <RelatedItems />
             </div>
 
             // <div style={{ width: "960px", height: "670px" }}>

@@ -1,7 +1,9 @@
 import BasicInformationExcess from "../../../components/basic_information_excess";
-import { ComponentOtherDetail, ComponentTradeInformation, ComponentRelatedItems } from "../../../components/components";
 import { SideNavItems } from "../../../components/side_nav_items";
 import CompanyProfileProductController from "../../../controllers/dashboard_company_profile_controller";
+import OtherDetail from "../company_profile_product/other_detail";
+import RelatedItems from "../company_profile_product/related_items";
+import TradeInformation from "../company_profile_product/trade_information";
 
 export default class AddProductOne extends CompanyProfileProductController {
     render = () => {
@@ -23,17 +25,17 @@ export default class AddProductOne extends CompanyProfileProductController {
                     )}
                     {this.state.show == 1 && (
                         <div>
-                            <ComponentOtherDetail />
+                            <OtherDetail />
                         </div>
                     )}
                     {this.state.show == 2 && (
                         <div>
-                            <ComponentTradeInformation />
+                            <TradeInformation />
                         </div>
                     )}
                     {this.state.show == 3 && (
                         <div>
-                            <ComponentRelatedItems />
+                            <RelatedItems />
                         </div>
                     )}
                 </div>

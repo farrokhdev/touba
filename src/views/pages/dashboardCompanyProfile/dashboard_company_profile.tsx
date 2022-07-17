@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import { BannerCongratulations } from "../../components/baner_congratulations";
 import {
   CardLike,
-  ComponentOtherDetail,
-  ComponentRelatedItems,
+  
+
   ComponentSortandSearch,
-  ComponentTradeInformation,
+  
 } from "../../components/components";
 import DashboardNav from "../../components/dashboard_nav";
 import DashboardCompanyProfileController from "../../controllers/dashboard_company_profile_controller";
@@ -14,6 +14,7 @@ import { SideNavItems } from "../../components/side_nav_items";
 import { ButtonIcon } from "../../components/button_icon";
 import CongratulationBanner from "../../components/congratulation_banner";
 import Component_basic_information from "../dashboard/company_profile_product/basicInformation";
+import OtherDetail from "../dashboard/company_profile_product/other_detail";
 
 class DashboardCompanyProfile extends DashboardCompanyProfileController {
  
@@ -82,17 +83,15 @@ class DashboardCompanyProfile extends DashboardCompanyProfileController {
           )}
           {this.state.show == 1 && (
             <div>
-              <ComponentOtherDetail />
+              <OtherDetail />
             </div>
           )}
           {this.state.show == 2 && (
             <div>
-              <ComponentTradeInformation />
             </div>
           )}
           {this.state.show == 3 && (
             <div>
-              <ComponentRelatedItems />
             </div>
 
             // <div style={{ width: "960px", height: "670px" }}>
