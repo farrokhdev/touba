@@ -2,6 +2,8 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import { CompanyProfileEdit, CompanyProfileExcess, CompanyProfileProduct, CompanyProfileStart, Dashboard, DetailsOrder, EditOrder, Finance, LikeCard, Report, Review, TableOrder, WorkGroup } from "./dashboard";
 import { About, Card, CompanyProfile, ExcessCapacity, Help, Home, Login, Membership, Product, ProductSingle, Register, ResultExcessCapacity, ResultProduct, ResultSupplier, SideService, SpecialOffer, Supplier } from "./desktop";
 import { default as DashboarNav } from "../layout/dashboard/dashobord";
+import { TextBoxComponent } from '@syncfusion/ej2-react-inputs';
+
 import { TopNavHome, TopNav, BottomNav, Footer } from "../layout/layout";
 
 function Pages() {
@@ -9,6 +11,7 @@ function Pages() {
 
   return (
     <div>
+      <TextBoxComponent placeholder="12emsjkwenkj"/>
       <>
         {
           location.pathname.includes("/dashboard") ||
