@@ -11,7 +11,6 @@ function Pages() {
 
   return (
     <div>
-      <TextBoxComponent placeholder="12emsjkwenkj"/>
       <>
         {
           location.pathname.includes("/dashboard") ||
